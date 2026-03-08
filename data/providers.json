@@ -1,0 +1,279 @@
+{
+  "providers": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "description": "Twórca GPT-4o, o1, o3 i DALL-E. Lider w modelach komercyjnych.",
+      "url": "https://platform.openai.com",
+      "affiliate_url": null,
+      "logo_color": "#10a37f",
+      "categories": ["llm", "image_generation", "audio_tts", "audio_stt", "embedding", "moderation"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "description": "Twórca serii Claude. Fokus na bezpieczeństwo i długi kontekst.",
+      "url": "https://www.anthropic.com/api",
+      "affiliate_url": null,
+      "logo_color": "#d4552b",
+      "categories": ["llm"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "google",
+      "name": "Google AI",
+      "description": "Gemini API — modele Gemini 2.0/2.5 z kontekstem do 2M tokenów.",
+      "url": "https://ai.google.dev",
+      "affiliate_url": null,
+      "logo_color": "#4285f4",
+      "categories": ["llm", "image_generation", "video_generation", "audio_stt", "embedding"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "description": "Europejski dostawca LLM. Mistral Large, Small, Codestral.",
+      "url": "https://console.mistral.ai",
+      "affiliate_url": null,
+      "logo_color": "#ff7000",
+      "categories": ["llm", "embedding"],
+      "type": "direct",
+      "hq": "Francja"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "description": "Chińskie modele open-weight. Niezwykła relacja ceny do możliwości.",
+      "url": "https://platform.deepseek.com",
+      "affiliate_url": null,
+      "logo_color": "#4d6bfe",
+      "categories": ["llm"],
+      "type": "direct",
+      "hq": "Chiny"
+    },
+    {
+      "id": "xai",
+      "name": "xAI (Grok)",
+      "description": "Modele Grok od Elona Muska. Grok-4 z kontekstem 2M tokenów.",
+      "url": "https://console.x.ai",
+      "affiliate_url": null,
+      "logo_color": "#ffffff",
+      "categories": ["llm"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "description": "Ultra-szybki inference na LPU. Llama, Whisper z minimalnym opóźnieniem.",
+      "url": "https://console.groq.com",
+      "affiliate_url": null,
+      "logo_color": "#f55036",
+      "categories": ["llm", "audio_stt"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "description": "Specjalizacja w enterprise NLP. Command R+ i embeddingi.",
+      "url": "https://dashboard.cohere.com",
+      "affiliate_url": null,
+      "logo_color": "#39594d",
+      "categories": ["llm", "embedding"],
+      "type": "direct",
+      "hq": "Kanada"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity AI",
+      "description": "Modele Sonar z wbudowanym web search.",
+      "url": "https://www.perplexity.ai/settings/api",
+      "affiliate_url": null,
+      "logo_color": "#20b8cd",
+      "categories": ["llm"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "description": "Agregator 300+ modeli LLM. Jeden klucz API do wszystkich dostawców.",
+      "url": "https://openrouter.ai",
+      "affiliate_url": "https://openrouter.ai/?ref=tsa",
+      "logo_color": "#6467f2",
+      "categories": ["llm"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "together",
+      "name": "Together AI",
+      "description": "Serverless inference: LLM, obraz, embeddingi. Tanie ceny.",
+      "url": "https://www.together.ai",
+      "affiliate_url": null,
+      "logo_color": "#0e76fd",
+      "categories": ["llm", "image_generation", "embedding"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "description": "Szybki serverless inference. LLM, FLUX, Whisper w jednym miejscu.",
+      "url": "https://fireworks.ai",
+      "affiliate_url": null,
+      "logo_color": "#ff4d00",
+      "categories": ["llm", "image_generation", "audio_stt", "embedding"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "description": "Marketplace 1000+ modeli. Image, video, audio, LLM — GPU on demand.",
+      "url": "https://replicate.com",
+      "affiliate_url": "https://replicate.com?utm_source=tsa",
+      "logo_color": "#ffffff",
+      "categories": ["llm", "image_generation", "video_generation", "audio_tts", "audio_stt"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "fal",
+      "name": "fal.ai",
+      "description": "Szybki inference dla generatywnych modeli mediów. FLUX, video, audio.",
+      "url": "https://fal.ai",
+      "affiliate_url": "https://fal.ai?ref=tsa",
+      "logo_color": "#7c3aed",
+      "categories": ["image_generation", "video_generation", "audio_tts", "audio_stt"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "description": "Hub open-source modeli. Serverless API z darmowym tierem.",
+      "url": "https://huggingface.co/inference-api",
+      "affiliate_url": null,
+      "logo_color": "#ffbd00",
+      "categories": ["llm", "image_generation", "audio_stt", "embedding"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "aimlapi",
+      "name": "aimlapi.com",
+      "description": "200+ modeli od jednego API. LLM, obraz, wideo, audio.",
+      "url": "https://aimlapi.com",
+      "affiliate_url": "https://aimlapi.com?via=tsa",
+      "logo_color": "#00d4aa",
+      "categories": ["llm", "image_generation", "video_generation", "audio_tts", "audio_stt"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "runway",
+      "name": "Runway ML",
+      "description": "Lider w generowaniu wideo AI. Gen-4, Veo 3, Act-Two.",
+      "url": "https://dev.runwayml.com",
+      "affiliate_url": null,
+      "logo_color": "#00ff88",
+      "categories": ["video_generation", "image_generation"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "minimax",
+      "name": "Minimax",
+      "description": "Chińskie modele wideo i czatu. Hailuo 02, MiniMax-Text-01.",
+      "url": "https://www.minimax.io/platform",
+      "affiliate_url": null,
+      "logo_color": "#ff6b35",
+      "categories": ["llm", "video_generation", "audio_tts"],
+      "type": "direct",
+      "hq": "Chiny"
+    },
+    {
+      "id": "piapi",
+      "name": "piapi.ai",
+      "description": "Dostęp API do Seedance, Kling, Sora, Hailuo i innych modeli wideo/obrazu.",
+      "url": "https://piapi.ai",
+      "affiliate_url": "https://piapi.ai?ref=tsa",
+      "logo_color": "#00b4d8",
+      "categories": ["video_generation", "image_generation", "audio_tts"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "wavespeed",
+      "name": "WaveSpeed AI",
+      "description": "Ultraszybki inference dla modeli wideo, obrazu i 3D.",
+      "url": "https://wavespeed.ai",
+      "affiliate_url": null,
+      "logo_color": "#06b6d4",
+      "categories": ["video_generation", "image_generation", "audio_tts"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "kie",
+      "name": "kie.ai",
+      "description": "Agregator modeli wideo: Runway, Veo3, Luma, Midjourney.",
+      "url": "https://kie.ai",
+      "affiliate_url": "https://kie.ai?ref=tsa",
+      "logo_color": "#8b5cf6",
+      "categories": ["video_generation", "image_generation"],
+      "type": "aggregator",
+      "hq": "USA"
+    },
+    {
+      "id": "stabilityai",
+      "name": "Stability AI",
+      "description": "Twórcy Stable Diffusion. SD3.5, SDXL, Stable Image.",
+      "url": "https://platform.stability.ai",
+      "affiliate_url": null,
+      "logo_color": "#8a2be2",
+      "categories": ["image_generation"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "bfl",
+      "name": "Black Forest Labs",
+      "description": "Twórcy modeli FLUX. Bezpośredni dostęp API do FLUX.1 i FLUX.2.",
+      "url": "https://api.bfl.ml",
+      "affiliate_url": null,
+      "logo_color": "#1a1a2e",
+      "categories": ["image_generation"],
+      "type": "direct",
+      "hq": "Niemcy"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "description": "Lider TTS. Klonowanie głosu, wielojęzyczność, studio dźwiękowe.",
+      "url": "https://elevenlabs.io/api",
+      "affiliate_url": "https://elevenlabs.io?ref=tsa",
+      "logo_color": "#f5f5f5",
+      "categories": ["audio_tts"],
+      "type": "direct",
+      "hq": "USA"
+    },
+    {
+      "id": "deepgram",
+      "name": "Deepgram",
+      "description": "Enterprise STT i TTS. Nova-3 — najdokładniejszy model na rynku.",
+      "url": "https://deepgram.com",
+      "affiliate_url": null,
+      "logo_color": "#13ef95",
+      "categories": ["audio_stt", "audio_tts"],
+      "type": "direct",
+      "hq": "USA"
+    }
+  ]
+}

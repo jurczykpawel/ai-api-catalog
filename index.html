@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog API modeli AI — TechSkills Academy</title>
+<meta name="description" content="Kompletny katalog modeli AI dostępnych przez API. Porównaj ceny, dostawców i możliwości — od LLM po generowanie wideo i audio.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:         #09090f;
+    --surface:    #0f1018;
+    --surface-2:  #161724;
+    --surface-3:  #1e1f2e;
+    --border:     rgba(255,255,255,0.06);
+    --border-md:  rgba(255,255,255,0.10);
+    --border-acc: rgba(0,138,255,0.25);
+    --text-1:     #eef0f8;
+    --text-2:     #8a8f9e;
+    --text-3:     #50546a;
+    --accent:     #008aff;
+    --accent-h:   #1a96ff;
+    --accent-glow:rgba(0,138,255,0.12);
+    --green:      #00c48c;
+    --amber:      #f59e0b;
+    --red:        #f43f5e;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-1);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Background noise texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  /* Ambient glow */
+  body::after {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(0,138,255,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(9,9,15,0.85);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .logo-mark {
+    width: 30px;
+    height: 30px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: white;
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-1);
+    letter-spacing: -0.3px;
+  }
+
+  .logo-sub {
+    font-size: 11px;
+    color: var(--text-3);
+    font-weight: 400;
+    margin-top: -2px;
+    display: block;
+  }
+
+  .search-wrap {
+    flex: 1;
+    max-width: 480px;
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-3);
+    pointer-events: none;
+  }
+
+  #search {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 9px 16px 9px 38px;
+    color: var(--text-1);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+
+  #search::placeholder { color: var(--text-3); }
+
+  #search:focus {
+    border-color: var(--border-acc);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    color: var(--text-2);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-link:hover { color: var(--text-1); }
+
+  .nav-badge {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--accent-glow);
+    color: var(--accent);
+    border: 1px solid var(--border-acc);
+    border-radius: 6px;
+    padding: 3px 8px;
+  }
+
+  /* ── LAYOUT ── */
+  .layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 24px 64px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    position: sticky;
+    top: 84px;
+    height: fit-content;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) transparent;
+  }
+
+  .filter-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .filter-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--text-3);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  /* Category pills */
+  .cat-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cat-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.15s;
+    user-select: none;
+    color: var(--text-2);
+    font-size: 13.5px;
+  }
+
+  .cat-pill:hover {
+    background: var(--surface-2);
+    color: var(--text-1);
+  }
+
+  .cat-pill.active {
+    background: var(--accent-glow);
+    border-color: var(--border-acc);
+    color: var(--accent);
+  }
+
+  .cat-pill .cat-icon {
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .cat-pill .cat-count {
+    margin-left: auto;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-3);
+    background: var(--surface-3);
+    border-radius: 4px;
+    padding: 1px 6px;
+  }
+
+  .cat-pill.active .cat-count {
+    background: rgba(0,138,255,0.2);
+    color: var(--accent);
+  }
+
+  /* Provider checkboxes */
+  .provider-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-height: 280px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) transparent;
+  }
+
+  .provider-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.12s;
+    user-select: none;
+  }
+
+  .provider-item:hover { background: var(--surface-2); }
+
+  .provider-item input[type=checkbox] {
+    accent-color: var(--accent);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .provider-item label {
+    font-size: 13px;
+    color: var(--text-2);
+    cursor: pointer;
+    flex: 1;
+    transition: color 0.12s;
+  }
+
+  .provider-item:has(:checked) label { color: var(--text-1); }
+
+  .provider-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Capability toggles */
+  .cap-toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cap-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.12s;
+    user-select: none;
+  }
+
+  .cap-toggle:hover { background: var(--surface-2); }
+
+  .cap-toggle input[type=checkbox] {
+    accent-color: var(--accent);
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
+
+  .cap-toggle label {
+    font-size: 13px;
+    color: var(--text-2);
+    cursor: pointer;
+  }
+
+  /* Multi-provider toggle */
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  .toggle-label {
+    font-size: 13px;
+    color: var(--text-2);
+  }
+
+  .toggle-switch {
+    width: 36px;
+    height: 20px;
+    background: var(--surface-3);
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+    flex-shrink: 0;
+  }
+
+  .toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--text-3);
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .toggle-switch.on {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .toggle-switch.on::after {
+    transform: translateX(16px);
+    background: white;
+  }
+
+  .reset-btn {
+    width: 100%;
+    padding: 9px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-top: 8px;
+  }
+
+  .reset-btn:hover {
+    border-color: var(--border-md);
+    color: var(--text-1);
+    background: var(--surface-2);
+  }
+
+  /* ── MAIN CONTENT ── */
+  .content { min-width: 0; }
+
+  .content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .results-count {
+    font-size: 13px;
+    color: var(--text-3);
+  }
+
+  .results-count span {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-2);
+    font-weight: 500;
+  }
+
+  .active-filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px 3px 8px;
+    background: var(--accent-glow);
+    border: 1px solid var(--border-acc);
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--accent);
+    cursor: pointer;
+  }
+
+  .filter-chip:hover { background: rgba(0,138,255,0.2); }
+
+  .sort-select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 12px;
+    color: var(--text-2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+
+  .sort-select:hover { border-color: var(--border-md); }
+
+  /* ── GRID ── */
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+  }
+
+  /* ── MODEL CARD ── */
+  .model-card {
+    background: linear-gradient(160deg, var(--surface-2) 0%, var(--surface) 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    animation: cardIn 0.3s ease both;
+  }
+
+  .model-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,138,255,0.04) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .model-card:hover {
+    border-color: var(--border-acc);
+    transform: translateY(-1px);
+  }
+
+  .model-card:hover::before { opacity: 1; }
+
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .card-badges {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .badge-cat {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    background: var(--surface-3);
+    color: var(--text-2);
+    border: 1px solid var(--border);
+  }
+
+  .badge-cap {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-size: 11px;
+    background: var(--surface-3);
+    color: var(--text-3);
+    border: 1px solid var(--border);
+  }
+
+  .badge-cap.vision  { color: #a78bfa; border-color: rgba(167,139,250,0.2); background: rgba(167,139,250,0.08); }
+  .badge-cap.reason  { color: #f59e0b; border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.08); }
+  .badge-cap.search  { color: #00c48c; border-color: rgba(0,196,140,0.2); background: rgba(0,196,140,0.08); }
+
+  .provider-count {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-3);
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .card-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text-1);
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
+  .card-desc {
+    font-size: 13.5px;
+    color: var(--text-2);
+    line-height: 1.55;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+
+  .best-price {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .price-label {
+    font-size: 10px;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .price-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--green);
+    letter-spacing: -0.3px;
+  }
+
+  .price-value.unknown { color: var(--text-3); font-size: 12px; }
+
+  .price-unit {
+    font-size: 11px;
+    color: var(--text-3);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 14px;
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 12.5px;
+    color: var(--text-2);
+    transition: all 0.15s;
+    flex-shrink: 0;
+  }
+
+  .model-card:hover .card-cta {
+    background: var(--accent-glow);
+    border-color: var(--border-acc);
+    color: var(--accent);
+  }
+
+  /* Source/date */
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .source-tag {
+    font-size: 10px;
+    color: var(--text-3);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── EMPTY STATE ── */
+  #empty {
+    display: none;
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-3);
+  }
+
+  #empty .empty-icon { font-size: 40px; margin-bottom: 16px; opacity: 0.5; }
+  #empty h3 { font-family: 'Syne', sans-serif; font-size: 18px; color: var(--text-2); margin-bottom: 8px; }
+  #empty p { font-size: 14px; }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(9,9,15,0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border-md);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 720px;
+    max-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: modalIn 0.25s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.95) translateY(8px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .modal-header {
+    padding: 24px 24px 20px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .modal-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .modal-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--text-1);
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+  }
+
+  .modal-close {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    flex-shrink: 0;
+    transition: all 0.15s;
+    line-height: 1;
+  }
+
+  .modal-close:hover {
+    background: var(--surface-3);
+    border-color: var(--border-md);
+    color: var(--text-1);
+  }
+
+  .modal-desc {
+    font-size: 14.5px;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .modal-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--text-3);
+  }
+
+  .meta-item strong { color: var(--text-2); font-weight: 500; }
+
+  .modal-caps {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .modal-body {
+    padding: 20px 24px 24px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) transparent;
+  }
+
+  .table-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+  }
+
+  /* Provider comparison table */
+  .provider-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .provider-table th {
+    text-align: left;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0 12px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .provider-table th:first-child { padding-left: 0; }
+
+  .provider-table td {
+    padding: 12px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+    vertical-align: middle;
+  }
+
+  .provider-table td:first-child { padding-left: 0; }
+
+  .provider-table tr:last-child td { border-bottom: none; }
+
+  .provider-table tr:hover td { background: var(--surface-2); }
+  .provider-table tr:hover td:first-child { border-radius: 8px 0 0 8px; }
+  .provider-table tr:hover td:last-child { border-radius: 0 8px 8px 0; }
+
+  .prov-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .prov-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .prov-name { font-weight: 500; color: var(--text-1); }
+  .prov-type { font-size: 11px; color: var(--text-3); }
+
+  .price-cell {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13.5px;
+    color: var(--green);
+    white-space: nowrap;
+  }
+
+  .price-cell.notes { color: var(--text-3); font-size: 12px; }
+
+  .price-note {
+    font-size: 11px;
+    color: var(--text-3);
+    margin-top: 2px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .best-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(0,196,140,0.1);
+    border: 1px solid rgba(0,196,140,0.2);
+    color: var(--green);
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
+
+  .link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    font-size: 12px;
+    color: var(--text-2);
+    text-decoration: none;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+
+  .link-btn:hover {
+    background: var(--accent-glow);
+    border-color: var(--border-acc);
+    color: var(--accent);
+  }
+
+  .link-btn.affiliate {
+    border-color: rgba(245,158,11,0.25);
+    background: rgba(245,158,11,0.06);
+    color: var(--amber);
+  }
+
+  .link-btn.affiliate:hover { background: rgba(245,158,11,0.12); }
+
+  .unavailable { opacity: 0.4; }
+
+  /* Loading skeleton */
+  .skeleton-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  .skeleton-line {
+    background: var(--surface-3);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    z-index: 1;
+    padding: 48px 24px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: var(--accent-glow);
+    border: 1px solid var(--border-acc);
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .hero-tag-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: blink 2s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 48px);
+    color: var(--text-1);
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    max-width: 600px;
+  }
+
+  .hero-title em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    color: var(--text-2);
+    line-height: 1.6;
+    max-width: 480px;
+    margin-bottom: 24px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .stat-value {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--text-1);
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  .stat-label { font-size: 13px; color: var(--text-3); }
+
+  /* ── FOOTER ── */
+  footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-copy { font-size: 13px; color: var(--text-3); }
+  .footer-copy a { color: var(--accent); text-decoration: none; }
+  .footer-copy a:hover { color: var(--accent-h); }
+
+  .footer-update {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-3);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      position: static;
+      max-height: none;
+    }
+
+    .filter-section {
+      padding: 14px;
+    }
+
+    .hero { padding: 32px 16px 24px; }
+    .layout { padding: 16px 16px 48px; }
+    .nav-inner { padding: 0 16px; }
+  }
+
+  @media (max-width: 600px) {
+    #grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 20px; }
+    .hero-title { font-size: 28px; }
+    .modal { border-radius: 16px; }
+    .modal-name { font-size: 20px; }
+    .nav-right { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">AI</div>
+      <div>
+        <div class="logo-text">API Katalog</div>
+        <span class="logo-sub">TechSkills Academy</span>
+      </div>
+    </a>
+
+    <div class="search-wrap">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="search" id="search" placeholder="Szukaj modelu, dostawcy lub tagu...">
+    </div>
+
+    <div class="nav-right">
+      <span id="nav-count" class="nav-badge">— modeli</span>
+      <a href="https://techskills.academy" target="_blank" class="nav-link">TechSkills Academy →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">
+    <div class="hero-tag-dot"></div>
+    Aktualizowany co tydzień
+  </div>
+  <h1 class="hero-title">Gdzie dostać <em>dowolny model AI</em> przez API?</h1>
+  <p class="hero-sub">Kompletny katalog dostawców API. Porównaj ceny, możliwości i dostępność — od LLM po generowanie wideo i audio.</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-value" id="stat-models">—</span>
+      <span class="stat-label">modeli w katalogu</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="stat-providers">—</span>
+      <span class="stat-label">dostawców API</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="stat-categories">8</span>
+      <span class="stat-label">kategorii</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="filter-section">
+      <div class="filter-title">Kategoria</div>
+      <div class="cat-pills" id="cat-pills">
+        <div class="cat-pill active" data-cat="all">
+          <span class="cat-icon">⊞</span>
+          <span>Wszystkie</span>
+          <span class="cat-count" id="count-all">—</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">Dostawca</div>
+      <div class="provider-list" id="provider-list"></div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">Możliwości</div>
+      <div class="cap-toggles">
+        <label class="cap-toggle">
+          <input type="checkbox" id="cap-vision"> <label for="cap-vision">Vision / Multimodal</label>
+        </label>
+        <label class="cap-toggle">
+          <input type="checkbox" id="cap-reasoning"> <label for="cap-reasoning">Reasoning (CoT)</label>
+        </label>
+        <label class="cap-toggle">
+          <input type="checkbox" id="cap-functions"> <label for="cap-functions">Function Calling</label>
+        </label>
+        <label class="cap-toggle">
+          <input type="checkbox" id="cap-search"> <label for="cap-search">Web Search</label>
+        </label>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">Opcje</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div class="toggle-row">
+          <span class="toggle-label">Tylko z porównaniem cen</span>
+          <div class="toggle-switch" id="toggle-multi" role="switch" aria-checked="false"></div>
+        </div>
+        <div class="toggle-row">
+          <span class="toggle-label">Tylko z affiliate link</span>
+          <div class="toggle-switch" id="toggle-affiliate" role="switch" aria-checked="false"></div>
+        </div>
+      </div>
+      <button class="reset-btn" id="reset-btn">Resetuj filtry</button>
+    </div>
+
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div class="content-header">
+      <div>
+        <div class="results-count"><span id="result-count">—</span> modeli</div>
+        <div class="active-filters" id="active-filters" style="margin-top:6px;"></div>
+      </div>
+      <select class="sort-select" id="sort-select">
+        <option value="name">A-Z</option>
+        <option value="price-asc">Cena: rosnąco</option>
+        <option value="price-desc">Cena: malejąco</option>
+        <option value="providers-desc">Najwięcej dostawców</option>
+      </select>
+    </div>
+
+    <div id="grid"></div>
+    <div id="empty">
+      <div class="empty-icon">◌</div>
+      <h3>Brak wyników</h3>
+      <p>Spróbuj zmienić filtry lub wyszukać po innej frazie.</p>
+    </div>
+
+  </main>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title-row">
+        <div>
+          <div class="modal-caps" id="modal-badges" style="margin-bottom:10px;"></div>
+          <div class="modal-name" id="modal-name"></div>
+        </div>
+        <button class="modal-close" onclick="closeModalDirect()">✕</button>
+      </div>
+      <div class="modal-desc" id="modal-desc"></div>
+      <div class="modal-meta-row" id="modal-meta"></div>
+    </div>
+    <div class="modal-body">
+      <div class="table-title">Porównanie dostawców</div>
+      <table class="provider-table" id="modal-table">
+        <thead>
+          <tr>
+            <th>Dostawca</th>
+            <th>Cena</th>
+            <th>Jednostka</th>
+            <th>Uwagi</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="modal-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="max-width:100%;">
+  <div style="max-width:1400px;margin:0 auto;padding:32px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;width:100%;">
+    <div class="footer-copy">
+      Katalog utrzymywany przez <a href="https://techskills.academy" target="_blank">TechSkills Academy</a>.
+      Ceny są orientacyjne — weryfikuj na stronie dostawcy przed użyciem.
+    </div>
+    <div class="footer-update" id="footer-date"></div>
+  </div>
+</footer>
+
+<script>
+// ─── STATE ───────────────────────────────────────────────────────
+let allModels = [];
+let allProviders = {};
+let allCategories = [];
+let filters = {
+  category: 'all',
+  providers: new Set(),
+  search: '',
+  capVision: false,
+  capReasoning: false,
+  capFunctions: false,
+  capSearch: false,
+  multiProvider: false,
+  affiliate: false,
+  sort: 'name'
+};
+
+// ─── LOAD DATA ────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const [modelsRes, providersRes, categoriesRes] = await Promise.all([
+      fetch('data/models.json'),
+      fetch('data/providers.json'),
+      fetch('data/categories.json')
+    ]);
+
+    const modelsData = await modelsRes.json();
+    const providersData = await providersRes.json();
+    const categoriesData = await categoriesRes.json();
+
+    allModels = modelsData.models;
+    allCategories = categoriesData.categories;
+    allProviders = {};
+    providersData.providers.forEach(p => { allProviders[p.id] = p; });
+
+    document.getElementById('footer-date').textContent = 'Dane z: ' + modelsData.updated_at;
+    document.getElementById('stat-models').textContent = allModels.length;
+    document.getElementById('stat-providers').textContent = providersData.providers.length;
+    document.getElementById('nav-count').textContent = allModels.length + ' modeli';
+
+    buildCategoryPills();
+    buildProviderList();
+    render();
+  } catch (err) {
+    document.getElementById('grid').innerHTML = `<div style="padding:40px;color:var(--text-3);text-align:center;">
+      <p style="margin-bottom:8px;">Błąd ładowania danych.</p>
+      <code style="font-size:12px;font-family:monospace;">${err.message}</code>
+      <p style="margin-top:12px;font-size:13px;">Upewnij się, że strona jest serwowana przez serwer HTTP (nie file://).</p>
+    </div>`;
+  }
+}
+
+// ─── BUILD UI ────────────────────────────────────────────────────
+function buildCategoryPills() {
+  const container = document.getElementById('cat-pills');
+  // Count per category
+  const counts = { all: allModels.length };
+  allCategories.forEach(c => {
+    counts[c.id] = allModels.filter(m => m.category === c.id).length;
+  });
+  document.getElementById('count-all').textContent = allModels.length;
+
+  allCategories.forEach(cat => {
+    if (!counts[cat.id]) return;
+    const div = document.createElement('div');
+    div.className = 'cat-pill';
+    div.dataset.cat = cat.id;
+    div.innerHTML = `
+      <span class="cat-icon">${cat.icon}</span>
+      <span>${cat.name}</span>
+      <span class="cat-count">${counts[cat.id]}</span>
+    `;
+    div.addEventListener('click', () => {
+      filters.category = cat.id;
+      document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+      div.classList.add('active');
+      render();
+    });
+    container.appendChild(div);
+  });
+
+  document.querySelector('.cat-pill[data-cat="all"]').addEventListener('click', () => {
+    filters.category = 'all';
+    document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+    document.querySelector('.cat-pill[data-cat="all"]').classList.add('active');
+    render();
+  });
+}
+
+function buildProviderList() {
+  const container = document.getElementById('provider-list');
+  // Collect providers actually used in models
+  const usedProviders = new Set();
+  allModels.forEach(m => m.providers.forEach(p => usedProviders.add(p.provider_id)));
+
+  Array.from(usedProviders).sort().forEach(pid => {
+    const prov = allProviders[pid];
+    if (!prov) return;
+    const div = document.createElement('div');
+    div.className = 'provider-item';
+    div.innerHTML = `
+      <input type="checkbox" id="prov-${pid}" value="${pid}">
+      <div class="provider-dot" style="background:${prov.logo_color}"></div>
+      <label for="prov-${pid}">${prov.name}</label>
+    `;
+    div.querySelector('input').addEventListener('change', (e) => {
+      if (e.target.checked) filters.providers.add(pid);
+      else filters.providers.delete(pid);
+      render();
+    });
+    container.appendChild(div);
+  });
+}
+
+// ─── FILTER + RENDER ─────────────────────────────────────────────
+function getFilteredModels() {
+  let result = allModels;
+
+  if (filters.category !== 'all') {
+    result = result.filter(m => m.category === filters.category);
+  }
+
+  if (filters.providers.size > 0) {
+    result = result.filter(m =>
+      m.providers.some(p => filters.providers.has(p.provider_id))
+    );
+  }
+
+  if (filters.search) {
+    const q = filters.search.toLowerCase();
+    result = result.filter(m =>
+      m.name.toLowerCase().includes(q) ||
+      m.description.toLowerCase().includes(q) ||
+      m.tags.some(t => t.toLowerCase().includes(q)) ||
+      m.providers.some(p => {
+        const prov = allProviders[p.provider_id];
+        return prov && prov.name.toLowerCase().includes(q);
+      })
+    );
+  }
+
+  if (filters.capVision)    result = result.filter(m => m.capabilities.includes('vision'));
+  if (filters.capReasoning) result = result.filter(m => m.capabilities.includes('reasoning'));
+  if (filters.capFunctions) result = result.filter(m => m.capabilities.includes('function_calling'));
+  if (filters.capSearch)    result = result.filter(m => m.capabilities.includes('web_search'));
+
+  if (filters.multiProvider) {
+    result = result.filter(m => m.providers.length >= 2);
+  }
+
+  if (filters.affiliate) {
+    result = result.filter(m => m.providers.some(p => p.affiliate_url));
+  }
+
+  // Sort
+  result = [...result];
+  if (filters.sort === 'name') {
+    result.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (filters.sort === 'price-asc') {
+    result.sort((a, b) => getBestPriceNum(a) - getBestPriceNum(b));
+  } else if (filters.sort === 'price-desc') {
+    result.sort((a, b) => getBestPriceNum(b) - getBestPriceNum(a));
+  } else if (filters.sort === 'providers-desc') {
+    result.sort((a, b) => b.providers.length - a.providers.length);
+  }
+
+  return result;
+}
+
+function getBestPriceNum(model) {
+  let min = Infinity;
+  model.providers.forEach(p => {
+    if (!p.available) return;
+    const price = getPriceValue(p.pricing, model.category);
+    if (price !== null && price < min) min = price;
+  });
+  return min === Infinity ? 999999 : min;
+}
+
+function getPriceValue(pricing, category) {
+  if (!pricing) return null;
+  if (pricing.per_image !== undefined) return pricing.per_image;
+  if (pricing.per_second !== undefined) return pricing.per_second;
+  if (pricing.input_per_1m !== undefined) return pricing.input_per_1m;
+  if (pricing.per_1m_chars !== undefined) return pricing.per_1m_chars;
+  if (pricing.per_minute !== undefined) return pricing.per_minute;
+  if (pricing.per_video !== undefined) return pricing.per_video;
+  if (pricing.per_megapixel !== undefined) return pricing.per_megapixel;
+  return null;
+}
+
+function formatPrice(pricing, category, short = false) {
+  if (!pricing) return { value: '—', unit: '' };
+
+  if (pricing.per_image !== undefined) {
+    return { value: '$' + pricing.per_image.toFixed(3), unit: short ? '/img' : '/ obraz' };
+  }
+  if (pricing.per_second !== undefined) {
+    return { value: '$' + pricing.per_second.toFixed(3), unit: short ? '/s' : '/ sekunda' };
+  }
+  if (pricing.per_video !== undefined) {
+    return { value: '$' + pricing.per_video.toFixed(2), unit: short ? '/vid' : '/ wideo' };
+  }
+  if (pricing.per_megapixel !== undefined) {
+    return { value: '$' + pricing.per_megapixel.toFixed(4), unit: short ? '/MP' : '/ megapiksel' };
+  }
+  if (pricing.input_per_1m !== undefined) {
+    return { value: '$' + pricing.input_per_1m.toFixed(2), unit: short ? '/1M in' : '/ 1M tokenów (in)' };
+  }
+  if (pricing.per_1m_chars !== undefined) {
+    return { value: '$' + pricing.per_1m_chars.toFixed(0), unit: short ? '/1M zn' : '/ 1M znaków' };
+  }
+  if (pricing.per_minute !== undefined) {
+    return { value: '$' + pricing.per_minute.toFixed(4), unit: short ? '/min' : '/ minutę' };
+  }
+  if (pricing.notes) {
+    return { value: '~', unit: pricing.notes, isNote: true };
+  }
+  return { value: '—', unit: '' };
+}
+
+function getBestProvider(model) {
+  let best = null;
+  let bestVal = Infinity;
+  model.providers.forEach(p => {
+    if (!p.available) return;
+    const val = getPriceValue(p.pricing, model.category);
+    if (val !== null && val < bestVal) {
+      bestVal = val;
+      best = p;
+    }
+  });
+  return best || model.providers[0];
+}
+
+function getCategoryInfo(catId) {
+  return allCategories.find(c => c.id === catId) || { name: catId, icon: '◦' };
+}
+
+function render() {
+  const models = getFilteredModels();
+  const grid = document.getElementById('grid');
+  const empty = document.getElementById('empty');
+  const countEl = document.getElementById('result-count');
+
+  countEl.textContent = models.length;
+
+  if (models.length === 0) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+  } else {
+    empty.style.display = 'none';
+    grid.innerHTML = models.map((m, i) => renderCard(m, i)).join('');
+    // Add click handlers
+    grid.querySelectorAll('.model-card').forEach(card => {
+      card.addEventListener('click', () => openModal(card.dataset.id));
+    });
+  }
+
+  updateActiveFilters();
+}
+
+function renderCard(model, idx) {
+  const cat = getCategoryInfo(model.category);
+  const bestProv = getBestProvider(model);
+  const bestPrice = bestProv ? formatPrice(bestProv.pricing, model.category, true) : { value: '—', unit: '', isNote: false };
+
+  const capBadges = [];
+  if (model.capabilities.includes('vision')) capBadges.push('<span class="badge-cap vision">vision</span>');
+  if (model.capabilities.includes('reasoning')) capBadges.push('<span class="badge-cap reason">reasoning</span>');
+  if (model.capabilities.includes('web_search')) capBadges.push('<span class="badge-cap search">web search</span>');
+
+  const availableProviders = model.providers.filter(p => p.available);
+  const providerCount = availableProviders.length;
+
+  const delay = `animation-delay:${Math.min(idx * 0.03, 0.5)}s`;
+
+  return `
+  <div class="model-card" data-id="${model.id}" style="${delay}">
+    <div class="card-top">
+      <div class="card-badges">
+        <span class="badge-cat">${cat.icon} ${cat.name}</span>
+        ${capBadges.join('')}
+      </div>
+      <span class="provider-count">${providerCount} ${providerCount === 1 ? 'dostawca' : providerCount < 5 ? 'dostawców' : 'dostawców'}</span>
+    </div>
+
+    <div class="card-name">${escHtml(model.name)}</div>
+    <div class="card-desc">${escHtml(model.description)}</div>
+
+    <div class="card-bottom">
+      <div class="best-price">
+        <span class="price-label">Najlepsza cena</span>
+        <span class="price-value ${bestPrice.isNote ? 'unknown' : ''}">${bestPrice.value}</span>
+        <span class="price-unit">${bestPrice.unit}</span>
+      </div>
+      <div class="card-cta">
+        Porównaj
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ─── MODAL ───────────────────────────────────────────────────────
+function openModal(modelId) {
+  const model = allModels.find(m => m.id === modelId);
+  if (!model) return;
+
+  const cat = getCategoryInfo(model.category);
+
+  // Badges
+  const badges = [`<span class="badge-cat">${cat.icon} ${cat.name}</span>`];
+  if (model.capabilities.includes('vision')) badges.push('<span class="badge-cap vision">vision</span>');
+  if (model.capabilities.includes('reasoning')) badges.push('<span class="badge-cap reason">reasoning</span>');
+  if (model.capabilities.includes('function_calling')) badges.push('<span class="badge-cap">function calling</span>');
+  if (model.capabilities.includes('web_search')) badges.push('<span class="badge-cap search">web search</span>');
+  if (model.capabilities.includes('prompt_caching')) badges.push('<span class="badge-cap">cache</span>');
+  document.getElementById('modal-badges').innerHTML = badges.join('');
+
+  document.getElementById('modal-name').textContent = model.name;
+  document.getElementById('modal-desc').textContent = model.description;
+
+  // Meta
+  const meta = [];
+  if (model.context_k) {
+    meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg><strong>${model.context_k}k</strong> tokenów kontekstu</div>`);
+  }
+  meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Aktualizacja: <strong>${model.updated_at}</strong></div>`);
+  if (model.tags && model.tags.length > 0) {
+    meta.push(`<div class="meta-item">${model.tags.map(t => `<span style="padding:2px 6px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-3)">${t}</span>`).join('')}</div>`);
+  }
+  document.getElementById('modal-meta').innerHTML = meta.join('');
+
+  // Find best price for comparison
+  let bestVal = Infinity;
+  model.providers.forEach(p => {
+    if (!p.available) return;
+    const v = getPriceValue(p.pricing, model.category);
+    if (v !== null && v < bestVal) bestVal = v;
+  });
+
+  // Table rows
+  const tbody = document.getElementById('modal-tbody');
+  tbody.innerHTML = '';
+  model.providers.forEach(p => {
+    const prov = allProviders[p.provider_id] || { name: p.provider_id, logo_color: '#666', type: '' };
+    const formatted = formatPrice(p.pricing, model.category);
+    const priceVal = getPriceValue(p.pricing, model.category);
+    const isBest = priceVal !== null && priceVal === bestVal && p.available;
+
+    const linkUrl = p.affiliate_url || p.url;
+    const isAffiliate = !!p.affiliate_url;
+
+    const row = document.createElement('tr');
+    if (!p.available) row.classList.add('unavailable');
+
+    let priceHtml;
+    if (formatted.isNote) {
+      priceHtml = `<td><div class="price-cell notes">${escHtml(formatted.value)}</div><div class="price-note">${escHtml(formatted.unit)}</div></td><td></td>`;
+    } else {
+      priceHtml = `
+        <td><div class="price-cell" style="${p.available ? '' : 'color:var(--text-3)'}">${escHtml(formatted.value)}${isBest ? ' <span class="best-badge">✓ najtaniej</span>' : ''}</div></td>
+        <td><span style="font-size:12px;color:var(--text-3);font-family:'JetBrains Mono',monospace;">${escHtml(formatted.unit)}</span></td>
+      `;
+    }
+
+    // Notes / secondary price
+    let notesHtml = '';
+    if (p.pricing && p.pricing.notes) {
+      notesHtml = `<div class="price-note">${escHtml(p.pricing.notes)}</div>`;
+    }
+    if (p.notes) {
+      notesHtml += `<div class="price-note">${escHtml(p.notes)}</div>`;
+    }
+    // For LLM also show output price
+    let outputHtml = '';
+    if (p.pricing && p.pricing.output_per_1m !== undefined) {
+      outputHtml = `<div class="price-note">out: <span style="font-family:'JetBrains Mono',monospace;">$${p.pricing.output_per_1m.toFixed(2)}</span> / 1M</div>`;
+    }
+
+    row.innerHTML = `
+      <td>
+        <div class="prov-name-cell">
+          <div class="prov-dot" style="background:${prov.logo_color || '#666'}"></div>
+          <div>
+            <div class="prov-name">${escHtml(prov.name)}</div>
+            <div class="prov-type">${prov.type === 'aggregator' ? 'agregator' : prov.type === 'direct' ? 'bezpośredni' : ''}</div>
+          </div>
+        </div>
+      </td>
+      ${priceHtml}
+      <td>${notesHtml}${outputHtml}</td>
+      <td>
+        ${linkUrl && p.available ? `<a href="${escAttr(linkUrl)}" target="_blank" rel="noopener" class="link-btn ${isAffiliate ? 'affiliate' : ''}">
+          ${isAffiliate ? '★ ' : ''}Przejdź
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        </a>` : !p.available ? '<span style="font-size:11px;color:var(--text-3)">niedostępny</span>' : ''}
+      </td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModalDirect();
+}
+
+function closeModalDirect() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close on Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModalDirect();
+});
+
+// ─── ACTIVE FILTERS ───────────────────────────────────────────────
+function updateActiveFilters() {
+  const container = document.getElementById('active-filters');
+  const chips = [];
+
+  if (filters.category !== 'all') {
+    const cat = getCategoryInfo(filters.category);
+    chips.push(`<span class="filter-chip" onclick="clearCategory()">${cat.icon} ${cat.name} ×</span>`);
+  }
+  if (filters.search) {
+    chips.push(`<span class="filter-chip" onclick="clearSearch()">Szukaj: "${escHtml(filters.search)}" ×</span>`);
+  }
+  filters.providers.forEach(pid => {
+    const p = allProviders[pid];
+    if (p) chips.push(`<span class="filter-chip" onclick="clearProvider('${pid}')">${p.name} ×</span>`);
+  });
+  if (filters.capVision)    chips.push(`<span class="filter-chip" onclick="clearCap('vision')">Vision ×</span>`);
+  if (filters.capReasoning) chips.push(`<span class="filter-chip" onclick="clearCap('reasoning')">Reasoning ×</span>`);
+  if (filters.capFunctions) chips.push(`<span class="filter-chip" onclick="clearCap('functions')">Functions ×</span>`);
+  if (filters.capSearch)    chips.push(`<span class="filter-chip" onclick="clearCap('search')">Web Search ×</span>`);
+  if (filters.multiProvider) chips.push(`<span class="filter-chip" onclick="clearToggle('multi')">Porównanie cen ×</span>`);
+  if (filters.affiliate)    chips.push(`<span class="filter-chip" onclick="clearToggle('affiliate')">Affiliate ×</span>`);
+
+  container.innerHTML = chips.join('');
+}
+
+function clearCategory() {
+  filters.category = 'all';
+  document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+  document.querySelector('.cat-pill[data-cat="all"]').classList.add('active');
+  render();
+}
+
+function clearSearch() {
+  filters.search = '';
+  document.getElementById('search').value = '';
+  render();
+}
+
+function clearProvider(pid) {
+  filters.providers.delete(pid);
+  const checkbox = document.getElementById('prov-' + pid);
+  if (checkbox) checkbox.checked = false;
+  render();
+}
+
+function clearCap(cap) {
+  if (cap === 'vision')    { filters.capVision = false;    document.getElementById('cap-vision').checked = false; }
+  if (cap === 'reasoning') { filters.capReasoning = false; document.getElementById('cap-reasoning').checked = false; }
+  if (cap === 'functions') { filters.capFunctions = false; document.getElementById('cap-functions').checked = false; }
+  if (cap === 'search')    { filters.capSearch = false;    document.getElementById('cap-search').checked = false; }
+  render();
+}
+
+function clearToggle(which) {
+  if (which === 'multi') {
+    filters.multiProvider = false;
+    document.getElementById('toggle-multi').classList.remove('on');
+    document.getElementById('toggle-multi').setAttribute('aria-checked', 'false');
+  }
+  if (which === 'affiliate') {
+    filters.affiliate = false;
+    document.getElementById('toggle-affiliate').classList.remove('on');
+    document.getElementById('toggle-affiliate').setAttribute('aria-checked', 'false');
+  }
+  render();
+}
+
+// ─── EVENT LISTENERS ─────────────────────────────────────────────
+document.getElementById('search').addEventListener('input', (e) => {
+  filters.search = e.target.value.trim();
+  render();
+});
+
+document.getElementById('sort-select').addEventListener('change', (e) => {
+  filters.sort = e.target.value;
+  render();
+});
+
+document.getElementById('cap-vision').addEventListener('change', (e) => {
+  filters.capVision = e.target.checked;
+  render();
+});
+
+document.getElementById('cap-reasoning').addEventListener('change', (e) => {
+  filters.capReasoning = e.target.checked;
+  render();
+});
+
+document.getElementById('cap-functions').addEventListener('change', (e) => {
+  filters.capFunctions = e.target.checked;
+  render();
+});
+
+document.getElementById('cap-search').addEventListener('change', (e) => {
+  filters.capSearch = e.target.checked;
+  render();
+});
+
+document.getElementById('toggle-multi').addEventListener('click', function() {
+  filters.multiProvider = !filters.multiProvider;
+  this.classList.toggle('on', filters.multiProvider);
+  this.setAttribute('aria-checked', filters.multiProvider);
+  render();
+});
+
+document.getElementById('toggle-affiliate').addEventListener('click', function() {
+  filters.affiliate = !filters.affiliate;
+  this.classList.toggle('on', filters.affiliate);
+  this.setAttribute('aria-checked', filters.affiliate);
+  render();
+});
+
+document.getElementById('reset-btn').addEventListener('click', () => {
+  filters.category = 'all';
+  filters.providers = new Set();
+  filters.search = '';
+  filters.capVision = false;
+  filters.capReasoning = false;
+  filters.capFunctions = false;
+  filters.capSearch = false;
+  filters.multiProvider = false;
+  filters.affiliate = false;
+  filters.sort = 'name';
+
+  document.getElementById('search').value = '';
+  document.getElementById('sort-select').value = 'name';
+  document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+  document.querySelector('.cat-pill[data-cat="all"]').classList.add('active');
+  document.querySelectorAll('.provider-item input[type=checkbox]').forEach(c => c.checked = false);
+  document.getElementById('cap-vision').checked = false;
+  document.getElementById('cap-reasoning').checked = false;
+  document.getElementById('cap-functions').checked = false;
+  document.getElementById('cap-search').checked = false;
+  document.getElementById('toggle-multi').classList.remove('on');
+  document.getElementById('toggle-affiliate').classList.remove('on');
+
+  render();
+});
+
+// ─── UTILS ───────────────────────────────────────────────────────
+function escHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function escAttr(str) {
+  return escHtml(str);
+}
+
+// ─── INIT ────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
