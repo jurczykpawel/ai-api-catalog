@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Models](https://img.shields.io/badge/Models-2000%2B-blue)
 ![Providers](https://img.shields.io/badge/Providers-25%2B-blue)
-![Updated](https://img.shields.io/badge/Updated-weekly-brightgreen)
+![Updated](https://img.shields.io/badge/Updated-daily-brightgreen)
 ![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen)
 
 ---
@@ -55,7 +55,7 @@ python3 -m http.server 8080
 
 ## Updating data
 
-Run once a week to pull fresh pricing from all provider APIs:
+Run daily to pull fresh pricing from all provider APIs:
 
 ```bash
 bash scripts/update-litellm.sh
@@ -94,7 +94,7 @@ ai-api-catalog/
 │   ├── provider-patches.json   # Manual provider additions for specific model IDs
 │   └── *-raw.json              # Raw API responses (auto-fetched, do not edit)
 ├── scripts/
-│   ├── update-litellm.sh       # Main update script — run this weekly
+│   ├── update-litellm.sh       # Main update script — run this daily
 │   ├── merge-data.py           # Merges all sources into models.json
 │   ├── validate-schema.py      # JSON schema validation before deploy
 │   ├── model-radar.py          # Detects new models vs last snapshot
@@ -204,7 +204,7 @@ For models that exist in LiteLLM but are missing a provider entry, use `data/pro
 - **Frontend:** vanilla JavaScript, [Tailwind CSS](https://tailwindcss.com/) (CDN), [Syne](https://fonts.google.com/specimen/Syne) + [DM Sans](https://fonts.google.com/specimen/DM+Sans) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
 - **Data pipeline:** Python 3 scripts (stdlib only — no pip install required)
 - **Primary data sources:** [LiteLLM model prices](https://github.com/BerriAI/litellm), [OpenRouter API](https://openrouter.ai/api/frontend/models), [fal.ai API](https://fal.ai)
-- **Automation:** [n8n](https://n8n.io) workflows for weekly updates and news radar
+- **Automation:** [n8n](https://n8n.io) workflows for daily updates and news radar
 - **Hosting:** nginx static file serving
 
 ---
