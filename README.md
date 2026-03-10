@@ -2,7 +2,7 @@
 
 > Compare prices, providers, and capabilities for 2,000+ AI models available via API — from LLMs to video generation.
 
-**[Live Catalog](https://modele.techskills.academy)** · [Report an Issue](https://github.com/jurczykpawel/ai-api-catalog/issues) · [Add a Model](#contributing)
+**[Live Catalog](https://aiapi.techskills.academy)** · [Report an Issue](https://github.com/jurczykpawel/ai-api-catalog/issues) · [Add a Model](#contributing)
 
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Models](https://img.shields.io/badge/Models-2000%2B-blue)

@@ -2,7 +2,7 @@
 
 Instructions for AI agents on how to query the catalog and make provider decisions.
 
-**Base URL:** `https://modele.techskills.academy`
+**Base URL:** `https://aiapi.techskills.academy`
 
 ---
 
