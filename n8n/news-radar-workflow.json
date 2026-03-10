@@ -1,0 +1,237 @@
+{
+  "name": "AI News Radar — nowe modele (codziennie)",
+  "nodes": [
+    {
+      "id": "trigger",
+      "name": "Cron — codziennie 9:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [120, 400],
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 9 * * *" }]
+        }
+      }
+    },
+    {
+      "id": "rss_decoder",
+      "name": "RSS: The Decoder",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [360, 160],
+      "parameters": { "url": "https://the-decoder.com/feed/" }
+    },
+    {
+      "id": "rss_venturebeat",
+      "name": "RSS: VentureBeat AI",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [360, 280],
+      "parameters": { "url": "https://venturebeat.com/ai/feed/" }
+    },
+    {
+      "id": "rss_hf",
+      "name": "RSS: HuggingFace Blog",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [360, 400],
+      "parameters": { "url": "https://huggingface.co/blog/feed.xml" }
+    },
+    {
+      "id": "rss_techcrunch",
+      "name": "RSS: TechCrunch AI",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [360, 520],
+      "parameters": { "url": "https://techcrunch.com/category/artificial-intelligence/feed/" }
+    },
+    {
+      "id": "rss_verge",
+      "name": "RSS: The Verge AI",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [360, 640],
+      "parameters": { "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml" }
+    },
+    {
+      "id": "rss_mistral",
+      "name": "RSS: Mistral Blog",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [360, 760],
+      "parameters": { "url": "https://mistral.ai/news/feed.xml" },
+      "continueOnFail": true
+    },
+    {
+      "id": "merge",
+      "name": "Scal wszystkie feedy",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [620, 400],
+      "parameters": { "mode": "append" }
+    },
+    {
+      "id": "filter",
+      "name": "Filtruj ostatnie 24h + dedup",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [860, 400],
+      "parameters": {
+        "jsCode": "// Pobierz przetworzone URL z poprzednich runów\nconst staticData = $getWorkflowStaticData('global');\nconst seen = new Set(staticData.seenUrls || []);\n\nconst cutoff = Date.now() - 24 * 60 * 60 * 1000; // 24h\nconst fresh = [];\nconst newSeen = [];\n\nfor (const item of $input.all()) {\n  const pub = item.json.pubDate || item.json.isoDate || item.json.date || '';\n  const url = item.json.link || item.json.url || '';\n  const title = item.json.title || '';\n  \n  if (!url || !title) continue;\n  if (seen.has(url)) continue;\n  \n  // Sprawdź czy artykuł jest z ostatnich 24h\n  const pubTime = pub ? new Date(pub).getTime() : Date.now();\n  if (pub && pubTime < cutoff) continue;\n  \n  fresh.push({ json: {\n    title,\n    url,\n    description: (item.json.contentSnippet || item.json.summary || item.json.content || '').slice(0, 400),\n    source: item.json.feedTitle || new URL(url).hostname,\n    published: pub,\n  }});\n  newSeen.push(url);\n}\n\n// Ogranicz do 60 artykułów na run\nconst result = fresh.slice(0, 60);\n\n// Zapisz nowe URL do static data (max 1000 wpisów)\nstaticData.seenUrls = [...seen, ...newSeen].slice(-1000);\n\nif (result.length === 0) {\n  return [{ json: { isEmpty: true, count: 0 } }];\n}\n\nreturn [{ json: { isEmpty: false, count: result.length, articles: result.map(r => r.json) } }];"
+      }
+    },
+    {
+      "id": "if_empty",
+      "name": "Są nowe artykuły?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1100, 400],
+      "parameters": {
+        "conditions": {
+          "boolean": [{ "value1": "={{ $json.isEmpty }}", "value2": false }]
+        }
+      }
+    },
+    {
+      "id": "claude",
+      "name": "Claude — wyciągnij nowe modele AI",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1340, 280],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "={{ $vars.ANTHROPIC_API_KEY }}" },
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"model\": \"claude-haiku-4-5-20251001\",\n  \"max_tokens\": 1024,\n  \"messages\": [{\n    \"role\": \"user\",\n    \"content\": \"Analyze these AI news headlines from the last 24 hours. Identify ONLY articles announcing: (1) new AI models being released or announced, (2) new API access to AI models, (3) significant model updates/versions. Ignore articles about regulations, business news, fundraising, tutorials, or opinion pieces.\\n\\nReturn a JSON array only (no markdown): [{\\\"name\\\": \\\"Model name\\\", \\\"provider\\\": \\\"Company\\\", \\\"category\\\": \\\"llm|image|video|audio|other\\\", \\\"has_api\\\": true/false, \\\"url\\\": \\\"article url\\\", \\\"summary\\\": \\\"1 sentence in Polish\\\"}]\\n\\nIf nothing relevant found, return: []\\n\\nHeadlines:\\n{{ $json.articles.map((a, i) => `${i+1}. [${a.source}] ${a.title} — ${a.description.slice(0,150)} (${a.url})`).join('\\\\n') }}\"\n  }]\n}"
+      }
+    },
+    {
+      "id": "parse_claude",
+      "name": "Parsuj odpowiedź Claude",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1580, 280],
+      "parameters": {
+        "jsCode": "const body = $input.first().json;\nconst text = body?.content?.[0]?.text || '[]';\n\nlet models = [];\ntry {\n  // Wyciągnij JSON z odpowiedzi (może mieć markdown)\n  const match = text.match(/\\[.*\\]/s);\n  if (match) models = JSON.parse(match[0]);\n} catch(e) {\n  console.log('Parse error:', e.message, 'text:', text.slice(0,200));\n}\n\nif (!Array.isArray(models) || models.length === 0) {\n  return [{ json: { isEmpty: true, models: [] } }];\n}\n\n// Filtruj niepełne wpisy\nmodels = models.filter(m => m.name && m.provider && m.url);\n\nreturn [{ json: { isEmpty: models.length === 0, count: models.length, models } }];"
+      }
+    },
+    {
+      "id": "if_models",
+      "name": "Znaleziono nowe modele?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1820, 280],
+      "parameters": {
+        "conditions": {
+          "boolean": [{ "value1": "={{ $json.isEmpty }}", "value2": false }]
+        }
+      }
+    },
+    {
+      "id": "nocodb_save",
+      "name": "Zapisz do NocoDB",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2060, 160],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.NOCODB_URL }}/api/v1/db/data/noco/{{ $vars.NOCODB_PROJECT_ID }}/{{ $vars.NOCODB_TABLE_AI_MODELS }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "xc-token", "value": "={{ $vars.NOCODB_API_TOKEN }}" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={{ JSON.stringify($json.models.map(m => ({\n  Name: m.name,\n  Provider: m.provider,\n  Category: m.category,\n  Has_API: m.has_api,\n  Summary: m.summary,\n  URL: m.url,\n  Status: 'new',\n  Detected_At: new Date().toISOString().split('T')[0]\n}))) }}",
+        "notes": "Ustaw zmienne: NOCODB_URL, NOCODB_PROJECT_ID, NOCODB_TABLE_AI_MODELS, NOCODB_API_TOKEN"
+      },
+      "continueOnFail": true
+    },
+    {
+      "id": "discord",
+      "name": "Discord — wyślij digest",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2060, 360],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.DISCORD_WEBHOOK_URL }}",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"username\": \"AI Model Radar\",\n  \"avatar_url\": \"https://huggingface.co/front/assets/huggingface_logo-noborder.svg\",\n  \"embeds\": [{\n    \"title\": \"🔍 Nowe modele AI — \" + new Date().toLocaleDateString('pl-PL'),\n    \"color\": 39423,\n    \"description\": $json.models.slice(0,10).map(m => {\n      const apiTag = m.has_api ? '`API`' : '`brak API`';\n      const catEmoji = {llm:'💬',image:'🎨',video:'🎬',audio:'🔊',other:'🤖'}[m.category] || '🤖';\n      return `${catEmoji} **${m.name}** (${m.provider}) ${apiTag}\\n${m.summary}\\n<${m.url}>`;\n    }).join('\\n\\n'),\n    \"footer\": { \"text\": \"AI API Catalog · TechSkills Academy\" }\n  }]\n}",
+        "notes": "Ustaw zmienną DISCORD_WEBHOOK_URL w n8n Settings → Variables"
+      }
+    },
+    {
+      "id": "noop_empty",
+      "name": "Brak nowych artykułów",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1340, 560],
+      "parameters": {}
+    },
+    {
+      "id": "noop_no_models",
+      "name": "Brak nowych modeli",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [2060, 560],
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "trigger": {
+      "main": [[
+        {"node": "rss_decoder",    "type": "main", "index": 0},
+        {"node": "rss_venturebeat","type": "main", "index": 0},
+        {"node": "rss_hf",         "type": "main", "index": 0},
+        {"node": "rss_techcrunch", "type": "main", "index": 0},
+        {"node": "rss_verge",      "type": "main", "index": 0},
+        {"node": "rss_mistral",    "type": "main", "index": 0}
+      ]]
+    },
+    "rss_decoder":     {"main": [[{"node": "merge", "type": "main", "index": 0}]]},
+    "rss_venturebeat": {"main": [[{"node": "merge", "type": "main", "index": 0}]]},
+    "rss_hf":          {"main": [[{"node": "merge", "type": "main", "index": 0}]]},
+    "rss_techcrunch":  {"main": [[{"node": "merge", "type": "main", "index": 0}]]},
+    "rss_verge":       {"main": [[{"node": "merge", "type": "main", "index": 0}]]},
+    "rss_mistral":     {"main": [[{"node": "merge", "type": "main", "index": 0}]]},
+    "merge":           {"main": [[{"node": "filter",    "type": "main", "index": 0}]]},
+    "filter":          {"main": [[{"node": "if_empty",  "type": "main", "index": 0}]]},
+    "if_empty": {
+      "main": [
+        [{"node": "claude",      "type": "main", "index": 0}],
+        [{"node": "noop_empty",  "type": "main", "index": 0}]
+      ]
+    },
+    "claude":          {"main": [[{"node": "parse_claude", "type": "main", "index": 0}]]},
+    "parse_claude":    {"main": [[{"node": "if_models",    "type": "main", "index": 0}]]},
+    "if_models": {
+      "main": [
+        [
+          {"node": "nocodb_save", "type": "main", "index": 0},
+          {"node": "discord",     "type": "main", "index": 0}
+        ],
+        [{"node": "noop_no_models", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "Europe/Warsaw",
+    "executionOrder": "v1",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "all"
+  }
+}

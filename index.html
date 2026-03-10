@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
     --border-acc: rgba(0,138,255,0.25);
     --text-1:     #eef0f8;
     --text-2:     #8a8f9e;
-    --text-3:     #50546a;
+    --text-3:     #767c98;
     --accent:     #008aff;
     --accent-h:   #1a96ff;
     --accent-glow:rgba(0,138,255,0.12);
@@ -30,6 +30,18 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
 
   body {
     background: var(--bg);
@@ -157,9 +169,38 @@
 
   #search::placeholder { color: var(--text-3); }
 
-  #search:focus {
+  #search:focus-visible {
     border-color: var(--border-acc);
     box-shadow: 0 0 0 3px var(--accent-glow);
+    outline: none;
+  }
+
+  /* ── FOCUS VISIBLE ── */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  /* elements with custom focus styles */
+  #search:focus-visible,
+  .modal-close:focus-visible,
+  .reset-btn:focus-visible,
+  .lang-btn:focus-visible,
+  .link-btn:focus-visible,
+  .cat-pill:focus-visible,
+  .toggle-switch:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* ── PREFERS REDUCED MOTION ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 
   .nav-right {
@@ -248,6 +289,10 @@
     user-select: none;
     color: var(--text-2);
     font-size: 13.5px;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    width: 100%;
   }
 
   .cat-pill:hover {
@@ -413,17 +458,16 @@
   }
 
   .reset-btn {
-    width: 100%;
-    padding: 9px;
+    padding: 6px 11px;
     background: transparent;
     border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text-2);
+    border-radius: 7px;
+    color: var(--text-3);
     font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     transition: all 0.15s;
-    margin-top: 8px;
+    white-space: nowrap;
   }
 
   .reset-btn:hover {
@@ -472,6 +516,7 @@
     font-size: 12px;
     color: var(--accent);
     cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
   }
 
   .filter-chip:hover { background: rgba(0,138,255,0.2); }
@@ -490,6 +535,46 @@
   }
 
   .sort-select:hover { border-color: var(--border-md); }
+
+  .toolbar-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 11px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-3);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+    white-space: nowrap;
+  }
+  .toolbar-toggle:hover { border-color: var(--border-md); color: var(--text-2); }
+  .toolbar-toggle.active {
+    background: rgba(0,138,255,0.12);
+    border-color: rgba(0,138,255,0.4);
+    color: var(--accent);
+  }
+  .toolbar-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .toolbar-toggle .tt-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.6;
+  }
+  .toolbar-toggle.active .tt-dot { opacity: 1; }
+
+  .content-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
 
   /* ── GRID ── */
   #grid {
@@ -522,9 +607,15 @@
     pointer-events: none;
   }
 
-  .model-card:hover {
+  .model-card:hover,
+  .model-card:focus-visible {
     border-color: var(--border-acc);
     transform: translateY(-1px);
+    outline: none;
+  }
+
+  .model-card:focus-visible {
+    box-shadow: 0 0 0 3px var(--accent-glow);
   }
 
   .model-card:hover::before { opacity: 1; }
@@ -575,6 +666,10 @@
   .badge-cap.vision  { color: #a78bfa; border-color: rgba(167,139,250,0.2); background: rgba(167,139,250,0.08); }
   .badge-cap.reason  { color: #f59e0b; border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.08); }
   .badge-cap.search  { color: #00c48c; border-color: rgba(0,196,140,0.2); background: rgba(0,196,140,0.08); }
+  .badge-cap.oss     { color: #34d399; border-color: rgba(52,211,153,0.22); background: rgba(52,211,153,0.08); }
+  .badge-cap.local   { color: #60a5fa; border-color: rgba(96,165,250,0.22); background: rgba(96,165,250,0.08); }
+  .badge-cap.free      { color: #4ade80; border-color: rgba(74,222,128,0.25); background: rgba(74,222,128,0.08); font-weight: 600; }
+  .badge-cap.free.tier { color: #fbbf24; border-color: rgba(251,191,36,0.25); background: rgba(251,191,36,0.08); }
 
   .provider-count {
     font-size: 11px;
@@ -583,6 +678,13 @@
     flex-shrink: 0;
     white-space: nowrap;
   }
+  .provider-count.local-only {
+    color: #60a5fa;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+  }
+  .local-only-card { opacity: 0.82; }
 
   .card-name {
     font-family: 'Syne', sans-serif;
@@ -695,9 +797,9 @@
     position: fixed;
     inset: 0;
     z-index: 200;
-    background: rgba(9,9,15,0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(9,9,15,0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     align-items: center;
     justify-content: center;
     padding: 24px;
@@ -1054,6 +1156,87 @@
     color: var(--text-3);
   }
 
+  /* ── LANG TOGGLE ── */
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px;
+    flex-shrink: 0;
+  }
+
+  .lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-3);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.04em;
+  }
+
+  .lang-btn:hover { color: var(--text-2); }
+
+  .lang-btn.active {
+    background: var(--accent-glow);
+    color: var(--accent);
+    border: 1px solid var(--border-acc);
+  }
+
+  /* ── VERSION BADGE ── */
+  .version-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+
+  .version-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-2);
+  }
+
+  .version-tag.current {
+    color: var(--accent);
+    background: var(--accent-glow);
+    border-color: var(--border-acc);
+  }
+
+  .version-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 1px 6px;
+    background: var(--surface-3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-3);
+    white-space: nowrap;
+  }
+
+  .version-pill.current {
+    background: var(--accent-glow);
+    border-color: var(--border-acc);
+    color: var(--accent);
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .layout {
@@ -1098,14 +1281,19 @@
     </a>
 
     <div class="search-wrap">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
       </svg>
-      <input type="search" id="search" placeholder="Szukaj modelu, dostawcy lub tagu...">
+      <label for="search" class="sr-only">Search models, providers or tags</label>
+      <input type="search" id="search" placeholder="Szukaj modelu, dostawcy lub tagu..." aria-label="Szukaj modelu, dostawcy lub tagu...">
     </div>
 
     <div class="nav-right">
-      <span id="nav-count" class="nav-badge">— modeli</span>
+      <span id="nav-count" class="nav-badge">—</span>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="pl" onclick="setLang('pl')">PL</button>
+      </div>
       <a href="https://techskills.academy" target="_blank" class="nav-link">TechSkills Academy →</a>
     </div>
   </div>
@@ -1115,22 +1303,22 @@
 <section class="hero">
   <div class="hero-tag">
     <div class="hero-tag-dot"></div>
-    Aktualizowany co tydzień
+    <span data-i18n="heroTag">Updated weekly</span>
   </div>
-  <h1 class="hero-title">Gdzie dostać <em>dowolny model AI</em> przez API?</h1>
-  <p class="hero-sub">Kompletny katalog dostawców API. Porównaj ceny, możliwości i dostępność — od LLM po generowanie wideo i audio.</p>
+  <h1 class="hero-title" data-i18n="heroTitle">Where to get <em>any AI model</em> via API?</h1>
+  <p class="hero-sub" data-i18n="heroSub">Complete API provider catalog. Compare prices, capabilities and availability — from LLM to video and audio generation.</p>
   <div class="hero-stats">
     <div class="stat">
       <span class="stat-value" id="stat-models">—</span>
-      <span class="stat-label">modeli w katalogu</span>
+      <span class="stat-label" data-i18n="statModels">models in catalog</span>
     </div>
     <div class="stat">
       <span class="stat-value" id="stat-providers">—</span>
-      <span class="stat-label">dostawców API</span>
+      <span class="stat-label" data-i18n="statProviders">API providers</span>
     </div>
     <div class="stat">
       <span class="stat-value" id="stat-categories">8</span>
-      <span class="stat-label">kategorii</span>
+      <span class="stat-label" data-i18n="statCategories">categories</span>
     </div>
   </div>
 </section>
@@ -1142,53 +1330,39 @@
   <aside class="sidebar">
 
     <div class="filter-section">
-      <div class="filter-title">Kategoria</div>
+      <div class="filter-title" data-i18n="filterCategory">Category</div>
       <div class="cat-pills" id="cat-pills">
-        <div class="cat-pill active" data-cat="all">
-          <span class="cat-icon">⊞</span>
-          <span>Wszystkie</span>
-          <span class="cat-count" id="count-all">—</span>
-        </div>
+        <button type="button" class="cat-pill active" data-cat="all">
+          <span class="cat-icon" aria-hidden="true">⊞</span>
+          <span data-i18n="filterAll">All</span>
+          <span class="cat-count" id="count-all" aria-hidden="true">—</span>
+        </button>
       </div>
     </div>
 
     <div class="filter-section">
-      <div class="filter-title">Dostawca</div>
+      <div class="filter-title" data-i18n="filterProvider">Provider</div>
       <div class="provider-list" id="provider-list"></div>
     </div>
 
     <div class="filter-section">
-      <div class="filter-title">Możliwości</div>
+      <div class="filter-title" data-i18n="filterCapabilities">Capabilities</div>
       <div class="cap-toggles">
-        <label class="cap-toggle">
+        <div class="cap-toggle">
           <input type="checkbox" id="cap-vision"> <label for="cap-vision">Vision / Multimodal</label>
-        </label>
-        <label class="cap-toggle">
+        </div>
+        <div class="cap-toggle">
           <input type="checkbox" id="cap-reasoning"> <label for="cap-reasoning">Reasoning (CoT)</label>
-        </label>
-        <label class="cap-toggle">
+        </div>
+        <div class="cap-toggle">
           <input type="checkbox" id="cap-functions"> <label for="cap-functions">Function Calling</label>
-        </label>
-        <label class="cap-toggle">
+        </div>
+        <div class="cap-toggle">
           <input type="checkbox" id="cap-search"> <label for="cap-search">Web Search</label>
-        </label>
+        </div>
       </div>
     </div>
 
-    <div class="filter-section">
-      <div class="filter-title">Opcje</div>
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div class="toggle-row">
-          <span class="toggle-label">Tylko z porównaniem cen</span>
-          <div class="toggle-switch" id="toggle-multi" role="switch" aria-checked="false"></div>
-        </div>
-        <div class="toggle-row">
-          <span class="toggle-label">Tylko z affiliate link</span>
-          <div class="toggle-switch" id="toggle-affiliate" role="switch" aria-checked="false"></div>
-        </div>
-      </div>
-      <button class="reset-btn" id="reset-btn">Resetuj filtry</button>
-    </div>
 
   </aside>
 
@@ -1197,22 +1371,42 @@
 
     <div class="content-header">
       <div>
-        <div class="results-count"><span id="result-count">—</span> modeli</div>
+        <div class="results-count" role="status" aria-live="polite" aria-atomic="true"><span id="result-count">—</span> <span data-i18n="models">models</span></div>
         <div class="active-filters" id="active-filters" style="margin-top:6px;"></div>
       </div>
-      <select class="sort-select" id="sort-select">
-        <option value="name">A-Z</option>
-        <option value="price-asc">Cena: rosnąco</option>
-        <option value="price-desc">Cena: malejąco</option>
-        <option value="providers-desc">Najwięcej dostawców</option>
-      </select>
+      <div class="content-toolbar">
+        <button class="toolbar-toggle" id="toggle-multi" role="switch" aria-checked="false" data-i18n="optionMulti">
+          <span class="tt-dot"></span>Price comparison
+        </button>
+        <button class="toolbar-toggle" id="toggle-affiliate" role="switch" aria-checked="false" data-i18n-aria="optionAffiliate">
+          <span class="tt-dot"></span>Affiliate
+        </button>
+        <button class="toolbar-toggle" id="toggle-opensource" role="switch" aria-checked="false" data-i18n-aria="optionOpenSource">
+          <span class="tt-dot"></span>OSS / local
+        </button>
+        <button class="toolbar-toggle" id="toggle-freeapi" role="switch" aria-checked="false" data-i18n-aria="optionFreeApi"
+          title="FREE = całkowicie bezpłatny | FREE tier = darmowy z limitami, płatna wersja też dostępna">
+          <span class="tt-dot"></span>Free API
+        </button>
+        <button class="toolbar-toggle" id="toggle-apionly" role="switch" aria-checked="false" data-i18n-aria="optionApiOnly"
+          title="Pokaż tylko modele dostępne przez API (ukryj modele wyłącznie lokalne)">
+          <span class="tt-dot"></span>Tylko API
+        </button>
+        <button class="reset-btn" id="reset-btn" data-i18n="resetFilters">Reset filters</button>
+        <select class="sort-select" id="sort-select">
+          <option value="name" data-i18n="sortAZ">A-Z</option>
+          <option value="price-asc" data-i18n="sortPriceAsc">Price: ascending</option>
+          <option value="price-desc" data-i18n="sortPriceDesc">Price: descending</option>
+          <option value="providers-desc" data-i18n="sortProviders">Most providers</option>
+        </select>
+      </div>
     </div>
 
     <div id="grid"></div>
     <div id="empty">
       <div class="empty-icon">◌</div>
-      <h3>Brak wyników</h3>
-      <p>Spróbuj zmienić filtry lub wyszukać po innej frazie.</p>
+      <h3 data-i18n="noResults">No results</h3>
+      <p data-i18n="noResultsSub">Try changing filters or searching a different phrase.</p>
     </div>
 
   </main>
@@ -1220,27 +1414,27 @@
 
 <!-- MODAL -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
-  <div class="modal" id="modal">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
     <div class="modal-header">
       <div class="modal-title-row">
         <div>
           <div class="modal-caps" id="modal-badges" style="margin-bottom:10px;"></div>
           <div class="modal-name" id="modal-name"></div>
         </div>
-        <button class="modal-close" onclick="closeModalDirect()">✕</button>
+        <button class="modal-close" onclick="closeModalDirect()" aria-label="Zamknij">✕</button>
       </div>
       <div class="modal-desc" id="modal-desc"></div>
       <div class="modal-meta-row" id="modal-meta"></div>
     </div>
     <div class="modal-body">
-      <div class="table-title">Porównanie dostawców</div>
+      <div class="table-title" data-i18n="providerComparison">Provider comparison</div>
       <table class="provider-table" id="modal-table">
         <thead>
           <tr>
-            <th>Dostawca</th>
-            <th>Cena</th>
-            <th>Jednostka</th>
-            <th>Uwagi</th>
+            <th data-i18n="thProvider">Provider</th>
+            <th data-i18n="thPrice">Price</th>
+            <th data-i18n="thUnit">Unit</th>
+            <th data-i18n="thNotes">Notes</th>
             <th></th>
           </tr>
         </thead>
@@ -1254,14 +1448,189 @@
 <footer style="max-width:100%;">
   <div style="max-width:1400px;margin:0 auto;padding:32px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;width:100%;">
     <div class="footer-copy">
-      Katalog utrzymywany przez <a href="https://techskills.academy" target="_blank">TechSkills Academy</a>.
-      Ceny są orientacyjne — weryfikuj na stronie dostawcy przed użyciem.
+      <span data-i18n="footerCopy">Catalog maintained by</span> <a href="https://techskills.academy" target="_blank">TechSkills Academy</a>.
+      <span data-i18n="footerNote">Prices are approximate — verify on provider's website before use.</span>
     </div>
     <div class="footer-update" id="footer-date"></div>
   </div>
 </footer>
 
 <script>
+// ─── I18N ─────────────────────────────────────────────────────────
+let lang = localStorage.getItem('ai-catalog-lang') || 'en';
+document.documentElement.lang = lang;
+
+const T = {
+  en: {
+    searchPlaceholder: 'Search model, provider or tag...',
+    searchFilter:      'Search',
+    heroTag:        'Updated weekly',
+    heroTitle:      'Where to get <em>any AI model</em> via API?',
+    heroSub:        'Complete API provider catalog. Compare prices, capabilities and availability — from LLM to video and audio generation.',
+    statModels:     'models in catalog',
+    statProviders:  'API providers',
+    statCategories: 'categories',
+    filterCategory: 'Category',
+    filterAll:      'All',
+    filterProvider: 'Provider',
+    filterCapabilities: 'Capabilities',
+    filterOptions:  'Options',
+    optionMulti:    'Price comparison only',
+    optionAffiliate:'Affiliate links only',
+    optionOpenSource:'Open-source / local only',
+    optionFreeApi:  'Free API available',
+    optionApiOnly:  'API only',
+    resetFilters:   'Reset filters',
+    sortAZ:         'A-Z',
+    sortPriceAsc:   'Price: ascending',
+    sortPriceDesc:  'Price: descending',
+    sortProviders:  'Most providers',
+    models:         'models',
+    noResults:      'No results',
+    noResultsSub:   'Try changing filters or searching a different phrase.',
+    bestPrice:      'Best price',
+    compare:        'Compare',
+    providerComparison: 'Provider comparison',
+    thProvider:     'Provider',
+    thPrice:        'Price',
+    thUnit:         'Unit',
+    thNotes:        'Notes',
+    typeAggregator: 'aggregator',
+    typeDirect:     'direct',
+    cheapest:       '✓ cheapest',
+    unavailable:    'unavailable',
+    visitLink:      'Visit',
+    dataFrom:       'Data from:',
+    footerCopy:     'Catalog maintained by',
+    footerNote:     "Prices are approximate — verify on provider's website before use.",
+    versionsLabel:  'Versions:',
+    prevLabel:      'prev:',
+    contextTokens:  'token context',
+    updatedLabel:   'Updated:',
+    priceUnits: {
+      perImage:   '/image',
+      perSec:     '/sec',
+      perVideo:   '/video',
+      perVideo5s: '/5s clip',
+      perVideo6s: '/6s clip',
+      perSong:    '/song',
+      perMP:      '/MP',
+      per1Mtoken: '/1M tokens (in)',
+      per1Mchars: '/1M chars',
+      perMin:     '/minute',
+    },
+  },
+  pl: {
+    searchPlaceholder: 'Szukaj modelu, dostawcy lub tagu...',
+    searchFilter:      'Szukaj',
+    heroTag:        'Aktualizowany co tydzień',
+    heroTitle:      'Gdzie dostać <em>dowolny model AI</em> przez API?',
+    heroSub:        'Kompletny katalog dostawców API. Porównaj ceny, możliwości i dostępność — od LLM po generowanie wideo i audio.',
+    statModels:     'modeli w katalogu',
+    statProviders:  'dostawców API',
+    statCategories: 'kategorii',
+    filterCategory: 'Kategoria',
+    filterAll:      'Wszystkie',
+    filterProvider: 'Dostawca',
+    filterCapabilities: 'Możliwości',
+    filterOptions:  'Opcje',
+    optionMulti:    'Tylko z porównaniem cen',
+    optionAffiliate:'Tylko z affiliate link',
+    optionOpenSource:'Tylko open-source / lokalne',
+    optionFreeApi:  'Tylko z darmowym API',
+    optionApiOnly:  'Tylko przez API',
+    resetFilters:   'Resetuj filtry',
+    sortAZ:         'A-Z',
+    sortPriceAsc:   'Cena: rosnąco',
+    sortPriceDesc:  'Cena: malejąco',
+    sortProviders:  'Najwięcej dostawców',
+    models:         'modeli',
+    noResults:      'Brak wyników',
+    noResultsSub:   'Spróbuj zmienić filtry lub wyszukać po innej frazie.',
+    bestPrice:      'Najlepsza cena',
+    compare:        'Porównaj',
+    providerComparison: 'Porównanie dostawców',
+    thProvider:     'Dostawca',
+    thPrice:        'Cena',
+    thUnit:         'Jednostka',
+    thNotes:        'Uwagi',
+    typeAggregator: 'agregator',
+    typeDirect:     'bezpośredni',
+    cheapest:       '✓ najtaniej',
+    unavailable:    'niedostępny',
+    visitLink:      'Przejdź',
+    dataFrom:       'Dane z:',
+    footerCopy:     'Katalog utrzymywany przez',
+    footerNote:     'Ceny są orientacyjne — weryfikuj na stronie dostawcy przed użyciem.',
+    versionsLabel:  'Wersje:',
+    prevLabel:      'poprz.:',
+    contextTokens:  'tokenów kontekstu',
+    updatedLabel:   'Aktualizacja:',
+    priceUnits: {
+      perImage:   '/ obraz',
+      perSec:     '/ sekunda',
+      perVideo:   '/ wideo',
+      perVideo5s: '/ klip 5s',
+      perVideo6s: '/ klip 6s',
+      perSong:    '/ utwór',
+      perMP:      '/ megapiksel',
+      per1Mtoken: '/ 1M tokenów (in)',
+      per1Mchars: '/ 1M znaków',
+      perMin:     '/ minutę',
+    },
+  }
+};
+
+function t(key) {
+  return T[lang]?.[key] ?? T['en']?.[key] ?? key;
+}
+
+function getModelDesc(model) {
+  if (lang === 'pl') return model.description_pl || model.description || '';
+  return model.description_en || model.description || '';
+}
+
+function getCatName(cat) {
+  if (lang === 'pl') return cat.name_pl || cat.name || cat.id;
+  return cat.name_en || cat.name || cat.id;
+}
+
+function setLang(newLang) {
+  lang = newLang;
+  localStorage.setItem('ai-catalog-lang', lang);
+  document.documentElement.lang = lang;
+  applyTranslations();
+  // Rebuild dynamic UI
+  buildCategoryPills();
+  buildProviderList();
+  render();
+  updateNavCount();
+}
+
+function applyTranslations() {
+  document.documentElement.lang = lang;
+  document.getElementById('search').placeholder = t('searchPlaceholder');
+  document.getElementById('search').setAttribute('aria-label', t('searchPlaceholder'));
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    const val = t(key);
+    if (val !== key) el.innerHTML = val;
+  });
+  // Sort select options
+  document.querySelectorAll('#sort-select option[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  // Lang buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+}
+
+function updateNavCount() {
+  const el = document.getElementById('nav-count');
+  if (el && allModels.length) el.textContent = allModels.length + ' ' + t('models');
+}
+
 // ─── STATE ───────────────────────────────────────────────────────
 let allModels = [];
 let allProviders = {};
@@ -1276,6 +1645,9 @@ let filters = {
   capSearch: false,
   multiProvider: false,
   affiliate: false,
+  openSource: false,
+  apiOnly: false,
+  freeApi: false,
   sort: 'name'
 };
 
@@ -1297,11 +1669,12 @@ async function loadData() {
     allProviders = {};
     providersData.providers.forEach(p => { allProviders[p.id] = p; });
 
-    document.getElementById('footer-date').textContent = 'Dane z: ' + modelsData.updated_at;
+    document.getElementById('footer-date').textContent = t('dataFrom') + ' ' + modelsData.updated_at;
     document.getElementById('stat-models').textContent = allModels.length;
     document.getElementById('stat-providers').textContent = providersData.providers.length;
-    document.getElementById('nav-count').textContent = allModels.length + ' modeli';
+    updateNavCount();
 
+    applyTranslations();
     buildCategoryPills();
     buildProviderList();
     render();
@@ -1317,6 +1690,13 @@ async function loadData() {
 // ─── BUILD UI ────────────────────────────────────────────────────
 function buildCategoryPills() {
   const container = document.getElementById('cat-pills');
+  // Clear except "All" pill
+  const allPill = container.querySelector('[data-cat="all"]');
+  container.innerHTML = '';
+  container.appendChild(allPill);
+  // Update "All" pill text
+  allPill.querySelector('span:not(.cat-icon):not(.cat-count)').textContent = t('filterAll');
+
   // Count per category
   const counts = { all: allModels.length };
   allCategories.forEach(c => {
@@ -1326,21 +1706,22 @@ function buildCategoryPills() {
 
   allCategories.forEach(cat => {
     if (!counts[cat.id]) return;
-    const div = document.createElement('div');
-    div.className = 'cat-pill';
-    div.dataset.cat = cat.id;
-    div.innerHTML = `
-      <span class="cat-icon">${cat.icon}</span>
-      <span>${cat.name}</span>
-      <span class="cat-count">${counts[cat.id]}</span>
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cat-pill';
+    btn.dataset.cat = cat.id;
+    btn.innerHTML = `
+      <span class="cat-icon" aria-hidden="true">${cat.icon}</span>
+      <span>${getCatName(cat)}</span>
+      <span class="cat-count" aria-hidden="true">${counts[cat.id]}</span>
     `;
-    div.addEventListener('click', () => {
+    btn.addEventListener('click', () => {
       filters.category = cat.id;
       document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
-      div.classList.add('active');
+      btn.classList.add('active');
       render();
     });
-    container.appendChild(div);
+    container.appendChild(btn);
   });
 
   document.querySelector('.cat-pill[data-cat="all"]').addEventListener('click', () => {
@@ -1353,6 +1734,7 @@ function buildCategoryPills() {
 
 function buildProviderList() {
   const container = document.getElementById('provider-list');
+  container.innerHTML = '';
   // Collect providers actually used in models
   const usedProviders = new Set();
   allModels.forEach(m => m.providers.forEach(p => usedProviders.add(p.provider_id)));
@@ -1394,8 +1776,10 @@ function getFilteredModels() {
     const q = filters.search.toLowerCase();
     result = result.filter(m =>
       m.name.toLowerCase().includes(q) ||
-      m.description.toLowerCase().includes(q) ||
-      m.tags.some(t => t.toLowerCase().includes(q)) ||
+      (m.description || '').toLowerCase().includes(q) ||
+      (m.description_pl || '').toLowerCase().includes(q) ||
+      (m.description_en || '').toLowerCase().includes(q) ||
+      (m.tags || []).some(tag => tag.toLowerCase().includes(q)) ||
       m.providers.some(p => {
         const prov = allProviders[p.provider_id];
         return prov && prov.name.toLowerCase().includes(q);
@@ -1414,6 +1798,18 @@ function getFilteredModels() {
 
   if (filters.affiliate) {
     result = result.filter(m => m.providers.some(p => p.affiliate_url));
+  }
+
+  if (filters.openSource) {
+    result = result.filter(m => m.open_source === true);
+  }
+
+  if (filters.freeApi) {
+    result = result.filter(m => m.providers.some(p => p.free_api && p.available));
+  }
+
+  if (filters.apiOnly) {
+    result = result.filter(m => m.providers.some(p => p.available));
   }
 
   // Sort
@@ -1445,37 +1841,50 @@ function getPriceValue(pricing, category) {
   if (!pricing) return null;
   if (pricing.per_image !== undefined) return pricing.per_image;
   if (pricing.per_second !== undefined) return pricing.per_second;
+  if (pricing.per_video_5s !== undefined) return pricing.per_video_5s;
+  if (pricing.per_video_6s !== undefined) return pricing.per_video_6s;
+  if (pricing.per_video !== undefined) return pricing.per_video;
+  if (pricing.per_song !== undefined) return pricing.per_song;
   if (pricing.input_per_1m !== undefined) return pricing.input_per_1m;
   if (pricing.per_1m_chars !== undefined) return pricing.per_1m_chars;
   if (pricing.per_minute !== undefined) return pricing.per_minute;
-  if (pricing.per_video !== undefined) return pricing.per_video;
   if (pricing.per_megapixel !== undefined) return pricing.per_megapixel;
   return null;
 }
 
 function formatPrice(pricing, category, short = false) {
   if (!pricing) return { value: '—', unit: '' };
+  const u = T[lang]?.priceUnits || T['en'].priceUnits;
 
   if (pricing.per_image !== undefined) {
-    return { value: '$' + pricing.per_image.toFixed(3), unit: short ? '/img' : '/ obraz' };
+    return { value: '$' + pricing.per_image.toFixed(3), unit: short ? '/img' : u.perImage };
   }
   if (pricing.per_second !== undefined) {
-    return { value: '$' + pricing.per_second.toFixed(3), unit: short ? '/s' : '/ sekunda' };
+    return { value: '$' + pricing.per_second.toFixed(3), unit: short ? '/s' : u.perSec };
+  }
+  if (pricing.per_video_5s !== undefined) {
+    return { value: '$' + pricing.per_video_5s.toFixed(3), unit: short ? '/5s' : u.perVideo5s };
+  }
+  if (pricing.per_video_6s !== undefined) {
+    return { value: '$' + pricing.per_video_6s.toFixed(3), unit: short ? '/6s' : u.perVideo6s };
   }
   if (pricing.per_video !== undefined) {
-    return { value: '$' + pricing.per_video.toFixed(2), unit: short ? '/vid' : '/ wideo' };
+    return { value: '$' + pricing.per_video.toFixed(2), unit: short ? '/vid' : u.perVideo };
+  }
+  if (pricing.per_song !== undefined) {
+    return { value: '$' + pricing.per_song.toFixed(3), unit: short ? '/song' : u.perSong };
   }
   if (pricing.per_megapixel !== undefined) {
-    return { value: '$' + pricing.per_megapixel.toFixed(4), unit: short ? '/MP' : '/ megapiksel' };
+    return { value: '$' + pricing.per_megapixel.toFixed(4), unit: short ? '/MP' : u.perMP };
   }
   if (pricing.input_per_1m !== undefined) {
-    return { value: '$' + pricing.input_per_1m.toFixed(2), unit: short ? '/1M in' : '/ 1M tokenów (in)' };
+    return { value: '$' + pricing.input_per_1m.toFixed(2), unit: short ? '/1M in' : u.per1Mtoken };
   }
   if (pricing.per_1m_chars !== undefined) {
-    return { value: '$' + pricing.per_1m_chars.toFixed(0), unit: short ? '/1M zn' : '/ 1M znaków' };
+    return { value: '$' + pricing.per_1m_chars.toFixed(0), unit: short ? '/1M ch' : u.per1Mchars };
   }
   if (pricing.per_minute !== undefined) {
-    return { value: '$' + pricing.per_minute.toFixed(4), unit: short ? '/min' : '/ minutę' };
+    return { value: '$' + pricing.per_minute.toFixed(4), unit: short ? '/min' : u.perMin };
   }
   if (pricing.notes) {
     return { value: '~', unit: pricing.notes, isNote: true };
@@ -1515,13 +1924,29 @@ function render() {
   } else {
     empty.style.display = 'none';
     grid.innerHTML = models.map((m, i) => renderCard(m, i)).join('');
-    // Add click handlers
+    // Add click + keyboard handlers
     grid.querySelectorAll('.model-card').forEach(card => {
       card.addEventListener('click', () => openModal(card.dataset.id));
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal(card.dataset.id);
+        }
+      });
     });
   }
 
   updateActiveFilters();
+}
+
+function renderVersionBadge(model) {
+  if (!model.versions || model.versions.length < 2) return '';
+  const current = model.versions.find(v => v.is_current) || model.versions[0];
+  const prev = model.versions.filter(v => !v.is_current)[0];
+  return `<div class="version-row">
+    <span class="version-tag current">v${escHtml(current.version)}</span>
+    ${prev ? `<span class="version-tag">${t('prevLabel')} v${escHtml(prev.version)}</span>` : ''}
+  </div>`;
 }
 
 function renderCard(model, idx) {
@@ -1530,43 +1955,66 @@ function renderCard(model, idx) {
   const bestPrice = bestProv ? formatPrice(bestProv.pricing, model.category, true) : { value: '—', unit: '', isNote: false };
 
   const capBadges = [];
-  if (model.capabilities.includes('vision')) capBadges.push('<span class="badge-cap vision">vision</span>');
-  if (model.capabilities.includes('reasoning')) capBadges.push('<span class="badge-cap reason">reasoning</span>');
-  if (model.capabilities.includes('web_search')) capBadges.push('<span class="badge-cap search">web search</span>');
+  if ((model.capabilities || []).includes('vision'))       capBadges.push('<span class="badge-cap vision">vision</span>');
+  if ((model.capabilities || []).includes('reasoning'))    capBadges.push('<span class="badge-cap reason">reasoning</span>');
+  if ((model.capabilities || []).includes('web_search'))   capBadges.push('<span class="badge-cap search">web search</span>');
+  if ((model.capabilities || []).includes('text_to_video'))  capBadges.push('<span class="badge-cap">text→video</span>');
+  if ((model.capabilities || []).includes('image_to_video')) capBadges.push('<span class="badge-cap">image→video</span>');
+  if ((model.capabilities || []).includes('image_editing'))  capBadges.push('<span class="badge-cap">img edit</span>');
+  if (model.open_source)      capBadges.push('<span class="badge-cap oss">OSS</span>');
+  if (model.local_available)  capBadges.push(`<span class="badge-cap local" title="${escHtml(model.local_tool||'')}">local ✓</span>`);
+  const freeProvider = model.providers.find(p => p.free_api && p.available);
+  if (freeProvider) {
+    const isTier = freeProvider.free_type === 'tier';
+    capBadges.push(`<span class="badge-cap free${isTier ? ' tier' : ''}" title="${isTier ? 'Darmowy tier z limitami — płatna wersja też dostępna' : 'Całkowicie bezpłatny dostęp przez API'}">${isTier ? 'FREE tier' : 'FREE'}</span>`);
+  }
 
   const availableProviders = model.providers.filter(p => p.available);
   const providerCount = availableProviders.length;
-
+  const localOnly = providerCount === 0;
   const delay = `animation-delay:${Math.min(idx * 0.03, 0.5)}s`;
+  const catName = getCatName(cat);
+  const desc = getModelDesc(model);
 
-  return `
-  <div class="model-card" data-id="${model.id}" style="${delay}">
-    <div class="card-top">
-      <div class="card-badges">
-        <span class="badge-cat">${cat.icon} ${cat.name}</span>
-        ${capBadges.join('')}
-      </div>
-      <span class="provider-count">${providerCount} ${providerCount === 1 ? 'dostawca' : providerCount < 5 ? 'dostawców' : 'dostawców'}</span>
-    </div>
+  const providerCountHtml = localOnly
+    ? `<span class="provider-count local-only" title="Brak publicznego API — dostępny lokalnie${model.local_tool ? ' via ' + model.local_tool : ''}">tylko lokalnie</span>`
+    : `<span class="provider-count">${providerCount} ${providerCount === 1 ? t('thProvider').toLowerCase() : t('filterProvider').toLowerCase()}</span>`;
 
-    <div class="card-name">${escHtml(model.name)}</div>
-    <div class="card-desc">${escHtml(model.description)}</div>
-
-    <div class="card-bottom">
-      <div class="best-price">
-        <span class="price-label">Najlepsza cena</span>
+  const bottomHtml = localOnly
+    ? `<div class="best-price"><span class="price-label">uruchom lokalnie</span><span class="price-value unknown">${escHtml(model.local_tool || 'open source')}</span></div>`
+    : `<div class="best-price">
+        <span class="price-label">${t('bestPrice')}</span>
         <span class="price-value ${bestPrice.isNote ? 'unknown' : ''}">${bestPrice.value}</span>
         <span class="price-unit">${bestPrice.unit}</span>
+      </div>`;
+
+  return `
+  <div class="model-card${localOnly ? ' local-only-card' : ''}" data-id="${model.id}" style="${delay}" role="button" tabindex="0" aria-label="${escHtml(model.name)} — ${escHtml(catName)}, ${t('compare')}">
+    <div class="card-top">
+      <div class="card-badges">
+        <span class="badge-cat">${cat.icon} ${catName}</span>
+        ${capBadges.join('')}
       </div>
-      <div class="card-cta">
-        Porównaj
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+      ${providerCountHtml}
+    </div>
+
+    ${renderVersionBadge(model)}
+    <div class="card-name">${escHtml(model.name)}</div>
+    <div class="card-desc">${escHtml(desc)}</div>
+
+    <div class="card-bottom">
+      ${bottomHtml}
+      <div class="card-cta" aria-hidden="true">
+        ${t('compare')}
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
       </div>
     </div>
   </div>`;
 }
 
 // ─── MODAL ───────────────────────────────────────────────────────
+let lastFocusBeforeModal = null;
+
 function openModal(modelId) {
   const model = allModels.find(m => m.id === modelId);
   if (!model) return;
@@ -1575,22 +2023,34 @@ function openModal(modelId) {
 
   // Badges
   const badges = [`<span class="badge-cat">${cat.icon} ${cat.name}</span>`];
-  if (model.capabilities.includes('vision')) badges.push('<span class="badge-cap vision">vision</span>');
-  if (model.capabilities.includes('reasoning')) badges.push('<span class="badge-cap reason">reasoning</span>');
-  if (model.capabilities.includes('function_calling')) badges.push('<span class="badge-cap">function calling</span>');
-  if (model.capabilities.includes('web_search')) badges.push('<span class="badge-cap search">web search</span>');
+  if (model.capabilities.includes('vision'))         badges.push('<span class="badge-cap vision">vision</span>');
+  if (model.capabilities.includes('reasoning'))      badges.push('<span class="badge-cap reason">reasoning</span>');
+  if (model.capabilities.includes('function_calling'))badges.push('<span class="badge-cap">function calling</span>');
+  if (model.capabilities.includes('web_search'))     badges.push('<span class="badge-cap search">web search</span>');
   if (model.capabilities.includes('prompt_caching')) badges.push('<span class="badge-cap">cache</span>');
+  if (model.capabilities.includes('text_to_video'))  badges.push('<span class="badge-cap">text→video</span>');
+  if (model.capabilities.includes('image_to_video')) badges.push('<span class="badge-cap">image→video</span>');
+  if (model.capabilities.includes('image_editing'))  badges.push('<span class="badge-cap">img edit</span>');
+  if (model.open_source)     badges.push('<span class="badge-cap oss">OSS</span>');
+  if (model.local_available) badges.push(`<span class="badge-cap local" title="${escHtml(model.local_tool||'')}">local ✓ ${model.local_tool ? '· '+escHtml(model.local_tool) : ''}</span>`);
   document.getElementById('modal-badges').innerHTML = badges.join('');
 
   document.getElementById('modal-name').textContent = model.name;
-  document.getElementById('modal-desc').textContent = model.description;
+  document.getElementById('modal-desc').textContent = getModelDesc(model);
 
   // Meta
   const meta = [];
   if (model.context_k) {
-    meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg><strong>${model.context_k}k</strong> tokenów kontekstu</div>`);
+    meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h10"/></svg><strong>${model.context_k}k</strong> ${t('contextTokens')}</div>`);
   }
-  meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Aktualizacja: <strong>${model.updated_at}</strong></div>`);
+  meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>${t('updatedLabel')} <strong>${model.updated_at}</strong></div>`);
+  // Versions
+  if (model.versions && model.versions.length > 0) {
+    const vHtml = model.versions.map(v =>
+      `<span class="version-pill ${v.is_current ? 'current' : ''}">v${escHtml(v.version)}${v.released ? ' <span style="opacity:.5">'+escHtml(v.released)+'</span>' : ''}</span>`
+    ).join('');
+    meta.push(`<div class="meta-item">${t('versionsLabel')} ${vHtml}</div>`);
+  }
   if (model.tags && model.tags.length > 0) {
     meta.push(`<div class="meta-item">${model.tags.map(t => `<span style="padding:2px 6px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-3)">${t}</span>`).join('')}</div>`);
   }
@@ -1624,14 +2084,14 @@ function openModal(modelId) {
       priceHtml = `<td><div class="price-cell notes">${escHtml(formatted.value)}</div><div class="price-note">${escHtml(formatted.unit)}</div></td><td></td>`;
     } else {
       priceHtml = `
-        <td><div class="price-cell" style="${p.available ? '' : 'color:var(--text-3)'}">${escHtml(formatted.value)}${isBest ? ' <span class="best-badge">✓ najtaniej</span>' : ''}</div></td>
+        <td><div class="price-cell" style="${p.available ? '' : 'color:var(--text-3)'}">${escHtml(formatted.value)}${isBest ? ` <span class="best-badge">${t('cheapest')}</span>` : ''}</div></td>
         <td><span style="font-size:12px;color:var(--text-3);font-family:'JetBrains Mono',monospace;">${escHtml(formatted.unit)}</span></td>
       `;
     }
 
     // Notes / secondary price
     let notesHtml = '';
-    if (p.pricing && p.pricing.notes) {
+    if (!formatted.isNote && p.pricing && p.pricing.notes) {
       notesHtml = `<div class="price-note">${escHtml(p.pricing.notes)}</div>`;
     }
     if (p.notes) {
@@ -1649,7 +2109,7 @@ function openModal(modelId) {
           <div class="prov-dot" style="background:${prov.logo_color || '#666'}"></div>
           <div>
             <div class="prov-name">${escHtml(prov.name)}</div>
-            <div class="prov-type">${prov.type === 'aggregator' ? 'agregator' : prov.type === 'direct' ? 'bezpośredni' : ''}</div>
+            <div class="prov-type">${prov.type === 'aggregator' ? t('typeAggregator') : prov.type === 'direct' ? t('typeDirect') : ''}</div>
           </div>
         </div>
       </td>
@@ -1657,16 +2117,27 @@ function openModal(modelId) {
       <td>${notesHtml}${outputHtml}</td>
       <td>
         ${linkUrl && p.available ? `<a href="${escAttr(linkUrl)}" target="_blank" rel="noopener" class="link-btn ${isAffiliate ? 'affiliate' : ''}">
-          ${isAffiliate ? '★ ' : ''}Przejdź
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
-        </a>` : !p.available ? '<span style="font-size:11px;color:var(--text-3)">niedostępny</span>' : ''}
+          ${isAffiliate ? '★ ' : ''}${t('visitLink')}
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
+        </a>` : !p.available ? `<span style="font-size:11px;color:var(--text-3)">${t('unavailable')}</span>` : ''}
       </td>
     `;
     tbody.appendChild(row);
   });
 
+  lastFocusBeforeModal = document.activeElement;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+  // Ukryj zawartość za modalem dla screen readerów i przeglądarki
+  document.querySelector('nav').inert = true;
+  document.querySelector('.hero').inert = true;
+  document.querySelector('.layout').inert = true;
+  document.querySelector('footer').inert = true;
+  // Move focus into modal
+  requestAnimationFrame(() => {
+    const closeBtn = document.querySelector('.modal-close');
+    if (closeBtn) closeBtn.focus();
+  });
 }
 
 function closeModal(e) {
@@ -1676,11 +2147,45 @@ function closeModal(e) {
 function closeModalDirect() {
   document.getElementById('modal-overlay').classList.remove('open');
   document.body.style.overflow = '';
+  document.querySelector('nav').inert = false;
+  document.querySelector('.hero').inert = false;
+  document.querySelector('.layout').inert = false;
+  document.querySelector('footer').inert = false;
+  if (lastFocusBeforeModal) {
+    lastFocusBeforeModal.focus();
+    lastFocusBeforeModal = null;
+  }
 }
 
-// Close on Escape
+// Close on Escape + modal focus trap
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModalDirect();
+});
+
+document.getElementById('modal').addEventListener('keydown', function(e) {
+  if (e.key !== 'Tab') return;
+  const modal = this;
+  const focusable = Array.from(modal.querySelectorAll(
+    'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+  ));
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (e.shiftKey) {
+    if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+  } else {
+    if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+// Toggle switch keyboard (Space/Enter to activate)
+['toggle-multi', 'toggle-affiliate', 'toggle-opensource', 'toggle-freeapi', 'toggle-apionly'].forEach(id => {
+  document.getElementById(id).addEventListener('keydown', function(e) {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      this.click();
+    }
+  });
 });
 
 // ─── ACTIVE FILTERS ───────────────────────────────────────────────
@@ -1690,21 +2195,24 @@ function updateActiveFilters() {
 
   if (filters.category !== 'all') {
     const cat = getCategoryInfo(filters.category);
-    chips.push(`<span class="filter-chip" onclick="clearCategory()">${cat.icon} ${cat.name} ×</span>`);
+    chips.push(`<button type="button" class="filter-chip" onclick="clearCategory()" aria-label="Usuń filtr: ${getCatName(cat)}">${cat.icon} ${getCatName(cat)} ×</button>`);
   }
   if (filters.search) {
-    chips.push(`<span class="filter-chip" onclick="clearSearch()">Szukaj: "${escHtml(filters.search)}" ×</span>`);
+    chips.push(`<button type="button" class="filter-chip" onclick="clearSearch()" aria-label="Usuń wyszukiwanie">${t('searchFilter')}: "${escHtml(filters.search)}" ×</button>`);
   }
   filters.providers.forEach(pid => {
     const p = allProviders[pid];
-    if (p) chips.push(`<span class="filter-chip" onclick="clearProvider('${pid}')">${p.name} ×</span>`);
+    if (p) chips.push(`<button type="button" class="filter-chip" onclick="clearProvider('${pid}')" aria-label="Usuń filtr: ${p.name}">${p.name} ×</button>`);
   });
-  if (filters.capVision)    chips.push(`<span class="filter-chip" onclick="clearCap('vision')">Vision ×</span>`);
-  if (filters.capReasoning) chips.push(`<span class="filter-chip" onclick="clearCap('reasoning')">Reasoning ×</span>`);
-  if (filters.capFunctions) chips.push(`<span class="filter-chip" onclick="clearCap('functions')">Functions ×</span>`);
-  if (filters.capSearch)    chips.push(`<span class="filter-chip" onclick="clearCap('search')">Web Search ×</span>`);
-  if (filters.multiProvider) chips.push(`<span class="filter-chip" onclick="clearToggle('multi')">Porównanie cen ×</span>`);
-  if (filters.affiliate)    chips.push(`<span class="filter-chip" onclick="clearToggle('affiliate')">Affiliate ×</span>`);
+  if (filters.capVision)    chips.push(`<button type="button" class="filter-chip" onclick="clearCap('vision')" aria-label="Usuń filtr: Vision">Vision ×</button>`);
+  if (filters.capReasoning) chips.push(`<button type="button" class="filter-chip" onclick="clearCap('reasoning')" aria-label="Usuń filtr: Reasoning">Reasoning ×</button>`);
+  if (filters.capFunctions) chips.push(`<button type="button" class="filter-chip" onclick="clearCap('functions')" aria-label="Usuń filtr: Functions">Functions ×</button>`);
+  if (filters.capSearch)    chips.push(`<button type="button" class="filter-chip" onclick="clearCap('search')" aria-label="Usuń filtr: Web Search">Web Search ×</button>`);
+  if (filters.multiProvider) chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('multi')" aria-label="Usuń filtr: ${t('optionMulti')}">${t('optionMulti')} ×</button>`);
+  if (filters.affiliate)    chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('affiliate')" aria-label="Usuń filtr: Affiliate">Affiliate ×</button>`);
+  if (filters.openSource)   chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('opensource')" aria-label="Usuń filtr: OSS">OSS ×</button>`);
+  if (filters.freeApi)      chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('freeapi')" aria-label="Usuń filtr: Free API">Free API ×</button>`);
+  if (filters.apiOnly)      chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('apionly')" aria-label="Usuń filtr: Tylko API">Tylko API ×</button>`);
 
   container.innerHTML = chips.join('');
 }
@@ -1740,13 +2248,28 @@ function clearCap(cap) {
 function clearToggle(which) {
   if (which === 'multi') {
     filters.multiProvider = false;
-    document.getElementById('toggle-multi').classList.remove('on');
+    document.getElementById('toggle-multi').classList.remove('active');
     document.getElementById('toggle-multi').setAttribute('aria-checked', 'false');
   }
   if (which === 'affiliate') {
     filters.affiliate = false;
-    document.getElementById('toggle-affiliate').classList.remove('on');
+    document.getElementById('toggle-affiliate').classList.remove('active');
     document.getElementById('toggle-affiliate').setAttribute('aria-checked', 'false');
+  }
+  if (which === 'opensource') {
+    filters.openSource = false;
+    document.getElementById('toggle-opensource').classList.remove('active');
+    document.getElementById('toggle-opensource').setAttribute('aria-checked', 'false');
+  }
+  if (which === 'freeapi') {
+    filters.freeApi = false;
+    document.getElementById('toggle-freeapi').classList.remove('active');
+    document.getElementById('toggle-freeapi').setAttribute('aria-checked', 'false');
+  }
+  if (which === 'apionly') {
+    filters.apiOnly = false;
+    document.getElementById('toggle-apionly').classList.remove('active');
+    document.getElementById('toggle-apionly').setAttribute('aria-checked', 'false');
   }
   render();
 }
@@ -1784,15 +2307,36 @@ document.getElementById('cap-search').addEventListener('change', (e) => {
 
 document.getElementById('toggle-multi').addEventListener('click', function() {
   filters.multiProvider = !filters.multiProvider;
-  this.classList.toggle('on', filters.multiProvider);
+  this.classList.toggle('active', filters.multiProvider);
   this.setAttribute('aria-checked', filters.multiProvider);
   render();
 });
 
 document.getElementById('toggle-affiliate').addEventListener('click', function() {
   filters.affiliate = !filters.affiliate;
-  this.classList.toggle('on', filters.affiliate);
+  this.classList.toggle('active', filters.affiliate);
   this.setAttribute('aria-checked', filters.affiliate);
+  render();
+});
+
+document.getElementById('toggle-opensource').addEventListener('click', function() {
+  filters.openSource = !filters.openSource;
+  this.classList.toggle('active', filters.openSource);
+  this.setAttribute('aria-checked', filters.openSource);
+  render();
+});
+
+document.getElementById('toggle-freeapi').addEventListener('click', function() {
+  filters.freeApi = !filters.freeApi;
+  this.classList.toggle('active', filters.freeApi);
+  this.setAttribute('aria-checked', filters.freeApi);
+  render();
+});
+
+document.getElementById('toggle-apionly').addEventListener('click', function() {
+  filters.apiOnly = !filters.apiOnly;
+  this.classList.toggle('active', filters.apiOnly);
+  this.setAttribute('aria-checked', filters.apiOnly);
   render();
 });
 
@@ -1806,6 +2350,9 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   filters.capSearch = false;
   filters.multiProvider = false;
   filters.affiliate = false;
+  filters.openSource = false;
+  filters.freeApi = false;
+  filters.apiOnly = false;
   filters.sort = 'name';
 
   document.getElementById('search').value = '';
@@ -1817,8 +2364,11 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   document.getElementById('cap-reasoning').checked = false;
   document.getElementById('cap-functions').checked = false;
   document.getElementById('cap-search').checked = false;
-  document.getElementById('toggle-multi').classList.remove('on');
-  document.getElementById('toggle-affiliate').classList.remove('on');
+  document.getElementById('toggle-multi').classList.remove('active');
+  document.getElementById('toggle-affiliate').classList.remove('active');
+  document.getElementById('toggle-opensource').classList.remove('active');
+  document.getElementById('toggle-freeapi').classList.remove('active');
+  document.getElementById('toggle-apionly').classList.remove('active');
 
   render();
 });

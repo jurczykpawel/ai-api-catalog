@@ -1,0 +1,117 @@
+{
+  "name": "AI Catalog — Model Radar (tygodniowy)",
+  "nodes": [
+    {
+      "id": "trigger",
+      "name": "Cron — co poniedziałek 8:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * 1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "update",
+      "name": "1. Update katalog",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300],
+      "parameters": {
+        "command": "cd ~/ai-api-catalog && bash scripts/update-litellm.sh 2>&1 | tail -15"
+      },
+      "notes": "Zmień ścieżkę ~/ai-api-catalog na właściwą na mikrusie"
+    },
+    {
+      "id": "radar",
+      "name": "2. Model Radar — wykryj nowe",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [720, 300],
+      "parameters": {
+        "command": "cd ~/ai-api-catalog && python3 scripts/model-radar.py --output /tmp/radar-report.json --update-snapshot && cat /tmp/radar-report.json"
+      }
+    },
+    {
+      "id": "parse",
+      "name": "3. Parsuj raport",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [960, 300],
+      "parameters": {
+        "jsCode": "const stdout = $input.first().json.stdout || '{}';\nlet report;\ntry {\n  report = JSON.parse(stdout);\n} catch(e) {\n  return [{ json: { error: 'parse failed', raw: stdout.slice(0,500), has_changes: false } }];\n}\nconst ch = report.changes || {};\nconst newModels = ch.new_models || [];\nconst topNew = newModels.slice(0,15)\n  .map(m => `• [${m.category}] ${m.name} (${(m.providers||[]).join(', ')})`)\n  .join('\\n');\nreturn [{ json: {\n  has_changes: (ch.total_new || 0) > 0 || (ch.price_changes || []).length > 0,\n  total_new: ch.total_new || 0,\n  total_models: ch.total_new_total || 0,\n  price_changes_count: (ch.price_changes || []).length,\n  new_providers_count: (ch.new_providers || []).length,\n  top_new_text: topNew || '(brak nowych modeli)',\n  date: ch.date || new Date().toISOString().split('T')[0],\n  report_text: (report.report || '').slice(0, 3000),\n}}];"
+      }
+    },
+    {
+      "id": "ifchanges",
+      "name": "Są zmiany?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1200, 300],
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.has_changes }}",
+              "value2": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "notify",
+      "name": "4. Wyślij raport",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, 180],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.RADAR_WEBHOOK_URL }}",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"text\": \"🔍 *AI Catalog Model Radar — {{ $json.date }}*\\n\\nNowych modeli: *{{ $json.total_new }}*\\nZmian cen: {{ $json.price_changes_count }}\\nNowych dostawców: {{ $json.new_providers_count }}\\nRazem w katalogu: {{ $json.total_models }}\\n\\n{{ $json.top_new_text }}\",\n  \"report\": \"{{ $json.report_text }}\"\n}"
+      },
+      "notes": "Ustaw zmienną środowiskową RADAR_WEBHOOK_URL w n8n Settings → Variables. Może być Slack/Discord/email webhook."
+    },
+    {
+      "id": "noop",
+      "name": "Brak zmian — koniec",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1440, 420],
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "trigger": {
+      "main": [[{"node": "update", "type": "main", "index": 0}]]
+    },
+    "update": {
+      "main": [[{"node": "radar", "type": "main", "index": 0}]]
+    },
+    "radar": {
+      "main": [[{"node": "parse", "type": "main", "index": 0}]]
+    },
+    "parse": {
+      "main": [[{"node": "ifchanges", "type": "main", "index": 0}]]
+    },
+    "ifchanges": {
+      "main": [
+        [{"node": "notify", "type": "main", "index": 0}],
+        [{"node": "noop", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "Europe/Warsaw",
+    "executionOrder": "v1"
+  }
+}

@@ -1,0 +1,4361 @@
+{
+  "updated_at": "2026-03-08",
+  "models": [
+    {
+      "id": "assemblyai-universal",
+      "name": "AssemblyAI Universal-2",
+      "category": "audio_stt",
+      "description": "99 języków, speaker diarization, sentiment analysis i inne funkcje w jednym API.",
+      "tags": [
+        "multilingual",
+        "diarization",
+        "enterprise"
+      ],
+      "capabilities": [
+        "multilingual",
+        "streaming"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "per_minute": 0.0025,
+            "notes": "via aimlapi — sprawdź aktualną cenę"
+          },
+          "url": "https://aimlapi.com",
+          "affiliate_url": "https://aimlapi.com?via=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "per_minute": 0.0035,
+            "notes": "Sprawdź dostępność"
+          },
+          "url": "https://openrouter.ai",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": "cartesia-sonic",
+      "name": "Cartesia Sonic-3",
+      "category": "audio_tts",
+      "description": "Szybki TTS ze strumieniowaniem w czasie rzeczywistym. Poniżej 90ms latencja, 20+ języków.",
+      "tags": [
+        "streaming",
+        "low-latency",
+        "multilingual"
+      ],
+      "capabilities": [
+        "streaming",
+        "multilingual"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_1m_chars": 65
+          },
+          "url": "https://www.together.ai/models/cartesia/sonic-3",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "claude-3-5-sonnet",
+      "name": "Claude 3.5 Sonnet",
+      "category": "llm",
+      "description": "Poprzednia generacja Sonnet. Nadal popularna i powszechnie dostępna u agregatorów.",
+      "tags": [
+        "balanced",
+        "vision",
+        "coding"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "anthropic",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://www.anthropic.com/api",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://openrouter.ai/anthropic/claude-3-5-sonnet-20241022",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://www.together.ai",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "category": "llm",
+      "description": "Najszybszy i najtańszy model Claude. Idealny do prostych zadań i produkcji przy dużej skali.",
+      "tags": [
+        "fast",
+        "cheap",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "anthropic",
+          "pricing": {
+            "input_per_1m": 0.8,
+            "output_per_1m": 4.0
+          },
+          "url": "https://www.anthropic.com/api",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.8,
+            "output_per_1m": 4.0
+          },
+          "url": "https://openrouter.ai/anthropic/claude-haiku-4-5",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "category": "llm",
+      "description": "Najbardziej zaawansowany model Anthropic. 1M token kontekst, vision i reasoning.",
+      "tags": [
+        "flagship",
+        "long-context",
+        "reasoning",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "anthropic",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0
+          },
+          "url": "https://www.anthropic.com/api",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0
+          },
+          "url": "https://openrouter.ai/anthropic/claude-opus-4-6",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "category": "llm",
+      "description": "Najlepszy punkt wejścia do modeli Claude. Szybki, inteligentny, z reasoning.",
+      "tags": [
+        "balanced",
+        "vision",
+        "reasoning"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "anthropic",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://www.anthropic.com/api",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://openrouter.ai/anthropic/claude-sonnet-4-6",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "codestral",
+      "name": "Codestral 2508",
+      "category": "llm",
+      "description": "Wyspecjalizowany model kodowania od Mistral. 256k kontekst, reasoning. Najlepszy europejski model do kodu.",
+      "tags": [
+        "coding",
+        "reasoning",
+        "european"
+      ],
+      "capabilities": [
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 256,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "mistral",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 0.9
+          },
+          "url": "https://console.mistral.ai",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "cogvideox-5b",
+      "name": "CogVideoX-5B",
+      "category": "video_generation",
+      "description": "Open-source model wideo od Zhipu AI. Dobra spójność i jakość, dostępny przez Replicate.",
+      "tags": [
+        "open-source",
+        "text-to-video"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Czas GPU A100 ~$5.04/hr"
+          },
+          "url": "https://replicate.com/zsxkib/cog-video-x",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_second": 0.06
+          },
+          "url": "https://fal.ai/models/fal-ai/cogvideox-5b",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "cohere-embed-v4",
+      "name": "Cohere Embed v4",
+      "category": "embedding",
+      "description": "Multimodalne embeddingi Cohere. Obsługuje tekst i obrazy, wiele języków, do wyszukiwania enterprise.",
+      "tags": [
+        "enterprise",
+        "multilingual",
+        "vision",
+        "rag"
+      ],
+      "capabilities": [
+        "vision",
+        "multilingual"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "cohere",
+          "pricing": {
+            "notes": "Enterprise pricing — kontakt z Cohere"
+          },
+          "url": "https://dashboard.cohere.com",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "command-r",
+      "name": "Command R",
+      "category": "llm",
+      "description": "Tańszy model Cohere do RAG. Doskonały do pipeline'ów document retrieval w produkcji.",
+      "tags": [
+        "cheap",
+        "rag"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "cohere",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.6
+          },
+          "url": "https://dashboard.cohere.com",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "transformers"
+    },
+    {
+      "id": "command-r-plus",
+      "name": "Command R+",
+      "category": "llm",
+      "description": "Enterprise LLM od Cohere. Specjalizacja w RAG, długich dokumentach i wieloetapowym wnioskaniu.",
+      "tags": [
+        "enterprise",
+        "rag"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "cohere",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 10.0
+          },
+          "url": "https://dashboard.cohere.com",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "dalle-2",
+      "name": "DALL-E 2",
+      "category": "image_generation",
+      "description": "Poprzednia generacja DALL-E. Najtańszy model OpenAI do generowania obrazów, dobry do masowej produkcji.",
+      "tags": [
+        "openai",
+        "cheap",
+        "legacy"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_image": 0.016,
+            "notes": "256x256; $0.018 (512px); $0.020 (1024px)"
+          },
+          "url": "https://platform.openai.com/docs/guides/image-generation",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "dalle-3",
+      "name": "DALL-E 3",
+      "category": "image_generation",
+      "description": "Popularny model OpenAI. Świetnie rozumie długie prompty, dobra literownia tekstu na obrazach.",
+      "tags": [
+        "openai",
+        "text-rendering",
+        "popular"
+      ],
+      "capabilities": [
+        "text_in_image"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_image": 0.04,
+            "notes": "Standard 1024x1024; $0.08 HD; $0.08/$0.12 for 1792px"
+          },
+          "url": "https://platform.openai.com/docs/guides/image-generation",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://openrouter.ai/openai/dall-e-3",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "deepgram-aura",
+      "name": "Deepgram Aura-2",
+      "category": "audio_tts",
+      "description": "Enterprise TTS od Deepgram. Aura-2 — najwyższa jakość, szybki czas odpowiedzi, streaming.",
+      "tags": [
+        "enterprise",
+        "streaming",
+        "fast"
+      ],
+      "capabilities": [
+        "streaming"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "deepgram",
+          "pricing": {
+            "per_1m_chars": 30,
+            "notes": "Aura-2"
+          },
+          "url": "https://deepgram.com/pricing",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "deepgram",
+          "pricing": {
+            "per_1m_chars": 15,
+            "notes": "Aura-1 tańsza opcja"
+          },
+          "url": "https://deepgram.com/pricing",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "deepgram-nova3",
+      "name": "Deepgram Nova-3",
+      "category": "audio_stt",
+      "description": "Najdokładniejszy enterprise STT. Niski Word Error Rate, streaming w czasie rzeczywistym.",
+      "tags": [
+        "enterprise",
+        "accurate",
+        "streaming",
+        "multilingual"
+      ],
+      "capabilities": [
+        "streaming",
+        "multilingual"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "deepgram",
+          "pricing": {
+            "per_minute": 0.0077
+          },
+          "url": "https://deepgram.com/pricing",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek R1",
+      "category": "llm",
+      "description": "Model reasoning od DeepSeek. Porównywalny do o1 przy ułamku ceny. Open-weight.",
+      "tags": [
+        "reasoning",
+        "open-weight",
+        "cheap"
+      ],
+      "capabilities": [
+        "reasoning"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "deepseek",
+          "pricing": {
+            "input_per_1m": 0.55,
+            "output_per_1m": 2.19
+          },
+          "url": "https://platform.deepseek.com",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 2.18
+          },
+          "url": "https://openrouter.ai/deepseek/deepseek-r1",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.9,
+            "output_per_1m": 0.9
+          },
+          "url": "https://www.together.ai/models/deepseek-r1",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 8.0
+          },
+          "url": "https://fireworks.ai/models/fireworks/deepseek-r1",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "vLLM (huge)"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek V3",
+      "category": "llm",
+      "description": "Chiński model open-weight z niezwykłą relacją jakości do ceny. Silny w kodowaniu i analizie.",
+      "tags": [
+        "open-weight",
+        "coding",
+        "cheap"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "deepseek",
+          "pricing": {
+            "input_per_1m": 0.27,
+            "output_per_1m": 1.1
+          },
+          "url": "https://platform.deepseek.com",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.28,
+            "output_per_1m": 0.42
+          },
+          "url": "https://openrouter.ai/deepseek/deepseek-chat",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true,
+          "notes": "Cena cache hit"
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.56,
+            "output_per_1m": 1.68
+          },
+          "url": "https://fireworks.ai/models/fireworks/deepseek-v3",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.27,
+            "output_per_1m": 0.85
+          },
+          "url": "https://www.together.ai/models/deepseek-v3",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "elevenlabs-tts",
+      "name": "ElevenLabs TTS",
+      "category": "audio_tts",
+      "description": "Lider rynku TTS. Klonowanie głosu, wielojęzyczność (30+ języków), emocje i akcent.",
+      "tags": [
+        "voice-cloning",
+        "multilingual",
+        "emotional"
+      ],
+      "capabilities": [
+        "voice_cloning",
+        "multilingual"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "elevenlabs",
+          "pricing": {
+            "per_1m_chars": 200,
+            "notes": "Creator plan ~$0.20/1k znaków"
+          },
+          "url": "https://elevenlabs.io/api",
+          "affiliate_url": "https://elevenlabs.io?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-1-1-pro",
+      "name": "FLUX 1.1 Pro",
+      "category": "image_generation",
+      "description": "Najlepszy komercyjny model Black Forest Labs. Wysoka jakość, photorealizm, szybka generacja.",
+      "tags": [
+        "photorealistic",
+        "high-quality",
+        "commercial"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "bfl",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://api.bfl.ml",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://replicate.com/black-forest-labs/flux-1.1-pro",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-pro/v1.1",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://aimlapi.com/models/flux-1-1-pro",
+          "affiliate_url": "https://aimlapi.com?via=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://www.together.ai/models/flux-1-1-pro",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-pro",
+      "name": "FLUX 2 Pro",
+      "category": "image_generation",
+      "description": "Black Forest Labs FLUX 2 Pro — next generation FLUX image model. Superior quality and faster inference compared to FLUX 1.1 Pro, with improved prompt adherence.",
+      "description_pl": "Black Forest Labs FLUX 2 Pro — kolejna generacja modelu FLUX. Wyzsza jakosc i szybsze wnioskowanie niz FLUX 1.1 Pro.",
+      "tags": [
+        "text-to-image",
+        "high-quality",
+        "bfl"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "2 Pro",
+          "released": "2025-02",
+          "is_current": true
+        },
+        {
+          "version": "1.1 Pro",
+          "released": "2024-10",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/flux-2-pro",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bfl",
+          "pricing": {
+            "per_image": 0.05,
+            "notes": "Official BFL pricing"
+          },
+          "url": "https://docs.bfl.ml",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-kontext-pro",
+      "name": "FLUX Kontext Pro",
+      "category": "image_generation",
+      "description": "Model edycji obrazów FLUX. Zmiana kontekstu przy zachowaniu stylu i treści — state-of-the-art w edycji.",
+      "tags": [
+        "editing",
+        "inpainting",
+        "commercial"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "bfl",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://api.bfl.ml",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://replicate.com/black-forest-labs/flux-kontext-pro",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-pro/kontext",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "per_image": 0.08
+          },
+          "url": "https://fireworks.ai/models/fireworks/flux-kontext-max",
+          "affiliate_url": null,
+          "available": true,
+          "notes": "Wersja Max"
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://www.together.ai/models/flux-kontext-pro",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-1-dev",
+      "name": "FLUX.1 Dev",
+      "category": "image_generation",
+      "description": "Wersja deweloperska FLUX.1. Dobra jakość przy niższej cenie, licencja non-commercial.",
+      "tags": [
+        "open-weight",
+        "non-commercial"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "per_image": 0.0,
+            "notes": "Darmowy w limitach"
+          },
+          "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.025
+          },
+          "url": "https://replicate.com/black-forest-labs/flux-dev",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.025
+          },
+          "url": "https://fal.ai/models/fal-ai/flux/dev",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "per_image": 0.014,
+            "notes": "~28 kroków"
+          },
+          "url": "https://fireworks.ai/models/fireworks/flux-1-dev-fp8",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_megapixel": 0.0027
+          },
+          "url": "https://www.together.ai/models/flux-dev",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "flux-1-schnell",
+      "name": "FLUX.1 Schnell",
+      "category": "image_generation",
+      "description": "Najszybsza i najtańsza wersja FLUX. Apache 2.0 — można używać komercyjnie za darmo.",
+      "tags": [
+        "open-source",
+        "fast",
+        "cheap",
+        "commercial"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "per_image": 0.0,
+            "notes": "Darmowy"
+          },
+          "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.003
+          },
+          "url": "https://replicate.com/black-forest-labs/flux-schnell",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.003
+          },
+          "url": "https://fal.ai/models/fal-ai/flux/schnell",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "per_image": 0.0014,
+            "notes": "~4 kroki"
+          },
+          "url": "https://fireworks.ai/models/fireworks/flux-1-schnell-fp8",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_megapixel": 0.0027
+          },
+          "url": "https://www.together.ai/models/flux-schnell",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "per_image": 0.003
+          },
+          "url": "https://aimlapi.com/models/flux-1-schnell",
+          "affiliate_url": "https://aimlapi.com?via=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "gemini-2-0-flash",
+      "name": "Gemini 2.0 Flash",
+      "category": "llm",
+      "description": "Najszybszy model Google z kontekstem 1M tokenów. Doskonały do produkcji przy niskich kosztach.",
+      "tags": [
+        "fast",
+        "cheap",
+        "long-context",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "audio_input"
+      ],
+      "context_k": 1049,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0.4
+          },
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0.4
+          },
+          "url": "https://openrouter.ai/google/gemini-2.0-flash",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gemini-2-0-flash-lite",
+      "name": "Gemini 2.0 Flash Lite",
+      "category": "llm",
+      "description": "Najtańszy model Google. Doskonały stosunek ceny do możliwości przy masowej skali.",
+      "tags": [
+        "cheap",
+        "fast",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 1049,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "input_per_1m": 0.075,
+            "output_per_1m": 0.3
+          },
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gemini-2-5-pro",
+      "name": "Gemini 2.5 Pro",
+      "category": "llm",
+      "description": "Flagowy model Google z reasoning. Kontekst 1M tokenów i wbudowane myślenie krok-po-kroku.",
+      "tags": [
+        "flagship",
+        "reasoning",
+        "long-context",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "audio_input"
+      ],
+      "context_k": 1049,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/google/gemini-2.5-pro",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gemma-3-12b",
+      "name": "Gemma 3 12B",
+      "category": "llm",
+      "description": "Zbalansowany rozmiar w rodzinie Gemma 3. Vision, dobra cena, kompatybilność z wieloma platformami.",
+      "tags": [
+        "open-source",
+        "vision",
+        "balanced"
+      ],
+      "capabilities": [
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.04,
+            "output_per_1m": 0.13
+          },
+          "url": "https://openrouter.ai/google/gemma-3-12b-it",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "gemma-3-27b",
+      "name": "Gemma 3 27B",
+      "category": "llm",
+      "description": "Największy open-source model Google. Multimodalny, kontekst 128k, dostępny przez wiele agregatorów.",
+      "tags": [
+        "open-source",
+        "vision",
+        "google"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.03,
+            "output_per_1m": 0.11
+          },
+          "url": "https://openrouter.ai/google/gemma-3-27b-it",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://www.together.ai/models/gemma-3-27b-it",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://fireworks.ai/models/fireworks/gemma3-27b",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "gemma-3-4b",
+      "name": "Gemma 3 4B",
+      "category": "llm",
+      "description": "Mały model Google na urządzenia edge. Zaskakująco zdolny jak na swój rozmiar.",
+      "tags": [
+        "open-source",
+        "small",
+        "vision"
+      ],
+      "capabilities": [
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.04,
+            "output_per_1m": 0.08
+          },
+          "url": "https://openrouter.ai/google/gemma-3-4b-it",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "gpt-image-1",
+      "name": "GPT Image 1",
+      "category": "image_generation",
+      "description": "Nowy model generowania obrazów OpenAI zintegrowany z GPT-4o. Natywna edycja obrazów przez konwersację.",
+      "tags": [
+        "openai",
+        "editing",
+        "photorealistic"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_image": 0.04,
+            "notes": "Standard 1024x1024; $0.16 HD; zależy od jakości"
+          },
+          "url": "https://platform.openai.com/docs/guides/image-generation",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-1",
+      "name": "GPT-4.1",
+      "category": "llm",
+      "description": "Następca GPT-4o z lepszymi możliwościami kodowania i instrukcji. Duży kontekst, niższy koszt niż GPT-4o.",
+      "tags": [
+        "flagship",
+        "coding",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "json_mode"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 8.0
+          },
+          "url": "https://platform.openai.com/docs/models/gpt-4.1",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 8.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-4.1",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-1-mini",
+      "name": "GPT-4.1 mini",
+      "category": "llm",
+      "description": "Tańsza wersja GPT-4.1. Świetny do zastąpienia GPT-4o mini przy większej inteligencji.",
+      "tags": [
+        "fast",
+        "cheap",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "json_mode"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.4,
+            "output_per_1m": 1.6
+          },
+          "url": "https://platform.openai.com/docs/models/gpt-4.1-mini",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.4,
+            "output_per_1m": 1.6
+          },
+          "url": "https://openrouter.ai/openai/gpt-4.1-mini",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-1-nano",
+      "name": "GPT-4.1 nano",
+      "category": "llm",
+      "description": "Najtańszy i najszybszy model OpenAI do prostych zadań. Idealny do produkcji przy bardzo dużej skali.",
+      "tags": [
+        "ultra-cheap",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0.4
+          },
+          "url": "https://platform.openai.com/docs/models/gpt-4.1-nano",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "category": "llm",
+      "description": "Flagowy multimodalny model OpenAI. Obsługuje tekst, obraz i audio w jednym modelu.",
+      "tags": [
+        "flagship",
+        "multimodal",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "json_mode"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 10.0
+          },
+          "url": "https://platform.openai.com/docs/models/gpt-4o",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-4o",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "category": "llm",
+      "description": "Szybki i tani model OpenAI do prostszych zadań. Doskonały stosunek ceny do możliwości.",
+      "tags": [
+        "fast",
+        "cheap",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "json_mode"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.6
+          },
+          "url": "https://platform.openai.com/docs/models/gpt-4o-mini",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.6
+          },
+          "url": "https://openrouter.ai/openai/gpt-4o-mini",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "grok-3",
+      "name": "Grok-3",
+      "category": "llm",
+      "description": "Flagowy model xAI. Silny w kodowaniu i analizie z dostępem do wiedzy X (Twitter).",
+      "tags": [
+        "flagship",
+        "coding"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "xai",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://console.x.ai",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://openrouter.ai/x-ai/grok-3",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "grok-4-1-fast",
+      "name": "Grok-4.1 Fast",
+      "category": "llm",
+      "description": "Zaskakująco tani model xAI z kontekstem 2M tokenów, vision i reasoning. Najlepsza wartość w segmencie.",
+      "tags": [
+        "long-context",
+        "vision",
+        "reasoning",
+        "fast"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 2000,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "xai",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.5
+          },
+          "url": "https://console.x.ai",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "hailuo-video",
+      "name": "Hailuo 02 (MiniMax Video)",
+      "category": "video_generation",
+      "description": "Chiński model wideo od Minimax. Płynny ruch, dobra spójność postaci, dostępny przez Together.",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "chinese"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 0.49
+          },
+          "url": "https://www.together.ai/models/minimax/hailuo-02",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "minimax",
+          "pricing": {
+            "notes": "Sprawdź platformę Minimax"
+          },
+          "url": "https://www.minimax.io/platform",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "piapi",
+          "pricing": {
+            "per_second": 0.1
+          },
+          "url": "https://piapi.ai",
+          "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "hailuo-2-3",
+      "name": "Hailuo 2.3",
+      "category": "video_generation",
+      "description": "MiniMax video generation model version 2.3, available via kie.ai. Improved motion quality and prompt adherence over previous versions.",
+      "description_pl": "Model generowania wideo MiniMax w wersji 2.3, dostepny przez kie.ai. Ulepszona jakosc ruchu i spójnosc z promptem.",
+      "tags": [
+        "text-to-video",
+        "minimax"
+      ],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "2.3",
+          "released": "2025-02",
+          "is_current": true
+        },
+        {
+          "version": "2.0",
+          "released": "2024-10",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/hailuo",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "ideogram-v3",
+      "name": "Ideogram 3.0",
+      "category": "image_generation",
+      "description": "Najlepszy model do generowania obrazów z tekstem. Lider w typografii i projektowaniu graficznym.",
+      "tags": [
+        "typography",
+        "design",
+        "text-rendering"
+      ],
+      "capabilities": [
+        "text_in_image"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.09
+          },
+          "url": "https://replicate.com/ideogram-ai/ideogram-v3",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_megapixel": 0.06
+          },
+          "url": "https://www.together.ai/models/ideogram-ai/ideogram-v3-quality",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.08
+          },
+          "url": "https://fal.ai/models/ideogram/v3",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "imagen-4",
+      "name": "Imagen 4.0",
+      "category": "image_generation",
+      "description": "Model generowania obrazów od Google. Fotorealizm klasy premium, dostępny przez Together AI.",
+      "tags": [
+        "photorealistic",
+        "google"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_megapixel": 0.04
+          },
+          "url": "https://www.together.ai/models/google/imagen-4.0-preview",
+          "affiliate_url": null,
+          "available": true,
+          "notes": "Preview"
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_megapixel": 0.02
+          },
+          "url": "https://www.together.ai/models/google/imagen-4.0-fast",
+          "affiliate_url": null,
+          "available": true,
+          "notes": "Fast"
+        }
+      ]
+    },
+    {
+      "id": "kling-2-1",
+      "name": "Kling 2.1",
+      "category": "video_generation",
+      "description": "Najnowsza wersja modelu Kling od Kuaishou. Wysoka jakość ruchu, do 10s wideo.",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "chinese"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 0.18,
+            "notes": "Standard"
+          },
+          "url": "https://www.together.ai/models/kling-2.1-standard",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 0.32,
+            "notes": "Pro"
+          },
+          "url": "https://www.together.ai/models/kling-2.1-pro",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "piapi",
+          "pricing": {
+            "per_second": 0.12
+          },
+          "url": "https://piapi.ai",
+          "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "wavespeed",
+          "pricing": {
+            "notes": "Wewnętrzne jednostki"
+          },
+          "url": "https://wavespeed.ai/models",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.1",
+          "released": "2025-04",
+          "is_current": true
+        },
+        {
+          "version": "2.0",
+          "released": "2025-01",
+          "is_current": false
+        },
+        {
+          "version": "1.5",
+          "released": "2024-10",
+          "is_current": false
+        },
+        {
+          "version": "1.0",
+          "released": "2024-07",
+          "is_current": false
+        }
+      ]
+    },
+    {
+      "id": "kling-3-0",
+      "name": "Kling 3.0",
+      "category": "video_generation",
+      "description": "Latest Kling video generation model from Kuaishou. High-fidelity motion, improved text adherence, advanced camera control. Represents significant step up from 2.x series.",
+      "description_pl": "Najnowsza wersja modelu Kling od Kuaishou. Wysokiej jakosci ruch, ulepszone sledenie promptu, zaawansowana kontrola kamery.",
+      "tags": [
+        "text-to-video",
+        "high-quality",
+        "camera-control",
+        "kuaishou"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video",
+        "camera_control"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "3.0",
+          "released": "2025-03",
+          "is_current": true
+        },
+        {
+          "version": "2.6",
+          "released": "2025-02",
+          "is_current": false
+        },
+        {
+          "version": "2.5",
+          "released": "2025-01",
+          "is_current": false
+        },
+        {
+          "version": "2.1",
+          "released": "2024-11",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/kling",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "piapi",
+          "pricing": {
+            "notes": "Check piapi.ai"
+          },
+          "url": "https://piapi.ai/kling",
+          "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "kling-v3",
+      "name": "Kling v3",
+      "category": "video_generation",
+      "description": "Starszy Kling v3 dostępny u wielu agregatorów. Sprawdzony, dostępny przez piapi i replicate.",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "chinese"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Czas GPU — sprawdź kalkulator"
+          },
+          "url": "https://replicate.com",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ],
+      "versions": [
+        {
+          "version": "v3",
+          "released": "2025-02",
+          "is_current": true
+        },
+        {
+          "version": "v2",
+          "released": "2024-11",
+          "is_current": false
+        },
+        {
+          "version": "v1",
+          "released": "2024-07",
+          "is_current": false
+        }
+      ]
+    },
+    {
+      "id": "kokoro-tts",
+      "name": "Kokoro TTS",
+      "category": "audio_tts",
+      "description": "Lekki open-source TTS (82M parametrów). Zaskakująco naturalny, bardzo popularny — 80M+ uruchomień na Replicate.",
+      "tags": [
+        "open-source",
+        "lightweight",
+        "popular"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "GPU T4 ~$0.81/hr — bardzo tani per wywołanie"
+          },
+          "url": "https://replicate.com/jaaari/kokoro-82m",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_1m_chars": 5,
+            "notes": "Szacunkowo najtaniej"
+          },
+          "url": "https://fal.ai/models/fal-ai/kokoro",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "kokoro-fastapi"
+    },
+    {
+      "id": "llama-3-1-405b",
+      "name": "Llama 3.1 405B",
+      "category": "llm",
+      "description": "Największy open-source model Meta (poprzednia generacja). Jakość zbliżona do GPT-4, pełna licencja open-source.",
+      "tags": [
+        "open-source",
+        "flagship",
+        "coding"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 3.5,
+            "output_per_1m": 3.5
+          },
+          "url": "https://www.together.ai/models/meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 3.0
+          },
+          "url": "https://fireworks.ai/models/fireworks/llama-v3p1-405b-instruct",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 2.0
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-3.1-405b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "transformers (huge)"
+    },
+    {
+      "id": "llama-3-1-70b",
+      "name": "Llama 3.1 70B",
+      "category": "llm",
+      "description": "Najpopularniejszy rozmiar z serii Llama 3.1. Dobry balans między jakością a ceną.",
+      "tags": [
+        "open-source",
+        "balanced"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.4,
+            "output_per_1m": 0.4
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-3.1-70b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.88,
+            "output_per_1m": 0.88
+          },
+          "url": "https://www.together.ai/models/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "llama-3-1-8b",
+      "name": "Llama 3.1 8B",
+      "category": "llm",
+      "description": "Mały ale zdolny model Meta. Idealny do prostych zadań i deploymentu on-premise.",
+      "tags": [
+        "open-source",
+        "small",
+        "cheap"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.02,
+            "output_per_1m": 0.05
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-3.1-8b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.18,
+            "output_per_1m": 0.18
+          },
+          "url": "https://www.together.ai/models/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://fireworks.ai/models/fireworks/llama-v3p1-8b-instruct",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "llama-3-2-11b-vision",
+      "name": "Llama 3.2 11B Vision",
+      "category": "llm",
+      "description": "Mały multimodalny model Meta. Vision + tekst przy bardzo niskiej cenie.",
+      "tags": [
+        "open-source",
+        "vision",
+        "cheap",
+        "small"
+      ],
+      "capabilities": [
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.049,
+            "output_per_1m": 0.049
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-3.2-11b-vision-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "llama-3-3-70b",
+      "name": "Llama 3.3 70B",
+      "category": "llm",
+      "description": "Najlepszy open-source model Meta (70B). Silny w instrukcjach i rozumowaniu, dostępny u wielu dostawców.",
+      "tags": [
+        "open-source",
+        "coding",
+        "cheap"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "groq",
+          "pricing": {
+            "input_per_1m": 0.59,
+            "output_per_1m": 0.79
+          },
+          "url": "https://console.groq.com",
+          "affiliate_url": null,
+          "available": true,
+          "notes": "Ultra-szybki inference"
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.18,
+            "output_per_1m": 0.18
+          },
+          "url": "https://www.together.ai/models/meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.09,
+            "output_per_1m": 0.09
+          },
+          "url": "https://fireworks.ai/models/fireworks/llama-v3p3-70b-instruct",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.07,
+            "output_per_1m": 0.07
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-3.3-70b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "category": "llm",
+      "description": "Flagowy model Meta z rodziny Llama 4. Architektura MoE, 17B aktywnych / 400B parametrów. Multimodal.",
+      "tags": [
+        "open-source",
+        "moe",
+        "vision",
+        "flagship"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.27,
+            "output_per_1m": 0.85
+          },
+          "url": "https://www.together.ai/models/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.6
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-4-maverick",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.22,
+            "output_per_1m": 0.88
+          },
+          "url": "https://fireworks.ai/models/fireworks/llama4-maverick-instruct-basic",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "transformers (huge)"
+    },
+    {
+      "id": "llama-4-scout",
+      "name": "Llama 4 Scout",
+      "category": "llm",
+      "description": "Efektywniejszy model z rodziny Llama 4. MoE 17B/109B, multimodal. Tańszy niż Maverick.",
+      "tags": [
+        "open-source",
+        "moe",
+        "vision",
+        "cheap"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.08,
+            "output_per_1m": 0.3
+          },
+          "url": "https://openrouter.ai/meta-llama/llama-4-scout",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.6
+          },
+          "url": "https://www.together.ai/models/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "ltx-video",
+      "name": "LTX-Video",
+      "category": "video_generation",
+      "description": "Open-source model wideo od Lightricks. Szybka generacja w czasie rzeczywistym, dostępny przez Replicate.",
+      "tags": [
+        "open-source",
+        "fast",
+        "text-to-video"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Czas GPU L40S ~$3.51/hr"
+          },
+          "url": "https://replicate.com/lightricks/ltx-video",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_second": 0.05
+          },
+          "url": "https://fal.ai/models/fal-ai/ltx-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI"
+    },
+    {
+      "id": "luma-ray-2",
+      "name": "Luma Ray 2",
+      "category": "video_generation",
+      "description": "Flagowy model wideo Luma AI. Doskonała kontrola fizyki i ruchu, dostępny przez API.",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "physics"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_video": 0.71,
+            "notes": "5s 720p"
+          },
+          "url": "https://replicate.com/luma/ray-2",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_video": 0.7,
+            "notes": "5s"
+          },
+          "url": "https://fal.ai/models/luma/ray-2",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "versions": [
+        {
+          "version": "Ray 2",
+          "released": "2025-01",
+          "is_current": true
+        },
+        {
+          "version": "Ray 1",
+          "released": "2024-07",
+          "is_current": false
+        }
+      ]
+    },
+    {
+      "id": "luma-ray-flash-2",
+      "name": "Luma Ray Flash 2",
+      "category": "video_generation",
+      "description": "Szybsza i tańsza wersja Luma Ray 2. Dobra jakość przy niższym koszcie.",
+      "tags": [
+        "text-to-video",
+        "fast",
+        "cheap"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_video": 0.24,
+            "notes": "5s 720p"
+          },
+          "url": "https://replicate.com/luma/ray-flash-2",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "mistral-7b",
+      "name": "Mistral 7B Instruct",
+      "category": "llm",
+      "description": "Klasyczny open-source model Mistral. Apache 2.0, dostępny wszędzie, doskonały stosunek jakości do ceny.",
+      "tags": [
+        "open-source",
+        "cheap",
+        "european"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 32,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://fireworks.ai/models/fireworks/mistral-7b-instruct-v0p2",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://www.together.ai/models/mistralai/Mistral-7B-Instruct-v0.3",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.03,
+            "output_per_1m": 0.05
+          },
+          "url": "https://openrouter.ai/mistralai/mistral-7b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "mistral-large",
+      "name": "Mistral Large 3",
+      "category": "llm",
+      "description": "Flagowy model Mistral. Kontekst 262k tokenów, vision — w konkurencyjnej cenie.",
+      "tags": [
+        "european",
+        "vision",
+        "coding"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 262,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "mistral",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 1.5
+          },
+          "url": "https://console.mistral.ai",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 1.5
+          },
+          "url": "https://openrouter.ai/mistralai/mistral-large",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "mistral-nemo",
+      "name": "Mistral NeMo",
+      "category": "llm",
+      "description": "12B model Mistral trenowany z NVIDIA. Apache 2.0, multilingualny, bardzo dobry za cenę.",
+      "tags": [
+        "open-source",
+        "cheap",
+        "multilingual",
+        "european"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.02,
+            "output_per_1m": 0.04
+          },
+          "url": "https://openrouter.ai/mistralai/mistral-nemo",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://www.together.ai/models/mistralai/Mistral-Nemo-Instruct-2407",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "mistral-small",
+      "name": "Mistral Small",
+      "category": "llm",
+      "description": "Najtańszy model Mistral z vision. Idealny do klasyfikacji i prostych zadań NLP.",
+      "tags": [
+        "cheap",
+        "european",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "mistral",
+          "pricing": {
+            "input_per_1m": 0.06,
+            "output_per_1m": 0.18
+          },
+          "url": "https://console.mistral.ai",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.06,
+            "output_per_1m": 0.18
+          },
+          "url": "https://openrouter.ai/mistralai/mistral-small",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "mixtral-8x22b",
+      "name": "Mixtral 8x22B",
+      "category": "llm",
+      "description": "MoE flagship Mistral z 39B aktywnymi parametrami. Silny w kodowaniu, wielojęzyczności.",
+      "tags": [
+        "moe",
+        "coding",
+        "multilingual",
+        "european"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 65,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 6.0
+          },
+          "url": "https://openrouter.ai/mistralai/mixtral-8x22b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 1.2,
+            "output_per_1m": 1.2
+          },
+          "url": "https://fireworks.ai/models/fireworks/mixtral-8x22b-instruct-hf",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 1.2,
+            "output_per_1m": 1.2
+          },
+          "url": "https://www.together.ai/models/mistralai/Mixtral-8x22B-Instruct-v0.1",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "Ollama (high VRAM)"
+    },
+    {
+      "id": "mixtral-8x7b",
+      "name": "Mixtral 8x7B",
+      "category": "llm",
+      "description": "Klasyczny MoE model Mistral. Szybki, tani, Apache 2.0 — jeden z najpopularniejszych open-source LLM.",
+      "tags": [
+        "open-source",
+        "moe",
+        "cheap",
+        "european"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 32,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.54,
+            "output_per_1m": 0.54
+          },
+          "url": "https://openrouter.ai/mistralai/mixtral-8x7b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 0.5
+          },
+          "url": "https://fireworks.ai/models/fireworks/mixtral-8x7b-instruct-hf",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.54,
+            "output_per_1m": 0.54
+          },
+          "url": "https://www.together.ai/models/mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "musicgen-large",
+      "name": "MusicGen Large",
+      "category": "music_generation",
+      "description": "Open-source model generowania muzyki od Meta. Stereofoniczny output, kontrola przez tekst i melodię.",
+      "tags": [
+        "open-source",
+        "meta",
+        "stereo"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "GPU A100 ~43s/run; ~$0.059/generację"
+          },
+          "url": "https://replicate.com/meta/musicgen",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Sprawdź aktualną cenę"
+          },
+          "url": "https://fal.ai/models/meta/musicgen",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "transformers / audiocraft"
+    },
+    {
+      "id": "nano-banana",
+      "name": "Nano Banana",
+      "category": "image_generation",
+      "description": "Fast image generation and editing by kie.ai, powered by Google Gemini 2.5 Flash Image. Natural language-driven editing with pixel-level accuracy — object replacement, background changes, facial refinement. Physics-aware output: coherent lighting, shadows and spatial relationships.",
+      "description_pl": "Szybki model generowania i edycji obrazow kie.ai oparty na Google Gemini 2.5 Flash Image. Edycja sterowana jezykiem naturalnym z dokladnoscia pikselowa. Swiadomy fizyki: oswietlenie, cienie, spojnosc przestrzenna.",
+      "tags": [
+        "text-to-image",
+        "image-editing",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "text_in_image",
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "1",
+          "released": "2025-01",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "per_image": 0.02,
+            "notes": "~$0.02 standard (4 credits)"
+          },
+          "url": "https://kie.ai/nano-banana",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "nano-banana-2",
+      "name": "Nano Banana 2",
+      "category": "image_generation",
+      "description": "Google Gemini 3.1 Flash Image rebranded by kie.ai at ~40% below official pricing. Supports 512px/1K/2K/4K resolution, ultra-wide ratios (8:1). Character-by-character text rendering in multiple languages, consistency across up to 5 people, web search grounding for factually current visuals.",
+      "description_pl": "Google Gemini 3.1 Flash Image dostepny przez kie.ai ~40% taniej niz oficjalny cennik. Rozdzielczosci 512px/1K/2K/4K, ultrapanoramiczne proporcje. Precyzyjne renderowanie tekstu, spojnosc do 5 postaci, wyszukiwanie w czasie rzeczywistym.",
+      "tags": [
+        "text-to-image",
+        "image-editing",
+        "gemini",
+        "high-resolution",
+        "4k",
+        "text-rendering"
+      ],
+      "capabilities": [
+        "text_in_image",
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "2",
+          "released": "2025-03",
+          "is_current": true
+        },
+        {
+          "version": "1",
+          "released": "2025-01",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "per_image": 0.04,
+            "notes": "1K: $0.04 | 2K: $0.06 | 4K: $0.09"
+          },
+          "url": "https://kie.ai/nano-banana-2",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.08,
+            "notes": "1K: $0.08 | 2K: $0.12 | 4K: $0.16 | + $0.015 web search"
+          },
+          "url": "https://fal.ai/models/fal-ai/nano-banana-2",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "nomic-embed",
+      "name": "nomic-embed-text-v1.5",
+      "category": "embedding",
+      "description": "Open-source embeddingi od Nomic AI. Matryoshka embeddingi — można dopasować rozmiar wektora.",
+      "tags": [
+        "open-source",
+        "cheap",
+        "matryoshka"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.008
+          },
+          "url": "https://fireworks.ai/models/nomic-ai/nomic-embed-text-v1-5",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.008
+          },
+          "url": "https://www.together.ai/models/nomic-ai/nomic-embed-text-v1.5",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama / nomic-embed"
+    },
+    {
+      "id": "o1",
+      "name": "o1",
+      "category": "llm",
+      "description": "Oryginalny model reasoning OpenAI. Myśli długo, odpowiada celnie — do najtrudniejszych problemów.",
+      "tags": [
+        "reasoning",
+        "flagship",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 60.0
+          },
+          "url": "https://platform.openai.com/docs/models/o1",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 60.0
+          },
+          "url": "https://openrouter.ai/openai/o1",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "o1-mini",
+      "name": "o1-mini",
+      "category": "llm",
+      "description": "Szybszy i tańszy wariant o1. Bez vision, ale silny w matematyce i kodowaniu.",
+      "tags": [
+        "reasoning",
+        "fast",
+        "coding"
+      ],
+      "capabilities": [
+        "reasoning"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.1,
+            "output_per_1m": 4.4
+          },
+          "url": "https://platform.openai.com/docs/models/o1-mini",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "o3",
+      "name": "o3",
+      "category": "llm",
+      "description": "Zaawansowany model reasoning OpenAI. Doskonały do złożonych zadań matematycznych, naukowych i kodowania.",
+      "tags": [
+        "reasoning",
+        "flagship",
+        "coding"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 8.0
+          },
+          "url": "https://platform.openai.com/docs/models/o3",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 8.0
+          },
+          "url": "https://openrouter.ai/openai/o3",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "o3-pro",
+      "name": "o3-pro",
+      "category": "llm",
+      "description": "Najmocniejszy model reasoning OpenAI. Do zadań gdzie koszty nie grają roli, a jakość jest kluczowa.",
+      "tags": [
+        "reasoning",
+        "premium"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 20.0,
+            "output_per_1m": 80.0
+          },
+          "url": "https://platform.openai.com/docs/models/o3-pro",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "o4-mini",
+      "name": "o4-mini",
+      "category": "llm",
+      "description": "Szybki model reasoning od OpenAI. Doskonały punkt wejścia do zadań wymagających rozumowania.",
+      "tags": [
+        "reasoning",
+        "fast",
+        "vision"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.1,
+            "output_per_1m": 4.4
+          },
+          "url": "https://platform.openai.com/docs/models/o4-mini",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.1,
+            "output_per_1m": 4.4
+          },
+          "url": "https://openrouter.ai/openai/o4-mini",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "openai-tts",
+      "name": "OpenAI TTS",
+      "category": "audio_tts",
+      "description": "Solidny TTS od OpenAI. Tts-1 do szybkiej produkcji, tts-1-hd do wysokiej jakości.",
+      "tags": [
+        "fast",
+        "hd-option"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_1m_chars": 15,
+            "notes": "tts-1 standard"
+          },
+          "url": "https://platform.openai.com/docs/guides/text-to-speech",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_1m_chars": 30,
+            "notes": "tts-1-hd wysoka jakość"
+          },
+          "url": "https://platform.openai.com/docs/guides/text-to-speech",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "phi-4",
+      "name": "Phi-4",
+      "category": "llm",
+      "description": "14B model Microsoft. Fenomenalna jakość jak na swój rozmiar — idealny do wdrożeń edge.",
+      "tags": [
+        "small",
+        "efficient",
+        "coding"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 16,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.06,
+            "output_per_1m": 0.14
+          },
+          "url": "https://openrouter.ai/microsoft/phi-4",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "pixtral-large",
+      "name": "Pixtral Large",
+      "category": "llm",
+      "description": "124B multimodalny model Mistral. Najsilniejszy vision model od Mistral, kontekst 128k.",
+      "tags": [
+        "flagship",
+        "vision",
+        "european"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "mistral",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 6.0
+          },
+          "url": "https://console.mistral.ai",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 6.0
+          },
+          "url": "https://openrouter.ai/mistralai/pixtral-large-2411",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "playground-v25",
+      "name": "Playground v2.5",
+      "category": "image_generation",
+      "description": "Popularny model estetyczny. Świetny do artystycznych i stylizowanych grafik, darmowy do użytku osobistego.",
+      "tags": [
+        "artistic",
+        "stylized",
+        "popular"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "per_image": 0.006,
+            "notes": "~30 kroków"
+          },
+          "url": "https://fireworks.ai/models/fireworks/playground-v2-5-1024px-aesthetic",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.01
+          },
+          "url": "https://replicate.com/playgroundai/playground-v2.5-1024px-aesthetic",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "qwen25-coder-32b",
+      "name": "Qwen2.5 Coder 32B",
+      "category": "llm",
+      "description": "Wyspecjalizowany model kodowania od Alibaba. Jeden z najlepszych open-source modeli do kodu.",
+      "tags": [
+        "coding",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.07,
+            "output_per_1m": 0.16
+          },
+          "url": "https://openrouter.ai/qwen/qwen-2.5-coder-32b-instruct",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "qwen3-235b",
+      "name": "Qwen3 235B A22B",
+      "category": "llm",
+      "description": "Flagowy model Alibaba. MoE z 22B aktywnymi parametrami, 235B łącznie. Tryb myślenia i bez myślenia.",
+      "tags": [
+        "flagship",
+        "moe",
+        "reasoning",
+        "coding"
+      ],
+      "capabilities": [
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 262,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.6
+          },
+          "url": "https://www.together.ai/models/qwen3-235b-a22b-fp8-tput",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.455,
+            "output_per_1m": 1.82
+          },
+          "url": "https://openrouter.ai/qwen/qwen3-235b-a22b",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.22,
+            "output_per_1m": 0.88
+          },
+          "url": "https://fireworks.ai/models/fireworks/qwen3-235b-a22b",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "vLLM (huge)"
+    },
+    {
+      "id": "qwen3-32b",
+      "name": "Qwen3 32B",
+      "category": "llm",
+      "description": "Średni model Qwen3. Dobry balans ceny i możliwości, wsparcie trybu myślenia.",
+      "tags": [
+        "reasoning",
+        "coding",
+        "balanced"
+      ],
+      "capabilities": [
+        "reasoning",
+        "function_calling"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.08,
+            "output_per_1m": 0.24
+          },
+          "url": "https://openrouter.ai/qwen/qwen3-32b",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "qwen3-8b",
+      "name": "Qwen3 8B",
+      "category": "llm",
+      "description": "Mały model Qwen3 z możliwością reasoning. Zaskakująco zdolny jak na swój rozmiar.",
+      "tags": [
+        "small",
+        "cheap",
+        "reasoning"
+      ],
+      "capabilities": [
+        "reasoning"
+      ],
+      "context_k": 131,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.05,
+            "output_per_1m": 0.4
+          },
+          "url": "https://openrouter.ai/qwen/qwen3-8b",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama"
+    },
+    {
+      "id": "recraft-v3",
+      "name": "Recraft V3",
+      "category": "image_generation",
+      "description": "Lider benchmarków image gen (styczeń 2025). Doskonały do ilustracji, ikon i brand assets.",
+      "tags": [
+        "illustration",
+        "design",
+        "high-quality"
+      ],
+      "capabilities": [
+        "text_in_image"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://replicate.com/recraft-ai/recraft-v3",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://fal.ai/models/recraft/recraft-v3",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "runway-gen4-turbo",
+      "name": "Runway Gen-4 Turbo",
+      "category": "video_generation",
+      "description": "Szybsza i tańsza wersja Gen-4. Dobry wybór do szybkich prototypów i produkcji na dużą skalę.",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "fast"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "runway",
+          "pricing": {
+            "per_second": 0.05,
+            "notes": "5 kredytów/s"
+          },
+          "url": "https://dev.runwayml.com",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "runway-gen4",
+      "name": "Runway Gen-4.5",
+      "category": "video_generation",
+      "description": "Flagowy model wideo Runway. Zaawansowana kontrola ruchu kamery, wysoka jakość wizualna.",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "flagship"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video",
+        "camera_control"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "runway",
+          "pricing": {
+            "per_second": 0.12,
+            "notes": "12 kredytów/s, 1 kredyt=$0.01"
+          },
+          "url": "https://dev.runwayml.com",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Dostępny przez kie.ai credits"
+          },
+          "url": "https://kie.ai",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "seedance-2",
+      "name": "Seedance 2.0",
+      "category": "video_generation",
+      "description": "Zaawansowany model generowania wideo od ByteDance. Wysoka jakość ruchu i spójność temporalna.",
+      "tags": [
+        "text-to-video",
+        "high-quality"
+      ],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "piapi",
+          "pricing": {
+            "per_second": 0.15,
+            "notes": "Wersja Preview"
+          },
+          "url": "https://piapi.ai/seedance-2-0",
+          "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "piapi",
+          "pricing": {
+            "per_second": 0.08,
+            "notes": "Wersja Fast"
+          },
+          "url": "https://piapi.ai/seedance-2-0",
+          "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "wavespeed",
+          "pricing": {
+            "notes": "Wewnętrzne jednostki, sprawdź stronę"
+          },
+          "url": "https://wavespeed.ai/models",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Sprawdź aktualną cenę"
+          },
+          "url": "https://aimlapi.com",
+          "affiliate_url": "https://aimlapi.com?via=tsa",
+          "available": true
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.0",
+          "released": "2025-01",
+          "is_current": true
+        },
+        {
+          "version": "1.5",
+          "released": "2024-09",
+          "is_current": false
+        },
+        {
+          "version": "1.0",
+          "released": "2024-06",
+          "is_current": false
+        }
+      ]
+    },
+    {
+      "id": "seedream-4-5",
+      "name": "Seedream 4.5",
+      "category": "image_generation",
+      "description": "ByteDance Seedream 4.5 — high-quality text-to-image model with exceptional Chinese and multilingual text rendering. Photorealistic output with strong aesthetic quality.",
+      "description_pl": "ByteDance Seedream 4.5 — model text-to-image z doskonalym renderowaniem tekstu wielojezycznego. Fotorealistyczny output z wysoka jakoscia estetyczna.",
+      "tags": [
+        "text-to-image",
+        "bytedance",
+        "photorealistic",
+        "multilingual"
+      ],
+      "capabilities": [
+        "text_in_image",
+        "multilingual"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "4.5",
+          "released": "2025-02",
+          "is_current": true
+        },
+        {
+          "version": "3.0",
+          "released": "2024-10",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/seedream",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "sonar",
+      "name": "Sonar",
+      "category": "llm",
+      "description": "Tańsza wersja Sonar z web search. Do mniej wymagających zadań RAG z dostępem do sieci.",
+      "tags": [
+        "web-search",
+        "cheap"
+      ],
+      "capabilities": [
+        "web_search"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "perplexity",
+          "pricing": {
+            "input_per_1m": 1.0,
+            "output_per_1m": 1.0
+          },
+          "url": "https://www.perplexity.ai/settings/api",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "sonar-pro",
+      "name": "Sonar Pro",
+      "category": "llm",
+      "description": "Model Perplexity z wbudowanym web search. Idealne odpowiedzi oparte o aktualne dane z sieci.",
+      "tags": [
+        "web-search",
+        "rag"
+      ],
+      "capabilities": [
+        "web_search"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "perplexity",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://www.perplexity.ai/settings/api",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "sora-2",
+      "name": "Sora 2",
+      "category": "video_generation",
+      "description": "Flagowy model wideo OpenAI. Dostępny przez API u agregatorów. Wysokie koszty, wyjątkowa jakość.",
+      "tags": [
+        "openai",
+        "high-quality",
+        "premium"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_second": 0.1,
+            "notes": "720p"
+          },
+          "url": "https://platform.openai.com/docs/guides/video",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_second": 0.3,
+            "notes": "1080p Pro"
+          },
+          "url": "https://platform.openai.com/docs/guides/video",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "piapi",
+          "pricing": {
+            "notes": "Sprawdź aktualną cenę u agregatorów"
+          },
+          "url": "https://piapi.ai",
+          "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "versions": [
+        {
+          "version": "Sora 2",
+          "released": "2025-02",
+          "is_current": true
+        },
+        {
+          "version": "Sora 1",
+          "released": "2024-02",
+          "is_current": false
+        }
+      ]
+    },
+    {
+      "id": "stable-diffusion-3-5",
+      "name": "Stable Diffusion 3.5 Large",
+      "category": "image_generation",
+      "description": "Najnowszy model Stability AI. Wysoka jakość, szczegółowość, licencja komercyjna.",
+      "tags": [
+        "open-weight",
+        "commercial",
+        "high-quality"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "stabilityai",
+          "pricing": {
+            "per_image": 0.065
+          },
+          "url": "https://platform.stability.ai/docs/api-reference#tag/Generate",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_image": 0.065
+          },
+          "url": "https://replicate.com/stability-ai/stable-diffusion-3.5-large",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_image": 0.035
+          },
+          "url": "https://fal.ai/models/fal-ai/stable-diffusion-v35-large",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_megapixel": 0.0019
+          },
+          "url": "https://www.together.ai/models/stable-diffusion-3",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "suno-v4-5",
+      "name": "Suno v4.5",
+      "category": "music_generation",
+      "description": "Latest Suno music generation model. Improved vocal quality, more precise lyric-to-melody alignment, supports up to 8-minute tracks. Significant upgrade over v4 in emotional expressiveness.",
+      "description_pl": "Najnowszy model generowania muzyki Suno. Lepsza jakosc wokalu, precyzyjniejsze dopasowanie tekstu do melodii, do 8 minut.",
+      "tags": [
+        "music",
+        "vocals",
+        "text-to-music",
+        "lyrics"
+      ],
+      "capabilities": [
+        "audio_generation"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "v4.5",
+          "released": "2025-03",
+          "is_current": true
+        },
+        {
+          "version": "v4",
+          "released": "2024-12",
+          "is_current": false
+        },
+        {
+          "version": "v3.5",
+          "released": "2024-07",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/suno",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com"
+          },
+          "url": "https://aimlapi.com/suno",
+          "affiliate_url": "https://aimlapi.com?via=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "text-embedding-3-large",
+      "name": "text-embedding-3-large",
+      "category": "embedding",
+      "description": "Największy model embeddingów OpenAI. 3072 wymiarów, najwyższa jakość dla wymagających zastosowań.",
+      "tags": [
+        "openai",
+        "high-quality",
+        "rag"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.13
+          },
+          "url": "https://platform.openai.com/docs/guides/embeddings",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.13
+          },
+          "url": "https://openrouter.ai/openai/text-embedding-3-large",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "text-embedding-3-small",
+      "name": "text-embedding-3-small",
+      "category": "embedding",
+      "description": "Nowe embeddingi OpenAI. 1536 wymiarów, najlepszy stosunek jakości do ceny w ofercie OpenAI.",
+      "tags": [
+        "openai",
+        "cheap",
+        "rag"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.02
+          },
+          "url": "https://platform.openai.com/docs/guides/embeddings",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.02
+          },
+          "url": "https://openrouter.ai/openai/text-embedding-3-small",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "name": "text-embedding-ada-002",
+      "category": "embedding",
+      "description": "Legacy embedding OpenAI. Nadal szeroko używany, wspierany w starszych systemach.",
+      "tags": [
+        "openai",
+        "legacy",
+        "rag"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.1
+          },
+          "url": "https://platform.openai.com/docs/guides/embeddings",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": false,
+      "local_available": false
+    },
+    {
+      "id": "veo-2",
+      "name": "Veo 2",
+      "category": "video_generation",
+      "description": "Poprzednia generacja modelu wideo Google. Nadal wysokiej jakości, tańsze niż Veo 3.",
+      "tags": [
+        "google",
+        "high-quality"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "per_second": 0.35
+          },
+          "url": "https://ai.google.dev/gemini-api/docs/video",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 2.5
+          },
+          "url": "https://www.together.ai/models/google/veo-2",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "veo-3",
+      "name": "Veo 3",
+      "category": "video_generation",
+      "description": "Model wideo Google z generowaniem dźwięku. Generuje wideo z synchronizowanym audio.",
+      "tags": [
+        "text-to-video",
+        "with-audio",
+        "google"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "audio_generation"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "per_second": 0.75,
+            "notes": "video + audio (Gemini API)"
+          },
+          "url": "https://ai.google.dev/gemini-api/docs/video",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "runway",
+          "pricing": {
+            "per_second": 0.4,
+            "notes": "40 kredytów/s"
+          },
+          "url": "https://dev.runwayml.com",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 1.6,
+            "notes": "Veo 3"
+          },
+          "url": "https://www.together.ai/models/google/veo-3",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "per_video": 0.4,
+            "notes": "Fast mode"
+          },
+          "url": "https://kie.ai",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "per_video": 2.0,
+            "notes": "Quality mode"
+          },
+          "url": "https://kie.ai",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "veo-3-1",
+      "name": "Veo 3.1",
+      "category": "video_generation",
+      "description": "Google Veo 3.1 — cinematic video generation with synchronized native audio track, strong motion quality and prompt adherence. The audio-sync feature makes it unique among video generation models.",
+      "description_pl": "Google Veo 3.1 — kinematograficzne generowanie wideo z synchronizowanym dzwiekiem, wysokiej jakosci ruch. Zintegrowany dzwiek to unikalna cecha na tle innych modeli wideo.",
+      "tags": [
+        "text-to-video",
+        "google",
+        "cinematic",
+        "audio-sync",
+        "native-audio"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "audio_generation"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "3.1",
+          "released": "2025-03",
+          "is_current": true
+        },
+        {
+          "version": "3.0",
+          "released": "2025-01",
+          "is_current": false
+        },
+        {
+          "version": "2.0",
+          "released": "2024-09",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "per_second": 0.4,
+            "notes": "720p/1080p (Gemini API). 4K: $0.60/s"
+          },
+          "url": "https://ai.google.dev/gemini-api/docs/video",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/veo-3",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "voyage-4",
+      "name": "Voyage-4",
+      "category": "embedding",
+      "description": "Aktualne embeddingi od Voyage AI (spółka Anthropic). Jedna z najlepszych jakości na rynku.",
+      "tags": [
+        "high-quality",
+        "rag"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.06
+          },
+          "url": "https://openrouter.ai/voyageai/voyage-4",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "voyage-4-large",
+      "name": "Voyage-4 Large",
+      "category": "embedding",
+      "description": "Największy model embeddingów Voyage AI. Najwyższa jakość przy wyższej cenie.",
+      "tags": [
+        "high-quality",
+        "premium"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.12
+          },
+          "url": "https://openrouter.ai/voyageai/voyage-4-large",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "wan-2-1",
+      "name": "WAN 2.1",
+      "category": "video_generation",
+      "description": "Open-source model wideo od Alibaba. Image-to-video, dostępny 480p i 720p.",
+      "tags": [
+        "open-source",
+        "image-to-video"
+      ],
+      "capabilities": [
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_second": 0.09,
+            "notes": "i2v 480p"
+          },
+          "url": "https://replicate.com",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "per_second": 0.25,
+            "notes": "i2v 720p"
+          },
+          "url": "https://replicate.com",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "wavespeed",
+          "pricing": {
+            "notes": "Wewnętrzne jednostki"
+          },
+          "url": "https://wavespeed.ai/models",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_second": 0.08
+          },
+          "url": "https://fal.ai",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "wan-2-2",
+      "name": "WAN 2.2",
+      "category": "video_generation",
+      "description": "Nowsza wersja WAN od Alibaba. Lepsza jakość, dostępna przez Together AI z przejrzystą ceną per wideo.",
+      "tags": [
+        "open-source",
+        "text-to-video",
+        "image-to-video"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 0.66,
+            "notes": "T2V"
+          },
+          "url": "https://www.together.ai/models/wan-2.2-t2v",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_video": 0.31,
+            "notes": "I2V"
+          },
+          "url": "https://www.together.ai/models/wan-2.2-i2v",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "versions": [
+        {
+          "version": "2.2",
+          "released": "2025-03",
+          "is_current": true
+        },
+        {
+          "version": "2.1",
+          "released": "2025-01",
+          "is_current": false
+        },
+        {
+          "version": "2.0",
+          "released": "2024-11",
+          "is_current": false
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "wan-2-5",
+      "name": "WAN 2.5",
+      "category": "video_generation",
+      "description": "WAN 2.5 by Alibaba — open-source video generation model, latest version. Improved motion coherence, supports longer clips, better instruction following. Can be run locally for free via ComfyUI/diffusers.",
+      "description_pl": "WAN 2.5 od Alibaby — open-source'owy model generowania wideo. Ulepszona spojnosc ruchu, dluzsze klipy, lepsze podazanie za promptem. Mozna uruchomic lokalnie za darmo.",
+      "tags": [
+        "text-to-video",
+        "open-source",
+        "alibaba",
+        "local"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers",
+      "context_k": null,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "versions": [
+        {
+          "version": "2.5",
+          "released": "2025-03",
+          "is_current": true
+        },
+        {
+          "version": "2.2",
+          "released": "2025-01",
+          "is_current": false
+        },
+        {
+          "version": "2.1",
+          "released": "2024-12",
+          "is_current": false
+        }
+      ],
+      "providers": [
+        {
+          "provider_id": "kie",
+          "pricing": {
+            "notes": "Credit-based — check kie.ai"
+          },
+          "url": "https://kie.ai/wan",
+          "affiliate_url": "https://kie.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "whisper-openai",
+      "name": "Whisper (OpenAI)",
+      "category": "audio_stt",
+      "description": "Flagowy model STT OpenAI. Wielojęzyczna transkrypcja, dostępny u wielu dostawców.",
+      "tags": [
+        "multilingual",
+        "open-source"
+      ],
+      "capabilities": [
+        "multilingual",
+        "translation"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "per_minute": 0.006
+          },
+          "url": "https://platform.openai.com/docs/guides/speech-to-text",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "groq",
+          "pricing": {
+            "per_minute": 0.0185
+          },
+          "url": "https://console.groq.com",
+          "affiliate_url": null,
+          "available": true,
+          "notes": "Ultra-szybki inference"
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "per_minute": 0.0015
+          },
+          "url": "https://fireworks.ai",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "per_minute": 0.004
+          },
+          "url": "https://fal.ai",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "whisper-large-v3-turbo",
+      "name": "Whisper Large v3 Turbo",
+      "category": "audio_stt",
+      "description": "Szybsza i tańsza wersja Whisper Large. Minimalna utrata jakości, 8x szybsza od oryginału.",
+      "tags": [
+        "fast",
+        "open-source",
+        "cheap"
+      ],
+      "capabilities": [
+        "multilingual"
+      ],
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "groq",
+          "pricing": {
+            "per_minute": 0.0067
+          },
+          "url": "https://console.groq.com",
+          "affiliate_url": null,
+          "available": true,
+          "notes": "Szybki inference"
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "per_minute": 0.0009
+          },
+          "url": "https://fireworks.ai",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "together",
+          "pricing": {
+            "per_minute": 0.0015
+          },
+          "url": "https://www.together.ai",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "faster-whisper / whisper.cpp"
+    },
+    {
+      "id": "wizardlm-2-8x22b",
+      "name": "WizardLM-2 8x22B",
+      "category": "llm",
+      "description": "Fine-tune Mixtral 8x22B od Microsoft. Silny w instrukcjach, roleplaying i złożonych zadaniach.",
+      "tags": [
+        "moe",
+        "instruction-following"
+      ],
+      "capabilities": [],
+      "context_k": 65,
+      "updated_at": "2026-03-08",
+      "source": "manual",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.62,
+            "output_per_1m": 0.62
+          },
+          "url": "https://openrouter.ai/microsoft/wizardlm-2-8x22b",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "open_source": true,
+      "local_available": false,
+      "local_tool": "vLLM"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Generated — individual model files (2000+ files, redundant with models.json)
+data/models/
+data/models-index.json
+
+# Internal monitoring (not useful for contributors)
+data/or-api-status.json
+
+# Partial/temp fetch files
+data/*-p1.json
+data/*-p2.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp

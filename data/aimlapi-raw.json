@@ -1,0 +1,1779 @@
+{
+  "models": [
+    {
+      "id": "openai/gpt-4o",
+      "type": "chat-completion",
+      "name": "GPT 4o",
+      "developer": "Open AI",
+      "description": "Multimodal AI model by OpenAI enhancing human-computer interaction.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/chat-gpt-4-omni",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "gpt-4o-mini",
+      "type": "chat-completion",
+      "name": "GPT 4o mini",
+      "developer": "Open AI",
+      "description": "GPT-4o Mini: Cost-efficient, advanced model for diverse AI applications.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/chat-gpt-4o-mini",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "gpt-4-turbo",
+      "type": "chat-completion",
+      "name": "GPT 4 turbo",
+      "developer": "Open AI",
+      "description": "High-speed AI model for instant language processing. API for ChatGPT 4 Turbo.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/chat-gpt-4-turbo",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "gpt-4",
+      "type": "chat-completion",
+      "name": "GPT 4",
+      "developer": "Open AI",
+      "description": "Revolutionary AI model for unparalleled natural language interaction. API for ChatGPT 4.",
+      "context_length": 8000,
+      "url": "https://aimlapi.com/models/chat-gpt-4",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "o3-mini",
+      "type": "chat-completion",
+      "name": "o3 mini",
+      "developer": "Open AI",
+      "description": "OpenAI o3-mini excels in reasoning tasks with advanced features like deliberative alignment and extensive context support.",
+      "context_length": 200000,
+      "url": "https://aimlapi.com/models/openai-o3-mini-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-audio",
+      "type": "chat-completion",
+      "name": "Chat GPT audio",
+      "developer": "Open AI",
+      "description": "GPT Audio is OpenAI's latest flagship model capable of understanding and generating text and audio in real-time, designed for natural conversation and auditory tasks.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-audio-mini",
+      "type": "chat-completion",
+      "name": "Chat GPT mini audio",
+      "developer": "Open AI",
+      "description": "GPT Mini Audio adds speech-to-text and text-to-speech abilities to the efficient GPT Mini model, optimized for voice interfaces in smaller applications.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-2025-04-14",
+      "type": "chat-completion",
+      "name": "Chat GPT 4.1",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-mini-2025-04-14",
+      "type": "chat-completion",
+      "name": "Chat GPT 4.1 mini",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-nano-2025-04-14",
+      "type": "chat-completion",
+      "name": "Chat GPT 4.1 nano",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/o4-mini-2025-04-16",
+      "type": "chat-completion",
+      "name": "o4-mini",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/o3-2025-04-16",
+      "type": "chat-completion",
+      "name": "o3",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "o1",
+      "type": "chat-completion",
+      "name": "o1",
+      "developer": "Open AI",
+      "description": "OpenAI o1 excels in complex reasoning tasks with advanced features like chain-of-thought processing and extensive context support.",
+      "context_length": 200000,
+      "url": "https://aimlapi.com/models/openai-o1-api",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-2025-08-07",
+      "type": "chat-completion",
+      "name": "GPT-5",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-mini-2025-08-07",
+      "type": "chat-completion",
+      "name": "GPT-5 mini",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-nano-2025-08-07",
+      "type": "chat-completion",
+      "name": "GPT-5 nano",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-chat-latest",
+      "type": "chat-completion",
+      "name": "GPT-5 Chat",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-1",
+      "type": "chat-completion",
+      "name": "GPT-5.1",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-1-chat-latest",
+      "type": "chat-completion",
+      "name": "GPT-5.1 Chat Latest",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-2",
+      "type": "chat-completion",
+      "name": "GPT-5.2",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 400000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-2-chat-latest",
+      "type": "chat-completion",
+      "name": "GPT-5.2 Chat Latest",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "type": "chat-completion",
+      "name": "Mixtral 8x7B Instruct v0.1",
+      "developer": "Mistral AI",
+      "description": "Harness the power of tailored AI with Mixtral-8x7B Instruct v0.1 API",
+      "context_length": 64000,
+      "url": "https://aimlapi.com/models/mixtral-8x7b-instruct-v01",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Llama 3.3 70B Instruct Turbo",
+      "developer": "Meta",
+      "description": "Meta Llama 3.3 70B Instruct Turbo is an advanced language model optimized for instruction-following tasks with high efficiency and performance.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/meta-llama-3-3-70b-instruct-turbo-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Llama 3.2 3B Instruct Turbo",
+      "developer": "Meta",
+      "description": "Efficient multilingual LLM for diverse NLP tasks with 3B parameters.",
+      "context_length": 131000,
+      "url": "https://aimlapi.com/models/llama-3-2-3b-instruct-turbo",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-Guard-3-11B-Vision-Turbo",
+      "type": "chat-completion",
+      "name": "Llama Guard 3 11B Vision Turbo",
+      "developer": "Meta",
+      "description": "Meta Llama Guard 3 11B Vision Turbo is a multimodal safety classifier for detecting harmful content in text and images.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Qwen2.5 7B Instruct Turbo",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen 2.5 7B Instruct Turbo excels in coding and instruction following.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/qwen-2-5-7b-instruct-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+      "type": "chat-completion",
+      "name": "Meta Llama 3 8B Instruct Lite",
+      "developer": "Meta",
+      "description": "Llama 3 8B Instruct Lite: Advanced, fast and cheapest one text generation model optimized for dialogue, emphasizing safety and helpfulness",
+      "context_length": 9000,
+      "url": "https://aimlapi.com/models/llama-3-8b-instruct-lite-api",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "Qwen/Qwen2.5-72B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Qwen2.5 72B Instruct Turbo",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen 2.5 Instruct Turbo excels in coding tasks with expansive context capabilities.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/qwen-2-5-72b-instruct-turbo",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Meta Llama 3.1 405B Instruct Turbo",
+      "developer": "Meta",
+      "description": "Llama 3.1 405B: Advanced text generation model by Meta AI.",
+      "context_length": 131000,
+      "url": "https://aimlapi.com/models/llama-3-1-405b-api",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Meta Llama 3.1 8B Instruct Turbo",
+      "developer": "Meta",
+      "description": "Advanced language model for high-quality text generation and multilingual support.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/llama-3-1-8b-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+      "type": "chat-completion",
+      "name": "Meta Llama 3.1 70B Instruct Turbo",
+      "developer": "Meta",
+      "description": "Llama 3.1 70B Instruct Turbo: Meta's advanced, multilingual, instruction-tuned language model for diverse, high-accuracy natural language tasks.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/llama-3-1-70b-instruct-turbo-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.2",
+      "type": "chat-completion",
+      "name": "Mistral 7B Instruct v0.2",
+      "developer": "Mistral AI",
+      "description": "Cutting-edge AI model for advanced instruction optimization in Mistral (7B).",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/mistral-7b-instruct-v02",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "meta-llama/LlamaGuard-2-8b",
+      "type": "chat-completion",
+      "name": "LlamaGuard 2 8B",
+      "developer": "Meta",
+      "description": "Llama-based 8B model for safe LLM content classification",
+      "context_length": 8000,
+      "url": "https://aimlapi.com/models/llama-guard-2-8b",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "type": "chat-completion",
+      "name": "Mistral 7B Instruct v0.3",
+      "developer": "Mistral AI",
+      "description": "Mistral 7B Instruct v0.3: new, advanced, instruction-based language model with enhanced features.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/mistral-7b-instruct-v0-3",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "meta-llama/Meta-Llama-Guard-3-8B",
+      "type": "chat-completion",
+      "name": "Meta Llama Guard 3 8B",
+      "developer": "Meta",
+      "description": "Llama Guard 3 (8B) is an advanced language model focused on ensuring safe AI interactions through effective content moderation techniques",
+      "context_length": 8000,
+      "url": "https://aimlapi.com/models/llama-guard-3-8b",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "type": "chat-completion",
+      "name": "Llama 4 Maverick",
+      "developer": "Meta",
+      "description": "Llama 4 Maverick is a high-performance AI model from Meta, utilizing a mixture-of-experts architecture to excel in reasoning and coding tasks. It surpasses comparable models like GPT-4o and Gemini 2.0 in various benchmarks",
+      "context_length": 1000000,
+      "url": "https://aimlapi.com/models/llama-4-maverick-api",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "Qwen/Qwen3-235B-A22B-fp8-tput",
+      "type": "chat-completion",
+      "name": "Qwen3 235B A22B",
+      "developer": "Alibaba Cloud",
+      "description": "",
+      "context_length": 41000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "claude-3-haiku-20240307",
+      "type": "chat-completion",
+      "name": "Claude 3 Haiku 2024-03-07",
+      "developer": "Anthropic",
+      "description": "Cost-efficient, high-speed AI for entry-level and real-time applications.",
+      "context_length": 200000,
+      "url": "https://aimlapi.com/models/claude-3-haiku",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-3-5-haiku-20241022",
+      "type": "chat-completion",
+      "name": "Claude 3.5 Haiku 2024-10-22",
+      "developer": "Anthropic",
+      "description": "Claude 3.5 Haiku is a high-speed language model optimized for diverse applications.",
+      "context_length": 200000,
+      "url": "https://aimlapi.com/models/claude-3-5-haiku-api",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-3-7-sonnet-20250219",
+      "type": "chat-completion",
+      "name": "Claude 3.7 Sonnet",
+      "developer": "Anthropic",
+      "description": "Claude 3.7 Sonnet: Anthropic's hybrid reasoning model with extended thinking capabilities.",
+      "context_length": 200000,
+      "url": "https://aimlapi.com/models/claude-3-7-sonnet-api",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-sonnet-4-20250514",
+      "type": "chat-completion",
+      "name": "Claude 4 Sonnet",
+      "developer": "Anthropic",
+      "description": "Claude 4 Sonnet is Anthropic's balanced model combining strong reasoning and coding capabilities with practical efficiency.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-opus-4-20250514",
+      "type": "chat-completion",
+      "name": "Claude 4 Opus",
+      "developer": "Anthropic",
+      "description": "Claude 4 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-opus-4-1-20250805",
+      "type": "chat-completion",
+      "name": "Claude 4.1 Opus",
+      "developer": "Anthropic",
+      "description": "Claude 4.1 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-sonnet-4-5-20250929",
+      "type": "chat-completion",
+      "name": "Claude 4.5 Sonnet",
+      "developer": "Anthropic",
+      "description": "Claude 4.5 Sonnet is Anthropic's balanced model combining strong reasoning and coding capabilities with practical efficiency.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-haiku-4-5-20251001",
+      "type": "chat-completion",
+      "name": "Claude 4.5 Haiku",
+      "developer": "Anthropic",
+      "description": "Claude 4.5 Haiku is a high-speed language model optimized for diverse applications.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-opus-4-5-20251101",
+      "type": "chat-completion",
+      "name": "Claude 4.5 Opus",
+      "developer": "Anthropic",
+      "description": "Claude 4.5 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-opus-4-6",
+      "type": "chat-completion",
+      "name": "Claude 4.6 Opus",
+      "developer": "Anthropic",
+      "description": "Claude 4.6 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "type": "chat-completion",
+      "name": "Claude 4.6 Sonnet",
+      "developer": "Anthropic",
+      "description": "Claude 4.6 Sonnet is Anthropic's balanced model combining strong reasoning and coding capabilities with practical efficiency.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "google/gemini-2.0-flash",
+      "type": "chat-completion",
+      "name": "Gemini 2.0 Flash",
+      "developer": "Google",
+      "description": "Gemini 2.0 Flash: Next-gen model with superior speed and multimodal performance.",
+      "context_length": 1000000,
+      "url": "https://aimlapi.com/models/gemini-2-0-flash-api",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "type": "chat-completion",
+      "name": "Gemini 2.5 Pro",
+      "developer": "Google",
+      "description": "Gemini Pro 2.5 is Google's most advanced reasoning AI model designed for complex tasks, showcasing strong reasoning and coding capabilities. It leads various benchmarks, indicating its enhanced performance.",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "type": "chat-completion",
+      "name": "Gemini 2.5 Flash",
+      "developer": "Google",
+      "description": "Gemini 2.5 Flash is a powerful AI model developed by Google, designed to handle complex tasks with high accuracy and efficiency and has thinking capabilities.",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "deepseek-chat",
+      "type": "chat-completion",
+      "name": "DeepSeek V3",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek-V3 is a strong Mixture-of-Experts (MoE) language model.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/deepseek-v3",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "deepseek-reasoner",
+      "type": "chat-completion",
+      "name": "DeepSeek R1",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek-R1 is a first-generation reasoning model.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/deepseek-r1-api",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "type": "chat-completion",
+      "name": "DeepSeek V3.1",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek-V3.1 is the latest advanced LLM with improved architecture and performance across various natural language tasks.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-reasoner-v3.1",
+      "type": "chat-completion",
+      "name": "DeepSeek Reasoner V3.1",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek Reasoner V3.1 excels in reasoning tasks with advanced chain-of-thought processing and the latest improvements in parameter activation.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-non-reasoner-v3.1-terminus",
+      "type": "chat-completion",
+      "name": "DeepSeek V3.1 Terminus",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek V3.1 Terminus non-reasoner is the latest advanced LLM, featuring an enhanced architecture and improved performance across a wide range of natural language tasks.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-reasoner-v3.1-terminus",
+      "type": "chat-completion",
+      "name": "DeepSeek Reasoner V3.1 Terminus",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek Reasoner V3.1 Terminus excels at complex reasoning tasks, leveraging advanced chain-of-thought processing and optimized parameter activation for improved performance.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen-max",
+      "type": "chat-completion",
+      "name": "Qwen max",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen Max: powerful AI, excels in stability, competes globally.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/qwen-max-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen-plus",
+      "type": "chat-completion",
+      "name": "Qwen Plus",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen-Plus: Alibaba's advanced multilingual model with enhanced reasoning and instruction-following capabilities.",
+      "context_length": 131000,
+      "url": "https://aimlapi.com/models/qwen-plus-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen-turbo",
+      "type": "chat-completion",
+      "name": "Qwen Turbo",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen Turbo: optimizes AI agent speed, integrates with RAG, large context window.",
+      "context_length": 1000000,
+      "url": "https://aimlapi.com/models/qwen-turbo-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen-max-2025-01-25",
+      "type": "chat-completion",
+      "name": "Qwen Max 2025-01-25",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen Max: a powerful, multilingual MoE model for diverse AI tasks",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/qwen-max-2025-01-25-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-coder-480b-a35b-instruct",
+      "type": "chat-completion",
+      "name": "Qwen 3 Coder",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 Coder is a powerful coding agent.",
+      "context_length": 262000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-32b",
+      "type": "chat-completion",
+      "name": "Qwen 3 32B",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 32B is a multilingual model with instruction-following capabilities and enhanced reasoning.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-235b-a22b-thinking-2507",
+      "type": "chat-completion",
+      "name": "Qwen 3 Thinking 2507",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 thinking 2507 is a multilingual reasoning model with knowledge augmentation, and creative capabilities.",
+      "context_length": 32000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-next-80b-a3b-thinking",
+      "type": "chat-completion",
+      "name": "Qwen 3 Next 80B A3B Thinking",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 Next 80B A3B Thinking is a multilingual reasoning model with advanced chain-of-thought capabilities.",
+      "context_length": 126976,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-next-80b-a3b-instruct",
+      "type": "chat-completion",
+      "name": "Qwen 3 Next 80B A3B Instruct",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 Next 80B A3B Instruct is a multilingual model with enhanced instruction-following capabilities.",
+      "context_length": 129024,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-max-instruct",
+      "type": "chat-completion",
+      "name": "Qwen 3 Max Instruct",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 Max Instruct is the most powerful model in the Qwen 3 series.",
+      "context_length": 262144,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-omni-30b-a3b-captioner",
+      "type": "chat-completion",
+      "name": "Qwen 3 Omni Captioner",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen3-Omni-Captioner automatically generates accurate and comprehensive descriptions for complex audio, including speech, ambient sounds, music, and sound effects. The model can identify speaker emotions, musical elements, and is suitable for audio content analysis, security audits, and audio editing. Supports audio input up to 40 minutes (1 second = 25 tokens).",
+      "context_length": 65536,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "alibaba/qwen3-vl-plus",
+      "type": "chat-completion",
+      "name": "Qwen 3 VL Plus",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 VL Plus is a powerful vision-language model with hybrid thinking capabilities. Supports image understanding with up to 16,384 tokens per image and high-resolution mode for detailed analysis.",
+      "context_length": 262144,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-vl-flash",
+      "type": "chat-completion",
+      "name": "Qwen 3 VL Flash",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 VL Flash is a fast and cost-effective vision-language model with hybrid thinking capabilities.",
+      "context_length": 262144,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-vl-32b-thinking",
+      "type": "chat-completion",
+      "name": "Qwen 3 VL 32B Thinking",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 VL 32B Thinking is a powerful vision-language model with hybrid thinking capabilities.",
+      "context_length": 126000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3-vl-32b-instruct",
+      "type": "chat-completion",
+      "name": "Qwen 3 VL 32B Instruct",
+      "developer": "Alibaba Cloud",
+      "description": "Alibaba's Qwen 3 VL 32B Instruct is a powerful vision-language model with hybrid instruction-following capabilities.",
+      "context_length": 126000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "alibaba/qwen3.5-plus-20260218",
+      "type": "chat-completion",
+      "name": "Qwen 3.5 Plus",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen3.5-Plus is a commercial large language model by Alibaba Cloud designed for long-context text generation and enterprise-grade conversational AI. Supports up to 1M tokens per request with production-ready API stability.",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4.6",
+      "type": "chat-completion",
+      "name": "Claude 4.6 Opus",
+      "developer": "Anthropic",
+      "description": "Claude 4.6 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "mistralai/mistral-tiny",
+      "type": "chat-completion",
+      "name": "Mistral tiny",
+      "developer": "Mistral AI",
+      "description": "Mistral Tiny: Efficient language model with advanced text generation capabilities.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/mistral-tiny-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "type": "chat-completion",
+      "name": "Mistral nemo",
+      "developer": "Mistral AI",
+      "description": "Mistral-Nemo is a powerful multilingual language model with advanced capabilities.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/mistral-nemo-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "anthracite-org/magnum-v4-72b",
+      "type": "chat-completion",
+      "name": "Magnum v4 72B",
+      "developer": "Anthracite",
+      "description": "Magnum V4 is a powerful language model optimized for high-quality text generation tasks.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/magnum-v4-72b-api",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "gryphe/mythomax-l2-13b",
+      "type": "chat-completion",
+      "name": "MythoMax 13B",
+      "developer": "Gryphe",
+      "description": "One of the highest performing and most popular fine-tunes of Llama 2 13B, with rich descriptions and roleplay.",
+      "context_length": 4096,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "type": "chat-completion",
+      "name": "Llama 3.1 nemotron 70B instruct",
+      "developer": "Nvidia",
+      "description": " Llama 3.1 Nemotron is an advanced instruction-following language model optimized for high-performance applications.",
+      "context_length": 128000,
+      "url": "https://aimlapi.com/models/llama-3-1-nemotron-70b-instruct-api",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "google/gemma-3-4b-it",
+      "type": "chat-completion",
+      "name": "Gemma 3 4B",
+      "developer": "Google",
+      "description": "Gemma 3 4B is a lightweight open language model from Google, suitable for on-device deployment and efficient inference.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "type": "chat-completion",
+      "name": "Gemma 3 12B",
+      "developer": "Google",
+      "description": "Gemma 3 12B is a mid-size open language model from Google offering a balance of capability and efficiency.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "type": "chat-completion",
+      "name": "Gemma 3 27B",
+      "developer": "Google",
+      "description": "Gemma 3 27B is Google's largest Gemma open model, delivering strong reasoning and text generation capabilities.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-speciale",
+      "type": "chat-completion",
+      "name": "DeepSeek-V3.2-Speciale",
+      "developer": "DeepSeek AI",
+      "description": "DeepSeek-V3.2-Speciale is a high-compute variant of DeepSeek-V3.2 optimized for maximum reasoning and agentic performance.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "google/gemma-3n-e4b-it",
+      "type": "chat-completion",
+      "name": "Gemma 3n 4B",
+      "developer": "Google",
+      "description": "Gemma 3n 4B is an ultra-efficient next-generation Gemma model optimized for on-device multimodal applications.",
+      "context_length": 8192,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "cohere/command-a",
+      "type": "chat-completion",
+      "name": "Command A",
+      "developer": "Cohere",
+      "description": "Command A is a powerful LLM with advanced capabilities for enterprise applications.",
+      "context_length": 256000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "type": "chat-completion",
+      "name": "GPT OSS 120B",
+      "developer": "Open AI",
+      "description": "GPT OSS 120B is the most powerful Open AI open weight model.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "type": "chat-completion",
+      "name": "GPT OSS 20B",
+      "developer": "Open AI",
+      "description": "GPT OSS 20B is a powerful Open AI open weight model.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "nousresearch/hermes-4-405b",
+      "type": "chat-completion",
+      "name": "Nous: Hermes 4 405B",
+      "developer": "NousResearch",
+      "description": "Hermes 4 is a large-scale reasoning model built on Meta-Llama-3.1-405B with hybrid reasoning mode. It can choose to deliberate internally with <think>...</think> traces or respond directly, offering flexibility between speed and depth. Supports structured outputs, JSON mode, function calling, and tool use.",
+      "context_length": 131072,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2",
+      "type": "chat-completion",
+      "name": "Nemotron Nano 9B V2",
+      "developer": "Nvidia",
+      "description": "",
+      "context_length": 131072,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl",
+      "type": "chat-completion",
+      "name": "Nemotron Nano 12B V2 VL",
+      "developer": "Nvidia",
+      "description": "",
+      "context_length": 131072,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "qwen/qwen-2.5-vl-7b-instruct",
+      "type": "chat-completion",
+      "name": "Qwen2.5-VL 7B Instruct",
+      "developer": "Alibaba Cloud",
+      "description": "Qwen2.5-VL 7B is a multimodal LLM from the Qwen Team with state-of-the-art image understanding, multilingual support for text in images across European languages, Japanese, Korean, Arabic, Vietnamese, and more.",
+      "context_length": 32768,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2-flash",
+      "type": "chat-completion",
+      "name": "MiMo V2 Flash",
+      "developer": "Xiaomi",
+      "description": "Xiaomi MiMo V2 Flash model for general chat completions.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": []
+    },
+    {
+      "id": "MiniMax-Text-01",
+      "type": "chat-completion",
+      "name": "Text 01",
+      "developer": "Minimax AI",
+      "description": "MiniMax-Text-01 excels in long-context processing with advanced features like hybrid attention mechanisms and open-source accessibility.",
+      "context_length": 1000000,
+      "url": "https://aimlapi.com/models/minimax-text-01-api",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "minimax/m1",
+      "type": "chat-completion",
+      "name": "Minimax M1",
+      "developer": "Minimax AI",
+      "description": "MiniMax-M1 is a powerful reasoning model with a 1M token context window, delivering strong performance on complex tasks.",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "minimax/m2",
+      "type": "chat-completion",
+      "name": "Minimax M2",
+      "developer": "Minimax AI",
+      "description": "MiniMax-M2 is an advanced large language model with 1M token context for extended reasoning and generation.",
+      "context_length": 1000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "minimax/m2-1",
+      "type": "chat-completion",
+      "name": "Minimax M2.1",
+      "developer": "Minimax AI",
+      "description": "MiniMax-M2.1 is an updated Minimax model with a 200K context window optimized for conversational and reasoning tasks.",
+      "context_length": 204000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "minimax/m2-5-20260218",
+      "type": "chat-completion",
+      "name": "MiniMax M2.5",
+      "developer": "Minimax AI",
+      "description": "MiniMax-M2.5 is a general-purpose large language model by MiniMax designed for text generation and conversational AI use cases.",
+      "context_length": 204800,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "minimax/m2-5-highspeed-20260218",
+      "type": "chat-completion",
+      "name": "MiniMax M2.5 Highspeed",
+      "developer": "Minimax AI",
+      "description": "MiniMax-M2.5 Highspeed is a low-latency, high-throughput version of MiniMax-M2.5 optimized for real-time applications.",
+      "context_length": 204800,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "moonshot/kimi-k2-5",
+      "type": "chat-completion",
+      "name": "Kimi k2.5",
+      "developer": "Moonshot",
+      "description": "Kimi k2.5 is a powerful agentic model by Moonshot AI with strong coding and tool-use capabilities.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4-07-09",
+      "type": "chat-completion",
+      "name": "Grok 4",
+      "developer": "X AI",
+      "description": "Grok 4 is the latest model with 256k context, text, structured outputs, and parallel tools, with always-on, non-configurable reasoning.",
+      "context_length": 256000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "x-ai/grok-code-fast-1",
+      "type": "chat-completion",
+      "name": "Grok Code Fast 1",
+      "developer": "X AI",
+      "description": "A speedy and economical reasoning model that excels at agentic coding with function calling and structured outputs.",
+      "context_length": 256000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4-fast-reasoning",
+      "type": "chat-completion",
+      "name": "Grok 4 Fast Reasoning",
+      "developer": "X AI",
+      "description": "Grok 4 Fast with always-on reasoning for complex problem-solving tasks.",
+      "context_length": 2000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4-fast-non-reasoning",
+      "type": "chat-completion",
+      "name": "Grok 4 Fast Non-Reasoning",
+      "developer": "X AI",
+      "description": "Grok 4 Fast without reasoning for faster responses and lower latency.",
+      "context_length": 2000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4-1-fast-reasoning",
+      "type": "chat-completion",
+      "name": "Grok 4.1 Fast Reasoning",
+      "developer": "X AI",
+      "description": "Grok 4.1 Fast is a frontier multimodal model optimized for high-performance agentic tool calling with advanced reasoning capabilities.",
+      "context_length": 2000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4-1-fast-non-reasoning",
+      "type": "chat-completion",
+      "name": "Grok 4.1 Fast Non-Reasoning",
+      "developer": "X AI",
+      "description": "Grok 4.1 Fast without reasoning for faster responses and lower latency in high-performance agentic applications.",
+      "context_length": 2000000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "perplexity/sonar",
+      "type": "chat-completion",
+      "name": "Sonar",
+      "developer": "Perplexity",
+      "description": "Perplexity Sonar is a fast search-augmented language model grounded in real-time web data for up-to-date answers.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "perplexity/sonar-pro",
+      "type": "chat-completion",
+      "name": "Sonar Pro",
+      "developer": "Perplexity",
+      "description": "Perplexity Sonar Pro is an advanced search-augmented language model with deeper reasoning and broader web coverage.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision"
+      ]
+    },
+    {
+      "id": "zhipu/glm-4.5",
+      "type": "chat-completion",
+      "name": "GLM 4.5",
+      "developer": "Zhipu AI",
+      "description": "Advanced version of GLM-4.5 with enhanced capabilities and web search integration",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "zhipu/glm-4.5-air",
+      "type": "chat-completion",
+      "name": "GLM 4.5 Air",
+      "developer": "Zhipu AI",
+      "description": "Lightweight version of GLM-4.5 for cost-effective applications",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "zhipu/glm-4.6",
+      "type": "chat-completion",
+      "name": "GLM 4.6",
+      "developer": "Zhipu AI",
+      "description": "Advanced version of GLM-4.6 with enhanced capabilities and web search integration",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "zhipu/glm-4.7",
+      "type": "chat-completion",
+      "name": "GLM 4.7",
+      "developer": "Zhipu AI",
+      "description": "GLM-4.7 is Zhipu AI flagship text LLM optimized for agentic coding and stable multi-step reasoning, supporting long-context workflows.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "zhipu/glm-5",
+      "type": "chat-completion",
+      "name": "GLM 5",
+      "developer": "Zhipu AI",
+      "description": "GLM-5 is Zhipu AI next-generation 745B MoE LLM for high-quality text generation and reasoning, optimized for chat, long-form content, and instruction-following tasks.",
+      "context_length": 200000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-versatile",
+      "type": "chat-completion",
+      "name": "Llama 3.3 70B Versatile",
+      "developer": "Meta",
+      "description": "Llama-3.3-70B-Versatile is Meta's advanced multilingual large language model, optimized for a wide range of natural language processing tasks. With 70 billion parameters, it offers high performance across various benchmarks while maintaining efficiency suitable for diverse applications.",
+      "context_length": 131072,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "bytedance/seed-1-8",
+      "type": "chat-completion",
+      "name": "Seed 1.8",
+      "developer": "ByteDance",
+      "description": "ByteDance Seed 1.8 is a state-of-the-art multimodal model with exceptional vision and reasoning capabilities.",
+      "context_length": 256000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-0-3b",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 0.3B",
+      "developer": "Baidu",
+      "description": "Lightweight Ernie 4.5 0.3B model that is marked as free on the provider portal.",
+      "context_length": 120000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-turbo-128k",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 128K Turbo",
+      "developer": "Baidu",
+      "description": "Extended-context Ernie 4.5 Turbo variant optimized for 128K windows.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-21b-a3b-thinking",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 21B A3B Thinking",
+      "developer": "Baidu",
+      "description": "Reasoning-optimized Thinking variant of Ernie 4.5 21B A3B.",
+      "context_length": 131000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-21b-a3b",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 21B A3B",
+      "developer": "Baidu",
+      "description": "Primary Ernie 4.5 21B A3B chat model for general purpose tasks.",
+      "context_length": 120000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-vl-28b-a3b",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 VL 28B A3B",
+      "developer": "Baidu",
+      "description": "Vision-language Ernie 4.5 VL 28B A3B for multimodal understanding.",
+      "context_length": 30000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-vl-424b-a47b",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 VL 424B A47B",
+      "developer": "Baidu",
+      "description": "High-capacity vision-language Ernie 4.5 VL 424B A47B for demanding multimodal workflows.",
+      "context_length": 123000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-300b-a47b",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 300B A47B",
+      "developer": "Baidu",
+      "description": "Top-tier Ernie 4.5 300B A47B for complex reasoning and long-form output.",
+      "context_length": 123000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-300b-a47b-paddle",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 300B A47B Paddle",
+      "developer": "Baidu",
+      "description": "Ernie 4.5 300B model variant hosted via Paddle for enterprise deployments.",
+      "context_length": 123000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-4-5-turbo-vl-32k",
+      "type": "chat-completion",
+      "name": "Ernie 4.5 Turbo VL 32K",
+      "developer": "Baidu",
+      "description": "Vision-capable Ernie 4.5 Turbo with 32K context for multimodal interactions.",
+      "context_length": 32000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "vision",
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-5-0-thinking-latest",
+      "type": "chat-completion",
+      "name": "Ernie 5.0 Thinking Latest",
+      "developer": "Baidu",
+      "description": "Latest Ernie 5.0 Thinking release with broad capability support.",
+      "context_length": 128000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "baidu/ernie-x1-turbo-32k",
+      "type": "chat-completion",
+      "name": "Ernie X1 Turbo 32K",
+      "developer": "Baidu",
+      "description": "Ernie X1 Turbo with 32K context for high-throughput reasoning.",
+      "context_length": 32000,
+      "url": "",
+      "_our_category": "llm",
+      "_caps": [
+        "function_calling"
+      ]
+    },
+    {
+      "id": "text-embedding-3-small",
+      "type": "embedding",
+      "name": "Text embedding 3 small",
+      "developer": "Open AI",
+      "description": "",
+      "context_length": 8000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "text-embedding-3-large",
+      "type": "embedding",
+      "name": "Text embedding 3 large",
+      "developer": "Open AI",
+      "description": "High-performance embedding model with flexible dimensions and superior accuracy.",
+      "context_length": 8000,
+      "url": "https://aimlapi.com/models/text-embedding-3-large",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "type": "embedding",
+      "name": "Text embedding ada 002",
+      "developer": "Open AI",
+      "description": "Reliable embedding model offering solid performance for various tasks.",
+      "context_length": 8000,
+      "url": "https://aimlapi.com/models/text-embedding-ada-002",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "togethercomputer/m2-bert-80M-32k-retrieval",
+      "type": "embedding",
+      "name": "M2 bert 80M 32k retrieval",
+      "developer": "Together AI",
+      "description": "High-capacity AI model for comprehensive search and information retrieval. API for M2-BERT-Retrieval-32k.",
+      "context_length": 32000,
+      "url": "https://aimlapi.com/models/m2-bert-retrieval-32k",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "BAAI/bge-base-en-v1.5",
+      "type": "embedding",
+      "name": "Bge base en v1.5",
+      "developer": "BAAI",
+      "description": "AI model for generating precise language embeddings. API for BAAI-Bge-Base-1p5.",
+      "context_length": null,
+      "url": "https://aimlapi.com/models/baai-bge-base-1p5",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-large-2-instruct",
+      "type": "embedding",
+      "name": "Voyage large 2 instruct",
+      "developer": "Anthropic",
+      "description": "Voyage Large 2 Instruct excels in text embedding tasks.",
+      "context_length": 16000,
+      "url": "https://aimlapi.com/models/voyage-large-2-instruct-api",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-finance-2",
+      "type": "embedding",
+      "name": "Voyage finance 2",
+      "developer": "Anthropic",
+      "description": "",
+      "context_length": 32000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-multilingual-2",
+      "type": "embedding",
+      "name": "Voyage multilingual 2",
+      "developer": "Anthropic",
+      "description": "",
+      "context_length": 32000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-law-2",
+      "type": "embedding",
+      "name": "Voyage law 2",
+      "developer": "Anthropic",
+      "description": "",
+      "context_length": 16000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-code-2",
+      "type": "embedding",
+      "name": "Voyage code 2",
+      "developer": "Anthropic",
+      "description": "",
+      "context_length": 16000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-large-2",
+      "type": "embedding",
+      "name": "Voyage large 2",
+      "developer": "Anthropic",
+      "description": "",
+      "context_length": 16000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "voyage-2",
+      "type": "embedding",
+      "name": "Voyage 2",
+      "developer": "Anthropic",
+      "description": "",
+      "context_length": 4000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "text-multilingual-embedding-002",
+      "type": "embedding",
+      "name": "Text multilingual embedding 002",
+      "developer": "Google",
+      "description": "",
+      "context_length": 2000,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "alibaba/qwen-text-embedding-v4",
+      "type": "embedding",
+      "name": "Qwen Text Embedding v4",
+      "developer": "Alibaba Cloud",
+      "description": "Advanced text embedding model from the Qwen3-Embedding series with support for custom dimensions (64-2048) and over 100 languages. Ideal for semantic search, clustering, and classification tasks.",
+      "context_length": 8192,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    },
+    {
+      "id": "alibaba/qwen-text-embedding-v3",
+      "type": "embedding",
+      "name": "Qwen Text Embedding v3",
+      "developer": "Alibaba Cloud",
+      "description": "High-quality text embedding model with support for custom dimensions (512-1024) and over 50 languages. Suitable for semantic search, recommendation systems, and text analysis.",
+      "context_length": 8192,
+      "url": "",
+      "_our_category": "embedding",
+      "_caps": []
+    }
+  ]
+}

@@ -1,12 +1,76 @@
 {
   "categories": [
-    { "id": "llm", "name": "LLM / Chat", "description": "Modele językowe do generowania i przetwarzania tekstu", "icon": "◈" },
-    { "id": "image_generation", "name": "Generowanie obrazów", "description": "Text-to-image, edycja i transformacja obrazów", "icon": "◉" },
-    { "id": "video_generation", "name": "Generowanie wideo", "description": "Text-to-video, image-to-video, animacje", "icon": "▶" },
-    { "id": "audio_tts", "name": "Text-to-Speech", "description": "Synteza mowy z tekstu", "icon": "◆" },
-    { "id": "audio_stt", "name": "Speech-to-Text", "description": "Transkrypcja i rozpoznawanie mowy", "icon": "◇" },
-    { "id": "music_generation", "name": "Generowanie muzyki", "description": "Kompozycja i generowanie muzyki przez AI", "icon": "♩" },
-    { "id": "embedding", "name": "Embeddingi", "description": "Reprezentacje wektorowe tekstu i obrazów", "icon": "◫" },
-    { "id": "moderation", "name": "Moderacja", "description": "Detekcja i filtrowanie treści", "icon": "◬" }
+    {
+      "id": "llm",
+      "name": "LLM / Chat",
+      "name_en": "LLM / Chat",
+      "name_pl": "LLM / Chat",
+      "description": "Language models for text generation and processing",
+      "description_pl": "Modele językowe do generowania i przetwarzania tekstu",
+      "icon": "◈"
+    },
+    {
+      "id": "image_generation",
+      "name": "Image Generation",
+      "name_en": "Image Generation",
+      "name_pl": "Generowanie obrazów",
+      "description": "Text-to-image, image editing and transformation",
+      "description_pl": "Text-to-image, edycja i transformacja obrazów",
+      "icon": "◉"
+    },
+    {
+      "id": "video_generation",
+      "name": "Video Generation",
+      "name_en": "Video Generation",
+      "name_pl": "Generowanie wideo",
+      "description": "Text-to-video, image-to-video, animations",
+      "description_pl": "Text-to-video, image-to-video, animacje",
+      "icon": "▶"
+    },
+    {
+      "id": "audio_tts",
+      "name": "Text-to-Speech",
+      "name_en": "Text-to-Speech",
+      "name_pl": "Text-to-Speech",
+      "description": "Speech synthesis from text",
+      "description_pl": "Synteza mowy z tekstu",
+      "icon": "◆"
+    },
+    {
+      "id": "audio_stt",
+      "name": "Speech-to-Text",
+      "name_en": "Speech-to-Text",
+      "name_pl": "Speech-to-Text",
+      "description": "Transcription and speech recognition",
+      "description_pl": "Transkrypcja i rozpoznawanie mowy",
+      "icon": "◇"
+    },
+    {
+      "id": "music_generation",
+      "name": "Music Generation",
+      "name_en": "Music Generation",
+      "name_pl": "Generowanie muzyki",
+      "description": "AI music composition and generation",
+      "description_pl": "Kompozycja i generowanie muzyki przez AI",
+      "icon": "♩"
+    },
+    {
+      "id": "embedding",
+      "name": "Embeddings",
+      "name_en": "Embeddings",
+      "name_pl": "Embeddingi",
+      "description": "Vector representations of text and images",
+      "description_pl": "Reprezentacje wektorowe tekstu i obrazów",
+      "icon": "◫"
+    },
+    {
+      "id": "moderation",
+      "name": "Moderation",
+      "name_en": "Moderation",
+      "name_pl": "Moderacja",
+      "description": "Content detection and filtering",
+      "description_pl": "Detekcja i filtrowanie treści",
+      "icon": "◬"
+    }
   ]
 }

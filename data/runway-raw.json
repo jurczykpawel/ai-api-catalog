@@ -1,0 +1,70 @@
+{
+  "models": [
+    {
+      "id": "runway-gen-4-turbo",
+      "name": "Runway Gen-4 Turbo",
+      "category": "video_generation",
+      "description": "Runway Gen-4 Turbo — cinematic AI video generation. Text-to-video and image-to-video with reference consistency.",
+      "tags": [
+        "video",
+        "runway",
+        "cinematic"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "pricing": {
+        "per_second": 0.05,
+        "unit": "per_second"
+      },
+      "notes": "5-second video = $0.25. 10-second = $0.50.",
+      "url": "https://runwayml.com",
+      "affiliate_url": null
+    },
+    {
+      "id": "runway-gen-3-alpha",
+      "name": "Runway Gen-3 Alpha",
+      "category": "video_generation",
+      "description": "Runway Gen-3 Alpha — high fidelity video generation from text or image.",
+      "tags": [
+        "video",
+        "runway"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "pricing": {
+        "per_second": 0.05,
+        "unit": "per_second"
+      },
+      "notes": "Legacy model, Gen-4 Turbo recommended.",
+      "url": "https://runwayml.com",
+      "affiliate_url": null
+    },
+    {
+      "id": "runway-act-one",
+      "name": "Runway Act-One",
+      "category": "video_generation",
+      "description": "Runway Act-One — character animation from single image using reference video performance.",
+      "tags": [
+        "video",
+        "runway",
+        "animation",
+        "avatar"
+      ],
+      "capabilities": [
+        "image_to_video"
+      ],
+      "pricing": {
+        "per_second": 0.05,
+        "unit": "per_second"
+      },
+      "url": "https://runwayml.com",
+      "affiliate_url": null
+    }
+  ],
+  "source": "runway",
+  "note": "Curated — Runway API /v1/models endpoint may exist with key"
+}
