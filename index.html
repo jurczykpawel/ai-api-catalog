@@ -871,6 +871,32 @@
     color: var(--text-1);
   }
 
+  .modal-copy-link {
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text-3);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    flex-shrink: 0;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .modal-copy-link:hover {
+    background: var(--surface-3);
+    border-color: var(--border-md);
+    color: var(--text-1);
+  }
+  .modal-copy-link.copied {
+    color: #4caf50;
+    border-color: #4caf50;
+  }
+
   .modal-desc {
     font-size: 14.5px;
     color: var(--text-2);
@@ -1424,7 +1450,13 @@
           <div class="modal-caps" id="modal-badges" style="margin-bottom:10px;"></div>
           <div class="modal-name" id="modal-name"></div>
         </div>
-        <button class="modal-close" onclick="closeModalDirect()" aria-label="Zamknij">✕</button>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <button class="modal-copy-link" id="modal-copy-link" onclick="copyModalLink()" aria-label="Kopiuj link do modelu" title="Kopiuj link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <span id="modal-copy-label">Kopiuj link</span>
+          </button>
+          <button class="modal-close" onclick="closeModalDirect()" aria-label="Zamknij">✕</button>
+        </div>
       </div>
       <div class="modal-desc" id="modal-desc"></div>
       <div class="modal-meta-row" id="modal-meta"></div>
@@ -1681,6 +1713,13 @@ async function loadData() {
     buildCategoryPills();
     buildProviderList();
     render();
+
+    // Deep link: open model from URL hash on load
+    const hash = location.hash.slice(1);
+    if (hash) {
+      const m = allModels.find(m => m.id === hash);
+      if (m) openModal(m.id);
+    }
   } catch (err) {
     document.getElementById('grid').innerHTML = `<div style="padding:40px;color:var(--text-3);text-align:center;">
       <p style="margin-bottom:8px;">Błąd ładowania danych.</p>
@@ -2182,6 +2221,7 @@ function openModal(modelId) {
   });
 
   lastFocusBeforeModal = document.activeElement;
+  history.pushState({ modelId }, '', '#' + modelId);
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
   // Ukryj zawartość za modalem dla screen readerów i przeglądarki
@@ -2203,6 +2243,7 @@ function closeModal(e) {
 function closeModalDirect() {
   document.getElementById('modal-overlay').classList.remove('open');
   document.body.style.overflow = '';
+  if (location.hash) history.pushState({}, '', location.pathname + location.search);
   document.querySelector('nav').inert = false;
   document.querySelector('.hero').inert = false;
   document.querySelector('.layout').inert = false;
@@ -2212,6 +2253,37 @@ function closeModalDirect() {
     lastFocusBeforeModal = null;
   }
 }
+
+// Copy link to current model
+function copyModalLink() {
+  const url = location.href;
+  navigator.clipboard.writeText(url).then(() => {
+    const btn = document.getElementById('modal-copy-link');
+    const label = document.getElementById('modal-copy-label');
+    btn.classList.add('copied');
+    label.textContent = 'Skopiowano!';
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      label.textContent = 'Kopiuj link';
+    }, 2000);
+  });
+}
+
+// Browser back button closes modal
+window.addEventListener('popstate', () => {
+  const overlay = document.getElementById('modal-overlay');
+  if (overlay.classList.contains('open')) {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    document.querySelector('nav').inert = false;
+    document.querySelector('.hero').inert = false;
+    document.querySelector('.layout').inert = false;
+    document.querySelector('footer').inert = false;
+  } else if (location.hash) {
+    const m = allModels.find(m => m.id === location.hash.slice(1));
+    if (m) openModal(m.id);
+  }
+});
 
 // Close on Escape + modal focus trap
 document.addEventListener('keydown', e => {
