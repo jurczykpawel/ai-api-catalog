@@ -1451,9 +1451,9 @@
           <div class="modal-name" id="modal-name"></div>
         </div>
         <div style="display:flex;gap:8px;align-items:center;">
-          <button class="modal-copy-link" id="modal-copy-link" onclick="copyModalLink()" aria-label="Kopiuj link do modelu" title="Kopiuj link">
+          <button class="modal-copy-link" id="modal-copy-link" onclick="copyModalLink()" aria-label="Copy link to model">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            <span id="modal-copy-label">Kopiuj link</span>
+            <span id="modal-copy-label" data-i18n="copyLink"></span>
           </button>
           <button class="modal-close" onclick="closeModalDirect()" aria-label="Zamknij">✕</button>
         </div>
@@ -1536,6 +1536,8 @@ const T = {
     unavailable:    'unavailable',
     visitLink:      'Visit',
     dataFrom:       'Data from:',
+    copyLink:       'Copy link',
+    copied:         'Copied!',
     footerCopy:     'Catalog maintained by',
     footerNote:     "Prices are approximate — verify on provider's website before use.",
     versionsLabel:  'Versions:',
@@ -1595,6 +1597,8 @@ const T = {
     unavailable:    'niedostępny',
     visitLink:      'Przejdź',
     dataFrom:       'Dane z:',
+    copyLink:       'Kopiuj link',
+    copied:         'Skopiowano!',
     footerCopy:     'Katalog utrzymywany przez',
     footerNote:     'Ceny są orientacyjne — weryfikuj na stronie dostawcy przed użyciem.',
     versionsLabel:  'Wersje:',
@@ -2261,10 +2265,10 @@ function copyModalLink() {
     const btn = document.getElementById('modal-copy-link');
     const label = document.getElementById('modal-copy-label');
     btn.classList.add('copied');
-    label.textContent = 'Skopiowano!';
+    label.textContent = t('copied');
     setTimeout(() => {
       btn.classList.remove('copied');
-      label.textContent = 'Kopiuj link';
+      label.textContent = t('copyLink');
     }, 2000);
   });
 }
