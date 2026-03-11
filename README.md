@@ -204,7 +204,7 @@ For models that exist in LiteLLM but are missing a provider entry, use `data/pro
 - **Frontend:** vanilla JavaScript, [Tailwind CSS](https://tailwindcss.com/) (CDN), [Syne](https://fonts.google.com/specimen/Syne) + [DM Sans](https://fonts.google.com/specimen/DM+Sans) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
 - **Data pipeline:** Python 3 scripts (stdlib only — no pip install required)
 - **Primary data sources:** [LiteLLM model prices](https://github.com/BerriAI/litellm), [OpenRouter API](https://openrouter.ai/api/frontend/models), [fal.ai API](https://fal.ai)
-- **Automation:** [n8n](https://n8n.io) workflows for daily updates and news radar
+- **Automation:** GitHub Actions for daily updates and news radar pipeline
 - **Hosting:** nginx static file serving
 
 ---
@@ -255,3 +255,5 @@ server {
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+![](https://stats.techskills.academy/pixels/github?url=/readme/ai-api-catalog)
