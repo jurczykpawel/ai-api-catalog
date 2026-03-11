@@ -1,0 +1,112 @@
+name: News Radar — detect & add new models
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # daily 10:00 PL (after update-data at 9:00)
+  workflow_dispatch:        # manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Step 1 — fetch RSS and detect candidates (Haiku)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/news-radar.py --hours 26
+          echo "Candidates saved to /tmp/news-radar-proposals.json"
+
+      - name: Step 2 — verify candidates (Sonnet)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          COUNT=$(python3 -c "import json; d=json.load(open('/tmp/news-radar-proposals.json')); print(len(d))")
+          echo "Candidates to verify: $COUNT"
+          if [ "$COUNT" -eq 0 ]; then
+            echo "No candidates — skipping verification"
+            echo "[]" > /tmp/verified-proposals.json
+          else
+            python3 scripts/verify-models.py
+          fi
+
+      - name: Step 3 — apply ADD proposals to models-manual.json
+        id: apply
+        run: |
+          COUNT=$(python3 -c "import json; d=json.load(open('/tmp/verified-proposals.json')); print(len(d))")
+          echo "add_count=$COUNT" >> $GITHUB_OUTPUT
+          if [ "$COUNT" -eq 0 ]; then
+            echo "No new models to add — done."
+          else
+            python3 scripts/apply-proposals.py
+          fi
+
+      - name: Step 4 — rebuild models.json
+        if: steps.apply.outputs.add_count != '0'
+        env:
+          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          RUNWAY_API_KEY: ${{ secrets.RUNWAY_API_KEY }}
+        run: bash scripts/update-litellm.sh
+
+      - name: Step 5 — validate schema
+        if: steps.apply.outputs.add_count != '0'
+        id: validate
+        run: |
+          python3 scripts/validate-schema.py data/models.json
+          echo "valid=true" >> $GITHUB_OUTPUT
+
+      - name: Step 6 — commit and push
+        if: steps.apply.outputs.add_count != '0' && steps.validate.outputs.valid == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes — skipping commit"
+          else
+            ADDED=$(python3 -c "import json; d=json.load(open('/tmp/verified-proposals.json')); print(', '.join(m['name'] for m in d))")
+            git commit -m "feat(radar): add ${{ steps.apply.outputs.add_count }} new model(s) — $ADDED"
+            git push
+          fi
+
+      - name: On validation failure — save to pending-review
+        if: failure() && steps.apply.outputs.add_count != '0'
+        run: |
+          git checkout -- data/models-manual.json data/models.json 2>/dev/null || true
+          python3 - <<'EOF'
+          import json
+          from pathlib import Path
+          from datetime import datetime
+
+          pending_path = Path("data/pending-review.json")
+          existing = json.loads(pending_path.read_text()) if pending_path.exists() else {"models": []}
+
+          new_entries = json.loads(Path("/tmp/verified-proposals.json").read_text())
+          for e in new_entries:
+              e["pending_since"] = datetime.now().strftime("%Y-%m-%d")
+              e["pending_reason"] = "validation_failed"
+
+          existing_ids = {m["id"] for m in existing["models"]}
+          to_add = [e for e in new_entries if e["id"] not in existing_ids]
+          existing["models"].extend(to_add)
+
+          pending_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2))
+          print(f"Saved {len(to_add)} entries to pending-review.json")
+          EOF
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/pending-review.json
+          git diff --cached --quiet || git commit -m "chore(radar): save failed validation to pending-review"
+          git push || true
