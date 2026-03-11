@@ -1030,6 +1030,7 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
           aimlapi_models: list = None, piapi_models: list = None,
           wavespeed_models: list = None, kie_models: list = None,
           runway_models: list = None,
+          minimax_models: list = None,
           replicate_models: list = None,
           fireworks_models: list = None) -> list:
     """
@@ -1107,6 +1108,8 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
     # Runway ML
     if runway_models:
         _merge_source(runway_models, "runway", "_internal_id")
+    if minimax_models:
+        _merge_source(minimax_models, "minimax", "_internal_id")
     # Replicate
     if replicate_models:
         _merge_source(replicate_models, "replicate", "_internal_id")
@@ -1194,6 +1197,7 @@ def main():
     parser.add_argument("--wavespeed",   help="Ścieżka do wavespeed-raw.json (opcjonalne)")
     parser.add_argument("--kie",         help="Ścieżka do kie-raw.json (opcjonalne)")
     parser.add_argument("--runway",      help="Ścieżka do runway-raw.json (opcjonalne)")
+    parser.add_argument("--minimax",     help="Ścieżka do minimax-raw.json (opcjonalne)")
     parser.add_argument("--replicate",   help="Ścieżka do replicate-raw.json (opcjonalne)")
     parser.add_argument("--fireworks",   help="Ścieżka do fireworks-raw.json (opcjonalne)")
     parser.add_argument("--manual",      required=True, help="Ścieżka do models-manual.json")
@@ -1233,6 +1237,7 @@ def main():
     wavespeed_models= load_optional(args.wavespeed,     lambda d: parse_curated(d, "wavespeed", None),                       "WaveSpeed  ")
     kie_models      = load_optional(args.kie,           lambda d: parse_curated(d, "kie",       "https://kie.ai/?ref=tsa"),  "kie.ai     ")
     runway_models   = load_optional(args.runway,        lambda d: parse_curated(d, "runway",    None),                       "Runway     ")
+    minimax_models  = load_optional(args.minimax,       lambda d: parse_curated(d, "minimax",   None),                       "MiniMax    ")
     replicate_models= load_optional(args.replicate,     parse_replicate,                                                       "Replicate  ")
     fireworks_models= load_optional(args.fireworks,     lambda d: parse_fireworks(d, litellm_raw),                             "Fireworks  ")
 
@@ -1249,7 +1254,7 @@ def main():
 
     merged = merge(litellm_models, or_models, fal_models, hf_models, manual_models,
                    aimlapi_models, piapi_models, wavespeed_models, kie_models, runway_models,
-                   replicate_models,
+                   minimax_models, replicate_models,
                    fireworks_models)
 
     # Apply provider patches (data/provider-patches.json)

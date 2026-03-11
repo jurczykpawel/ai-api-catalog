@@ -1,0 +1,255 @@
+{
+  "models": [
+    {
+      "id": "minimax-m2-5",
+      "name": "MiniMax M2.5",
+      "category": "llm",
+      "description": "MiniMax flagship LLM with 196k context. OpenAI-compatible API.",
+      "tags": [
+        "minimax",
+        "llm",
+        "long-context"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-m2-5-lightning",
+      "name": "MiniMax M2.5 Lightning",
+      "category": "llm",
+      "description": "High-speed variant of MiniMax M2.5. ~100 tokens/sec.",
+      "tags": [
+        "minimax",
+        "llm",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.4
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-m2-1",
+      "name": "MiniMax M2.1",
+      "category": "llm",
+      "description": "MiniMax M2.1 LLM. Also available on AWS Bedrock and Fireworks.",
+      "tags": [
+        "minimax",
+        "llm"
+      ],
+      "capabilities": [
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-m2-1-lightning",
+      "name": "MiniMax M2.1 Lightning",
+      "category": "llm",
+      "description": "High-speed variant of MiniMax M2.1.",
+      "tags": [
+        "minimax",
+        "llm",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.4
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-m2",
+      "name": "MiniMax M2",
+      "category": "llm",
+      "description": "MiniMax M2 — 200k context, 128k max output. OpenAI-compatible.",
+      "tags": [
+        "minimax",
+        "llm",
+        "long-context"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-speech-2-8-hd",
+      "name": "MiniMax Speech-2.8 HD",
+      "category": "audio_tts",
+      "description": "High-quality TTS by MiniMax. 40 languages, 7 emotion variants, voice cloning.",
+      "tags": [
+        "minimax",
+        "tts",
+        "multilingual",
+        "voice-cloning"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "Per-character pricing — check platform.minimax.io/docs/pricing/overview"
+      },
+      "url": "https://platform.minimax.io/docs/pricing/overview",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-speech-2-8-turbo",
+      "name": "MiniMax Speech-2.8 Turbo",
+      "category": "audio_tts",
+      "description": "Fast TTS by MiniMax. 40 languages, lower latency than HD.",
+      "tags": [
+        "minimax",
+        "tts",
+        "multilingual",
+        "fast"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "Per-character pricing — check platform.minimax.io/docs/pricing/overview"
+      },
+      "url": "https://platform.minimax.io/docs/pricing/overview",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-speech-2-6-hd",
+      "name": "MiniMax Speech-2.6 HD",
+      "category": "audio_tts",
+      "description": "MiniMax TTS 2.6 HD. 40 languages, high quality.",
+      "tags": [
+        "minimax",
+        "tts",
+        "multilingual"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "Per-character pricing — check platform.minimax.io/docs/pricing/overview"
+      },
+      "url": "https://platform.minimax.io/docs/pricing/overview",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "hailuo-2-3",
+      "name": "MiniMax Hailuo 2.3",
+      "category": "video_generation",
+      "description": "MiniMax latest video model. 1080p 6s or 768p up to 10s at 24fps.",
+      "tags": [
+        "minimax",
+        "hailuo",
+        "video"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "Check platform.minimax.io/docs/pricing/overview"
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "hailuo-2-3-fast",
+      "name": "MiniMax Hailuo 2.3 Fast",
+      "category": "video_generation",
+      "description": "Faster variant of Hailuo 2.3 with slightly lower quality.",
+      "tags": [
+        "minimax",
+        "hailuo",
+        "video",
+        "fast"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "Check platform.minimax.io/docs/pricing/overview"
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    },
+    {
+      "id": "minimax-music-2-5",
+      "name": "MiniMax Music-2.5",
+      "category": "music_generation",
+      "description": "MiniMax music generation model. Multi-genre, expressive vocals.",
+      "tags": [
+        "minimax",
+        "music"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "Check platform.minimax.io/docs/pricing/overview"
+      },
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "updated_at": "2026-03-11",
+      "source": "minimax"
+    }
+  ],
+  "updated_at": "2026-03-11",
+  "source": "minimax",
+  "count": 11
+}
