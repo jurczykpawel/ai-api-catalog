@@ -44,7 +44,29 @@ def validate(path: str):
         errors.append("Brak modeli w pliku")
         return
 
-    print(f"Walidacja {len(models)} modeli z {data_path}...\n")
+    count = len(models)
+    print(f"Walidacja {count} modeli z {data_path}...\n")
+
+    # Count regression check — fail if model count dropped by >10% vs git HEAD
+    try:
+        import subprocess
+        result = subprocess.run(
+            ["git", "show", "HEAD:data/models.json"],
+            capture_output=True, text=True, cwd=data_path.parent.parent
+        )
+        if result.returncode == 0:
+            prev = json.loads(result.stdout)
+            prev_count = len(prev.get("models", []))
+            if prev_count > 0:
+                drop_pct = (prev_count - count) / prev_count * 100
+                if drop_pct > 10:
+                    errors.append(
+                        f"REGRESJA: {count} modeli vs {prev_count} w HEAD "
+                        f"(spadek o {drop_pct:.0f}%). "
+                        f"Sprawdź czy wszystkie źródła danych zostały użyte."
+                    )
+    except Exception:
+        pass  # git unavailable — skip check
 
     ids = []
     for i, model in enumerate(models):
