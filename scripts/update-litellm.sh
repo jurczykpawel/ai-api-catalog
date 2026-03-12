@@ -71,9 +71,10 @@ echo "[7/9] Pobieranie WaveSpeed (curated)..."
 python3 "$SCRIPT_DIR/fetch-wavespeed.py" "$DATA_DIR/wavespeed-raw.json"
 
 echo ""
-echo "[8/9] Pobieranie kie.ai + Runway ML + Replicate + Fireworks + MiniMax (curated/API)..."
+echo "[8/9] Pobieranie kie.ai + Runway ML + Replicate + Fireworks + MiniMax + Bedrock (curated/API)..."
 python3 "$SCRIPT_DIR/fetch-kie.py" "$DATA_DIR/kie-raw.json"
 python3 "$SCRIPT_DIR/fetch-minimax.py" "$DATA_DIR/minimax-raw.json"
+python3 "$SCRIPT_DIR/fetch-bedrock.py" "$DATA_DIR/bedrock-raw.json"
 python3 "$SCRIPT_DIR/fetch-runway.py" "$DATA_DIR/runway-raw.json"
 if [ -n "$REPLICATE_API_TOKEN" ]; then
   python3 "$SCRIPT_DIR/fetch-replicate.py" "$DATA_DIR/replicate-raw.json"
@@ -101,6 +102,7 @@ python3 "$SCRIPT_DIR/merge-data.py" \
     --replicate   "$DATA_DIR/replicate-raw.json" \
     --fireworks   "$DATA_DIR/fireworks-raw.json" \
     --minimax     "$DATA_DIR/minimax-raw.json" \
+    --bedrock     "$DATA_DIR/bedrock-raw.json" \
     --manual      "$DATA_DIR/models-manual.json" \
     --output      "$DATA_DIR/models.json"
 
