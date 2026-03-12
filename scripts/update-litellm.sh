@@ -27,19 +27,19 @@ echo "✓ litellm-raw.json"
 
 echo ""
 echo "[2/9] Pobieranie OpenRouter..."
-python3 "$SCRIPT_DIR/fetch-openrouter.py" "$DATA_DIR/openrouter-raw.json"
+python3 "$SCRIPT_DIR/fetch-openrouter.py" "$DATA_DIR/openrouter-raw.json" || echo "  ⚠ OpenRouter fetch failed — używam istniejącego openrouter-raw.json"
 
 echo ""
 echo "[3/9] Pobieranie fal.ai..."
-python3 "$SCRIPT_DIR/fetch-fal.py" "$DATA_DIR/fal-raw.json"
+python3 "$SCRIPT_DIR/fetch-fal.py" "$DATA_DIR/fal-raw.json" || echo "  ⚠ fal.ai fetch failed — używam istniejącego fal-raw.json"
 
 echo ""
 echo "[4/9] Pobieranie HuggingFace..."
-python3 "$SCRIPT_DIR/fetch-huggingface.py" "$DATA_DIR/huggingface-raw.json"
+python3 "$SCRIPT_DIR/fetch-huggingface.py" "$DATA_DIR/huggingface-raw.json" || echo "  ⚠ HuggingFace fetch failed — używam istniejącego huggingface-raw.json"
 
 echo ""
 echo "[5/9] Pobieranie AIMLAPI..."
-python3 "$SCRIPT_DIR/fetch-aimlapi.py" "$DATA_DIR/aimlapi-raw.json"
+python3 "$SCRIPT_DIR/fetch-aimlapi.py" "$DATA_DIR/aimlapi-raw.json" || echo "  ⚠ AIMLAPI fetch failed — używam istniejącego aimlapi-raw.json"
 
 echo ""
 echo "[6/9] Pobieranie piapi.ai (curated)..."
