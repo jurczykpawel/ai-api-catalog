@@ -140,6 +140,15 @@
           "url": "https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video/fast-wan",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 479,381. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/wan-video/wan-2.2-5b-fast",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
         }
       ]
     },
@@ -3493,10 +3502,10 @@
       ]
     },
     {
-      "id": "claude-3-5-haiku-20241022",
-      "name": "Claude 3 5 Haiku 20241022",
+      "id": "claude-3-5-haiku",
+      "name": "Claude 3 5 Haiku",
       "category": "llm",
-      "description": "Anthropic Claude 3 5 Haiku 20241022 — chat model.",
+      "description": "Anthropic Claude 3 5 Haiku — chat model.",
       "description_pl": "Model Anthropic — chat.",
       "tags": [],
       "capabilities": [
@@ -3518,6 +3527,25 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.8,
+            "output_per_1m": 4.0,
+            "cache_write_per_1m": 1.0,
+            "cache_read_per_1m": 0.08
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {},
+          "url": "https://openrouter.ai/anthropic/claude-3.5-haiku-20241022",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
           "provider_id": "aimlapi",
           "pricing": {
             "notes": "Check aimlapi.com for current pricing"
@@ -3525,14 +3553,23 @@
           "url": "https://aimlapi.com/models/claude-3-5-haiku-api",
           "affiliate_url": null,
           "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 3,025,527. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/anthropic/claude-3.5-haiku",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
         }
       ]
     },
     {
-      "id": "claude-3-5-sonnet-20241022",
-      "name": "Claude 3 5 Sonnet 20241022",
+      "id": "claude-3-haiku",
+      "name": "Claude 3 Haiku",
       "category": "llm",
-      "description": "Anthropic Claude 3 5 Sonnet 20241022 — chat model.",
+      "description": "Anthropic Claude 3 Haiku — chat model.",
       "description_pl": "Model Anthropic — chat.",
       "tags": [],
       "capabilities": [
@@ -3546,29 +3583,13 @@
         {
           "provider_id": "anthropic",
           "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 15.0
+            "input_per_1m": 0.25,
+            "output_per_1m": 1.25
           },
           "url": "",
           "affiliate_url": null,
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-3-haiku",
-      "name": "Claude 3 Haiku",
-      "category": "llm",
-      "description": "Claude 3 Haiku is Anthropic's fastest and most compact model for\nnear-instant responsiveness. Quick and accurate targeted performance.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-haiku)\n\n#multimodal",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
+        },
         {
           "provider_id": "openrouter",
           "pricing": {
@@ -3588,33 +3609,6 @@
             "cache_read_per_1m": 0.025
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-3-haiku-20240307",
-      "name": "Claude 3 Haiku 20240307",
-      "category": "llm",
-      "description": "Anthropic Claude 3 Haiku 20240307 — chat model.",
-      "description_pl": "Model Anthropic — chat.",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "litellm",
-      "providers": [
-        {
-          "provider_id": "anthropic",
-          "pricing": {
-            "input_per_1m": 0.25,
-            "output_per_1m": 1.25
-          },
-          "url": "",
           "affiliate_url": null,
           "available": true
         },
@@ -3698,75 +3692,6 @@
       ]
     },
     {
-      "id": "anthropic-claude-3-5-haiku",
-      "name": "Claude 3.5 Haiku",
-      "category": "llm",
-      "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic tasks such as chat interactions and immediate coding suggestions.\n\nThis makes it highly su...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.8,
-            "output_per_1m": 4.0
-          },
-          "url": "https://openrouter.ai/anthropic/claude-3.5-haiku",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 0.8,
-            "output_per_1m": 4.0,
-            "cache_write_per_1m": 1.0,
-            "cache_read_per_1m": 0.08
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 3,025,527. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/anthropic/claude-3.5-haiku",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "anthropic-claude-3-5-haiku-20241022",
-      "name": "Claude 3.5 Haiku (2024-10-22)",
-      "category": "llm",
-      "description": "Claude 3.5 Haiku features enhancements across all skill sets including coding, tool use, and reasoning. As the fastest model in the Anthropic lineup, it offers rapid response times suitable for applications that require high interactivity and low latency, such as user-facing chatbots and on-the-f...",
-      "tags": [],
-      "capabilities": [
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/anthropic/claude-3.5-haiku-20241022",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "claude-3-5-sonnet",
       "name": "Claude 3.5 Sonnet",
       "category": "llm",
@@ -3825,28 +3750,6 @@
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "anthropic-claude-3-5-sonnet-20240620",
-      "name": "Claude 3.5 Sonnet (2024-06-20)",
-      "category": "llm",
-      "description": "Claude 3.5 Sonnet delivers better-than-Opus capabilities, faster-than-Sonnet speeds, at the same Sonnet prices. Sonnet is particularly good at:\n\n- Coding: Autonomously writes, edits, and runs code with reasoning and troubleshooting\n- Data science: Augments human data science expertise; navigates ...",
-      "tags": [],
-      "capabilities": [
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/anthropic/claude-3.5-sonnet-20240620",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
       ]
@@ -3927,142 +3830,17 @@
           "url": "https://aimlapi.com/models/claude-opus-4-20250514",
           "affiliate_url": null,
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-sonnet-4-20250514",
-      "name": "Claude 4 Sonnet",
-      "category": "llm",
-      "description": "Claude 4 Sonnet is Anthropic's balanced model combining strong reasoning and coding capabilities with practical efficiency.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 200000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/claude-sonnet-4-20250514",
-          "affiliate_url": null,
-          "available": true
         },
         {
-          "provider_id": "replicate",
+          "provider_id": "bedrock",
           "pricing": {
-            "notes": "Run count: 2,530,425. Check replicate.com for pricing."
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0,
+            "cache_write_per_1m": 18.75,
+            "cache_read_per_1m": 1.5
           },
-          "url": "https://replicate.com/anthropic/claude-4-sonnet",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-opus-4-1-20250805",
-      "name": "Claude 4.1 Opus",
-      "category": "llm",
-      "description": "Claude 4.1 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 200000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/claude-opus-4-1-20250805",
+          "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-haiku-4-5-20251001",
-      "name": "Claude 4.5 Haiku",
-      "category": "llm",
-      "description": "Claude 4.5 Haiku is a high-speed language model optimized for diverse applications.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 200000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/claude-haiku-4-5-20251001",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 113,300. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/anthropic/claude-4.5-haiku",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-opus-4-5-20251101",
-      "name": "Claude 4.5 Opus",
-      "category": "llm",
-      "description": "Claude 4.5 Opus is Anthropic's most capable model, designed for complex reasoning, analysis, and long-form content generation.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 200000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/claude-opus-4-5-20251101",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-sonnet-4-5-20250929",
-      "name": "Claude 4.5 Sonnet",
-      "category": "llm",
-      "description": "Claude 4.5 Sonnet is Anthropic's balanced model combining strong reasoning and coding capabilities with practical efficiency.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 200000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/claude-sonnet-4-5-20250929",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 740,676. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/anthropic/claude-4.5-sonnet",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -4116,6 +3894,24 @@
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/claude-haiku-4-5-20251001",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 113,300. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/anthropic/claude-4.5-haiku",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -4214,49 +4010,6 @@
       ]
     },
     {
-      "id": "claude-opus-4",
-      "name": "Claude Opus 4",
-      "category": "llm",
-      "description": "Anthropic Claude Opus 4 on Amazon Bedrock.",
-      "tags": [
-        "anthropic",
-        "claude"
-      ],
-      "capabilities": [
-        "computer_use",
-        "function_calling",
-        "prompt_caching",
-        "reasoning",
-        "vision"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 15.0,
-        "output_per_1m": 75.0,
-        "cache_write_per_1m": 18.75,
-        "cache_read_per_1m": 1.5
-      },
-      "url": "https://aws.amazon.com/bedrock/claude/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 15.0,
-            "output_per_1m": 75.0,
-            "cache_write_per_1m": 18.75,
-            "cache_read_per_1m": 1.5
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "claude-opus-4-5",
       "name": "Claude Opus 4 5",
       "category": "llm",
@@ -4293,6 +4046,25 @@
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0
+          },
+          "url": "https://openrouter.ai/anthropic/claude-opus-4.5",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/claude-opus-4-5-20251101",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -4322,6 +4094,15 @@
           "available": true
         },
         {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/claude-opus-4-1-20250805",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "bedrock",
           "pricing": {
             "input_per_1m": 15.0,
@@ -4331,33 +4112,6 @@
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "anthropic-claude-opus-4-5",
-      "name": "Claude Opus 4.5",
-      "category": "llm",
-      "description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and reasoning benchmarks, and improved robustness to pro...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 5.0,
-            "output_per_1m": 25.0
-          },
-          "url": "https://openrouter.ai/anthropic/claude-opus-4.5",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
       ]
@@ -4461,6 +4215,15 @@
           "available": true
         },
         {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/claude-sonnet-4-20250514",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "bedrock",
           "pricing": {
             "input_per_1m": 3.0,
@@ -4470,6 +4233,15 @@
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 2,530,425. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/anthropic/claude-4-sonnet",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -4511,24 +4283,7 @@
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "anthropic-claude-sonnet-4-5",
-      "name": "Claude Sonnet 4.5",
-      "category": "llm",
-      "description": "Claude Sonnet 4.5 is Anthropic’s most advanced Sonnet model to date, optimized for real-world agents and coding workflows. It delivers state-of-the-art performance on coding benchmarks such as SWE-bench Verified, with improvements across system design, code security, and specification adherence. ...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 1000,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
+        },
         {
           "provider_id": "openrouter",
           "pricing": {
@@ -4537,6 +4292,24 @@
           },
           "url": "https://openrouter.ai/anthropic/claude-sonnet-4.5",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/claude-sonnet-4-5-20250929",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 740,676. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/anthropic/claude-4.5-sonnet",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -5883,51 +5656,6 @@
         },
         {
           "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/cohere/command-r",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ],
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "Ollama / transformers"
-    },
-    {
-      "id": "cohere-command-r-03-2024",
-      "name": "Command R (03-2024)",
-      "category": "llm",
-      "description": "Command-R is a 35B parameter model that performs conversational language tasks at a higher quality, more reliably, and with a longer context than previous models. It can be used for complex workflows like code generation, retrieval augmented generation (RAG), tool use, and agents.\n\nRead the launc...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/cohere/command-r-03-2024",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "cohere-command-r-08-2024",
-      "name": "Command R (08-2024)",
-      "category": "llm",
-      "description": "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and is competitive with the previous version of the larger Command R+ mo...",
-      "tags": [],
-      "capabilities": [
-        "function_calling"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 0.15,
             "output_per_1m": 0.6
@@ -5936,7 +5664,10 @@
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
-      ]
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama / transformers"
     },
     {
       "id": "command-r-plus-08-2024",
@@ -6000,48 +5731,6 @@
           "affiliate_url": null,
           "available": true
         },
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/cohere/command-r-plus",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "cohere-command-r-plus-04-2024",
-      "name": "Command R+ (04-2024)",
-      "category": "llm",
-      "description": "Command R+ is a new, 104B-parameter LLM from Cohere. It's useful for roleplay, general consumer usecases, and Retrieval Augmented Generation (RAG).\n\nIt offers multilingual support for ten key languages to facilitate global business operations. See benchmarks and the launch post [here](https://txt...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/cohere/command-r-plus-04-2024",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "cohere-command-r-plus-08-2024",
-      "name": "Command R+ (08-2024)",
-      "category": "llm",
-      "description": "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint the same.\n\nRead the launch post [here](https://docs.cohere.com/cha...",
-      "tags": [],
-      "capabilities": [
-        "function_calling"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
         {
           "provider_id": "openrouter",
           "pricing": {
@@ -7129,52 +6818,6 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "Ollama / transformers"
-    },
-    {
-      "id": "fireworks-deepseek-r1-basic",
-      "name": "DeepSeek R1 (Basic)",
-      "category": "llm",
-      "description": "DeepSeek R1 (Basic) is the cost-optimized serverless deployment of DeepSeek-R1. Compared to the DeepSeek R1 (Fast) endpoint, R1 (Basic) provides lower per-token prices with slower speeds, see https://fireworks.ai/pricing for details. Identical models are served on the two endpoints, so there are no ",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 164,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.55,
-            "output_per_1m": 2.19
-          },
-          "url": "https://fireworks.ai/models/fireworks/deepseek-r1-basic",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "fireworks-deepseek-r1",
-      "name": "DeepSeek R1 (Fast)",
-      "category": "llm",
-      "description": "DeepSeek R1 (Fast) is the speed-optimized serverless deployment of DeepSeek-R1. Compared to the DeepSeek R1 (Basic) endpoint, R1 (Fast) provides faster speeds with higher per-token prices, see https://fireworks.ai/pricing for details. Identical models are served on the two endpoints, so there are no",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 164,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 8.0
-          },
-          "url": "https://fireworks.ai/models/fireworks/deepseek-r1",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
     },
     {
       "id": "fireworks-deepseek-r1-0528",
@@ -10386,28 +10029,6 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/f-lite/standard",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "f-lite-texture",
-      "name": "F Lite (texture mode)",
-      "category": "image_generation",
-      "description": "F Lite is a 10B parameter diffusion model created by Fal and Freepik, trained exclusively on copyright-safe and SFW content. This is a high texture density variant of the model.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/f-lite/texture",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -14709,33 +14330,6 @@
       ]
     },
     {
-      "id": "google-gemini-2-5-pro-preview-05-06",
-      "name": "Gemini 2.5 Pro Preview 05-06",
-      "category": "llm",
-      "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy and nuanced context handling. Gemini 2.5 Pro achieves top-tier perfor...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 1049,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/google/gemini-2.5-pro-preview-05-06",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "google-gemini-2-5-pro-preview",
       "name": "Gemini 2.5 Pro Preview 06-05",
       "category": "llm",
@@ -17116,51 +16710,6 @@
       ]
     },
     {
-      "id": "openai-gpt-3-5-turbo",
-      "name": "GPT-3.5 Turbo",
-      "category": "llm",
-      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-      "tags": [],
-      "capabilities": [
-        "function_calling"
-      ],
-      "context_k": 16,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.5,
-            "output_per_1m": 1.5
-          },
-          "url": "https://openrouter.ai/openai/gpt-3.5-turbo",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-3-5-turbo-0301",
-      "name": "GPT-3.5 Turbo (older v0301)",
-      "category": "llm",
-      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 4,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/openai/gpt-3.5-turbo-0301",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "openai-gpt-3-5-turbo-0613",
       "name": "GPT-3.5 Turbo (older v0613)",
       "category": "llm",
@@ -17180,31 +16729,6 @@
             "output_per_1m": 2.0
           },
           "url": "https://openrouter.ai/openai/gpt-3.5-turbo-0613",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-3-5-turbo-16k",
-      "name": "GPT-3.5 Turbo 16k",
-      "category": "llm",
-      "description": "This model offers four times the context length of gpt-3.5-turbo, allowing it to support approximately 20 pages of text in a single request at a higher cost. Training data: up to Sep 2021.",
-      "tags": [],
-      "capabilities": [
-        "function_calling"
-      ],
-      "context_k": 16,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 4.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-3.5-turbo-16k",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
@@ -17254,40 +16778,6 @@
       ]
     },
     {
-      "id": "openai-gpt-4",
-      "name": "GPT-4",
-      "category": "llm",
-      "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
-      "tags": [],
-      "capabilities": [
-        "function_calling"
-      ],
-      "context_k": 8,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 30.0,
-            "output_per_1m": 60.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-4",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/chat-gpt-4",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "openai-gpt-4-0314",
       "name": "GPT-4 (older v0314)",
       "category": "llm",
@@ -17309,6 +16799,15 @@
           "url": "https://openrouter.ai/openai/gpt-4-0314",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/chat-gpt-4",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -17327,26 +16826,6 @@
           "provider_id": "openrouter",
           "pricing": {},
           "url": "https://openrouter.ai/openai/gpt-4-32k",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-4-32k-0314",
-      "name": "GPT-4 32k (older v0314)",
-      "category": "llm",
-      "description": "GPT-4-32k is an extended version of GPT-4, with the same capabilities but quadrupled context length, allowing for processing up to 40 pages of text in a single pass. This is particularly beneficial for handling longer content like interacting with PDFs without an external vector database. Trainin...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 33,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/openai/gpt-4-32k-0314",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
@@ -17383,31 +16862,6 @@
           },
           "url": "https://aimlapi.com/models/chat-gpt-4-turbo",
           "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-4-1106-preview",
-      "name": "GPT-4 Turbo (older v1106)",
-      "category": "llm",
-      "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to April 2023.",
-      "tags": [],
-      "capabilities": [
-        "function_calling"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 10.0,
-            "output_per_1m": 30.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-4-1106-preview",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
       ]
@@ -17607,28 +17061,6 @@
       ]
     },
     {
-      "id": "openai-gpt-4-5-preview",
-      "name": "GPT-4.5 (Preview)",
-      "category": "llm",
-      "description": "GPT-4.5 (Preview) is a research preview of OpenAI’s latest language model, designed to advance capabilities in reasoning, creativity, and multi-turn conversation. It builds on previous iterations with improvements in world knowledge, contextual coherence, and the ability to follow user intent mor...",
-      "tags": [],
-      "capabilities": [
-        "vision"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/openai/gpt-4.5-preview",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "gpt-4o",
       "name": "GPT-4o",
       "category": "llm",
@@ -17683,84 +17115,6 @@
           },
           "url": "https://replicate.com/openai/gpt-4o",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-4o-2024-05-13",
-      "name": "GPT-4o (2024-05-13)",
-      "category": "llm",
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as fast and 50% more cost-effective. GPT-4o also offers improved performance in processi...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 5.0,
-            "output_per_1m": 15.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-4o-2024-05-13",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-4o-2024-08-06",
-      "name": "GPT-4o (2024-08-06)",
-      "category": "llm",
-      "description": "The 2024-08-06 version of GPT-4o offers improved performance in structured outputs, with the ability to supply a JSON schema in the respone_format. Read more [here](https://openai.com/index/introducing-structured-outputs-in-the-api/).\n\nGPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporti...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 2.5,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-4o-2024-08-06",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-4o-2024-11-20",
-      "name": "GPT-4o (2024-11-20)",
-      "category": "llm",
-      "description": "The 2024-11-20 version of GPT-4o offers a leveled-up creative writing ability with more natural, engaging, and tailored writing to improve relevance & readability. It’s also better at working with uploaded files, providing deeper insights & more thorough responses.\n\nGPT-4o (\"o\" for \"omni\") is Ope...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 2.5,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-4o-2024-11-20",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
       ]
@@ -17867,32 +17221,6 @@
             "output_per_1m": 10.0
           },
           "url": "https://openrouter.ai/openai/gpt-4o-search-preview",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-4o-mini-2024-07-18",
-      "name": "GPT-4o-mini (2024-07-18)",
-      "category": "llm",
-      "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/mod...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.15,
-            "output_per_1m": 0.6
-          },
-          "url": "https://openrouter.ai/openai/gpt-4o-mini-2024-07-18",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
@@ -19153,34 +18481,6 @@
       ]
     },
     {
-      "id": "xai-grok-4-1-fast",
-      "name": "Grok 4 1 Fast",
-      "category": "llm",
-      "description": "Xai Grok 4 1 Fast — chat model.",
-      "description_pl": "Model Xai — chat.",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 2000,
-      "updated_at": "2026-03-12",
-      "source": "litellm",
-      "providers": [
-        {
-          "provider_id": "xai",
-          "pricing": {
-            "input_per_1m": 0.2,
-            "output_per_1m": 0.5
-          },
-          "url": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "x-ai-grok-4-fast",
       "name": "Grok 4 Fast",
       "category": "llm",
@@ -19565,32 +18865,6 @@
       ]
     },
     {
-      "id": "replicate-hailuo-02",
-      "name": "Hailuo 02",
-      "category": "video_generation",
-      "description": "Hailuo 2 is a text-to-video and image-to-video model that can make 6s or 10s videos at 768p (standard) or 1080p (pro). It excels at real world physics.",
-      "tags": [],
-      "capabilities": [
-        "text_to_video"
-      ],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
-      "updated_at": "2026-03-12",
-      "source": "replicate",
-      "providers": [
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 344,166. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/minimax/hailuo-02",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "hailuo-video",
       "name": "Hailuo 02 (MiniMax Video)",
       "category": "video_generation",
@@ -19632,6 +18906,15 @@
           },
           "url": "https://piapi.ai",
           "affiliate_url": "https://piapi.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 344,166. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/minimax/hailuo-02",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -20179,24 +19462,7 @@
           "url": "https://fal.ai/models/fal-ai/hidream-e1-1",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "replicate-hidream-e1-1",
-      "name": "Hidream E1.1",
-      "category": "image_generation",
-      "description": "Edit an image with a prompt. This is the hidream-e1.1 model accelerated with the pruna optimisation engine.",
-      "tags": [
-        "open-source"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "updated_at": "2026-03-12",
-      "source": "replicate",
-      "providers": [
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -20207,6 +19473,8 @@
           "available": true
         }
       ],
+      "open_source": true,
+      "local_available": true,
       "local_tool": "ComfyUI / diffusers"
     },
     {
@@ -21533,30 +20801,6 @@
           },
           "url": "https://fal.ai/models/fal-ai/image-preprocessors/depth-anything/v2",
           "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "replicate-image-upscale",
-      "name": "Image Upscale",
-      "category": "image_generation",
-      "description": "Professional-grade image upscaling, from Topaz Labs",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
-      "updated_at": "2026-03-12",
-      "source": "replicate",
-      "providers": [
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 1,457,778. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/topazlabs/image-upscale",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -23359,31 +22603,6 @@
       ]
     },
     {
-      "id": "kling-video-v2-1-pro",
-      "name": "Kling 2.1 (pro)",
-      "category": "video_generation",
-      "description": "Kling 2.1 Pro is an advanced endpoint for the Kling 2.1 model, offering professional-grade videos with enhanced visual fidelity, precise camera movements, and dynamic motion control, perfect for cinematic storytelling.\n\n",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kling-video/v2.1/pro/image-to-video",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "kling-video-v2-1-master",
       "name": "Kling 2.1 Master",
       "category": "video_generation",
@@ -24598,182 +23817,6 @@
       "local_tool": "kokoro-fastapi"
     },
     {
-      "id": "kokoro-brazilian-portuguese",
-      "name": "Kokoro TTS (Brazilian Portuguese)",
-      "category": "music_generation",
-      "description": "A natural and expressive Brazilian Portuguese text-to-speech model optimized for clarity and fluency.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/brazilian-portuguese",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-british-english",
-      "name": "Kokoro TTS (British English)",
-      "category": "music_generation",
-      "description": "A high-quality British English text-to-speech model offering natural and expressive voice synthesis.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/british-english",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-french",
-      "name": "Kokoro TTS (French)",
-      "category": "music_generation",
-      "description": "An expressive and natural French text-to-speech model for both European and Canadian French.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/french",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-hindi",
-      "name": "Kokoro TTS (Hindi)",
-      "category": "music_generation",
-      "description": "A fast and expressive Hindi text-to-speech model with clear pronunciation and accurate intonation.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/hindi",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-italian",
-      "name": "Kokoro TTS (Italian)",
-      "category": "music_generation",
-      "description": "A high-quality Italian text-to-speech model delivering smooth and expressive speech synthesis.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/italian",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-japanese",
-      "name": "Kokoro TTS (Japanese)",
-      "category": "music_generation",
-      "description": "A fast and natural-sounding Japanese text-to-speech model optimized for smooth pronunciation.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/japanese",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-mandarin-chinese",
-      "name": "Kokoro TTS (Mandarin Chinese)",
-      "category": "music_generation",
-      "description": "A highly efficient Mandarin Chinese text-to-speech model that captures natural tones and prosody.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/mandarin-chinese",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "kokoro-spanish",
-      "name": "Kokoro TTS (Spanish)",
-      "category": "music_generation",
-      "description": "A natural-sounding Spanish text-to-speech model optimized for Latin American and European Spanish.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/kokoro/spanish",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "kolors",
       "name": "Kolors",
       "category": "image_generation",
@@ -25687,52 +24730,6 @@
       ]
     },
     {
-      "id": "fireworks-llama-v3-70b-instruct-hf",
-      "name": "Llama 3 70B Instruct (HF version)",
-      "category": "llm",
-      "description": "Meta’s Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Llama 3 70B Instruct (HF Version) is the original, FP16 version of Llama 3 70B Instruct whose results should be consistent with the",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 8,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.9,
-            "output_per_1m": 0.9
-          },
-          "url": "https://fireworks.ai/models/fireworks/llama-v3-70b-instruct-hf",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "fireworks-llama-v3-8b",
-      "name": "Llama 3 8B",
-      "category": "llm",
-      "description": "Llama 3 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 8,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.2,
-            "output_per_1m": 0.2
-          },
-          "url": "https://fireworks.ai/models/fireworks/llama-v3-8b",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "meta-llama-llama-3-8b",
       "name": "Llama 3 8B (Base)",
       "category": "llm",
@@ -25748,6 +24745,16 @@
           "pricing": {},
           "url": "https://openrouter.ai/meta-llama/llama-3-8b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://fireworks.ai/models/fireworks/llama-v3-8b",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -25791,29 +24798,6 @@
             "notes": "Check fireworks.ai for pricing"
           },
           "url": "https://fireworks.ai/models/fireworks/llama-v3-8b-instruct",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "fireworks-llama-v3-8b-instruct-hf",
-      "name": "Llama 3 8B Instruct (HF version)",
-      "category": "llm",
-      "description": "Meta's Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Llama 3 8B Instruct (HF Version) is the original, FP16 version of Llama 3 8B Instruct whose results should be consistent with the o",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 8,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.2,
-            "output_per_1m": 0.2
-          },
-          "url": "https://fireworks.ai/models/fireworks/llama-v3-8b-instruct-hf",
           "affiliate_url": null,
           "available": true
         }
@@ -26018,29 +25002,6 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "Ollama / transformers"
-    },
-    {
-      "id": "meta-llama-llama-3-1-405b",
-      "name": "Llama 3.1 405B (base)",
-      "category": "llm",
-      "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This is the base 405B pre-trained version.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.met...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 33,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 4.0,
-            "output_per_1m": 4.0
-          },
-          "url": "https://openrouter.ai/meta-llama/llama-3.1-405b",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
     },
     {
       "id": "meta-llama-llama-3-1-405b-instruct",
@@ -27319,24 +26280,7 @@
           "url": "https://replicate.com/meta/llama-4-maverick-instruct",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
-        }
-      ],
-      "local_tool": "ComfyUI / diffusers"
-    },
-    {
-      "id": "fireworks-llama4-maverick-instruct-basic",
-      "name": "Llama 4 Maverick Instruct (Basic)",
-      "category": "llm",
-      "description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding.",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 1049,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
+        },
         {
           "provider_id": "fireworks",
           "pricing": {
@@ -27347,7 +26291,8 @@
           "affiliate_url": null,
           "available": true
         }
-      ]
+      ],
+      "local_tool": "ComfyUI / diffusers"
     },
     {
       "id": "llama-4-scout",
@@ -27452,24 +26397,7 @@
           "url": "https://replicate.com/meta/llama-4-scout-instruct",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
-        }
-      ],
-      "local_tool": "ComfyUI / diffusers"
-    },
-    {
-      "id": "fireworks-llama4-scout-instruct-basic",
-      "name": "Llama 4 Scout Instruct (Basic)",
-      "category": "llm",
-      "description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding.",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 1049,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
+        },
         {
           "provider_id": "fireworks",
           "pricing": {
@@ -27480,7 +26408,8 @@
           "affiliate_url": null,
           "available": true
         }
-      ]
+      ],
+      "local_tool": "ComfyUI / diffusers"
     },
     {
       "id": "fireworks_ai-accounts-fireworks-models-llama-guard-2-8b",
@@ -29093,30 +28022,6 @@
       ]
     },
     {
-      "id": "ltx-2-3-retake-video",
-      "name": "LTX Video 2.3 Pro",
-      "category": "video_generation",
-      "description": "LTX-2.3 is a high-quality, fast AI video model available in Pro and Fast variants for text-to-video, image-to-video, and audio-to-video.",
-      "tags": [],
-      "capabilities": [
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/ltx-2.3/retake-video",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "hf-ltx-video-iclora-detailer-13b-0-9-8",
       "name": "LTX Video ICLoRA detailer 13b 0.9.8",
       "category": "video_generation",
@@ -29626,31 +28531,6 @@
       ]
     },
     {
-      "id": "luma-dream-machine-ray-2-flash",
-      "name": "Luma Ray 2 Flash",
-      "category": "video_generation",
-      "description": "Ray2 Flash is a fast video generative model capable of creating realistic visuals with natural, coherent motion.",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/luma-dream-machine/ray-2-flash/image-to-video",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "luma-dream-machine-ray-2-flash-modify",
       "name": "Luma Ray 2 Flash Modify",
       "category": "video_generation",
@@ -29771,6 +28651,15 @@
           },
           "url": "https://replicate.com/luma/ray-flash-2",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/luma-dream-machine/ray-2-flash/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -29964,31 +28853,6 @@
           "pricing": {},
           "url": "https://openrouter.ai/inflatebot/mn-mag-mell-r1",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "magi",
-      "name": "MAGI-1",
-      "category": "video_generation",
-      "description": "MAGI-1 generates videos from images with exceptional understanding of physical interactions and prompting",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/magi/image-to-video",
-          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -30763,28 +29627,6 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/minimax/image-01",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "minimax-music",
-      "name": "MiniMax (Hailuo AI) Music",
-      "category": "music_generation",
-      "description": "Generate music from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality, diverse musical compositions.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/minimax-music",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -32394,29 +31236,6 @@
       ]
     },
     {
-      "id": "fireworks-openorca-7b",
-      "name": "Mistral 7B OpenOrca",
-      "category": "llm",
-      "description": "A fine-tuned version of Mistral-7B trained on the OpenOrca dataset, based on the dataset generated for Microsoft Research's Orca Paper. Developed using OpenChat packing, and trained using Axolotl.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 33,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.2,
-            "output_per_1m": 0.2
-          },
-          "url": "https://fireworks.ai/models/fireworks/openorca-7b",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "fireworks-mistral-7b-v0p2",
       "name": "Mistral 7B v0.2",
       "category": "llm",
@@ -33022,6 +31841,16 @@
           "url": "https://openrouter.ai/open-orca/mistral-7b-openorca",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://fireworks.ai/models/fireworks/openorca-7b",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -33333,26 +32162,6 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "Ollama / transformers"
-    },
-    {
-      "id": "mistralai-mixtral-8x22b",
-      "name": "Mixtral 8x22B (base)",
-      "category": "llm",
-      "description": "Mixtral 8x22B is a large-scale language model from Mistral AI. It consists of 8 experts, each 22 billion parameters, with each token using 2 experts at a time.\n\nIt was released via [X](https://twitter.com/MistralAI/status/1777869263778291896).\n\n#moe",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 66,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/mistralai/mixtral-8x22b",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
     },
     {
       "id": "fireworks_ai-accounts-fireworks-models-mixtral-8x22b-instruct",
@@ -33668,29 +32477,6 @@
             "output_per_1m": 0.5
           },
           "url": "https://fireworks.ai/models/fireworks/mixtral-8x7b-instruct",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "fireworks-mixtral-8x7b-instruct-hf",
-      "name": "Mixtral MoE 8x7B Instruct (HF version)",
-      "category": "llm",
-      "description": "Mixtral MoE 8x7B Instruct (HF Version) is the original, FP16 version of Mixtral MoE 8x7B Instruct whose results should be consistent with the official Hugging Face implementation.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 33,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.5,
-            "output_per_1m": 0.5
-          },
-          "url": "https://fireworks.ai/models/fireworks/mixtral-8x7b-instruct-hf",
           "affiliate_url": null,
           "available": true
         }
@@ -34721,36 +33507,21 @@
           "available": true
         },
         {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 89,803,502. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/google/nano-banana",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "google-gemini-2-5-flash-image",
-      "name": "Nano Banana (Gemini 2.5 Flash Image)",
-      "category": "image_generation",
-      "description": "Gemini 2.5 Flash Image, a.k.a. \"Nano Banana,\" is now generally available. It is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations. Aspect ratios can be controlled with the [image_config API Parameter](ht...",
-      "tags": [],
-      "capabilities": [
-        "vision"
-      ],
-      "context_k": 33,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
           "provider_id": "openrouter",
           "pricing": {
             "notes": "Check openrouter.ai for pricing"
           },
           "url": "https://openrouter.ai/google/gemini-2.5-flash-image",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 89,803,502. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/google/nano-banana",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -34821,6 +33592,15 @@
           "notes": "Grok Imagine price; Nano Banana 2 may vary"
         },
         {
+          "provider_id": "openrouter",
+          "pricing": {
+            "notes": "Check openrouter.ai for pricing"
+          },
+          "url": "https://openrouter.ai/google/gemini-3.1-flash-image-preview",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
           "provider_id": "replicate",
           "pricing": {
             "notes": "Run count: 2,359,112. Check replicate.com for pricing."
@@ -34833,64 +33613,6 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "ComfyUI / diffusers"
-    },
-    {
-      "id": "google-gemini-3-1-flash-image-preview",
-      "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
-      "category": "image_generation",
-      "description": "Gemini 3.1 Flash Image Preview, a.k.a. \"Nano Banana 2,\" is Google’s latest state of the art image generation and editing model, delivering Pro-level visual quality at Flash speed. It combines advanced contextual understanding with fast, cost-efficient inference, making complex image generation an...",
-      "tags": [],
-      "capabilities": [
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 66,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "notes": "Check openrouter.ai for pricing"
-          },
-          "url": "https://openrouter.ai/google/gemini-3.1-flash-image-preview",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "nano-banana-pro",
-      "name": "Nano Banana Pro",
-      "category": "image_generation",
-      "description": "Nano Banana Pro is Google's new state-of-the-art image generation and editing model",
-      "tags": [],
-      "capabilities": [
-        "image_editing"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/nano-banana-pro/edit",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 16,853,024. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/google/nano-banana-pro",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
     },
     {
       "id": "google-gemini-3-pro-image-preview",
@@ -34913,6 +33635,24 @@
           },
           "url": "https://openrouter.ai/google/gemini-3-pro-image-preview",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/nano-banana-pro/edit",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 16,853,024. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/google/nano-banana-pro",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -35003,28 +33743,6 @@
       ]
     },
     {
-      "id": "nemotron-nano-12b-v2-vl",
-      "name": "Nemotron Nano 12B V2 VL",
-      "category": "llm",
-      "description": "",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 131072,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/nvidia-nemotron-nano-12b-v2-vl",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "nvidia-nemotron-nano-9b-v2",
       "name": "Nemotron Nano 9B V2",
       "category": "llm",
@@ -35080,6 +33798,15 @@
             "output_per_1m": 0.1
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/nvidia-nemotron-nano-12b-v2-vl",
           "affiliate_url": null,
           "available": true
         }
@@ -35870,46 +34597,6 @@
           },
           "url": "https://replicate.com/openai/o1",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-o1-mini-2024-09-12",
-      "name": "o1-mini (2024-09-12)",
-      "category": "llm",
-      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding.\n\nThe o1 models are optimized for math, science, programming, and other STEM-related tasks. They consistently exhibit PhD-level accuracy on benchmarks in physics, chemistry, and biology...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/openai/o1-mini-2024-09-12",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-o1-preview",
-      "name": "o1-preview",
-      "category": "llm",
-      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding.\n\nThe o1 models are optimized for math, science, programming, and other STEM-related tasks. They consistently exhibit PhD-level accuracy on benchmarks in physics, chemistry, and biology...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/openai/o1-preview",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
       ]
@@ -38222,31 +36909,6 @@
       ]
     },
     {
-      "id": "pika-v2-1",
-      "name": "Pika (v2.1)",
-      "category": "video_generation",
-      "description": "Start with a simple text input to create dynamic generations that defy expectations. Anything you dream can come to life with sharp details, impressive character control and cinematic camera moves.",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/pika/v2.1/text-to-video",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "pika-v2-2",
       "name": "Pika (v2.2)",
       "category": "video_generation",
@@ -38763,8 +37425,20 @@
           "url": "",
           "affiliate_url": null,
           "available": true
+        },
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "notes": "Via HF Inference API — check hf.co/pricing"
+          },
+          "url": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic",
+          "affiliate_url": null,
+          "available": true
         }
-      ]
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
     },
     {
       "id": "playground-v25",
@@ -38806,34 +37480,6 @@
           },
           "url": "https://fal.ai/models/fal-ai/playground-v25",
           "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "hf-playground-v2-5-1024px-aesthetic",
-      "name": "playground v2.5 1024px aesthetic",
-      "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 193,721 downloads · 757 likes. License: other.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "ComfyUI / diffusers",
-      "updated_at": "2026-03-12",
-      "source": "huggingface",
-      "providers": [
-        {
-          "provider_id": "huggingface",
-          "pricing": {
-            "notes": "Via HF Inference API — check hf.co/pricing"
-          },
-          "url": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic",
-          "affiliate_url": null,
           "available": true
         }
       ]
@@ -40814,28 +39460,6 @@
           },
           "url": "https://fal.ai/models/fal-ai/qwen-image-max/edit",
           "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "qwen-max-2025-01-25",
-      "name": "Qwen Max 2025-01-25",
-      "category": "llm",
-      "description": "Alibaba's Qwen Max: a powerful, multilingual MoE model for diverse AI tasks",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 32000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/qwen-max-2025-01-25-api",
-          "affiliate_url": null,
           "available": true
         }
       ]
@@ -44569,23 +43193,7 @@
           "url": "https://openrouter.ai/qwen/qwen3.5-397b-a17b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "fireworks-qwen3p5-397b-a17b",
-      "name": "Qwen3.5 397B A17B (Beta)",
-      "category": "llm",
-      "description": "The model is served on Fireworks AI in beta mode, constrained generation & tool calls are not yet fully supported.",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "context_k": 262,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
+        },
         {
           "provider_id": "fireworks",
           "pricing": {
@@ -45736,28 +44344,6 @@
       ]
     },
     {
-      "id": "recraft-v4-text-to-vector",
-      "name": "Recraft V4 (Vector)",
-      "category": "image_generation",
-      "description": "Recraft V4 was developed with designers to bring true visual taste to AI image generation. Built for brand systems and production-ready workflows, it goes beyond prompt accuracy — delivering stronger composition, refined lighting, realistic materials, and a cohesive aesthetic. The result is image...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/recraft/v4/text-to-vector",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "recraft-v4-pro",
       "name": "Recraft V4 Pro",
       "category": "image_generation",
@@ -45784,28 +44370,6 @@
           },
           "url": "https://replicate.com/recraft-ai/recraft-v4-pro",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "recraft-v4-pro-text-to-vector",
-      "name": "Recraft V4 Pro (Vector)",
-      "category": "image_generation",
-      "description": "Recraft V4 was developed with designers to bring true visual taste to AI image generation. Built for brand systems and production-ready workflows, it goes beyond prompt accuracy — delivering stronger composition, refined lighting, realistic materials, and a cohesive aesthetic. The result is image...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/recraft/v4/pro/text-to-vector",
-          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -48941,28 +47505,6 @@
       ]
     },
     {
-      "id": "speech-to-text",
-      "name": "Speech-to-Text",
-      "category": "audio_stt",
-      "description": "Leverage the rapid processing capabilities of AI models to enable accurate and efficient real-time speech-to-text transcription.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "updated_at": "2026-03-12",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/speech-to-text",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "arcee-ai-spotlight",
       "name": "Spotlight",
       "category": "llm",
@@ -49386,34 +47928,6 @@
       ]
     },
     {
-      "id": "hf-stable-diffusion-v1-5",
-      "name": "stable diffusion v1 5",
-      "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 1,487,250 downloads · 1,036 likes. License: creativeml-openrail-m.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "ComfyUI / diffusers",
-      "updated_at": "2026-03-12",
-      "source": "huggingface",
-      "providers": [
-        {
-          "provider_id": "huggingface",
-          "pricing": {
-            "notes": "Via HF Inference API — check hf.co/pricing"
-          },
-          "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "stable-diffusion-v15",
       "name": "Stable Diffusion v1.5",
       "category": "image_generation",
@@ -49432,8 +47946,20 @@
           "url": "https://fal.ai/models/fal-ai/stable-diffusion-v15",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "notes": "Via HF Inference API — check hf.co/pricing"
+          },
+          "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+          "affiliate_url": null,
+          "available": true
         }
-      ]
+      ],
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers"
     },
     {
       "id": "stable-diffusion-3",
@@ -51723,6 +50249,15 @@
           "url": "https://fal.ai/models/fal-ai/topaz/upscale/image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 1,457,778. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/topazlabs/image-upscale",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
         }
       ]
     },
@@ -51770,6 +50305,15 @@
           },
           "url": "https://fal.ai/models/fal-ai/flashvsr/upscale/video",
           "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 839,545. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/topazlabs/video-upscale",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -52705,32 +51249,6 @@
             "notes": "Run count: 6,394. Check replicate.com for pricing."
           },
           "url": "https://replicate.com/heygen/video-translate",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "replicate-video-upscale",
-      "name": "Video Upscale",
-      "category": "video_generation",
-      "description": "Video Upscaling from Topaz Labs",
-      "tags": [],
-      "capabilities": [
-        "text_to_video"
-      ],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
-      "updated_at": "2026-03-12",
-      "source": "replicate",
-      "providers": [
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 839,545. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/topazlabs/video-upscale",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
@@ -53765,32 +52283,6 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "ComfyUI / diffusers"
-    },
-    {
-      "id": "replicate-wan-2-2-5b-fast",
-      "name": "Wan 2.2 5B Fast",
-      "category": "video_generation",
-      "description": "The fastest Wan 2.2 text-to-image and image-to-video model",
-      "tags": [],
-      "capabilities": [
-        "text_to_video"
-      ],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
-      "updated_at": "2026-03-12",
-      "source": "replicate",
-      "providers": [
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 479,381. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/wan-video/wan-2.2-5b-fast",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
     },
     {
       "id": "replicate-wan-2-2-animate-animation",
@@ -55551,20 +54043,7 @@
           "url": "",
           "affiliate_url": null,
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "01-ai-yi-34b",
-      "name": "Yi 34B (base)",
-      "category": "llm",
-      "description": "The Yi series models are large language models trained from scratch by developers at [01.AI](https://01.ai/). This is the base 34B parameter model.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 4,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
+        },
         {
           "provider_id": "openrouter",
           "pricing": {},
@@ -55670,20 +54149,7 @@
           "url": "",
           "affiliate_url": null,
           "available": true
-        }
-      ]
-    },
-    {
-      "id": "01-ai-yi-6b",
-      "name": "Yi 6B (base)",
-      "category": "llm",
-      "description": "The Yi series models are large language models trained from scratch by developers at [01.AI](https://01.ai/). This is the base 6B parameter model.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 4,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
+        },
         {
           "provider_id": "openrouter",
           "pricing": {},

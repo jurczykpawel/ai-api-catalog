@@ -761,9 +761,14 @@ def parse_litellm(litellm_data: dict) -> list:
         if data.get("supports_function_calling"): caps.append("function_calling")
 
         model_id = slugify(model_key)
+        # Strip 8-digit date suffix for canonical IDs (dedup with Bedrock/OpenRouter)
+        # e.g. claude-3-5-haiku-20241022 → claude-3-5-haiku
+        model_id = re.sub(r'-\d{8}$', '', model_id)
+
         # Dla agregatrów: nazwa = ostatni segment (np. deepseek-r1)
         # Dla bezpośrednich: nazwa = cały klucz lub ostatni segment po /
         raw_name = model_key.split("/")[-1] if "/" in model_key else model_key
+        raw_name = re.sub(r'-\d{8}$', '', raw_name)  # Remove date from display name
         display_name = raw_name.replace("-", " ").replace("_", " ").title()
 
         models.append({
@@ -1134,6 +1139,17 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
         norm = m["name"].strip().lower()
         norm = re.sub(r'[-_]', ' ', norm)
         norm = re.sub(r'\b(\d+)\.0\b', r'\1', norm)
+        # Normalize "3.5" → "3 5" so "Claude 3.5 Haiku" == "Claude 3 5 Haiku"
+        norm = re.sub(r'(\d)\.(\d)', r'\1 \2', norm)
+        # Strip dates: "2024-10-22", "20241022", "2024 10 22" patterns
+        norm = re.sub(r'\b20\d{2}[-\s]?\d{2}[-\s]?\d{2}\b', '', norm)
+        norm = re.sub(r'\b20\d{6}\b', '', norm)
+        # Strip parenthetical content: "(2024-10-22)", "(preview)", etc.
+        norm = re.sub(r'\([^)]*\)', '', norm)
+        # Sort tokens for word-order invariance on short model names
+        # "claude haiku 4 5" == "claude 4 5 haiku" after sort
+        tokens = norm.split()
+        norm = ' '.join(sorted(tokens))
         norm = re.sub(r'\s+', ' ', norm).strip()
         if norm not in by_norm_name:
             by_norm_name[norm] = m
