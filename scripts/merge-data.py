@@ -41,45 +41,17 @@ PROVIDER_MAP = {
 }
 
 # ── Modele z LiteLLM które zachowujemy ──────────────────────────
-KEEP_MODELS = {
-    # OpenAI — GPT-5.x
-    "gpt-5", "gpt-5-mini", "gpt-5-nano", "gpt-5-pro",
-    "gpt-5-chat", "gpt-5-chat-latest", "gpt-5-codex",
-    "gpt-5.1", "gpt-5.1-chat-latest", "gpt-5.1-codex", "gpt-5.1-codex-mini", "gpt-5.1-codex-max",
-    "gpt-5.2", "gpt-5.2-chat-latest", "gpt-5.2-codex", "gpt-5.2-pro",
-    "gpt-5.3-chat-latest", "gpt-5.3-codex",
-    "gpt-5.4", "gpt-5.4-pro",
-    # OpenAI — GPT-4.x
-    "gpt-4o", "gpt-4o-mini", "chatgpt-4o-latest",
-    "gpt-4.1", "gpt-4.1-mini", "gpt-4.1-nano",
-    "gpt-4.5-preview",
-    # OpenAI — Reasoning
-    "o1", "o1-mini", "o3", "o3-mini", "o3-pro",
-    "o4-mini", "o4-mini-deep-research",
-    # Anthropic
-    "claude-opus-4-6", "claude-opus-4-5", "claude-opus-4-1",
-    "claude-sonnet-4-6", "claude-sonnet-4-5",
-    "claude-haiku-4-5",
-    "claude-3-5-sonnet-20241022", "claude-3-5-haiku-20241022",
-    "claude-3-haiku-20240307",
-    # Google
-    "gemini/gemini-2.5-pro", "gemini/gemini-2.0-flash",
-    "gemini/gemini-2.0-flash-lite", "gemini/gemini-1.5-pro", "gemini/gemini-1.5-flash",
-    # Mistral
-    "mistral/mistral-large-latest", "mistral/mistral-large-3",
-    "mistral/mistral-small-latest", "mistral/codestral-2508",
-    "mistral/mistral-medium-latest",
-    # Groq
-    "groq/llama-3.3-70b-versatile", "groq/llama-3.1-70b-versatile",
-    # DeepSeek
-    "deepseek-chat", "deepseek-reasoner", "deepseek/deepseek-chat",
-    # Cohere
-    "command-r-plus", "command-r-plus-08-2024", "command-r",
-    # xAI
-    "xai/grok-4", "xai/grok-4-1-fast", "xai/grok-3", "xai/grok-3-mini",
-    # Perplexity
-    "perplexity/sonar-pro", "perplexity/sonar", "perplexity/sonar-reasoning-pro",
-}
+# Zamiast białej listy (KEEP_MODELS) używamy czarnej listy wzorców do pominięcia.
+# Dzięki temu nowe modele pojawiają się automatycznie gdy LiteLLM je doda.
+LITELLM_SKIP_PATTERNS = [
+    # Fine-tuning variants — nie są standardowymi modelami API
+    r"^ft:",
+    # Stare, wycofane snapshot-daty (pre-2024) — nieaktualne, zaśmiecają katalog
+    r"-(0301|0314|0613|1106|0125|032|0720)$",
+    r"-(0301|0314|0613|1106|0125|032|0720)-",
+    # Modele bez ceny — nie ma czego porównywać
+    # (obsługiwane w logice parse_litellm)
+]
 
 # ── Mapowanie mode → category ────────────────────────────────────
 MODE_TO_CATEGORY = {
@@ -744,11 +716,15 @@ def parse_litellm(litellm_data: dict) -> list:
         if provider_id in AGGREGATOR_PROVIDERS:
             if "/models/" not in model_key:
                 continue
-            # Pomiń klucze z trailing slash (pusty model_id)
             if model_key.endswith("/"):
                 continue
-        elif KEEP_MODELS and model_key not in KEEP_MODELS:
-            continue
+        else:
+            # Pomiń modele bez ceny
+            if not data.get("input_cost_per_token") and not data.get("output_cost_per_token"):
+                continue
+            # Pomiń wzorce z czarnej listy (stare snapshoty, ft:, itp.)
+            if any(re.search(pat, model_key) for pat in LITELLM_SKIP_PATTERNS):
+                continue
 
         mode = data.get("mode", "chat")
         category = MODE_TO_CATEGORY.get(mode, "llm")
@@ -774,14 +750,17 @@ def parse_litellm(litellm_data: dict) -> list:
         if data.get("supports_function_calling"): caps.append("function_calling")
 
         model_id = slugify(model_key)
-        # Strip 8-digit date suffix for canonical IDs (dedup with Bedrock/OpenRouter)
+        # Strip date suffixes for canonical IDs (dedup with Bedrock/OpenRouter)
         # e.g. claude-3-5-haiku-20241022 → claude-3-5-haiku
-        model_id = re.sub(r'-\d{8}$', '', model_id)
+        #      o1-2024-12-17 → o1
+        model_id = re.sub(r'-\d{4}-\d{2}-\d{2}$', '', model_id)  # YYYY-MM-DD
+        model_id = re.sub(r'-\d{8}$', '', model_id)               # YYYYMMDD
 
         # Dla agregatrów: nazwa = ostatni segment (np. deepseek-r1)
         # Dla bezpośrednich: nazwa = cały klucz lub ostatni segment po /
         raw_name = model_key.split("/")[-1] if "/" in model_key else model_key
-        raw_name = re.sub(r'-\d{8}$', '', raw_name)  # Remove date from display name
+        raw_name = re.sub(r'-\d{4}-\d{2}-\d{2}$', '', raw_name)  # Remove date from display name
+        raw_name = re.sub(r'-\d{8}$', '', raw_name)
         display_name = raw_name.replace("-", " ").replace("_", " ").title()
 
         models.append({
@@ -1205,9 +1184,12 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
         name = m.get("name", "").strip()
         if not name:
             continue  # Pomiń modele bez nazwy
+        # Slug-like lowercase names (e.g. "o3", "o3-pro") → title-case them
+        if name == name.lower() and not any(c in name for c in '/('):
+            name = name.replace('-', ' ').replace('_', ' ').title()
         m["name"] = name
-        # Nazwy za krótkie (1-2 znaki) — dodaj prefix z ID
-        if len(name) <= 2:
+        # Nazwy za krótkie (1 znak) lub tylko cyfry — dodaj prefix z ID
+        if len(name) <= 1 or (len(name) <= 3 and name.isdigit()):
             prefix = m["id"].split("-")[0].title()
             m["name"] = f"{prefix} {name}"
         cleaned.append(m)
