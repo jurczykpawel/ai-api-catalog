@@ -42,11 +42,24 @@ PROVIDER_MAP = {
 
 # ── Modele z LiteLLM które zachowujemy ──────────────────────────
 KEEP_MODELS = {
-    # OpenAI
-    "gpt-4o", "gpt-4o-mini", "o1", "o1-mini", "o3", "o3-mini", "o4-mini", "o3-pro",
-    "chatgpt-4o-latest",
+    # OpenAI — GPT-5.x
+    "gpt-5", "gpt-5-mini", "gpt-5-nano", "gpt-5-pro",
+    "gpt-5-chat", "gpt-5-chat-latest", "gpt-5-codex",
+    "gpt-5.1", "gpt-5.1-chat-latest", "gpt-5.1-codex", "gpt-5.1-codex-mini", "gpt-5.1-codex-max",
+    "gpt-5.2", "gpt-5.2-chat-latest", "gpt-5.2-codex", "gpt-5.2-pro",
+    "gpt-5.3-chat-latest", "gpt-5.3-codex",
+    "gpt-5.4", "gpt-5.4-pro",
+    # OpenAI — GPT-4.x
+    "gpt-4o", "gpt-4o-mini", "chatgpt-4o-latest",
+    "gpt-4.1", "gpt-4.1-mini", "gpt-4.1-nano",
+    "gpt-4.5-preview",
+    # OpenAI — Reasoning
+    "o1", "o1-mini", "o3", "o3-mini", "o3-pro",
+    "o4-mini", "o4-mini-deep-research",
     # Anthropic
-    "claude-opus-4-6", "claude-opus-4-5", "claude-sonnet-4-5",
+    "claude-opus-4-6", "claude-opus-4-5", "claude-opus-4-1",
+    "claude-sonnet-4-6", "claude-sonnet-4-5",
+    "claude-haiku-4-5",
     "claude-3-5-sonnet-20241022", "claude-3-5-haiku-20241022",
     "claude-3-haiku-20240307",
     # Google

@@ -4010,6 +4010,65 @@
       ]
     },
     {
+      "id": "claude-opus-4-1",
+      "name": "Claude Opus 4 1",
+      "category": "llm",
+      "description": "Anthropic Claude Opus 4 1 — chat model.",
+      "description_pl": "Model Anthropic — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 200,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "anthropic",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0,
+            "cache_write_per_1m": 18.75,
+            "cache_read_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0
+          },
+          "url": "https://openrouter.ai/anthropic/claude-opus-4.1",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/claude-opus-4-1-20250805",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "claude-opus-4-5",
       "name": "Claude Opus 4 5",
       "category": "llm",
@@ -4063,54 +4122,6 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/claude-opus-4-5-20251101",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "anthropic-claude-opus-4-1",
-      "name": "Claude Opus 4.1",
-      "category": "llm",
-      "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains in multi-file code refactoring, debugging precision, and detail-oriented reasoning. The model...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 200,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 15.0,
-            "output_per_1m": 75.0
-          },
-          "url": "https://openrouter.ai/anthropic/claude-opus-4.1",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/claude-opus-4-1-20250805",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 15.0,
-            "output_per_1m": 75.0,
-            "cache_write_per_1m": 18.75,
-            "cache_read_per_1m": 1.5
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
         }
@@ -16317,6 +16328,33 @@
       ]
     },
     {
+      "id": "gpt-4-5-preview",
+      "name": "Gpt 4.5 Preview",
+      "category": "llm",
+      "description": "Openai Gpt 4.5 Preview — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 75.0,
+            "output_per_1m": 150.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-gpt-4o-mini-transcribe",
       "name": "Gpt 4O Mini Transcribe",
       "category": "audio_stt",
@@ -16365,6 +16403,332 @@
       ]
     },
     {
+      "id": "gpt-5",
+      "name": "Gpt 5",
+      "category": "llm",
+      "description": "Openai Gpt 5 — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-2025-08-07",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 1,327,158. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-chat",
+      "name": "Gpt 5 Chat",
+      "category": "llm",
+      "description": "Openai Gpt 5 Chat — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5-chat",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-chat-latest",
+      "name": "Gpt 5 Chat Latest",
+      "category": "llm",
+      "description": "Openai Gpt 5 Chat Latest — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-chat-latest",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-codex",
+      "name": "Gpt 5 Codex",
+      "category": "llm",
+      "description": "Openai Gpt 5 Codex — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5-codex",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-mini",
+      "name": "Gpt 5 Mini",
+      "category": "llm",
+      "description": "Openai Gpt 5 Mini — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.25,
+            "output_per_1m": 2.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.25,
+            "output_per_1m": 2.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5-mini",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-mini-2025-08-07",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 1,367,929. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5-mini",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-nano",
+      "name": "Gpt 5 Nano",
+      "category": "llm",
+      "description": "Openai Gpt 5 Nano — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.05,
+            "output_per_1m": 0.4
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.05,
+            "output_per_1m": 0.4
+          },
+          "url": "https://openrouter.ai/openai/gpt-5-nano",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-nano-2025-08-07",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 6,787,237. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5-nano",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-pro",
+      "name": "Gpt 5 Pro",
+      "category": "llm",
+      "description": "Openai Gpt 5 Pro — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 120.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 120.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5-pro",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 2,319. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5-pro",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-gpt-5-structured",
       "name": "Gpt 5 Structured",
       "category": "image_generation",
@@ -16384,6 +16748,532 @@
           },
           "url": "https://replicate.com/openai/gpt-5-structured",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1",
+      "name": "Gpt 5.1",
+      "category": "llm",
+      "description": "Openai Gpt 5.1 — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-1",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.1",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 225,581. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5.1",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-chat-latest",
+      "name": "Gpt 5.1 Chat Latest",
+      "category": "llm",
+      "description": "Openai Gpt 5.1 Chat Latest — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-1-chat-latest",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-codex",
+      "name": "Gpt 5.1 Codex",
+      "category": "llm",
+      "description": "Openai Gpt 5.1 Codex — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.1-codex",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-codex-max",
+      "name": "Gpt 5.1 Codex Max",
+      "category": "llm",
+      "description": "Openai Gpt 5.1 Codex Max — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.1-codex-max",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-1-codex-mini",
+      "name": "Gpt 5.1 Codex Mini",
+      "category": "llm",
+      "description": "Openai Gpt 5.1 Codex Mini — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 0.25,
+            "output_per_1m": 2.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.25,
+            "output_per_1m": 2.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.1-codex-mini",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2",
+      "name": "Gpt 5.2",
+      "category": "llm",
+      "description": "Openai Gpt 5.2 — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-2",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.2",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 399,934. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5.2",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-chat-latest",
+      "name": "Gpt 5.2 Chat Latest",
+      "category": "llm",
+      "description": "Openai Gpt 5.2 Chat Latest — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "aimlapi",
+          "pricing": {
+            "notes": "Check aimlapi.com for current pricing"
+          },
+          "url": "https://aimlapi.com/models/openai-gpt-5-2-chat-latest",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-codex",
+      "name": "Gpt 5.2 Codex",
+      "category": "llm",
+      "description": "Openai Gpt 5.2 Codex — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.2-codex",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-2-pro",
+      "name": "Gpt 5.2 Pro",
+      "category": "llm",
+      "description": "Openai Gpt 5.2 Pro — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 21.0,
+            "output_per_1m": 168.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 21.0,
+            "output_per_1m": 168.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.2-pro",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-chat-latest",
+      "name": "Gpt 5.3 Chat Latest",
+      "category": "llm",
+      "description": "Openai Gpt 5.3 Chat Latest — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 128,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-codex",
+      "name": "Gpt 5.3 Codex",
+      "category": "llm",
+      "description": "Openai Gpt 5.3 Codex — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 272,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.3-codex",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-4",
+      "name": "Gpt 5.4",
+      "category": "llm",
+      "description": "Openai Gpt 5.4 — chat model.",
+      "description_pl": "Model Openai — chat.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 1050,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 15.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 15.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.4",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "replicate",
+          "pricing": {
+            "notes": "Run count: 536. Check replicate.com for pricing."
+          },
+          "url": "https://replicate.com/openai/gpt-5.4",
+          "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-4-pro",
+      "name": "Gpt 5.4 Pro",
+      "category": "llm",
+      "description": "Openai Gpt 5.4 Pro — responses model.",
+      "description_pl": "Model Openai — responses.",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 1050,
+      "updated_at": "2026-03-12",
+      "source": "litellm",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 30.0,
+            "output_per_1m": 180.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 30.0,
+            "output_per_1m": 180.0
+          },
+          "url": "https://openrouter.ai/openai/gpt-5.4-pro",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
       ]
@@ -17250,112 +18140,6 @@
       ]
     },
     {
-      "id": "openai-gpt-5",
-      "name": "GPT-5",
-      "category": "llm",
-      "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routing features and advan...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-2025-08-07",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 1,327,158. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-chat",
-      "name": "GPT-5 Chat",
-      "category": "llm",
-      "description": "GPT-5 Chat is designed for advanced, natural, multimodal, and context-aware conversations for enterprise applications.",
-      "tags": [],
-      "capabilities": [
-        "vision"
-      ],
-      "context_k": 128,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5-chat",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-chat-latest",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-codex",
-      "name": "GPT-5 Codex",
-      "category": "llm",
-      "description": "GPT-5-Codex is a specialized version of GPT-5 optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution of complex engineering tasks. The model supports building projects from scratch, feature development, deb...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5-codex",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "openai-gpt-5-image",
       "name": "GPT-5 Image",
       "category": "image_generation",
@@ -17408,177 +18192,6 @@
       ]
     },
     {
-      "id": "openai-gpt-5-mini",
-      "name": "GPT-5 Mini",
-      "category": "llm",
-      "description": "GPT-5 Mini is a compact version of GPT-5, designed to handle lighter-weight reasoning tasks. It provides the same instruction-following and safety-tuning benefits as GPT-5, but with reduced latency and cost. GPT-5 Mini is the successor to OpenAI's o4-mini model.",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.25,
-            "output_per_1m": 2.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5-mini",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-mini-2025-08-07",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 1,367,929. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5-mini",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-nano",
-      "name": "GPT-5 Nano",
-      "category": "llm",
-      "description": "GPT-5-Nano is the smallest and fastest variant in the GPT-5 system, optimized for developer tools, rapid interactions, and ultra-low latency environments. While limited in reasoning depth compared to its larger counterparts, it retains key instruction-following and safety features. It is the succ...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.05,
-            "output_per_1m": 0.4
-          },
-          "url": "https://openrouter.ai/openai/gpt-5-nano",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-nano-2025-08-07",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 6,787,237. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5-nano",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-pro",
-      "name": "GPT-5 Pro",
-      "category": "llm",
-      "description": "GPT-5 Pro is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routing features and a...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 15.0,
-            "output_per_1m": 120.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5-pro",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 2,319. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5-pro",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-1",
-      "name": "GPT-5.1",
-      "category": "llm",
-      "description": "GPT-5.1 is the latest frontier-grade model in the GPT-5 series, offering stronger general-purpose reasoning, improved instruction adherence, and a more natural conversational style compared to GPT-5. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple quer...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.1",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-1",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 225,581. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5.1",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "openai-gpt-5-1-chat",
       "name": "GPT-5.1 Chat",
       "category": "llm",
@@ -17600,154 +18213,6 @@
           },
           "url": "https://openrouter.ai/openai/gpt-5.1-chat",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "gpt-5-1-chat-latest",
-      "name": "GPT-5.1 Chat Latest",
-      "category": "llm",
-      "description": "",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 400000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-1-chat-latest",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-1-codex",
-      "name": "GPT-5.1-Codex",
-      "category": "llm",
-      "description": "GPT-5.1-Codex is a specialized version of GPT-5.1 optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution of complex engineering tasks. The model supports building projects from scratch, feature development,...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.1-codex",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-1-codex-max",
-      "name": "GPT-5.1-Codex-Max",
-      "category": "llm",
-      "description": "GPT-5.1-Codex-Max is OpenAI’s latest agentic coding model, designed for long-running, high-context software development tasks. It is based on an updated version of the 5.1 reasoning stack and trained on agentic workflows spanning software engineering, mathematics, and research. \nGPT-5.1-Codex-Max...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.25,
-            "output_per_1m": 10.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.1-codex-max",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-1-codex-mini",
-      "name": "GPT-5.1-Codex-Mini",
-      "category": "llm",
-      "description": "GPT-5.1-Codex-Mini is a smaller and faster version of GPT-5.1-Codex",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.25,
-            "output_per_1m": 2.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.1-codex-mini",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-2",
-      "name": "GPT-5.2",
-      "category": "llm",
-      "description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context perfomance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple queries while spending more depth on complex tasks.\n\nBuilt for br...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.75,
-            "output_per_1m": 14.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.2",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-2",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 399,934. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5.2",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
         }
       ]
@@ -17779,82 +18244,6 @@
       ]
     },
     {
-      "id": "gpt-5-2-chat-latest",
-      "name": "GPT-5.2 Chat Latest",
-      "category": "llm",
-      "description": "",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 128000,
-      "updated_at": "2026-03-12",
-      "source": "aimlapi",
-      "providers": [
-        {
-          "provider_id": "aimlapi",
-          "pricing": {
-            "notes": "Check aimlapi.com for current pricing"
-          },
-          "url": "https://aimlapi.com/models/openai-gpt-5-2-chat-latest",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-2-pro",
-      "name": "GPT-5.2 Pro",
-      "category": "llm",
-      "description": "GPT-5.2 Pro is OpenAI’s most advanced model, offering major improvements in agentic coding and long context performance over GPT-5 Pro. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routin...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 21.0,
-            "output_per_1m": 168.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.2-pro",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-2-codex",
-      "name": "GPT-5.2-Codex",
-      "category": "llm",
-      "description": "GPT-5.2-Codex is an upgraded version of GPT-5.1-Codex optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution of complex engineering tasks. The model supports building projects from scratch, feature developm...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.75,
-            "output_per_1m": 14.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.2-codex",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "openai-gpt-5-3-chat",
       "name": "GPT-5.3 Chat",
       "category": "llm",
@@ -17875,96 +18264,6 @@
             "output_per_1m": 14.0
           },
           "url": "https://openrouter.ai/openai/gpt-5.3-chat",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-3-codex",
-      "name": "GPT-5.3-Codex",
-      "category": "llm",
-      "description": "GPT-5.3-Codex is OpenAI’s most advanced agentic coding model, combining the frontier software engineering performance of GPT-5.2-Codex with the broader reasoning and professional knowledge capabilities of GPT-5.2. It achieves state-of-the-art results on SWE-Bench Pro and strong performance on Ter...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 400,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 1.75,
-            "output_per_1m": 14.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.3-codex",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-4",
-      "name": "GPT-5.4",
-      "category": "llm",
-      "description": "GPT-5.4 is OpenAI’s latest frontier model, unifying the Codex and GPT lines into a single system. It features a 1M+ token context window (922K input, 128K output) with support for text and image inputs, enabling high-context reasoning, coding, and multimodal analysis within the same workflow.\n\nTh...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 1050,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 2.5,
-            "output_per_1m": 15.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.4",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "replicate",
-          "pricing": {
-            "notes": "Run count: 536. Check replicate.com for pricing."
-          },
-          "url": "https://replicate.com/openai/gpt-5.4",
-          "affiliate_url": "https://replicate.com?utm_source=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "openai-gpt-5-4-pro",
-      "name": "GPT-5.4 Pro",
-      "category": "llm",
-      "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922K input, 128K output) with support for text and image inputs. Optimized for step-by-step reasonin...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning",
-        "vision"
-      ],
-      "context_k": 1050,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 30.0,
-            "output_per_1m": 180.0
-          },
-          "url": "https://openrouter.ai/openai/gpt-5.4-pro",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         }
@@ -34896,20 +35195,30 @@
       ]
     },
     {
-      "id": "openai-o4-mini-deep-research",
-      "name": "o4 Mini Deep Research",
+      "id": "o4-mini-deep-research",
+      "name": "O4 Mini Deep Research",
       "category": "llm",
-      "description": "o4-mini-deep-research is OpenAI's faster, more affordable deep research model—ideal for tackling complex, multi-step research tasks.\n\nNote: This model always uses the 'web_search' tool which adds additional cost.",
+      "description": "Openai O4 Mini Deep Research — responses model.",
+      "description_pl": "Model Openai — responses.",
       "tags": [],
       "capabilities": [
         "function_calling",
-        "reasoning",
         "vision"
       ],
       "context_k": 200,
       "updated_at": "2026-03-12",
-      "source": "openrouter",
+      "source": "litellm",
       "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 8.0
+          },
+          "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
         {
           "provider_id": "openrouter",
           "pricing": {
