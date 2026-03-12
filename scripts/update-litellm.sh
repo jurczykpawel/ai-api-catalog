@@ -16,6 +16,27 @@ ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 DATA_DIR="$ROOT_DIR/data"
 LITELLM_URL="https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
 
+# fetch_with_retry <name> <command...>
+# Runs command up to 3 times with 30s backoff. Falls back to cached file on all failures.
+fetch_with_retry() {
+  local name="$1"
+  shift
+  local attempt=1
+  while [ $attempt -le 3 ]; do
+    if "$@"; then
+      return 0
+    fi
+    echo "  ⚠ $name: attempt $attempt/3 failed"
+    if [ $attempt -lt 3 ]; then
+      echo "  ↻ Retry za 30s..."
+      sleep 30
+    fi
+    attempt=$((attempt + 1))
+  done
+  echo "  ✗ $name: wszystkie próby nieudane — używam istniejącego pliku cache"
+  return 0
+}
+
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "  AI API Catalog — tygodniowy update"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -27,19 +48,19 @@ echo "✓ litellm-raw.json"
 
 echo ""
 echo "[2/9] Pobieranie OpenRouter..."
-python3 "$SCRIPT_DIR/fetch-openrouter.py" "$DATA_DIR/openrouter-raw.json" || echo "  ⚠ OpenRouter fetch failed — używam istniejącego openrouter-raw.json"
+fetch_with_retry "OpenRouter" python3 "$SCRIPT_DIR/fetch-openrouter.py" "$DATA_DIR/openrouter-raw.json"
 
 echo ""
 echo "[3/9] Pobieranie fal.ai..."
-python3 "$SCRIPT_DIR/fetch-fal.py" "$DATA_DIR/fal-raw.json" || echo "  ⚠ fal.ai fetch failed — używam istniejącego fal-raw.json"
+fetch_with_retry "fal.ai" python3 "$SCRIPT_DIR/fetch-fal.py" "$DATA_DIR/fal-raw.json"
 
 echo ""
 echo "[4/9] Pobieranie HuggingFace..."
-python3 "$SCRIPT_DIR/fetch-huggingface.py" "$DATA_DIR/huggingface-raw.json" || echo "  ⚠ HuggingFace fetch failed — używam istniejącego huggingface-raw.json"
+fetch_with_retry "HuggingFace" python3 "$SCRIPT_DIR/fetch-huggingface.py" "$DATA_DIR/huggingface-raw.json"
 
 echo ""
 echo "[5/9] Pobieranie AIMLAPI..."
-python3 "$SCRIPT_DIR/fetch-aimlapi.py" "$DATA_DIR/aimlapi-raw.json" || echo "  ⚠ AIMLAPI fetch failed — używam istniejącego aimlapi-raw.json"
+fetch_with_retry "AIMLAPI" python3 "$SCRIPT_DIR/fetch-aimlapi.py" "$DATA_DIR/aimlapi-raw.json"
 
 echo ""
 echo "[6/9] Pobieranie piapi.ai (curated)..."

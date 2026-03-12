@@ -2,7 +2,7 @@ name: Update catalog data
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # codziennie 7:00 UTC (9:00 PL)
+    - cron: '0 3 * * *'  # codziennie 3:00 UTC (5:00 PL) — mniejszy ruch na fal.ai
   workflow_dispatch:      # ręczny trigger z UI GitHub
 
 permissions:
