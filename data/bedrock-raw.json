@@ -1,26 +1,64 @@
 {
   "models": [
     {
-      "id": "amazon-nova-pro",
-      "name": "Amazon Nova Pro",
-      "category": "llm",
-      "description": "Amazon's most capable Nova model. Multimodal (text, image, video input). 300k context.",
+      "id": "amazon-nova-canvas",
+      "name": "Amazon Nova Canvas",
+      "category": "image_generation",
+      "description": "Amazon Amazon Nova Canvas on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "multimodal"
+        "nova"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.04,
+        "notes": "$0.04/image (512px), $0.08/image (1024px)"
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "palmyra-x4",
+      "name": "Palmyra X4",
+      "category": "llm",
+      "description": "Writer Palmyra X4 on Amazon Bedrock.",
+      "tags": [
+        "writer"
       ],
       "capabilities": [
-        "vision",
         "function_calling"
       ],
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "input_per_1m": 0.8,
-        "output_per_1m": 3.2
+        "input_per_1m": 2.5,
+        "output_per_1m": 10.0
       },
-      "url": "https://aws.amazon.com/bedrock/nova/",
+      "url": "https://aws.amazon.com/bedrock/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "palmyra-x5",
+      "name": "Palmyra X5",
+      "category": "llm",
+      "description": "Writer Palmyra X5 on Amazon Bedrock.",
+      "tags": [
+        "writer"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 6.0
+      },
+      "url": "https://aws.amazon.com/bedrock/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     },
@@ -28,16 +66,15 @@
       "id": "amazon-nova-lite",
       "name": "Amazon Nova Lite",
       "category": "llm",
-      "description": "Fast and cost-effective multimodal model from Amazon. Text, image, video input.",
+      "description": "Amazon Amazon Nova Lite on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "multimodal",
-        "fast"
+        "nova"
       ],
       "capabilities": [
         "vision",
-        "function_calling"
+        "function_calling",
+        "prompt_caching"
       ],
       "open_source": false,
       "local_available": false,
@@ -50,18 +87,90 @@
       "source": "bedrock"
     },
     {
-      "id": "amazon-nova-micro",
-      "name": "Amazon Nova Micro",
+      "id": "amazon-nova-2-lite",
+      "name": "Amazon Nova 2 Lite",
       "category": "llm",
-      "description": "Ultra-low cost text-only model from Amazon. Fastest in the Nova family.",
+      "description": "Amazon Amazon Nova 2 Lite on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "nova"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "cache_read_per_1m": 0.075
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-nova-2-pro-preview",
+      "name": "Amazon Nova 2 Pro Preview",
+      "category": "llm",
+      "description": "Amazon Amazon Nova 2 Pro Preview on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "nova"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 2.1875,
+        "output_per_1m": 17.5,
+        "cache_read_per_1m": 0.5469
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-nova-2-multimodal-embeddings",
+      "name": "Amazon Nova 2 Multimodal Embeddings",
+      "category": "embedding",
+      "description": "Amazon Amazon Nova 2 Multimodal Embeddings on Amazon Bedrock.",
       "tags": [
         "amazon",
         "nova",
-        "fast",
-        "cheap"
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.135,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-nova-micro",
+      "name": "Amazon Nova Micro",
+      "category": "llm",
+      "description": "Amazon Amazon Nova Micro on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "nova"
       ],
       "capabilities": [
-        "function_calling"
+        "function_calling",
+        "prompt_caching"
       ],
       "open_source": false,
       "local_available": false,
@@ -74,109 +183,13 @@
       "source": "bedrock"
     },
     {
-      "id": "amazon-nova-canvas",
-      "name": "Amazon Nova Canvas",
-      "category": "image_generation",
-      "description": "Amazon's image generation model. Text-to-image and image editing.",
+      "id": "amazon-nova-pro",
+      "name": "Amazon Nova Pro",
+      "category": "llm",
+      "description": "Amazon Amazon Nova Pro on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "image"
-      ],
-      "capabilities": [
-        "image_editing"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "per_image": 0.04,
-        "notes": "$0.04/image (512px). $0.08/image (1024px)."
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock"
-    },
-    {
-      "id": "amazon-nova-reel",
-      "name": "Amazon Nova Reel",
-      "category": "video_generation",
-      "description": "Amazon's video generation model via Bedrock. Text-to-video and image-to-video.",
-      "tags": [
-        "amazon",
-        "nova",
-        "video"
-      ],
-      "capabilities": [
-        "text_to_video",
-        "image_to_video"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "per_second": 0.96
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock"
-    },
-    {
-      "id": "claude-3-7-sonnet",
-      "name": "Claude 3.7 Sonnet",
-      "category": "llm",
-      "description": "Anthropic Claude 3.7 Sonnet on Amazon Bedrock. Extended thinking support.",
-      "tags": [
-        "anthropic",
-        "claude"
-      ],
-      "capabilities": [
-        "vision",
-        "reasoning",
-        "function_calling",
-        "prompt_caching"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 3.0,
-        "output_per_1m": 15.0
-      },
-      "url": "https://aws.amazon.com/bedrock/claude/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock"
-    },
-    {
-      "id": "claude-3-5-sonnet-v2",
-      "name": "Claude 3.5 Sonnet v2",
-      "category": "llm",
-      "description": "Anthropic Claude 3.5 Sonnet v2 on Amazon Bedrock.",
-      "tags": [
-        "anthropic",
-        "claude"
-      ],
-      "capabilities": [
-        "vision",
-        "function_calling",
-        "prompt_caching"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 3.0,
-        "output_per_1m": 15.0
-      },
-      "url": "https://aws.amazon.com/bedrock/claude/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock"
-    },
-    {
-      "id": "claude-3-5-haiku",
-      "name": "Claude 3.5 Haiku",
-      "category": "llm",
-      "description": "Anthropic Claude 3.5 Haiku on Amazon Bedrock. Fast and affordable.",
-      "tags": [
-        "anthropic",
-        "claude",
-        "fast"
+        "nova"
       ],
       "capabilities": [
         "vision",
@@ -187,7 +200,278 @@
       "local_available": false,
       "pricing": {
         "input_per_1m": 0.8,
-        "output_per_1m": 4.0
+        "output_per_1m": 3.2
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-rerank",
+      "name": "Amazon Rerank",
+      "category": "llm",
+      "description": "Amazon Amazon Rerank on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-titan-embed-image",
+      "name": "Amazon Titan Embed Image",
+      "category": "embedding",
+      "description": "Amazon Amazon Titan Embed Image on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-titan-embed-text",
+      "name": "Amazon Titan Embed Text",
+      "category": "embedding",
+      "description": "Amazon Amazon Titan Embed Text on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-titan-image-generator",
+      "name": "Amazon Titan Image Generator",
+      "category": "image_generation",
+      "description": "Amazon Amazon Titan Image Generator on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.008
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-titan-text-express",
+      "name": "Amazon Titan Text Express",
+      "category": "llm",
+      "description": "Amazon Amazon Titan Text Express on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.3,
+        "output_per_1m": 1.7
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-titan-text-lite",
+      "name": "Amazon Titan Text Lite",
+      "category": "llm",
+      "description": "Amazon Amazon Titan Text Lite on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 0.4
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "amazon-titan-text-premier",
+      "name": "Amazon Titan Text Premier",
+      "category": "llm",
+      "description": "Amazon Amazon Titan Text Premier on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-3-5-haiku",
+      "name": "Claude 3.5 Haiku",
+      "category": "llm",
+      "description": "Anthropic Claude 3.5 Haiku on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "prompt_caching"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 4.0,
+        "cache_write_per_1m": 1.0,
+        "cache_read_per_1m": 0.08
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "category": "llm",
+      "description": "Anthropic Claude Haiku 4.5 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 5.0,
+        "cache_write_per_1m": 1.25,
+        "cache_read_per_1m": 0.1
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-3-5-sonnet",
+      "name": "Claude 3.5 Sonnet",
+      "category": "llm",
+      "description": "Anthropic Claude 3.5 Sonnet on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cache_write_per_1m": 3.75,
+        "cache_read_per_1m": 0.3
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-3-7-sonnet",
+      "name": "Claude 3.7 Sonnet",
+      "category": "llm",
+      "description": "Anthropic Claude 3.7 Sonnet on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.6,
+        "output_per_1m": 18.0,
+        "cache_write_per_1m": 4.5,
+        "cache_read_per_1m": 0.36
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-3-haiku",
+      "name": "Claude 3 Haiku",
+      "category": "llm",
+      "description": "Anthropic Claude 3 Haiku on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 1.25,
+        "cache_write_per_1m": 0.3125,
+        "cache_read_per_1m": 0.025
       },
       "url": "https://aws.amazon.com/bedrock/claude/",
       "updated_at": "2026-03-12",
@@ -204,16 +488,683 @@
       ],
       "capabilities": [
         "vision",
-        "function_calling",
-        "prompt_caching"
+        "function_calling"
       ],
       "open_source": false,
       "local_available": false,
       "pricing": {
         "input_per_1m": 15.0,
-        "output_per_1m": 75.0
+        "output_per_1m": 75.0,
+        "cache_write_per_1m": 18.75,
+        "cache_read_per_1m": 1.5
       },
       "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-3-sonnet",
+      "name": "Claude 3 Sonnet",
+      "category": "llm",
+      "description": "Anthropic Claude 3 Sonnet on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cache_write_per_1m": 3.75,
+        "cache_read_per_1m": 0.3
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-instant",
+      "name": "Claude Instant",
+      "category": "llm",
+      "description": "Anthropic Claude Instant on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 2.4
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-opus-4-1",
+      "name": "Claude Opus 4.1",
+      "category": "llm",
+      "description": "Anthropic Claude Opus 4.1 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 15.0,
+        "output_per_1m": 75.0,
+        "cache_write_per_1m": 18.75,
+        "cache_read_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-opus-4",
+      "name": "Claude Opus 4",
+      "category": "llm",
+      "description": "Anthropic Claude Opus 4 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 15.0,
+        "output_per_1m": 75.0,
+        "cache_write_per_1m": 18.75,
+        "cache_read_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-opus-4-5",
+      "name": "Claude Opus 4.5",
+      "category": "llm",
+      "description": "Anthropic Claude Opus 4.5 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cache_write_per_1m": 6.25,
+        "cache_read_per_1m": 0.5
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "category": "llm",
+      "description": "Anthropic Claude Opus 4.6 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cache_write_per_1m": 6.25,
+        "cache_read_per_1m": 0.5
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "category": "llm",
+      "description": "Anthropic Claude Sonnet 4.6 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cache_write_per_1m": 3.75,
+        "cache_read_per_1m": 0.3
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-sonnet-4",
+      "name": "Claude Sonnet 4",
+      "category": "llm",
+      "description": "Anthropic Claude Sonnet 4 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cache_write_per_1m": 3.75,
+        "cache_read_per_1m": 0.3
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5",
+      "category": "llm",
+      "description": "Anthropic Claude Sonnet 4.5 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "vision",
+        "reasoning",
+        "function_calling",
+        "prompt_caching",
+        "computer_use"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cache_write_per_1m": 3.75,
+        "cache_read_per_1m": 0.3
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "category": "llm",
+      "description": "Anthropic Claude on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 8.0,
+        "output_per_1m": 24.0
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "command-light-text",
+      "name": "Command Light Text",
+      "category": "llm",
+      "description": "Cohere Command Light Text on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 0.6
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "command-r-plus",
+      "name": "Command R Plus",
+      "category": "llm",
+      "description": "Cohere Command R Plus on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "command-r",
+      "name": "Command R",
+      "category": "llm",
+      "description": "Cohere Command R on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "command-text",
+      "name": "Command Text",
+      "category": "llm",
+      "description": "Cohere Command Text on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 2.0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "embed-english",
+      "name": "Embed English",
+      "category": "embedding",
+      "description": "Cohere Embed English on Amazon Bedrock.",
+      "tags": [
+        "cohere",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "embed-multilingual",
+      "name": "Embed Multilingual",
+      "category": "embedding",
+      "description": "Cohere Embed Multilingual on Amazon Bedrock.",
+      "tags": [
+        "cohere",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "embed",
+      "name": "Embed",
+      "category": "embedding",
+      "description": "Cohere Embed on Amazon Bedrock.",
+      "tags": [
+        "cohere",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.12,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "rerank-v3-5",
+      "name": "Rerank V3 5",
+      "category": "llm",
+      "description": "Cohere Rerank V3 5 on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "Deepseek V3",
+      "category": "llm",
+      "description": "DeepSeek Deepseek V3 on Amazon Bedrock.",
+      "tags": [
+        "deepseek",
+        "open-source"
+      ],
+      "capabilities": [
+        "reasoning",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.58,
+        "output_per_1m": 1.68
+      },
+      "url": "https://aws.amazon.com/bedrock/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "deepseek-v3.2",
+      "name": "Deepseek V3.2",
+      "category": "llm",
+      "description": "DeepSeek Deepseek V3.2 on Amazon Bedrock.",
+      "tags": [
+        "deepseek",
+        "open-source"
+      ],
+      "capabilities": [
+        "reasoning",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.62,
+        "output_per_1m": 1.85
+      },
+      "url": "https://aws.amazon.com/bedrock/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-2-13b-chat",
+      "name": "Llama 2 13B Chat",
+      "category": "llm",
+      "description": "Meta Llama 2 13B Chat on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 1.0
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-2-70b-chat",
+      "name": "Llama 2 70B Chat",
+      "category": "llm",
+      "description": "Meta Llama 2 70B Chat on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.95,
+        "output_per_1m": 2.56
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-1-405b-instruct",
+      "name": "Llama 3.1 405B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.1 405B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 5.32,
+        "output_per_1m": 16.0
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-1-70b-instruct",
+      "name": "Llama 3.1 70B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.1 70B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.99,
+        "output_per_1m": 0.99
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-1-8b-instruct",
+      "name": "Llama 3.1 8B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.1 8B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.22,
+        "output_per_1m": 0.22
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-2-11b-instruct",
+      "name": "Llama 3.2 11B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.2 11B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.35,
+        "output_per_1m": 0.35
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-2-1b-instruct",
+      "name": "Llama 3.2 1B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.2 1B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.1
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-2-3b-instruct",
+      "name": "Llama 3.2 3B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.2 3B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.15
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-2-90b-instruct",
+      "name": "Llama 3.2 90B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.2 90B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "vision",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 2.0
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     },
@@ -221,7 +1172,7 @@
       "id": "llama-3-3-70b-instruct",
       "name": "Llama 3.3 70B Instruct",
       "category": "llm",
-      "description": "Meta Llama 3.3 70B on Amazon Bedrock.",
+      "description": "Meta Llama 3.3 70B Instruct on Amazon Bedrock.",
       "tags": [
         "meta",
         "llama",
@@ -241,10 +1192,52 @@
       "source": "bedrock"
     },
     {
-      "id": "llama-3-1-405b-instruct",
-      "name": "Llama 3.1 405B Instruct",
+      "id": "llama-3-70b-instruct",
+      "name": "Llama 3 70B Instruct",
       "category": "llm",
-      "description": "Meta Llama 3.1 405B on Amazon Bedrock. Largest open model.",
+      "description": "Meta Llama 3 70B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 2.65,
+        "output_per_1m": 3.5
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-3-8b-instruct",
+      "name": "Llama 3 8B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3 8B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 0.6
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "llama-4-maverick-17b-instruct",
+      "name": "Llama 4 Maverick 17B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 4 Maverick 17B Instruct on Amazon Bedrock.",
       "tags": [
         "meta",
         "llama",
@@ -256,42 +1249,187 @@
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "input_per_1m": 2.4,
-        "output_per_1m": 2.4
+        "input_per_1m": 0.24,
+        "output_per_1m": 0.97
       },
       "url": "https://aws.amazon.com/bedrock/llama/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     },
     {
-      "id": "llama-3-2-90b-vision",
-      "name": "Llama 3.2 90B Vision",
+      "id": "llama-4-scout-17b-instruct",
+      "name": "Llama 4 Scout 17B Instruct",
       "category": "llm",
-      "description": "Meta Llama 3.2 90B multimodal on Amazon Bedrock.",
+      "description": "Meta Llama 4 Scout 17B Instruct on Amazon Bedrock.",
       "tags": [
         "meta",
         "llama",
-        "multimodal",
         "open-source"
       ],
       "capabilities": [
-        "vision"
+        "function_calling"
       ],
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "input_per_1m": 2.0,
-        "output_per_1m": 2.0
+        "input_per_1m": 0.17,
+        "output_per_1m": 0.66
       },
       "url": "https://aws.amazon.com/bedrock/llama/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     },
     {
-      "id": "mistral-large-2",
-      "name": "Mistral Large 2",
+      "id": "devstral-2-123b",
+      "name": "Devstral 2 123B",
       "category": "llm",
-      "description": "Mistral Large 2 on Amazon Bedrock.",
+      "description": "Mistral Devstral 2 123B on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.0
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "magistral-small-2509",
+      "name": "Magistral Small 2509",
+      "category": "llm",
+      "description": "Mistral Magistral Small 2509 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "reasoning",
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "ministral-3-14b-instruct",
+      "name": "Ministral 3 14B Instruct",
+      "category": "llm",
+      "description": "Mistral Ministral 3 14B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 0.2
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "ministral-3-3b-instruct",
+      "name": "Ministral 3 3B Instruct",
+      "category": "llm",
+      "description": "Mistral Ministral 3 3B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.1
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "ministral-3-8b-instruct",
+      "name": "Ministral 3 8B Instruct",
+      "category": "llm",
+      "description": "Mistral Ministral 3 8B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.15
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "mistral-7b-instruct",
+      "name": "Mistral 7B Instruct",
+      "category": "llm",
+      "description": "Mistral Mistral 7B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.2
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "mistral-large-2402",
+      "name": "Mistral Large 2402",
+      "category": "llm",
+      "description": "Mistral Mistral Large 2402 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 8.0,
+        "output_per_1m": 24.0
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "category": "llm",
+      "description": "Mistral Mistral Large 2407 on Amazon Bedrock.",
       "tags": [
         "mistral"
       ],
@@ -309,45 +1447,405 @@
       "source": "bedrock"
     },
     {
-      "id": "deepseek-r1",
-      "name": "DeepSeek R1",
+      "id": "mistral-large-3-675b-instruct",
+      "name": "Mistral Large 3 675B Instruct",
       "category": "llm",
-      "description": "DeepSeek R1 reasoning model on Amazon Bedrock.",
+      "description": "Mistral Mistral Large 3 675B Instruct on Amazon Bedrock.",
       "tags": [
-        "deepseek",
-        "reasoning",
-        "open-source"
+        "mistral"
       ],
       "capabilities": [
-        "reasoning"
+        "function_calling"
       ],
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "input_per_1m": 1.35,
-        "output_per_1m": 5.4
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
       },
-      "url": "https://aws.amazon.com/bedrock/",
+      "url": "https://aws.amazon.com/bedrock/mistral/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     },
     {
-      "id": "amazon-titan-embed-text-v2",
-      "name": "Amazon Titan Embed Text v2",
-      "category": "embedding",
-      "description": "Amazon Titan text embeddings v2. 1024/512/256 dimensions.",
+      "id": "mistral-small-2402",
+      "name": "Mistral Small 2402",
+      "category": "llm",
+      "description": "Mistral Mistral Small 2402 on Amazon Bedrock.",
       "tags": [
-        "amazon",
-        "titan",
-        "embedding"
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 3.0
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "mixtral-8x7b-instruct",
+      "name": "Mixtral 8x7b Instruct",
+      "category": "llm",
+      "description": "Mistral Mixtral 8x7b Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
       ],
       "capabilities": [],
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "notes": "$0.02/1M tokens"
+        "input_per_1m": 0.45,
+        "output_per_1m": 0.7
       },
-      "url": "https://aws.amazon.com/bedrock/titan/",
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "voxtral-mini-3b-2507",
+      "name": "Voxtral Mini 3B 2507",
+      "category": "llm",
+      "description": "Mistral Voxtral Mini 3B 2507 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.04,
+        "output_per_1m": 0.04
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "voxtral-small-24b-2507",
+      "name": "Voxtral Small 24B 2507",
+      "category": "llm",
+      "description": "Mistral Voxtral Small 24B 2507 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.3
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "sd3-5-large",
+      "name": "SD3 5 Large",
+      "category": "image_generation",
+      "description": "Stability AI SD3 5 Large on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.08
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "sd3-large",
+      "name": "SD3 Large",
+      "category": "image_generation",
+      "description": "Stability AI SD3 Large on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.065
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-core",
+      "name": "Stable Image Core",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Core on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.04
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-conservative-upscale",
+      "name": "Stable Conservative Upscale",
+      "category": "image_generation",
+      "description": "Stability AI Stable Conservative Upscale on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-creative-upscale",
+      "name": "Stable Creative Upscale",
+      "category": "image_generation",
+      "description": "Stability AI Stable Creative Upscale on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-fast-upscale",
+      "name": "Stable Fast Upscale",
+      "category": "image_generation",
+      "description": "Stability AI Stable Fast Upscale on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-outpaint",
+      "name": "Stable Outpaint",
+      "category": "image_generation",
+      "description": "Stability AI Stable Outpaint on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-control-sketch",
+      "name": "Stable Image Control Sketch",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Control Sketch on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-control-structure",
+      "name": "Stable Image Control Structure",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Control Structure on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-erase-object",
+      "name": "Stable Image Erase Object",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Erase Object on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-inpaint",
+      "name": "Stable Image Inpaint",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Inpaint on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-remove-background",
+      "name": "Stable Image Remove Background",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Remove Background on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-search-recolor",
+      "name": "Stable Image Search Recolor",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Search Recolor on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-search-replace",
+      "name": "Stable Image Search Replace",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Search Replace on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-image-style-guide",
+      "name": "Stable Image Style Guide",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Style Guide on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock"
+    },
+    {
+      "id": "stable-style-transfer",
+      "name": "Stable Style Transfer",
+      "category": "image_generation",
+      "description": "Stability AI Stable Style Transfer on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     },
@@ -355,7 +1853,7 @@
       "id": "stable-image-ultra",
       "name": "Stable Image Ultra",
       "category": "image_generation",
-      "description": "Stability AI Stable Image Ultra on Amazon Bedrock. Highest quality.",
+      "description": "Stability AI Stable Image Ultra on Amazon Bedrock.",
       "tags": [
         "stability-ai",
         "image"
@@ -371,26 +1869,30 @@
       "source": "bedrock"
     },
     {
-      "id": "stable-diffusion-3-5-large",
-      "name": "Stable Diffusion 3.5 Large",
-      "category": "image_generation",
-      "description": "Stability AI SD 3.5 Large on Amazon Bedrock.",
+      "id": "amazon-nova-reel",
+      "name": "Amazon Nova Reel",
+      "category": "video_generation",
       "tags": [
-        "stability-ai",
-        "image"
+        "amazon",
+        "nova",
+        "video"
       ],
-      "capabilities": [],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video"
+      ],
+      "pricing": {
+        "per_second": 0.96
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "description": "Amazon's video generation model via Bedrock. Text-to-video and image-to-video.",
       "open_source": false,
       "local_available": false,
-      "pricing": {
-        "per_image": 0.08
-      },
-      "url": "https://aws.amazon.com/bedrock/stability-ai/",
       "updated_at": "2026-03-12",
       "source": "bedrock"
     }
   ],
   "updated_at": "2026-03-12",
   "source": "bedrock",
-  "count": 17
+  "count": 87
 }

@@ -876,23 +876,134 @@
       ]
     },
     {
-      "id": "amazon-nova-canvas",
-      "name": "Amazon Nova Canvas",
-      "category": "image_generation",
-      "description": "Amazon's image generation model. Text-to-image and image editing.",
+      "id": "amazon-nova-2-lite",
+      "name": "Amazon Nova 2 Lite",
+      "category": "llm",
+      "description": "Amazon Amazon Nova 2 Lite on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "image"
+        "nova"
       ],
       "capabilities": [
-        "image_editing"
+        "function_calling",
+        "prompt_caching",
+        "reasoning",
+        "vision"
       ],
       "open_source": false,
       "local_available": false,
       "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "cache_read_per_1m": 0.075
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 2.5,
+            "cache_read_per_1m": 0.075
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-nova-2-multimodal-embeddings",
+      "name": "Amazon Nova 2 Multimodal Embeddings",
+      "category": "embedding",
+      "description": "Amazon Amazon Nova 2 Multimodal Embeddings on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "nova",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.135,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.135,
+            "output_per_1m": 0
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-nova-2-pro-preview",
+      "name": "Amazon Nova 2 Pro Preview",
+      "category": "llm",
+      "description": "Amazon Amazon Nova 2 Pro Preview on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "nova"
+      ],
+      "capabilities": [
+        "function_calling",
+        "prompt_caching",
+        "reasoning",
+        "vision"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 2.1875,
+        "output_per_1m": 17.5,
+        "cache_read_per_1m": 0.5469
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 2.1875,
+            "output_per_1m": 17.5,
+            "cache_read_per_1m": 0.5469
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-nova-canvas",
+      "name": "Amazon Nova Canvas",
+      "category": "image_generation",
+      "description": "Amazon Amazon Nova Canvas on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "nova"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
         "per_image": 0.04,
-        "notes": "$0.04/image (512px). $0.08/image (1024px)."
+        "notes": "$0.04/image (512px), $0.08/image (1024px)"
       },
       "url": "https://aws.amazon.com/bedrock/nova/",
       "updated_at": "2026-03-12",
@@ -903,7 +1014,7 @@
           "provider_id": "bedrock",
           "pricing": {
             "per_image": 0.04,
-            "notes": "$0.04/image (512px). $0.08/image (1024px)."
+            "notes": "$0.04/image (512px), $0.08/image (1024px)"
           },
           "url": "https://aws.amazon.com/bedrock/nova/",
           "affiliate_url": null,
@@ -915,15 +1026,14 @@
       "id": "amazon-nova-lite",
       "name": "Amazon Nova Lite",
       "category": "llm",
-      "description": "Fast and cost-effective multimodal model from Amazon. Text, image, video input.",
+      "description": "Amazon Amazon Nova Lite on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "multimodal",
-        "fast"
+        "nova"
       ],
       "capabilities": [
         "function_calling",
+        "prompt_caching",
         "vision"
       ],
       "open_source": false,
@@ -953,15 +1063,14 @@
       "id": "amazon-nova-micro",
       "name": "Amazon Nova Micro",
       "category": "llm",
-      "description": "Ultra-low cost text-only model from Amazon. Fastest in the Nova family.",
+      "description": "Amazon Amazon Nova Micro on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "fast",
-        "cheap"
+        "nova"
       ],
       "capabilities": [
-        "function_calling"
+        "function_calling",
+        "prompt_caching"
       ],
       "open_source": false,
       "local_available": false,
@@ -990,14 +1099,14 @@
       "id": "amazon-nova-pro",
       "name": "Amazon Nova Pro",
       "category": "llm",
-      "description": "Amazon's most capable Nova model. Multimodal (text, image, video input). 300k context.",
+      "description": "Amazon Amazon Nova Pro on Amazon Bedrock.",
       "tags": [
         "amazon",
-        "nova",
-        "multimodal"
+        "nova"
       ],
       "capabilities": [
         "function_calling",
+        "prompt_caching",
         "vision"
       ],
       "open_source": false,
@@ -1027,7 +1136,6 @@
       "id": "amazon-nova-reel",
       "name": "Amazon Nova Reel",
       "category": "video_generation",
-      "description": "Amazon's video generation model via Bedrock. Text-to-video and image-to-video.",
       "tags": [
         "amazon",
         "nova",
@@ -1037,12 +1145,13 @@
         "image_to_video",
         "text_to_video"
       ],
-      "open_source": false,
-      "local_available": false,
       "pricing": {
         "per_second": 0.96
       },
       "url": "https://aws.amazon.com/bedrock/nova/",
+      "description": "Amazon's video generation model via Bedrock. Text-to-video and image-to-video.",
+      "open_source": false,
+      "local_available": false,
       "updated_at": "2026-03-12",
       "source": "bedrock",
       "context_k": null,
@@ -1059,10 +1168,41 @@
       ]
     },
     {
-      "id": "amazon-titan-embed-text-v2",
-      "name": "Amazon Titan Embed Text v2",
+      "id": "amazon-rerank",
+      "name": "Amazon Rerank",
+      "category": "llm",
+      "description": "Amazon Amazon Rerank on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-titan-embed-image",
+      "name": "Amazon Titan Embed Image",
       "category": "embedding",
-      "description": "Amazon Titan text embeddings v2. 1024/512/256 dimensions.",
+      "description": "Amazon Amazon Titan Embed Image on Amazon Bedrock.",
       "tags": [
         "amazon",
         "titan",
@@ -1072,9 +1212,10 @@
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "notes": "$0.02/1M tokens"
+        "input_per_1m": 0.8,
+        "output_per_1m": 0
       },
-      "url": "https://aws.amazon.com/bedrock/titan/",
+      "url": "https://aws.amazon.com/bedrock/nova/",
       "updated_at": "2026-03-12",
       "source": "bedrock",
       "context_k": null,
@@ -1082,9 +1223,174 @@
         {
           "provider_id": "bedrock",
           "pricing": {
-            "notes": "$0.02/1M tokens"
+            "input_per_1m": 0.8,
+            "output_per_1m": 0
           },
-          "url": "https://aws.amazon.com/bedrock/titan/",
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-titan-embed-text",
+      "name": "Amazon Titan Embed Text",
+      "category": "embedding",
+      "description": "Amazon Amazon Titan Embed Text on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-titan-image-generator",
+      "name": "Amazon Titan Image Generator",
+      "category": "image_generation",
+      "description": "Amazon Amazon Titan Image Generator on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.008
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "per_image": 0.008
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-titan-text-express",
+      "name": "Amazon Titan Text Express",
+      "category": "llm",
+      "description": "Amazon Amazon Titan Text Express on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.3,
+        "output_per_1m": 1.7
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 1.3,
+            "output_per_1m": 1.7
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-titan-text-lite",
+      "name": "Amazon Titan Text Lite",
+      "category": "llm",
+      "description": "Amazon Amazon Titan Text Lite on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 0.4
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 0.4
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "amazon-titan-text-premier",
+      "name": "Amazon Titan Text Premier",
+      "category": "llm",
+      "description": "Amazon Amazon Titan Text Premier on Amazon Bedrock.",
+      "tags": [
+        "amazon",
+        "titan"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/nova/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/nova/",
           "affiliate_url": null,
           "available": true
         }
@@ -3154,6 +3460,39 @@
       ]
     },
     {
+      "id": "claude",
+      "name": "Claude",
+      "category": "llm",
+      "description": "Anthropic Claude on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 8.0,
+        "output_per_1m": 24.0
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 8.0,
+            "output_per_1m": 24.0
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "claude-3-5-haiku-20241022",
       "name": "Claude 3 5 Haiku 20241022",
       "category": "llm",
@@ -3239,6 +3578,18 @@
           "url": "https://openrouter.ai/anthropic/claude-3-haiku",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.25,
+            "output_per_1m": 1.25,
+            "cache_write_per_1m": 0.3125,
+            "cache_read_per_1m": 0.025
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -3302,7 +3653,9 @@
           "provider_id": "bedrock",
           "pricing": {
             "input_per_1m": 15.0,
-            "output_per_1m": 75.0
+            "output_per_1m": 75.0,
+            "cache_write_per_1m": 18.75,
+            "cache_read_per_1m": 1.5
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
@@ -3328,6 +3681,18 @@
           "pricing": {},
           "url": "https://openrouter.ai/anthropic/claude-3-sonnet",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "cache_write_per_1m": 3.75,
+            "cache_read_per_1m": 0.3
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -3360,7 +3725,9 @@
           "provider_id": "bedrock",
           "pricing": {
             "input_per_1m": 0.8,
-            "output_per_1m": 4.0
+            "output_per_1m": 4.0,
+            "cache_write_per_1m": 1.0,
+            "cache_read_per_1m": 0.08
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
@@ -3447,6 +3814,18 @@
           "url": "https://www.together.ai",
           "affiliate_url": null,
           "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "cache_write_per_1m": 3.75,
+            "cache_read_per_1m": 0.3
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -3468,43 +3847,6 @@
           "pricing": {},
           "url": "https://openrouter.ai/anthropic/claude-3.5-sonnet-20240620",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "claude-3-5-sonnet-v2",
-      "name": "Claude 3.5 Sonnet v2",
-      "category": "llm",
-      "description": "Anthropic Claude 3.5 Sonnet v2 on Amazon Bedrock.",
-      "tags": [
-        "anthropic",
-        "claude"
-      ],
-      "capabilities": [
-        "function_calling",
-        "prompt_caching",
-        "vision"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 3.0,
-        "output_per_1m": 15.0
-      },
-      "url": "https://aws.amazon.com/bedrock/claude/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 15.0
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
           "available": true
         }
       ]
@@ -3546,8 +3888,10 @@
         {
           "provider_id": "bedrock",
           "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 15.0
+            "input_per_1m": 3.6,
+            "output_per_1m": 18.0,
+            "cache_write_per_1m": 4.5,
+            "cache_read_per_1m": 0.36
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
@@ -3761,6 +4105,51 @@
           "url": "https://openrouter.ai/anthropic/claude-haiku-4-5",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 1.0,
+            "output_per_1m": 5.0,
+            "cache_write_per_1m": 1.25,
+            "cache_read_per_1m": 0.1
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "claude-instant",
+      "name": "Claude Instant",
+      "category": "llm",
+      "description": "Anthropic Claude Instant on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 2.4
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.8,
+            "output_per_1m": 2.4
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -3825,6 +4214,49 @@
       ]
     },
     {
+      "id": "claude-opus-4",
+      "name": "Claude Opus 4",
+      "category": "llm",
+      "description": "Anthropic Claude Opus 4 on Amazon Bedrock.",
+      "tags": [
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "computer_use",
+        "function_calling",
+        "prompt_caching",
+        "reasoning",
+        "vision"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 15.0,
+        "output_per_1m": 75.0,
+        "cache_write_per_1m": 18.75,
+        "cache_read_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/claude/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0,
+            "cache_write_per_1m": 18.75,
+            "cache_read_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "claude-opus-4-5",
       "name": "Claude Opus 4 5",
       "category": "llm",
@@ -3847,6 +4279,18 @@
             "output_per_1m": 25.0
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0,
+            "cache_write_per_1m": 6.25,
+            "cache_read_per_1m": 0.5
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
         }
@@ -3875,6 +4319,18 @@
           },
           "url": "https://openrouter.ai/anthropic/claude-opus-4.1",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0,
+            "cache_write_per_1m": 18.75,
+            "cache_read_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -3957,6 +4413,18 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0,
+            "cache_write_per_1m": 6.25,
+            "cache_read_per_1m": 0.5
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "replicate",
           "pricing": {
             "notes": "Run count: 20,379. Check replicate.com for pricing."
@@ -3991,6 +4459,18 @@
           "url": "https://openrouter.ai/anthropic/claude-sonnet-4",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "cache_write_per_1m": 3.75,
+            "cache_read_per_1m": 0.3
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -4017,6 +4497,18 @@
             "output_per_1m": 15.0
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "cache_write_per_1m": 3.75,
+            "cache_read_per_1m": 0.3
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
         }
@@ -4095,6 +4587,18 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/claude-sonnet-4-6",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "cache_write_per_1m": 3.75,
+            "cache_read_per_1m": 0.3
+          },
+          "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
         }
@@ -5310,6 +5814,38 @@
       ]
     },
     {
+      "id": "command-light-text",
+      "name": "Command Light Text",
+      "category": "llm",
+      "description": "Cohere Command Light Text on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 0.6
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 0.6
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "command-r",
       "name": "Command R",
       "category": "llm",
@@ -5332,6 +5868,16 @@
             "output_per_1m": 0.6
           },
           "url": "https://dashboard.cohere.com",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
           "affiliate_url": null,
           "available": true
         },
@@ -5445,6 +5991,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {},
           "url": "https://openrouter.ai/cohere/command-r-plus",
@@ -5517,6 +6073,38 @@
           },
           "url": "https://openrouter.ai/cohere/command-r7b-12-2024",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "command-text",
+      "name": "Command Text",
+      "category": "llm",
+      "description": "Cohere Command Text on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 2.0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 1.5,
+            "output_per_1m": 2.0
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -6529,16 +7117,6 @@
           "available": true
         },
         {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 1.35,
-            "output_per_1m": 5.4
-          },
-          "url": "https://aws.amazon.com/bedrock/",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
           "provider_id": "replicate",
           "pricing": {
             "notes": "Run count: 2,198,194. Check replicate.com for pricing."
@@ -7144,6 +7722,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.58,
+            "output_per_1m": 1.68
+          },
+          "url": "https://aws.amazon.com/bedrock/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "replicate",
           "pricing": {
             "notes": "Run count: 4,998,978. Check replicate.com for pricing."
@@ -7404,6 +7992,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.62,
+            "output_per_1m": 1.85
+          },
+          "url": "https://aws.amazon.com/bedrock/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.56,
@@ -7647,6 +8245,40 @@
           },
           "url": "https://replicate.com/flux-kontext-apps/depth-of-field",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "devstral-2-123b",
+      "name": "Devstral 2 123B",
+      "category": "llm",
+      "description": "Mistral Devstral 2 123B on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.0
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.4,
+            "output_per_1m": 2.0
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -8931,6 +9563,105 @@
           },
           "url": "https://fal.ai/models/fal-ai/elevenlabs/voice-changer",
           "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "embed",
+      "name": "Embed",
+      "category": "embedding",
+      "description": "Cohere Embed on Amazon Bedrock.",
+      "tags": [
+        "cohere",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.12,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.12,
+            "output_per_1m": 0
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "embed-english",
+      "name": "Embed English",
+      "category": "embedding",
+      "description": "Cohere Embed English on Amazon Bedrock.",
+      "tags": [
+        "cohere",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "embed-multilingual",
+      "name": "Embed Multilingual",
+      "category": "embedding",
+      "description": "Cohere Embed Multilingual on Amazon Bedrock.",
+      "tags": [
+        "cohere",
+        "embedding"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -24772,6 +25503,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.75,
+            "output_per_1m": 1.0
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.2,
@@ -24822,6 +25563,16 @@
           "pricing": {},
           "url": "https://openrouter.ai/meta-llama/llama-2-70b-chat",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 1.95,
+            "output_per_1m": 2.56
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -24911,6 +25662,16 @@
           },
           "url": "https://openrouter.ai/meta-llama/llama-3-70b-instruct",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 2.65,
+            "output_per_1m": 3.5
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
           "available": true
         },
         {
@@ -25012,6 +25773,16 @@
           },
           "url": "https://openrouter.ai/meta-llama/llama-3-8b-instruct",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 0.6
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
           "available": true
         },
         {
@@ -25295,8 +26066,8 @@
         {
           "provider_id": "bedrock",
           "pricing": {
-            "input_per_1m": 2.4,
-            "output_per_1m": 2.4
+            "input_per_1m": 5.32,
+            "output_per_1m": 16.0
           },
           "url": "https://aws.amazon.com/bedrock/llama/",
           "affiliate_url": null,
@@ -25425,6 +26196,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.99,
+            "output_per_1m": 0.99
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.9,
@@ -25539,6 +26320,16 @@
           },
           "url": "https://openrouter.ai/meta-llama/llama-3.1-8b-instruct",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.22,
+            "output_per_1m": 0.22
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
           "available": true
         },
         {
@@ -25800,6 +26591,43 @@
       ]
     },
     {
+      "id": "llama-3-2-11b-instruct",
+      "name": "Llama 3.2 11B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 3.2 11B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.35,
+        "output_per_1m": 0.35
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.35,
+            "output_per_1m": 0.35
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "llama-3-2-11b-vision",
       "name": "Llama 3.2 11B Vision",
       "category": "llm",
@@ -25921,6 +26749,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0.1
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.1,
@@ -25991,6 +26829,16 @@
           "available": true
         },
         {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.15
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.1,
@@ -26028,17 +26876,17 @@
       ]
     },
     {
-      "id": "llama-3-2-90b-vision",
-      "name": "Llama 3.2 90B Vision",
+      "id": "llama-3-2-90b-instruct",
+      "name": "Llama 3.2 90B Instruct",
       "category": "llm",
-      "description": "Meta Llama 3.2 90B multimodal on Amazon Bedrock.",
+      "description": "Meta Llama 3.2 90B Instruct on Amazon Bedrock.",
       "tags": [
         "meta",
         "llama",
-        "multimodal",
         "open-source"
       ],
       "capabilities": [
+        "function_calling",
         "vision"
       ],
       "open_source": false,
@@ -26413,6 +27261,42 @@
       "local_tool": "Ollama / transformers"
     },
     {
+      "id": "llama-4-maverick-17b-instruct",
+      "name": "Llama 4 Maverick 17B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 4 Maverick 17B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.24,
+        "output_per_1m": 0.97
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.24,
+            "output_per_1m": 0.97
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-llama-4-maverick-instruct",
       "name": "Llama 4 Maverick Instruct",
       "category": "image_generation",
@@ -26508,6 +27392,42 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "Ollama"
+    },
+    {
+      "id": "llama-4-scout-17b-instruct",
+      "name": "Llama 4 Scout 17B Instruct",
+      "category": "llm",
+      "description": "Meta Llama 4 Scout 17B Instruct on Amazon Bedrock.",
+      "tags": [
+        "meta",
+        "llama",
+        "open-source"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.17,
+        "output_per_1m": 0.66
+      },
+      "url": "https://aws.amazon.com/bedrock/llama/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.17,
+            "output_per_1m": 0.66
+          },
+          "url": "https://aws.amazon.com/bedrock/llama/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     },
     {
       "id": "replicate-llama-4-scout-instruct",
@@ -29143,6 +30063,41 @@
       ]
     },
     {
+      "id": "magistral-small-2509",
+      "name": "Magistral Small 2509",
+      "category": "llm",
+      "description": "Mistral Magistral Small 2509 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling",
+        "reasoning"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "alpindale-magnum-72b",
       "name": "Magnum 72B",
       "category": "llm",
@@ -30839,6 +31794,40 @@
       ]
     },
     {
+      "id": "ministral-3-14b-instruct",
+      "name": "Ministral 3 14B Instruct",
+      "category": "llm",
+      "description": "Mistral Ministral 3 14B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 0.2
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.2,
+            "output_per_1m": 0.2
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "fireworks_ai-accounts-fireworks-models-ministral-3-14b-instruct-2512",
       "name": "Ministral 3 14B Instruct 2512",
       "category": "llm",
@@ -30889,6 +31878,40 @@
       ]
     },
     {
+      "id": "ministral-3-3b-instruct",
+      "name": "Ministral 3 3B Instruct",
+      "category": "llm",
+      "description": "Mistral Ministral 3 3B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.1
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0.1
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "fireworks_ai-accounts-fireworks-models-ministral-3-3b-instruct-2512",
       "name": "Ministral 3 3B Instruct 2512",
       "category": "llm",
@@ -30934,6 +31957,40 @@
           },
           "url": "https://openrouter.ai/mistralai/ministral-8b-2512",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "ministral-3-8b-instruct",
+      "name": "Ministral 3 8B Instruct",
+      "category": "llm",
+      "description": "Mistral Ministral 3 8B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.15
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.15
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -31146,6 +32203,16 @@
           },
           "url": "https://openrouter.ai/mistralai/mistral-7b-instruct",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.15,
+            "output_per_1m": 0.2
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ],
@@ -31444,10 +32511,10 @@
       ]
     },
     {
-      "id": "mistral-large-2",
-      "name": "Mistral Large 2",
+      "id": "mistral-large-2402",
+      "name": "Mistral Large 2402",
       "category": "llm",
-      "description": "Mistral Large 2 on Amazon Bedrock.",
+      "description": "Mistral Mistral Large 2402 on Amazon Bedrock.",
       "tags": [
         "mistral"
       ],
@@ -31457,8 +32524,8 @@
       "open_source": false,
       "local_available": false,
       "pricing": {
-        "input_per_1m": 3.0,
-        "output_per_1m": 9.0
+        "input_per_1m": 8.0,
+        "output_per_1m": 24.0
       },
       "url": "https://aws.amazon.com/bedrock/mistral/",
       "updated_at": "2026-03-12",
@@ -31468,8 +32535,8 @@
         {
           "provider_id": "bedrock",
           "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 9.0
+            "input_per_1m": 8.0,
+            "output_per_1m": 24.0
           },
           "url": "https://aws.amazon.com/bedrock/mistral/",
           "affiliate_url": null,
@@ -31498,6 +32565,16 @@
           },
           "url": "https://openrouter.ai/mistralai/mistral-large-2407",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 9.0
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -31564,6 +32641,40 @@
           },
           "url": "https://openrouter.ai/mistralai/mistral-large-2512",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "mistral-large-3-675b-instruct",
+      "name": "Mistral Large 3 675B Instruct",
+      "category": "llm",
+      "description": "Mistral Mistral Large 3 675B Instruct on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 1.5
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -31950,6 +33061,40 @@
           },
           "url": "https://openrouter.ai/mistralai/mistral-small",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "mistral-small-2402",
+      "name": "Mistral Small 2402",
+      "category": "llm",
+      "description": "Mistral Mistral Small 2402 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 3.0
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 1.0,
+            "output_per_1m": 3.0
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -32352,6 +33497,16 @@
           },
           "url": "https://openrouter.ai/mistralai/mixtral-8x7b-instruct",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.45,
+            "output_per_1m": 0.7
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -36311,6 +37466,40 @@
       ]
     },
     {
+      "id": "palmyra-x4",
+      "name": "Palmyra X4",
+      "category": "llm",
+      "description": "Writer Palmyra X4 on Amazon Bedrock.",
+      "tags": [
+        "writer"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 2.5,
+        "output_per_1m": 10.0
+      },
+      "url": "https://aws.amazon.com/bedrock/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 10.0
+          },
+          "url": "https://aws.amazon.com/bedrock/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "writer-palmyra-x5",
       "name": "Palmyra X5",
       "category": "llm",
@@ -36329,6 +37518,16 @@
           },
           "url": "https://openrouter.ai/writer/palmyra-x5",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.6,
+            "output_per_1m": 6.0
+          },
+          "url": "https://aws.amazon.com/bedrock/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -45043,6 +46242,36 @@
       ]
     },
     {
+      "id": "rerank-v3-5",
+      "name": "Rerank V3 5",
+      "category": "llm",
+      "description": "Cohere Rerank V3 5 on Amazon Bedrock.",
+      "tags": [
+        "cohere"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/cohere/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/cohere/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-restore-image",
       "name": "Restore Image",
       "category": "image_generation",
@@ -45990,6 +47219,68 @@
       "updated_at": "2026-03-12",
       "source": "huggingface",
       "providers": []
+    },
+    {
+      "id": "sd3-5-large",
+      "name": "SD3 5 Large",
+      "category": "image_generation",
+      "description": "Stability AI SD3 5 Large on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.08
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "per_image": 0.08
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "sd3-large",
+      "name": "SD3 Large",
+      "category": "image_generation",
+      "description": "Stability AI SD3 Large on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.065
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "per_image": 0.065
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     },
     {
       "id": "sdxl-controlnet-union",
@@ -47818,6 +49109,68 @@
       ]
     },
     {
+      "id": "stable-conservative-upscale",
+      "name": "Stable Conservative Upscale",
+      "category": "image_generation",
+      "description": "Stability AI Stable Conservative Upscale on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-creative-upscale",
+      "name": "Stable Creative Upscale",
+      "category": "image_generation",
+      "description": "Stability AI Stable Creative Upscale on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-stable-diffusion",
       "name": "Stable Diffusion",
       "category": "image_generation",
@@ -47891,15 +49244,6 @@
             "per_megapixel": 0.0019
           },
           "url": "https://www.together.ai/models/stable-diffusion-3",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "per_image": 0.08
-          },
-          "url": "https://aws.amazon.com/bedrock/stability-ai/",
           "affiliate_url": null,
           "available": true
         }
@@ -48238,10 +49582,328 @@
       ]
     },
     {
+      "id": "stable-fast-upscale",
+      "name": "Stable Fast Upscale",
+      "category": "image_generation",
+      "description": "Stability AI Stable Fast Upscale on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-control-sketch",
+      "name": "Stable Image Control Sketch",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Control Sketch on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-control-structure",
+      "name": "Stable Image Control Structure",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Control Structure on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-core",
+      "name": "Stable Image Core",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Core on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "per_image": 0.04
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "per_image": 0.04
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-erase-object",
+      "name": "Stable Image Erase Object",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Erase Object on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-inpaint",
+      "name": "Stable Image Inpaint",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Inpaint on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-remove-background",
+      "name": "Stable Image Remove Background",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Remove Background on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-search-recolor",
+      "name": "Stable Image Search Recolor",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Search Recolor on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-search-replace",
+      "name": "Stable Image Search Replace",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Search Replace on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-image-style-guide",
+      "name": "Stable Image Style Guide",
+      "category": "image_generation",
+      "description": "Stability AI Stable Image Style Guide on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "stable-image-ultra",
       "name": "Stable Image Ultra",
       "category": "image_generation",
-      "description": "Stability AI Stable Image Ultra on Amazon Bedrock. Highest quality.",
+      "description": "Stability AI Stable Image Ultra on Amazon Bedrock.",
       "tags": [
         "stability-ai",
         "image"
@@ -48261,6 +49923,70 @@
           "provider_id": "bedrock",
           "pricing": {
             "per_image": 0.14
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-outpaint",
+      "name": "Stable Outpaint",
+      "category": "image_generation",
+      "description": "Stability AI Stable Outpaint on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [
+        "image_editing"
+      ],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
+          },
+          "url": "https://aws.amazon.com/bedrock/stability-ai/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "stable-style-transfer",
+      "name": "Stable Style Transfer",
+      "category": "image_generation",
+      "description": "Stability AI Stable Style Transfer on Amazon Bedrock.",
+      "tags": [
+        "stability-ai",
+        "image"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "notes": "See aws.amazon.com/bedrock/pricing/"
+      },
+      "url": "https://aws.amazon.com/bedrock/stability-ai/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "notes": "See aws.amazon.com/bedrock/pricing/"
           },
           "url": "https://aws.amazon.com/bedrock/stability-ai/",
           "affiliate_url": null,
@@ -51359,6 +53085,38 @@
       "local_tool": "kokoro-fastapi / transformers"
     },
     {
+      "id": "voxtral-mini-3b-2507",
+      "name": "Voxtral Mini 3B 2507",
+      "category": "llm",
+      "description": "Mistral Voxtral Mini 3B 2507 on Amazon Bedrock.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [],
+      "open_source": false,
+      "local_available": false,
+      "pricing": {
+        "input_per_1m": 0.04,
+        "output_per_1m": 0.04
+      },
+      "url": "https://aws.amazon.com/bedrock/mistral/",
+      "updated_at": "2026-03-12",
+      "source": "bedrock",
+      "context_k": null,
+      "providers": [
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.04,
+            "output_per_1m": 0.04
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "mistralai-voxtral-small-24b-2507",
       "name": "Voxtral Small 24B 2507",
       "category": "llm",
@@ -51379,6 +53137,16 @@
           },
           "url": "https://openrouter.ai/mistralai/voxtral-small-24b-2507",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
+        {
+          "provider_id": "bedrock",
+          "pricing": {
+            "input_per_1m": 0.1,
+            "output_per_1m": 0.3
+          },
+          "url": "https://aws.amazon.com/bedrock/mistral/",
+          "affiliate_url": null,
           "available": true
         }
       ]
