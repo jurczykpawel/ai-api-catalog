@@ -1030,7 +1030,8 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
           minimax_models: list = None,
           bedrock_models: list = None,
           replicate_models: list = None,
-          fireworks_models: list = None) -> list:
+          fireworks_models: list = None,
+          opencode_models: list = None) -> list:
     """
     Scala trzy źródła. Priorytet: manual > litellm/openrouter.
     OR modele z mapowaniem są doklejane jako dodatkowy provider do istniejącego modelu.
@@ -1115,6 +1116,8 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
         _merge_source(replicate_models, "replicate", "_internal_id")
     if fireworks_models:
         _merge_source(fireworks_models, "fireworks", "_internal_id")
+    if opencode_models:
+        _merge_source(opencode_models, "opencode", "_internal_id")
 
     result = list(result_by_id.values())
 
@@ -1123,7 +1126,7 @@ def merge(litellm_models: list, or_models: list, fal_models: list,
     # zachowujemy ten o wyższym priorytecie źródła i doklejamy
     # providerów z duplikatu. Priorytet: manual > litellm > curated > fal > replicate > hf > aimlapi
     SOURCE_PRIORITY = {"manual": 0, "litellm": 1, "openrouter": 1, "piapi": 2, "wavespeed": 2,
-                       "kie": 2, "runway": 2, "aimlapi": 3, "fal": 4, "replicate": 5, "huggingface": 6}
+                       "kie": 2, "runway": 2, "opencode": 2, "aimlapi": 3, "fal": 4, "replicate": 5, "huggingface": 6}
 
     by_norm_name: dict = {}
     for m in result:
@@ -1215,6 +1218,7 @@ def main():
     parser.add_argument("--bedrock",     help="Ścieżka do bedrock-raw.json (opcjonalne)")
     parser.add_argument("--replicate",   help="Ścieżka do replicate-raw.json (opcjonalne)")
     parser.add_argument("--fireworks",   help="Ścieżka do fireworks-raw.json (opcjonalne)")
+    parser.add_argument("--opencode",    help="Ścieżka do opencode-raw.json (opcjonalne)")
     parser.add_argument("--manual",      required=True, help="Ścieżka do models-manual.json")
     parser.add_argument("--output",      required=True, help="Ścieżka wyjściowa models.json")
     args = parser.parse_args()
@@ -1256,6 +1260,7 @@ def main():
     bedrock_models  = load_optional(args.bedrock,       lambda d: parse_curated(d, "bedrock",   None),                       "Bedrock    ")
     replicate_models= load_optional(args.replicate,     parse_replicate,                                                       "Replicate  ")
     fireworks_models= load_optional(args.fireworks,     lambda d: parse_fireworks(d, litellm_raw),                             "Fireworks  ")
+    opencode_models = load_optional(args.opencode,      lambda d: parse_curated(d, "opencode",  None),                        "OpenCode   ")
 
     # Load manual
     manual_path = Path(args.manual)
@@ -1271,7 +1276,7 @@ def main():
     merged = merge(litellm_models, or_models, fal_models, hf_models, manual_models,
                    aimlapi_models, piapi_models, wavespeed_models, kie_models, runway_models,
                    minimax_models, bedrock_models, replicate_models,
-                   fireworks_models)
+                   fireworks_models, opencode_models)
 
     # Apply provider patches (data/provider-patches.json)
     patches_path = Path(args.output).parent / "provider-patches.json"

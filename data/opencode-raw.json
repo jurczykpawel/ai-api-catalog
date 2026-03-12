@@ -1,0 +1,813 @@
+{
+  "models": [
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4 6",
+      "category": "llm",
+      "description": "Claude Opus 4 6 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "notes": ">200K ctx: $10/$37.50"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-opus-4-6"
+    },
+    {
+      "id": "claude-opus-4-5",
+      "name": "Claude Opus 4 5",
+      "category": "llm",
+      "description": "Claude Opus 4 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-opus-4-5"
+    },
+    {
+      "id": "claude-opus-4-1",
+      "name": "Claude Opus 4 1",
+      "category": "llm",
+      "description": "Claude Opus 4 1 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 15.0,
+        "output_per_1m": 75.0
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-opus-4-1"
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4 6",
+      "category": "llm",
+      "description": "Claude Sonnet 4 6 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "notes": ">200K ctx: $6/$22.50"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-sonnet-4-6"
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4 5",
+      "category": "llm",
+      "description": "Claude Sonnet 4 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "notes": ">200K ctx: $6/$22.50"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-sonnet-4-5"
+    },
+    {
+      "id": "claude-sonnet-4",
+      "name": "Claude Sonnet 4",
+      "category": "llm",
+      "description": "Claude Sonnet 4 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "notes": ">200K ctx: $6/$22.50"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-sonnet-4"
+    },
+    {
+      "id": "claude-3-5-haiku",
+      "name": "Claude 3 5 Haiku",
+      "category": "llm",
+      "description": "Claude 3 5 Haiku via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 4.0
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-3-5-haiku"
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4 5",
+      "category": "llm",
+      "description": "Claude Haiku 4 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 5.0
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-haiku-4-5"
+    },
+    {
+      "id": "gemini-3-1-pro",
+      "name": "Gemini 3.1 Pro",
+      "category": "llm",
+      "description": "Gemini 3.1 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "notes": ">200K ctx: $4/$18"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3.1-pro"
+    },
+    {
+      "id": "gemini-3-pro",
+      "name": "Gemini 3 Pro",
+      "category": "llm",
+      "description": "Gemini 3 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "notes": ">200K ctx: $4/$18"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3-pro"
+    },
+    {
+      "id": "gemini-3-flash",
+      "name": "Gemini 3 Flash",
+      "category": "llm",
+      "description": "Gemini 3 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 3.0
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3-flash"
+    },
+    {
+      "id": "gpt-5-4-pro",
+      "name": "GPT 5.4 Pro",
+      "category": "llm",
+      "description": "GPT 5.4 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 30.0,
+        "output_per_1m": 180.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.4-pro"
+    },
+    {
+      "id": "gpt-5-4",
+      "name": "GPT 5.4",
+      "category": "llm",
+      "description": "GPT 5.4 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 2.5,
+        "output_per_1m": 15.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.4"
+    },
+    {
+      "id": "gpt-5-3-codex-spark",
+      "name": "GPT 5.3 Codex Spark",
+      "category": "llm",
+      "description": "GPT 5.3 Codex Spark via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.3-codex-spark"
+    },
+    {
+      "id": "gpt-5-3-codex",
+      "name": "GPT 5.3 Codex",
+      "category": "llm",
+      "description": "GPT 5.3 Codex via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.3-codex"
+    },
+    {
+      "id": "gpt-5-2",
+      "name": "GPT 5.2",
+      "category": "llm",
+      "description": "GPT 5.2 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.2"
+    },
+    {
+      "id": "gpt-5-2-codex",
+      "name": "GPT 5.2 Codex",
+      "category": "llm",
+      "description": "GPT 5.2 Codex via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.2-codex"
+    },
+    {
+      "id": "gpt-5-1",
+      "name": "GPT 5.1",
+      "category": "llm",
+      "description": "GPT 5.1 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.1"
+    },
+    {
+      "id": "gpt-5-1-codex-max",
+      "name": "GPT 5.1 Codex Max",
+      "category": "llm",
+      "description": "GPT 5.1 Codex Max via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 10.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.1-codex-max"
+    },
+    {
+      "id": "gpt-5-1-codex",
+      "name": "GPT 5.1 Codex",
+      "category": "llm",
+      "description": "GPT 5.1 Codex via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.1-codex"
+    },
+    {
+      "id": "gpt-5-1-codex-mini",
+      "name": "GPT 5.1 Codex Mini",
+      "category": "llm",
+      "description": "GPT 5.1 Codex Mini via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 2.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.1-codex-mini"
+    },
+    {
+      "id": "gpt-5",
+      "name": "GPT 5",
+      "category": "llm",
+      "description": "GPT 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5"
+    },
+    {
+      "id": "gpt-5-codex",
+      "name": "GPT 5 Codex",
+      "category": "llm",
+      "description": "GPT 5 Codex via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5-codex"
+    },
+    {
+      "id": "gpt-5-nano",
+      "name": "GPT 5 Nano",
+      "category": "llm",
+      "description": "GPT 5 Nano via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5-nano"
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM 5",
+      "category": "llm",
+      "description": "GLM 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "zhipu",
+        "glm"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 3.2
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "glm-5"
+    },
+    {
+      "id": "glm-4-7",
+      "name": "GLM 4.7",
+      "category": "llm",
+      "description": "GLM 4.7 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "zhipu",
+        "glm"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "glm-4.7"
+    },
+    {
+      "id": "glm-4-6",
+      "name": "GLM 4.6",
+      "category": "llm",
+      "description": "GLM 4.6 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "zhipu",
+        "glm"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "glm-4.6"
+    },
+    {
+      "id": "minimax-m2-5",
+      "name": "Minimax M2.5",
+      "category": "llm",
+      "description": "Minimax M2.5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "minimax",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "minimax-m2.5"
+    },
+    {
+      "id": "minimax-m2-5-free",
+      "name": "Minimax M2.5 Free",
+      "category": "llm",
+      "description": "Minimax M2.5 Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "minimax",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "minimax-m2.5-free"
+    },
+    {
+      "id": "minimax-m2-1",
+      "name": "Minimax M2.1",
+      "category": "llm",
+      "description": "Minimax M2.1 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "minimax",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "minimax-m2.1"
+    },
+    {
+      "id": "mimo-v2-flash-free",
+      "name": "Mimo V2 Flash Free",
+      "category": "llm",
+      "description": "Mimo V2 Flash Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "mimo-v2-flash-free"
+    },
+    {
+      "id": "kimi-k2-5",
+      "name": "Kimi K2.5",
+      "category": "llm",
+      "description": "Kimi K2.5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "moonshot",
+        "kimi"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "kimi-k2.5"
+    },
+    {
+      "id": "kimi-k2",
+      "name": "Kimi K2",
+      "category": "llm",
+      "description": "Kimi K2 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "moonshot",
+        "kimi"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "kimi-k2"
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "category": "llm",
+      "description": "Kimi K2 Thinking via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "moonshot",
+        "kimi",
+        "reasoning"
+      ],
+      "capabilities": [
+        "reasoning"
+      ],
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "kimi-k2-thinking"
+    },
+    {
+      "id": "trinity-large-preview-free",
+      "name": "Trinity Large Preview Free",
+      "category": "llm",
+      "description": "Trinity Large Preview Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "trinity-large-preview-free"
+    },
+    {
+      "id": "big-pickle",
+      "name": "Big Pickle",
+      "category": "llm",
+      "description": "Big Pickle via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "big-pickle"
+    },
+    {
+      "id": "nemotron-3-super-free",
+      "name": "Nemotron 3 Super Free",
+      "category": "llm",
+      "description": "Nemotron 3 Super Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "nvidia"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "nemotron-3-super-free"
+    }
+  ],
+  "source": "opencode",
+  "base_url": "https://opencode.ai/zen/v1/",
+  "note": "Models from API, pricing curated from https://opencode.ai/docs/zen/#pricing"
+}

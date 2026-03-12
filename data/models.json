@@ -2437,6 +2437,39 @@
       ]
     },
     {
+      "id": "big-pickle",
+      "name": "Big Pickle",
+      "category": "llm",
+      "description": "Big Pickle via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "big-pickle",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "birefnet-v2",
       "name": "Birefnet Background Removal",
       "category": "image_generation",
@@ -3518,6 +3551,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.8,
+            "output_per_1m": 4.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {},
           "url": "https://openrouter.ai/anthropic/claude-3.5-haiku-20241022",
@@ -4010,6 +4053,17 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "notes": ">200K ctx: $6/$22.50"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 3.0,
@@ -4087,6 +4141,16 @@
             "cache_read_per_1m": 0.1
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.0,
+            "output_per_1m": 5.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -4242,6 +4306,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 15.0,
+            "output_per_1m": 75.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 15.0,
@@ -4297,6 +4371,16 @@
             "cache_read_per_1m": 0.5
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -4384,6 +4468,17 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 5.0,
+            "output_per_1m": 25.0,
+            "notes": ">200K ctx: $10/$37.50"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "replicate",
           "pricing": {
             "notes": "Run count: 20,379. Check replicate.com for pricing."
@@ -4429,6 +4524,17 @@
             "cache_read_per_1m": 0.3
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "notes": ">200K ctx: $6/$22.50"
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -4520,6 +4626,17 @@
             "cache_read_per_1m": 0.3
           },
           "url": "https://aws.amazon.com/bedrock/claude/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 3.0,
+            "output_per_1m": 15.0,
+            "notes": ">200K ctx: $6/$22.50"
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         }
@@ -15950,18 +16067,40 @@
       ]
     },
     {
-      "id": "replicate-gemini-3-flash",
+      "id": "gemini-3-flash",
       "name": "Gemini 3 Flash",
-      "category": "image_generation",
-      "description": "Google's most intelligent model built for speed with frontier intelligence, superior search, and grounding",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
+      "category": "llm",
+      "description": "Gemini 3 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 3.0
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3-flash",
+      "source": "opencode",
       "updated_at": "2026-03-12",
-      "source": "replicate",
       "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.5,
+            "output_per_1m": 3.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -16013,18 +16152,43 @@
       ]
     },
     {
-      "id": "replicate-gemini-3-pro",
+      "id": "gemini-3-pro",
       "name": "Gemini 3 Pro",
-      "category": "image_generation",
-      "description": "Google's most advanced reasoning Gemini model",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
+      "category": "llm",
+      "description": "Gemini 3 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "notes": ">200K ctx: $4/$18"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3-pro",
+      "source": "opencode",
       "updated_at": "2026-03-12",
-      "source": "replicate",
       "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 12.0,
+            "notes": ">200K ctx: $4/$18"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -16186,18 +16350,43 @@
       ]
     },
     {
-      "id": "replicate-gemini-3-1-pro",
+      "id": "gemini-3-1-pro",
       "name": "Gemini 3.1 Pro",
-      "category": "image_generation",
-      "description": "Google's most intelligent model, with improved reasoning and a new medium thinking level",
-      "tags": [],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": false,
-      "local_available": false,
+      "category": "llm",
+      "description": "Gemini 3.1 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "notes": ">200K ctx: $4/$18"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3.1-pro",
+      "source": "opencode",
       "updated_at": "2026-03-12",
-      "source": "replicate",
       "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 2.0,
+            "output_per_1m": 12.0,
+            "notes": ">200K ctx: $4/$18"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -17897,6 +18086,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.6,
+            "output_per_1m": 2.2
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.55,
@@ -17965,6 +18164,16 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/zhipu-glm-4-7",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.6,
+            "output_per_1m": 2.2
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -18178,6 +18387,16 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/zhipu-glm-5",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.0,
+            "output_per_1m": 3.2
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -18937,6 +19156,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.07,
+            "output_per_1m": 8.5
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 1.25,
@@ -19066,6 +19295,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.07,
+            "output_per_1m": 8.5
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 1.25,
@@ -19156,6 +19395,17 @@
             "output_per_1m": 0.4
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -19323,6 +19573,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.07,
+            "output_per_1m": 8.5
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 1.25,
@@ -19406,6 +19666,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.07,
+            "output_per_1m": 8.5
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 1.25,
@@ -19444,6 +19714,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.25,
+            "output_per_1m": 10.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 1.25,
@@ -19478,6 +19758,16 @@
             "output_per_1m": 2.0
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.25,
+            "output_per_1m": 2.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -19525,6 +19815,16 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/openai-gpt-5-2",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -19609,6 +19909,16 @@
             "output_per_1m": 14.0
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -19717,6 +20027,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 1.75,
@@ -19724,6 +20044,44 @@
           },
           "url": "https://openrouter.ai/openai/gpt-5.3-codex",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-3-codex-spark",
+      "name": "GPT 5.3 Codex Spark",
+      "category": "llm",
+      "description": "GPT 5.3 Codex Spark via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "coding",
+        "codex",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.3-codex-spark",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 1.75,
+            "output_per_1m": 14.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
           "available": true
         }
       ]
@@ -19751,6 +20109,16 @@
             "output_per_1m": 15.0
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 2.5,
+            "output_per_1m": 15.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -19798,6 +20166,16 @@
             "output_per_1m": 180.0
           },
           "url": "",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 30.0,
+            "output_per_1m": 180.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -25543,6 +25921,39 @@
       ]
     },
     {
+      "id": "kimi-k2",
+      "name": "Kimi K2",
+      "category": "llm",
+      "description": "Kimi K2 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "moonshot",
+        "kimi"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.5
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "kimi-k2",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.4,
+            "output_per_1m": 2.5
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "moonshotai-kimi-k2",
       "name": "Kimi K2 0711",
       "category": "llm",
@@ -25696,6 +26107,16 @@
           "url": "https://replicate.com/moonshotai/kimi-k2-thinking",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.4,
+            "output_per_1m": 2.5
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -25730,6 +26151,16 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/moonshot-kimi-k2-5",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.6,
+            "output_per_1m": 3.0
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         },
@@ -33370,6 +33801,41 @@
       ]
     },
     {
+      "id": "mimo-v2-flash-free",
+      "name": "Mimo V2 Flash Free",
+      "category": "llm",
+      "description": "Mimo V2 Flash Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "mimo-v2-flash-free",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "xiaomi-mimo-v2-flash",
       "name": "MiMo-V2-Flash",
       "category": "llm",
@@ -33965,6 +34431,16 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 1.2
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 0.3,
@@ -34056,11 +34532,58 @@
           "available": true
         },
         {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.3,
+            "output_per_1m": 1.2
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        },
+        {
           "provider_id": "fireworks",
           "pricing": {
             "notes": "Check fireworks.ai for pricing"
           },
           "url": "https://fireworks.ai/models/fireworks/minimax-m2p5",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2-5-free",
+      "name": "Minimax M2.5 Free",
+      "category": "llm",
+      "description": "Minimax M2.5 Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "minimax",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "minimax-m2.5-free",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
           "affiliate_url": null,
           "available": true
         }
@@ -37801,6 +38324,41 @@
           "available": true,
           "free_api": true,
           "free_type": "open"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3-super-free",
+      "name": "Nemotron 3 Super Free",
+      "category": "llm",
+      "description": "Nemotron 3 Super Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "nvidia"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "nemotron-3-super-free",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
@@ -54552,6 +55110,40 @@
           "available": true,
           "free_api": true,
           "free_type": "open"
+        }
+      ]
+    },
+    {
+      "id": "trinity-large-preview-free",
+      "name": "Trinity Large Preview Free",
+      "category": "llm",
+      "description": "Trinity Large Preview Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "trinity-large-preview-free",
+      "source": "opencode",
+      "updated_at": "2026-03-12",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
         }
       ]
     },
