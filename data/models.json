@@ -876,221 +876,6 @@
       ]
     },
     {
-      "id": "amazon-nova-canvas",
-      "name": "Amazon Nova Canvas",
-      "category": "image_generation",
-      "description": "Amazon's image generation model. Text-to-image and image editing.",
-      "tags": [
-        "amazon",
-        "nova",
-        "image"
-      ],
-      "capabilities": [
-        "image_editing"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "per_image": 0.04,
-        "notes": "$0.04/image (512px). $0.08/image (1024px)."
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "per_image": 0.04,
-            "notes": "$0.04/image (512px). $0.08/image (1024px)."
-          },
-          "url": "https://aws.amazon.com/bedrock/nova/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "amazon-nova-lite",
-      "name": "Amazon Nova Lite",
-      "category": "llm",
-      "description": "Fast and cost-effective multimodal model from Amazon. Text, image, video input.",
-      "tags": [
-        "amazon",
-        "nova",
-        "multimodal",
-        "fast"
-      ],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 0.06,
-        "output_per_1m": 0.24
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 0.06,
-            "output_per_1m": 0.24
-          },
-          "url": "https://aws.amazon.com/bedrock/nova/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "amazon-nova-micro",
-      "name": "Amazon Nova Micro",
-      "category": "llm",
-      "description": "Ultra-low cost text-only model from Amazon. Fastest in the Nova family.",
-      "tags": [
-        "amazon",
-        "nova",
-        "fast",
-        "cheap"
-      ],
-      "capabilities": [
-        "function_calling"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 0.035,
-        "output_per_1m": 0.14
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 0.035,
-            "output_per_1m": 0.14
-          },
-          "url": "https://aws.amazon.com/bedrock/nova/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "amazon-nova-pro",
-      "name": "Amazon Nova Pro",
-      "category": "llm",
-      "description": "Amazon's most capable Nova model. Multimodal (text, image, video input). 300k context.",
-      "tags": [
-        "amazon",
-        "nova",
-        "multimodal"
-      ],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 0.8,
-        "output_per_1m": 3.2
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 0.8,
-            "output_per_1m": 3.2
-          },
-          "url": "https://aws.amazon.com/bedrock/nova/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "amazon-nova-reel",
-      "name": "Amazon Nova Reel",
-      "category": "video_generation",
-      "description": "Amazon's video generation model via Bedrock. Text-to-video and image-to-video.",
-      "tags": [
-        "amazon",
-        "nova",
-        "video"
-      ],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "per_second": 0.96
-      },
-      "url": "https://aws.amazon.com/bedrock/nova/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "per_second": 0.96
-          },
-          "url": "https://aws.amazon.com/bedrock/nova/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "amazon-titan-embed-text-v2",
-      "name": "Amazon Titan Embed Text v2",
-      "category": "embedding",
-      "description": "Amazon Titan text embeddings v2. 1024/512/256 dimensions.",
-      "tags": [
-        "amazon",
-        "titan",
-        "embedding"
-      ],
-      "capabilities": [],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "notes": "$0.02/1M tokens"
-      },
-      "url": "https://aws.amazon.com/bedrock/titan/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "notes": "$0.02/1M tokens"
-          },
-          "url": "https://aws.amazon.com/bedrock/titan/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "amt-interpolation",
       "name": "AMT Interpolation",
       "category": "video_generation",
@@ -1165,7 +950,7 @@
       "id": "hf-animagine-xl-3-0",
       "name": "animagine xl 3.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 161,231 downloads · 778 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 143,503 downloads · 778 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -1193,7 +978,7 @@
       "id": "hf-animagine-xl-3-1",
       "name": "animagine xl 3.1",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 175,379 downloads · 706 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 174,990 downloads · 707 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -1334,7 +1119,7 @@
       "id": "hf-animatelcm",
       "name": "AnimateLCM",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 11,983 downloads · 344 likes. License: .",
+      "description": "Open-source model on HuggingFace. 11,160 downloads · 344 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -1868,6 +1653,34 @@
       ]
     },
     {
+      "id": "hf-bart-base",
+      "name": "bart base",
+      "category": "embedding",
+      "description": "Open-source model on HuggingFace. 1,814,203 downloads · 204 likes. License: apache-2.0.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama / transformers",
+      "updated_at": "2026-03-12",
+      "source": "huggingface",
+      "providers": [
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "notes": "Via HF Inference API — check hf.co/pricing"
+          },
+          "url": "https://huggingface.co/facebook/bart-base",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "ben-v2-image",
       "name": "ben-v2-image",
       "category": "image_generation",
@@ -2013,7 +1826,7 @@
       "id": "hf-bge-small-en-v1-5",
       "name": "bge small en v1.5",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 6,608,905 downloads · 417 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 7,158,219 downloads · 419 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -3269,16 +3082,6 @@
           "url": "https://openrouter.ai/anthropic/claude-3-opus",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 15.0,
-            "output_per_1m": 75.0
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
-          "available": true
         }
       ]
     },
@@ -3326,16 +3129,6 @@
           },
           "url": "https://openrouter.ai/anthropic/claude-3.5-haiku",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 0.8,
-            "output_per_1m": 4.0
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
           "available": true
         },
         {
@@ -3445,43 +3238,6 @@
       ]
     },
     {
-      "id": "claude-3-5-sonnet-v2",
-      "name": "Claude 3.5 Sonnet v2",
-      "category": "llm",
-      "description": "Anthropic Claude 3.5 Sonnet v2 on Amazon Bedrock.",
-      "tags": [
-        "anthropic",
-        "claude"
-      ],
-      "capabilities": [
-        "function_calling",
-        "prompt_caching",
-        "vision"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 3.0,
-        "output_per_1m": 15.0
-      },
-      "url": "https://aws.amazon.com/bedrock/claude/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 15.0
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "anthropic-claude-3-7-sonnet",
       "name": "Claude 3.7 Sonnet",
       "category": "llm",
@@ -3512,16 +3268,6 @@
             "notes": "Check aimlapi.com for current pricing"
           },
           "url": "https://aimlapi.com/models/claude-3-7-sonnet-api",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 15.0
-          },
-          "url": "https://aws.amazon.com/bedrock/claude/",
           "affiliate_url": null,
           "available": true
         },
@@ -5099,7 +4845,7 @@
       "id": "hf-cogvideox-2b",
       "name": "CogVideoX 2b",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 23,473 downloads · 351 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 21,880 downloads · 352 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -5519,7 +5265,7 @@
       "id": "hf-controlnet-union-sdxl-1-0",
       "name": "controlnet union sdxl 1.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 164,323 downloads · 1,691 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 138,504 downloads · 1,692 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -6501,16 +6247,6 @@
           "available": true
         },
         {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 1.35,
-            "output_per_1m": 5.4
-          },
-          "url": "https://aws.amazon.com/bedrock/",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
           "provider_id": "replicate",
           "pricing": {
             "notes": "Run count: 2,198,194. Check replicate.com for pricing."
@@ -7307,16 +7043,29 @@
       ]
     },
     {
-      "id": "deepseek-non-reasoner-v3-1-terminus",
+      "id": "deepseek-deepseek-v3-1-terminus",
       "name": "DeepSeek V3.1 Terminus",
       "category": "llm",
-      "description": "DeepSeek V3.1 Terminus non-reasoner is the latest advanced LLM, featuring an enhanced architecture and improved performance across a wide range of natural language tasks.",
+      "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's performance in coding and search a...",
       "tags": [],
-      "capabilities": [],
-      "context_k": 128000,
+      "capabilities": [
+        "function_calling",
+        "reasoning"
+      ],
+      "context_k": 164,
       "updated_at": "2026-03-12",
-      "source": "aimlapi",
+      "source": "openrouter",
       "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0.21,
+            "output_per_1m": 0.79
+          },
+          "url": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        },
         {
           "provider_id": "aimlapi",
           "pricing": {
@@ -7339,32 +7088,6 @@
       ]
     },
     {
-      "id": "deepseek-deepseek-v3-1-terminus",
-      "name": "DeepSeek V3.1 Terminus (exacto)",
-      "category": "llm",
-      "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's performance in coding and search a...",
-      "tags": [],
-      "capabilities": [
-        "function_calling",
-        "reasoning"
-      ],
-      "context_k": 164,
-      "updated_at": "2026-03-12",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 0.21,
-            "output_per_1m": 0.79
-          },
-          "url": "https://openrouter.ai/deepseek/deepseek-v3.1-terminus",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "deepseek-deepseek-v3-2",
       "name": "DeepSeek V3.2",
       "category": "llm",
@@ -7381,8 +7104,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.25,
-            "output_per_1m": 0.4
+            "input_per_1m": 0.26,
+            "output_per_1m": 0.38
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v3.2",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -7922,7 +7645,7 @@
       "id": "hf-diving-illustrious-real-asian-v50-sdxl",
       "name": "diving illustrious real asian v50 sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 236,853 downloads · 0 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 242,187 downloads · 0 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -8085,7 +7808,7 @@
       "id": "hf-dolphin-2-9-1-yi-1-5-34b",
       "name": "dolphin 2.9.1 yi 1.5 34b",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,658,428 downloads · 56 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 4,649,855 downloads · 57 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -9919,7 +9642,7 @@
       "id": "hf-fastwan2-2-ti2v-5b-fullattn-diffusers",
       "name": "FastWan2.2 TI2V 5B FullAttn Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 17,123 downloads · 61 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 20,522 downloads · 62 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -14610,10 +14333,32 @@
       ]
     },
     {
+      "id": "fireworks-gemma-3-1b-it",
+      "name": "Gemma 3 1B Instruct",
+      "category": "llm",
+      "description": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. Gemma 3 models are multimodal, handling text and image input and generating text output, with open weights for both pre-trained variants and instr",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-12",
+      "source": "fireworks",
+      "providers": [
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "notes": "Check fireworks.ai for pricing"
+          },
+          "url": "https://fireworks.ai/models/fireworks/gemma-3-1b-it",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "hf-gemma-3-1b-it",
       "name": "gemma 3 1b it",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,284,362 downloads · 869 likes. License: gemma.",
+      "description": "Open-source model on HuggingFace. 3,374,479 downloads · 872 likes. License: gemma.",
       "tags": [
         "open-source",
         "local"
@@ -15777,7 +15522,6 @@
       "description": "GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planni...",
       "tags": [],
       "capabilities": [
-        "function_calling",
         "reasoning"
       ],
       "context_k": 203,
@@ -15787,8 +15531,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.8,
-            "output_per_1m": 2.56
+            "input_per_1m": 0.72,
+            "output_per_1m": 2.3
           },
           "url": "https://openrouter.ai/z-ai/glm-5",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -15818,7 +15562,7 @@
       "id": "hf-glm-5-fp8",
       "name": "GLM 5 FP8",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,327,724 downloads · 128 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 4,135,532 downloads · 134 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -17912,7 +17656,7 @@
       "id": "hf-gpt2",
       "name": "gpt2",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 10,218,843 downloads · 3,121 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 10,503,929 downloads · 3,124 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -19056,6 +18800,35 @@
       ]
     },
     {
+      "id": "openrouter-healer-alpha",
+      "name": "Healer Alpha",
+      "category": "llm",
+      "description": "Healer Alpha is a frontier omni-modal model with vision, hearing, reasoning, and action capabilities. It brings the full power of agentic intelligence into the real world: natively perceiving visual and audio inputs, reasoning across modalities, and executing complex multi-step tasks with precisi...",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 262,
+      "updated_at": "2026-03-12",
+      "source": "openrouter",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0,
+            "output_per_1m": 0
+          },
+          "url": "https://openrouter.ai/openrouter/healer-alpha",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true,
+          "free_api": true,
+          "free_type": "open"
+        }
+      ]
+    },
+    {
       "id": "nousresearch-nous-hermes-llama2-13b",
       "name": "Hermes 13B",
       "category": "llm",
@@ -19560,7 +19333,7 @@
       "id": "hf-higgs-audio-v2-generation-3b-base",
       "name": "higgs audio v2 generation 3B base",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 309,438 downloads · 660 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 387,246 downloads · 660 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -19664,6 +19437,34 @@
           "url": "https://replicate.com/intelligent-utilities/html-to-image",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
           "available": true
+        }
+      ]
+    },
+    {
+      "id": "openrouter-hunter-alpha",
+      "name": "Hunter Alpha",
+      "category": "llm",
+      "description": "Hunter Alpha is a 1 Trillion parameter + 1M token context frontier intelligence model built for agentic use. It excels at long-horizon planning, complex reasoning, and sustained multi-step task execution, with the reliability and instruction-following precision that frameworks like OpenClaw need....",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning"
+      ],
+      "context_k": 1049,
+      "updated_at": "2026-03-12",
+      "source": "openrouter",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0,
+            "output_per_1m": 0
+          },
+          "url": "https://openrouter.ai/openrouter/hunter-alpha",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true,
+          "free_api": true,
+          "free_type": "open"
         }
       ]
     },
@@ -19962,24 +19763,6 @@
           "available": true
         }
       ]
-    },
-    {
-      "id": "hf-hunyuanimage-3-0",
-      "name": "HunyuanImage 3.0",
-      "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 698,179 downloads · 645 likes. License: other.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "Ollama / transformers",
-      "updated_at": "2026-03-12",
-      "source": "huggingface",
-      "providers": []
     },
     {
       "id": "replicate-hunyuanvideo-foley",
@@ -21174,7 +20957,7 @@
       "id": "hf-indic-parler-tts",
       "name": "indic parler tts",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 323,301 downloads · 212 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 421,599 downloads · 212 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -21589,7 +21372,7 @@
       "id": "hf-ip-adapter-faceid",
       "name": "IP Adapter FaceID",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 198,221 downloads · 1,824 likes. License: .",
+      "description": "Open-source model on HuggingFace. 196,149 downloads · 1,824 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -21802,7 +21585,7 @@
       "id": "hf-jina-embeddings-v3",
       "name": "jina embeddings v3",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 4,797,198 downloads · 1,134 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 4,552,547 downloads · 1,135 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -24216,6 +23999,24 @@
       ]
     },
     {
+      "id": "hf-lcm_dreamshaper_v7",
+      "name": "LCM Dreamshaper v7",
+      "category": "image_generation",
+      "description": "Open-source model on HuggingFace. 123,251 downloads · 416 likes. License: mit.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers",
+      "updated_at": "2026-03-12",
+      "source": "huggingface",
+      "providers": []
+    },
+    {
       "id": "leffa-pose-transfer",
       "name": "Leffa Pose Transfer",
       "category": "image_generation",
@@ -25200,16 +25001,6 @@
           "available": true
         },
         {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 2.4,
-            "output_per_1m": 2.4
-          },
-          "url": "https://aws.amazon.com/bedrock/llama/",
-          "affiliate_url": null,
-          "available": true
-        },
-        {
           "provider_id": "fireworks",
           "pricing": {
             "input_per_1m": 3.0,
@@ -25935,43 +25726,6 @@
       ]
     },
     {
-      "id": "llama-3-2-90b-vision",
-      "name": "Llama 3.2 90B Vision",
-      "category": "llm",
-      "description": "Meta Llama 3.2 90B multimodal on Amazon Bedrock.",
-      "tags": [
-        "meta",
-        "llama",
-        "multimodal",
-        "open-source"
-      ],
-      "capabilities": [
-        "vision"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 2.0,
-        "output_per_1m": 2.0
-      },
-      "url": "https://aws.amazon.com/bedrock/llama/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 2.0,
-            "output_per_1m": 2.0
-          },
-          "url": "https://aws.amazon.com/bedrock/llama/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "meta-llama-llama-3-2-90b-vision-instruct",
       "name": "Llama 3.2 90B Vision Instruct",
       "category": "llm",
@@ -26087,16 +25841,6 @@
           "available": true,
           "free_api": true,
           "free_type": "tier"
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 0.72,
-            "output_per_1m": 0.72
-          },
-          "url": "https://aws.amazon.com/bedrock/llama/",
-          "affiliate_url": null,
-          "available": true
         },
         {
           "provider_id": "fireworks",
@@ -27683,7 +27427,7 @@
       "id": "hf-ltx-2",
       "name": "LTX 2",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 1,659,021 downloads · 1,622 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 1,499,602 downloads · 1,630 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -27807,7 +27551,7 @@
       "id": "hf-ltx-2-3",
       "name": "LTX 2.3",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 175,440 downloads · 350 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 401,084 downloads · 530 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -27849,6 +27593,27 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "hf-ltx-2-3-fp8",
+      "name": "LTX 2.3 fp8",
+      "category": "video_generation",
+      "description": "Open-source model on HuggingFace. 94,136 downloads · 40 likes. License: other.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers",
+      "updated_at": "2026-03-12",
+      "source": "huggingface",
+      "providers": []
     },
     {
       "id": "replicate-ltx-2-3-pro",
@@ -28086,7 +27851,7 @@
       "id": "hf-ltx-video-iclora-detailer-13b-0-9-8",
       "name": "LTX Video ICLoRA detailer 13b 0.9.8",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 9,620 downloads · 26 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 10,636 downloads · 26 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -29220,7 +28985,7 @@
       "id": "hf-melotts-japanese",
       "name": "MeloTTS Japanese",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 223,718 downloads · 16 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 235,759 downloads · 16 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -29324,7 +29089,7 @@
       "id": "replicate-meta-llama-3-8b",
       "name": "Meta Llama 3 8B",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 2,732,166 downloads · 6,481 likes. License: llama3.",
+      "description": "Open-source model on HuggingFace. 3,099,431 downloads · 6,483 likes. License: llama3.",
       "tags": [],
       "capabilities": [],
       "context_k": null,
@@ -30964,29 +30729,6 @@
       ]
     },
     {
-      "id": "fireworks-mistral-7b-instruct-4k",
-      "name": "Mistal 7B Instruct V0.1",
-      "category": "llm",
-      "description": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 33,
-      "updated_at": "2026-03-12",
-      "source": "fireworks",
-      "providers": [
-        {
-          "provider_id": "fireworks",
-          "pricing": {
-            "input_per_1m": 0.2,
-            "output_per_1m": 0.2
-          },
-          "url": "https://fireworks.ai/models/fireworks/mistral-7b-instruct-4k",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "fireworks_ai-accounts-fireworks-models-mistral-7b",
       "name": "Mistral 7B",
       "category": "llm",
@@ -31146,10 +30888,7 @@
           "affiliate_url": null,
           "available": true
         }
-      ],
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "Ollama / transformers"
+      ]
     },
     {
       "id": "mistralai-mistral-7b-instruct-v0-3",
@@ -31351,40 +31090,6 @@
           },
           "url": "https://openrouter.ai/mistralai/mistral-large",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "mistral-large-2",
-      "name": "Mistral Large 2",
-      "category": "llm",
-      "description": "Mistral Large 2 on Amazon Bedrock.",
-      "tags": [
-        "mistral"
-      ],
-      "capabilities": [
-        "function_calling"
-      ],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "input_per_1m": 3.0,
-        "output_per_1m": 9.0
-      },
-      "url": "https://aws.amazon.com/bedrock/mistral/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "input_per_1m": 3.0,
-            "output_per_1m": 9.0
-          },
-          "url": "https://aws.amazon.com/bedrock/mistral/",
-          "affiliate_url": null,
           "available": true
         }
       ]
@@ -32532,7 +32237,7 @@
       "id": "hf-mms-300m-1130-forced-aligner",
       "name": "mms 300m 1130 forced aligner",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,236,391 downloads · 75 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 3,457,895 downloads · 76 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -32551,6 +32256,34 @@
             "notes": "Via HF Inference API — check hf.co/pricing"
           },
           "url": "https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "hf-mms-tts-hat",
+      "name": "mms tts hat",
+      "category": "audio_tts",
+      "description": "Open-source model on HuggingFace. 235,282 downloads · 3 likes. License: cc-by-nc-4.0.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama / transformers",
+      "updated_at": "2026-03-12",
+      "source": "huggingface",
+      "providers": [
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "notes": "Via HF Inference API — check hf.co/pricing"
+          },
+          "url": "https://huggingface.co/facebook/mms-tts-hat",
           "affiliate_url": null,
           "available": true
         }
@@ -32584,7 +32317,7 @@
       "id": "hf-mochi-1-preview",
       "name": "mochi 1 preview",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 8,682 downloads · 1,311 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 8,735 downloads · 1,311 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -32895,27 +32628,6 @@
           "available": true
         }
       ]
-    },
-    {
-      "id": "hf-mova-360p",
-      "name": "MOVA 360p",
-      "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 45,200 downloads · 209 likes. License: apache-2.0.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "ComfyUI / diffusers",
-      "updated_at": "2026-03-12",
-      "source": "huggingface",
-      "providers": []
     },
     {
       "id": "replicate-multi-image-kontext-max",
@@ -33696,6 +33408,34 @@
       ]
     },
     {
+      "id": "nvidia-nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super",
+      "category": "llm",
+      "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer Mixture-of-Experts architecture with multi-token prediction (MTP), it delivers ove...",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning"
+      ],
+      "context_k": 262,
+      "updated_at": "2026-03-12",
+      "source": "openrouter",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 0,
+            "output_per_1m": 0
+          },
+          "url": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true,
+          "free_api": true,
+          "free_type": "open"
+        }
+      ]
+    },
+    {
       "id": "nvidia-nemotron-nano-12b-v2-vl",
       "name": "Nemotron Nano 12B 2 VL",
       "category": "llm",
@@ -34372,6 +34112,30 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "fireworks-nvidia-nemotron-3-super-120b-a12b-fp8",
+      "name": "NVIDIA Nemotron 3 Super 120B A12B FP8",
+      "category": "llm",
+      "description": "Nemotron-3-Super-120B-A12B-FP8 is a large language model trained by NVIDIA for agentic, reasoning, and conversational tasks. It uses a hybrid Latent MoE architecture with interleaved Mamba-2 and MoE layers, plus Multi-Token Prediction (MTP) for faster generation. 12B active / 120B total parameters. ",
+      "tags": [],
+      "capabilities": [
+        "function_calling"
+      ],
+      "context_k": 262,
+      "updated_at": "2026-03-12",
+      "source": "fireworks",
+      "providers": [
+        {
+          "provider_id": "fireworks",
+          "pricing": {
+            "notes": "Check fireworks.ai for pricing"
+          },
+          "url": "https://fireworks.ai/models/fireworks/nvidia-nemotron-3-super-120b-a12b-fp8",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "fireworks_ai-accounts-fireworks-models-nvidia-nemotron-nano-12b-v2",
       "name": "Nvidia Nemotron Nano 12B V2",
       "category": "llm",
@@ -34985,34 +34749,6 @@
       ]
     },
     {
-      "id": "hf-obsession-illustriousxl-v10-sdxl",
-      "name": "obsession illustriousxl v10 sdxl",
-      "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 133,919 downloads · 1 likes. License: other.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "ComfyUI / diffusers",
-      "updated_at": "2026-03-12",
-      "source": "huggingface",
-      "providers": [
-        {
-          "provider_id": "huggingface",
-          "pricing": {
-            "notes": "Via HF Inference API — check hf.co/pricing"
-          },
-          "url": "https://huggingface.co/John6666/obsession-illustriousxl-v10-sdxl",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "replicate-ocr",
       "name": "Ocr",
       "category": "audio_stt",
@@ -35373,7 +35109,7 @@
       "id": "hf-one-obsession-17-red-sdxl",
       "name": "one obsession 17 red sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 284,719 downloads · 0 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 290,930 downloads · 0 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -35795,38 +35531,10 @@
       ]
     },
     {
-      "id": "hf-opensearch-neural-sparse-encoding-doc-v2-distill",
-      "name": "opensearch neural sparse encoding doc v2 distill",
-      "category": "embedding",
-      "description": "Open-source model on HuggingFace. 1,848,758 downloads · 19 likes. License: apache-2.0.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "sentence-transformers",
-      "updated_at": "2026-03-12",
-      "source": "huggingface",
-      "providers": [
-        {
-          "provider_id": "huggingface",
-          "pricing": {
-            "notes": "Via HF Inference API — check hf.co/pricing"
-          },
-          "url": "https://huggingface.co/opensearch-project/opensearch-neural-sparse-encoding-doc-v2-distill",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "hf-opt-125m",
       "name": "opt 125m",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 6,286,531 downloads · 233 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 6,879,004 downloads · 233 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -36268,7 +35976,7 @@
       "id": "hf-parler-tts-mini-multilingual-v1-1",
       "name": "parler tts mini multilingual v1.1",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 274,410 downloads · 54 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 267,175 downloads · 54 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -37524,7 +37232,7 @@
       "id": "hf-playground-v2-5-1024px-aesthetic",
       "name": "playground v2.5 1024px aesthetic",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 198,888 downloads · 757 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 193,721 downloads · 757 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -37795,7 +37503,7 @@
       "id": "hf-prefect-illustrious-xl-v3-sdxl",
       "name": "prefect illustrious xl v3 sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 142,146 downloads · 0 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 142,426 downloads · 0 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -39463,7 +39171,7 @@
       "id": "hf-qwen-image-lightning",
       "name": "Qwen Image Lightning",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 474,378 downloads · 776 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 454,557 downloads · 777 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -39896,7 +39604,7 @@
       "id": "hf-qwen2-1-5b-instruct",
       "name": "Qwen2 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,232,203 downloads · 161 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,112,592 downloads · 161 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -40044,7 +39752,7 @@
       "id": "hf-qwen2-5-0-5b-instruct",
       "name": "Qwen2.5 0.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 6,396,168 downloads · 476 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 6,739,286 downloads · 478 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -40082,7 +39790,7 @@
       "id": "hf-qwen2-5-1-5b-instruct",
       "name": "Qwen2.5 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 7,764,158 downloads · 630 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 8,419,706 downloads · 634 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -40230,7 +39938,7 @@
       "id": "hf-qwen2-5-3b-instruct",
       "name": "Qwen2.5 3B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 6,764,982 downloads · 410 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 7,148,149 downloads · 415 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -42812,8 +42520,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.15,
-            "output_per_1m": 1.2
+            "input_per_1m": 0.0975,
+            "output_per_1m": 0.78
           },
           "url": "https://openrouter.ai/qwen/qwen3-next-80b-a3b-thinking",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -42962,7 +42670,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-base",
       "name": "Qwen3 TTS 12Hz 0.6B Base",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 277,645 downloads · 189 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 309,071 downloads · 195 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -42980,7 +42688,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-customvoice",
       "name": "Qwen3 TTS 12Hz 0.6B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 263,078 downloads · 120 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 268,549 downloads · 121 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -42998,7 +42706,7 @@
       "id": "hf-qwen3-tts-12hz-1-7b-customvoice",
       "name": "Qwen3 TTS 12Hz 1.7B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 1,097,614 downloads · 1,260 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,132,202 downloads · 1,278 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -43071,14 +42779,12 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0,
-            "output_per_1m": 0
+            "input_per_1m": 0.26,
+            "output_per_1m": 2.6
           },
           "url": "https://openrouter.ai/qwen/qwen3-vl-235b-a22b-thinking",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true,
-          "free_api": true,
-          "free_type": "open"
+          "available": true
         }
       ]
     },
@@ -43141,14 +42847,12 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0,
-            "output_per_1m": 0
+            "input_per_1m": 0.13,
+            "output_per_1m": 1.56
           },
           "url": "https://openrouter.ai/qwen/qwen3-vl-30b-a3b-thinking",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true,
-          "free_api": true,
-          "free_type": "open"
+          "available": true
         }
       ]
     },
@@ -44149,7 +43853,7 @@
       "id": "hf-realistic_vision_v5-1_novae",
       "name": "Realistic Vision V5.1 noVAE",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 458,517 downloads · 238 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 428,608 downloads · 238 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -44177,7 +43881,7 @@
       "id": "hf-realvisxl_v5-0",
       "name": "RealVisXL V5.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 152,876 downloads · 141 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 138,692 downloads · 141 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -45891,7 +45595,7 @@
       "id": "hf-sd-turbo",
       "name": "sd turbo",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 780,924 downloads · 441 likes. License: .",
+      "description": "Open-source model on HuggingFace. 777,725 downloads · 442 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -45959,7 +45663,7 @@
       "id": "hf-sdxl-turbo",
       "name": "sdxl turbo",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 943,855 downloads · 2 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 930,962 downloads · 2 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -47311,10 +47015,7 @@
       "providers": [
         {
           "provider_id": "openrouter",
-          "pricing": {
-            "input_per_1m": 4.5,
-            "output_per_1m": 4.5
-          },
+          "pricing": {},
           "url": "https://openrouter.ai/raifle/sorcererlm-8x22b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
@@ -47809,15 +47510,6 @@
           "url": "https://www.together.ai/models/stable-diffusion-3",
           "affiliate_url": null,
           "available": true
-        },
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "per_image": 0.08
-          },
-          "url": "https://aws.amazon.com/bedrock/stability-ai/",
-          "affiliate_url": null,
-          "available": true
         }
       ],
       "open_source": true,
@@ -47913,7 +47605,7 @@
       "id": "hf-stable-diffusion-inpainting",
       "name": "stable diffusion inpainting",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 202,895 downloads · 100 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 176,019 downloads · 100 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -47933,7 +47625,7 @@
       "id": "hf-stable-diffusion-v1-4",
       "name": "stable diffusion v1 4",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 528,185 downloads · 6,984 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 553,589 downloads · 6,983 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -47961,7 +47653,7 @@
       "id": "hf-stable-diffusion-v1-5",
       "name": "stable diffusion v1 5",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 1,506,518 downloads · 1,030 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 1,487,250 downloads · 1,036 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -48105,7 +47797,7 @@
       "id": "stable-diffusion-xl",
       "name": "stable diffusion xl base 1.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 2,337,347 downloads · 7,511 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 2,278,234 downloads · 7,521 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -48154,37 +47846,6 @@
       ]
     },
     {
-      "id": "stable-image-ultra",
-      "name": "Stable Image Ultra",
-      "category": "image_generation",
-      "description": "Stability AI Stable Image Ultra on Amazon Bedrock. Highest quality.",
-      "tags": [
-        "stability-ai",
-        "image"
-      ],
-      "capabilities": [],
-      "open_source": false,
-      "local_available": false,
-      "pricing": {
-        "per_image": 0.14
-      },
-      "url": "https://aws.amazon.com/bedrock/stability-ai/",
-      "updated_at": "2026-03-12",
-      "source": "bedrock",
-      "context_k": null,
-      "providers": [
-        {
-          "provider_id": "bedrock",
-          "pricing": {
-            "per_image": 0.14
-          },
-          "url": "https://aws.amazon.com/bedrock/stability-ai/",
-          "affiliate_url": null,
-          "available": true
-        }
-      ]
-    },
-    {
       "id": "fast-svd",
       "name": "Stable Video Diffusion",
       "category": "video_generation",
@@ -48212,7 +47873,7 @@
       "id": "hf-stable-video-diffusion-img2vid",
       "name": "stable video diffusion img2vid",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 190,696 downloads · 1,013 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 199,046 downloads · 1,015 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -48232,7 +47893,7 @@
       "id": "hf-stable-video-diffusion-img2vid-xt",
       "name": "stable video diffusion img2vid xt",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 179,243 downloads · 3,240 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 192,697 downloads · 3,244 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -49195,7 +48856,7 @@
       "id": "hf-text-to-video-ms-1-7b",
       "name": "text to video ms 1.7b",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 10,207 downloads · 651 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 10,377 downloads · 651 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -49287,7 +48948,7 @@
       "id": "hf-tiny-qwen2forcausallm-2-5",
       "name": "tiny Qwen2ForCausalLM 2.5",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 6,243,540 downloads · 4 likes. License: .",
+      "description": "Open-source model on HuggingFace. 6,449,076 downloads · 4 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -49314,7 +48975,7 @@
       "id": "hf-tiny-random-stable-diffusion-xl",
       "name": "tiny random stable diffusion xl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 139,894 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 143,336 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -49342,7 +49003,7 @@
       "id": "hf-tiny-stable-diffusion-torch",
       "name": "tiny stable diffusion torch",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 146,546 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 148,114 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -49694,7 +49355,7 @@
       "id": "hf-uae-large-v1",
       "name": "UAE Large V1",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 2,593,451 downloads · 237 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 2,457,582 downloads · 237 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -50414,20 +50075,8 @@
           "url": "https://fal.ai/models/fal-ai/vibevoice",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
-        },
-        {
-          "provider_id": "huggingface",
-          "pricing": {
-            "notes": "Via HF Inference API — check hf.co/pricing"
-          },
-          "url": "https://huggingface.co/microsoft/VibeVoice-1.5B",
-          "affiliate_url": null,
-          "available": true
         }
-      ],
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "kokoro-fastapi / transformers"
+      ]
     },
     {
       "id": "vibevoice-7b",
@@ -50455,7 +50104,7 @@
       "id": "hf-vibevoice-realtime-0-5b",
       "name": "VibeVoice Realtime 0.5B",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 421,644 downloads · 1,137 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 331,100 downloads · 1,140 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -50478,6 +50127,24 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "hf-vicuna-7b-v1-5",
+      "name": "vicuna 7b v1.5",
+      "category": "llm",
+      "description": "Open-source model on HuggingFace. 2,852,921 downloads · 388 likes. License: llama2.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama / transformers",
+      "updated_at": "2026-03-12",
+      "source": "huggingface",
+      "providers": []
     },
     {
       "id": "bria-video-background-removal",
@@ -51499,7 +51166,7 @@
       "id": "hf-w2v-bert-2-0",
       "name": "w2v bert 2.0",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 3,257,883 downloads · 206 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 2,936,458 downloads · 206 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -51571,7 +51238,7 @@
       "id": "hf-wai-nsfw-illustrious-v80-sdxl",
       "name": "wai nsfw illustrious v80 sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 353,531 downloads · 5 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 342,620 downloads · 5 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -52846,7 +52513,7 @@
       "id": "hf-wan2-1-i2v-14b-480p",
       "name": "Wan2.1 I2V 14B 480P",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 72,400 downloads · 205 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 112,634 downloads · 206 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -52866,7 +52533,7 @@
       "id": "hf-wan2-1-i2v-14b-720p",
       "name": "Wan2.1 I2V 14B 720P",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 65,161 downloads · 566 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 66,168 downloads · 567 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -52886,7 +52553,7 @@
       "id": "hf-wan2-1-t2v-1-3b",
       "name": "Wan2.1 T2V 1.3B",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 15,036 downloads · 434 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 15,772 downloads · 435 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -52906,7 +52573,7 @@
       "id": "hf-wan2-1-t2v-1-3b-diffusers",
       "name": "Wan2.1 T2V 1.3B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 96,218 downloads · 112 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 104,028 downloads · 113 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -52926,7 +52593,7 @@
       "id": "hf-wan2-1-t2v-14b",
       "name": "Wan2.1 T2V 14B",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 29,085 downloads · 1,473 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 29,711 downloads · 1,473 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -52975,7 +52642,7 @@
       "id": "hf-wan2-2-distill-loras",
       "name": "Wan2.2 Distill Loras",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 2,136,085 downloads · 210 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,223,417 downloads · 213 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -52996,7 +52663,7 @@
       "id": "hf-wan2-2-i2v-a14b-diffusers",
       "name": "Wan2.2 I2V A14B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 103,643 downloads · 207 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 102,554 downloads · 208 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53016,7 +52683,7 @@
       "id": "hf-wan2-2-i2v-a14b-lightning-diffusers",
       "name": "Wan2.2 I2V A14B Lightning Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 33,452 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 33,292 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53037,7 +52704,7 @@
       "id": "hf-wan2-2-ti2v-5b-diffusers",
       "name": "Wan2.2 TI2V 5B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 41,167 downloads · 112 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 42,034 downloads · 111 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53084,7 +52751,7 @@
       "id": "hf-wav2vec2-base-960h",
       "name": "wav2vec2 base 960h",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,438,895 downloads · 391 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,431,566 downloads · 391 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53112,7 +52779,7 @@
       "id": "hf-wav2vec2-indonesian-javanese-sundanese",
       "name": "wav2vec2 indonesian javanese sundanese",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 2,743,747 downloads · 11 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,564,538 downloads · 12 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53137,10 +52804,10 @@
       ]
     },
     {
-      "id": "hf-wav2vec2-large-xlsr-53-dutch",
-      "name": "wav2vec2 large xlsr 53 dutch",
+      "id": "hf-wav2vec2-large-xlsr-53-arabic",
+      "name": "wav2vec2 large xlsr 53 arabic",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 2,503,670 downloads · 13 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,639,587 downloads · 51 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53158,7 +52825,7 @@
           "pricing": {
             "notes": "Via HF Inference API — check hf.co/pricing"
           },
-          "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-dutch",
+          "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
           "affiliate_url": null,
           "available": true
         }
@@ -53168,7 +52835,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-greek",
       "name": "wav2vec2 large xlsr 53 greek",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 2,723,944 downloads · 3 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,546,443 downloads · 3 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53196,7 +52863,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-polish",
       "name": "wav2vec2 large xlsr 53 polish",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,074,268 downloads · 12 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,122,714 downloads · 12 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53224,7 +52891,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-portuguese",
       "name": "wav2vec2 large xlsr 53 portuguese",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,336,153 downloads · 38 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,807,694 downloads · 38 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53252,7 +52919,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-russian",
       "name": "wav2vec2 large xlsr 53 russian",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 4,300,796 downloads · 64 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 5,078,400 downloads · 64 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53978,6 +53645,24 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "hf-z-image-lora",
+      "name": "Z Image Lora",
+      "category": "image_generation",
+      "description": "Open-source model on HuggingFace. 131,130 downloads · 45 likes. License: apache-2.0.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "ComfyUI / diffusers",
+      "updated_at": "2026-03-12",
+      "source": "huggingface",
+      "providers": []
+    },
+    {
       "id": "replicate-z-image-turbo-img2img",
       "name": "Z Image Turbo Img2Img",
       "category": "image_generation",
@@ -54129,7 +53814,7 @@
       "id": "hf-zeroscope_v2_576w",
       "name": "zeroscope v2 576w",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 9,944 downloads · 492 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 10,133 downloads · 492 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
