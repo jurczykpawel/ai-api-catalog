@@ -1,5 +1,21 @@
 {
   "updated_at": "2026-03-13",
+  "source_counts": {
+    "fal": 591,
+    "openrouter": 433,
+    "replicate": 327,
+    "bedrock": 53,
+    "huggingface": 75,
+    "manual": 73,
+    "opencode": 10,
+    "aimlapi": 48,
+    "litellm": 491,
+    "fireworks": 90,
+    "piapi": 2,
+    "wavespeed": 4,
+    "minimax": 4,
+    "runway": 2
+  },
   "models": [
     {
       "id": "vibevoice-0-5b",
@@ -17261,7 +17277,7 @@
       "id": "hf-gemma-3-1b-it",
       "name": "Gemma 3 1B It",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,355,725 downloads · 874 likes. License: gemma.",
+      "description": "Open-source model on HuggingFace. 3,355,725 downloads · 875 likes. License: gemma.",
       "tags": [
         "open-source",
         "local"

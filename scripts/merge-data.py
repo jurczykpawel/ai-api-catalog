@@ -1306,8 +1306,16 @@ def main():
     print(f"  Razem:       {len(merged)} modeli po merge")
 
     today = str(date.today())
+
+    # Zlicz modele per źródło (po merge)
+    source_counts: dict[str, int] = {}
+    for m in merged:
+        src = m.get("source", "unknown")
+        source_counts[src] = source_counts.get(src, 0) + 1
+
     output = {
         "updated_at": today,
+        "source_counts": source_counts,
         "models": merged
     }
 
