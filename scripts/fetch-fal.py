@@ -8,11 +8,17 @@ Użycie:
   python3 scripts/fetch-fal.py [ścieżka-wyjściowa]
 """
 
-import gzip, json, sys, urllib.request, urllib.parse
+import json, subprocess, sys, time, urllib.parse
 from pathlib import Path
 
 FAL_API   = "https://api.fal.ai/v1/models"
 OUTPUT_DEFAULT = "data/fal-raw.json"
+
+CURL_HEADERS = [
+    "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept: application/json",
+    "Accept-Language: en-US,en;q=0.9",
+]
 
 # Kategorie fal.ai → nasze kategorie
 CATEGORY_MAP = {
@@ -39,6 +45,21 @@ SKIP_CATEGORIES = {
 }
 
 
+def curl_get(url: str) -> dict:
+    cmd = ["curl", "-s", "--compressed", "--fail", "--max-time", "30"]
+    for h in CURL_HEADERS:
+        cmd += ["-H", h]
+    cmd.append(url)
+    for attempt in range(3):
+        result = subprocess.run(cmd, capture_output=True, text=True, stdin=subprocess.DEVNULL)
+        if result.returncode == 0:
+            return json.loads(result.stdout)
+        if attempt < 2:
+            print(f"  ↻ fal.ai 429 na stronie, retry za 30s... (attempt {attempt+1}/3)")
+            time.sleep(30)
+    raise RuntimeError(f"curl failed after 3 attempts (exit {result.returncode})")
+
+
 def fetch(output_path: str):
     all_models = []
     cursor = None
@@ -52,18 +73,7 @@ def fetch(output_path: str):
             params["cursor"] = cursor
 
         url = FAL_API + "?" + urllib.parse.urlencode(params)
-        req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-            "Accept": "application/json",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Accept-Encoding": "gzip, deflate",
-        })
-
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            raw = resp.read()
-            if resp.headers.get("Content-Encoding") == "gzip":
-                raw = gzip.decompress(raw)
-            data = json.loads(raw)
+        data = curl_get(url)
 
         models = data.get("models", [])
         all_models.extend(models)
@@ -72,6 +82,7 @@ def fetch(output_path: str):
         if not data.get("has_more") or not models:
             break
         cursor = data.get("next_cursor")
+        time.sleep(1)
 
     # Filtrujemy do kategorii które nas interesują
     filtered = []
