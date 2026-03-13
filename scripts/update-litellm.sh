@@ -52,7 +52,11 @@ fetch_with_retry "OpenRouter" python3 "$SCRIPT_DIR/fetch-openrouter.py" "$DATA_D
 
 echo ""
 echo "[3/9] Pobieranie fal.ai..."
-fetch_with_retry "fal.ai" python3 "$SCRIPT_DIR/fetch-fal.py" "$DATA_DIR/fal-raw.json"
+if [ -n "$FAL_PREFETCHED" ]; then
+  echo "✓ fal.ai — pobrano wcześniej przez SSH, pomijam"
+else
+  fetch_with_retry "fal.ai" python3 "$SCRIPT_DIR/fetch-fal.py" "$DATA_DIR/fal-raw.json"
+fi
 
 echo ""
 echo "[4/9] Pobieranie HuggingFace..."
