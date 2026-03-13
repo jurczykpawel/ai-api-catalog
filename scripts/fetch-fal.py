@@ -8,7 +8,7 @@ Użycie:
   python3 scripts/fetch-fal.py [ścieżka-wyjściowa]
 """
 
-import json, sys, urllib.request, urllib.parse
+import gzip, json, sys, urllib.request, urllib.parse
 from pathlib import Path
 
 FAL_API   = "https://api.fal.ai/v1/models"
@@ -55,10 +55,15 @@ def fetch(output_path: str):
         req = urllib.request.Request(url, headers={
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
             "Accept": "application/json",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Accept-Encoding": "gzip, deflate",
         })
 
         with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read())
+            raw = resp.read()
+            if resp.headers.get("Content-Encoding") == "gzip":
+                raw = gzip.decompress(raw)
+            data = json.loads(raw)
 
         models = data.get("models", [])
         all_models.extend(models)
