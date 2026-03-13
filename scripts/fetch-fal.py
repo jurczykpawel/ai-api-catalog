@@ -8,7 +8,7 @@ Użycie:
   python3 scripts/fetch-fal.py [ścieżka-wyjściowa]
 """
 
-import json, sys, time, urllib.request, urllib.parse
+import json, sys, urllib.request, urllib.parse
 from pathlib import Path
 
 FAL_API   = "https://api.fal.ai/v1/models"
@@ -96,9 +96,4 @@ def fetch(output_path: str):
 
 if __name__ == "__main__":
     output = sys.argv[1] if len(sys.argv) > 1 else OUTPUT_DEFAULT
-    # Skip jeśli plik istnieje i ma mniej niż 2 godziny (np. pobrany przez SSH z mikrusa)
-    out_path = Path(output)
-    if out_path.exists() and (time.time() - out_path.stat().st_mtime) < 7200:
-        print(f"✓ fal-raw.json świeży ({int(time.time() - out_path.stat().st_mtime)}s temu) — pomijam fetch")
-        sys.exit(0)
     fetch(output)
