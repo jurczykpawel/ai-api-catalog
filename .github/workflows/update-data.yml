@@ -19,6 +19,22 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Setup SSH (mikrus)
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Fetch fal.ai via mikrus
+        run: |
+          ssh -i ~/.ssh/deploy_key -p ${{ secrets.DEPLOY_PORT }} -o StrictHostKeyChecking=no \
+            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
+            'python3 - data/fal-raw.json' < scripts/fetch-fal.py
+          scp -i ~/.ssh/deploy_key -P ${{ secrets.DEPLOY_PORT }} -o StrictHostKeyChecking=no \
+            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:data/fal-raw.json \
+            data/fal-raw.json
+
       - name: Run update script
         env:
           FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
