@@ -1216,6 +1216,9 @@
     color: var(--text-3);
     white-space: nowrap;
   }
+  .footer-src-added   { color: #4ade80; border-color: #4ade8033; }
+  .footer-src-updated { color: var(--accent); border-color: var(--border-acc); }
+  .footer-src-removed { color: #f87171; border-color: #f8717133; }
 
   /* ── LANG TOGGLE ── */
   .lang-toggle {
@@ -1750,21 +1753,14 @@ async function loadData() {
     providersData.providers.forEach(p => { allProviders[p.id] = p; });
 
     document.getElementById('footer-date').textContent = t('dataFrom') + ' ' + modelsData.updated_at;
-    if (modelsData.source_counts) {
+    const stats = modelsData.update_stats;
+    if (stats && (stats.added || stats.updated || stats.removed)) {
       const sourcesEl = document.getElementById('footer-sources');
-      const srcNames = {
-        fal: 'fal.ai', openrouter: 'OpenRouter', litellm: 'LiteLLM',
-        replicate: 'Replicate', fireworks: 'Fireworks AI', huggingface: 'HuggingFace',
-        aimlapi: 'AIMLAPI', bedrock: 'AWS Bedrock', opencode: 'OpenCode',
-        wavespeed: 'WaveSpeed', minimax: 'MiniMax', piapi: 'piapi.ai',
-        runway: 'Runway', manual: 'curated'
-      };
-      const order = ['fal','openrouter','litellm','replicate','fireworks','huggingface','aimlapi','bedrock','opencode','wavespeed','minimax','piapi','runway','manual'];
-      const counts = modelsData.source_counts;
-      const sorted = Object.keys(counts).sort((a,b) => (order.indexOf(a)+1||99) - (order.indexOf(b)+1||99));
-      sourcesEl.innerHTML = sorted.map(src =>
-        `<span class="footer-src-badge">${srcNames[src]||src} <strong>${counts[src]}</strong></span>`
-      ).join('');
+      const parts = [];
+      if (stats.added)   parts.push(`<span class="footer-src-badge footer-src-added">+${stats.added} ${lang==='pl'?'nowych':'new'}</span>`);
+      if (stats.updated) parts.push(`<span class="footer-src-badge footer-src-updated">~${stats.updated} ${lang==='pl'?'zmienionych':'updated'}</span>`);
+      if (stats.removed) parts.push(`<span class="footer-src-badge footer-src-removed">-${stats.removed} ${lang==='pl'?'usuniętych':'removed'}</span>`);
+      sourcesEl.innerHTML = parts.join('');
     }
     document.getElementById('stat-models').textContent = allModels.length;
     document.getElementById('stat-providers').textContent = providersData.providers.length;

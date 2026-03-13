@@ -1313,9 +1313,32 @@ def main():
         src = m.get("source", "unknown")
         source_counts[src] = source_counts.get(src, 0) + 1
 
+    # Diff względem poprzedniej wersji katalogu
+    update_stats: dict = {"added": 0, "removed": 0, "updated": 0, "unchanged": 0}
+    out_path = Path(args.output)
+    if out_path.exists():
+        try:
+            prev = json.loads(out_path.read_text(encoding="utf-8"))
+            prev_map = {m["id"]: m for m in prev.get("models", [])}
+            new_map  = {m["id"]: m for m in merged}
+            for mid, m in new_map.items():
+                if mid not in prev_map:
+                    update_stats["added"] += 1
+                else:
+                    # Porównaj providers (ceny mogły się zmienić)
+                    if json.dumps(m.get("providers"), sort_keys=True) != json.dumps(prev_map[mid].get("providers"), sort_keys=True):
+                        update_stats["updated"] += 1
+                    else:
+                        update_stats["unchanged"] += 1
+            update_stats["removed"] = sum(1 for mid in prev_map if mid not in new_map)
+            print(f"  Diff:        +{update_stats['added']} nowych, ~{update_stats['updated']} zmienionych, -{update_stats['removed']} usuniętych")
+        except Exception:
+            pass
+
     output = {
         "updated_at": today,
         "source_counts": source_counts,
+        "update_stats": update_stats,
         "models": merged
     }
 
