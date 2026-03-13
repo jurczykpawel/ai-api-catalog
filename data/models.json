@@ -120,6 +120,30 @@
       ]
     },
     {
+      "id": "wan-v2-2-5b-distill",
+      "name": "2.2 5B Distill",
+      "category": "video_generation",
+      "description": "Wan 2.2's 5B distill model produces up to 5 seconds of video 720p at 24FPS with fluid motion and powerful prompt understanding",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video/distill",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "wan-v2-2-5b-fast-wan",
       "name": "2.2 5B Fast Wan",
       "category": "video_generation",
@@ -251,6 +275,28 @@
       ]
     },
     {
+      "id": "tada-3b-text-to-speech",
+      "name": "3B Text To Speech",
+      "category": "music_generation",
+      "description": "A unified speech-language model that synchronizes speech and text into a single, cohesive stream via 1:1 alignment.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/tada/3b/text-to-speech",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "pixverse-v4-effects",
       "name": "4.0 Effects",
       "category": "video_generation",
@@ -332,6 +378,7 @@
       "description": "Generate high quality and fast video clips from text and image prompts using PixVerse v4.5 fast",
       "tags": [],
       "capabilities": [
+        "image_to_video",
         "text_to_video"
       ],
       "context_k": null,
@@ -1406,6 +1453,31 @@
       ]
     },
     {
+      "id": "amt-interpolation-frame-interpolation",
+      "name": "AMT Frame Interpolation",
+      "category": "video_generation",
+      "description": "Interpolate between image frames",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/amt-interpolation/frame-interpolation",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "amt-interpolation",
       "name": "AMT Interpolation",
       "category": "video_generation",
@@ -1599,7 +1671,7 @@
       "id": "fast-animatediff",
       "name": "AnimateDiff",
       "category": "video_generation",
-      "description": "Animate your ideas!",
+      "description": "Re-animate your videos!",
       "tags": [],
       "capabilities": [
         "image_to_video",
@@ -1621,10 +1693,35 @@
       ]
     },
     {
+      "id": "animatediff-sparsectrl-lcm",
+      "name": "Animatediff SparseCtrl LCM",
+      "category": "video_generation",
+      "description": "Animate Your Drawings with Latent Consistency Models!",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/animatediff-sparsectrl-lcm",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "fast-animatediff-turbo",
       "name": "AnimateDiff Turbo",
       "category": "video_generation",
-      "description": "Animate your ideas in lightning speed!",
+      "description": "Re-animate your videos in lightning speed!",
       "tags": [],
       "capabilities": [
         "image_to_video",
@@ -2127,27 +2224,20 @@
       ]
     },
     {
-      "id": "bagel",
+      "id": "replicate-bagel",
       "name": "Bagel",
       "category": "image_generation",
-      "description": "Bagel is a 7B parameter from Bytedance-Seed multimodal model that can generate both text and images.",
-      "tags": [],
-      "capabilities": [
-        "image_editing"
+      "description": "🥯ByteDance Seed's Bagel Unified multimodal AI that generates images, edits images, and understands images in one 7B parameter model🥯",
+      "tags": [
+        "open-source"
       ],
+      "capabilities": [],
       "context_k": null,
+      "open_source": true,
+      "local_available": true,
       "updated_at": "2026-03-13",
-      "source": "fal",
+      "source": "replicate",
       "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/bagel",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -2158,8 +2248,6 @@
           "available": true
         }
       ],
-      "open_source": true,
-      "local_available": true,
       "local_tool": "ComfyUI / diffusers"
     },
     {
@@ -2206,6 +2294,28 @@
           },
           "url": "https://huggingface.co/facebook/bart-base",
           "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "maya-batch",
+      "name": "Batch",
+      "category": "audio_tts",
+      "description": "Maya1 is a state-of-the-art speech model by Maya Research for expressive voice generation, built to capture real human emotion and precise voice design.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/maya/batch",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -2885,6 +2995,30 @@
       ]
     },
     {
+      "id": "calligrapher",
+      "name": "Calligrapher",
+      "category": "image_generation",
+      "description": "Use the text and font retaining capabilities of calligrapher to modify texts on your books, clothes and many more.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/calligrapher",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-canary-qwen-2-5b",
       "name": "Canary Qwen 2.5B",
       "category": "audio_stt",
@@ -3031,6 +3165,30 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/ccsr",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "chain-of-zoom",
+      "name": "Chain Of Zoom",
+      "category": "image_generation",
+      "description": "Extreme Super-Resolution via Scale Autoregression and Preference Alignment",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/chain-of-zoom",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -3359,6 +3517,30 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/chrono-edit",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "chrono-edit-lora",
+      "name": "Chrono Edit Lora",
+      "category": "image_generation",
+      "description": "LoRA endpoint for the Chrono Edit model.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/chrono-edit-lora",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -6240,7 +6422,9 @@
       "category": "image_generation",
       "description": "Generate Images with ControlNet.",
       "tags": [],
-      "capabilities": [],
+      "capabilities": [
+        "image_editing"
+      ],
       "context_k": null,
       "updated_at": "2026-03-13",
       "source": "fal",
@@ -6273,6 +6457,30 @@
       "updated_at": "2026-03-13",
       "source": "huggingface",
       "providers": []
+    },
+    {
+      "id": "controlnext",
+      "name": "ControlNeXt SVD",
+      "category": "video_generation",
+      "description": "Animate a reference image with a driving video using ControlNeXt.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/controlnext",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
     },
     {
       "id": "cosmos-predict-2-5",
@@ -6397,18 +6605,27 @@
       ]
     },
     {
-      "id": "replicate-crystal-upscaler",
+      "id": "clarityai-crystal-upscaler",
       "name": "Crystal Upscaler",
       "category": "image_generation",
-      "description": "High-precision image upscaler optimized for portraits, faces and products. One of the upscale modes powered by Clarity AI. X:https://x.com/philz1337x",
+      "description": "An advanced image enhancement tool designed specifically for facial details and portrait photography, utilizing Clarity AI's upscaling technology.",
       "tags": [],
-      "capabilities": [],
+      "capabilities": [
+        "image_editing"
+      ],
       "context_k": null,
-      "open_source": false,
-      "local_available": false,
       "updated_at": "2026-03-13",
-      "source": "replicate",
+      "source": "fal",
       "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/clarityai/crystal-upscaler",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -6416,6 +6633,30 @@
           },
           "url": "https://replicate.com/philz1337x/crystal-upscaler",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "clarityai-crystal-video-upscaler",
+      "name": "Crystal Upscaler [Video]",
+      "category": "video_generation",
+      "description": "Do high precision video upscaling that respects the original video perfectly using Crystal Upscaler's new video upscaling method!",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/clarityai/crystal-video-upscaler",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -9023,6 +9264,54 @@
       ]
     },
     {
+      "id": "docres",
+      "name": "DocRes",
+      "category": "image_generation",
+      "description": "Enhance low-resolution, blur, shadowed documents with the superior quality of docres for sharper, clearer results.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/docres",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "docres-dewarp",
+      "name": "DocRes-dewarp",
+      "category": "image_generation",
+      "description": "Enhance wraped, folded documents with the superior quality of docres for sharper, clearer results.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/docres/dewarp",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "fireworks_ai-accounts-fireworks-models-dolphin-2-9-2-qwen2-72b",
       "name": "Dolphin 2 9 2 Qwen2 72B",
       "category": "llm",
@@ -9417,6 +9706,30 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/dreamshaper",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "dubbing",
+      "name": "Dubbing",
+      "category": "video_generation",
+      "description": "This endpoint delivers seamlessly localized videos by generating lip-synced dubs in multiple languages, ensuring natural and immersive multilingual experiences",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/dubbing",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -10309,6 +10622,30 @@
       ]
     },
     {
+      "id": "era-3d",
+      "name": "Era 3D",
+      "category": "image_generation",
+      "description": "A powerful image to novel multiview model with normals.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/era-3d",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-eraser",
       "name": "Eraser",
       "category": "video_generation",
@@ -10915,6 +11252,30 @@
       ]
     },
     {
+      "id": "pixverse-extend-fast",
+      "name": "Extend Fast",
+      "category": "video_generation",
+      "description": "PixVerse Extend model is a video extending tool for your videos using with high-quality video extending techniques ",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/pixverse/extend/fast",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "f-lite-standard",
       "name": "F Lite",
       "category": "image_generation",
@@ -11334,6 +11695,28 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "bria-fibo-bbq-preview-generate",
+      "name": "Fibo Bbq Preview",
+      "category": "image_generation",
+      "description": "A preview to the next level of control of Text-to-Image models.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/bria/fibo-bbq-preview/generate",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "bria-fibo-edit",
       "name": "Fibo Edit",
       "category": "image_generation",
@@ -11368,6 +11751,30 @@
       "open_source": true,
       "local_available": true,
       "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "bria-fibo-edit-add_object_by_text",
+      "name": "Fibo Edit [Add Object by Text]",
+      "category": "image_generation",
+      "description": "Precise, context-aware insertion of new objects into an existing image using simple, structured spatial commands.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/bria/fibo-edit/add_object_by_text",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
     },
     {
       "id": "bria-fibo-edit-blend",
@@ -12050,6 +12457,30 @@
       ]
     },
     {
+      "id": "flowedit",
+      "name": "Flow-Edit",
+      "category": "image_generation",
+      "description": "The model provides you high quality image editing capabilities.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flowedit",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "fireworks_ai-accounts-fireworks-models-flux-1-dev",
       "name": "Flux 1 Dev",
       "category": "llm",
@@ -12297,6 +12728,126 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/flux-2",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-4b",
+      "name": "Flux 2 [klein] 4B",
+      "category": "image_generation",
+      "description": "Image-to-image editing with Flux 2 [klein] 4B from Black Forest Labs. Precise modifications using natural language descriptions and hex color control.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/4b",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-4b-base",
+      "name": "Flux 2 [klein] 4B Base",
+      "category": "image_generation",
+      "description": "Image-to-image editing with Flux 2 [klein] 4B Base from Black Forest Labs. Precise modifications using natural language descriptions and hex color control.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/4b/base",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-4b-base-lora",
+      "name": "Flux 2 [klein] 4B Base Lora",
+      "category": "image_generation",
+      "description": "Image-to-image editing with LoRA support for FLUX.2 [klein] 4B Base from Black Forest Labs. Specialized style transfer and domain-specific modifications.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/4b/base/edit/lora",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-9b-base-lora",
+      "name": "Flux 2 [klein] 9B Base Lora",
+      "category": "image_generation",
+      "description": "Image-to-image editing with LoRA support for FLUX.2 [klein] 9B Base from Black Forest Labs. Specialized style transfer and domain-specific modifications.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/9b/base/edit/lora",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-realtime",
+      "name": "Flux 2 [klein] Realtime",
+      "category": "image_generation",
+      "description": "Realtime generation with FLUX.2 [klein] from Black Forest Labs. ",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/realtime",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -13326,6 +13877,50 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "flux-krea-lora-stream",
+      "name": "Flux Krea Lora",
+      "category": "image_generation",
+      "description": "Super fast endpoint for the FLUX.1 [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-krea-lora/stream",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-lora-stream",
+      "name": "Flux Lora",
+      "category": "image_generation",
+      "description": "Super fast endpoint for the FLUX.1 [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-lora/stream",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-flux-multi-controlnet",
       "name": "Flux Multi Controlnet",
       "category": "image_generation",
@@ -13688,6 +14283,30 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/flux-lora-depth",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-differential-diffusion",
+      "name": "FLUX.1 [dev] Differential Diffusion",
+      "category": "image_generation",
+      "description": "FLUX.1 Differential Diffusion is a rapid endpoint that enables swift, granular control over image transformations through change maps, delivering fast and precise region-specific modifications while maintaining FLUX.1 [dev]'s high-quality output.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-differential-diffusion",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -14163,7 +14782,7 @@
       ]
     },
     {
-      "id": "flux-1-krea-redux",
+      "id": "flux-krea-redux",
       "name": "FLUX.1 Krea [dev] Redux",
       "category": "image_generation",
       "description": "FLUX.1 Krea [dev] Redux is a high-performance endpoint for the FLUX.1 Krea [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities.",
@@ -14180,7 +14799,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux-1/krea/redux",
+          "url": "https://fal.ai/models/fal-ai/flux/krea/redux",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -14371,6 +14990,54 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/flux-subject",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-9b",
+      "name": "FLUX.2 [klein] 9B",
+      "category": "image_generation",
+      "description": "Image-to-image editing with Flux 2 [klein] 9B from Black Forest Labs. Precise modifications using natural language descriptions and hex color control.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/9b",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "flux-2-klein-9b-base",
+      "name": "FLUX.2 [klein] 9B Base",
+      "category": "image_generation",
+      "description": "Image-to-image editing with Flux 2 [klein] 9B Base from Black Forest Labs. Precise modifications using natural language descriptions and hex color control.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/flux-2/klein/9b/base",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -17183,6 +17850,30 @@
         }
       ],
       "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "genfocus",
+      "name": "Genfocus",
+      "category": "image_generation",
+      "description": "GenFocus Model to Refocus Images",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/genfocus",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
     },
     {
       "id": "replicate-ghibli-easycontrol",
@@ -21845,18 +22536,27 @@
       ]
     },
     {
-      "id": "replicate-grok-imagine-image",
+      "id": "xai-grok-imagine-image",
       "name": "Grok Imagine Image",
       "category": "image_generation",
-      "description": "SOTA image model from xAI",
+      "description": "Generate highly aesthetic images with xAI's Grok Imagine Image generation model.",
       "tags": [],
-      "capabilities": [],
+      "capabilities": [
+        "image_editing"
+      ],
       "context_k": null,
-      "open_source": false,
-      "local_available": false,
       "updated_at": "2026-03-13",
-      "source": "replicate",
+      "source": "fal",
       "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/xai/grok-imagine-image",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -21899,6 +22599,15 @@
           },
           "url": "https://wavespeed.ai/models",
           "affiliate_url": null,
+          "available": true
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/xai/grok-imagine-video/edit-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         },
         {
@@ -23141,6 +23850,31 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "hunyuan-portrait",
+      "name": "Hunyuan Portrait",
+      "category": "video_generation",
+      "description": "HunyuanPortrait is a diffusion-based framework for generating lifelike, temporally consistent portrait animations.",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/hunyuan-portrait",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "hunyuan-video",
       "name": "Hunyuan Video",
       "category": "video_generation",
@@ -23207,6 +23941,54 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/hunyuan-video-image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "hunyuan-video-img2vid-lora",
+      "name": "Hunyuan Video Image-to-Video LoRA Inference",
+      "category": "video_generation",
+      "description": "Image to Video for the Hunyuan Video model using a custom trained LoRA.",
+      "tags": [],
+      "capabilities": [
+        "image_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/hunyuan-video-img2vid-lora",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "hunyuan-video-lora",
+      "name": "Hunyuan Video LoRA Inference",
+      "category": "video_generation",
+      "description": "Hunyuan Video is an Open video generation model with high visual quality, motion diversity, text-video alignment, and generation stability. Use this endpoint to generate videos from videos.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/hunyuan-video-lora",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -23331,6 +24113,30 @@
         }
       ],
       "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "hyper-sdxl",
+      "name": "Hyper SDXL",
+      "category": "image_generation",
+      "description": "Hyper-charge SDXL's performance and creativity.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/hyper-sdxl",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
     },
     {
       "id": "iclight-v2",
@@ -23763,7 +24569,7 @@
     },
     {
       "id": "ideogram-character",
-      "name": "Ideogram V3 Character Edit",
+      "name": "Ideogram V3 Character",
       "category": "image_generation",
       "description": "Generate consistent character appearances across multiple images. Maintain facial features, proportions, and distinctive traits for cohesive storytelling and branding",
       "tags": [],
@@ -23779,7 +24585,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/ideogram/character/edit",
+          "url": "https://fal.ai/models/fal-ai/ideogram/character",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -24024,6 +24830,30 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/image-preprocessors/depth-anything/v2",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "vecglypher-image-to-svg",
+      "name": "Image To Svg",
+      "category": "image_generation",
+      "description": "Vector font generation with VecGlypher. Create custom glyphs from text descriptions or reference images—outputs clean SVG paths directly without raster-to-vector conversion.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/vecglypher/image-to-svg",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -24514,6 +25344,30 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "infinity-star",
+      "name": "Infinity Star",
+      "category": "video_generation",
+      "description": "InfinityStar’s unified 8B spacetime autoregressive engine to turn any text prompt into crisp 720p videos - 10× faster than diffusion models.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/infinity-star/text-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "inflection-inflection-3-pi",
       "name": "Inflection 3 Pi",
       "category": "llm",
@@ -24834,6 +25688,30 @@
         }
       ],
       "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "invisible-watermark",
+      "name": "Invisible Watermark",
+      "category": "image_generation",
+      "description": "Invisible Watermark is a model that can add an invisible watermark to an image.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/invisible-watermark",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
     },
     {
       "id": "ip-adapter-face-id",
@@ -25717,10 +26595,10 @@
       ]
     },
     {
-      "id": "kling-video-v1-6-pro",
+      "id": "kling-video-v1-6-standard",
       "name": "Kling 1.6",
       "category": "video_generation",
-      "description": "Generate video clips from your prompts using Kling 1.6 (pro)",
+      "description": "Generate video clips from your prompts using Kling 1.6 (std)",
       "tags": [],
       "capabilities": [
         "image_to_video",
@@ -25735,7 +26613,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/kling-video/v1.6/pro/image-to-video",
+          "url": "https://fal.ai/models/fal-ai/kling-video/v1.6/standard/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -31164,7 +32042,7 @@
       "id": "hf-ltx-2-3",
       "name": "LTX 2.3",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 448,513 downloads · 571 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 448,513 downloads · 573 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -31531,6 +32409,31 @@
       ]
     },
     {
+      "id": "ltx-video-lora",
+      "name": "LTX Video-0.9.7 LoRA",
+      "category": "video_generation",
+      "description": "Generate videos from prompts and images using LTX Video-0.9.7 and custom LoRA",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/ltx-video-lora/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "ltx-2-19b",
       "name": "LTX-2 19B",
       "category": "video_generation",
@@ -31712,6 +32615,56 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/decart/lucy-i2v",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "decart-lucy-5b",
+      "name": "Lucy 5B",
+      "category": "video_generation",
+      "description": "Lucy-5B is a model that can create 5-second I2V videos in under 5 seconds, achieving >1x RTF end-to-end",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/decart/lucy-5b/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "decart-lucy-edit-dev",
+      "name": "Lucy Edit [Dev]",
+      "category": "video_generation",
+      "description": "Edit outfits, objects, faces, or restyle your video - all with maximum detail retention.",
+      "tags": [],
+      "capabilities": [
+        "image_editing",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/decart/lucy-edit/dev",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -32142,6 +33095,53 @@
       ]
     },
     {
+      "id": "lux-tts",
+      "name": "Lux TTS",
+      "category": "audio_tts",
+      "description": "High-quality voice cloning TTS model that generates 48kHz speech from text and a reference audio. Distilled to 4 steps for fast inference.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/lux-tts",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "bytedance-lynx",
+      "name": "Lynx",
+      "category": "video_generation",
+      "description": "Generate subject consistent videos using Lynx from ByteDance!",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/bytedance/lynx",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-lyria-2",
       "name": "Lyria 2",
       "category": "music_generation",
@@ -32276,7 +33276,7 @@
       "id": "magi-distilled",
       "name": "MAGI-1 (Distilled)",
       "category": "video_generation",
-      "description": "MAGI-1 distilled generates videos faster from images with exceptional understanding of physical interactions and prompting",
+      "description": "MAGI-1 distilled is a faster video generation model with exceptional understanding of physical interactions and cinematic prompts",
       "tags": [],
       "capabilities": [
         "image_to_video",
@@ -32654,13 +33654,13 @@
       ]
     },
     {
-      "id": "moonvalley-marey-i2v",
+      "id": "moonvalley-marey-t2v",
       "name": "Marey Realism V1.5",
       "category": "video_generation",
-      "description": "Generate a video starting from an image as the first frame with Marey, a generative video model trained exclusively on fully licensed data.",
+      "description": "Generate a video from a text prompt with Marey, a generative video model trained exclusively on fully licensed data.",
       "tags": [],
       "capabilities": [
-        "image_to_video"
+        "text_to_video"
       ],
       "context_k": null,
       "updated_at": "2026-03-13",
@@ -32671,7 +33671,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/moonvalley/marey/i2v",
+          "url": "https://fal.ai/models/moonvalley/marey/t2v",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -36035,6 +37035,30 @@
       ]
     },
     {
+      "id": "mix-dehaze-net",
+      "name": "MixDehazer",
+      "category": "image_generation",
+      "description": "An advanced dehaze model to remove atmospheric haze, restoring clarity and detail in images through intelligent neural network processing.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/mix-dehaze-net",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "mixtral-8x22b",
       "name": "Mixtral 8x22B",
       "category": "llm",
@@ -37192,6 +38216,28 @@
       "local_tool": "transformers / audiocraft"
     },
     {
+      "id": "beatoven-music-generation",
+      "name": "Music Generation",
+      "category": "music_generation",
+      "description": "Generate royalty-free instrumental music from electronic, hip hop, and indie rock to cinematic and classical genres. Perfect for games, films, social content, podcasts, and more.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/beatoven/music-generation",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "cassetteai-music-generator",
       "name": "Music Generator",
       "category": "music_generation",
@@ -37817,6 +38863,30 @@
           "pricing": {},
           "url": "https://openrouter.ai/intel/neural-chat-7b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "nextstep-1",
+      "name": "Nextstep 1",
+      "category": "image_generation",
+      "description": "Endpoint for NextStep-1 Autoregressive Image Editing model.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/nextstep-1",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -41064,6 +42134,30 @@
       ]
     },
     {
+      "id": "physic-edit",
+      "name": "Physic Edit",
+      "category": "image_generation",
+      "description": "Physics-aware image editing with PhysicEdit. Make realistic edits that follow real-world physics—handles complex effects like refraction, material changes, and deformation with physically plausible results.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/physic-edit",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "piflow",
       "name": "Piflow",
       "category": "image_generation",
@@ -41136,6 +42230,31 @@
       ]
     },
     {
+      "id": "pika-v2-turbo",
+      "name": "Pika Image to Video Turbo (v2)",
+      "category": "video_generation",
+      "description": "Turbo is the model to use when you feel the need for speed. Turn your image to stunning video up to 3x faster – all with high quality outputs. ",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/pika/v2/turbo/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "pika-v2-2-pikascenes",
       "name": "Pika Scenes (v2.2)",
       "category": "video_generation",
@@ -41155,31 +42274,6 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/pika/v2.2/pikascenes",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ]
-    },
-    {
-      "id": "pika-v2-turbo",
-      "name": "Pika Text to Video Turbo (v2)",
-      "category": "video_generation",
-      "description": "Turbo is the model to use when you feel the need for speed. Turn your image to stunning video up to 3x faster – all with high quality outputs. ",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-03-13",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/pika/v2/turbo/text-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -41210,6 +42304,28 @@
       ]
     },
     {
+      "id": "smart-turn",
+      "name": "Pipecat's Smart Turn model",
+      "category": "audio_stt",
+      "description": "An open source, community-driven and native audio turn detection model by Pipecat AI.\n\n",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/smart-turn",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "pixart-sigma",
       "name": "PixArt-Σ",
       "category": "image_generation",
@@ -41226,6 +42342,30 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/pixart-sigma",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "pixelcut-background-removal",
+      "name": "Pixelcut Background Removal",
+      "category": "image_generation",
+      "description": "Pixelcut’s Background Removal enables fast, ultra high-quality removal of backgrounds from images. Perfect for e-commerce and image editing workflows. Powered by advanced AI for clean, perfect cutouts every time.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/pixelcut/background-removal",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -41436,6 +42576,31 @@
       ]
     },
     {
+      "id": "pixverse-v3-5-effects",
+      "name": "PixVerse v3.5: Effects",
+      "category": "video_generation",
+      "description": "Generate high quality video clips with different effects using PixVerse v3.5",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/pixverse/v3.5/effects",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "pixverse-v3-5-fast",
       "name": "PixVerse v3.5: Image to Video Fast",
       "category": "video_generation",
@@ -41557,6 +42722,31 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/pixverse/v4/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "pixverse-v4-fast",
+      "name": "PixVerse v4: Image to Video Fast",
+      "category": "video_generation",
+      "description": "Generate high quality and fast video clips from text and image prompts using PixVerse v4 fast",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/pixverse/v4/image-to-video/fast",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -43421,6 +44611,78 @@
       "local_tool": "ComfyUI / diffusers"
     },
     {
+      "id": "qwen-image-edit-2509",
+      "name": "Qwen Image Edit 2509",
+      "category": "image_generation",
+      "description": "Endpoint for Qwen's Image Editing Plus model also known as Qwen-Image-Edit-2509. Has superior text editing capabilities and multi-image support.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/qwen-image-edit-2509",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-edit-2509-lora",
+      "name": "Qwen Image Edit 2509 Lora",
+      "category": "image_generation",
+      "description": "LoRA endpoint for the Qwen Image Edit 2509 model.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-edit-2509-lora-gallery-add-background",
+      "name": "Qwen Image Edit 2509 Lora Gallery",
+      "category": "image_generation",
+      "description": "Add a realistic scene behind the object with white background",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/add-background",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "qwen-image-edit-2511",
       "name": "Qwen Image Edit 2511",
       "category": "image_generation",
@@ -44452,7 +45714,7 @@
       "id": "hf-qwen2-5-1-5b-instruct",
       "name": "Qwen2.5 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 8,580,913 downloads · 634 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 8,580,913 downloads · 635 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -48525,6 +49787,28 @@
       ]
     },
     {
+      "id": "personaplex-realtime",
+      "name": "Realtime",
+      "category": "music_generation",
+      "description": "PersonaPlex is a real-time, full-duplex speech-to-speech conversational model that enables persona control through text-based role prompts and audio-based voice conditioning.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/personaplex/realtime",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "hf-realvisxl_v5-0",
       "name": "RealVisXL V5.0",
       "category": "image_generation",
@@ -48548,6 +49832,30 @@
           },
           "url": "https://huggingface.co/SG161222/RealVisXL_V5.0",
           "affiliate_url": null,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "lightx-recamera",
+      "name": "Recamera",
+      "category": "video_generation",
+      "description": "Use the capabilities of lightx to relight and recamera your videos.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/lightx/recamera",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -48904,6 +50212,30 @@
       ]
     },
     {
+      "id": "vidu-reference-to-image",
+      "name": "Reference To Image",
+      "category": "image_generation",
+      "description": "Vidu Reference-to-Image creates images by using a reference images and combining them with a prompt.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/vidu/reference-to-image",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "mattshumer-reflection-70b",
       "name": "Reflection 70B",
       "category": "llm",
@@ -48969,6 +50301,30 @@
           },
           "url": "https://replicate.com/luma/reframe-video",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "bria-reimagine",
+      "name": "Reimagine",
+      "category": "image_generation",
+      "description": "Structure Reference allows generating new images while preserving the structure of an input image, guided by text prompts. Perfect for transforming sketches, illustrations, or photos into new illustrations. Trained exclusively on licensed data for safe and risk-free commercial use.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/bria/reimagine",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -50133,6 +51489,30 @@
       ]
     },
     {
+      "id": "sana-video",
+      "name": "Sana Video",
+      "category": "video_generation",
+      "description": "Leverage Sana's ultra-fast processing speed to generate high-quality assets that transform your text prompts into production-ready videos",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/sana-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "sarvamai-sarvam-m",
       "name": "Sarvam-M",
       "category": "llm",
@@ -51095,6 +52475,30 @@
       ]
     },
     {
+      "id": "infinitalk-single-text",
+      "name": "Single Text",
+      "category": "video_generation",
+      "description": "Infinitalk model generates a talking avatar video from a text and audio file. The avatar lip-syncs to the provided audio with natural facial expressions.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/infinitalk/single-text",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "sky-raccoon",
       "name": "Sky Raccoon",
       "category": "image_generation",
@@ -51826,6 +53230,28 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/stable-cascade/sote-diffusion",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "beatoven-sound-effect-generation",
+      "name": "Sound Effect Generation",
+      "category": "music_generation",
+      "description": "Create professional-grade sound effects from animal and vehicle to nature, sci-fi, and otherworldly sounds. Perfect for films, games, and digital content.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/beatoven/sound-effect-generation",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -53117,7 +54543,7 @@
       "id": "hf-stable-video-diffusion-img2vid-xt",
       "name": "Stable Video Diffusion Img2Vid Xt",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 205,261 downloads · 3,250 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 205,261 downloads · 3,251 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -53502,6 +54928,28 @@
       ]
     },
     {
+      "id": "maya-stream",
+      "name": "Stream",
+      "category": "audio_tts",
+      "description": "Maya1 is a state-of-the-art speech model by Maya Research for expressive voice generation, built to capture real human emotion and precise voice design.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/maya/stream",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "togethercomputer-stripedhyena-hessian-7b",
       "name": "StripedHyena Hessian 7B (base)",
       "category": "llm",
@@ -53647,6 +55095,30 @@
       ]
     },
     {
+      "id": "swin2sr",
+      "name": "SWIN2SR",
+      "category": "image_generation",
+      "description": "Enhance low-resolution images with the superior quality of Swin2SR for sharper, clearer results.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/swin2sr",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "switchpoint-router",
       "name": "Switchpoint Router",
       "category": "llm",
@@ -53667,6 +55139,50 @@
           },
           "url": "https://openrouter.ai/switchpoint/router",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "switti",
+      "name": "Switti 1024",
+      "category": "image_generation",
+      "description": "Switti is a scale-wise transformer for fast text-to-image generation that outperforms existing T2I AR models and competes with state-of-the-art T2I diffusion models while being faster than distilled diffusion models.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/switti",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "switti-512",
+      "name": "Switti 512",
+      "category": "image_generation",
+      "description": "Switti is a scale-wise transformer for fast text-to-image generation that outperforms existing T2I AR models and competes with state-of-the-art T2I diffusion models while being faster than distilled diffusion models.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/switti/512",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -53806,6 +55322,28 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/t2v-turbo",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "tada-1b-text-to-speech",
+      "name": "Tada TTS 1B",
+      "category": "music_generation",
+      "description": "A unified speech-language model that synchronizes speech and text into a single, cohesive stream via 1:1 alignment. Lighter 1B variant",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/tada/1b/text-to-speech",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -54383,6 +55921,30 @@
       ]
     },
     {
+      "id": "transpixar",
+      "name": "TransPixar V1",
+      "category": "video_generation",
+      "description": "Transform text into stunning videos with TransPixar - an AI model that generates both RGB footage and alpha channels, enabling seamless compositing and creative video effects.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/transpixar",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-trim-video",
       "name": "Trim Video",
       "category": "video_generation",
@@ -54563,6 +56125,28 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/speech-to-text/turbo",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "speech-to-text-turbo-stream",
+      "name": "Turbo Stream",
+      "category": "audio_stt",
+      "description": "Leverage the rapid processing capabilities of AI models to enable accurate and efficient real-time speech-to-text transcription.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/speech-to-text/turbo/stream",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -54835,6 +56419,30 @@
       ]
     },
     {
+      "id": "bria-upscale-creative",
+      "name": "Upscale",
+      "category": "image_generation",
+      "description": "Regenerate the image with sharper textures and richer details while doubling resolution, up to 10 megapixels output.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/bria/upscale/creative",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "topaz-upscale-image",
       "name": "Upscale Image",
       "category": "image_generation",
@@ -54997,6 +56605,31 @@
       ]
     },
     {
+      "id": "wan-v2-6-flash",
+      "name": "V2.6",
+      "category": "video_generation",
+      "description": "Wan 2.6 reference-to-video flash model.",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/wan/v2.6/image-to-video/flash",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "replicate-v3",
       "name": "V3",
       "category": "audio_tts",
@@ -55016,6 +56649,30 @@
           },
           "url": "https://replicate.com/elevenlabs/v3",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "wan-vace",
+      "name": "Vace",
+      "category": "video_generation",
+      "description": "Vace a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan-vace",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -55065,6 +56722,28 @@
           "pricing": {},
           "url": "https://openrouter.ai/thedrummer/valkyrie-49b-v1",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "vecglypher",
+      "name": "Vecglypher",
+      "category": "image_generation",
+      "description": "Vector font generation with VecGlypher. Create custom glyphs from text descriptions or reference images—outputs clean SVG paths directly without raster-to-vector conversion.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/vecglypher",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -55593,6 +57272,30 @@
           },
           "url": "https://replicate.com/heygen/video-agent",
           "affiliate_url": "https://replicate.com?utm_source=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "video-as-prompt",
+      "name": "Video As Prompt",
+      "category": "video_generation",
+      "description": "A model for unified semantic control in video generation. It animates a static reference image using the motion and semantics from a reference video as a prompt.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/video-as-prompt",
+          "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ]
@@ -57381,6 +59084,31 @@
       ]
     },
     {
+      "id": "wan-ati",
+      "name": "Wan Ati",
+      "category": "video_generation",
+      "description": "WAN-ATI is a controllable video generation model that uses trajectory instructions to guide object, local, and camera motion, enabling precise and flexible image-to-video creation.",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan-ati",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
       "id": "wan-effects",
       "name": "Wan Effects",
       "category": "video_generation",
@@ -57400,6 +59128,55 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/wan-effects",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "wan-motion",
+      "name": "Wan Motion",
+      "category": "video_generation",
+      "description": "Wan Motion is a streamlined character animation model that transfers motion from a driving video onto a reference character image. Based on Wan-Animate which preserves the original character's proportions, Simple uses pose retargeting to adapt the driving video's skeleton to match the reference c...",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan-motion",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "wan-move",
+      "name": "Wan Move [480p]",
+      "category": "video_generation",
+      "description": "Use Wan-Move to generate videos with controlled the motion using trajectories",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan-move",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -57476,6 +59253,56 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/lora",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "wan-v2-6",
+      "name": "Wan v2.6",
+      "category": "image_generation",
+      "description": "Wan 2.6 reference-to-video model.",
+      "tags": [],
+      "capabilities": [
+        "image_editing",
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/wan/v2.6/image-to-image",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "wan-vace-1-3b",
+      "name": "Wan Vace 1 3b",
+      "category": "video_generation",
+      "description": "Vace a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources.",
+      "tags": [],
+      "capabilities": [
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/wan-vace-1-3b",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -58856,6 +60683,28 @@
         }
       ],
       "local_tool": "ComfyUI / diffusers"
+    },
+    {
+      "id": "z-image-base",
+      "name": "Z Image Base",
+      "category": "image_generation",
+      "description": "Z-Image is the foundation model of the Z- Image family, engineered for good quality, robust generative diversity, broad stylistic coverage, and precise prompt adherence.",
+      "tags": [],
+      "capabilities": [],
+      "context_k": null,
+      "updated_at": "2026-03-13",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/z-image/base",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ]
     },
     {
       "id": "hf-z-image-lora",
