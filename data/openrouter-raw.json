@@ -1549,7 +1549,7 @@
       "author": "qwen",
       "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design with early fusion of multimodal tokens, allowing the model to process and reason across text and images within the same context.",
       "model_version_group_id": null,
-      "context_length": 262144,
+      "context_length": 256000,
       "input_modalities": [
         "text",
         "image",
@@ -1594,9 +1594,9 @@
       "is_trainable_text": true,
       "is_trainable_image": null,
       "endpoint": {
-        "id": "00d506d9-a5e9-4382-a2b9-d54732365594",
-        "name": "Together | qwen/qwen3.5-9b-20260310",
-        "context_length": 262144,
+        "id": "f8e609ab-d193-4bb7-b7e7-ff76ac405a7d",
+        "name": "Venice | qwen/qwen3.5-9b-20260310",
+        "context_length": 256000,
         "model": {
           "slug": "qwen/qwen3.5-9b",
           "hf_slug": "Qwen/Qwen3.5-9B",
@@ -1655,184 +1655,79 @@
         },
         "model_variant_slug": "qwen/qwen3.5-9b",
         "model_variant_permaslug": "qwen/qwen3.5-9b-20260310",
-        "adapter_name": "TogetherAdapter",
-        "provider_name": "Together",
+        "adapter_name": "VeniceAdapter",
+        "provider_name": "Venice",
         "provider_info": {
-          "name": "Together",
-          "displayName": "Together",
-          "slug": "together",
-          "baseUrl": "https://api.together.xyz/v1",
+          "name": "Venice",
+          "displayName": "Venice",
+          "slug": "venice",
+          "baseUrl": "https://api.venice.ai/api/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.together.ai/terms-of-service",
-            "privacyPolicyURL": "https://www.together.ai/privacy"
+            "termsOfServiceURL": "https://venice.ai/legal/tos",
+            "privacyPolicyURL": "https://venice.ai/legal/privacy-policy"
           },
           "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "regionOverrides": {},
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "editors": [
             "{}"
           ],
           "owners": [
-            "{}",
-            "org_3Ao0BoKhwwioO3iArOjbkWR0jD0"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
-          "adapterName": "TogetherAdapter",
-          "statusPageUrl": "https://status.together.ai/",
+          "adapterName": "VeniceAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.together.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://venice.ai/&size=256"
           },
           "ignoredProviderModels": [
-            "mixedbread-ai/Mxbai-Rerank-Large-V2",
-            "BAAI/bge-base-en-v1.5-vllm",
-            "scb10x/scb10x-typhoon-2-1-gemma3-12b",
-            "arcee-ai/AFM-4.5B-Preview",
-            "deepseek-ai/DeepSeek-R1-0528-tput",
-            "black-forest-labs/FLUX.1-kontext-dev",
-            "google/gemma-3-27b-it",
-            "Qwen/Qwen3-32B-FP8",
-            "openai/whisper-large-v3",
-            "eddie/Qwen3-32B",
-            "eddiehou/meta-llama/Llama-3.1-405B",
-            "yan/deepseek-ai-deepseek-v3",
-            "moz/Llama-3.3-70B-Instruct-Turbo",
-            "serverless-qwen-qwen3-32b-fp8",
-            "qwen-qwen3-32b-fp8-serverless",
-            "moz-llama-3-3-70b-instruct-turbo",
-            "moonshotai/Kimi-K2-Instruct-tgl-testing",
-            "VirtueAIxTogether/VirtueGuard-Text-Lite",
-            "Virtue-AI/VirtueGuard-Text-Lite",
-            "black-forest-labs/FLUX.1-krea-dev",
-            "prosus/qwen-qwen3-32b-fp8-long-context",
-            "meta-llama/Llama-4-Scout-17B-16E-Instruct-batch",
-            "deepseek-ai/DeepSeek-R1-DE",
-            "arize-ai/qwen-2-1.5b-instruct",
-            "openai/gpt-oss-120b",
-            "meta-llama/Llama-3-70b-hf",
-            "Qwen/Qwen2.5-72B-Instruct",
-            "meta-llama/Meta-Llama-3.1-70B-Instruct-Reference",
-            "meta-llama/Llama-3.2-1B-Instruct",
-            "meta-llama/Meta-Llama-3.1-8B-Instruct-Reference",
-            "meta-llama/Meta-Llama-3-8B-Instruct",
-            "meta-llama/Llama-3.1-405B-Instruct",
-            "cartesia/sonic",
-            "cartesia/sonic-2",
-            "togethercomputer/MoA-1",
-            "Salesforce/Llama-Rank-V1",
-            "black-forest-labs/FLUX.1-schnell",
-            "lgai/exaone-3-5-32b-instruct",
-            "lgai/exaone-deep-32b",
-            "black-forest-labs/FLUX.1-dev",
-            "marin-community/marin-8b-instruct",
-            "togethercomputer/Refuel-Llm-V2-Small",
-            "meta-llama/Llama-3-70b-chat-hf",
-            "Alibaba-NLP/gte-modernbert-base",
-            "black-forest-labs/FLUX.1-pro",
-            "black-forest-labs/FLUX.1.1-pro",
-            "togethercomputer/MoA-1-Turbo",
-            "black-forest-labs/FLUX.1-dev-lora",
-            "meta-llama/Llama-2-70b-hf",
-            "togethercomputer/m2-bert-80M-32k-retrieval",
-            "togethercomputer/Refuel-Llm-V2",
-            "intfloat/multilingual-e5-large-instruct",
-            "black-forest-labs/FLUX.1-kontext-max",
-            "black-forest-labs/FLUX.1-schnell-Free",
-            "black-forest-labs/FLUX.1-kontext-pro",
-            "BAAI/bge-large-en-v1.5",
-            "BAAI/bge-base-en-v1.5",
-            "Qwen/Qwen3-Next-80B-A3B-Instruct",
-            "ServiceNow-AI/Apriel-1.5-15b-Thinker",
-            "openai/whisper-large-v3-test",
-            "codellama/CodeLlama-34b-Instruct-hf",
-            "meta-llama/Llama-2-13b-chat-hf",
-            "togethercomputer/m2-bert-80M-8k-retrieval",
-            "WhereIsAI/UAE-Large-V1",
-            "meta-llama/Meta-Llama-3.1-405B-Instruct-Lite-Pro",
-            "togethercomputer/m2-bert-80M-2k-retrieval",
-            "meta-llama/Meta-Llama-3-70B-Instruct-Lite",
-            "Meta-Llama/Llama-Guard-7b",
-            "Gryphe/MythoMax-L2-13b-Lite",
-            "upstage/SOLAR-10.7B-Instruct-v1.0",
-            "Qwen/Qwen2.5-14B-Instruct",
-            "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
-            "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free",
-            "zai-org/GLM-4.5-Air-FP8",
-            "kwaivgI/kling-1.6-standard",
-            "HiDream-ai/HiDream-I1-Full",
-            "ByteDance-Seed/Seedream-3.0",
-            "ByteDance-Seed/Seedream-4.0",
-            "Lykon/DreamShaper",
-            "HiDream-ai/HiDream-I1-Dev",
-            "Qwen/Qwen-Image",
-            "RunDiffusion/Juggernaut-pro-flux",
-            "google/imagen-4.0-preview",
-            "google/imagen-4.0-ultra",
-            "google/veo-3.0",
-            "minimax/hailuo-02",
-            "stabilityai/stable-diffusion-3-medium",
-            "black-forest-labs/FLUX.1-Canny-pro",
-            "google/imagen-4.0-fast",
-            "minimax/video-01-director",
-            "HiDream-ai/HiDream-I1-Fast",
-            "Wan-AI/Wan2.2-T2V-A14B",
-            "ByteDance/Seedance-1.0-pro",
-            "google/veo-3.0-fast-audio",
-            "vidu/vidu-q1",
-            "kwaivgI/kling-2.1-master",
-            "google/veo-3.0-audio",
-            "Rundiffusion/Juggernaut-Lightning-Flux",
-            "Wan-AI/Wan2.2-I2V-A14B",
-            "google/flash-image-2.5",
-            "google/veo-2.0",
-            "openai/sora-2",
-            "google/veo-3.0-fast",
-            "ideogram/ideogram-3.0",
-            "kwaivgI/kling-2.0-master",
-            "kwaivgI/kling-2.1-standard",
-            "pixverse/pixverse-v5",
-            "stabilityai/stable-diffusion-xl-base-1.0",
-            "openai/sora-2-pro",
-            "ByteDance/Seedance-1.0-lite",
-            "kwaivgI/kling-1.6-pro",
-            "vidu/vidu-2.0",
-            "kwaivgI/kling-2.1-pro",
-            "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-            "canopylabs/orpheus-3b-0.1-ft",
-            "hexgrad/Kokoro-82M",
-            "eddie/gemma-2b-it",
-            "mistralai/Voxtral-Mini-3B-2507",
-            "arcee-ai/coder-large",
-            "arcee-ai/virtuoso-large",
-            "arcee-ai/maestro-reasoning",
-            "deepcogito/cogito-v2-1-671b",
-            "arcee_ai/arcee-spotlight",
-            "google/gemini-3-pro-image",
-            "mercor/cwm",
-            "black-forest-labs/FLUX.2-flex",
-            "keith-aditya/kimi-k2-instruct",
-            "pangram/mistral-small-2501",
-            "black-forest-labs/FLUX.2-pro",
-            "black-forest-labs/FLUX.2-dev",
-            "ServiceNow-AI/Apriel-1.6-15b-Thinker",
-            "cartesia/sonic-3",
-            "Wan-AI/Wan2.6-image",
-            "pixverse/pixverse-v5.6",
-            "LiquidAI/LFM2-24B-A2B-Preview"
+            "llama-3.2-3b",
+            "deepseek-coder-v2-lite",
+            "dolphin-2.9.2-qwen2-72b",
+            "mistral-32-24b",
+            "zai-org-glm-4.6",
+            "qwen3-235b-a22b-thinking-2507",
+            "qwen3-235b-a22b-instruct-2507",
+            "google-gemma-3-27b-it",
+            "openai-gpt-oss-120b",
+            "deepseek-ai-DeepSeek-R1",
+            "grok-41-fast",
+            "gemini-3-pro-preview",
+            "claude-opus-45",
+            "kimi-k2-thinking",
+            "deepseek-v3.2",
+            "openai-gpt-52",
+            "gemini-3-flash-preview",
+            "grok-code-fast-1",
+            "claude-sonnet-45",
+            "openai-gpt-52-codex",
+            "venice-uncensored",
+            "qwen3-4b",
+            "mistral-31-24b",
+            "qwen3-next-80b",
+            "qwen3-coder-480b-a35b-instruct",
+            "hermes-3-llama-3.1-405b",
+            "llama-3.3-70b",
+            "olafangensan-glm-4.7-flash-heretic"
           ],
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Together",
-        "provider_slug": "together",
-        "provider_model_id": "Qwen/Qwen3.5-9B",
-        "quantization": "unknown",
+        "provider_display_name": "Venice",
+        "provider_slug": "venice/fp8",
+        "provider_model_id": "qwen3-5-9b",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -1849,13 +1744,12 @@
           "frequency_penalty",
           "presence_penalty",
           "top_k",
-          "repetition_penalty",
-          "logit_bias",
-          "min_p",
+          "response_format",
+          "structured_outputs",
           "tools",
           "tool_choice",
-          "structured_outputs",
-          "response_format"
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -1864,11 +1758,11 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.together.ai/terms-of-service",
-          "privacyPolicyURL": "https://www.together.ai/privacy"
+          "termsOfServiceURL": "https://venice.ai/legal/tos",
+          "privacyPolicyURL": "https://venice.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000001",
+          "prompt": "0.00000005",
           "completion": "0.00000015",
           "discount": 0,
           "line_items": []
@@ -1876,10 +1770,10 @@
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
+          "openai:prompt_tokens": "0.00000005",
           "openai:completion_tokens": "0.00000015"
         },
-        "pricing_version_id": "41946a7c-33f5-4ea4-93e6-4f76d05a110a",
+        "pricing_version_id": "1b1a5b94-248a-49ed-ae0a-4e089c9a1a82",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -1889,11 +1783,11 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_base64_video_input": true,
-          "supports_video_urls": true,
+          "supports_base64_video_input": false,
+          "supports_video_urls": false,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -7126,67 +7020,19 @@
           "input_cache_write": "0.00000375",
           "web_search": "0.01",
           "discount": 0,
-          "line_items": [
-            {
-              "type": "long_context_threshold",
-              "value": "200000"
-            },
-            {
-              "type": "input_tokens_above_threshold",
-              "value": "0.000006"
-            },
-            {
-              "type": "output_tokens_above_threshold",
-              "value": "0.0000225"
-            },
-            {
-              "type": "input_cache_read_tokens_above_threshold",
-              "value": "6e-7"
-            },
-            {
-              "type": "input_cache_write_tokens_above_threshold",
-              "value": "0.0000075"
-            }
-          ]
+          "line_items": []
         },
         "variable_pricings": [],
-        "line_items": [
-          {
-            "type": "long_context_threshold",
-            "value": "200000"
-          },
-          {
-            "type": "input_tokens_above_threshold",
-            "value": "0.000006"
-          },
-          {
-            "type": "output_tokens_above_threshold",
-            "value": "0.0000225"
-          },
-          {
-            "type": "input_cache_read_tokens_above_threshold",
-            "value": "6e-7"
-          },
-          {
-            "type": "input_cache_write_tokens_above_threshold",
-            "value": "0.0000075"
-          }
-        ],
+        "line_items": [],
         "pricing_json": {
           "anthropic:prompt_tokens": "0.000003",
           "anthropic:web_search_calls": ".01",
           "anthropic:cache_read_tokens": "3e-7",
           "anthropic:completion_tokens": "0.000015",
           "anthropic:cache_write_1h_tokens": "0.000006",
-          "anthropic:cache_write_5m_tokens": "0.00000375",
-          "anthropic:long_context_threshold": "200000",
-          "anthropic:prompt_tokens_long_context": "0.000006",
-          "anthropic:cache_read_tokens_long_context": "6e-7",
-          "anthropic:completion_tokens_long_context": "0.0000225",
-          "anthropic:cache_write_1h_tokens_long_context": "0.000012",
-          "anthropic:cache_write_5m_tokens_long_context": "0.0000075"
+          "anthropic:cache_write_5m_tokens": "0.00000375"
         },
-        "pricing_version_id": "cb2ff2e0-8107-492d-9101-c3a67814cbdb",
+        "pricing_version_id": "84b30c44-d588-4700-8b3e-c30944898b89",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -8281,7 +8127,7 @@
           "regionOverrides": {},
           "hasChatCompletions": true,
           "hasCompletions": true,
-          "isAbortable": true,
+          "isAbortable": false,
           "moderationRequired": false,
           "editors": [],
           "owners": [
@@ -8303,7 +8149,7 @@
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": true,
+        "can_abort": false,
         "max_prompt_tokens": null,
         "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
@@ -9057,28 +8903,7 @@
           "input_cache_write": "0.00000625",
           "web_search": "0.01",
           "discount": 0,
-          "line_items": [
-            {
-              "type": "long_context_threshold",
-              "value": "200000"
-            },
-            {
-              "type": "input_tokens_above_threshold",
-              "value": "10e-6"
-            },
-            {
-              "type": "output_tokens_above_threshold",
-              "value": "37.5e-6"
-            },
-            {
-              "type": "input_cache_read_tokens_above_threshold",
-              "value": "1e-6"
-            },
-            {
-              "type": "input_cache_write_tokens_above_threshold",
-              "value": "12.5e-6"
-            }
-          ]
+          "line_items": []
         },
         "variable_pricings": [
           {
@@ -9090,43 +8915,16 @@
             "input_cache_write": "0.0000125"
           }
         ],
-        "line_items": [
-          {
-            "type": "long_context_threshold",
-            "value": "200000"
-          },
-          {
-            "type": "input_tokens_above_threshold",
-            "value": "10e-6"
-          },
-          {
-            "type": "output_tokens_above_threshold",
-            "value": "37.5e-6"
-          },
-          {
-            "type": "input_cache_read_tokens_above_threshold",
-            "value": "1e-6"
-          },
-          {
-            "type": "input_cache_write_tokens_above_threshold",
-            "value": "12.5e-6"
-          }
-        ],
+        "line_items": [],
         "pricing_json": {
           "anthropic:prompt_tokens": "5e-6",
           "anthropic:web_search_calls": ".01",
           "anthropic:cache_read_tokens": ".5e-6",
           "anthropic:completion_tokens": "25e-6",
           "anthropic:cache_write_1h_tokens": "10e-6",
-          "anthropic:cache_write_5m_tokens": "6.25e-6",
-          "anthropic:long_context_threshold": "200000",
-          "anthropic:prompt_tokens_long_context": "10e-6",
-          "anthropic:cache_read_tokens_long_context": "1e-6",
-          "anthropic:completion_tokens_long_context": "37.5e-6",
-          "anthropic:cache_write_1h_tokens_long_context": "20e-6",
-          "anthropic:cache_write_5m_tokens_long_context": "12.5e-6"
+          "anthropic:cache_write_5m_tokens": "6.25e-6"
         },
-        "pricing_version_id": "3805f063-c46b-44f5-98bb-b4034297ab84",
+        "pricing_version_id": "765e62f5-a9ed-46b9-aa22-7c43edda38d2",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -44056,7 +43854,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
@@ -53967,7 +53765,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
@@ -56326,7 +56124,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
@@ -65325,7 +65123,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
@@ -72120,7 +71918,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
@@ -89071,7 +88869,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
@@ -91918,7 +91716,7 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "user_37X4xCikPVEJDEfNa76QrzR5Z6Q"
           ],
           "adapterName": "VeniceAdapter",
           "statusPageUrl": null,
