@@ -26803,6 +26803,72 @@
       "_our_category": "image_generation"
     },
     {
+      "endpoint_id": "fal-ai/z-image/turbo/tiling",
+      "metadata": {
+        "display_name": "Z-Image Turbo Seamless Tiling",
+        "category": "text-to-image",
+        "description": "Generate seamlessly tiling photorealistic images from text using Z-Image Turbo",
+        "status": "active",
+        "tags": [
+          "z-image",
+          "turbo",
+          "seamless",
+          "tiling"
+        ],
+        "updated_at": "2026-03-17T03:15:54.070Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0a927a27/SYJj76y2BxFpBc6ySx7uj_5d9c07ca565e4fe6bdef800c186c176b.jpg",
+        "model_url": "https://fal.run/fal-ai/z-image/turbo/tiling",
+        "license_type": "commercial",
+        "date": "2026-03-17T03:10:40.551Z",
+        "group": {
+          "key": "z-image-turbo",
+          "label": "Text to Seamless Tiling Image"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false,
+        "training_endpoint_ids": [
+          "fal-ai/z-image-trainer",
+          "fal-ai/z-image-turbo-trainer-v2"
+        ]
+      },
+      "_our_category": "image_generation"
+    },
+    {
+      "endpoint_id": "fal-ai/z-image/turbo/tiling/lora",
+      "metadata": {
+        "display_name": "Z-Image Turbo Seamless Tiling",
+        "category": "text-to-image",
+        "description": "Generate seamlessly tiling photorealistic images from text using Z-Image Turbo and custom LoRA",
+        "status": "active",
+        "tags": [
+          "z-image",
+          "turbo",
+          "seamless",
+          "tiling"
+        ],
+        "updated_at": "2026-03-17T03:16:04.573Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0a927a46/r4_VKr5hjykY0b3VxLRdx_bdb953058bb14b5581ee39a4763b3697.jpg",
+        "model_url": "https://fal.run/fal-ai/z-image/turbo/tiling/lora",
+        "license_type": "commercial",
+        "date": "2026-03-17T03:13:51.642Z",
+        "group": {
+          "key": "z-image-turbo",
+          "label": "Text to Seamless Tiling Image (LoRA)"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false,
+        "training_endpoint_ids": [
+          "fal-ai/z-image-trainer",
+          "fal-ai/z-image-turbo-trainer-v2"
+        ]
+      },
+      "_our_category": "image_generation"
+    },
+    {
       "endpoint_id": "wan/v2.6/image-to-image",
       "metadata": {
         "display_name": "Wan v2.6 Image to Image",
@@ -27141,72 +27207,6 @@
         "pinned": false
       },
       "_our_category": "audio_tts"
-    },
-    {
-      "endpoint_id": "fal-ai/z-image/turbo/tiling/lora",
-      "metadata": {
-        "display_name": "Z-Image Turbo Seamless Tiling",
-        "category": "text-to-image",
-        "description": "Generate seamlessly tiling photorealistic images from text using Z-Image Turbo and custom LoRA",
-        "status": "active",
-        "tags": [
-          "z-image",
-          "turbo",
-          "seamless",
-          "tiling"
-        ],
-        "updated_at": "2026-03-17T03:16:04.573Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://v3b.fal.media/files/b/0a927a46/r4_VKr5hjykY0b3VxLRdx_bdb953058bb14b5581ee39a4763b3697.jpg",
-        "model_url": "https://fal.run/fal-ai/z-image/turbo/tiling/lora",
-        "license_type": "commercial",
-        "date": "2026-03-17T03:13:51.642Z",
-        "group": {
-          "key": "z-image-turbo",
-          "label": "Text to Seamless Tiling Image (LoRA)"
-        },
-        "highlighted": false,
-        "kind": "inference",
-        "pinned": false,
-        "training_endpoint_ids": [
-          "fal-ai/z-image-trainer",
-          "fal-ai/z-image-turbo-trainer-v2"
-        ]
-      },
-      "_our_category": "image_generation"
-    },
-    {
-      "endpoint_id": "fal-ai/z-image/turbo/tiling",
-      "metadata": {
-        "display_name": "Z-Image Turbo Seamless Tiling",
-        "category": "text-to-image",
-        "description": "Generate seamlessly tiling photorealistic images from text using Z-Image Turbo",
-        "status": "active",
-        "tags": [
-          "z-image",
-          "turbo",
-          "seamless",
-          "tiling"
-        ],
-        "updated_at": "2026-03-17T03:15:54.070Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://v3b.fal.media/files/b/0a927a27/SYJj76y2BxFpBc6ySx7uj_5d9c07ca565e4fe6bdef800c186c176b.jpg",
-        "model_url": "https://fal.run/fal-ai/z-image/turbo/tiling",
-        "license_type": "commercial",
-        "date": "2026-03-17T03:10:40.551Z",
-        "group": {
-          "key": "z-image-turbo",
-          "label": "Text to Seamless Tiling Image"
-        },
-        "highlighted": false,
-        "kind": "inference",
-        "pinned": false,
-        "training_endpoint_ids": [
-          "fal-ai/z-image-trainer",
-          "fal-ai/z-image-turbo-trainer-v2"
-        ]
-      },
-      "_our_category": "image_generation"
     }
   ],
   "total_fetched": 1219
