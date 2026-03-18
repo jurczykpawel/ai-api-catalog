@@ -1,6 +1,844 @@
 {
   "data": [
     {
+      "slug": "openai/gpt-5.4-nano",
+      "hf_slug": "",
+      "updated_at": "2026-03-17T17:08:48.670571+00:00",
+      "created_at": "2026-03-17T11:49:47+00:00",
+      "hf_updated_at": null,
+      "name": "OpenAI: GPT-5.4 Nano",
+      "short_name": "GPT-5.4 Nano",
+      "author": "openai",
+      "description": "GPT-5.4 nano is the most lightweight and cost-efficient variant of the GPT-5.4 family, optimized for speed-critical and high-volume tasks. It supports text and image inputs and is designed for low-latency use cases such as classification, data extraction, ranking, and sub-agent execution.\n\nThe model prioritizes responsiveness and efficiency over deep reasoning, making it ideal for pipelines that require fast, reliable outputs at scale. GPT-5.4 nano is well suited for background tasks, real-time systems, and distributed agent architectures where minimizing cost and latency is essential.",
+      "model_version_group_id": null,
+      "context_length": 400000,
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "GPT",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": "",
+      "promotion_message": "",
+      "routing_error_message": "",
+      "permaslug": "openai/gpt-5.4-nano-20260317",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "high",
+          "low",
+          "medium",
+          "none",
+          "xhigh"
+        ],
+        "default_reasoning_effort": "medium",
+        "default_reasoning_enabled": false
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "high",
+            "low",
+            "medium",
+            "none",
+            "xhigh"
+          ],
+          "default_reasoning_effort": "medium",
+          "default_reasoning_enabled": false
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "endpoint": {
+        "id": "0c835f2e-c18d-4e8c-b245-e1e3bd08b97f",
+        "name": "OpenAI | openai/gpt-5.4-nano-20260317",
+        "context_length": 400000,
+        "model": {
+          "slug": "openai/gpt-5.4-nano",
+          "hf_slug": "",
+          "updated_at": "2026-03-17T17:08:48.670571+00:00",
+          "created_at": "2026-03-17T11:49:47+00:00",
+          "hf_updated_at": null,
+          "name": "OpenAI: GPT-5.4 Nano",
+          "short_name": "GPT-5.4 Nano",
+          "author": "openai",
+          "description": "GPT-5.4 nano is the most lightweight and cost-efficient variant of the GPT-5.4 family, optimized for speed-critical and high-volume tasks. It supports text and image inputs and is designed for low-latency use cases such as classification, data extraction, ranking, and sub-agent execution.\n\nThe model prioritizes responsiveness and efficiency over deep reasoning, making it ideal for pipelines that require fast, reliable outputs at scale. GPT-5.4 nano is well suited for background tasks, real-time systems, and distributed agent architectures where minimizing cost and latency is essential.",
+          "model_version_group_id": null,
+          "context_length": 400000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "GPT",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": "",
+          "promotion_message": "",
+          "routing_error_message": "",
+          "permaslug": "openai/gpt-5.4-nano-20260317",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "high",
+              "low",
+              "medium",
+              "none",
+              "xhigh"
+            ],
+            "default_reasoning_effort": "medium",
+            "default_reasoning_enabled": false
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null,
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "high",
+                "low",
+                "medium",
+                "none",
+                "xhigh"
+              ],
+              "default_reasoning_effort": "medium",
+              "default_reasoning_enabled": false
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "is_trainable_text": null,
+          "is_trainable_image": null
+        },
+        "model_variant_slug": "openai/gpt-5.4-nano",
+        "model_variant_permaslug": "openai/gpt-5.4-nano-20260317",
+        "adapter_name": "OpenAIResponsesAdapter",
+        "provider_name": "OpenAI",
+        "provider_info": {
+          "name": "OpenAI",
+          "displayName": "OpenAI",
+          "slug": "openai",
+          "baseUrl": "https://api.openai.com/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+            "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+            "requiresUserIDs": true
+          },
+          "headquarters": "US",
+          "regionOverrides": {},
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": true,
+          "editors": [
+            "{}"
+          ],
+          "owners": [
+            "{}"
+          ],
+          "adapterName": "OpenAIResponsesAdapter",
+          "statusPageUrl": "https://status.openai.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/OpenAI.svg",
+            "className": "invert-0 dark:invert"
+          },
+          "ignoredProviderModels": [],
+          "sendClientIp": false,
+          "pricingStrategy": "openai_responses"
+        },
+        "provider_display_name": "OpenAI",
+        "provider_slug": "openai",
+        "provider_model_id": "gpt-5.4-nano-2026-03-17",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 128000,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "seed",
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "is_byok": false,
+        "moderation_required": true,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+          "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+          "requiresUserIDs": true
+        },
+        "pricing": {
+          "prompt": "0.0000002",
+          "completion": "0.00000125",
+          "input_cache_read": "0.00000002",
+          "web_search": "0.01",
+          "discount": 0,
+          "line_items": []
+        },
+        "variable_pricings": [],
+        "line_items": [],
+        "pricing_json": {
+          "openai_responses:prompt_tokens": "0.2e-6",
+          "openai_responses:web_search_calls": "0.01",
+          "openai_responses:completion_tokens": "1.25e-6",
+          "openai_responses:cached_prompt_tokens": "0.02e-6"
+        },
+        "pricing_version_id": "53246211-6b16-40fe-b231-ab70291abb00",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": true,
+        "has_chat_completions": true,
+        "features": {
+          "supports_file_urls": true,
+          "supports_native_web_search": true,
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "provider_region": null,
+        "deprecation_date": null
+      }
+    },
+    {
+      "slug": "openai/gpt-5.4-mini",
+      "hf_slug": "",
+      "updated_at": "2026-03-17T17:08:51.265397+00:00",
+      "created_at": "2026-03-17T11:49:38+00:00",
+      "hf_updated_at": null,
+      "name": "OpenAI: GPT-5.4 Mini",
+      "short_name": "GPT-5.4 Mini",
+      "author": "openai",
+      "description": "GPT-5.4 mini brings the core capabilities of GPT-5.4 to a faster, more efficient model optimized for high-throughput workloads. It supports text and image inputs with strong performance across reasoning, coding, and tool use, while reducing latency and cost for large-scale deployments.\n\nThe model is designed for production environments that require a balance of capability and efficiency, making it well suited for chat applications, coding assistants, and agent workflows that operate at scale. GPT-5.4 mini delivers reliable instruction following, solid multi-step reasoning, and consistent performance across diverse tasks with improved cost efficiency.",
+      "model_version_group_id": null,
+      "context_length": 400000,
+      "input_modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "GPT",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": "",
+      "promotion_message": "",
+      "routing_error_message": "",
+      "permaslug": "openai/gpt-5.4-mini-20260317",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "high",
+          "low",
+          "medium",
+          "none",
+          "xhigh"
+        ],
+        "default_reasoning_effort": "medium",
+        "default_reasoning_enabled": false
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "high",
+            "low",
+            "medium",
+            "none",
+            "xhigh"
+          ],
+          "default_reasoning_effort": "medium",
+          "default_reasoning_enabled": false
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "endpoint": {
+        "id": "9ee065b2-3d1c-43bc-bdd7-28af3b148282",
+        "name": "OpenAI | openai/gpt-5.4-mini-20260317",
+        "context_length": 400000,
+        "model": {
+          "slug": "openai/gpt-5.4-mini",
+          "hf_slug": "",
+          "updated_at": "2026-03-17T17:08:51.265397+00:00",
+          "created_at": "2026-03-17T11:49:38+00:00",
+          "hf_updated_at": null,
+          "name": "OpenAI: GPT-5.4 Mini",
+          "short_name": "GPT-5.4 Mini",
+          "author": "openai",
+          "description": "GPT-5.4 mini brings the core capabilities of GPT-5.4 to a faster, more efficient model optimized for high-throughput workloads. It supports text and image inputs with strong performance across reasoning, coding, and tool use, while reducing latency and cost for large-scale deployments.\n\nThe model is designed for production environments that require a balance of capability and efficiency, making it well suited for chat applications, coding assistants, and agent workflows that operate at scale. GPT-5.4 mini delivers reliable instruction following, solid multi-step reasoning, and consistent performance across diverse tasks with improved cost efficiency.",
+          "model_version_group_id": null,
+          "context_length": 400000,
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "GPT",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": "",
+          "promotion_message": "",
+          "routing_error_message": "",
+          "permaslug": "openai/gpt-5.4-mini-20260317",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "high",
+              "low",
+              "medium",
+              "none",
+              "xhigh"
+            ],
+            "default_reasoning_effort": "medium",
+            "default_reasoning_enabled": false
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null,
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "high",
+                "low",
+                "medium",
+                "none",
+                "xhigh"
+              ],
+              "default_reasoning_effort": "medium",
+              "default_reasoning_enabled": false
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "is_trainable_text": null,
+          "is_trainable_image": null
+        },
+        "model_variant_slug": "openai/gpt-5.4-mini",
+        "model_variant_permaslug": "openai/gpt-5.4-mini-20260317",
+        "adapter_name": "OpenAIResponsesAdapter",
+        "provider_name": "OpenAI",
+        "provider_info": {
+          "name": "OpenAI",
+          "displayName": "OpenAI",
+          "slug": "openai",
+          "baseUrl": "https://api.openai.com/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+            "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+            "requiresUserIDs": true
+          },
+          "headquarters": "US",
+          "regionOverrides": {},
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": true,
+          "editors": [
+            "{}"
+          ],
+          "owners": [
+            "{}"
+          ],
+          "adapterName": "OpenAIResponsesAdapter",
+          "statusPageUrl": "https://status.openai.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/OpenAI.svg",
+            "className": "invert-0 dark:invert"
+          },
+          "ignoredProviderModels": [],
+          "sendClientIp": false,
+          "pricingStrategy": "openai_responses"
+        },
+        "provider_display_name": "OpenAI",
+        "provider_slug": "openai",
+        "provider_model_id": "gpt-5.4-mini-2026-03-17",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 128000,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "seed",
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "is_byok": false,
+        "moderation_required": true,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+          "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+          "requiresUserIDs": true
+        },
+        "pricing": {
+          "prompt": "0.00000075",
+          "completion": "0.0000045",
+          "input_cache_read": "0.000000075",
+          "web_search": "0.01",
+          "discount": 0,
+          "line_items": []
+        },
+        "variable_pricings": [],
+        "line_items": [],
+        "pricing_json": {
+          "openai_responses:prompt_tokens": "0.75e-6",
+          "openai_responses:web_search_calls": "0.01",
+          "openai_responses:completion_tokens": "4.5e-6",
+          "openai_responses:cached_prompt_tokens": "0.075e-6"
+        },
+        "pricing_version_id": "5712bf3b-635e-4d8e-a50c-5fda6e2dde43",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": true,
+        "has_chat_completions": true,
+        "features": {
+          "supports_file_urls": true,
+          "supports_native_web_search": true,
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "provider_region": null,
+        "deprecation_date": null
+      }
+    },
+    {
+      "slug": "mistralai/mistral-small-2603",
+      "hf_slug": "mistralai/Mistral-Small-4-119B-2603",
+      "updated_at": "2026-03-17T11:49:18.49398+00:00",
+      "created_at": "2026-03-16T21:14:45.935052+00:00",
+      "hf_updated_at": null,
+      "name": "Mistral: Mistral Small 4",
+      "short_name": "Mistral Small 4",
+      "author": "mistralai",
+      "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from Magistral, multimodal understanding from Pixtral, and agentic coding capabilities from Devstral, enabling one model to handle complex analysis, software development, and visual tasks within the same workflow.",
+      "model_version_group_id": null,
+      "context_length": 262144,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Mistral",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": "",
+      "promotion_message": "",
+      "routing_error_message": "",
+      "permaslug": "mistralai/mistral-small-2603",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": "<think>",
+        "end_token": "</think>",
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "none",
+          "high"
+        ],
+        "default_reasoning_effort": "high",
+        "default_reasoning_enabled": false
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": "<think>",
+          "end_token": "</think>",
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "none",
+            "high"
+          ],
+          "default_reasoning_effort": "high",
+          "default_reasoning_enabled": false
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "endpoint": {
+        "id": "f5ed6283-4e17-457d-98cd-2ec0c318171d",
+        "name": "Mistral | mistralai/mistral-small-2603",
+        "context_length": 262144,
+        "model": {
+          "slug": "mistralai/mistral-small-2603",
+          "hf_slug": "mistralai/Mistral-Small-4-119B-2603",
+          "updated_at": "2026-03-17T11:49:18.49398+00:00",
+          "created_at": "2026-03-16T21:14:45.935052+00:00",
+          "hf_updated_at": null,
+          "name": "Mistral: Mistral Small 4",
+          "short_name": "Mistral Small 4",
+          "author": "mistralai",
+          "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from Magistral, multimodal understanding from Pixtral, and agentic coding capabilities from Devstral, enabling one model to handle complex analysis, software development, and visual tasks within the same workflow.",
+          "model_version_group_id": null,
+          "context_length": 262144,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Mistral",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": "",
+          "promotion_message": "",
+          "routing_error_message": "",
+          "permaslug": "mistralai/mistral-small-2603",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": "<think>",
+            "end_token": "</think>",
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "none",
+              "high"
+            ],
+            "default_reasoning_effort": "high",
+            "default_reasoning_enabled": false
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": "<think>",
+              "end_token": "</think>",
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "none",
+                "high"
+              ],
+              "default_reasoning_effort": "high",
+              "default_reasoning_enabled": false
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "is_trainable_text": true,
+          "is_trainable_image": null
+        },
+        "model_variant_slug": "mistralai/mistral-small-2603",
+        "model_variant_permaslug": "mistralai/mistral-small-2603",
+        "adapter_name": "MistralAdapter",
+        "provider_name": "Mistral",
+        "provider_info": {
+          "name": "Mistral",
+          "displayName": "Mistral",
+          "slug": "mistral",
+          "baseUrl": "https://api.mistral.ai/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "retentionDays": 30,
+            "canPublish": false,
+            "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
+            "privacyPolicyURL": "https://mistral.ai/terms/#privacy-policy"
+          },
+          "headquarters": "FR",
+          "regionOverrides": {},
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "editors": [
+            "{}"
+          ],
+          "owners": [
+            "{}"
+          ],
+          "adapterName": "MistralAdapter",
+          "statusPageUrl": "https://status.mistral.ai/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/Mistral.png"
+          },
+          "ignoredProviderModels": [
+            "mistral-moderation-2411-all",
+            "voxtral-mini-2507",
+            "voxtral-small-2507",
+            "voxtral-mini-transcribe-2507",
+            "mistral-medium",
+            "mistral-tiny",
+            "mistral-tiny-2312",
+            "open-mistral-nemo",
+            "mistral-tiny-2407",
+            "open-mixtral-8x7b",
+            "mistral-small",
+            "mistral-small-2312",
+            "open-mixtral-8x22b-2404",
+            "mistral-large-pixtral-2411",
+            "codestral-2412",
+            "codestral-2411-rc5",
+            "pixtral-12b",
+            "mistral-moderation-2411",
+            "mistral-ocr-2503",
+            "mistral-ocr-2505",
+            "mistral-saba-2502",
+            "open-mixtral-8x22b",
+            "mistral-large-2407",
+            "magistral-medium-2507",
+            "mistral-embed",
+            "codestral-embed",
+            "codestral-2501",
+            "mistral-small-2501",
+            "mistral-ocr-2512",
+            "labs-devstral-small-2512",
+            "mistral-vibe-cli-with-tools",
+            "voxtral-mini-2602"
+          ],
+          "sendClientIp": false,
+          "pricingStrategy": "mistral"
+        },
+        "provider_display_name": "Mistral",
+        "provider_slug": "mistral",
+        "provider_model_id": "mistral-small-2603",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "retentionDays": 30,
+          "canPublish": false,
+          "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
+          "privacyPolicyURL": "https://mistral.ai/terms/#privacy-policy"
+        },
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000015",
+          "discount": 0,
+          "line_items": []
+        },
+        "variable_pricings": [],
+        "line_items": [],
+        "pricing_json": {
+          "mistral:prompt_tokens": "0.15e-6",
+          "mistral:completion_tokens": "0.6e-6",
+          "mistral:cached_prompt_tokens": "0.15e-7"
+        },
+        "pricing_version_id": "cf1eb754-01cd-4abc-b8a6-d67ccd6e7c36",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "provider_region": null,
+        "deprecation_date": null
+      }
+    },
+    {
       "slug": "z-ai/glm-5-turbo",
       "hf_slug": "",
       "updated_at": "2026-03-15T14:55:14.787666+00:00",
@@ -1722,7 +2560,20 @@
           "prompt": "0.00000025",
           "completion": "0.000002",
           "discount": 0,
-          "line_items": []
+          "line_items": [
+            {
+              "type": "long_context_threshold",
+              "value": "128000"
+            },
+            {
+              "type": "input_tokens_above_threshold",
+              "value": "0.0000005"
+            },
+            {
+              "type": "output_tokens_above_threshold",
+              "value": "0.000004"
+            }
+          ]
         },
         "variable_pricings": [
           {
@@ -1732,7 +2583,20 @@
             "completions": "0.000004"
           }
         ],
-        "line_items": [],
+        "line_items": [
+          {
+            "type": "long_context_threshold",
+            "value": "128000"
+          },
+          {
+            "type": "input_tokens_above_threshold",
+            "value": "0.0000005"
+          },
+          {
+            "type": "output_tokens_above_threshold",
+            "value": "0.000004"
+          }
+        ],
         "pricing_json": {
           "byteplus:prompt_tokens": "0.00000025",
           "byteplus:completion_tokens": "0.000002",
@@ -2318,7 +3182,7 @@
     {
       "slug": "openai/gpt-5.4",
       "hf_slug": "",
-      "updated_at": "2026-03-05T18:12:32.549404+00:00",
+      "updated_at": "2026-03-17T11:51:58.023307+00:00",
       "created_at": "2026-03-05T18:12:32+00:00",
       "hf_updated_at": null,
       "name": "OpenAI: GPT-5.4",
@@ -2359,8 +3223,8 @@
           "xhigh",
           "none"
         ],
-        "default_reasoning_effort": "none",
-        "default_reasoning_enabled": true
+        "default_reasoning_effort": "medium",
+        "default_reasoning_enabled": false
       },
       "features": {
         "reasoning_config": {
@@ -2375,8 +3239,8 @@
             "xhigh",
             "none"
           ],
-          "default_reasoning_effort": "none",
-          "default_reasoning_enabled": true
+          "default_reasoning_effort": "medium",
+          "default_reasoning_enabled": false
         },
         "chat_template_config": {}
       },
@@ -2399,7 +3263,7 @@
         "model": {
           "slug": "openai/gpt-5.4",
           "hf_slug": "",
-          "updated_at": "2026-03-05T18:12:32.549404+00:00",
+          "updated_at": "2026-03-17T11:51:58.023307+00:00",
           "created_at": "2026-03-05T18:12:32+00:00",
           "hf_updated_at": null,
           "name": "OpenAI: GPT-5.4",
@@ -2440,8 +3304,8 @@
               "xhigh",
               "none"
             ],
-            "default_reasoning_effort": "none",
-            "default_reasoning_enabled": true
+            "default_reasoning_effort": "medium",
+            "default_reasoning_enabled": false
           },
           "features": {
             "reasoning_config": {
@@ -2456,8 +3320,8 @@
                 "xhigh",
                 "none"
               ],
-              "default_reasoning_effort": "none",
-              "default_reasoning_enabled": true
+              "default_reasoning_effort": "medium",
+              "default_reasoning_enabled": false
             },
             "chat_template_config": {}
           },
@@ -3671,7 +4535,20 @@
           "prompt": "0.0000001",
           "completion": "0.0000004",
           "discount": 0,
-          "line_items": []
+          "line_items": [
+            {
+              "type": "long_context_threshold",
+              "value": "128000"
+            },
+            {
+              "type": "input_tokens_above_threshold",
+              "value": "0.0000002"
+            },
+            {
+              "type": "output_tokens_above_threshold",
+              "value": "0.0000008"
+            }
+          ]
         },
         "variable_pricings": [
           {
@@ -3681,7 +4558,20 @@
             "completions": "0.0000008"
           }
         ],
-        "line_items": [],
+        "line_items": [
+          {
+            "type": "long_context_threshold",
+            "value": "128000"
+          },
+          {
+            "type": "input_tokens_above_threshold",
+            "value": "0.0000002"
+          },
+          {
+            "type": "output_tokens_above_threshold",
+            "value": "0.0000008"
+          }
+        ],
         "pricing_json": {
           "byteplus:prompt_tokens": "0.0000001",
           "byteplus:completion_tokens": "0.0000004",
@@ -8330,7 +9220,7 @@
           "privacyPolicyURL": "https://www.nextbit256.com/docs/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000025",
+          "prompt": "0.0000002",
           "completion": "0.0000012",
           "discount": 0,
           "line_items": []
@@ -8338,10 +9228,10 @@
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000025",
+          "openai:prompt_tokens": "0.0000002",
           "openai:completion_tokens": "0.0000012"
         },
-        "pricing_version_id": "2db87aa0-3173-48dc-b80d-db178ba463e5",
+        "pricing_version_id": "71a70a77-8070-4d58-92cb-770599527251",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -8376,7 +9266,7 @@
       "author": "z-ai",
       "description": "GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
       "model_version_group_id": null,
-      "context_length": 202752,
+      "context_length": 80000,
       "input_modalities": [
         "text"
       ],
@@ -8422,7 +9312,7 @@
       "endpoint": {
         "id": "0f4b86e5-14aa-40d8-91a4-79b694fac8b5",
         "name": "Ambient | z-ai/glm-5-20260211",
-        "context_length": 202752,
+        "context_length": 80000,
         "model": {
           "slug": "z-ai/glm-5",
           "hf_slug": "zai-org/GLM-5",
@@ -8529,7 +9419,8 @@
           "temperature",
           "max_tokens",
           "top_p",
-          "frequency_penalty"
+          "frequency_penalty",
+          "structured_outputs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -11000,7 +11891,9 @@
           "isAbortable": true,
           "moderationRequired": false,
           "editors": [],
-          "owners": [],
+          "owners": [
+            "org_3B4DZxSH95AdTOk0Z4flpBV3sXH"
+          ],
           "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
           "byokEnabled": false,
@@ -14089,7 +14982,20 @@
           "prompt": "0.000000075",
           "completion": "0.0000003",
           "discount": 0,
-          "line_items": []
+          "line_items": [
+            {
+              "type": "long_context_threshold",
+              "value": "128000"
+            },
+            {
+              "type": "input_tokens_above_threshold",
+              "value": "0.0000001"
+            },
+            {
+              "type": "output_tokens_above_threshold",
+              "value": "0.0000008"
+            }
+          ]
         },
         "variable_pricings": [
           {
@@ -14101,7 +15007,20 @@
             "input_cache_write": "0"
           }
         ],
-        "line_items": [],
+        "line_items": [
+          {
+            "type": "long_context_threshold",
+            "value": "128000"
+          },
+          {
+            "type": "input_tokens_above_threshold",
+            "value": "0.0000001"
+          },
+          {
+            "type": "output_tokens_above_threshold",
+            "value": "0.0000008"
+          }
+        ],
         "pricing_json": {
           "byteplus:prompt_tokens": "0.000000075",
           "byteplus:completion_tokens": "0.0000003",
@@ -14344,7 +15263,20 @@
           "prompt": "0.00000025",
           "completion": "0.000002",
           "discount": 0,
-          "line_items": []
+          "line_items": [
+            {
+              "type": "long_context_threshold",
+              "value": "128000"
+            },
+            {
+              "type": "input_tokens_above_threshold",
+              "value": "0.0000005"
+            },
+            {
+              "type": "output_tokens_above_threshold",
+              "value": "0.000004"
+            }
+          ]
         },
         "variable_pricings": [
           {
@@ -14356,7 +15288,20 @@
             "input_cache_write": "0"
           }
         ],
-        "line_items": [],
+        "line_items": [
+          {
+            "type": "long_context_threshold",
+            "value": "128000"
+          },
+          {
+            "type": "input_tokens_above_threshold",
+            "value": "0.0000005"
+          },
+          {
+            "type": "output_tokens_above_threshold",
+            "value": "0.000004"
+          }
+        ],
         "pricing_json": {
           "byteplus:prompt_tokens": "0.00000025",
           "byteplus:completion_tokens": "0.000002",
@@ -15499,16 +16444,18 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000003",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1e-07,
-          "mistral:completion_tokens": 3e-07
+          "mistral:prompt_tokens": "1e-7",
+          "mistral:completion_tokens": 3e-07,
+          "mistral:cached_prompt_tokens": "1e-8"
         },
-        "pricing_version_id": "54e18b27-b887-454e-96b7-699546659da7",
+        "pricing_version_id": "446d4fb6-64cb-43e9-b676-8c08609afed2",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -17728,6 +18675,7 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.000002",
+          "input_cache_read": "0.00000004",
           "discount": 0,
           "line_items": []
         },
@@ -17735,9 +18683,10 @@
         "line_items": [],
         "pricing_json": {
           "mistral:prompt_tokens": "0.0000004",
-          "mistral:completion_tokens": "0.000002"
+          "mistral:completion_tokens": "0.000002",
+          "mistral:cached_prompt_tokens": "0.00000004"
         },
-        "pricing_version_id": "1b601828-f2eb-4377-826c-d109e3b63894",
+        "pricing_version_id": "57faec28-f049-41ee-83d0-e20ced1c7d98",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -20193,16 +21142,18 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000002",
+          "input_cache_read": "0.00000002",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 2e-07,
-          "mistral:completion_tokens": 2e-07
+          "mistral:prompt_tokens": "2e-7",
+          "mistral:completion_tokens": 2e-07,
+          "mistral:cached_prompt_tokens": "2e-8"
         },
-        "pricing_version_id": "b0ff8ca8-ffa3-4feb-ad65-91090aa5c22b",
+        "pricing_version_id": "ef44e508-0fad-4341-8f45-8e7358dc663e",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -20448,16 +21399,18 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.00000015",
+          "input_cache_read": "0.000000015",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1.5e-07,
-          "mistral:completion_tokens": 1.5e-07
+          "mistral:prompt_tokens": "1.5e-7",
+          "mistral:completion_tokens": 1.5e-07,
+          "mistral:cached_prompt_tokens": "1.5e-8"
         },
-        "pricing_version_id": "d683019f-fb1b-407c-9fef-5b0efff712e1",
+        "pricing_version_id": "646d5ead-00ea-4ad9-b9c4-c6c1d494b8c2",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -20703,16 +21656,18 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000001",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1e-07,
-          "mistral:completion_tokens": 1e-07
+          "mistral:prompt_tokens": "1e-7",
+          "mistral:completion_tokens": 1e-07,
+          "mistral:cached_prompt_tokens": "1e-8"
         },
-        "pricing_version_id": "ec8022e6-9795-4d78-a729-b7c198e0326d",
+        "pricing_version_id": "421504aa-fba2-4f80-8f5d-da34c922a166",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -20958,16 +21913,18 @@
         "pricing": {
           "prompt": "0.0000005",
           "completion": "0.0000015",
+          "input_cache_read": "0.00000005",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 5e-07,
-          "mistral:completion_tokens": 1.5e-06
+          "mistral:prompt_tokens": "5e-7",
+          "mistral:completion_tokens": 1.5e-06,
+          "mistral:cached_prompt_tokens": "5e-8"
         },
-        "pricing_version_id": "063c942f-5035-4cfc-8b26-911b375a5c4a",
+        "pricing_version_id": "c1ddd90d-dc7c-452e-b8d3-0ea4b3370f3f",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -21928,8 +22885,8 @@
       "is_trainable_text": true,
       "is_trainable_image": null,
       "endpoint": {
-        "id": "f270e10b-1d21-4345-9e4e-662ddb5ba441",
-        "name": "DeepInfra | deepseek/deepseek-v3.2-20251201",
+        "id": "058458f3-18ed-432f-aa68-5c45fa4f4e52",
+        "name": "Ionstream | deepseek/deepseek-v3.2-20251201",
         "context_length": 163840,
         "model": {
           "slug": "deepseek/deepseek-v3.2",
@@ -21991,126 +22948,52 @@
         },
         "model_variant_slug": "deepseek/deepseek-v3.2",
         "model_variant_permaslug": "deepseek/deepseek-v3.2-20251201",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "IonstreamAdapter",
+        "provider_name": "Ionstream",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "Ionstream",
+          "displayName": "Ionstream",
+          "slug": "ionstream",
+          "baseUrl": "https://chat.ionstream.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy"
+            "retainsPrompts": true,
+            "retentionDays": 30,
+            "canPublish": false
           },
           "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "regionOverrides": {},
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
+          "editors": [],
           "owners": [
-            "{}",
-            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
+            "org_3AV0TaQxpuruS8v62PQyvmPqMar"
           ],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
-          "byokEnabled": true,
+          "adapterName": "IonstreamAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://huggingface.co/&size=256"
           },
-          "ignoredProviderModels": [
-            "anthropic/claude-4-opus",
-            "anthropic/claude-4-sonnet",
-            "deepseek-ai/DeepSeek-R1-0528-Turbo",
-            "meta-llama/Llama-2-70b-chat-hf",
-            "mistralai/Mixtral-8x22B-Instruct-v0.1",
-            "google/gemma-1.1-7b-it",
-            "microsoft/Phi-3-medium-4k-instruct",
-            "google/gemma-2-27b-it",
-            "microsoft/WizardLM-2-7B",
-            "mattshumer/Reflection-Llama-3.1-70B",
-            "Sao10K/L3-8B-Lunaris-v1",
-            "openbmb/MiniCPM-Llama3-V-2_5",
-            "Qwen/QVQ-72B-Preview",
-            "deepinfra/airoboros-70b",
-            "Qwen/QwQ-32B-Preview",
-            "Phind/Phind-CodeLlama-34B-v2",
-            "lizpreciatior/lzlv_70b_fp16_hf",
-            "mistralai/Mistral-7B-Instruct-v0.2",
-            "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
-            "cognitivecomputations/dolphin-2.9.1-llama-3-70b",
-            "Qwen/Qwen2-72B-Instruct",
-            "Qwen/Qwen2-7B-Instruct",
-            "google/gemma-2-9b-it",
-            "Sao10K/L3-70B-Euryale-v2.1",
-            "google/codegemma-7b-it",
-            "mistralai/Mistral-7B-Instruct-v0.1",
-            "KoboldAI/LLaMA2-13B-Tiefighter",
-            "meta-llama/Llama-2-13b-chat-hf",
-            "openchat/openchat_3.5",
-            "openchat/openchat-3.6-8b",
-            "bigcode/starcoder2-15b-instruct-v0.1",
-            "Gryphe/MythoMax-L2-13b-turbo",
-            "Austism/chronos-hermes-13b-v2",
-            "Qwen/Qwen2.5-Coder-7B",
-            "moonshotai/Kimi-K2-Instruct",
-            "google/gemini-1.5-flash",
-            "google/gemini-2.5-flash",
-            "google/gemini-2.0-flash-001",
-            "anthropic/claude-3-7-sonnet-latest",
-            "google/gemini-1.5-flash-8b",
-            "google/gemini-2.5-pro",
-            "NovaSky-AI/Sky-T1-32B-Preview",
-            "allenai/olmOCR-7B-0725-FP8",
-            "allenai/olmOCR-7B-0825",
-            "deepseek-ai/DeepSeek-V3-0324-Turbo",
-            "PaddlePaddle/PaddleOCR-VL-0.9B",
-            "allenai/olmOCR-7B-1025",
-            "allenai/olmOCR-2-7B-1025",
-            "allenai/olmOCR-2",
-            "deepseek-ai/DeepSeek-OCR",
-            "meta-llama/Llama-3.2-1B-Instruct",
-            "sentence-transformers/clip-ViT-B-32-multilingual-v1",
-            "shibing624/text2vec-base-chinese",
-            "sentence-transformers/clip-ViT-B-32",
-            "BAAI/bge-en-icl",
-            "Qwen/Qwen3-Embedding-8B-batch",
-            "Qwen/Qwen3-Embedding-4B-batch",
-            "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-            "meta-llama/Meta-Llama-3.1-405B-Instruct",
-            "BAAI/bge-m3-multi",
-            "google/embeddinggemma-300m",
-            "Qwen/Qwen3-Embedding-0.6B-batch",
-            "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Turbo",
-            "microsoft/Phi-4-multimodal-instruct",
-            "deepseek-ai/DeepSeek-V3.2-Exp",
-            "meta-llama/Llama-3.2-90B-Vision-Instruct",
-            "meta-llama/Meta-Llama-3-70B-Instruct",
-            "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-            "Qwen/Qwen3-Max",
-            "ByteDance/Seed-1.8",
-            "ByteDance/Seed-2.0-mini",
-            "Qwen/Qwen3-Max-Thinking"
-          ],
+          "ignoredProviderModels": [],
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp4",
-        "provider_model_id": "deepseek-ai/DeepSeek-V3.2",
-        "quantization": "fp4",
+        "provider_display_name": "Ionstream",
+        "provider_slug": "ionstream/fp8",
+        "provider_model_id": "deepseek-ai/deepseek-v3.2",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 163840,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -22118,42 +23001,36 @@
           "max_tokens",
           "temperature",
           "top_p",
-          "stop",
           "frequency_penalty",
           "presence_penalty",
-          "repetition_penalty",
-          "top_k",
+          "stop",
           "seed",
-          "min_p",
-          "response_format",
+          "tools",
           "tool_choice",
-          "tools"
+          "response_format"
         ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "retainsPrompts": true,
+          "retentionDays": 30,
+          "canPublish": false
         },
         "pricing": {
-          "prompt": "0.00000026",
-          "completion": "0.00000038",
-          "input_cache_read": "0.00000013",
+          "prompt": "0.000000255",
+          "completion": "0.0000004",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000026",
-          "openai:completion_tokens": "0.00000038",
-          "openai:cached_prompt_tokens": "0.00000013"
+          "openai:prompt_tokens": "0.000000255",
+          "openai:completion_tokens": "0.0000004"
         },
-        "pricing_version_id": "153a9645-ceef-4a2d-ad1f-e2b4d51dee9d",
+        "pricing_version_id": "568d0415-319a-4279-9beb-286f11402dca",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -22163,12 +23040,11 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "reasoning_return_mechanism": "reasoning-content",
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
@@ -31277,16 +32153,18 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1e-07,
-          "mistral:completion_tokens": 0
+          "mistral:prompt_tokens": "1e-7",
+          "mistral:completion_tokens": 0,
+          "mistral:cached_prompt_tokens": "1e-8"
         },
-        "pricing_version_id": "c7fe55f7-4be9-4395-abd8-9ac9085dafbb",
+        "pricing_version_id": "f694e51b-c761-4a53-9783-38e188770578",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -32020,16 +32898,18 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0",
+          "input_cache_read": "0.000000015",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1.5e-07,
-          "mistral:completion_tokens": 0
+          "mistral:prompt_tokens": "1.5e-7",
+          "mistral:completion_tokens": 0,
+          "mistral:cached_prompt_tokens": "1.5e-8"
         },
-        "pricing_version_id": "10b8f835-e464-4043-841f-bdb06cc108ea",
+        "pricing_version_id": "01298ca6-462e-4485-be59-7e185cd41b15",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -32964,17 +33844,19 @@
           "prompt": "0.0000001",
           "completion": "0.0000003",
           "audio": "0.0001",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1e-07,
+          "mistral:prompt_tokens": "1e-7",
           "mistral:completion_tokens": 3e-07,
-          "mistral:audio_input_tokens": 0.0001
+          "mistral:audio_input_tokens": 0.0001,
+          "mistral:cached_prompt_tokens": "1e-8"
         },
-        "pricing_version_id": "2dba2112-53fe-451b-adb4-9459290f1c57",
+        "pricing_version_id": "ef078d00-4ffb-467b-96b3-4d5fd2282265",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -48540,16 +49422,18 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.000002",
+          "input_cache_read": "0.00000004",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 4e-07,
-          "mistral:completion_tokens": 2e-06
+          "mistral:prompt_tokens": "4e-7",
+          "mistral:completion_tokens": 2e-06,
+          "mistral:cached_prompt_tokens": "4e-8"
         },
-        "pricing_version_id": "2fd2a6a7-7579-4e66-88b2-3ff4e4d7e68d",
+        "pricing_version_id": "886c2e5e-afd6-4b72-b4f1-59bc5d998670",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -52320,16 +53204,18 @@
         "pricing": {
           "prompt": "0.0000003",
           "completion": "0.0000009",
+          "input_cache_read": "0.00000003",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 3e-07,
-          "mistral:completion_tokens": 9e-07
+          "mistral:prompt_tokens": "3e-7",
+          "mistral:completion_tokens": 9e-07,
+          "mistral:cached_prompt_tokens": "3e-8"
         },
-        "pricing_version_id": "89f9c64d-85a4-498a-aa22-322e2dd82abc",
+        "pricing_version_id": "8de0c675-cc4f-42ff-ba8c-ee058c7a5a96",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -56082,16 +56968,18 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.000002",
+          "input_cache_read": "0.00000004",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 4e-07,
-          "mistral:completion_tokens": 2e-06
+          "mistral:prompt_tokens": "4e-7",
+          "mistral:completion_tokens": 2e-06,
+          "mistral:cached_prompt_tokens": "4e-8"
         },
-        "pricing_version_id": "a14c8b60-0380-4f25-9f27-a3e1a730763a",
+        "pricing_version_id": "43a50f70-3a4b-411a-bc9b-01050463d7e7",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -56329,16 +57217,18 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000003",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 1e-07,
-          "mistral:completion_tokens": 3e-07
+          "mistral:prompt_tokens": "1e-7",
+          "mistral:completion_tokens": 3e-07,
+          "mistral:cached_prompt_tokens": "1e-8"
         },
-        "pricing_version_id": "9dc15e0a-5d94-4547-bcde-29c95ae6542f",
+        "pricing_version_id": "68ca89da-ee2c-438f-af8e-61fd7ae94b4b",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -63135,6 +64025,7 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.000002",
+          "input_cache_read": "0.00000004",
           "discount": 0,
           "line_items": []
         },
@@ -63142,9 +64033,10 @@
         "line_items": [],
         "pricing_json": {
           "mistral:prompt_tokens": 4e-07,
-          "mistral:completion_tokens": 2e-06
+          "mistral:completion_tokens": 2e-06,
+          "mistral:cached_prompt_tokens": "4e-8"
         },
-        "pricing_version_id": "25450ac1-aa83-42d4-b87b-3a37014630c6",
+        "pricing_version_id": "3f8accfa-afcf-4e42-b2dd-9a20fd18539a",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -77657,6 +78549,7 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000006",
+          "input_cache_read": "0.00000002",
           "discount": 0,
           "line_items": []
         },
@@ -77664,9 +78557,10 @@
         "line_items": [],
         "pricing_json": {
           "mistral:prompt_tokens": 2e-07,
-          "mistral:completion_tokens": 6e-07
+          "mistral:completion_tokens": 6e-07,
+          "mistral:cached_prompt_tokens": "2e-8"
         },
-        "pricing_version_id": "192a1708-5cfa-4e5f-88bc-ec07114b8513",
+        "pricing_version_id": "27c1ea75-e219-46b8-9b76-824ad6ba5ec2",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -78192,6 +79086,8 @@
         "max_completion_tokens": 100000,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
           "seed",
           "max_tokens",
           "response_format",
@@ -78229,7 +79125,7 @@
         "is_deranked": false,
         "is_disabled": false,
         "supports_tool_parameters": true,
-        "supports_reasoning": false,
+        "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
@@ -80787,7 +81683,7 @@
     {
       "slug": "openai/o3-mini",
       "hf_slug": "",
-      "updated_at": "2025-11-10T16:00:38.246665+00:00",
+      "updated_at": "2026-03-17T13:20:53.216861+00:00",
       "created_at": "2025-01-31T19:28:41.132151+00:00",
       "hf_updated_at": null,
       "name": "OpenAI: o3 Mini",
@@ -80814,7 +81710,7 @@
       "promotion_message": null,
       "routing_error_message": null,
       "permaslug": "openai/o3-mini-2025-01-31",
-      "supports_reasoning": false,
+      "supports_reasoning": true,
       "reasoning_config": {
         "start_token": null,
         "end_token": null,
@@ -80825,9 +81721,17 @@
           "start_token": null,
           "end_token": null,
           "system_prompt": null
-        }
+        },
+        "chat_template_config": {}
       },
-      "default_parameters": {},
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
       "default_order": [],
       "quick_start_example_type": null,
       "is_trainable_text": null,
@@ -80839,7 +81743,7 @@
         "model": {
           "slug": "openai/o3-mini",
           "hf_slug": "",
-          "updated_at": "2025-11-10T16:00:38.246665+00:00",
+          "updated_at": "2026-03-17T13:20:53.216861+00:00",
           "created_at": "2025-01-31T19:28:41.132151+00:00",
           "hf_updated_at": null,
           "name": "OpenAI: o3 Mini",
@@ -80866,7 +81770,7 @@
           "promotion_message": null,
           "routing_error_message": null,
           "permaslug": "openai/o3-mini-2025-01-31",
-          "supports_reasoning": false,
+          "supports_reasoning": true,
           "reasoning_config": {
             "start_token": null,
             "end_token": null,
@@ -80877,9 +81781,17 @@
               "start_token": null,
               "end_token": null,
               "system_prompt": null
-            }
+            },
+            "chat_template_config": {}
           },
-          "default_parameters": {},
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
           "default_order": [],
           "quick_start_example_type": null,
           "is_trainable_text": null,
@@ -80937,6 +81849,8 @@
         "max_completion_tokens": 100000,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
           "seed",
           "max_tokens",
           "response_format",
@@ -80974,7 +81888,7 @@
         "is_deranked": false,
         "is_disabled": false,
         "supports_tool_parameters": true,
-        "supports_reasoning": false,
+        "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
@@ -82861,7 +83775,7 @@
           "privacyPolicyURL": "https://www.nextbit256.com/docs/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000006",
+          "prompt": "0.000000065",
           "completion": "0.00000014",
           "discount": 0,
           "line_items": []
@@ -82869,10 +83783,10 @@
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "openai:prompt_tokens": 6e-08,
+          "openai:prompt_tokens": "6.5e-8",
           "openai:completion_tokens": 1.4e-07
         },
-        "pricing_version_id": "15363f03-8099-406d-b122-11115a36d53c",
+        "pricing_version_id": "0ba6ec91-abf7-4f47-8616-7e5f077ff625",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -83610,7 +84524,7 @@
     {
       "slug": "openai/o1",
       "hf_slug": "",
-      "updated_at": "2025-11-10T16:00:38.246665+00:00",
+      "updated_at": "2026-03-17T13:22:16.787103+00:00",
       "created_at": "2024-12-17T18:26:39.576639+00:00",
       "hf_updated_at": null,
       "name": "OpenAI: o1",
@@ -83638,7 +84552,7 @@
       "promotion_message": null,
       "routing_error_message": null,
       "permaslug": "openai/o1-2024-12-17",
-      "supports_reasoning": false,
+      "supports_reasoning": true,
       "reasoning_config": {
         "start_token": null,
         "end_token": null,
@@ -83649,9 +84563,17 @@
           "start_token": null,
           "end_token": null,
           "system_prompt": null
-        }
+        },
+        "chat_template_config": {}
       },
-      "default_parameters": {},
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
       "default_order": [],
       "quick_start_example_type": null,
       "is_trainable_text": null,
@@ -83663,7 +84585,7 @@
         "model": {
           "slug": "openai/o1",
           "hf_slug": "",
-          "updated_at": "2025-11-10T16:00:38.246665+00:00",
+          "updated_at": "2026-03-17T13:22:16.787103+00:00",
           "created_at": "2024-12-17T18:26:39.576639+00:00",
           "hf_updated_at": null,
           "name": "OpenAI: o1",
@@ -83691,7 +84613,7 @@
           "promotion_message": null,
           "routing_error_message": null,
           "permaslug": "openai/o1-2024-12-17",
-          "supports_reasoning": false,
+          "supports_reasoning": true,
           "reasoning_config": {
             "start_token": null,
             "end_token": null,
@@ -83702,9 +84624,17 @@
               "start_token": null,
               "end_token": null,
               "system_prompt": null
-            }
+            },
+            "chat_template_config": {}
           },
-          "default_parameters": {},
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
           "default_order": [],
           "quick_start_example_type": null,
           "is_trainable_text": null,
@@ -83762,6 +84692,8 @@
         "max_completion_tokens": 100000,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
           "seed",
           "max_tokens",
           "response_format",
@@ -83799,7 +84731,7 @@
         "is_deranked": false,
         "is_disabled": false,
         "supports_tool_parameters": true,
-        "supports_reasoning": false,
+        "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
@@ -85806,16 +86738,18 @@
         "pricing": {
           "prompt": "0.000002",
           "completion": "0.000006",
+          "input_cache_read": "0.0000002",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 2e-06,
-          "mistral:completion_tokens": 6e-06
+          "mistral:prompt_tokens": "0.000002",
+          "mistral:completion_tokens": 6e-06,
+          "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "08e23a75-5eb3-4025-8a32-06c7b0f7468b",
+        "pricing_version_id": "6b4f6ac9-de5a-47ad-8b91-0a6b3c711dfb",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -86033,16 +86967,18 @@
         "pricing": {
           "prompt": "0.000002",
           "completion": "0.000006",
+          "input_cache_read": "0.0000002",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 2e-06,
-          "mistral:completion_tokens": 6e-06
+          "mistral:prompt_tokens": "0.000002",
+          "mistral:completion_tokens": 6e-06,
+          "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "f5c9d663-74f4-457b-8a33-71e07ce30e06",
+        "pricing_version_id": "af0a1f36-618d-4aba-9cd1-8edf06ca3d48",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -86262,16 +87198,18 @@
         "pricing": {
           "prompt": "0.000002",
           "completion": "0.000006",
+          "input_cache_read": "0.0000002",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 2e-06,
-          "mistral:completion_tokens": 6e-06
+          "mistral:prompt_tokens": "0.000002",
+          "mistral:completion_tokens": 6e-06,
+          "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "b80bc0f8-6b6c-4dd4-9205-041df98e8a5f",
+        "pricing_version_id": "bfda2cf7-30de-45dd-861e-6db4b61c6b10",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -98650,16 +99588,18 @@
         "pricing": {
           "prompt": "0.000002",
           "completion": "0.000006",
+          "input_cache_read": "0.0000002",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 2e-06,
-          "mistral:completion_tokens": 6e-06
+          "mistral:prompt_tokens": "0.000002",
+          "mistral:completion_tokens": 6e-06,
+          "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "1b048c3f-40c0-4564-88b9-04bdb1f2b508",
+        "pricing_version_id": "06607651-4441-4e0f-afd1-2c0508452775",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -100026,16 +100966,18 @@
         "pricing": {
           "prompt": "0.000002",
           "completion": "0.000006",
+          "input_cache_read": "0.0000002",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "mistral:prompt_tokens": 2e-06,
-          "mistral:completion_tokens": 6e-06
+          "mistral:prompt_tokens": "0.000002",
+          "mistral:completion_tokens": 6e-06,
+          "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "7acd9c1c-15d9-40bd-b6c9-048864ca68c7",
+        "pricing_version_id": "d385f70a-db15-4927-a6b8-d92fe6093c68",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -104642,7 +105584,9 @@
           "top_p",
           "stop",
           "frequency_penalty",
-          "presence_penalty"
+          "presence_penalty",
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -104914,7 +105858,9 @@
           "top_p",
           "stop",
           "frequency_penalty",
-          "presence_penalty"
+          "presence_penalty",
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
