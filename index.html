@@ -1634,10 +1634,12 @@
   }
 
   .compare-price.cheapest-cell {
-    background: rgba(0,196,140,0.08);
+    background: rgba(0,196,140,0.15);
+    border: 1px solid rgba(0,196,140,0.35);
     border-radius: 6px;
     padding: 4px 8px;
     margin: -4px -8px;
+    font-weight: 500;
   }
 
   .compare-price-secondary {
@@ -3485,11 +3487,11 @@ function renderCompareTable() {
     if (isLLM) {
       const inp = r.pricing.input_per_1m;
       const isCheapestIn = inp != null && inp === cheapestInput && rows.length > 1;
-      html += `<td><div class="compare-price${isCheapestIn ? ' cheapest-cell' : ''}">${inp != null ? '$' + inp.toFixed(2) : '—'}</div></td>`;
+      html += `<td><div class="compare-price${isCheapestIn ? ' cheapest-cell' : ''}">${inp != null ? '$' + inp.toFixed(2) : '—'}${isCheapestIn ? ' <span class="best-badge">' + t('cheapest') + '</span>' : ''}</div></td>`;
 
       const out = r.pricing.output_per_1m;
       const isCheapestOut = out != null && out === cheapestOutput && rows.length > 1;
-      html += `<td><div class="compare-price${isCheapestOut ? ' cheapest-cell' : ''}">${out != null ? '$' + out.toFixed(2) : '—'}</div></td>`;
+      html += `<td><div class="compare-price${isCheapestOut ? ' cheapest-cell' : ''}">${out != null ? '$' + out.toFixed(2) : '—'}${isCheapestOut ? ' <span class="best-badge">' + t('cheapest') + '</span>' : ''}</div></td>`;
 
       html += `<td><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-2)">${r.model.context_k ? r.model.context_k + 'k' : '—'}</span></td>`;
       html += `<td>${capBadges}</td>`;
@@ -3500,7 +3502,7 @@ function renderCompareTable() {
       if (formatted.isNote) {
         html += `<td><span class="compare-price-na">${escHtml(formatted.unit)}</span></td><td></td>`;
       } else {
-        html += `<td><div class="compare-price${isCheap ? ' cheapest-cell' : ''}">${formatted.value}</div></td>`;
+        html += `<td><div class="compare-price${isCheap ? ' cheapest-cell' : ''}">${formatted.value}${isCheap ? ' <span class="best-badge">' + t('cheapest') + '</span>' : ''}</div></td>`;
         html += `<td><span style="font-size:12px;color:var(--text-3)">${formatted.unit}</span></td>`;
       }
       html += `<td>${capBadges}</td>`;
