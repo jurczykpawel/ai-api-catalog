@@ -1302,6 +1302,362 @@
     color: var(--accent);
   }
 
+  /* ── COMPARE SECTION ── */
+  .compare-section {
+    display: none;
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+  }
+
+  .compare-section.active { display: block; }
+
+  .compare-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--text-1);
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+  }
+
+  .compare-sub {
+    font-size: 14px;
+    color: var(--text-2);
+    margin-bottom: 24px;
+  }
+
+  .compare-presets {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  .preset-card {
+    background: linear-gradient(160deg, var(--surface-2) 0%, var(--surface) 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    min-width: 200px;
+    flex: 1;
+    max-width: 280px;
+  }
+
+  .preset-card:hover {
+    border-color: var(--border-acc);
+    transform: translateY(-1px);
+  }
+
+  .preset-card.active {
+    border-color: var(--accent);
+    background: linear-gradient(160deg, rgba(0,138,255,0.08) 0%, var(--surface) 100%);
+  }
+
+  .preset-card-icon { font-size: 20px; margin-bottom: 8px; }
+
+  .preset-card-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-1);
+    margin-bottom: 4px;
+  }
+
+  .preset-card-count {
+    font-size: 12px;
+    color: var(--text-3);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .preset-card-models {
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .preset-card-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--border-md);
+  }
+
+  /* Compare bar */
+  .compare-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    min-height: 40px;
+  }
+
+  .compare-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--surface-2);
+    border: 1px solid var(--border-md);
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--text-1);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .compare-chip-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .compare-chip-remove {
+    background: none;
+    border: none;
+    color: var(--text-3);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 2px;
+    line-height: 1;
+    transition: color 0.15s;
+  }
+
+  .compare-chip-remove:hover { color: var(--red); }
+
+  .compare-add-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background: var(--surface);
+    border: 1px dashed var(--border-md);
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--text-3);
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'DM Sans', sans-serif;
+    position: relative;
+  }
+
+  .compare-add-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* Add model dropdown */
+  .compare-search-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    width: 320px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: var(--surface);
+    border: 1px solid var(--border-md);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    z-index: 50;
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) transparent;
+  }
+
+  .compare-search-dropdown.open { display: block; }
+
+  .compare-search-input {
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--surface-2);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-1);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .compare-search-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text-2);
+    transition: background 0.1s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .compare-search-item:hover {
+    background: var(--surface-2);
+    color: var(--text-1);
+  }
+
+  .compare-search-item-price {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+  }
+
+  /* Compare table */
+  .compare-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    scrollbar-width: thin;
+    scrollbar-color: var(--surface-3) transparent;
+  }
+
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+
+  .compare-table th {
+    text-align: left;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  .compare-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+    vertical-align: middle;
+  }
+
+  .compare-table tr:last-child td { border-bottom: none; }
+
+  .compare-table tr:hover td { background: var(--surface-2); }
+
+  .compare-model-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-1);
+    cursor: pointer;
+  }
+
+  .compare-model-name:hover { color: var(--accent); }
+
+  .compare-model-provider {
+    font-size: 11px;
+    color: var(--text-3);
+    margin-top: 2px;
+  }
+
+  .compare-price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--green);
+    white-space: nowrap;
+  }
+
+  .compare-price.cheapest-cell {
+    background: rgba(0,196,140,0.08);
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: -4px -8px;
+  }
+
+  .compare-price-secondary {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-3);
+    margin-top: 2px;
+  }
+
+  .compare-price-na {
+    font-size: 12px;
+    color: var(--text-3);
+  }
+
+  .compare-cap-badge {
+    display: inline-flex;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    background: var(--surface-3);
+    color: var(--text-3);
+    border: 1px solid var(--border);
+    margin: 1px;
+  }
+
+  .compare-empty {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-3);
+    font-size: 14px;
+  }
+
+  .compare-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 20px;
+  }
+
+  .compare-back-btn:hover {
+    border-color: var(--border-md);
+    color: var(--text-1);
+  }
+
+  .compare-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    color: var(--text-2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .compare-nav-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .compare-nav-btn.active {
+    background: var(--accent-glow);
+    border-color: var(--border-acc);
+    color: var(--accent);
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .layout {
@@ -1329,6 +1685,8 @@
     .modal { border-radius: 16px; }
     .modal-name { font-size: 20px; }
     .nav-right { display: none; }
+    .preset-card { min-width: 160px; max-width: none; }
+    .compare-search-dropdown { width: 280px; }
   }
 </style>
 </head>
@@ -1354,6 +1712,7 @@
     </div>
 
     <div class="nav-right">
+      <button class="compare-nav-btn" id="nav-compare" onclick="toggleCompare()" data-i18n="compareNav">Compare prices</button>
       <span id="nav-count" class="nav-badge">—</span>
       <div class="lang-toggle">
         <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
@@ -1481,6 +1840,23 @@
   </main>
 </div>
 
+<!-- COMPARE SECTION -->
+<section class="compare-section" id="compare-section">
+  <button class="compare-back-btn" onclick="toggleCompare()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+    <span data-i18n="backToCatalog">Back to catalog</span>
+  </button>
+
+  <h2 class="compare-title" data-i18n="compareTitle">Compare model prices</h2>
+  <p class="compare-sub" data-i18n="compareSub">Select a preset or build your own comparison. Best price per provider shown.</p>
+
+  <div class="compare-presets" id="compare-presets"></div>
+  <div class="compare-bar" id="compare-bar"></div>
+  <div class="compare-table-wrap" id="compare-table-wrap">
+    <div class="compare-empty" id="compare-empty" data-i18n="compareEmpty">Select a preset or add models to compare</div>
+  </div>
+</section>
+
 <!-- MODAL -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
   <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
@@ -1588,6 +1964,25 @@ const T = {
     prevLabel:      'prev:',
     contextTokens:  'token context',
     updatedLabel:   'Updated:',
+    compareNav:     'Compare prices',
+    compareTitle:   'Compare model prices',
+    compareSub:     'Select a preset or build your own comparison. Best price per provider shown.',
+    compareEmpty:   'Select a preset or add models to compare',
+    compareAddModel:'+ Add model',
+    compareSearchPh:'Search model...',
+    backToCatalog:  'Back to catalog',
+    presetFlagship: 'Flagship models',
+    presetCoding:   'Best for coding',
+    presetReasoning:'Reasoning models',
+    presetBudget:   'Budget LLMs',
+    presetImage:    'Image generation',
+    presetVideo:    'Video generation',
+    presetEmbedding:'Embeddings',
+    thModel:        'Model',
+    thInputPrice:   'Input / 1M',
+    thOutputPrice:  'Output / 1M',
+    thContext:      'Context',
+    thCapabilities: 'Capabilities',
     priceUnits: {
       perImage:   '/image',
       perSec:     '/sec',
@@ -1650,6 +2045,25 @@ const T = {
     prevLabel:      'poprz.:',
     contextTokens:  'tokenów kontekstu',
     updatedLabel:   'Aktualizacja:',
+    compareNav:     'Porównaj ceny',
+    compareTitle:   'Porównanie cen modeli',
+    compareSub:     'Wybierz preset lub zbuduj własne porównanie. Najlepsza cena od danego dostawcy.',
+    compareEmpty:   'Wybierz preset lub dodaj modele do porównania',
+    compareAddModel:'+ Dodaj model',
+    compareSearchPh:'Szukaj modelu...',
+    backToCatalog:  'Powrót do katalogu',
+    presetFlagship: 'Flagowe modele',
+    presetCoding:   'Najlepsze do kodu',
+    presetReasoning:'Modele rozumowania',
+    presetBudget:   'Budżetowe LLM',
+    presetImage:    'Generowanie obrazów',
+    presetVideo:    'Generowanie wideo',
+    presetEmbedding:'Embeddingi',
+    thModel:        'Model',
+    thInputPrice:   'Input / 1M',
+    thOutputPrice:  'Output / 1M',
+    thContext:      'Kontekst',
+    thCapabilities: 'Możliwości',
     priceUnits: {
       perImage:   '/ obraz',
       perSec:     '/ sekunda',
@@ -1787,9 +2201,20 @@ async function loadData() {
     buildProviderList();
     render();
 
-    // Deep link: open model from URL hash on load
+    // Deep link: open model or compare from URL hash on load
     const hash = location.hash.slice(1);
-    if (hash) {
+    if (hash === 'compare') {
+      toggleCompare();
+    } else if (hash.startsWith('compare/')) {
+      toggleCompare();
+      const presetId = hash.slice(8);
+      // Wait for presets to build, then select
+      requestAnimationFrame(() => {
+        if (compareState.resolvedPresets[presetId]) {
+          selectPreset(presetId);
+        }
+      });
+    } else if (hash) {
       const m = allModels.find(m => m.id === hash);
       if (m) openModal(m.id);
     }
@@ -2301,6 +2726,7 @@ function openModal(modelId) {
   document.querySelector('nav').inert = true;
   document.querySelector('.hero').inert = true;
   document.querySelector('.layout').inert = true;
+  document.getElementById('compare-section').inert = true;
   document.querySelector('footer').inert = true;
   // Move focus into modal
   requestAnimationFrame(() => {
@@ -2320,6 +2746,7 @@ function closeModalDirect() {
   document.querySelector('nav').inert = false;
   document.querySelector('.hero').inert = false;
   document.querySelector('.layout').inert = false;
+  document.getElementById('compare-section').inert = false;
   document.querySelector('footer').inert = false;
   if (lastFocusBeforeModal) {
     lastFocusBeforeModal.focus();
@@ -2352,9 +2779,14 @@ window.addEventListener('popstate', () => {
     document.querySelector('.hero').inert = false;
     document.querySelector('.layout').inert = false;
     document.querySelector('footer').inert = false;
+  } else if (location.hash === '#compare') {
+    if (!compareState.active) toggleCompare();
   } else if (location.hash) {
+    if (compareState.active) toggleCompare();
     const m = allModels.find(m => m.id === location.hash.slice(1));
     if (m) openModal(m.id);
+  } else if (compareState.active) {
+    toggleCompare();
   }
 });
 
@@ -2586,6 +3018,431 @@ function escHtml(str) {
 
 function escAttr(str) {
   return escHtml(str);
+}
+
+// ─── COMPARE ──────────────────────────────────────────────────
+const PRESET_RULES = [
+  {
+    id: 'flagship',
+    icon: '🏆',
+    nameKey: 'presetFlagship',
+    // Pick the most expensive model from each top provider
+    resolve: (models) => {
+      const topProviders = ['openai','anthropic','google','xai','deepseek','mistral'];
+      const result = [];
+      for (const pid of topProviders) {
+        let best = null, bestPrice = 0;
+        for (const m of models) {
+          if (m.category !== 'llm') continue;
+          for (const p of m.providers) {
+            if (p.provider_id !== pid || !p.available) continue;
+            const price = p.pricing?.input_per_1m ?? 0;
+            if (price > bestPrice) { bestPrice = price; best = m; }
+          }
+        }
+        if (best && !result.includes(best.id)) result.push(best.id);
+      }
+      return result;
+    }
+  },
+  {
+    id: 'coding',
+    icon: '💻',
+    nameKey: 'presetCoding',
+    resolve: (models) => {
+      const topProviders = ['anthropic','openai','google','deepseek','xai'];
+      const result = [];
+      for (const pid of topProviders) {
+        let best = null, bestPrice = 0;
+        for (const m of models) {
+          if (m.category !== 'llm' || !m.capabilities.includes('function_calling')) continue;
+          for (const p of m.providers) {
+            if (p.provider_id !== pid || !p.available) continue;
+            const price = p.pricing?.input_per_1m ?? 0;
+            if (price > bestPrice) { bestPrice = price; best = m; }
+          }
+        }
+        if (best && !result.includes(best.id)) result.push(best.id);
+      }
+      return result;
+    }
+  },
+  {
+    id: 'reasoning',
+    icon: '🧠',
+    nameKey: 'presetReasoning',
+    resolve: (models) => {
+      const topProviders = ['openai','anthropic','google','deepseek','xai'];
+      const result = [];
+      for (const pid of topProviders) {
+        let best = null, bestPrice = 0;
+        for (const m of models) {
+          if (m.category !== 'llm' || !m.capabilities.includes('reasoning')) continue;
+          for (const p of m.providers) {
+            if (p.provider_id !== pid || !p.available) continue;
+            const price = p.pricing?.input_per_1m ?? 0;
+            if (price > bestPrice) { bestPrice = price; best = m; }
+          }
+        }
+        if (best && !result.includes(best.id)) result.push(best.id);
+      }
+      return result;
+    }
+  },
+  {
+    id: 'budget',
+    icon: '💰',
+    nameKey: 'presetBudget',
+    resolve: (models) => {
+      const candidates = [];
+      for (const m of models) {
+        if (m.category !== 'llm') continue;
+        for (const p of m.providers) {
+          if (!p.available || p.pricing?.input_per_1m == null) continue;
+          if (p.provider_id === 'openrouter') continue;
+          candidates.push({ id: m.id, price: p.pricing.input_per_1m, pid: p.provider_id });
+        }
+      }
+      candidates.sort((a, b) => a.price - b.price);
+      const result = [], seenProviders = new Set();
+      for (const c of candidates) {
+        if (seenProviders.has(c.pid) || result.includes(c.id)) continue;
+        seenProviders.add(c.pid);
+        result.push(c.id);
+        if (result.length >= 6) break;
+      }
+      return result;
+    }
+  },
+  {
+    id: 'image',
+    icon: '🖼️',
+    nameKey: 'presetImage',
+    resolve: (models) => {
+      const candidates = [];
+      for (const m of models) {
+        if (m.category !== 'image_generation') continue;
+        for (const p of m.providers) {
+          if (!p.available) continue;
+          const price = p.pricing?.per_image ?? p.pricing?.per_megapixel ?? null;
+          if (price == null) continue;
+          candidates.push({ id: m.id, price });
+        }
+      }
+      candidates.sort((a, b) => a.price - b.price);
+      const result = [], seen = new Set();
+      for (const c of candidates) {
+        if (seen.has(c.id)) continue;
+        seen.add(c.id);
+        result.push(c.id);
+        if (result.length >= 8) break;
+      }
+      return result;
+    }
+  },
+  {
+    id: 'video',
+    icon: '🎬',
+    nameKey: 'presetVideo',
+    resolve: (models) => {
+      const candidates = [];
+      for (const m of models) {
+        if (m.category !== 'video_generation') continue;
+        for (const p of m.providers) {
+          if (!p.available) continue;
+          const price = p.pricing?.per_second ?? p.pricing?.per_video_5s ?? p.pricing?.per_video_6s ?? null;
+          if (price == null) continue;
+          candidates.push({ id: m.id, price });
+        }
+      }
+      candidates.sort((a, b) => a.price - b.price);
+      const result = [], seen = new Set();
+      for (const c of candidates) {
+        if (seen.has(c.id)) continue;
+        seen.add(c.id);
+        result.push(c.id);
+        if (result.length >= 8) break;
+      }
+      return result;
+    }
+  },
+  {
+    id: 'embedding',
+    icon: '📐',
+    nameKey: 'presetEmbedding',
+    resolve: (models) => {
+      const candidates = [];
+      for (const m of models) {
+        if (m.category !== 'embedding') continue;
+        for (const p of m.providers) {
+          if (!p.available || p.pricing?.input_per_1m == null) continue;
+          if (p.provider_id === 'openrouter') continue;
+          candidates.push({ id: m.id, price: p.pricing.input_per_1m, pid: p.provider_id });
+        }
+      }
+      candidates.sort((a, b) => a.price - b.price);
+      const result = [], seen = new Set();
+      for (const c of candidates) {
+        if (seen.has(c.id)) continue;
+        seen.add(c.id);
+        result.push(c.id);
+        if (result.length >= 6) break;
+      }
+      return result;
+    }
+  },
+];
+
+let compareState = { active: false, models: [], preset: null, resolvedPresets: {} };
+
+function toggleCompare() {
+  compareState.active = !compareState.active;
+  const section = document.getElementById('compare-section');
+  const hero = document.querySelector('.hero');
+  const layout = document.querySelector('.layout');
+  const navBtn = document.getElementById('nav-compare');
+
+  if (compareState.active) {
+    section.classList.add('active');
+    hero.style.display = 'none';
+    layout.style.display = 'none';
+    navBtn.classList.add('active');
+    history.pushState({}, '', '#compare');
+    if (!compareState._built) {
+      buildPresets();
+      compareState._built = true;
+    }
+  } else {
+    section.classList.remove('active');
+    hero.style.display = '';
+    layout.style.display = '';
+    navBtn.classList.remove('active');
+    if (location.hash.startsWith('#compare')) {
+      history.pushState({}, '', location.pathname + location.search);
+    }
+  }
+}
+
+function buildPresets() {
+  const container = document.getElementById('compare-presets');
+  container.innerHTML = '';
+
+  for (const preset of PRESET_RULES) {
+    const modelIds = preset.resolve(allModels);
+    compareState.resolvedPresets[preset.id] = modelIds;
+    if (modelIds.length < 2) continue;
+
+    const dotsHtml = modelIds.slice(0, 6).map(id => {
+      const m = allModels.find(x => x.id === id);
+      if (!m) return '';
+      const prov = m.providers.find(p => p.available) || m.providers[0];
+      const provInfo = allProviders[prov?.provider_id] || {};
+      return `<div class="preset-card-dot" style="background:${provInfo.logo_color || '#666'}"></div>`;
+    }).join('');
+
+    const card = document.createElement('div');
+    card.className = 'preset-card';
+    card.dataset.preset = preset.id;
+    card.innerHTML = `
+      <div class="preset-card-icon">${preset.icon}</div>
+      <div class="preset-card-name">${t(preset.nameKey)}</div>
+      <div class="preset-card-count">${modelIds.length} ${t('models')}</div>
+      <div class="preset-card-models">${dotsHtml}</div>
+    `;
+    card.addEventListener('click', () => selectPreset(preset.id));
+    container.appendChild(card);
+  }
+}
+
+function selectPreset(presetId) {
+  const modelIds = compareState.resolvedPresets[presetId];
+  if (!modelIds) return;
+  compareState.models = [...modelIds];
+  compareState.preset = presetId;
+  document.querySelectorAll('.preset-card').forEach(c =>
+    c.classList.toggle('active', c.dataset.preset === presetId)
+  );
+  renderCompareBar();
+  renderCompareTable();
+}
+
+function addModelToCompare(modelId) {
+  if (compareState.models.includes(modelId) || compareState.models.length >= 10) return;
+  compareState.models.push(modelId);
+  compareState.preset = null;
+  document.querySelectorAll('.preset-card').forEach(c => c.classList.remove('active'));
+  renderCompareBar();
+  renderCompareTable();
+}
+
+function removeModelFromCompare(modelId) {
+  compareState.models = compareState.models.filter(id => id !== modelId);
+  compareState.preset = null;
+  document.querySelectorAll('.preset-card').forEach(c => c.classList.remove('active'));
+  renderCompareBar();
+  renderCompareTable();
+}
+
+function renderCompareBar() {
+  const bar = document.getElementById('compare-bar');
+  let html = '';
+
+  for (const id of compareState.models) {
+    const m = allModels.find(x => x.id === id);
+    if (!m) continue;
+    const bestProv = getBestProvider(m);
+    const provInfo = allProviders[bestProv?.provider_id] || {};
+    html += `<div class="compare-chip">
+      <div class="compare-chip-dot" style="background:${provInfo.logo_color || '#666'}"></div>
+      ${escHtml(m.name)}
+      <button class="compare-chip-remove" onclick="removeModelFromCompare('${escAttr(id)}')" aria-label="Remove ${escHtml(m.name)}">×</button>
+    </div>`;
+  }
+
+  html += `<div class="compare-add-btn" id="compare-add-btn" onclick="toggleCompareSearch(event)">
+    ${t('compareAddModel')}
+    <div class="compare-search-dropdown" id="compare-search-dropdown">
+      <input type="text" class="compare-search-input" id="compare-search-input"
+             placeholder="${t('compareSearchPh')}" onclick="event.stopPropagation()"
+             oninput="filterCompareSearch(this.value)">
+      <div id="compare-search-results"></div>
+    </div>
+  </div>`;
+
+  bar.innerHTML = html;
+}
+
+function toggleCompareSearch(e) {
+  e.stopPropagation();
+  const dropdown = document.getElementById('compare-search-dropdown');
+  const isOpen = dropdown.classList.contains('open');
+  dropdown.classList.toggle('open');
+  if (!isOpen) {
+    const input = document.getElementById('compare-search-input');
+    input.value = '';
+    input.focus();
+    filterCompareSearch('');
+  }
+}
+
+document.addEventListener('click', () => {
+  const dd = document.getElementById('compare-search-dropdown');
+  if (dd) dd.classList.remove('open');
+});
+
+function filterCompareSearch(query) {
+  const container = document.getElementById('compare-search-results');
+  const q = query.toLowerCase();
+  let catFilter = null;
+  if (compareState.models.length > 0) {
+    const firstModel = allModels.find(m => m.id === compareState.models[0]);
+    if (firstModel) catFilter = firstModel.category;
+  }
+
+  let candidates = allModels.filter(m => {
+    if (compareState.models.includes(m.id)) return false;
+    if (catFilter && m.category !== catFilter) return false;
+    if (!m.providers.some(p => p.available)) return false;
+    if (!q) return true;
+    return m.name.toLowerCase().includes(q) ||
+           (m.tags || []).some(tag => tag.toLowerCase().includes(q));
+  });
+
+  candidates.sort((a, b) => getBestPriceNum(a) - getBestPriceNum(b));
+  candidates = candidates.slice(0, 20);
+
+  container.innerHTML = candidates.map(m => {
+    const bp = getBestProvider(m);
+    const fp = bp ? formatPrice(bp.pricing, m.category, true) : { value: '—' };
+    const provInfo = allProviders[bp?.provider_id] || {};
+    return `<div class="compare-search-item" onclick="event.stopPropagation();addModelToCompare('${escAttr(m.id)}');document.getElementById('compare-search-dropdown').classList.remove('open')">
+      <div class="compare-chip-dot" style="background:${provInfo.logo_color || '#666'};display:inline-block"></div>
+      ${escHtml(m.name)}
+      <span class="compare-search-item-price">${fp.value}</span>
+    </div>`;
+  }).join('') || `<div style="padding:12px;color:var(--text-3);font-size:13px">${t('noResults')}</div>`;
+}
+
+function renderCompareTable() {
+  const wrap = document.getElementById('compare-table-wrap');
+
+  if (compareState.models.length === 0) {
+    wrap.innerHTML = `<div class="compare-empty">${t('compareEmpty')}</div>`;
+    return;
+  }
+
+  const models = compareState.models.map(id => allModels.find(m => m.id === id)).filter(Boolean);
+  const categories = [...new Set(models.map(m => m.category))];
+  const isLLM = categories.length === 1 && categories[0] === 'llm';
+
+  const rows = models.map(m => {
+    const bestProv = getBestProvider(m);
+    const provInfo = allProviders[bestProv?.provider_id] || {};
+    const pricing = bestProv?.pricing || {};
+    return { model: m, provider: bestProv, provInfo, pricing };
+  });
+
+  let cheapestInput = Infinity, cheapestOutput = Infinity, cheapestPrice = Infinity;
+  for (const r of rows) {
+    if (r.pricing.input_per_1m != null && r.pricing.input_per_1m < cheapestInput) cheapestInput = r.pricing.input_per_1m;
+    if (r.pricing.output_per_1m != null && r.pricing.output_per_1m < cheapestOutput) cheapestOutput = r.pricing.output_per_1m;
+    const pv = getPriceValue(r.pricing, r.model.category);
+    if (pv != null && pv < cheapestPrice) cheapestPrice = pv;
+  }
+
+  let html = '<table class="compare-table"><thead><tr>';
+  html += `<th>${t('thModel')}</th>`;
+
+  if (isLLM) {
+    html += `<th>${t('thInputPrice')}</th><th>${t('thOutputPrice')}</th><th>${t('thContext')}</th><th>${t('thCapabilities')}</th>`;
+  } else {
+    html += `<th>${t('thPrice')}</th><th>${t('thUnit')}</th><th>${t('thCapabilities')}</th>`;
+  }
+  html += '</tr></thead><tbody>';
+
+  for (const r of rows) {
+    const capBadges = (r.model.capabilities || []).slice(0, 4).map(c =>
+      `<span class="compare-cap-badge">${c.replace(/_/g, ' ')}</span>`
+    ).join('');
+
+    html += '<tr>';
+    html += `<td>
+      <div class="compare-model-name" onclick="openModal('${escAttr(r.model.id)}')">${escHtml(r.model.name)}</div>
+      <div class="compare-model-provider">
+        <span class="compare-chip-dot" style="background:${r.provInfo.logo_color || '#666'};display:inline-block;vertical-align:middle;margin-right:4px"></span>
+        ${escHtml(r.provInfo.name || r.provider?.provider_id || '—')}
+        ${r.model.providers.length > 1 ? `<span style="color:var(--text-3);font-size:10px">+${r.model.providers.length - 1}</span>` : ''}
+      </div>
+    </td>`;
+
+    if (isLLM) {
+      const inp = r.pricing.input_per_1m;
+      const isCheapestIn = inp != null && inp === cheapestInput && rows.length > 1;
+      html += `<td><div class="compare-price${isCheapestIn ? ' cheapest-cell' : ''}">${inp != null ? '$' + inp.toFixed(2) : '—'}</div></td>`;
+
+      const out = r.pricing.output_per_1m;
+      const isCheapestOut = out != null && out === cheapestOutput && rows.length > 1;
+      html += `<td><div class="compare-price${isCheapestOut ? ' cheapest-cell' : ''}">${out != null ? '$' + out.toFixed(2) : '—'}</div></td>`;
+
+      html += `<td><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-2)">${r.model.context_k ? r.model.context_k + 'k' : '—'}</span></td>`;
+      html += `<td>${capBadges}</td>`;
+    } else {
+      const formatted = formatPrice(r.pricing, r.model.category);
+      const pv = getPriceValue(r.pricing, r.model.category);
+      const isCheap = pv != null && pv === cheapestPrice && rows.length > 1;
+      if (formatted.isNote) {
+        html += `<td><span class="compare-price-na">${escHtml(formatted.unit)}</span></td><td></td>`;
+      } else {
+        html += `<td><div class="compare-price${isCheap ? ' cheapest-cell' : ''}">${formatted.value}</div></td>`;
+        html += `<td><span style="font-size:12px;color:var(--text-3)">${formatted.unit}</span></td>`;
+      }
+      html += `<td>${capBadges}</td>`;
+    }
+    html += '</tr>';
+  }
+
+  html += '</tbody></table>';
+  wrap.innerHTML = html;
 }
 
 // ─── INIT ────────────────────────────────────────────────────────
