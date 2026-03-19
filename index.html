@@ -3021,51 +3021,49 @@ function escAttr(str) {
 }
 
 // ─── COMPARE ──────────────────────────────────────────────────
+
+// Preferred flagship model IDs per provider. Update when new flagship launches.
+// Fallback: most capable non-reasoning LLM from that provider.
+const FLAGSHIP_MODELS = {
+  openai:    ['gpt-5', 'gpt-4-1', 'gpt-4o'],
+  anthropic: ['claude-opus-4-6', 'claude-4-sonnet', 'claude-4-opus'],
+  google:    ['vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
+  xai:       ['xai-grok-3-fast-beta', 'xai-grok-beta'],
+  deepseek:  ['deepseek-deepseek-chat', 'deepseek-chat'],
+  mistral:   ['mistral-mistral-large-latest', 'mistral-mistral-large-2402'],
+};
+
+const CODING_MODELS = {
+  anthropic: ['claude-4-sonnet', 'claude-opus-4-6', 'claude-4-opus'],
+  openai:    ['gpt-4-1', 'gpt-4o', 'gpt-5'],
+  google:    ['vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
+  deepseek:  ['deepseek-deepseek-chat', 'deepseek-chat'],
+  xai:       ['xai-grok-3-fast-beta'],
+};
+
+// Resolve preferred models: try each candidate in order, return first that exists in data
+function resolvePreferred(models, preferredMap) {
+  const modelIds = new Set(models.map(m => m.id));
+  const result = [];
+  for (const [pid, candidates] of Object.entries(preferredMap)) {
+    const found = candidates.find(id => modelIds.has(id));
+    if (found) result.push(found);
+  }
+  return result;
+}
+
 const PRESET_RULES = [
   {
     id: 'flagship',
     icon: '🏆',
     nameKey: 'presetFlagship',
-    // Pick the most expensive model from each top provider
-    resolve: (models) => {
-      const topProviders = ['openai','anthropic','google','xai','deepseek','mistral'];
-      const result = [];
-      for (const pid of topProviders) {
-        let best = null, bestPrice = 0;
-        for (const m of models) {
-          if (m.category !== 'llm') continue;
-          for (const p of m.providers) {
-            if (p.provider_id !== pid || !p.available) continue;
-            const price = p.pricing?.input_per_1m ?? 0;
-            if (price > bestPrice) { bestPrice = price; best = m; }
-          }
-        }
-        if (best && !result.includes(best.id)) result.push(best.id);
-      }
-      return result;
-    }
+    resolve: (models) => resolvePreferred(models, FLAGSHIP_MODELS),
   },
   {
     id: 'coding',
     icon: '💻',
     nameKey: 'presetCoding',
-    resolve: (models) => {
-      const topProviders = ['anthropic','openai','google','deepseek','xai'];
-      const result = [];
-      for (const pid of topProviders) {
-        let best = null, bestPrice = 0;
-        for (const m of models) {
-          if (m.category !== 'llm' || !m.capabilities.includes('function_calling')) continue;
-          for (const p of m.providers) {
-            if (p.provider_id !== pid || !p.available) continue;
-            const price = p.pricing?.input_per_1m ?? 0;
-            if (price > bestPrice) { bestPrice = price; best = m; }
-          }
-        }
-        if (best && !result.includes(best.id)) result.push(best.id);
-      }
-      return result;
-    }
+    resolve: (models) => resolvePreferred(models, CODING_MODELS),
   },
   {
     id: 'reasoning',
