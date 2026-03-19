@@ -1302,6 +1302,65 @@
     color: var(--accent);
   }
 
+  /* ── HERO COMPARE CTA ── */
+  .hero-compare {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .hero-compare-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--accent);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-compare-btn:hover {
+    background: var(--accent-h);
+    transform: translateY(-1px);
+  }
+
+  .hero-compare-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .hero-preset-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-2);
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-decoration: none;
+  }
+
+  .hero-preset-link:hover {
+    border-color: var(--border-acc);
+    color: var(--accent);
+    background: var(--accent-glow);
+  }
+
   /* ── COMPARE SECTION ── */
   .compare-section {
     display: none;
@@ -1749,6 +1808,14 @@
       <span class="stat-label" data-i18n="statCategories">categories</span>
     </div>
   </div>
+
+  <div class="hero-compare" id="hero-compare">
+    <button class="hero-compare-btn" onclick="toggleCompare()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 5-6"/></svg>
+      <span data-i18n="compareNav">Compare prices</span>
+    </button>
+    <div class="hero-compare-links" id="hero-compare-links"></div>
+  </div>
 </section>
 
 <!-- MAIN LAYOUT -->
@@ -2101,6 +2168,7 @@ function setLang(newLang) {
   // Rebuild dynamic UI
   buildCategoryPills();
   buildProviderList();
+  buildHeroPresetLinks();
   render();
   updateNavCount();
 }
@@ -2199,6 +2267,7 @@ async function loadData() {
     applyTranslations();
     buildCategoryPills();
     buildProviderList();
+    buildHeroPresetLinks();
     render();
 
     // Deep link: open model or compare from URL hash on load
@@ -3025,7 +3094,7 @@ function escAttr(str) {
 // Preferred flagship model IDs per provider. Update when new flagship launches.
 // Fallback: most capable non-reasoning LLM from that provider.
 const FLAGSHIP_MODELS = {
-  openai:    ['gpt-5', 'gpt-4-1', 'gpt-4o'],
+  openai:    ['gpt-5-4-pro', 'gpt-5', 'gpt-4-1', 'gpt-4o'],
   anthropic: ['claude-opus-4-6', 'claude-4-sonnet', 'claude-4-opus'],
   google:    ['vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
   xai:       ['xai-grok-3-fast-beta', 'xai-grok-beta'],
@@ -3213,6 +3282,17 @@ function toggleCompare() {
   }
 }
 
+function buildHeroPresetLinks() {
+  const container = document.getElementById('hero-compare-links');
+  if (!container || !allModels.length) return;
+  const quickPresets = ['flagship', 'coding', 'reasoning'];
+  container.innerHTML = quickPresets.map(id => {
+    const preset = PRESET_RULES.find(p => p.id === id);
+    if (!preset) return '';
+    return `<a href="#compare/${id}" class="hero-preset-link" onclick="event.preventDefault();goToPreset('${id}')">${preset.icon} ${t(preset.nameKey)}</a>`;
+  }).join('');
+}
+
 function buildPresets() {
   const container = document.getElementById('compare-presets');
   container.innerHTML = '';
@@ -3249,11 +3329,23 @@ function selectPreset(presetId) {
   if (!modelIds) return;
   compareState.models = [...modelIds];
   compareState.preset = presetId;
+  history.replaceState({}, '', '#compare/' + presetId);
   document.querySelectorAll('.preset-card').forEach(c =>
     c.classList.toggle('active', c.dataset.preset === presetId)
   );
   renderCompareBar();
   renderCompareTable();
+}
+
+// Navigate to compare with a specific preset (from hero links)
+function goToPreset(presetId) {
+  if (!compareState.active) toggleCompare();
+  // Presets may not be built yet on first toggle
+  if (!compareState.resolvedPresets[presetId]) {
+    requestAnimationFrame(() => selectPreset(presetId));
+  } else {
+    selectPreset(presetId);
+  }
 }
 
 function addModelToCompare(modelId) {
