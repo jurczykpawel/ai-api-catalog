@@ -17,6 +17,13 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
 
+      - name: Cache-bust data URLs
+        run: |
+          V=$(date -u +%Y%m%d%H%M)
+          sed -i "s|fetch('data/\([^']*\)')|fetch('data/\1?v=$V')|g" index.html
+          echo "Cache-bust version: $V"
+          grep -o "fetch('data/[^']*')" index.html
+
       - name: Deploy via rsync
         run: |
           rsync -avz --delete \
