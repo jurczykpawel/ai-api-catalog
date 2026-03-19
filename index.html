@@ -3270,7 +3270,7 @@ function toggleCompare() {
 function buildHeroPresetLinks() {
   const container = document.getElementById('hero-compare-links');
   if (!container || !allModels.length) return;
-  const quickPresets = ['flagship', 'coding', 'reasoning'];
+  const quickPresets = ['flagship', 'coding', 'reasoning', 'image', 'video'];
   container.innerHTML = quickPresets.map(id => {
     const preset = PRESET_RULES.find(p => p.id === id);
     if (!preset) return '';
