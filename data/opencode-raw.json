@@ -257,6 +257,28 @@
       "_api_id": "gemini-3-flash"
     },
     {
+      "id": "gpt-5-4",
+      "name": "GPT 5.4",
+      "category": "llm",
+      "description": "GPT 5.4 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "input_per_1m": 2.5,
+        "output_per_1m": 15.0
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.4"
+    },
+    {
       "id": "gpt-5-4-pro",
       "name": "GPT 5.4 Pro",
       "category": "llm",
@@ -280,10 +302,32 @@
       "_api_id": "gpt-5.4-pro"
     },
     {
-      "id": "gpt-5-4",
-      "name": "GPT 5.4",
+      "id": "gpt-5-4-mini",
+      "name": "GPT 5.4 Mini",
       "category": "llm",
-      "description": "GPT 5.4 via OpenCode Zen curated gateway.",
+      "description": "GPT 5.4 Mini via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-5.4-mini"
+    },
+    {
+      "id": "gpt-5-4-nano",
+      "name": "GPT 5.4 Nano",
+      "category": "llm",
+      "description": "GPT 5.4 Nano via OpenCode Zen curated gateway.",
       "tags": [
         "opencode",
         "openai",
@@ -294,12 +338,11 @@
         "vision"
       ],
       "pricing": {
-        "input_per_1m": 2.5,
-        "output_per_1m": 15.0
+        "notes": "pricing unknown — update PRICING dict"
       },
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "gpt-5.4"
+      "_api_id": "gpt-5.4-nano"
     },
     {
       "id": "gpt-5-3-codex-spark",
@@ -668,6 +711,45 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "minimax-m2.1"
+    },
+    {
+      "id": "mimo-v2-pro-free",
+      "name": "Mimo V2 Pro Free",
+      "category": "llm",
+      "description": "Mimo V2 Pro Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "mimo-v2-pro-free"
+    },
+    {
+      "id": "mimo-v2-omni-free",
+      "name": "Mimo V2 Omni Free",
+      "category": "llm",
+      "description": "Mimo V2 Omni Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "mimo-v2-omni-free"
     },
     {
       "id": "mimo-v2-flash-free",
