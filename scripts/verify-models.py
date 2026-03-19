@@ -205,8 +205,12 @@ def main():
     print(f"  ❌ SKIP:   {len(results['skip'])} modeli")
     print(f"{'='*60}\n")
 
+    out_path = Path(args.output)
+
     if not verified_entries:
         print("✓ Brak modeli do dodania.")
+        with open(out_path, "w") as f:
+            json.dump([], f)
         return
 
     # Show ADD entries
@@ -228,12 +232,12 @@ def main():
 
     # Save verified ADD entries to output
     out_entries = [v["entry"] for v in add_entries]
-    out_path = Path(args.output)
     with open(out_path, "w") as f:
         json.dump(out_entries, f, ensure_ascii=False, indent=2)
     print(f"✓ Zweryfikowane wpisy (ADD) zapisane: {out_path}")
-    print(f"  Aby dodać do katalogu:")
-    print(f"  python3 scripts/apply-proposals.py --input {out_path}")
+    if out_entries:
+        print(f"  Aby dodać do katalogu:")
+        print(f"  python3 scripts/apply-proposals.py --input {out_path}")
 
 
 if __name__ == "__main__":
