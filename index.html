@@ -3041,6 +3041,14 @@ const CODING_MODELS = {
   xai:       ['xai-grok-3-fast-beta'],
 };
 
+const REASONING_MODELS = {
+  openai:    ['o3-pro', 'gpt-5-4-pro', 'o1-pro'],
+  anthropic: ['claude-opus-4-6', 'claude-4-opus', 'claude-3-7-sonnet'],
+  google:    ['gemini-2-5-pro', 'vertex_ai-gemini-3-pro-preview'],
+  deepseek:  ['deepseek-reasoner', 'deepseek-deepseek-reasoner'],
+  xai:       ['xai-grok-4-20-beta-0309-reasoning', 'xai-grok-3-mini-fast'],
+};
+
 // Resolve preferred models: try each candidate in order, return first that exists in data
 function resolvePreferred(models, preferredMap) {
   const modelIds = new Set(models.map(m => m.id));
@@ -3069,23 +3077,7 @@ const PRESET_RULES = [
     id: 'reasoning',
     icon: '🧠',
     nameKey: 'presetReasoning',
-    resolve: (models) => {
-      const topProviders = ['openai','anthropic','google','deepseek','xai'];
-      const result = [];
-      for (const pid of topProviders) {
-        let best = null, bestPrice = 0;
-        for (const m of models) {
-          if (m.category !== 'llm' || !m.capabilities.includes('reasoning')) continue;
-          for (const p of m.providers) {
-            if (p.provider_id !== pid || !p.available) continue;
-            const price = p.pricing?.input_per_1m ?? 0;
-            if (price > bestPrice) { bestPrice = price; best = m; }
-          }
-        }
-        if (best && !result.includes(best.id)) result.push(best.id);
-      }
-      return result;
-    }
+    resolve: (models) => resolvePreferred(models, REASONING_MODELS),
   },
   {
     id: 'budget',
