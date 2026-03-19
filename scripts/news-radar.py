@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
 news-radar.py
-Pobiera RSS z serwisów AI, wykrywa nowe modele przez Claude API,
+Pobiera RSS z serwisów AI, wykrywa nowe modele przez LLM (Anthropic → OpenAI fallback),
 wypisuje propozycje wpisów do models-manual.json.
 
 Użycie:
   python3 scripts/news-radar.py
   python3 scripts/news-radar.py --hours 48   # artykuły z ostatnich 48h
-  python3 scripts/news-radar.py --dry-run    # bez wywołania Claude (pokaż artykuły)
+  python3 scripts/news-radar.py --dry-run    # bez wywołania LLM (pokaż artykuły)
 """
 
 import json
@@ -21,6 +21,9 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from llm_client import llm_complete
+
 RSS_FEEDS = [
     ("The Decoder",      "https://the-decoder.com/feed/"),
     ("VentureBeat AI",   "https://venturebeat.com/feed/"),
@@ -30,7 +33,7 @@ RSS_FEEDS = [
     ("OpenAI Blog",      "https://openai.com/news/rss.xml"),
 ]
 
-ANTHROPIC_API = "https://api.anthropic.com/v1/messages"
+PROPOSALS_PATH = Path("/tmp/news-radar-proposals.json")
 
 SYSTEM_PROMPT = """You are an AI model tracker. Your job is to extract newly announced or released AI models from news articles.
 
@@ -115,36 +118,25 @@ def fetch_feed(name: str, url: str, cutoff: datetime) -> list[dict]:
     return articles
 
 
-def call_claude(articles: list[dict], api_key: str) -> list[dict]:
-    """Send articles to Claude and get model suggestions."""
+def _save_empty_proposals():
+    """Save empty proposals file so downstream steps don't fail."""
+    with open(PROPOSALS_PATH, "w") as f:
+        json.dump([], f)
+
+
+def detect_models(articles: list[dict]) -> list[dict]:
+    """Send articles to LLM and get model suggestions."""
     articles_text = "\n\n".join(
         f"[{a['source']}] {a['title']}\nURL: {a['url']}\n{a['desc']}"
         for a in articles
     )
 
-    payload = json.dumps({
-        "model": "claude-haiku-4-5-20251001",
-        "max_tokens": 2048,
-        "system": SYSTEM_PROMPT,
-        "messages": [
-            {"role": "user", "content": f"Extract new AI models from these articles:\n\n{articles_text}"}
-        ]
-    }).encode()
-
-    req = urllib.request.Request(
-        ANTHROPIC_API,
-        data=payload,
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        method="POST",
+    text = llm_complete(
+        system=SYSTEM_PROMPT,
+        user=f"Extract new AI models from these articles:\n\n{articles_text}",
+        tier="fast",
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        result = json.load(resp)
 
-    text = result["content"][0]["text"].strip()
     # Strip markdown code blocks if present
     if text.startswith("```"):
         text = text.split("```")[1]
@@ -196,6 +188,7 @@ def main():
 
     if not unique:
         print("\n✓ Brak nowych artykułów.")
+        _save_empty_proposals()
         return
 
     if args.dry_run:
@@ -203,26 +196,23 @@ def main():
         for a in unique:
             print(f"  [{a['source']}] {a['title']}")
             print(f"    {a['url']}")
+        _save_empty_proposals()
         return
 
-    # 2. Call Claude
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("\n✗ Brak ANTHROPIC_API_KEY w środowisku", file=sys.stderr)
-        sys.exit(1)
-
-    print("\n→ Wysyłam do Claude (haiku)...")
+    # 2. Call LLM (Anthropic → OpenAI fallback)
+    print("\n→ Wysyłam do LLM...")
     try:
-        models = call_claude(unique, api_key)
+        models = detect_models(unique)
     except Exception as e:
-        print(f"✗ Claude API error: {e}", file=sys.stderr)
+        print(f"✗ LLM error: {e}", file=sys.stderr)
         sys.exit(1)
 
     if not models:
-        print("✓ Claude: brak nowych modeli AI w artykułach.")
+        print("✓ Brak nowych modeli AI w artykułach.")
+        _save_empty_proposals()
         return
 
-    print(f"\n✓ Claude wykrył {len(models)} potencjalnych nowych modeli:\n")
+    print(f"\n✓ LLM wykrył {len(models)} potencjalnych nowych modeli:\n")
 
     # 3. Check which already exist
     new_models = []
@@ -238,6 +228,7 @@ def main():
 
     if not new_models:
         print("✓ Wszystkie wykryte modele już są w katalogu.")
+        _save_empty_proposals()
         return
 
     # 4. Show what would go into models-manual.json
@@ -272,10 +263,9 @@ def main():
         print()
 
     # Save proposals to temp file
-    out_path = Path("/tmp/news-radar-proposals.json")
-    with open(out_path, "w") as f:
+    with open(PROPOSALS_PATH, "w") as f:
         json.dump(proposals, f, ensure_ascii=False, indent=2)
-    print(f"✓ Propozycje zapisane: {out_path}")
+    print(f"✓ Propozycje zapisane: {PROPOSALS_PATH}")
 
 
 if __name__ == "__main__":

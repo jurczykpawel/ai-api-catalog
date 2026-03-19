@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 verify-models.py
-Weryfikuje kandydatów na nowe modele z news-radar.py przez Claude Sonnet.
+Weryfikuje kandydatów na nowe modele z news-radar.py przez LLM (Anthropic -> OpenAI fallback).
 Dla każdego kandydata sprawdza: API, provider, cenę, kategorię.
 Zwraca decyzję: ADD / SKIP / REVIEW
 
@@ -12,14 +12,13 @@ Użycie:
 """
 
 import json
-import os
 import sys
 import argparse
-import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-ANTHROPIC_API = "https://api.anthropic.com/v1/messages"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from llm_client import llm_complete
 
 KNOWN_PROVIDERS = [
     "openai", "anthropic", "google", "mistral", "deepseek", "xai", "groq",
@@ -64,7 +63,7 @@ Verdicts:
 Return ONLY valid JSON, no other text."""
 
 
-def call_claude(candidate: dict, article_context: str, api_key: str) -> dict:
+def verify_candidate(candidate: dict, article_context: str) -> dict:
     prompt = f"""Verify this AI model candidate:
 
 Name: {candidate.get('name')}
@@ -79,27 +78,13 @@ Additional article context:
 
 Based on this, verify if it should be added to an AI API catalog."""
 
-    payload = json.dumps({
-        "model": "claude-sonnet-4-6",
-        "max_tokens": 512,
-        "system": VERIFY_SYSTEM,
-        "messages": [{"role": "user", "content": prompt}]
-    }).encode()
-
-    req = urllib.request.Request(
-        ANTHROPIC_API,
-        data=payload,
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        method="POST",
+    text = llm_complete(
+        system=VERIFY_SYSTEM,
+        user=prompt,
+        tier="smart",
+        max_tokens=512,
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        result = json.load(resp)
 
-    text = result["content"][0]["text"].strip()
     if text.startswith("```"):
         text = text.split("```")[1]
         if text.startswith("json"):
@@ -184,12 +169,7 @@ def main():
             print()
         return
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("✗ Brak ANTHROPIC_API_KEY", file=sys.stderr)
-        sys.exit(1)
-
-    print("→ Weryfikacja przez Claude Sonnet...\n")
+    print("→ Weryfikacja przez LLM...\n")
 
     results = {"add": [], "skip": [], "review": []}
     verified_entries = []
@@ -197,7 +177,7 @@ def main():
     for c in candidates:
         print(f"  Sprawdzam: {c['name']} ({c['provider']})...")
         try:
-            verification = call_claude(c, "", api_key)
+            verification = verify_candidate(c, "")
         except Exception as e:
             print(f"    ✗ Błąd API: {e}", file=sys.stderr)
             verification = {"verdict": "REVIEW", "reason": f"API error: {e}", "corrected": {}}

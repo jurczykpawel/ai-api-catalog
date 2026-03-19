@@ -19,16 +19,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Step 1 — fetch RSS and detect candidates (Haiku)
+      - name: Step 1 — fetch RSS and detect candidates
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python3 scripts/news-radar.py --hours 26
           echo "Candidates saved to /tmp/news-radar-proposals.json"
 
-      - name: Step 2 — verify candidates (Sonnet)
+      - name: Step 2 — verify candidates
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           COUNT=$(python3 -c "import json; d=json.load(open('/tmp/news-radar-proposals.json')); print(len(d))")
           echo "Candidates to verify: $COUNT"
