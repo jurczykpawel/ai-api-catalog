@@ -1368,7 +1368,7 @@
     z-index: 1;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 24px 64px;
+    padding: 32px 24px 64px;
   }
 
   .compare-section.active { display: block; }
@@ -1737,6 +1737,12 @@
     .nav-inner { padding: 0 16px; }
   }
 
+  @media (max-width: 900px) {
+    .compare-section { padding: 24px 16px 48px; }
+    .preset-card { min-width: 180px; }
+    .compare-title { font-size: 20px; }
+  }
+
   @media (max-width: 600px) {
     #grid { grid-template-columns: 1fr; }
     .hero-stats { gap: 20px; }
@@ -1744,8 +1750,11 @@
     .modal { border-radius: 16px; }
     .modal-name { font-size: 20px; }
     .nav-right { display: none; }
-    .preset-card { min-width: 160px; max-width: none; }
+    .preset-card { min-width: 140px; max-width: none; flex: 1 1 calc(50% - 6px); }
     .compare-search-dropdown { width: 280px; }
+    .compare-title { font-size: 18px; }
+    .compare-section { padding: 20px 16px 48px; }
+    .hero-compare-btn { padding: 10px 20px; font-size: 14px; }
   }
 </style>
 </head>
