@@ -3127,6 +3127,16 @@ const REASONING_MODELS = {
   xai:       ['xai-grok-4-20-beta-0309-reasoning', 'xai-grok-3-mini-fast'],
 };
 
+const IMAGE_MODELS = [
+  'gpt-image-1', 'flux-2-pro', 'dalle-3', 'ideogram-v3',
+  'nano-banana-2', 'gemini-gemini-2-5-flash-image', 'imagen-4', 'seedream-4-5',
+];
+
+const VIDEO_MODELS = [
+  'sora-2', 'veo-3-1', 'runway-gen4', 'kling-3-0',
+  'luma-ray-2', 'hailuo-2-3', 'seedance-2', 'wan-2-6',
+];
+
 // Resolve preferred models: try each candidate in order, return first that exists in data
 function resolvePreferred(models, preferredMap) {
   const modelIds = new Set(models.map(m => m.id));
@@ -3136,6 +3146,12 @@ function resolvePreferred(models, preferredMap) {
     if (found) result.push(found);
   }
   return result;
+}
+
+// Resolve flat list of model IDs, filtering to those that exist in data
+function resolveList(models, idList) {
+  const modelIds = new Set(models.map(m => m.id));
+  return idList.filter(id => modelIds.has(id));
 }
 
 const PRESET_RULES = [
@@ -3186,53 +3202,13 @@ const PRESET_RULES = [
     id: 'image',
     icon: '🖼️',
     nameKey: 'presetImage',
-    resolve: (models) => {
-      const candidates = [];
-      for (const m of models) {
-        if (m.category !== 'image_generation') continue;
-        for (const p of m.providers) {
-          if (!p.available) continue;
-          const price = p.pricing?.per_image ?? p.pricing?.per_megapixel ?? null;
-          if (price == null) continue;
-          candidates.push({ id: m.id, price });
-        }
-      }
-      candidates.sort((a, b) => a.price - b.price);
-      const result = [], seen = new Set();
-      for (const c of candidates) {
-        if (seen.has(c.id)) continue;
-        seen.add(c.id);
-        result.push(c.id);
-        if (result.length >= 8) break;
-      }
-      return result;
-    }
+    resolve: (models) => resolveList(models, IMAGE_MODELS),
   },
   {
     id: 'video',
     icon: '🎬',
     nameKey: 'presetVideo',
-    resolve: (models) => {
-      const candidates = [];
-      for (const m of models) {
-        if (m.category !== 'video_generation') continue;
-        for (const p of m.providers) {
-          if (!p.available) continue;
-          const price = p.pricing?.per_second ?? p.pricing?.per_video_5s ?? p.pricing?.per_video_6s ?? null;
-          if (price == null) continue;
-          candidates.push({ id: m.id, price });
-        }
-      }
-      candidates.sort((a, b) => a.price - b.price);
-      const result = [], seen = new Set();
-      for (const c of candidates) {
-        if (seen.has(c.id)) continue;
-        seen.add(c.id);
-        result.push(c.id);
-        if (result.length >= 8) break;
-      }
-      return result;
-    }
+    resolve: (models) => resolveList(models, VIDEO_MODELS),
   },
   {
     id: 'embedding',
