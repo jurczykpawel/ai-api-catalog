@@ -15303,180 +15303,7 @@
       "quick_start_example_type": null,
       "is_trainable_text": null,
       "is_trainable_image": null,
-      "endpoint": {
-        "id": "cf9ded82-8ba1-4251-a6cb-ccde51315098",
-        "name": "Parasail | allenai/molmo-2-8b-20260109",
-        "context_length": 36864,
-        "model": {
-          "slug": "allenai/molmo-2-8b",
-          "hf_slug": "allenai/Molmo2-8B",
-          "updated_at": "2026-02-04T19:13:22.202564+00:00",
-          "created_at": "2026-01-09T22:11:12.589713+00:00",
-          "hf_updated_at": null,
-          "name": "AllenAI: Molmo2 8B",
-          "short_name": "Molmo2 8B",
-          "author": "allenai",
-          "description": "Molmo2-8B is an open vision-language model developed by the Allen Institute for AI (Ai2) as part of the Molmo2 family, supporting image, video, and multi-image understanding and grounding. It is based on Qwen3-8B and uses SigLIP 2 as its vision backbone, outperforming other open-weight, open-data models on short videos, counting, and captioning, while remaining competitive on long-video tasks.",
-          "model_version_group_id": null,
-          "context_length": 36864,
-          "input_modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": "The free Molmo2 8B period has ended. To continue using this model, please migrate to the paid slug: allenai/molmo-2-8b",
-          "permaslug": "allenai/molmo-2-8b-20260109",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": null,
-            "top_p": null,
-            "frequency_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": null,
-          "is_trainable_text": null,
-          "is_trainable_image": null
-        },
-        "model_variant_slug": "allenai/molmo-2-8b",
-        "model_variant_permaslug": "allenai/molmo-2-8b-20260109",
-        "adapter_name": "ParasailAdapter",
-        "provider_name": "Parasail",
-        "provider_info": {
-          "name": "Parasail",
-          "displayName": "Parasail",
-          "slug": "parasail",
-          "baseUrl": "https://api.parasail.io/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "termsOfServiceURL": "https://www.parasail.io/legal/terms",
-            "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
-          },
-          "headquarters": "US",
-          "regionOverrides": {},
-          "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
-          "owners": [
-            "org_34P5Ca01in28Ek1oxb5OtfZdEjQ",
-            "user_37qaJKhqfUEFgVF46sarwDHxE50"
-          ],
-          "adapterName": "ParasailAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.parasail.io/&size=256"
-          },
-          "ignoredProviderModels": [
-            "parasail-olmo-2-1124-7b-instruct",
-            "parasail-qwen3-omni-30b-a3b-thinking",
-            "parasail-qwen3-omni-30b-a3b-instruct",
-            "parasail-dots-ocr",
-            "parasail-auto-glm-9b-multilingual",
-            "parasail-olmo-3-32b-think"
-          ],
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_display_name": "Parasail",
-        "provider_slug": "parasail/bf16",
-        "provider_model_id": "parasail-molmo2-8b",
-        "quantization": "bf16",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 36864,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "top_k",
-          "logit_bias"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "termsOfServiceURL": "https://www.parasail.io/legal/terms",
-          "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0.0000002",
-          "completion": "0.0000002",
-          "discount": 0,
-          "line_items": []
-        },
-        "variable_pricings": [],
-        "line_items": [],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.0000002",
-          "openai:completion_tokens": "0.0000002"
-        },
-        "pricing_version_id": "c6598a8a-7c83-4d20-a6d6-667b109ea0c5",
-        "is_hidden": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "limit_rpm_cf": null,
-        "has_completions": true,
-        "has_chat_completions": true,
-        "features": {
-          "supports_multipart": true,
-          "supports_base64_video_input": true,
-          "supports_video_urls": true,
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "provider_region": null,
-        "deprecation_date": "2026-03-23"
-      }
+      "endpoint": null
     },
     {
       "slug": "allenai/olmo-3.1-32b-instruct",
@@ -17948,7 +17775,7 @@
           "is_mandatory_reasoning": true
         },
         "provider_region": null,
-        "deprecation_date": null
+        "deprecation_date": "2026-04-06"
       }
     },
     {
@@ -25690,180 +25517,7 @@
       "quick_start_example_type": null,
       "is_trainable_text": null,
       "is_trainable_image": null,
-      "endpoint": {
-        "id": "3dfd1d32-ce94-4ed2-bfd8-0de2e0371646",
-        "name": "Parasail | allenai/olmo-3-7b-instruct-20251121",
-        "context_length": 65536,
-        "model": {
-          "slug": "allenai/olmo-3-7b-instruct",
-          "hf_slug": "allenai/Olmo-3-7B-Instruct",
-          "updated_at": "2025-11-22T00:00:24.418612+00:00",
-          "created_at": "2025-11-21T20:51:13.585428+00:00",
-          "hf_updated_at": null,
-          "name": "AllenAI: Olmo 3 7B Instruct",
-          "short_name": "Olmo 3 7B Instruct",
-          "author": "allenai",
-          "description": "Olmo 3 7B Instruct is a supervised instruction-fine-tuned variant of the Olmo 3 7B base model, optimized for instruction-following, question-answering, and natural conversational dialogue. By leveraging high-quality instruction data and an open training pipeline, it delivers strong performance across everyday NLP tasks while remaining accessible and easy to integrate. Developed by Ai2 under the Apache 2.0 license, the model offers a transparent, community-friendly option for instruction-driven applications.",
-          "model_version_group_id": null,
-          "context_length": 65536,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": "",
-          "promotion_message": "",
-          "routing_error_message": null,
-          "permaslug": "allenai/olmo-3-7b-instruct-20251121",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "system_prompt": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null,
-              "system_prompt": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": 0.6,
-            "top_p": 0.95,
-            "frequency_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": null,
-          "is_trainable_text": null,
-          "is_trainable_image": null
-        },
-        "model_variant_slug": "allenai/olmo-3-7b-instruct",
-        "model_variant_permaslug": "allenai/olmo-3-7b-instruct-20251121",
-        "adapter_name": "ParasailAdapter",
-        "provider_name": "Parasail",
-        "provider_info": {
-          "name": "Parasail",
-          "displayName": "Parasail",
-          "slug": "parasail",
-          "baseUrl": "https://api.parasail.io/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "termsOfServiceURL": "https://www.parasail.io/legal/terms",
-            "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
-          },
-          "headquarters": "US",
-          "regionOverrides": {},
-          "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
-          "owners": [
-            "org_34P5Ca01in28Ek1oxb5OtfZdEjQ",
-            "user_37qaJKhqfUEFgVF46sarwDHxE50"
-          ],
-          "adapterName": "ParasailAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.parasail.io/&size=256"
-          },
-          "ignoredProviderModels": [
-            "parasail-olmo-2-1124-7b-instruct",
-            "parasail-qwen3-omni-30b-a3b-thinking",
-            "parasail-qwen3-omni-30b-a3b-instruct",
-            "parasail-dots-ocr",
-            "parasail-auto-glm-9b-multilingual",
-            "parasail-olmo-3-32b-think"
-          ],
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_display_name": "Parasail",
-        "provider_slug": "parasail/bf16",
-        "provider_model_id": "parasail-olmo-3-7b-instruct",
-        "quantization": "bf16",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 65536,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "top_k",
-          "logit_bias",
-          "response_format",
-          "structured_outputs"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "termsOfServiceURL": "https://www.parasail.io/legal/terms",
-          "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0.0000001",
-          "completion": "0.0000002",
-          "discount": 0,
-          "line_items": []
-        },
-        "variable_pricings": [],
-        "line_items": [],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
-          "openai:completion_tokens": "0.0000002"
-        },
-        "pricing_version_id": "ef9792b6-b436-4885-be60-39b6d4489070",
-        "is_hidden": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "limit_rpm_cf": null,
-        "has_completions": true,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          },
-          "supports_input_audio": false
-        },
-        "provider_region": null,
-        "deprecation_date": "2026-03-23"
-      }
+      "endpoint": null
     },
     {
       "slug": "allenai/olmo-3-7b-think",
@@ -25919,185 +25573,7 @@
       "quick_start_example_type": "reasoning",
       "is_trainable_text": null,
       "is_trainable_image": null,
-      "endpoint": {
-        "id": "62189f7c-259a-4dc3-8e85-7769034f981c",
-        "name": "Parasail | allenai/olmo-3-7b-think-20251121",
-        "context_length": 65536,
-        "model": {
-          "slug": "allenai/olmo-3-7b-think",
-          "hf_slug": "allenai/Olmo-3-7B-Think",
-          "updated_at": "2026-01-08T19:23:52.555156+00:00",
-          "created_at": "2025-11-21T20:51:10.334947+00:00",
-          "hf_updated_at": null,
-          "name": "AllenAI: Olmo 3 7B Think",
-          "short_name": "Olmo 3 7B Think",
-          "author": "allenai",
-          "description": "Olmo 3 7B Think is a research-oriented language model in the Olmo family designed for advanced reasoning and instruction-driven tasks. It excels at multi-step problem solving, logical inference, and maintaining coherent conversational context. Developed by Ai2 under the Apache 2.0 license, Olmo 3 7B Think supports transparent, fully open experimentation and provides a lightweight yet capable foundation for academic research and practical NLP workflows.",
-          "model_version_group_id": null,
-          "context_length": 65536,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": "",
-          "promotion_message": "",
-          "routing_error_message": null,
-          "permaslug": "allenai/olmo-3-7b-think-20251121",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": "<think>",
-            "end_token": "</think>",
-            "system_prompt": null,
-            "is_mandatory_reasoning": true
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": "<think>",
-              "end_token": "</think>",
-              "system_prompt": null,
-              "is_mandatory_reasoning": true
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": 0.6,
-            "top_p": 0.95,
-            "frequency_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": "reasoning",
-          "is_trainable_text": null,
-          "is_trainable_image": null
-        },
-        "model_variant_slug": "allenai/olmo-3-7b-think",
-        "model_variant_permaslug": "allenai/olmo-3-7b-think-20251121",
-        "adapter_name": "ParasailAdapter",
-        "provider_name": "Parasail",
-        "provider_info": {
-          "name": "Parasail",
-          "displayName": "Parasail",
-          "slug": "parasail",
-          "baseUrl": "https://api.parasail.io/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "termsOfServiceURL": "https://www.parasail.io/legal/terms",
-            "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
-          },
-          "headquarters": "US",
-          "regionOverrides": {},
-          "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
-          "owners": [
-            "org_34P5Ca01in28Ek1oxb5OtfZdEjQ",
-            "user_37qaJKhqfUEFgVF46sarwDHxE50"
-          ],
-          "adapterName": "ParasailAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.parasail.io/&size=256"
-          },
-          "ignoredProviderModels": [
-            "parasail-olmo-2-1124-7b-instruct",
-            "parasail-qwen3-omni-30b-a3b-thinking",
-            "parasail-qwen3-omni-30b-a3b-instruct",
-            "parasail-dots-ocr",
-            "parasail-auto-glm-9b-multilingual",
-            "parasail-olmo-3-32b-think"
-          ],
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_display_name": "Parasail",
-        "provider_slug": "parasail/bf16",
-        "provider_model_id": "parasail-olmo-3-7b-think",
-        "quantization": "bf16",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 65536,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "top_k",
-          "logit_bias",
-          "structured_outputs",
-          "response_format"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "termsOfServiceURL": "https://www.parasail.io/legal/terms",
-          "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0.00000012",
-          "completion": "0.0000002",
-          "discount": 0,
-          "line_items": []
-        },
-        "variable_pricings": [],
-        "line_items": [],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.00000012",
-          "openai:completion_tokens": "0.0000002"
-        },
-        "pricing_version_id": "3cb7bed3-db7a-4dcf-baaf-03b717d82558",
-        "is_hidden": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "limit_rpm_cf": null,
-        "has_completions": true,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          },
-          "is_mandatory_reasoning": true,
-          "supports_input_audio": false
-        },
-        "provider_region": null,
-        "deprecation_date": "2026-03-23"
-      }
+      "endpoint": null
     },
     {
       "slug": "google/gemini-3-pro-image-preview",
@@ -44688,8 +44164,8 @@
       "is_trainable_text": true,
       "is_trainable_image": null,
       "endpoint": {
-        "id": "b564d943-e000-4739-b6eb-ea92b61cb15a",
-        "name": "Chutes | deepseek/deepseek-v3.1-terminus",
+        "id": "bc1ebdd6-6789-4ac4-95ee-2a9a663f9a1d",
+        "name": "DeepInfra | deepseek/deepseek-v3.1-terminus",
         "context_length": 163840,
         "model": {
           "slug": "deepseek/deepseek-v3.1-terminus",
@@ -44748,19 +44224,20 @@
         },
         "model_variant_slug": "deepseek/deepseek-v3.1-terminus",
         "model_variant_permaslug": "deepseek/deepseek-v3.1-terminus",
-        "adapter_name": "ChutesAdapter",
-        "provider_name": "Chutes",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
         "provider_info": {
-          "name": "Chutes",
-          "displayName": "Chutes",
-          "slug": "chutes",
-          "baseUrl": "https://llm.chutes.ai/v1",
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://chutes.ai/tos"
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy"
           },
           "headquarters": "US",
           "regionOverrides": {},
@@ -44772,27 +44249,101 @@
             "{}"
           ],
           "owners": [
-            "org_3BFjvDfsIrd9T4oeYy2FlxqoY3I"
+            "{}",
+            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
           ],
-          "adapterName": "ChutesAdapter",
-          "statusPageUrl": null,
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://chutes.ai/&size=256"
+            "url": "/images/icons/DeepInfra.webp"
           },
-          "ignoredProviderModels": [],
+          "ignoredProviderModels": [
+            "anthropic/claude-4-opus",
+            "anthropic/claude-4-sonnet",
+            "deepseek-ai/DeepSeek-R1-0528-Turbo",
+            "meta-llama/Llama-2-70b-chat-hf",
+            "mistralai/Mixtral-8x22B-Instruct-v0.1",
+            "google/gemma-1.1-7b-it",
+            "microsoft/Phi-3-medium-4k-instruct",
+            "google/gemma-2-27b-it",
+            "microsoft/WizardLM-2-7B",
+            "mattshumer/Reflection-Llama-3.1-70B",
+            "Sao10K/L3-8B-Lunaris-v1",
+            "openbmb/MiniCPM-Llama3-V-2_5",
+            "Qwen/QVQ-72B-Preview",
+            "deepinfra/airoboros-70b",
+            "Qwen/QwQ-32B-Preview",
+            "Phind/Phind-CodeLlama-34B-v2",
+            "lizpreciatior/lzlv_70b_fp16_hf",
+            "mistralai/Mistral-7B-Instruct-v0.2",
+            "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+            "cognitivecomputations/dolphin-2.9.1-llama-3-70b",
+            "Qwen/Qwen2-72B-Instruct",
+            "Qwen/Qwen2-7B-Instruct",
+            "google/gemma-2-9b-it",
+            "Sao10K/L3-70B-Euryale-v2.1",
+            "google/codegemma-7b-it",
+            "mistralai/Mistral-7B-Instruct-v0.1",
+            "KoboldAI/LLaMA2-13B-Tiefighter",
+            "meta-llama/Llama-2-13b-chat-hf",
+            "openchat/openchat_3.5",
+            "openchat/openchat-3.6-8b",
+            "bigcode/starcoder2-15b-instruct-v0.1",
+            "Gryphe/MythoMax-L2-13b-turbo",
+            "Austism/chronos-hermes-13b-v2",
+            "Qwen/Qwen2.5-Coder-7B",
+            "moonshotai/Kimi-K2-Instruct",
+            "google/gemini-1.5-flash",
+            "google/gemini-2.5-flash",
+            "google/gemini-2.0-flash-001",
+            "anthropic/claude-3-7-sonnet-latest",
+            "google/gemini-1.5-flash-8b",
+            "google/gemini-2.5-pro",
+            "NovaSky-AI/Sky-T1-32B-Preview",
+            "allenai/olmOCR-7B-0725-FP8",
+            "allenai/olmOCR-7B-0825",
+            "deepseek-ai/DeepSeek-V3-0324-Turbo",
+            "PaddlePaddle/PaddleOCR-VL-0.9B",
+            "allenai/olmOCR-7B-1025",
+            "allenai/olmOCR-2-7B-1025",
+            "allenai/olmOCR-2",
+            "deepseek-ai/DeepSeek-OCR",
+            "meta-llama/Llama-3.2-1B-Instruct",
+            "sentence-transformers/clip-ViT-B-32-multilingual-v1",
+            "shibing624/text2vec-base-chinese",
+            "sentence-transformers/clip-ViT-B-32",
+            "BAAI/bge-en-icl",
+            "Qwen/Qwen3-Embedding-8B-batch",
+            "Qwen/Qwen3-Embedding-4B-batch",
+            "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+            "meta-llama/Meta-Llama-3.1-405B-Instruct",
+            "BAAI/bge-m3-multi",
+            "google/embeddinggemma-300m",
+            "Qwen/Qwen3-Embedding-0.6B-batch",
+            "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Turbo",
+            "microsoft/Phi-4-multimodal-instruct",
+            "deepseek-ai/DeepSeek-V3.2-Exp",
+            "meta-llama/Llama-3.2-90B-Vision-Instruct",
+            "meta-llama/Meta-Llama-3-70B-Instruct",
+            "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "Qwen/Qwen3-Max",
+            "ByteDance/Seed-1.8",
+            "ByteDance/Seed-2.0-mini",
+            "Qwen/Qwen3-Max-Thinking"
+          ],
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Chutes",
-        "provider_slug": "chutes/fp8",
-        "provider_model_id": "deepseek-ai/DeepSeek-V3.1-Terminus-TEE",
-        "quantization": "fp8",
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/fp4",
+        "provider_model_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -44803,27 +44354,28 @@
           "stop",
           "frequency_penalty",
           "presence_penalty",
-          "seed",
-          "top_k",
           "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
           "response_format",
           "tools",
-          "tool_choice",
-          "structured_outputs"
+          "tool_choice"
         ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://chutes.ai/tos"
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
         },
         "pricing": {
           "prompt": "0.00000021",
-          "completion": "0.00000078",
-          "input_cache_read": "0.000000105",
+          "completion": "0.00000079",
+          "input_cache_read": "0.0000001300000002",
           "discount": 0,
           "line_items": []
         },
@@ -44831,10 +44383,10 @@
         "line_items": [],
         "pricing_json": {
           "openai:prompt_tokens": "0.00000021",
-          "openai:completion_tokens": "0.00000078",
-          "openai:cached_prompt_tokens": "0.000000105"
+          "openai:completion_tokens": "0.00000079",
+          "openai:cached_prompt_tokens": "0.0000001300000002"
         },
-        "pricing_version_id": "0642981d-5604-4203-8077-287c7d107265",
+        "pricing_version_id": "792bf1f8-64c8-46b0-81d0-0664a4dc5b61",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -44852,12 +44404,7 @@
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
-          },
-          "supported_parameters": {
-            "response_format": false,
-            "structured_outputs": false
-          },
-          "is_mandatory_reasoning": false
+          }
         },
         "provider_region": null,
         "deprecation_date": null
@@ -59884,20 +59431,20 @@
           "termsOfServiceURL": "https://chutes.ai/tos"
         },
         "pricing": {
-          "prompt": "0.00000025",
-          "completion": "0.00000085",
-          "input_cache_read": "0.000000125",
+          "prompt": "0.0000003",
+          "completion": "0.0000011",
+          "input_cache_read": "0.00000015",
           "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
         "line_items": [],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000025",
-          "openai:completion_tokens": "0.00000085",
-          "openai:cached_prompt_tokens": "0.000000125"
+          "openai:prompt_tokens": "0.0000003",
+          "openai:completion_tokens": "0.0000011",
+          "openai:cached_prompt_tokens": "0.00000015"
         },
-        "pricing_version_id": "8d6897c5-24fa-4492-be04-8914c2c2aa77",
+        "pricing_version_id": "071391fe-7971-4446-b7fb-bbf3e2805fae",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
