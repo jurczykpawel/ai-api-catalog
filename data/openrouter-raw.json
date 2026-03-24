@@ -1,6 +1,712 @@
 {
   "data": [
     {
+      "slug": "bytedance/seedance-1-5-pro",
+      "hf_slug": null,
+      "updated_at": "2026-03-23T14:53:39.707725+00:00",
+      "created_at": "2026-03-23T14:53:28.339+00:00",
+      "hf_updated_at": null,
+      "name": "ByteDance: Seedance 1.5 Pro (experimental)",
+      "short_name": "Seedance 1.5 Pro (experimental)",
+      "author": "bytedance",
+      "description": "Video generation API is currently in alpha. If you’re interested in trying it, please reach out to us here: https://openrouter.notion.site/3282fd57c4dc80aba183f5024e233e74?pvs=105",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video",
+        "audio"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "permaslug": "bytedance/seedance-1-5-pro-20260320",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": null,
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "endpoint": {
+        "id": "81e8211f-9783-469b-a86b-2ffe468fd6c0",
+        "name": "Seed | bytedance/seedance-1-5-pro-20260320",
+        "context_length": 0,
+        "model": {
+          "slug": "bytedance/seedance-1-5-pro",
+          "hf_slug": null,
+          "updated_at": "2026-03-23T14:53:39.707725+00:00",
+          "created_at": "2026-03-23T14:53:28.339+00:00",
+          "hf_updated_at": null,
+          "name": "ByteDance: Seedance 1.5 Pro (experimental)",
+          "short_name": "Seedance 1.5 Pro (experimental)",
+          "author": "bytedance",
+          "description": "Video generation API is currently in alpha. If you’re interested in trying it, please reach out to us here: https://openrouter.notion.site/3282fd57c4dc80aba183f5024e233e74?pvs=105",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video",
+            "audio"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "permaslug": "bytedance/seedance-1-5-pro-20260320",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": null,
+          "is_trainable_text": null,
+          "is_trainable_image": null
+        },
+        "model_variant_slug": "bytedance/seedance-1-5-pro",
+        "model_variant_permaslug": "bytedance/seedance-1-5-pro-20260320",
+        "adapter_name": "BytePlusSeedanceAdapter",
+        "provider_name": "Seed",
+        "provider_info": {
+          "name": "Seed",
+          "displayName": "Seed",
+          "slug": "seed",
+          "baseUrl": "https://ark.ap-southeast.bytepluses.com/api/v3",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
+            "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy"
+          },
+          "headquarters": "SG",
+          "datacenters": [],
+          "regionOverrides": {},
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "editors": [],
+          "owners": [],
+          "adapterName": "BytePlusSeedanceAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
+          },
+          "ignoredProviderModels": [
+            "seedance-1-5-pro-251215",
+            "ep-20251223020539-6m7wz"
+          ],
+          "sendClientIp": false,
+          "pricingStrategy": "seedance"
+        },
+        "provider_display_name": "Seed",
+        "provider_slug": "seed",
+        "provider_model_id": "seedance-1-5-pro-251215",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "frequency_penalty"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
+          "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "line_items": []
+        },
+        "variable_pricings": [],
+        "line_items": [],
+        "pricing_json": {
+          "seedance:video_tokens": "0.0000012"
+        },
+        "pricing_version_id": "75c8f4a7-80fe-49dd-a149-96fc5f861cb5",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "provider_region": null,
+        "deprecation_date": null
+      }
+    },
+    {
+      "slug": "openai/sora-2-pro",
+      "hf_slug": null,
+      "updated_at": "2026-03-23T14:52:25.377343+00:00",
+      "created_at": "2026-03-23T14:52:01.486+00:00",
+      "hf_updated_at": null,
+      "name": "OpenAI: Sora 2 Pro (experimental)",
+      "short_name": "Sora 2 Pro (experimental)",
+      "author": "openai",
+      "description": "Video generation API is currently in alpha. If you’re interested in trying it, please reach out to us here: https://openrouter.notion.site/3282fd57c4dc80aba183f5024e233e74?pvs=105",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video",
+        "audio"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "permaslug": "openai/sora-2-pro-20260320",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": null,
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "endpoint": {
+        "id": "99fcd931-7ba8-47c0-af5a-70c4ef96dbcc",
+        "name": "OpenAI | openai/sora-2-pro-20260320",
+        "context_length": 0,
+        "model": {
+          "slug": "openai/sora-2-pro",
+          "hf_slug": null,
+          "updated_at": "2026-03-23T14:52:25.377343+00:00",
+          "created_at": "2026-03-23T14:52:01.486+00:00",
+          "hf_updated_at": null,
+          "name": "OpenAI: Sora 2 Pro (experimental)",
+          "short_name": "Sora 2 Pro (experimental)",
+          "author": "openai",
+          "description": "Video generation API is currently in alpha. If you’re interested in trying it, please reach out to us here: https://openrouter.notion.site/3282fd57c4dc80aba183f5024e233e74?pvs=105",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video",
+            "audio"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "permaslug": "openai/sora-2-pro-20260320",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": null,
+          "is_trainable_text": null,
+          "is_trainable_image": null
+        },
+        "model_variant_slug": "openai/sora-2-pro",
+        "model_variant_permaslug": "openai/sora-2-pro-20260320",
+        "adapter_name": "SoraOpenAIAdapter",
+        "provider_name": "OpenAI",
+        "provider_info": {
+          "name": "OpenAI",
+          "displayName": "OpenAI",
+          "slug": "openai",
+          "baseUrl": "https://api.openai.com/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+            "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+            "requiresUserIDs": true
+          },
+          "headquarters": "US",
+          "regionOverrides": {},
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": true,
+          "editors": [
+            "{}"
+          ],
+          "owners": [
+            "{}"
+          ],
+          "adapterName": "SoraOpenAIAdapter",
+          "statusPageUrl": "https://status.openai.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/OpenAI.svg",
+            "className": "invert-0 dark:invert"
+          },
+          "ignoredProviderModels": [],
+          "sendClientIp": false,
+          "pricingStrategy": "sora"
+        },
+        "provider_display_name": "OpenAI",
+        "provider_slug": "openai",
+        "provider_model_id": "sora-2-pro",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "logit_bias",
+          "logprobs",
+          "top_logprobs"
+        ],
+        "is_byok": false,
+        "moderation_required": true,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+          "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+          "requiresUserIDs": true
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "line_items": []
+        },
+        "variable_pricings": [],
+        "line_items": [],
+        "pricing_json": {
+          "sora:duration_seconds_720p": "0.30",
+          "sora:duration_seconds_1024p": "0.50",
+          "sora:duration_seconds_1080p": "0.50"
+        },
+        "pricing_version_id": "0f868fb0-3311-4251-8bc8-1029e2aa52ee",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "provider_region": null,
+        "deprecation_date": null
+      }
+    },
+    {
+      "slug": "google/veo-3.1",
+      "hf_slug": null,
+      "updated_at": "2026-03-23T14:50:45.730216+00:00",
+      "created_at": "2026-03-23T14:45:48.494+00:00",
+      "hf_updated_at": null,
+      "name": "Google: Veo 3.1 (experimental)",
+      "short_name": "Veo 3.1 (experimental)",
+      "author": "google",
+      "description": "Video generation API is currently in alpha. If you’re interested in trying it, please reach out to us here: https://openrouter.notion.site/3282fd57c4dc80aba183f5024e233e74?pvs=105",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video",
+        "audio"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "permaslug": "google/veo-3.1-20260320",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": null,
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "endpoint": {
+        "id": "aa78ec1e-1e3f-48f9-aa94-5f0ba7be254e",
+        "name": "Google | google/veo-3.1-20260320",
+        "context_length": 0,
+        "model": {
+          "slug": "google/veo-3.1",
+          "hf_slug": null,
+          "updated_at": "2026-03-23T14:50:45.730216+00:00",
+          "created_at": "2026-03-23T14:45:48.494+00:00",
+          "hf_updated_at": null,
+          "name": "Google: Veo 3.1 (experimental)",
+          "short_name": "Veo 3.1 (experimental)",
+          "author": "google",
+          "description": "Video generation API is currently in alpha. If you’re interested in trying it, please reach out to us here: https://openrouter.notion.site/3282fd57c4dc80aba183f5024e233e74?pvs=105",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video",
+            "audio"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "permaslug": "google/veo-3.1-20260320",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": null,
+          "is_trainable_text": null,
+          "is_trainable_image": null
+        },
+        "model_variant_slug": "google/veo-3.1",
+        "model_variant_permaslug": "google/veo-3.1-20260320",
+        "adapter_name": "GoogleVertexGeminiAdapter",
+        "provider_name": "Google",
+        "provider_info": {
+          "name": "Google",
+          "displayName": "Google Vertex",
+          "slug": "google-vertex",
+          "baseUrl": "not_used",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://cloud.google.com/terms/",
+            "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+            "requiresUserIDs": true
+          },
+          "headquarters": "US",
+          "regionOverrides": {
+            "europe": {
+              "baseUrl": "not-used"
+            }
+          },
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "editors": [
+            "{}"
+          ],
+          "owners": [
+            "{}"
+          ],
+          "adapterName": "GoogleVertexGeminiAdapter",
+          "statusPageUrl": "https://status.cloud.google.com/products/sdXM79fz1FS6ekNpu37K/history",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/GoogleVertex.svg"
+          },
+          "ignoredProviderModels": [
+            "gemini-2.5-pro-exp-03-25",
+            "gemini-2.0-flash-exp",
+            "gemini-1.5-flash-002",
+            "gemini-2.0-flash-lite-001",
+            "gemini-2.5-flash-lite-preview-06-17",
+            "gemini-2.5-flash-lite",
+            "gemini-2.0-flash-001",
+            "llama-4-scout-17b-16e-instruct-maas",
+            "qwen3-235b-a22b-instruct-2507-maas",
+            "gemini-2.5-flash",
+            "gemini-2.5-flash-image-preview",
+            "llama-4-maverick-17b-128e-instruct-maas",
+            "llama-3.3-70b-instruct-maas",
+            "claude-3-5-haiku@20241022",
+            "qwen3-coder-480b-a35b-instruct-maas",
+            "gemini-1.5-pro-002",
+            "gemini-2.5-pro-preview-06-05",
+            "gemini-2.5-pro-preview-05-06",
+            "gemini-2.5-pro",
+            "deepseek-r1-0528-maas",
+            "claude-3-7-sonnet@20250219",
+            "claude-3-5-sonnet-v2@20241022",
+            "claude-sonnet-4@20250514",
+            "claude-opus-4-1@20250805",
+            "claude-opus-4@20250514",
+            "claude-3-haiku@20240307",
+            "claude-3-5-sonnet@20240620",
+            "claude-3-opus@20240229",
+            "gemini-2.5-flash-lite-preview-09-2025",
+            "gemini-2.5-flash-preview-09-2025",
+            "gemini-2.5-flash-image",
+            "claude-sonnet-4-5@20250929",
+            "claude-haiku-4-5@20251001",
+            "minimax/minimax-m2-maas",
+            "gemini-3-pro-preview",
+            "gemini-3-pro-image-preview",
+            "claude-opus-4-5@20251101",
+            "gemini-3-flash-preview",
+            "claude-opus-4-6",
+            "claude-sonnet-4-6",
+            "gemini-3.1-pro-preview",
+            "openai/gpt-oss-20b-maas",
+            "openai/gpt-oss-120b-maas",
+            "gemini-3.1-flash-image-preview",
+            "gemini-3.1-flash-lite-preview"
+          ],
+          "sendClientIp": false,
+          "pricingStrategy": "veo"
+        },
+        "provider_display_name": "Google Vertex",
+        "provider_slug": "google-vertex",
+        "provider_model_id": "veo-3.1-generate-001",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "response_format"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://cloud.google.com/terms/",
+          "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+          "requiresUserIDs": true
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "line_items": []
+        },
+        "variable_pricings": [],
+        "line_items": [],
+        "pricing_json": {
+          "veo:duration_seconds": "0.40",
+          "veo:duration_seconds_with_audio": "0.4",
+          "veo:duration_seconds_with_audio_4k": "0.6",
+          "veo:duration_seconds_without_audio": "0.2",
+          "veo:duration_seconds_without_audio_4k": "0.4"
+        },
+        "pricing_version_id": "4913a6d7-f87b-4b8f-adad-b48b6b71a64a",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "provider_region": null,
+        "deprecation_date": null
+      }
+    },
+    {
       "slug": "xiaomi/mimo-v2-omni",
       "hf_slug": "",
       "updated_at": "2026-03-19T13:10:43.171684+00:00",
@@ -1534,7 +2240,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -2230,10 +2938,10 @@
           "privacyPolicyURL": "https://chat.z.ai/legal-agreement/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000096",
-          "completion": "0.0000032",
-          "input_cache_read": "0.000000192",
-          "discount": 0.2,
+          "prompt": "0.0000012",
+          "completion": "0.000004",
+          "input_cache_read": "0.00000024",
+          "discount": 0,
           "line_items": []
         },
         "variable_pricings": [],
@@ -3474,7 +4182,7 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000005",
-          "input_cache_read": "0.00000004",
+          "input_cache_read": "0.0000001",
           "discount": 0,
           "line_items": []
         },
@@ -3483,9 +4191,9 @@
         "pricing_json": {
           "openai:prompt_tokens": "0.0000001",
           "openai:completion_tokens": "0.0000005",
-          "openai:cached_prompt_tokens": "0.00000004"
+          "openai:cached_prompt_tokens": "0.0000001"
         },
-        "pricing_version_id": "f717c1b4-48e5-4bb7-8075-d3fa769a8962",
+        "pricing_version_id": "eab9d599-d0f3-4027-99f3-0d60d32e1dfc",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -3689,6 +4397,7 @@
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
           },
           "ignoredProviderModels": [
+            "seedance-1-5-pro-251215",
             "ep-20251223020539-6m7wz"
           ],
           "sendClientIp": false,
@@ -3988,7 +4697,7 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 65536,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -5658,6 +6367,7 @@
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
           },
           "ignoredProviderModels": [
+            "seedance-1-5-pro-251215",
             "ep-20251223020539-6m7wz"
           ],
           "sendClientIp": false,
@@ -9122,7 +9832,7 @@
     {
       "slug": "anthropic/claude-sonnet-4.6",
       "hf_slug": "",
-      "updated_at": "2026-03-19T13:51:16.956243+00:00",
+      "updated_at": "2026-03-23T16:38:05.526865+00:00",
       "created_at": "2026-02-17T15:43:10.807722+00:00",
       "hf_updated_at": null,
       "name": "Anthropic: Claude Sonnet 4.6",
@@ -9170,10 +9880,10 @@
         "repetition_penalty": null
       },
       "default_order": [
-        "google-vertex",
-        "amazon-bedrock",
-        "anthropic",
         "google-vertex/us-east5",
+        "amazon-bedrock",
+        "google-vertex",
+        "anthropic",
         "azure"
       ],
       "quick_start_example_type": "reasoning",
@@ -9186,7 +9896,7 @@
         "model": {
           "slug": "anthropic/claude-sonnet-4.6",
           "hf_slug": "",
-          "updated_at": "2026-03-19T13:51:16.956243+00:00",
+          "updated_at": "2026-03-23T16:38:05.526865+00:00",
           "created_at": "2026-02-17T15:43:10.807722+00:00",
           "hf_updated_at": null,
           "name": "Anthropic: Claude Sonnet 4.6",
@@ -9234,10 +9944,10 @@
             "repetition_penalty": null
           },
           "default_order": [
-            "google-vertex",
-            "amazon-bedrock",
-            "anthropic",
             "google-vertex/us-east5",
+            "amazon-bedrock",
+            "google-vertex",
+            "anthropic",
             "azure"
           ],
           "quick_start_example_type": "reasoning",
@@ -10644,7 +11354,9 @@
           "top_p",
           "frequency_penalty",
           "structured_outputs",
-          "response_format"
+          "response_format",
+          "tools",
+          "tool_choice"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -10670,7 +11382,7 @@
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -10680,10 +11392,10 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
         "provider_region": null,
@@ -12232,7 +12944,7 @@
         },
         "model_variant_slug": "stepfun/step-3.5-flash:free",
         "model_variant_permaslug": "stepfun/step-3.5-flash:free",
-        "adapter_name": "OpenAIAdapter",
+        "adapter_name": "StepFunAdapter",
         "provider_name": "StepFun",
         "provider_info": {
           "name": "StepFun",
@@ -12255,7 +12967,7 @@
           "owners": [
             "org_38x7nyArKRacEJKcYmSSuKJ3Ba3"
           ],
-          "adapterName": "OpenAIAdapter",
+          "adapterName": "StepFunAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -12442,7 +13154,7 @@
         },
         "model_variant_slug": "stepfun/step-3.5-flash",
         "model_variant_permaslug": "stepfun/step-3.5-flash",
-        "adapter_name": "OpenAIAdapter",
+        "adapter_name": "StepFunAdapter",
         "provider_name": "StepFun",
         "provider_info": {
           "name": "StepFun",
@@ -12465,7 +13177,7 @@
           "owners": [
             "org_38x7nyArKRacEJKcYmSSuKJ3Ba3"
           ],
-          "adapterName": "OpenAIAdapter",
+          "adapterName": "StepFunAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -15783,6 +16495,7 @@
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
           },
           "ignoredProviderModels": [
+            "seedance-1-5-pro-251215",
             "ep-20251223020539-6m7wz"
           ],
           "sendClientIp": false,
@@ -15999,6 +16712,7 @@
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
           },
           "ignoredProviderModels": [
+            "seedance-1-5-pro-251215",
             "ep-20251223020539-6m7wz"
           ],
           "sendClientIp": false,
@@ -16280,6 +16994,7 @@
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
           },
           "ignoredProviderModels": [
+            "seedance-1-5-pro-251215",
             "ep-20251223020539-6m7wz"
           ],
           "sendClientIp": false,
@@ -17476,7 +18191,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -19698,7 +20415,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -22173,7 +22892,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -22430,7 +23151,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -22687,7 +23410,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -22944,7 +23669,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -32924,7 +33651,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -33669,7 +34398,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -34612,7 +35343,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -50428,7 +51161,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -54125,7 +54860,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -57957,7 +58694,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -58206,7 +58945,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -65086,7 +65827,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -72623,7 +73366,8 @@
           "presence_penalty",
           "top_k",
           "repetition_penalty",
-          "structured_outputs"
+          "structured_outputs",
+          "response_format"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -79887,7 +80631,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -85318,7 +86064,8 @@
             "{}"
           ],
           "owners": [
-            "{}"
+            "{}",
+            "user_38J1V7YbWlE2QReAjpr9onFiPoU"
           ],
           "adapterName": "InfermaticAdapter",
           "statusPageUrl": null,
@@ -85350,7 +86097,8 @@
             "intfloat-multilingual-e5-base",
             "Llama-3.2-11B-Vision-Instruct",
             "anthracite-org-magnum-v4-72b-FP8-Dynamic",
-            "Sao10K-L3.3-70B-Euryale-v2.3-FP8-Dynamic"
+            "Sao10K-L3.3-70B-Euryale-v2.3-FP8-Dynamic",
+            "rAIfle-SorcererLM-8x22b-bf16"
           ],
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
@@ -88118,7 +88866,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -88347,7 +89097,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -88578,7 +89330,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -90343,7 +91097,7 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 32768,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "max_tokens",
@@ -101107,7 +101861,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
@@ -102485,7 +103241,9 @@
             "mistral-ocr-2512",
             "labs-devstral-small-2512",
             "mistral-vibe-cli-with-tools",
-            "voxtral-mini-2602"
+            "voxtral-mini-2602",
+            "mistral-vibe-cli-fast",
+            "labs-leanstral-2603"
           ],
           "sendClientIp": false,
           "pricingStrategy": "mistral"
