@@ -10,8 +10,8 @@
       "url": "https://aimlapi.com/models/chat-gpt-4-omni",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -24,8 +24,8 @@
       "url": "https://aimlapi.com/models/chat-gpt-4o-mini",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -38,8 +38,8 @@
       "url": "https://aimlapi.com/models/chat-gpt-4-turbo",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -104,8 +104,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -118,8 +118,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -132,8 +132,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -146,8 +146,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -160,8 +160,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -174,8 +174,8 @@
       "url": "https://aimlapi.com/models/openai-o1-api",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -188,8 +188,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -202,8 +202,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -216,8 +216,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -243,8 +243,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -257,8 +257,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -271,8 +271,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -285,8 +285,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -314,32 +314,6 @@
       ]
     },
     {
-      "id": "meta-llama/Llama-3.2-3B-Instruct-Turbo",
-      "type": "chat-completion",
-      "name": "Llama 3.2 3B Instruct Turbo",
-      "developer": "Meta",
-      "description": "Efficient multilingual LLM for diverse NLP tasks with 3B parameters.",
-      "context_length": 131000,
-      "url": "https://aimlapi.com/models/llama-3-2-3b-instruct-turbo",
-      "_our_category": "llm",
-      "_caps": [
-        "function_calling"
-      ]
-    },
-    {
-      "id": "meta-llama/Llama-Guard-3-11B-Vision-Turbo",
-      "type": "chat-completion",
-      "name": "Llama Guard 3 11B Vision Turbo",
-      "developer": "Meta",
-      "description": "Meta Llama Guard 3 11B Vision Turbo is a multimodal safety classifier for detecting harmful content in text and images.",
-      "context_length": 128000,
-      "url": "",
-      "_our_category": "llm",
-      "_caps": [
-        "vision"
-      ]
-    },
-    {
       "id": "Qwen/Qwen2.5-7B-Instruct-Turbo",
       "type": "chat-completion",
       "name": "Qwen2.5 7B Instruct Turbo",
@@ -364,70 +338,6 @@
       "_caps": []
     },
     {
-      "id": "Qwen/Qwen2.5-72B-Instruct-Turbo",
-      "type": "chat-completion",
-      "name": "Qwen2.5 72B Instruct Turbo",
-      "developer": "Alibaba Cloud",
-      "description": "Qwen 2.5 Instruct Turbo excels in coding tasks with expansive context capabilities.",
-      "context_length": 32000,
-      "url": "https://aimlapi.com/models/qwen-2-5-72b-instruct-turbo",
-      "_our_category": "llm",
-      "_caps": [
-        "function_calling"
-      ]
-    },
-    {
-      "id": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
-      "type": "chat-completion",
-      "name": "Meta Llama 3.1 405B Instruct Turbo",
-      "developer": "Meta",
-      "description": "Llama 3.1 405B: Advanced text generation model by Meta AI.",
-      "context_length": 131000,
-      "url": "https://aimlapi.com/models/llama-3-1-405b-api",
-      "_our_category": "llm",
-      "_caps": [
-        "vision",
-        "function_calling"
-      ]
-    },
-    {
-      "id": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
-      "type": "chat-completion",
-      "name": "Meta Llama 3.1 70B Instruct Turbo",
-      "developer": "Meta",
-      "description": "Llama 3.1 70B Instruct Turbo: Meta's advanced, multilingual, instruction-tuned language model for diverse, high-accuracy natural language tasks.",
-      "context_length": 128000,
-      "url": "https://aimlapi.com/models/llama-3-1-70b-instruct-turbo-api",
-      "_our_category": "llm",
-      "_caps": [
-        "function_calling"
-      ]
-    },
-    {
-      "id": "meta-llama/LlamaGuard-2-8b",
-      "type": "chat-completion",
-      "name": "LlamaGuard 2 8B",
-      "developer": "Meta",
-      "description": "Llama-based 8B model for safe LLM content classification",
-      "context_length": 8000,
-      "url": "https://aimlapi.com/models/llama-guard-2-8b",
-      "_our_category": "llm",
-      "_caps": [
-        "function_calling"
-      ]
-    },
-    {
-      "id": "meta-llama/Meta-Llama-Guard-3-8B",
-      "type": "chat-completion",
-      "name": "Meta Llama Guard 3 8B",
-      "developer": "Meta",
-      "description": "Llama Guard 3 (8B) is an advanced language model focused on ensuring safe AI interactions through effective content moderation techniques",
-      "context_length": 8000,
-      "url": "https://aimlapi.com/models/llama-guard-3-8b",
-      "_our_category": "llm",
-      "_caps": []
-    },
-    {
       "id": "meta-llama/llama-4-maverick",
       "type": "chat-completion",
       "name": "Llama 4 Maverick",
@@ -437,21 +347,8 @@
       "url": "https://aimlapi.com/models/llama-4-maverick-api",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
-      ]
-    },
-    {
-      "id": "Qwen/Qwen3-235B-A22B-fp8-tput",
-      "type": "chat-completion",
-      "name": "Qwen3 235B A22B",
-      "developer": "Alibaba Cloud",
-      "description": "",
-      "context_length": 41000,
-      "url": "",
-      "_our_category": "llm",
-      "_caps": [
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -462,28 +359,6 @@
       "description": "Cost-efficient, high-speed AI for entry-level and real-time applications.",
       "context_length": 200000,
       "url": "https://aimlapi.com/models/claude-3-haiku",
-      "_our_category": "llm",
-      "_caps": []
-    },
-    {
-      "id": "claude-3-5-haiku-20241022",
-      "type": "chat-completion",
-      "name": "Claude 3.5 Haiku 2024-10-22",
-      "developer": "Anthropic",
-      "description": "Claude 3.5 Haiku is a high-speed language model optimized for diverse applications.",
-      "context_length": 200000,
-      "url": "https://aimlapi.com/models/claude-3-5-haiku-api",
-      "_our_category": "llm",
-      "_caps": []
-    },
-    {
-      "id": "claude-3-7-sonnet-20250219",
-      "type": "chat-completion",
-      "name": "Claude 3.7 Sonnet",
-      "developer": "Anthropic",
-      "description": "Claude 3.7 Sonnet: Anthropic's hybrid reasoning model with extended thinking capabilities.",
-      "context_length": 200000,
-      "url": "https://aimlapi.com/models/claude-3-7-sonnet-api",
       "_our_category": "llm",
       "_caps": []
     },
@@ -585,8 +460,8 @@
       "url": "https://aimlapi.com/models/gemini-2-0-flash-api",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -599,8 +474,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -613,8 +488,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -842,8 +717,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -856,8 +731,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -870,8 +745,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -884,8 +759,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -911,19 +786,6 @@
       "url": "",
       "_our_category": "llm",
       "_caps": []
-    },
-    {
-      "id": "mistralai/mistral-tiny",
-      "type": "chat-completion",
-      "name": "Mistral tiny",
-      "developer": "Mistral AI",
-      "description": "Mistral Tiny: Efficient language model with advanced text generation capabilities.",
-      "context_length": 32000,
-      "url": "https://aimlapi.com/models/mistral-tiny-api",
-      "_our_category": "llm",
-      "_caps": [
-        "function_calling"
-      ]
     },
     {
       "id": "mistralai/mistral-nemo",
@@ -1109,19 +971,6 @@
       "_caps": []
     },
     {
-      "id": "qwen/qwen-2.5-vl-7b-instruct",
-      "type": "chat-completion",
-      "name": "Qwen2.5-VL 7B Instruct",
-      "developer": "Alibaba Cloud",
-      "description": "Qwen2.5-VL 7B is a multimodal LLM from the Qwen Team with state-of-the-art image understanding, multilingual support for text in images across European languages, Japanese, Korean, Arabic, Vietnamese, and more.",
-      "context_length": 32768,
-      "url": "",
-      "_our_category": "llm",
-      "_caps": [
-        "vision"
-      ]
-    },
-    {
       "id": "xiaomi/mimo-v2-flash",
       "type": "chat-completion",
       "name": "MiMo V2 Flash",
@@ -1142,8 +991,8 @@
       "url": "https://aimlapi.com/models/minimax-text-01-api",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1182,8 +1031,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1196,8 +1045,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1210,8 +1059,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1224,8 +1073,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1238,8 +1087,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1265,8 +1114,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1279,8 +1128,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1293,8 +1142,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1307,8 +1156,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1425,8 +1274,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1491,8 +1340,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1505,8 +1354,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
@@ -1545,8 +1394,8 @@
       "url": "",
       "_our_category": "llm",
       "_caps": [
-        "vision",
-        "function_calling"
+        "function_calling",
+        "vision"
       ]
     },
     {
