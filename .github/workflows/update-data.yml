@@ -46,13 +46,31 @@ jobs:
         run: bash scripts/update-litellm.sh
 
       - name: Commit updated data
+        id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           if git diff --cached --quiet; then
             echo "No changes — skipping commit"
+            echo "changed=false" >> $GITHUB_OUTPUT
           else
             git commit -m "chore: update catalog data $(date -u +%Y-%m-%d)"
             git push
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Cache-bust and deploy
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          V=$(date -u +%Y%m%d%H%M)
+          sed -i "s|fetch('data/\([^']*\)')|fetch('data/\1?v=$V')|g" index.html
+          echo "Cache-bust version: $V"
+          rsync -avz --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.pre-commit-config.yaml' \
+            --exclude='__pycache__' \
+            --exclude='*.pyc' \
+            -e "ssh -p ${{ secrets.DEPLOY_PORT }}" \
+            ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
