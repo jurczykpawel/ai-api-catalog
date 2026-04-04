@@ -391,8 +391,10 @@ def parse_replicate(data: dict) -> list:
         full_name = f"{owner}/{name}"
         internal_id = "replicate-" + slugify(name)
 
-        # Open source hints
-        is_oss = bool(item.get("weights_url") or item.get("github_url"))
+        # Open source hints (github_url with "proxy" or "cog-" wrappers are not real OSS)
+        gh_url = item.get("github_url") or ""
+        is_proxy = any(kw in gh_url.lower() for kw in ("proxy", "cog-"))
+        is_oss = bool(item.get("weights_url") or (gh_url and not is_proxy))
 
         models.append({
             "_internal_id": internal_id,
