@@ -1,6 +1,28 @@
 {
   "models": [
     {
+      "id": "claude-opus-4-7",
+      "name": "Claude Opus 4 7",
+      "category": "llm",
+      "description": "Claude Opus 4 7 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-opus-4-7"
+    },
+    {
       "id": "claude-opus-4-6",
       "name": "Claude Opus 4 6",
       "category": "llm",
