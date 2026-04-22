@@ -1939,6 +1939,7 @@
         <button class="reset-btn" id="reset-btn" data-i18n="resetFilters">Reset filters</button>
         <select class="sort-select" id="sort-select">
           <option value="name" data-i18n="sortAZ">A-Z</option>
+          <option value="newest" data-i18n="sortNewest">Newest first</option>
           <option value="price-asc" data-i18n="sortPriceAsc">Price: ascending</option>
           <option value="price-desc" data-i18n="sortPriceDesc">Price: descending</option>
           <option value="providers-desc" data-i18n="sortProviders">Most providers</option>
@@ -2057,6 +2058,7 @@ const T = {
     optionApiOnly:  'API only',
     resetFilters:   'Reset filters',
     sortAZ:         'A-Z',
+    sortNewest:     'Newest first',
     sortPriceAsc:   'Price: ascending',
     sortPriceDesc:  'Price: descending',
     sortProviders:  'Most providers',
@@ -2140,6 +2142,7 @@ const T = {
     optionApiOnly:  'Tylko przez API',
     resetFilters:   'Resetuj filtry',
     sortAZ:         'A-Z',
+    sortNewest:     'Najnowsze',
     sortPriceAsc:   'Cena: rosnąco',
     sortPriceDesc:  'Cena: malejąco',
     sortProviders:  'Najwięcej dostawców',
@@ -2483,6 +2486,12 @@ function getFilteredModels() {
   result = [...result];
   if (filters.sort === 'name') {
     result.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (filters.sort === 'newest') {
+    const addedAt = m => m.first_seen_at || m.updated_at || '';
+    result.sort((a, b) => {
+      const cmp = addedAt(b).localeCompare(addedAt(a));
+      return cmp !== 0 ? cmp : a.name.localeCompare(b.name);
+    });
   } else if (filters.sort === 'price-asc') {
     result.sort((a, b) => getBestPriceNum(a) - getBestPriceNum(b));
   } else if (filters.sort === 'price-desc') {

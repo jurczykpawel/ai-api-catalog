@@ -1315,13 +1315,17 @@ def main():
         src = m.get("source", "unknown")
         source_counts[src] = source_counts.get(src, 0) + 1
 
-    # Diff względem poprzedniej wersji katalogu
+    # Diff względem poprzedniej wersji katalogu + zachowanie first_seen_at
     update_stats: dict = {"added": 0, "removed": 0, "updated": 0, "unchanged": 0}
+    prev_first_seen: dict[str, str] = {}
     out_path = Path(args.output)
     if out_path.exists():
         try:
             prev = json.loads(out_path.read_text(encoding="utf-8"))
             prev_map = {m["id"]: m for m in prev.get("models", [])}
+            # Zachowaj first_seen_at (backfill z updated_at dla rekordów legacy)
+            for pid, pm in prev_map.items():
+                prev_first_seen[pid] = pm.get("first_seen_at") or pm.get("updated_at") or today
             new_map  = {m["id"]: m for m in merged}
             for mid, m in new_map.items():
                 if mid not in prev_map:
@@ -1336,6 +1340,11 @@ def main():
             print(f"  Diff:        +{update_stats['added']} nowych, ~{update_stats['updated']} zmienionych, -{update_stats['removed']} usuniętych")
         except Exception:
             pass
+
+    # Przypisz first_seen_at do każdego mergedowanego modelu
+    # — zachowaj z prev jeśli istniał, dla nowych ustaw today
+    for m in merged:
+        m["first_seen_at"] = prev_first_seen.get(m["id"], today)
 
     output = {
         "updated_at": today,
