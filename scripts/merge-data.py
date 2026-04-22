@@ -1307,6 +1307,49 @@ def main():
     merged.sort(key=lambda m: m.get("name", "").lower())
     print(f"  Razem:       {len(merged)} modeli po merge")
 
+    # Wypełnij puste URL-e linkiem do docs/models danego providera.
+    # Nie nadpisujemy istniejących URL-i (nawet homepage-like) — te są w raw data.
+    PROVIDER_DOCS_URL = {
+        "openai":      "https://platform.openai.com/docs/models",
+        "anthropic":   "https://docs.anthropic.com/en/docs/about-claude/models",
+        "google":      "https://ai.google.dev/gemini-api/docs/models",
+        "mistral":     "https://docs.mistral.ai/getting-started/models/models_overview/",
+        "deepseek":    "https://api-docs.deepseek.com/quick_start/pricing",
+        "cohere":      "https://docs.cohere.com/docs/models",
+        "xai":         "https://docs.x.ai/docs/models",
+        "groq":        "https://console.groq.com/docs/models",
+        "perplexity":  "https://docs.perplexity.ai/getting-started/models",
+        "fireworks":   "https://fireworks.ai/models",
+        "elevenlabs":  "https://elevenlabs.io/docs/models",
+        "deepgram":    "https://developers.deepgram.com/docs/models-languages-overview",
+        "huggingface": "https://huggingface.co/models",
+        "stabilityai": "https://platform.stability.ai/docs/api-reference",
+        "together":    "https://docs.together.ai/docs/inference-models",
+        "bedrock":     "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+        "openrouter":  "https://openrouter.ai/models",
+        "replicate":   "https://replicate.com/explore",
+        "fal":         "https://fal.ai/models",
+        "aimlapi":     "https://aimlapi.com/models",
+        "runway":      "https://docs.dev.runwayml.com/",
+        "minimax":     "https://www.minimax.io/platform",
+        "bfl":         "https://docs.bfl.ai/",
+        "piapi":       "https://piapi.ai",
+        "wavespeed":   "https://wavespeed.ai/models",
+        "kie":         "https://kie.ai",
+        "opencode":    "https://opencode.ai",
+    }
+    filled = 0
+    for m in merged:
+        for p in m.get("providers", []):
+            if (p.get("url") or "").strip():
+                continue
+            docs_url = PROVIDER_DOCS_URL.get(p.get("provider_id"))
+            if docs_url:
+                p["url"] = docs_url
+                filled += 1
+    if filled:
+        print(f"  URL backfill: {filled} pustych providerów → docs/models")
+
     today = str(date.today())
 
     # Zlicz modele per źródło (po merge)
