@@ -2216,6 +2216,30 @@ function getModelDesc(model) {
   return model.description_en || model.description || '';
 }
 
+// Umami custom event tracking. Safe no-op if umami didn't load.
+function trackEvent(name, props) {
+  try {
+    if (typeof window.umami !== 'undefined' && typeof window.umami.track === 'function') {
+      window.umami.track(name, props || {});
+    }
+  } catch (_) { /* silent */ }
+}
+
+// Delegated click handler: any link with data-track-event fires Umami event
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[data-track-event]');
+  if (!a) return;
+  const eventName = a.dataset.trackEvent;
+  const props = {};
+  for (const key in a.dataset) {
+    if (key.startsWith('trackProp')) {
+      const propKey = key.slice('trackProp'.length).replace(/^[A-Z]/, c => c.toLowerCase());
+      props[propKey] = a.dataset[key];
+    }
+  }
+  trackEvent(eventName, props);
+});
+
 function getCatName(cat) {
   if (lang === 'pl') return cat.name_pl || cat.name || cat.id;
   return cat.name_en || cat.name || cat.id;
@@ -2847,7 +2871,12 @@ function openModal(modelId) {
       ${priceHtml}
       <td>${notesHtml}${outputHtml}</td>
       <td>
-        ${linkUrl && p.available ? `<a href="${escAttr(linkUrl)}" target="_blank" rel="noopener" class="link-btn ${isAffiliate ? 'affiliate' : ''}">
+        ${linkUrl && p.available ? `<a href="${escAttr(linkUrl)}" target="_blank" rel="noopener" class="link-btn ${isAffiliate ? 'affiliate' : ''}"
+          data-track-event="provider_click"
+          data-track-prop-provider="${escAttr(p.provider_id)}"
+          data-track-prop-model="${escAttr(model.id)}"
+          data-track-prop-category="${escAttr(model.category)}"
+          data-track-prop-affiliate="${isAffiliate ? '1' : '0'}">
           ${isAffiliate ? '★ ' : ''}${t('visitLink')}
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
         </a>` : !p.available ? `<span style="font-size:11px;color:var(--text-3)">${t('unavailable')}</span>` : ''}
