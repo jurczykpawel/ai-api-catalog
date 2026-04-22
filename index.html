@@ -2225,9 +2225,9 @@ function trackEvent(name, props) {
   } catch (_) { /* silent */ }
 }
 
-// Delegated click handler: any link with data-track-event fires Umami event
+// Delegated click handler: any element with data-track-event fires Umami event
 document.addEventListener('click', (e) => {
-  const a = e.target.closest('a[data-track-event]');
+  const a = e.target.closest('[data-track-event]');
   if (!a) return;
   const eventName = a.dataset.trackEvent;
   const props = {};
@@ -3386,7 +3386,11 @@ function buildHeroPresetLinks() {
   container.innerHTML = quickPresets.map(id => {
     const preset = PRESET_RULES.find(p => p.id === id);
     if (!preset) return '';
-    return `<a href="#compare/${id}" class="hero-preset-link" onclick="event.preventDefault();goToPreset('${id}')">${preset.icon} ${t(preset.nameKey)}</a>`;
+    return `<a href="#compare/${id}" class="hero-preset-link"
+      data-track-event="preset_click"
+      data-track-prop-preset="${id}"
+      data-track-prop-source="hero"
+      onclick="event.preventDefault();goToPreset('${id}')">${preset.icon} ${t(preset.nameKey)}</a>`;
   }).join('');
 }
 
@@ -3410,6 +3414,9 @@ function buildPresets() {
     const card = document.createElement('div');
     card.className = 'preset-card';
     card.dataset.preset = preset.id;
+    card.dataset.trackEvent = 'preset_click';
+    card.dataset.trackPropPreset = preset.id;
+    card.dataset.trackPropSource = 'page';
     card.innerHTML = `
       <div class="preset-card-icon">${preset.icon}</div>
       <div class="preset-card-name">${t(preset.nameKey)}</div>
