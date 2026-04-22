@@ -2443,16 +2443,18 @@ function getFilteredModels() {
   }
 
   if (filters.search) {
-    const q = filters.search.toLowerCase();
+    const normalize = s => (s || '').toLowerCase().replace(/[-_./]+/g, ' ').replace(/\s+/g, ' ').trim();
+    const q = normalize(filters.search);
     result = result.filter(m =>
-      m.name.toLowerCase().includes(q) ||
-      (m.description || '').toLowerCase().includes(q) ||
-      (m.description_pl || '').toLowerCase().includes(q) ||
-      (m.description_en || '').toLowerCase().includes(q) ||
-      (m.tags || []).some(tag => tag.toLowerCase().includes(q)) ||
+      normalize(m.id).includes(q) ||
+      normalize(m.name).includes(q) ||
+      normalize(m.description).includes(q) ||
+      normalize(m.description_pl).includes(q) ||
+      normalize(m.description_en).includes(q) ||
+      (m.tags || []).some(tag => normalize(tag).includes(q)) ||
       m.providers.some(p => {
         const prov = allProviders[p.provider_id];
-        return prov && prov.name.toLowerCase().includes(q);
+        return prov && normalize(prov.name).includes(q);
       })
     );
   }
@@ -3480,7 +3482,8 @@ document.addEventListener('click', () => {
 
 function filterCompareSearch(query) {
   const container = document.getElementById('compare-search-results');
-  const q = query.toLowerCase();
+  const normalize = s => (s || '').toLowerCase().replace(/[-_./]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const q = normalize(query);
   let catFilter = null;
   if (compareState.models.length > 0) {
     const firstModel = allModels.find(m => m.id === compareState.models[0]);
@@ -3492,8 +3495,9 @@ function filterCompareSearch(query) {
     if (catFilter && m.category !== catFilter) return false;
     if (!m.providers.some(p => p.available)) return false;
     if (!q) return true;
-    return m.name.toLowerCase().includes(q) ||
-           (m.tags || []).some(tag => tag.toLowerCase().includes(q));
+    return normalize(m.id).includes(q) ||
+           normalize(m.name).includes(q) ||
+           (m.tags || []).some(tag => normalize(tag).includes(q));
   });
 
   candidates.sort((a, b) => getBestPriceNum(a) - getBestPriceNum(b));
