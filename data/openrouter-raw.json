@@ -1300,6 +1300,298 @@
       }
     },
     {
+      "slug": "mistralai/mistral-medium-3-5",
+      "hf_slug": null,
+      "updated_at": "2026-05-04T20:18:53.773503+00:00",
+      "created_at": "2026-04-30T17:33:59.822783+00:00",
+      "hf_updated_at": null,
+      "name": "Mistral: Mistral Medium 3.5",
+      "short_name": "Mistral Medium 3.5",
+      "author": "mistralai",
+      "author_display_name": "Mistral AI",
+      "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex multi-step reasoning. It is particularly strong at reliable multi-tool calling and long-horizon tasks, with a 256K context window, configurable reasoning effort per request, and a custom vision encoder that handles variable image sizes and aspect ratios. Self-hostable on as few as four GPUs and available under open weights.",
+      "model_version_group_id": null,
+      "context_length": 262144,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Mistral",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "permaslug": "mistralai/mistral-medium-3.5-20260430",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "high",
+          "none"
+        ],
+        "default_reasoning_effort": "high",
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "high",
+            "none"
+          ],
+          "default_reasoning_effort": "high",
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "38ef23a9-5cb3-46fa-85ec-7aed174f04eb",
+        "name": "Mistral | mistralai/mistral-medium-3.5-20260430",
+        "context_length": 262144,
+        "model": {
+          "slug": "mistralai/mistral-medium-3-5",
+          "hf_slug": null,
+          "updated_at": "2026-05-04T20:18:53.773503+00:00",
+          "created_at": "2026-04-30T17:33:59.822783+00:00",
+          "hf_updated_at": null,
+          "name": "Mistral: Mistral Medium 3.5",
+          "short_name": "Mistral Medium 3.5",
+          "author": "mistralai",
+          "author_display_name": "Mistral AI",
+          "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex multi-step reasoning. It is particularly strong at reliable multi-tool calling and long-horizon tasks, with a 256K context window, configurable reasoning effort per request, and a custom vision encoder that handles variable image sizes and aspect ratios. Self-hostable on as few as four GPUs and available under open weights.",
+          "model_version_group_id": null,
+          "context_length": 262144,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Mistral",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "permaslug": "mistralai/mistral-medium-3.5-20260430",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "high",
+              "none"
+            ],
+            "default_reasoning_effort": "high",
+            "reasoning_return_mechanism": "reasoning-content"
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "high",
+                "none"
+              ],
+              "default_reasoning_effort": "high",
+              "reasoning_return_mechanism": "reasoning-content"
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "is_trainable_text": true,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "mistralai/mistral-medium-3-5",
+        "model_variant_permaslug": "mistralai/mistral-medium-3.5-20260430",
+        "adapter_name": "MistralAdapter",
+        "provider_name": "Mistral",
+        "provider_info": {
+          "name": "Mistral",
+          "displayName": "Mistral",
+          "slug": "mistral",
+          "baseUrl": "https://api.mistral.ai/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "retentionDays": 30,
+            "canPublish": false,
+            "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
+            "privacyPolicyURL": "https://mistral.ai/terms/#privacy-policy"
+          },
+          "headquarters": "FR",
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "editors": [
+            "{}"
+          ],
+          "owners": [
+            "{}"
+          ],
+          "adapterName": "MistralAdapter",
+          "statusPageUrl": "https://status.mistral.ai/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/Mistral.png"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "mistral"
+        },
+        "provider_display_name": "Mistral",
+        "provider_slug": "mistral",
+        "provider_model_id": "mistral-medium-3-5",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "retentionDays": 30,
+          "canPublish": false,
+          "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
+          "privacyPolicyURL": "https://mistral.ai/terms/#privacy-policy"
+        },
+        "pricing": {
+          "prompt": "0.0000015",
+          "completion": "0.0000075",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.0000015",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.0000075",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.0000015",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.0000075",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "mistral:prompt_tokens": "0.0000015",
+          "mistral:completion_tokens": "0.0000075"
+        },
+        "pricing_version_id": "fe774ecd-3c11-4af8-88c1-ebc841bf3df3",
+        "is_hidden": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": []
+      }
+    },
+    {
       "slug": "kwaivgi/kling-v3.0-pro",
       "hf_slug": null,
       "updated_at": "2026-04-29T21:04:40.949771+00:00",
@@ -4808,7 +5100,10 @@
           "stop",
           "top_k",
           "logit_bias",
-          "structured_outputs"
+          "structured_outputs",
+          "response_format",
+          "tools",
+          "tool_choice"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -4881,7 +5176,7 @@
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -4891,7 +5186,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
@@ -24457,7 +24752,11 @@
           "seed",
           "stop",
           "temperature",
-          "top_p"
+          "top_p",
+          "tools",
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -24514,7 +24813,7 @@
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -24524,7 +24823,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": false,
             "type_function": true
@@ -39404,9 +39703,9 @@
           "pricingStrategy": "openai_chat_completions"
         },
         "provider_display_name": "DekaLLM",
-        "provider_slug": "dekallm/fp8",
-        "provider_model_id": "glm-4.7-fp8",
-        "quantization": "fp8",
+        "provider_slug": "dekallm/fp4",
+        "provider_model_id": "glm-4.7",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -39425,7 +39724,9 @@
           "temperature",
           "top_p",
           "tool_choice",
-          "tools"
+          "tools",
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -48617,7 +48918,7 @@
     {
       "slug": "x-ai/grok-4.1-fast",
       "hf_slug": "",
-      "updated_at": "2026-03-31T17:20:03.500409+00:00",
+      "updated_at": "2026-05-04T18:57:32.133031+00:00",
       "created_at": "2025-11-19T21:25:02.724692+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 4.1 Fast",
@@ -48642,7 +48943,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "",
+      "warning_message": null,
       "promotion_message": "",
       "routing_error_message": "The free Grok 4.1 Fast period has ended. To continue using this model, please migrate to the paid slug: x-ai/grok-4.1-fast",
       "permaslug": "x-ai/grok-4.1-fast",
@@ -48683,7 +48984,7 @@
         "model": {
           "slug": "x-ai/grok-4.1-fast",
           "hf_slug": "",
-          "updated_at": "2026-03-31T17:20:03.500409+00:00",
+          "updated_at": "2026-05-04T18:57:32.133031+00:00",
           "created_at": "2025-11-19T21:25:02.724692+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 4.1 Fast",
@@ -48708,7 +49009,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "",
+          "warning_message": null,
           "promotion_message": "",
           "routing_error_message": "The free Grok 4.1 Fast period has ended. To continue using this model, please migrate to the paid slug: x-ai/grok-4.1-fast",
           "permaslug": "x-ai/grok-4.1-fast",
@@ -48910,7 +49211,7 @@
           "supported_sizes": null
         },
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
@@ -66651,7 +66952,7 @@
     {
       "slug": "x-ai/grok-4-fast",
       "hf_slug": "",
-      "updated_at": "2026-03-31T17:20:07.141982+00:00",
+      "updated_at": "2026-05-04T18:57:33.399198+00:00",
       "created_at": "2025-09-19T00:01:30.267569+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 4 Fast",
@@ -66676,7 +66977,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "",
+      "warning_message": null,
       "promotion_message": "",
       "routing_error_message": null,
       "permaslug": "x-ai/grok-4-fast",
@@ -66717,7 +67018,7 @@
         "model": {
           "slug": "x-ai/grok-4-fast",
           "hf_slug": "",
-          "updated_at": "2026-03-31T17:20:07.141982+00:00",
+          "updated_at": "2026-05-04T18:57:33.399198+00:00",
           "created_at": "2025-09-19T00:01:30.267569+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 4 Fast",
@@ -66742,7 +67043,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "",
+          "warning_message": null,
           "promotion_message": "",
           "routing_error_message": null,
           "permaslug": "x-ai/grok-4-fast",
@@ -66949,7 +67250,7 @@
           "supported_sizes": null
         },
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
@@ -70829,7 +71130,7 @@
     {
       "slug": "x-ai/grok-code-fast-1",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:33.999746+00:00",
       "created_at": "2025-08-26T20:08:47+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok Code Fast 1",
@@ -70852,7 +71153,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "",
+      "warning_message": null,
       "promotion_message": null,
       "routing_error_message": null,
       "permaslug": "x-ai/grok-code-fast-1",
@@ -70885,7 +71186,7 @@
         "model": {
           "slug": "x-ai/grok-code-fast-1",
           "hf_slug": "",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "updated_at": "2026-05-04T18:57:33.999746+00:00",
           "created_at": "2025-08-26T20:08:47+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok Code Fast 1",
@@ -70908,7 +71209,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "",
+          "warning_message": null,
           "promotion_message": null,
           "routing_error_message": null,
           "permaslug": "x-ai/grok-code-fast-1",
@@ -71102,7 +71403,7 @@
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
@@ -75406,7 +75707,9 @@
           "temperature",
           "top_p",
           "logprobs",
-          "top_logprobs"
+          "top_logprobs",
+          "tools",
+          "tool_choice"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -75463,7 +75766,7 @@
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -75473,10 +75776,10 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -81327,7 +81630,7 @@
     {
       "slug": "x-ai/grok-4",
       "hf_slug": "",
-      "updated_at": "2026-03-31T17:20:14.852908+00:00",
+      "updated_at": "2026-05-04T18:57:32.818085+00:00",
       "created_at": "2025-07-09T19:01:29.595463+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 4",
@@ -81352,7 +81655,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "",
+      "warning_message": null,
       "promotion_message": null,
       "routing_error_message": null,
       "permaslug": "x-ai/grok-4-07-09",
@@ -81395,7 +81698,7 @@
         "model": {
           "slug": "x-ai/grok-4",
           "hf_slug": "",
-          "updated_at": "2026-03-31T17:20:14.852908+00:00",
+          "updated_at": "2026-05-04T18:57:32.818085+00:00",
           "created_at": "2025-07-09T19:01:29.595463+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 4",
@@ -81420,7 +81723,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "",
+          "warning_message": null,
           "promotion_message": null,
           "routing_error_message": null,
           "permaslug": "x-ai/grok-4-07-09",
@@ -81669,7 +81972,7 @@
           "supported_sizes": null
         },
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
@@ -84906,6 +85209,7 @@
           "gemini:cache_read_audio_tokens": 1.25e-07,
           "gemini:cache_read_image_tokens": 1.25e-07,
           "gemini:cache_read_video_tokens": 1.25e-07,
+          "gemini:priority_tier_multiplier": "1.8",
           "gemini:cache_write_storage_hours": 4.5e-06,
           "gemini:prompt_tokens_high_context": 2.5e-06,
           "gemini:reasoning_tokens_high_context": 1.5e-05,
@@ -84917,7 +85221,7 @@
           "gemini:cache_read_video_tokens_high_context": 2.5e-07,
           "gemini:informational_cache_write_tokens_count": 0
         },
-        "pricing_version_id": "374e3aeb-8025-4fe2-b38a-b5698902ed2b",
+        "pricing_version_id": "1f5be0e9-4876-409d-8a0e-ff883a62dff7",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -85273,7 +85577,7 @@
     {
       "slug": "x-ai/grok-3-mini",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:35.341365+00:00",
       "created_at": "2025-06-10T19:20:45.198136+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 3 Mini",
@@ -85296,7 +85600,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "",
+      "warning_message": null,
       "promotion_message": null,
       "routing_error_message": null,
       "permaslug": "x-ai/grok-3-mini",
@@ -85354,7 +85658,7 @@
         "model": {
           "slug": "x-ai/grok-3-mini",
           "hf_slug": "",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "updated_at": "2026-05-04T18:57:35.341365+00:00",
           "created_at": "2025-06-10T19:20:45.198136+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 3 Mini",
@@ -85377,7 +85681,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "",
+          "warning_message": null,
           "promotion_message": null,
           "routing_error_message": null,
           "permaslug": "x-ai/grok-3-mini",
@@ -85593,14 +85897,14 @@
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
     {
       "slug": "x-ai/grok-3",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:34.671992+00:00",
       "created_at": "2025-06-10T19:15:08.007729+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 3",
@@ -85623,7 +85927,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "",
+      "warning_message": null,
       "promotion_message": null,
       "routing_error_message": null,
       "permaslug": "x-ai/grok-3",
@@ -85654,7 +85958,7 @@
         "model": {
           "slug": "x-ai/grok-3",
           "hf_slug": "",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "updated_at": "2026-05-04T18:57:34.671992+00:00",
           "created_at": "2025-06-10T19:15:08.007729+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 3",
@@ -85677,7 +85981,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "",
+          "warning_message": null,
           "promotion_message": null,
           "routing_error_message": null,
           "permaslug": "x-ai/grok-3",
@@ -85865,7 +86169,7 @@
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
@@ -94668,7 +94972,7 @@
     {
       "slug": "x-ai/grok-3-mini-beta",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:36.573366+00:00",
       "created_at": "2025-04-09T23:09:55.305821+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 3 Mini Beta",
@@ -94739,7 +95043,7 @@
         "model": {
           "slug": "x-ai/grok-3-mini-beta",
           "hf_slug": "",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "updated_at": "2026-05-04T18:57:36.573366+00:00",
           "created_at": "2025-04-09T23:09:55.305821+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 3 Mini Beta",
@@ -94964,14 +95268,14 @@
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
     {
       "slug": "x-ai/grok-3-beta",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:35.902632+00:00",
       "created_at": "2025-04-09T23:07:48.450334+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 3 Beta",
@@ -95017,7 +95321,7 @@
         "model": {
           "slug": "x-ai/grok-3-beta",
           "hf_slug": "",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "updated_at": "2026-05-04T18:57:35.902632+00:00",
           "created_at": "2025-04-09T23:07:48.450334+00:00",
           "hf_updated_at": null,
           "name": "xAI: Grok 3 Beta",
@@ -95217,7 +95521,7 @@
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-06-01",
         "allowed_passthrough_parameters": []
       }
     },
@@ -101647,8 +101951,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "ca3453dc-9de2-4ddc-aac3-0aa1f30e54c4",
-        "name": "Amazon Bedrock | anthropic/claude-3-7-sonnet-20250219",
+        "id": "1c9b8776-e266-4efb-b5ba-19a6753e7736",
+        "name": "Google | anthropic/claude-3-7-sonnet-20250219",
         "context_length": 200000,
         "model": {
           "slug": "anthropic/claude-3.7-sonnet",
@@ -101720,71 +102024,72 @@
         },
         "model_variant_slug": "anthropic/claude-3.7-sonnet",
         "model_variant_permaslug": "anthropic/claude-3-7-sonnet-20250219",
-        "adapter_name": "AmazonBedrockInvokeAnthropicAdapter",
-        "provider_name": "Amazon Bedrock",
+        "adapter_name": "GoogleVertexAnthropicAdapter",
+        "provider_name": "Google",
         "provider_info": {
-          "name": "Amazon Bedrock",
-          "displayName": "Amazon Bedrock",
-          "slug": "amazon-bedrock",
+          "name": "Google",
+          "displayName": "Google Vertex",
+          "slug": "google-vertex/us",
           "baseUrl": "not_used",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://aws.amazon.com/service-terms/",
-            "privacyPolicyURL": "https://aws.amazon.com/privacy"
+            "termsOfServiceURL": "https://cloud.google.com/terms/",
+            "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+            "requiresUserIDs": true
           },
           "headquarters": "US",
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
-          "moderationRequired": true,
+          "moderationRequired": false,
           "editors": [
             "{}"
           ],
           "owners": [
-            "org_39b6V1QWwN007RTEQkmKy4KCs4k"
+            "{}"
           ],
-          "adapterName": "AmazonBedrockConverseAdapter",
-          "statusPageUrl": "https://health.aws.amazon.com/health/status",
+          "adapterName": "GoogleVertexGeminiAdapter",
+          "statusPageUrl": "https://status.cloud.google.com/products/sdXM79fz1FS6ekNpu37K/history",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/Bedrock.svg"
+            "url": "/images/icons/GoogleVertex.svg"
           },
           "sendClientIp": false,
           "pricingStrategy": "anthropic"
         },
-        "provider_display_name": "Amazon Bedrock",
-        "provider_slug": "amazon-bedrock",
-        "provider_model_id": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+        "provider_display_name": "Google Vertex",
+        "provider_slug": "google-vertex/us",
+        "provider_model_id": "claude-3-7-sonnet@20250219",
         "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 128000,
+        "max_completion_tokens": 64000,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "max_tokens",
+          "top_p",
+          "temperature",
+          "stop",
           "reasoning",
           "include_reasoning",
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "top_k",
-          "stop",
           "tools",
           "tool_choice"
         ],
         "is_byok": false,
-        "moderation_required": true,
+        "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://aws.amazon.com/service-terms/",
-          "privacyPolicyURL": "https://aws.amazon.com/privacy"
+          "termsOfServiceURL": "https://cloud.google.com/terms/",
+          "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+          "requiresUserIDs": true
         },
         "pricing": {
           "prompt": "0.000003",
@@ -101862,7 +102167,7 @@
           "anthropic:cache_write_1h_tokens": 6e-06,
           "anthropic:cache_write_5m_tokens": 3.75e-06
         },
-        "pricing_version_id": "e0a058e2-3cba-4ae1-b5d0-0f69f523a9c4",
+        "pricing_version_id": "0c3c8e44-3744-4eb9-b1ef-59291e23b8fd",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -101880,13 +102185,12 @@
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
-          }
+          },
+          "supported_parameters": {}
         },
-        "supported_video_parameters": {
-          "supported_sizes": null
-        },
+        "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": "2026-05-05",
+        "deprecation_date": "2026-05-11",
         "allowed_passthrough_parameters": []
       }
     },
@@ -102197,7 +102501,7 @@
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": "2026-05-05",
+        "deprecation_date": "2026-05-11",
         "allowed_passthrough_parameters": []
       }
     },
@@ -103278,7 +103582,7 @@
       "author_display_name": "Google",
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It introduces notable enhancements in multimodal understanding, coding capabilities, complex instruction following, and function calling. These advancements come together to deliver more seamless and robust agentic experiences.",
       "model_version_group_id": "e993dfbf-2cbd-4680-b866-c05bbdcc8f4d",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "input_modalities": [
         "text",
         "image",
@@ -103328,9 +103632,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "8b6c3ec6-e6a0-43f7-9e09-a5487a5756c9",
-        "name": "Google AI Studio | google/gemini-2.0-flash-001",
-        "context_length": 1048576,
+        "id": "65001dcf-7a48-4a35-9405-f419233ad7fc",
+        "name": "Google | google/gemini-2.0-flash-001",
+        "context_length": 1000000,
         "model": {
           "slug": "google/gemini-2.0-flash-001",
           "hf_slug": "",
@@ -103395,21 +103699,21 @@
         },
         "model_variant_slug": "google/gemini-2.0-flash-001",
         "model_variant_permaslug": "google/gemini-2.0-flash-001",
-        "adapter_name": "GoogleAIStudioGeminiAdapter",
-        "provider_name": "Google AI Studio",
+        "adapter_name": "GoogleVertexGeminiAdapter",
+        "provider_name": "Google",
         "provider_info": {
-          "name": "Google AI Studio",
-          "displayName": "Google AI Studio",
-          "slug": "google-ai-studio",
-          "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+          "name": "Google",
+          "displayName": "Google Vertex",
+          "slug": "google-vertex",
+          "baseUrl": "not_used",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "retentionDays": 55,
+            "retainsPrompts": false,
             "canPublish": false,
             "termsOfServiceURL": "https://cloud.google.com/terms/",
-            "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice"
+            "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+            "requiresUserIDs": true
           },
           "headquarters": "US",
           "hasChatCompletions": true,
@@ -103422,17 +103726,17 @@
           "owners": [
             "{}"
           ],
-          "adapterName": "GoogleAIStudioGeminiAdapter",
-          "statusPageUrl": null,
+          "adapterName": "GoogleVertexGeminiAdapter",
+          "statusPageUrl": "https://status.cloud.google.com/products/sdXM79fz1FS6ekNpu37K/history",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/GoogleAIStudio.svg"
+            "url": "/images/icons/GoogleVertex.svg"
           },
           "sendClientIp": false,
           "pricingStrategy": "gemini"
         },
-        "provider_display_name": "Google AI Studio",
-        "provider_slug": "google-ai-studio",
+        "provider_display_name": "Google Vertex",
+        "provider_slug": "google-vertex",
         "provider_model_id": "gemini-2.0-flash-001",
         "quantization": "unknown",
         "variant": "standard",
@@ -103457,11 +103761,11 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "retentionDays": 55,
+          "retainsPrompts": false,
           "canPublish": false,
           "termsOfServiceURL": "https://cloud.google.com/terms/",
-          "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice"
+          "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+          "requiresUserIDs": true
         },
         "pricing": {
           "prompt": "0.0000001",
@@ -103584,7 +103888,7 @@
           "gemini:cache_read_video_tokens_high_context": 5e-08,
           "gemini:informational_cache_write_tokens_count": 0
         },
-        "pricing_version_id": "f232c68f-eb0d-4d69-948e-a854a9b49d01",
+        "pricing_version_id": "aa76f816-72a8-4da8-bb50-193261dd6f99",
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
@@ -103597,6 +103901,7 @@
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
+          "supports_file_urls": true,
           "supports_base64_video_input": true,
           "supports_video_urls": false,
           "supports_tool_choice": {
@@ -103605,6 +103910,7 @@
             "literal_required": true,
             "type_function": true
           },
+          "supported_parameters": {},
           "supports_input_audio": true
         },
         "supported_video_parameters": null,
@@ -108598,7 +108904,10 @@
           "seed",
           "min_p",
           "response_format",
-          "logit_bias"
+          "logit_bias",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -108655,7 +108964,7 @@
         "is_hidden": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": false,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -109298,7 +109607,7 @@
     {
       "slug": "x-ai/grok-2-vision-1212",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:39.247687+00:00",
       "created_at": "2024-12-15T04:35:38.489105+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 2 Vision 1212",
@@ -109343,7 +109652,7 @@
     {
       "slug": "x-ai/grok-2-1212",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:37.844892+00:00",
       "created_at": "2024-12-15T03:20:14.161318+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 2 1212",
@@ -111956,7 +112265,7 @@
     {
       "slug": "x-ai/grok-vision-beta",
       "hf_slug": "",
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:40.517685+00:00",
       "created_at": "2024-11-19T00:37:04.585936+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok Vision Beta",
@@ -113353,7 +113662,7 @@
     {
       "slug": "x-ai/grok-beta",
       "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:39.931713+00:00",
       "created_at": "2024-10-20T00:00:00+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok Beta",
@@ -113988,7 +114297,7 @@
     {
       "slug": "x-ai/grok-2-mini",
       "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:38.540803+00:00",
       "created_at": "2024-10-12T00:00:00+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 2 mini",
@@ -114032,7 +114341,7 @@
     {
       "slug": "x-ai/grok-2",
       "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801719+00:00",
+      "updated_at": "2026-05-04T18:57:37.302697+00:00",
       "created_at": "2024-10-12T00:00:00+00:00",
       "hf_updated_at": null,
       "name": "xAI: Grok 2",
