@@ -1,36 +1,59 @@
-name: Deploy to mikrus
+name: Deploy to Cloudflare Pages (aiapi.techskills.academy)
 
 on:
   push:
     branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
-
-      - name: Cache-bust data URLs
+      - name: Cache-bust data URLs in index.html
         run: |
           V=$(date -u +%Y%m%d%H%M)
           sed -i "s|fetch('data/\([^']*\)')|fetch('data/\1?v=$V')|g" index.html
           echo "Cache-bust version: $V"
-          grep -o "fetch('data/[^']*')" index.html
+          grep -o "fetch('data/[^']*')" index.html | head -5
 
-      - name: Deploy via rsync
+      - name: Prepare dist (exclude oversized raw scrape files)
+        # CF Pages 25 MiB per-file limit. *-raw.json są intermediate dane scrapingu,
+        # nie referowane przez index.html — wystarczą {categories,models,providers}.json.
         run: |
-          rsync -avz --delete \
+          mkdir -p dist
+          rsync -a \
             --exclude='.git' \
             --exclude='.github' \
             --exclude='.pre-commit-config.yaml' \
             --exclude='__pycache__' \
             --exclude='*.pyc' \
-            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.DEPLOY_PORT }} -o StrictHostKeyChecking=no" \
-            ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
+            --exclude='data/*-raw.json' \
+            --exclude='data/models-snapshot.json' \
+            --exclude='data/models-index.json' \
+            --exclude='data/models-manual.json' \
+            ./ dist/
+          du -sh dist/
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=aiapi-techskills-academy --branch=main
+
+      - name: Smoke test
+        run: |
+          set -e
+          code=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 15 https://aiapi.techskills.academy)
+          test "$code" = "200" || (echo "FAIL: HTTP $code" && exit 1)
+          echo "OK: aiapi.techskills.academy -> $code"
