@@ -1764,6 +1764,10 @@
       grid-template-columns: 1fr;
     }
 
+    /* Main content first on mobile so sidebar expansion (cat pills, providers)
+       happens below the fold and does not cause a layout shift. */
+    .content { order: -1; }
+
     .sidebar {
       position: static;
       max-height: none;
