@@ -236,7 +236,7 @@ function applyTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     const val = t(key);
-    if (val !== key) el.innerHTML = val;
+    if (val !== key && el.innerHTML !== val) el.innerHTML = val;
   });
   // Sort select options
   document.querySelectorAll('#sort-select option[data-i18n]').forEach(el => {
