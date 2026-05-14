@@ -7894,10 +7894,10 @@
           "tools",
           "tool_choice",
           "repetition_penalty",
-          "min_p",
+          "logit_bias",
           "response_format",
           "structured_outputs",
-          "logit_bias",
+          "min_p",
           "parallel_tool_calls",
           "logprobs",
           "top_logprobs",
@@ -8487,13 +8487,13 @@
       },
       "default_order": [
         "google-vertex/us-east5",
-        "amazon-bedrock/global",
-        "google-vertex",
         "anthropic/2",
+        "amazon-bedrock/global",
+        "google-vertex/global",
         "anthropic",
-        "azure",
+        "azure/us-east-2",
         "google-vertex/europe",
-        "amazon-bedrock"
+        "amazon-bedrock/eu-west-1"
       ],
       "quick_start_example_type": "reasoning",
       "is_trainable_text": null,
@@ -8561,13 +8561,13 @@
           },
           "default_order": [
             "google-vertex/us-east5",
-            "amazon-bedrock/global",
-            "google-vertex",
             "anthropic/2",
+            "amazon-bedrock/global",
+            "google-vertex/global",
             "anthropic",
-            "azure",
+            "azure/us-east-2",
             "google-vertex/europe",
-            "amazon-bedrock"
+            "amazon-bedrock/eu-west-1"
           ],
           "quick_start_example_type": "reasoning",
           "is_trainable_text": null,
@@ -11810,6 +11810,285 @@
       "updated_at": "2026-04-27T15:52:44.280Z",
       "created_at": "2026-04-24T03:17:46.710Z",
       "hf_updated_at": null,
+      "name": "DeepSeek: DeepSeek V4 Flash (free)",
+      "short_name": "DeepSeek V4 Flash (free)",
+      "author": "deepseek",
+      "author_display_name": "DeepSeek",
+      "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and high-throughput workloads, while maintaining strong reasoning and coding performance.\n\nThe model includes hybrid attention for efficient long-context processing. Reasoning efforts `high` and `xhigh` are supported; `xhigh` maps to max reasoning. It is well suited for applications such as coding assistants, chat systems, and agent workflows where responsiveness and cost efficiency are important.",
+      "model_version_group_id": null,
+      "context_length": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "DeepSeek",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "is_private": false,
+      "permaslug": "deepseek/deepseek-v4-flash-20260423",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": "<think>",
+        "end_token": "</think>",
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "high",
+          "xhigh"
+        ],
+        "default_reasoning_effort": "high",
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": "<think>",
+          "end_token": "</think>",
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "high",
+            "xhigh"
+          ],
+          "default_reasoning_effort": "high",
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "79a8f7ac-bb58-44b4-a18e-65a36828fdb7",
+        "name": "Crucible | deepseek/deepseek-v4-flash-20260423:free",
+        "context_length": 256000,
+        "model": {
+          "slug": "deepseek/deepseek-v4-flash",
+          "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
+          "updated_at": "2026-04-27T15:52:44.280856+00:00",
+          "created_at": "2026-04-24T03:17:46.710737+00:00",
+          "hf_updated_at": null,
+          "name": "DeepSeek: DeepSeek V4 Flash",
+          "short_name": "DeepSeek V4 Flash",
+          "author": "deepseek",
+          "author_display_name": "DeepSeek",
+          "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and high-throughput workloads, while maintaining strong reasoning and coding performance.\n\nThe model includes hybrid attention for efficient long-context processing. Reasoning efforts `high` and `xhigh` are supported; `xhigh` maps to max reasoning. It is well suited for applications such as coding assistants, chat systems, and agent workflows where responsiveness and cost efficiency are important.",
+          "model_version_group_id": null,
+          "context_length": 1048576,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "DeepSeek",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "is_private": false,
+          "permaslug": "deepseek/deepseek-v4-flash-20260423",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": "<think>",
+            "end_token": "</think>",
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "high",
+              "xhigh"
+            ],
+            "default_reasoning_effort": "high",
+            "reasoning_return_mechanism": "reasoning-content"
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": "<think>",
+              "end_token": "</think>",
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "high",
+                "xhigh"
+              ],
+              "default_reasoning_effort": "high",
+              "reasoning_return_mechanism": "reasoning-content"
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "is_trainable_text": true,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "deepseek/deepseek-v4-flash:free",
+        "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423:free",
+        "adapter_name": "CrucibleAdapter",
+        "provider_name": "Crucible",
+        "provider_info": {
+          "name": "Crucible",
+          "displayName": "Crucible",
+          "slug": "crucible",
+          "baseUrl": "https://example.com",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false
+          },
+          "datacenters": [],
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "editors": [],
+          "owners": [],
+          "adapterName": "CrucibleAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://example.com&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_chat_completions"
+        },
+        "provider_display_name": "Crucible",
+        "provider_slug": "crucible",
+        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash",
+        "quantization": "unknown",
+        "variant": "free",
+        "is_free": true,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 256000,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "tool_choice",
+          "tools"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0",
+          "openai:completion_tokens": "0"
+        },
+        "pricing_version_id": "a6c6d146-eaf0-4897-b2aa-d5adc16652db",
+        "is_hidden": false,
+        "is_private": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": false,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_multipart": false,
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {},
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": []
+      }
+    },
+    {
+      "slug": "deepseek/deepseek-v4-flash",
+      "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
+      "updated_at": "2026-04-27T15:52:44.280Z",
+      "created_at": "2026-04-24T03:17:46.710Z",
+      "hf_updated_at": null,
       "name": "DeepSeek: DeepSeek V4 Flash",
       "short_name": "DeepSeek V4 Flash",
       "author": "deepseek",
@@ -11880,8 +12159,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "722e0746-2034-4d6e-a08f-e6271849ee9e",
-        "name": "DeepSeek | deepseek/deepseek-v4-flash-20260423",
+        "id": "fa22fe84-7ea9-49b0-a8eb-4d87ede9de31",
+        "name": "Baidu | deepseek/deepseek-v4-flash-20260423",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
@@ -11961,100 +12240,92 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423",
-        "adapter_name": "DeepSeekAdapter",
-        "provider_name": "DeepSeek",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "DeepSeek",
-          "displayName": "DeepSeek",
-          "slug": "deepseek",
-          "baseUrl": "https://api.deepseek.com/beta",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
-            "training": true,
+            "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://chat.deepseek.com/downloads/DeepSeek%20Terms%20of%20Use.html",
-            "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html"
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
           },
           "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
+          "editors": [],
           "owners": [
-            "{}"
+            "org_3ClcshPIvCJrlidp8QaHyh3kBZR"
           ],
-          "adapterName": "DeepSeekAdapter",
-          "statusPageUrl": "https://status.deepseek.com/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepSeek.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "deepseek"
+          "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepSeek",
-        "provider_slug": "deepseek",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "provider_model_id": "deepseek-v4-flash",
-        "quantization": "unknown",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 384000,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
           "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logprobs",
-          "top_logprobs",
-          "tools",
-          "tool_choice",
-          "response_format"
+          "max_tokens"
         ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
-          "training": true,
+          "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://chat.deepseek.com/downloads/DeepSeek%20Terms%20of%20Use.html",
-          "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.00000014",
-          "completion": "0.00000028",
-          "input_cache_read": "0.0000000028",
+          "prompt": "0.000000126",
+          "completion": "0.000000252",
+          "input_cache_read": "0.0000000252",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": ".14e-6",
+              "price": "0.000000126",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": ".28e-6",
+              "price": "0.000000252",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": ".0028e-6",
+              "price": "0.0000000252",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -12064,36 +12335,36 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": ".14e-6",
+            "price": "0.000000126",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": ".28e-6",
+            "price": "0.000000252",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": ".0028e-6",
+            "price": "0.0000000252",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "deepseek:cache_hit_tokens": ".0028e-6",
-          "deepseek:cache_miss_tokens": ".14e-6",
-          "deepseek:completion_tokens": ".28e-6"
+          "openai:prompt_tokens": "0.000000126",
+          "openai:completion_tokens": "0.000000252",
+          "openai:cached_prompt_tokens": "0.0000000252"
         },
-        "pricing_version_id": "0e37e2a2-2c1f-4f92-9ac6-a40eb0da09af",
+        "pricing_version_id": "41edeb5a-5965-4974-8c2a-b02b60669da3",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": true,
+        "supports_tool_parameters": false,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -12102,8 +12373,6 @@
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_implicit_caching": true,
-          "reasoning_return_mechanism": "reasoning-content",
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -12111,12 +12380,7 @@
             "type_function": true
           }
         },
-        "supported_video_parameters": {
-          "supported_sizes": null,
-          "supported_frame_images": null,
-          "generate_audio": null,
-          "seed": null
-        },
+        "supported_video_parameters": null,
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": []
@@ -16277,12 +16541,12 @@
         "repetition_penalty": null
       },
       "default_order": [
+        "anthropic/2",
         "amazon-bedrock/us",
         "google-vertex/global",
-        "anthropic/2",
         "anthropic",
-        "google-vertex/europe",
-        "amazon-bedrock/eu-west-1"
+        "amazon-bedrock/eu-west-1",
+        "google-vertex/europe"
       ],
       "quick_start_example_type": "reasoning",
       "is_trainable_text": null,
@@ -16355,12 +16619,12 @@
             "repetition_penalty": null
           },
           "default_order": [
+            "anthropic/2",
             "amazon-bedrock/us",
             "google-vertex/global",
-            "anthropic/2",
             "anthropic",
-            "google-vertex/europe",
-            "amazon-bedrock/eu-west-1"
+            "amazon-bedrock/eu-west-1",
+            "google-vertex/europe"
           ],
           "quick_start_example_type": "reasoning",
           "is_trainable_text": null,
@@ -18562,7 +18826,7 @@
     {
       "slug": "anthropic/claude-opus-4.7",
       "hf_slug": null,
-      "updated_at": "2026-05-12T01:54:30.343Z",
+      "updated_at": "2026-05-13T15:58:16.351Z",
       "created_at": "2026-04-16T14:51:40.905Z",
       "hf_updated_at": null,
       "name": "Anthropic: Claude Opus 4.7",
@@ -18619,12 +18883,12 @@
         "repetition_penalty": null
       },
       "default_order": [
+        "anthropic/2",
         "amazon-bedrock/us",
         "google-vertex/global",
-        "anthropic/2",
         "anthropic",
-        "google-vertex/europe",
-        "amazon-bedrock/eu-west-1"
+        "amazon-bedrock/eu-west-1",
+        "google-vertex/europe"
       ],
       "quick_start_example_type": "reasoning",
       "is_trainable_text": null,
@@ -18640,7 +18904,7 @@
         "model": {
           "slug": "anthropic/claude-opus-4.7",
           "hf_slug": null,
-          "updated_at": "2026-05-12T01:54:30.343466+00:00",
+          "updated_at": "2026-05-13T15:58:16.351246+00:00",
           "created_at": "2026-04-16T14:51:40.905+00:00",
           "hf_updated_at": null,
           "name": "Anthropic: Claude Opus 4.7",
@@ -18697,12 +18961,12 @@
             "repetition_penalty": null
           },
           "default_order": [
+            "anthropic/2",
             "amazon-bedrock/us",
             "google-vertex/global",
-            "anthropic/2",
             "anthropic",
-            "google-vertex/europe",
-            "amazon-bedrock/eu-west-1"
+            "amazon-bedrock/eu-west-1",
+            "google-vertex/europe"
           ],
           "quick_start_example_type": "reasoning",
           "is_trainable_text": null,
@@ -32157,8 +32421,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "b8d7b6e5-6b88-4b54-88bd-ae65aec40716",
-        "name": "OpenAI | openai/gpt-5.3-chat-20260303",
+        "id": "1c18fce9-d45d-440d-8018-1dfee4c79588",
+        "name": "Azure | openai/gpt-5.3-chat-20260303",
         "context_length": 128000,
         "model": {
           "slug": "openai/gpt-5.3-chat",
@@ -32227,46 +32491,44 @@
         },
         "model_variant_slug": "openai/gpt-5.3-chat",
         "model_variant_permaslug": "openai/gpt-5.3-chat-20260303",
-        "adapter_name": "OpenAIResponsesAdapter",
-        "provider_name": "OpenAI",
+        "adapter_name": "AzureOpenAIResponsesAdapter",
+        "provider_name": "Azure",
         "provider_info": {
-          "name": "OpenAI",
-          "displayName": "OpenAI",
-          "slug": "openai",
-          "baseUrl": "https://api.openai.com/v1",
+          "name": "Azure",
+          "displayName": "Azure",
+          "slug": "azure",
+          "baseUrl": "https://openrouter-foundry-east-resource.cognitiveservices.azure.com/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
-            "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
-            "requiresUserIDs": true
+            "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
+            "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement"
           },
           "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
-          "moderationRequired": true,
+          "moderationRequired": false,
           "editors": [
             "{}"
           ],
           "owners": [
             "{}"
           ],
-          "adapterName": "OpenAIResponsesAdapter",
-          "statusPageUrl": "https://status.openai.com/",
+          "adapterName": "AzureOpenAIAdapter",
+          "statusPageUrl": "https://status.azure.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/OpenAI.svg",
-            "className": "invert-0 dark:invert"
+            "url": "/images/icons/Azure.svg"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_responses"
         },
-        "provider_display_name": "OpenAI",
-        "provider_slug": "openai",
-        "provider_model_id": "gpt-5.3-chat-latest",
+        "provider_display_name": "Azure",
+        "provider_slug": "azure",
+        "provider_model_id": "gpt-5.3-chat",
         "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
@@ -32275,23 +32537,22 @@
         "max_completion_tokens": 16384,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "max_completion_tokens",
           "seed",
-          "max_tokens",
           "response_format",
           "structured_outputs",
           "tools",
           "tool_choice"
         ],
         "is_byok": false,
-        "moderation_required": true,
+        "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
-          "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
-          "requiresUserIDs": true
+          "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
+          "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement"
         },
         "pricing": {
           "prompt": "0.00000175",
@@ -32352,7 +32613,7 @@
           "openai_responses:completion_tokens": "0.000014",
           "openai_responses:cached_prompt_tokens": "1.75e-7"
         },
-        "pricing_version_id": "e2345794-79c8-4f64-9231-d093ae6136a8",
+        "pricing_version_id": "dd2fd0b4-b933-40c3-b2a7-f0967267bede",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -32363,19 +32624,16 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_implicit_caching": true,
           "supports_file_urls": true,
-          "supports_native_web_search": true,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
-          },
-          "supports_input_audio": false
+          }
         },
         "supported_video_parameters": null,
         "provider_region": null,
@@ -36691,7 +36949,7 @@
     {
       "slug": "anthropic/claude-sonnet-4.6",
       "hf_slug": "",
-      "updated_at": "2026-05-12T01:54:29.187Z",
+      "updated_at": "2026-05-13T16:02:48.105Z",
       "created_at": "2026-02-17T15:43:10.807Z",
       "hf_updated_at": null,
       "name": "Anthropic: Claude Sonnet 4.6",
@@ -36743,13 +37001,13 @@
       },
       "default_order": [
         "google-vertex/us-east5",
-        "amazon-bedrock/global",
-        "google-vertex",
         "anthropic/2",
+        "amazon-bedrock/global",
+        "google-vertex/global",
         "anthropic",
-        "azure",
+        "azure/us-east-2",
         "google-vertex/europe",
-        "amazon-bedrock"
+        "amazon-bedrock/eu-west-1"
       ],
       "quick_start_example_type": "reasoning",
       "is_trainable_text": null,
@@ -36765,7 +37023,7 @@
         "model": {
           "slug": "anthropic/claude-sonnet-4.6",
           "hf_slug": "",
-          "updated_at": "2026-05-12T01:54:29.187758+00:00",
+          "updated_at": "2026-05-13T16:02:48.105566+00:00",
           "created_at": "2026-02-17T15:43:10.807722+00:00",
           "hf_updated_at": null,
           "name": "Anthropic: Claude Sonnet 4.6",
@@ -36817,13 +37075,13 @@
           },
           "default_order": [
             "google-vertex/us-east5",
-            "amazon-bedrock/global",
-            "google-vertex",
             "anthropic/2",
+            "amazon-bedrock/global",
+            "google-vertex/global",
             "anthropic",
-            "azure",
+            "azure/us-east-2",
             "google-vertex/europe",
-            "amazon-bedrock"
+            "amazon-bedrock/eu-west-1"
           ],
           "quick_start_example_type": "reasoning",
           "is_trainable_text": null,
@@ -38972,7 +39230,7 @@
     {
       "slug": "anthropic/claude-opus-4.6",
       "hf_slug": "",
-      "updated_at": "2026-05-12T01:54:29.591Z",
+      "updated_at": "2026-05-13T15:52:36.451Z",
       "created_at": "2026-02-04T15:30:50.029Z",
       "hf_updated_at": null,
       "name": "Anthropic: Claude Opus 4.6",
@@ -39029,17 +39287,19 @@
         "repetition_penalty": null
       },
       "default_order": [
-        "amazon-bedrock",
-        "google-vertex",
+        "anthropic/2",
+        "amazon-bedrock/us-east-1",
+        "google-vertex/global",
         "anthropic",
-        "azure"
+        "azure/us-east-2",
+        "google-vertex/europe"
       ],
       "quick_start_example_type": "reasoning",
       "is_trainable_text": null,
       "is_trainable_image": null,
       "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
         "id": "cf1bf458-2a55-4b88-bdca-56db673fe847",
@@ -39048,7 +39308,7 @@
         "model": {
           "slug": "anthropic/claude-opus-4.6",
           "hf_slug": "",
-          "updated_at": "2026-05-12T01:54:29.591717+00:00",
+          "updated_at": "2026-05-13T15:52:36.451073+00:00",
           "created_at": "2026-02-04T15:30:50.029498+00:00",
           "hf_updated_at": null,
           "name": "Anthropic: Claude Opus 4.6",
@@ -39105,17 +39365,19 @@
             "repetition_penalty": null
           },
           "default_order": [
-            "amazon-bedrock",
-            "google-vertex",
+            "anthropic/2",
+            "amazon-bedrock/us-east-1",
+            "google-vertex/global",
             "anthropic",
-            "azure"
+            "azure/us-east-2",
+            "google-vertex/europe"
           ],
           "quick_start_example_type": "reasoning",
           "is_trainable_text": null,
           "is_trainable_image": null,
           "knowledge_cutoff": null,
-          "limit_rpm": null,
-          "limit_rpd": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
           "supported_tts_voices": null
         },
         "model_variant_slug": "anthropic/claude-opus-4.6",
@@ -68837,7 +69099,7 @@
       "author_display_name": "Z.ai",
       "description": "Compared with GLM-4.5, this generation brings several key improvements:\n\nLonger context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks.\nSuperior coding performance: The model achieves higher scores on code benchmarks and demonstrates better real-world performance in applications such as Claude Code、Cline、Roo Code and Kilo Code, including improvements in generating visually polished front-end pages.\nAdvanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability.\nMore capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks.\nRefined writing: Better aligns with human preferences in style and readability, and performs more naturally in role-playing scenarios.",
       "model_version_group_id": null,
-      "context_length": 204800,
+      "context_length": 202752,
       "input_modalities": [
         "text"
       ],
@@ -68887,9 +69149,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "2a87c474-6f6a-457f-8d8c-2afc71fb9fad",
-        "name": "SiliconFlow | z-ai/glm-4.6",
-        "context_length": 204800,
+        "id": "c8607edc-8577-4199-b03d-1213da4743dc",
+        "name": "DeepInfra | z-ai/glm-4.6",
+        "context_length": 202752,
         "model": {
           "slug": "z-ai/glm-4.6",
           "hf_slug": "zai-org/GLM-4.6",
@@ -68954,64 +69216,69 @@
         },
         "model_variant_slug": "z-ai/glm-4.6",
         "model_variant_permaslug": "z-ai/glm-4.6",
-        "adapter_name": "SiliconFlowAdapter",
-        "provider_name": "SiliconFlow",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
         "provider_info": {
-          "name": "SiliconFlow",
-          "displayName": "SiliconFlow",
-          "slug": "siliconflow",
-          "baseUrl": "https://api.siliconflow.com/v1",
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
-            "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy"
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy"
           },
-          "headquarters": "SG",
-          "datacenters": [],
+          "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
+          "hasCompletions": true,
+          "isAbortable": true,
           "moderationRequired": false,
           "editors": [
             "{}"
           ],
           "owners": [
-            "org_3ApDsMOJYj42Hctdbe0J0XrHddj"
+            "{}",
+            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
           ],
-          "adapterName": "SiliconFlowAdapter",
-          "statusPageUrl": null,
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/SiliconFlow.svg"
+            "url": "/images/icons/DeepInfra.webp"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "SiliconFlow",
-        "provider_slug": "siliconflow/fp8",
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/fp4",
         "provider_model_id": "zai-org/GLM-4.6",
-        "quantization": "fp8",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 204800,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "structured_outputs",
-          "response_format",
+          "max_tokens",
           "temperature",
           "top_p",
-          "top_k",
+          "stop",
           "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "response_format",
           "tools",
           "tool_choice",
-          "max_tokens"
+          "logit_bias"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -69020,25 +69287,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
-          "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy"
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000039",
-          "completion": "0.0000019",
+          "prompt": "0.00000043",
+          "completion": "0.00000174",
+          "input_cache_read": "0.00000008",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000039",
+              "price": "0.00000043",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000019",
+              "price": "0.00000174",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.00000008",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -69048,23 +69323,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000039",
+            "price": "0.00000043",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000019",
+            "price": "0.00000174",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.00000008",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000039",
-          "openai:completion_tokens": "0.0000019"
+          "openai:prompt_tokens": "0.00000043",
+          "openai:completion_tokens": "0.00000174",
+          "openai:cached_prompt_tokens": "0.00000008"
         },
-        "pricing_version_id": "b33b7ae3-be66-40c9-8e73-8b60b025de96",
+        "pricing_version_id": "1cc21004-db1d-480a-a85c-9eb1d1ba6249",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -69075,7 +69358,7 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "reasoning_return_mechanism": "reasoning-content",
@@ -69086,13 +69369,13 @@
             "type_function": true
           },
           "supported_parameters": {
-            "response_format": true,
-            "structured_outputs": true
+            "response_format": false,
+            "structured_outputs": false
           }
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": "2026-05-14",
+        "deprecation_date": null,
         "allowed_passthrough_parameters": []
       }
     },
@@ -76246,8 +76529,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "daeaf61c-828e-4b64-8f84-71079c6cf28e",
-        "name": "SiliconFlow | moonshotai/kimi-k2-0905",
+        "id": "262402a8-8891-4131-bc3c-a76c4bb9b391",
+        "name": "Novita | moonshotai/kimi-k2-0905",
         "context_length": 262144,
         "model": {
           "slug": "moonshotai/kimi-k2-0905",
@@ -76305,62 +76588,64 @@
         },
         "model_variant_slug": "moonshotai/kimi-k2-0905",
         "model_variant_permaslug": "moonshotai/kimi-k2-0905",
-        "adapter_name": "SiliconFlowAdapter",
-        "provider_name": "SiliconFlow",
+        "adapter_name": "NovitaAdapter",
+        "provider_name": "Novita",
         "provider_info": {
-          "name": "SiliconFlow",
-          "displayName": "SiliconFlow",
-          "slug": "siliconflow",
-          "baseUrl": "https://api.siliconflow.com/v1",
+          "name": "Novita",
+          "displayName": "NovitaAI",
+          "slug": "novita",
+          "baseUrl": "https://api.novita.ai/v3/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
-            "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy"
+            "termsOfServiceURL": "https://novita.ai/legal/terms-of-service",
+            "privacyPolicyURL": "https://novita.ai/legal/privacy-policy"
           },
-          "headquarters": "SG",
-          "datacenters": [],
+          "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
+          "hasCompletions": true,
+          "isAbortable": true,
           "moderationRequired": false,
           "editors": [
             "{}"
           ],
           "owners": [
-            "org_3ApDsMOJYj42Hctdbe0J0XrHddj"
+            "org_34P2zP0TCZwbzCC8QkH8m8o1i8M"
           ],
-          "adapterName": "SiliconFlowAdapter",
-          "statusPageUrl": null,
+          "adapterName": "NovitaAdapter",
+          "statusPageUrl": "https://status.novita.ai/",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/SiliconFlow.svg"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://novita.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "SiliconFlow",
-        "provider_slug": "siliconflow/fp8",
-        "provider_model_id": "moonshotai/Kimi-K2-Instruct-0905",
+        "provider_display_name": "NovitaAI",
+        "provider_slug": "novita/fp8",
+        "provider_model_id": "moonshotai/kimi-k2-0905",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
         "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "structured_outputs",
           "response_format",
+          "max_tokens",
           "temperature",
           "top_p",
-          "top_k",
+          "stop",
           "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "top_k",
+          "repetition_penalty",
           "tools",
-          "tool_choice",
-          "max_tokens"
+          "tool_choice"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -76369,25 +76654,25 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
-          "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy"
+          "termsOfServiceURL": "https://novita.ai/legal/terms-of-service",
+          "privacyPolicyURL": "https://novita.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000004",
-          "completion": "0.000002",
+          "prompt": "0.0000006",
+          "completion": "0.0000025",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000004",
+              "price": "0.0000006",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000002",
+              "price": "0.0000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -76397,23 +76682,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000004",
+            "price": "0.0000006",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000002",
+            "price": "0.0000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000004",
-          "openai:completion_tokens": "0.000002"
+          "openai:prompt_tokens": "0.0000006",
+          "openai:completion_tokens": "0.0000025"
         },
-        "pricing_version_id": "e85264b5-b72a-4f5e-b7a1-c41a4853b748",
+        "pricing_version_id": "7249d9af-17d4-44e1-aab6-e0a1f09e071c",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -76424,7 +76709,7 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
@@ -76435,12 +76720,12 @@
           },
           "supported_parameters": {
             "response_format": true,
-            "structured_outputs": true
+            "structured_outputs": false
           }
         },
         "supported_video_parameters": null,
         "provider_region": null,
-        "deprecation_date": "2026-05-14",
+        "deprecation_date": null,
         "allowed_passthrough_parameters": []
       }
     },
@@ -117004,7 +117289,7 @@
     {
       "slug": "anthropic/claude-3.5-sonnet",
       "hf_slug": null,
-      "updated_at": "2026-04-13T14:59:22.042Z",
+      "updated_at": "2026-05-13T21:47:25.474Z",
       "created_at": "2024-10-22T00:00:00.000Z",
       "hf_updated_at": null,
       "name": "Anthropic: Claude 3.5 Sonnet",
@@ -126265,7 +126550,7 @@
     {
       "slug": "openai/gpt-4o",
       "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801Z",
+      "updated_at": "2026-05-13T21:47:50.313Z",
       "created_at": "2024-05-13T00:00:00.000Z",
       "hf_updated_at": null,
       "name": "OpenAI: GPT-4o",
@@ -126314,7 +126599,7 @@
         "model": {
           "slug": "openai/gpt-4o",
           "hf_slug": null,
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "updated_at": "2026-05-13T21:47:50.313061+00:00",
           "created_at": "2024-05-13T00:00:00+00:00",
           "hf_updated_at": null,
           "name": "OpenAI: GPT-4o",
