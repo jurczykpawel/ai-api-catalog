@@ -18526,7 +18526,7 @@
     {
       "slug": "google/gemini-embedding-2-preview",
       "hf_slug": null,
-      "updated_at": "2026-04-28T17:12:41.835Z",
+      "updated_at": "2026-05-14T04:33:38.585Z",
       "created_at": "2026-04-17T14:34:25.613Z",
       "hf_updated_at": null,
       "name": "Google: Gemini Embedding 2 Preview",
@@ -18538,7 +18538,10 @@
       "context_length": 8192,
       "input_modalities": [
         "text",
-        "image"
+        "image",
+        "file",
+        "audio",
+        "video"
       ],
       "output_modalities": [
         "embeddings"
@@ -18590,7 +18593,7 @@
         "model": {
           "slug": "google/gemini-embedding-2-preview",
           "hf_slug": null,
-          "updated_at": "2026-04-28T17:12:41.835125+00:00",
+          "updated_at": "2026-05-14T04:33:38.585646+00:00",
           "created_at": "2026-04-17T14:34:25.613866+00:00",
           "hf_updated_at": null,
           "name": "Google: Gemini Embedding 2 Preview",
@@ -18602,7 +18605,10 @@
           "context_length": 8192,
           "input_modalities": [
             "text",
-            "image"
+            "image",
+            "file",
+            "audio",
+            "video"
           ],
           "output_modalities": [
             "embeddings"
@@ -27880,8 +27886,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "d4f369c5-e3ac-4e09-8791-7dfec7554927",
-        "name": "DekaLLM | minimax/minimax-m2.7-20260318",
+        "id": "1e53ab9a-ebd2-445e-bc56-0a6bc9310343",
+        "name": "Morph | minimax/minimax-m2.7-20260318",
         "context_length": 196608,
         "model": {
           "slug": "minimax/minimax-m2.7",
@@ -27952,62 +27958,67 @@
         "model_variant_slug": "minimax/minimax-m2.7",
         "model_variant_permaslug": "minimax/minimax-m2.7-20260318",
         "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "DekaLLM",
+        "provider_name": "Morph",
         "provider_info": {
-          "name": "DekaLLM",
-          "displayName": "DekaLLM",
-          "slug": "dekallm",
-          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
+          "name": "Morph",
+          "displayName": "Morph",
+          "slug": "morph",
+          "baseUrl": "https://api.morphllm.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
-            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
+            "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+            "privacyPolicyURL": "https://morphllm.com/privacy"
           },
-          "headquarters": "ID",
+          "headquarters": "US",
           "datacenters": [
-            "ID"
+            "US"
           ],
           "hasChatCompletions": true,
-          "hasCompletions": false,
+          "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "editors": [],
           "owners": [
-            "org_3CeBAUgNWYtfLyn8Fjk83Q1OzR6"
+            "org_3CQDCvFLJOYUJc7jSY0QlXMwou1"
           ],
           "adapterName": "VLLMOpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://morphllm.com&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DekaLLM",
-        "provider_slug": "dekallm/fp4",
-        "provider_model_id": "minimax-m2.7",
-        "quantization": "fp4",
+        "provider_display_name": "Morph",
+        "provider_slug": "morph",
+        "provider_model_id": "morph-minimax27-230b",
+        "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "frequency_penalty",
-          "logit_bias",
           "max_tokens",
-          "presence_penalty",
-          "seed",
-          "stop",
           "temperature",
+          "stop",
           "top_p",
+          "top_k",
+          "min_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "logit_bias",
+          "response_format",
+          "structured_outputs",
           "tools",
           "tool_choice",
           "logprobs",
@@ -28020,18 +28031,18 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
-          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
+          "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+          "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000028",
+          "prompt": "0.000000279",
           "completion": "0.0000012",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000028",
+              "price": "0.000000279",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -28048,7 +28059,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000028",
+            "price": "0.000000279",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -28061,10 +28072,10 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000028",
+          "openai:prompt_tokens": "0.000000279",
           "openai:completion_tokens": "0.0000012"
         },
-        "pricing_version_id": "ec65313b-2fe2-4564-95d1-d96febff07a6",
+        "pricing_version_id": "78e7a9e3-fd4c-4060-9233-63663980df4e",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -28075,11 +28086,11 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true

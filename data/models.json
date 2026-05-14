@@ -14,13 +14,14 @@
     "piapi": 2,
     "wavespeed": 2,
     "minimax": 3,
-    "runway": 2
+    "runway": 2,
+    "news-radar": 1
   },
   "update_stats": {
-    "added": 8,
-    "removed": 6,
-    "updated": 9,
-    "unchanged": 2315
+    "added": 3,
+    "removed": 2,
+    "updated": 7,
+    "unchanged": 2323
   },
   "models": [
     {
@@ -1902,7 +1903,7 @@
       "id": "hf-animatediff-lightning",
       "name": "AnimateDiff Lightning",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 10,894 downloads · 986 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 10,155 downloads · 986 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -2798,7 +2799,7 @@
       "id": "hf-bge-small-en-v1-5",
       "name": "Bge Small En V1.5",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 41,629,690 downloads · 457 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 42,635,548 downloads · 458 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -2827,7 +2828,7 @@
       "id": "hf-bge-small-zh-v1-5",
       "name": "Bge Small Zh V1.5",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 2,598,975 downloads · 114 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 2,620,987 downloads · 113 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -6463,7 +6464,7 @@
       "id": "hf-cogvideox-2b",
       "name": "CogVideoX 2b",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 28,278 downloads · 362 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 27,933 downloads · 362 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -10060,7 +10061,7 @@
       "id": "hf-distil-large-v3",
       "name": "Distil Large V3",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 1,336,307 downloads · 376 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 1,364,715 downloads · 376 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -10114,7 +10115,7 @@
       "id": "hf-diving-illustrious-real-asian-v50-sdxl",
       "name": "Diving Illustrious Real Asian V50 Sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 241,986 downloads · 0 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 237,357 downloads · 0 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -10334,7 +10335,7 @@
       "id": "hf-dolphin-2-9-1-yi-1-5-34b",
       "name": "Dolphin 2.9.1 Yi 1.5 34B",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,718,371 downloads · 63 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 4,730,613 downloads · 63 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -10731,7 +10732,7 @@
       "id": "hf-dvine82-xl",
       "name": "Dvine82 Xl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 314,398 downloads · 0 likes. License: .",
+      "description": "Open-source model on HuggingFace. 318,327 downloads · 0 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -12664,7 +12665,7 @@
       "id": "hf-fastwan2-2-ti2v-5b-fullattn-diffusers",
       "name": "FastWan2.2 TI2V 5B FullAttn Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 52,861 downloads · 63 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 53,687 downloads · 63 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -13613,7 +13614,7 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "florence-2-large-object-detection",
+      "id": "florence-2-large-open-vocabulary-detection",
       "name": "Florence-2 Large",
       "category": "image_generation",
       "description": "Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks",
@@ -13630,12 +13631,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/florence-2-large/object-detection",
+          "url": "https://fal.ai/models/fal-ai/florence-2-large/open-vocabulary-detection",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-04-22"
+      "first_seen_at": "2026-05-14"
     },
     {
       "id": "flowedit",
@@ -16742,7 +16743,7 @@
       "id": "hf-fun-cosyvoice3-0-5b-2512",
       "name": "Fun CosyVoice3 0.5B 2512",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 278,811 downloads · 539 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 279,409 downloads · 539 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -18158,7 +18159,7 @@
           "pricing": {
             "input_per_1m": 0.2
           },
-          "url": "https://ai.google.dev/gemini-api/docs/embeddings#multimodal",
+          "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
           "affiliate_url": null,
           "available": true
         }
@@ -18180,9 +18181,9 @@
         {
           "provider_id": "google",
           "pricing": {
-            "input_per_1m": 0.15
+            "input_per_1m": 0.2
           },
-          "url": "https://ai.google.dev/gemini-api/docs/embeddings#multimodal",
+          "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
           "affiliate_url": null,
           "available": true
         },
@@ -20808,7 +20809,7 @@
           "pricing": {
             "input_per_1m": 1.25,
             "output_per_1m": 5.0,
-            "per_minute": 0.0045
+            "per_minute": 0.0019
           },
           "url": "https://platform.openai.com/docs/models",
           "affiliate_url": null,
@@ -20953,7 +20954,7 @@
           "pricing": {
             "input_per_1m": 2.5,
             "output_per_1m": 10.0,
-            "per_minute": 0.009
+            "per_minute": 0.0038
           },
           "url": "https://platform.openai.com/docs/models",
           "affiliate_url": null,
@@ -20998,7 +20999,7 @@
           "pricing": {
             "input_per_1m": 2.5,
             "output_per_1m": 10.0,
-            "per_minute": 0.009
+            "per_minute": 0.0038
           },
           "url": "https://platform.openai.com/docs/models",
           "affiliate_url": null,
@@ -23491,7 +23492,7 @@
       "id": "hf-gpt2",
       "name": "Gpt2",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 16,195,419 downloads · 3,239 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 16,088,904 downloads · 3,239 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -26859,7 +26860,7 @@
       "id": "hf-hunyuanimage-3-0",
       "name": "HunyuanImage 3.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 276,345 downloads · 1,075 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 309,582 downloads · 1,075 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -28260,7 +28261,7 @@
       "id": "hf-indic-parler-tts",
       "name": "Indic Parler Tts",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 783,537 downloads · 225 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 780,900 downloads · 225 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -28765,7 +28766,7 @@
       "id": "hf-ip-adapter-faceid",
       "name": "IP Adapter FaceID",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 212,449 downloads · 1,849 likes. License: .",
+      "description": "Open-source model on HuggingFace. 214,102 downloads · 1,849 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -28988,7 +28989,7 @@
       "id": "hf-jina-embeddings-v3",
       "name": "Jina Embeddings V3",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 3,177,331 downloads · 1,140 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 3,232,941 downloads · 1,140 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -35181,7 +35182,7 @@
       "id": "hf-ltx-2",
       "name": "LTX 2",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 703,629 downloads · 1,708 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 675,703 downloads · 1,708 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -35310,7 +35311,7 @@
       "id": "hf-ltx-2-3",
       "name": "LTX 2.3",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 1,882,479 downloads · 1,172 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 1,925,171 downloads · 1,174 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -35359,7 +35360,7 @@
       "id": "hf-ltx-2-3-fp8",
       "name": "LTX 2.3 fp8",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 1,696,149 downloads · 97 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 1,738,393 downloads · 97 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -35594,7 +35595,7 @@
       "id": "hf-ltx-video-iclora-detailer-13b-0-9-8",
       "name": "LTX Video ICLoRA detailer 13b 0.9.8",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 35,060 downloads · 30 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 35,025 downloads · 30 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -35889,7 +35890,7 @@
       "id": "hf-ltx2-3-10eros",
       "name": "LTX2.3 10Eros",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 84,903 downloads · 246 likes. License: .",
+      "description": "Open-source model on HuggingFace. 90,647 downloads · 248 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -37277,7 +37278,7 @@
       "id": "replicate-meta-llama-3-8b",
       "name": "Meta Llama 3 8B",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 3,132,259 downloads · 6,531 likes. License: llama3.",
+      "description": "Open-source model on HuggingFace. 3,135,302 downloads · 6,531 likes. License: llama3.",
       "tags": [],
       "capabilities": [],
       "context_k": null,
@@ -38444,7 +38445,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.28,
+            "input_per_1m": 0.279,
             "output_per_1m": 1.2
           },
           "url": "https://openrouter.ai/minimax/minimax-m2.7",
@@ -41155,7 +41156,7 @@
       "id": "hf-mms-300m-1130-forced-aligner",
       "name": "Mms 300M 1130 Forced Aligner",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,534,213 downloads · 87 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 3,515,146 downloads · 87 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -41184,7 +41185,7 @@
       "id": "hf-mms-tts-hat",
       "name": "Mms Tts Hat",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 466,717 downloads · 4 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 470,545 downloads · 4 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -41571,7 +41572,7 @@
       "id": "hf-mova-360p",
       "name": "MOVA 360p",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 96,941 downloads · 215 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 97,965 downloads · 215 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -42967,7 +42968,7 @@
       "id": "hf-nova-furry-xl-il-v120-sdxl",
       "name": "Nova Furry Xl Il V120 Sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 221,588 downloads · 5 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 222,002 downloads · 5 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -43126,7 +43127,7 @@
       "id": "hf-novaanimexl_ilv140",
       "name": "novaAnimeXL ilV140",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 506,857 downloads · 3 likes. License: .",
+      "description": "Open-source model on HuggingFace. 517,460 downloads · 3 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -44282,7 +44283,7 @@
       "id": "hf-one-obsession-17-red-sdxl",
       "name": "One Obsession 17 Red Sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 273,850 downloads · 3 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 275,086 downloads · 3 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -44934,7 +44935,7 @@
       "id": "hf-opt-125m",
       "name": "Opt 125M",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 9,062,002 downloads · 251 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 9,208,234 downloads · 251 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -46748,32 +46749,6 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "pixverse-v3-5-fast",
-      "name": "PixVerse v3.5 Fast",
-      "category": "video_generation",
-      "description": "Generate high quality video clips from text and image prompts quickly using PixVerse v3.5 Fast",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-05-14",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/pixverse/v3.5/text-to-video/fast",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ],
-      "first_seen_at": "2026-04-22"
-    },
-    {
       "id": "pixverse-v3-5",
       "name": "PixVerse v3.5:",
       "category": "video_generation",
@@ -46819,6 +46794,32 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/pixverse/v3.5/effects",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-04-22"
+    },
+    {
+      "id": "pixverse-v3-5-fast",
+      "name": "PixVerse v3.5: Image to Video Fast",
+      "category": "video_generation",
+      "description": "Generate high quality video clips from text and image prompts quickly using PixVerse v3.5 Fast",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-05-14",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/pixverse/v3.5/image-to-video/fast",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -47547,7 +47548,7 @@
       "id": "hf-prefect-illustrious-xl-v3-sdxl",
       "name": "Prefect Illustrious Xl V3 Sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 177,731 downloads · 1 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 178,977 downloads · 1 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -47890,7 +47891,7 @@
       "id": "hf-pythia-160m",
       "name": "Pythia 160M",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,133,348 downloads · 42 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,122,305 downloads · 42 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -49567,7 +49568,7 @@
       "id": "hf-qwen-image-lightning",
       "name": "Qwen Image Lightning",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 317,695 downloads · 798 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 318,646 downloads · 798 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -49977,7 +49978,7 @@
       "id": "hf-qwen2-1-5b-instruct",
       "name": "Qwen2 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,581,472 downloads · 162 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 4,529,035 downloads · 162 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -50131,7 +50132,7 @@
       "id": "hf-qwen2-5-0-5b-instruct",
       "name": "Qwen2.5 0.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 5,706,438 downloads · 514 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 5,631,806 downloads · 515 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -50170,7 +50171,7 @@
       "id": "hf-qwen2-5-1-5b-instruct",
       "name": "Qwen2.5 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 12,262,870 downloads · 693 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 12,081,067 downloads · 693 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -50311,7 +50312,7 @@
       "id": "hf-qwen2-5-3b-instruct",
       "name": "Qwen2.5 3B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 8,277,613 downloads · 455 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 8,126,945 downloads · 455 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -52482,7 +52483,7 @@
       "id": "hf-qwen3-asr-1-7b",
       "name": "Qwen3 ASR 1.7B",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 2,073,864 downloads · 803 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,084,263 downloads · 803 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53115,7 +53116,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-base",
       "name": "Qwen3 TTS 12Hz 0.6B Base",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 645,222 downloads · 235 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 637,948 downloads · 235 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53134,7 +53135,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-customvoice",
       "name": "Qwen3 TTS 12Hz 0.6B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 442,535 downloads · 144 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 460,488 downloads · 144 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -53153,7 +53154,7 @@
       "id": "hf-qwen3-tts-12hz-1-7b-customvoice",
       "name": "Qwen3 TTS 12Hz 1.7B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 1,532,191 downloads · 1,473 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,511,087 downloads · 1,475 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -54546,7 +54547,7 @@
       "id": "hf-realistic_vision_v5-1_novae",
       "name": "Realistic Vision V5.1 noVAE",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 242,005 downloads · 247 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 256,740 downloads · 247 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -56569,7 +56570,7 @@
       "id": "hf-sapbert-from-pubmedbert-fulltext",
       "name": "SapBERT from PubMedBERT fulltext",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 1,934,897 downloads · 67 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,940,803 downloads · 67 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -56669,7 +56670,7 @@
       "id": "hf-sd-turbo",
       "name": "Sd Turbo",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 551,643 downloads · 449 likes. License: .",
+      "description": "Open-source model on HuggingFace. 545,552 downloads · 449 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -56776,7 +56777,7 @@
       "id": "hf-sdxl-lightning",
       "name": "SDXL Lightning",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 209,293 downloads · 2,147 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 207,741 downloads · 2,147 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -56823,7 +56824,7 @@
       "id": "hf-sdxl-turbo",
       "name": "Sdxl Turbo",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 981,758 downloads · 2,571 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 1,001,069 downloads · 2,572 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -58935,7 +58936,7 @@
       "id": "hf-stable-diffusion-3-tiny-random",
       "name": "Stable Diffusion 3 Tiny Random",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 175,004 downloads · 0 likes. License: .",
+      "description": "Open-source model on HuggingFace. 180,257 downloads · 0 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -59097,7 +59098,7 @@
       "id": "hf-stable-diffusion-inpainting",
       "name": "Stable Diffusion Inpainting",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 197,576 downloads · 106 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 190,131 downloads · 106 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -59118,7 +59119,7 @@
       "id": "hf-stable-diffusion-v1-4",
       "name": "Stable Diffusion V1 4",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 640,452 downloads · 7,008 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 650,178 downloads · 7,008 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -59255,7 +59256,7 @@
       "id": "hf-stable-diffusion-xl-1-0-inpainting-0-1",
       "name": "Stable Diffusion Xl 1.0 Inpainting 0.1",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 375,463 downloads · 372 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 376,592 downloads · 372 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -59301,7 +59302,7 @@
       "id": "stable-diffusion-xl",
       "name": "Stable Diffusion Xl Base 1.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 2,063,379 downloads · 7,708 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 2,050,982 downloads · 7,708 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -59806,7 +59807,7 @@
       "id": "hf-stable-video-diffusion-img2vid-xt",
       "name": "Stable Video Diffusion Img2Vid Xt",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 319,700 downloads · 3,291 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 311,391 downloads · 3,291 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -60945,7 +60946,7 @@
       "id": "hf-text-to-video-ms-1-7b",
       "name": "Text To Video Ms 1.7B",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 91,728 downloads · 658 likes. License: cc-by-nc-4.0.",
+      "description": "Open-source model on HuggingFace. 91,369 downloads · 658 likes. License: cc-by-nc-4.0.",
       "tags": [
         "open-source",
         "local"
@@ -61041,7 +61042,7 @@
       "id": "hf-tiny-qwen2forcausallm-2-5",
       "name": "tiny Qwen2ForCausalLM 2.5",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 6,626,436 downloads · 6 likes. License: .",
+      "description": "Open-source model on HuggingFace. 6,355,380 downloads · 6 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -61069,7 +61070,7 @@
       "id": "hf-tiny-random-llamaforcausallm",
       "name": "tiny random LlamaForCausalLM",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,249,117 downloads · 0 likes. License: .",
+      "description": "Open-source model on HuggingFace. 3,341,050 downloads · 0 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -61097,7 +61098,7 @@
       "id": "hf-tiny-random-stable-diffusion-xl",
       "name": "Tiny Random Stable Diffusion Xl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 206,745 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 213,421 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -61126,7 +61127,7 @@
       "id": "hf-tiny-stable-diffusion-torch",
       "name": "Tiny Stable Diffusion Torch",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 219,140 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 228,106 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -61552,7 +61553,7 @@
       "id": "hf-turbowan2-1-t2v-1-3b-diffusers",
       "name": "TurboWan2.1 T2V 1.3B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 26,114 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 26,975 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -61715,6 +61716,30 @@
         }
       ],
       "first_seen_at": "2026-04-22"
+    },
+    {
+      "id": "uni-1-1",
+      "name": "Uni-1.1",
+      "category": "image_generation",
+      "description": "Luma AI's image generation model with built-in reasoning and web search, competitive with OpenAI and Google offerings at 2048-pixel resolution.",
+      "tags": [
+        "luma"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-05-14",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "luma",
+          "pricing": {
+            "notes": "Starting at $0.04 per image at 2,048-pixel resolution"
+          },
+          "url": "https://lumalabs.ai/api",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-05-14"
     },
     {
       "id": "uno",
@@ -62607,7 +62632,7 @@
       "id": "hf-vibevoice-realtime-0-5b",
       "name": "VibeVoice Realtime 0.5B",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 828,404 downloads · 1,221 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 790,411 downloads · 1,221 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -63806,7 +63831,7 @@
       "id": "hf-w2v-bert-2-0",
       "name": "W2V Bert 2.0",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 3,201,399 downloads · 214 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 3,191,649 downloads · 214 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -64423,7 +64448,7 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "wan-22-vace-fun-a14b-reframe",
+      "id": "wan-22-vace-fun-a14b-outpainting",
       "name": "Wan 2.2 VACE Fun A14B",
       "category": "video_generation",
       "description": "VACE Fun for Wan 2.2 A14B from Alibaba-PAI",
@@ -64440,12 +64465,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/wan-22-vace-fun-a14b/reframe",
+          "url": "https://fal.ai/models/fal-ai/wan-22-vace-fun-a14b/outpainting",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-05-11"
+      "first_seen_at": "2026-05-14"
     },
     {
       "id": "wan-2-5",
@@ -65298,7 +65323,7 @@
       "id": "hf-wan14bt2vfusionix",
       "name": "Wan14BT2VFusioniX",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 13,748 downloads · 607 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 13,831 downloads · 607 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65319,7 +65344,7 @@
       "id": "hf-wan2-1-i2v-14b-480p",
       "name": "Wan2.1 I2V 14B 480P",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 91,961 downloads · 216 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 91,706 downloads · 216 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65340,7 +65365,7 @@
       "id": "hf-wan2-1-t2v-1-3b",
       "name": "Wan2.1 T2V 1.3B",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 22,905 downloads · 453 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 21,967 downloads · 453 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65361,7 +65386,7 @@
       "id": "hf-wan2-1-t2v-1-3b-diffusers",
       "name": "Wan2.1 T2V 1.3B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 155,455 downloads · 125 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 154,484 downloads · 125 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65382,7 +65407,7 @@
       "id": "hf-wan2-1-t2v-14b",
       "name": "Wan2.1 T2V 14B",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 31,390 downloads · 1,499 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 34,433 downloads · 1,499 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65430,7 +65455,7 @@
       "id": "hf-wan2-2-distill-loras",
       "name": "Wan2.2 Distill Loras",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 1,132,284 downloads · 243 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,121,454 downloads · 243 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65452,7 +65477,7 @@
       "id": "hf-wan2-2-i2v-a14b-diffusers",
       "name": "Wan2.2 I2V A14B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 157,014 downloads · 238 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 157,975 downloads · 238 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65473,7 +65498,7 @@
       "id": "hf-wan2-2-i2v-a14b-lightning-diffusers",
       "name": "Wan2.2 I2V A14B Lightning Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 38,847 downloads · 2 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 39,023 downloads · 2 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65495,7 +65520,7 @@
       "id": "hf-wan2-2-ti2v-5b-diffusers",
       "name": "Wan2.2 TI2V 5B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 109,568 downloads · 135 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 109,889 downloads · 135 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65544,7 +65569,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-polish",
       "name": "Wav2Vec2 Large Xlsr 53 Polish",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 1,578,968 downloads · 12 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,576,541 downloads · 12 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65573,7 +65598,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-portuguese",
       "name": "Wav2Vec2 Large Xlsr 53 Portuguese",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,539,714 downloads · 54 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,548,636 downloads · 54 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65602,7 +65627,7 @@
       "id": "hf-wav2vec2-large-xlsr-53-russian",
       "name": "Wav2Vec2 Large Xlsr 53 Russian",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 4,131,700 downloads · 75 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 4,086,635 downloads · 75 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65755,7 +65780,7 @@
       "id": "hf-whisper-base",
       "name": "Whisper Base",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 1,631,820 downloads · 270 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,590,062 downloads · 270 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65928,7 +65953,7 @@
       "id": "hf-whisper-small",
       "name": "Whisper Small",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 2,275,153 downloads · 558 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,271,564 downloads · 559 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
