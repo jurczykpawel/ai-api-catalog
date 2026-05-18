@@ -57,3 +57,13 @@ jobs:
           code=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 15 https://aiapi.techskills.academy)
           test "$code" = "200" || (echo "FAIL: HTTP $code" && exit 1)
           echo "OK: aiapi.techskills.academy -> $code"
+
+      - name: Notify ntfy on failure
+        if: failure()
+        run: |
+          curl -s -H "Authorization: Bearer ${{ secrets.NTFY_TOKEN }}" \
+               -H "Title: aiapi deploy FAILED" \
+               -H "Priority: high" \
+               -H "Tags: warning,rocket" \
+               -d "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+               https://frog01-30925.wykr.es/alerts-da13b58d3e16
