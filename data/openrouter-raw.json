@@ -24402,8 +24402,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "d71c6981-347d-4622-a86b-2c9e5d0f2c6c",
-        "name": "DeepInfra | google/gemma-4-26b-a4b-it-20260403",
+        "id": "d99bcbe6-bec3-4991-965e-45fea79fe63c",
+        "name": "DekaLLM | google/gemma-4-26b-a4b-it-20260403",
         "context_length": 262144,
         "model": {
           "slug": "google/gemma-4-26b-a4b-it",
@@ -24472,70 +24472,63 @@
         },
         "model_variant_slug": "google/gemma-4-26b-a4b-it",
         "model_variant_permaslug": "google/gemma-4-26b-a4b-it-20260403",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "DekaLLM",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "DekaLLM",
+          "displayName": "DekaLLM",
+          "slug": "dekallm",
+          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy"
+            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
           },
-          "headquarters": "US",
+          "headquarters": "ID",
+          "datacenters": [
+            "ID"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
+          "editors": [],
           "owners": [
-            "{}",
-            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
+            "org_3CeBAUgNWYtfLyn8Fjk83Q1OzR6"
           ],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
-          "byokEnabled": true,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp8",
+        "provider_display_name": "DekaLLM",
+        "provider_slug": "dekallm/bf16",
         "provider_model_id": "google/gemma-4-26B-A4B-it",
-        "quantization": "fp8",
+        "quantization": "bf16",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "stop",
           "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
           "presence_penalty",
-          "repetition_penalty",
-          "top_k",
           "seed",
-          "min_p",
-          "response_format",
-          "tool_choice",
-          "tools",
-          "structured_outputs",
-          "logit_bias"
+          "stop",
+          "temperature",
+          "top_p"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -24544,25 +24537,25 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
         },
         "pricing": {
-          "prompt": "0.00000007",
-          "completion": "0.00000034",
+          "prompt": "0.00000006",
+          "completion": "0.00000033",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000007",
+              "price": "0.00000006",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000034",
+              "price": "0.00000033",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -24572,52 +24565,44 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000007",
+            "price": "0.00000006",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000034",
+            "price": "0.00000033",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000007",
-          "openai:completion_tokens": "0.00000034"
+          "openai:prompt_tokens": "0.00000006",
+          "openai:completion_tokens": "0.00000033"
         },
-        "pricing_version_id": "51911731-29d5-4fcc-a616-f525a4c67b20",
+        "pricing_version_id": "c4d68f1d-d043-4a0b-9714-0fdc83bbc9db",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": true,
+        "supports_tool_parameters": false,
         "supports_reasoning": true,
-        "supports_multipart": false,
+        "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_multipart": false,
-          "supports_base64_video_input": false,
-          "supports_video_urls": false,
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
           }
         },
-        "supported_video_parameters": {
-          "supported_sizes": null,
-          "supported_frame_images": null,
-          "generate_audio": null,
-          "seed": null
-        },
+        "supported_video_parameters": null,
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": []
@@ -32930,8 +32915,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "b893e351-21c8-4215-8f36-c761298acf9e",
-        "name": "DeepInfra | nvidia/nemotron-3-super-120b-a12b-20230311",
+        "id": "28c45228-7215-4946-a1c9-a7f4eb2ab696",
+        "name": "DekaLLM | nvidia/nemotron-3-super-120b-a12b-20230311",
         "context_length": 262144,
         "model": {
           "slug": "nvidia/nemotron-3-super-120b-a12b",
@@ -33001,69 +32986,67 @@
         },
         "model_variant_slug": "nvidia/nemotron-3-super-120b-a12b",
         "model_variant_permaslug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "DekaLLM",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "DekaLLM",
+          "displayName": "DekaLLM",
+          "slug": "dekallm",
+          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy"
+            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
           },
-          "headquarters": "US",
+          "headquarters": "ID",
+          "datacenters": [
+            "ID"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
+          "editors": [],
           "owners": [
-            "{}",
-            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
+            "org_3CeBAUgNWYtfLyn8Fjk83Q1OzR6"
           ],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
-          "byokEnabled": true,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/bf16",
-        "provider_model_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
-        "quantization": "bf16",
+        "provider_display_name": "DekaLLM",
+        "provider_slug": "dekallm/fp8",
+        "provider_model_id": "nvidia/nemotron-3-super",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "frequency_penalty",
+          "logit_bias",
           "max_tokens",
+          "presence_penalty",
+          "seed",
+          "stop",
           "temperature",
           "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "top_k",
-          "seed",
-          "min_p",
-          "response_format",
           "tools",
           "tool_choice",
-          "logit_bias"
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -33072,25 +33055,25 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
         },
         "pricing": {
-          "prompt": "0.0000001",
-          "completion": "0.0000005",
+          "prompt": "0.00000009",
+          "completion": "0.00000045",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001",
+              "price": "0.00000009",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000005",
+              "price": "0.00000045",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -33100,23 +33083,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001",
+            "price": "0.00000009",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000005",
+            "price": "0.00000045",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
-          "openai:completion_tokens": "0.0000005"
+          "openai:prompt_tokens": "0.00000009",
+          "openai:completion_tokens": "0.00000045"
         },
-        "pricing_version_id": "d55bd62a-bd42-4e17-a3d9-88f77961f8d9",
+        "pricing_version_id": "9c4f9e8d-0186-46b0-9c2c-afc23ab80155",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -33127,17 +33110,22 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": false,
+            "literal_required": true,
             "type_function": false
           }
         },
-        "supported_video_parameters": null,
+        "supported_video_parameters": {
+          "supported_sizes": null,
+          "supported_frame_images": null,
+          "generate_audio": null,
+          "seed": null
+        },
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": []
@@ -83579,8 +83567,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "85835306-dba3-4334-87bc-ab9ffa5c9c62",
-        "name": "DeepInfra | openai/gpt-oss-120b",
+        "id": "95c81fbc-2ade-41b8-b7e4-ef5889f07b4a",
+        "name": "DekaLLM | openai/gpt-oss-120b",
         "context_length": 131072,
         "model": {
           "slug": "openai/gpt-oss-120b",
@@ -83659,70 +83647,67 @@
         },
         "model_variant_slug": "openai/gpt-oss-120b",
         "model_variant_permaslug": "openai/gpt-oss-120b",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "DekaLLM",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "DekaLLM",
+          "displayName": "DekaLLM",
+          "slug": "dekallm",
+          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy"
+            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
           },
-          "headquarters": "US",
+          "headquarters": "ID",
+          "datacenters": [
+            "ID"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
+          "editors": [],
           "owners": [
-            "{}",
-            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
+            "org_3CeBAUgNWYtfLyn8Fjk83Q1OzR6"
           ],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
-          "byokEnabled": true,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/bf16",
+        "provider_display_name": "DekaLLM",
+        "provider_slug": "dekallm/bf16",
         "provider_model_id": "openai/gpt-oss-120b",
         "quantization": "bf16",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "frequency_penalty",
+          "logit_bias",
           "max_tokens",
+          "presence_penalty",
+          "seed",
+          "stop",
           "temperature",
           "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "top_k",
-          "seed",
-          "min_p",
-          "response_format",
           "tools",
           "tool_choice",
-          "logit_bias",
-          "structured_outputs"
+          "logprobs",
+          "top_logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -83731,12 +83716,12 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
         },
         "pricing": {
           "prompt": "0.000000039",
-          "completion": "0.00000019",
+          "completion": "0.00000018",
           "discount": 0,
           "display_pricing": [
             {
@@ -83749,7 +83734,7 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000019",
+              "price": "0.00000018",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -83766,16 +83751,16 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000019",
+            "price": "0.00000018",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.000000039",
-          "openai:completion_tokens": "0.00000019"
+          "openai:completion_tokens": "0.00000018"
         },
-        "pricing_version_id": "7b9c624e-0da4-48ae-b3a4-3ea787ffdc69",
+        "pricing_version_id": "ab99c1c8-e5bc-40a3-b583-85a3ff406296",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -83786,14 +83771,14 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -124471,8 +124456,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "3e0aa374-de51-4cd0-911b-29ae65067e21",
-        "name": "DeepInfra | mistralai/mistral-nemo",
+        "id": "729b580e-eb04-4f3b-914e-73c6a39d2429",
+        "name": "DekaLLM | mistralai/mistral-nemo",
         "context_length": 131072,
         "model": {
           "slug": "mistralai/mistral-nemo",
@@ -124525,65 +124510,61 @@
         },
         "model_variant_slug": "mistralai/mistral-nemo",
         "model_variant_permaslug": "mistralai/mistral-nemo",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "DekaLLM",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "DekaLLM",
+          "displayName": "DekaLLM",
+          "slug": "dekallm",
+          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy"
+            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
           },
-          "headquarters": "US",
+          "headquarters": "ID",
+          "datacenters": [
+            "ID"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "editors": [
-            "{}"
-          ],
+          "editors": [],
           "owners": [
-            "{}",
-            "org_38GSfr7NVq111kyg6iXh1TTpKuz"
+            "org_3CeBAUgNWYtfLyn8Fjk83Q1OzR6"
           ],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
-          "byokEnabled": true,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp8",
-        "provider_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+        "provider_display_name": "DekaLLM",
+        "provider_slug": "dekallm/fp8",
+        "provider_model_id": "mistralai/mistral-nemo",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "stop",
           "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
           "presence_penalty",
-          "repetition_penalty",
-          "top_k",
           "seed",
-          "min_p",
-          "response_format",
-          "logit_bias"
+          "stop",
+          "temperature",
+          "top_p"
         ],
         "is_byok": false,
         "moderation_required": false,
@@ -124592,12 +124573,12 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
+          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
         },
         "pricing": {
           "prompt": "0.00000002",
-          "completion": "0.00000004",
+          "completion": "0.00000003",
           "discount": 0,
           "display_pricing": [
             {
@@ -124610,7 +124591,7 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000004",
+              "price": "0.00000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -124627,16 +124608,16 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000004",
+            "price": "0.00000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.00000002",
-          "openai:completion_tokens": "0.00000004"
+          "openai:completion_tokens": "0.00000003"
         },
-        "pricing_version_id": "ab6dc03b-cc46-45ea-bbbb-e0df7f434b79",
+        "pricing_version_id": "06ee6a0a-9bc5-4f9b-83a1-1d204b6cbad1",
         "is_hidden": false,
         "is_private": false,
         "is_deranked": false,
@@ -124647,7 +124628,7 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
