@@ -670,6 +670,23 @@
       "_api_id": "grok-build-0.1"
     },
     {
+      "id": "deepseek-v4-flash",
+      "name": "Deepseek V4 Flash",
+      "category": "llm",
+      "description": "Deepseek V4 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "deepseek-v4-flash"
+    },
+    {
       "id": "glm-5-1",
       "name": "GLM 5.1",
       "category": "llm",
@@ -897,10 +914,10 @@
       "_api_id": "qwen3.6-plus-free"
     },
     {
-      "id": "minimax-m2-5-free",
-      "name": "Minimax M2.5 Free",
+      "id": "minimax-m3-free",
+      "name": "Minimax M3 Free",
       "category": "llm",
-      "description": "Minimax M2.5 Free via OpenCode Zen curated gateway.",
+      "description": "Minimax M3 Free via OpenCode Zen curated gateway.",
       "tags": [
         "opencode",
         "free",
@@ -916,7 +933,7 @@
       },
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "minimax-m2.5-free"
+      "_api_id": "minimax-m3-free"
     },
     {
       "id": "nemotron-3-super-free",
