@@ -4411,6 +4411,29 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "gemma-4-12b",
+      "name": "Gemma 4 12B",
+      "category": "llm",
+      "description": "Google DeepMind's open-source 12B multimodal model supporting text, image, and audio inputs natively, licensed under Apache 2.0 and capable of running on consumer hardware with 16GB RAM.",
+      "tags": [
+        "huggingface"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-06-04",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "notes": "Open-source / free to use under Apache 2.0; inference costs depend on hosting provider"
+          },
+          "url": "https://huggingface.co/google/gemma-4-12b",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     }
   ]
 }
