@@ -47,7 +47,9 @@ def validate(path: str):
     count = len(models)
     print(f"Walidacja {count} modeli z {data_path}...\n")
 
-    # Count regression check — fail if model count dropped by >10% vs git HEAD
+    # Regression checks vs git HEAD — catch broken/truncated upstream dumps.
+    # prev_prices: (model_id, provider_id) -> input_per_1m, tylko dla cen > 0 w HEAD.
+    prev_prices = {}
     try:
         import subprocess
         result = subprocess.run(
@@ -58,6 +60,7 @@ def validate(path: str):
             prev = json.loads(result.stdout)
             prev_count = len(prev.get("models", []))
             if prev_count > 0:
+                # 1) Count regression — fail if model count dropped by >10%
                 drop_pct = (prev_count - count) / prev_count * 100
                 if drop_pct > 10:
                     errors.append(
@@ -65,6 +68,12 @@ def validate(path: str):
                         f"(spadek o {drop_pct:.0f}%). "
                         f"Sprawdź czy wszystkie źródła danych zostały użyte."
                     )
+                # 2) Build price map for the zeroing check below
+                for m in prev.get("models", []):
+                    for p in m.get("providers", []):
+                        val = (p.get("pricing") or {}).get("input_per_1m")
+                        if isinstance(val, (int, float)) and val > 0:
+                            prev_prices[(m.get("id"), p.get("provider_id"))] = val
     except Exception:
         pass  # git unavailable — skip check
 
@@ -114,6 +123,29 @@ def validate(path: str):
                     val = pricing.get(key)
                     if val is not None and val < 0:
                         errors.append(f"{pctx}: ujemna cena '{key}' = {val}")
+
+    # Price-zeroing regression — modele które miały cenę input > 0 w HEAD,
+    # a teraz mają 0/brak. Pojedyncze → warning (legit zmiana cennika);
+    # masowe → error (prawdopodobnie zepsuty/obcięty dump LiteLLM).
+    if prev_prices:
+        cur_prices = {}
+        for model in models:
+            for prov in model.get("providers", []):
+                cur_prices[(model.get("id"), prov.get("provider_id"))] = \
+                    (prov.get("pricing") or {}).get("input_per_1m")
+        zeroed = [
+            (key, old) for key, old in prev_prices.items()
+            if key in cur_prices and not cur_prices[key]  # None lub 0
+        ]
+        for (mid, pid), old in zeroed[:20]:
+            warnings.append(f"Cena input wyzerowana: {mid}@{pid} ({old} → {cur_prices[(mid, pid)]})")
+        threshold = max(20, int(0.05 * len(prev_prices)))
+        if len(zeroed) > threshold:
+            errors.append(
+                f"REGRESJA CEN: {len(zeroed)} modeli straciło cenę input "
+                f"(próg {threshold} = 5% z {len(prev_prices)}). "
+                f"Prawdopodobnie zepsuty dump LiteLLM — sprawdź data/litellm-raw.json."
+            )
 
     # Report
     print(f"  Błędy:    {len(errors)}")

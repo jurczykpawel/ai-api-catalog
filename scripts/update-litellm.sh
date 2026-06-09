@@ -43,8 +43,8 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 
 echo ""
 echo "[1/9] Pobieranie LiteLLM..."
-curl -s --fail "$LITELLM_URL" -o "$DATA_DIR/litellm-raw.json"
-echo "✓ litellm-raw.json"
+fetch_with_retry "LiteLLM" curl -s --fail "$LITELLM_URL" -o "$DATA_DIR/litellm-raw.json"
+echo "✓ litellm-raw.json (lub cache, jeśli fetch zawiódł)"
 
 echo ""
 echo "[2/9] Pobieranie OpenRouter..."
