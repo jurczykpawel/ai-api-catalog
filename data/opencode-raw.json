@@ -1,6 +1,27 @@
 {
   "models": [
     {
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "category": "llm",
+      "description": "Claude Fable 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-fable-5"
+    },
+    {
       "id": "claude-opus-4-8",
       "name": "Claude Opus 4 8",
       "category": "llm",
@@ -670,6 +691,23 @@
       "_api_id": "grok-build-0.1"
     },
     {
+      "id": "deepseek-v4-pro",
+      "name": "Deepseek V4 Pro",
+      "category": "llm",
+      "description": "Deepseek V4 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "deepseek-v4-pro"
+    },
+    {
       "id": "deepseek-v4-flash",
       "name": "Deepseek V4 Flash",
       "category": "llm",
@@ -956,14 +994,14 @@
       "_api_id": "nemotron-3-ultra-free"
     },
     {
-      "id": "nemotron-3-super-free",
-      "name": "Nemotron 3 Super Free",
+      "id": "north-mini-code-free",
+      "name": "North Mini Code Free",
       "category": "llm",
-      "description": "Nemotron 3 Super Free via OpenCode Zen curated gateway.",
+      "description": "North Mini Code Free via OpenCode Zen curated gateway.",
       "tags": [
         "opencode",
         "free",
-        "nvidia"
+        "fast"
       ],
       "capabilities": [],
       "pricing": {
@@ -973,7 +1011,7 @@
       },
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "nemotron-3-super-free"
+      "_api_id": "north-mini-code-free"
     }
   ],
   "source": "opencode",
