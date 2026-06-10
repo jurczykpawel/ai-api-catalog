@@ -46,6 +46,32 @@ jobs:
           RUNWAY_API_KEY: ${{ secrets.RUNWAY_API_KEY }}
         run: bash scripts/update-litellm.sh
 
+      - name: Notify ntfy on degraded sources
+        if: always()
+        run: |
+          DEGRADED=""
+          if [ -f data/_source-health.json ]; then
+            DEGRADED=$(jq -r '.degraded[]? | "\(.source) \(.fresh)/\(.last_good)"' data/_source-health.json | paste -sd ", " -)
+          fi
+          FAILED=""
+          if [ -f data/_fetch-failures.txt ]; then
+            FAILED=$(paste -sd ", " data/_fetch-failures.txt)
+          fi
+          if [ -z "$DEGRADED" ] && [ -z "$FAILED" ]; then
+            echo "✓ Wszystkie źródła zdrowe — brak alertu."
+            exit 0
+          fi
+          MSG="Katalog zaktualizowany, ale użyto last-good dla zdegradowanych źródeł — wymagają naprawy."
+          [ -n "$DEGRADED" ] && MSG="$MSG"$'\n'"Skurczyły się (fresh/last-good): $DEGRADED"
+          [ -n "$FAILED" ]   && MSG="$MSG"$'\n'"Fetch padł (stale cache): $FAILED"
+          MSG="$MSG"$'\n'"Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -s -H "Authorization: Bearer ${{ secrets.NTFY_TOKEN }}" \
+               -H "Title: aiapi — źródło wymaga naprawy" \
+               -H "Priority: default" \
+               -H "Tags: warning,wrench" \
+               -d "$MSG" \
+               https://frog01-30925.wykr.es/alerts-da13b58d3e16
+
       - name: Commit updated data
         id: commit
         run: |

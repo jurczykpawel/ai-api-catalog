@@ -16,6 +16,10 @@ ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 DATA_DIR="$ROOT_DIR/data"
 LITELLM_URL="https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
 
+# Plik z nazwami źródeł których fetch całkiem padł (→ stale cache). Czytany przez CI → ntfy.
+FAILURES_FILE="$DATA_DIR/_fetch-failures.txt"
+rm -f "$FAILURES_FILE"
+
 # fetch_with_retry <name> <command...>
 # Runs command up to 3 times with 30s backoff. Falls back to cached file on all failures.
 fetch_with_retry() {
@@ -34,6 +38,7 @@ fetch_with_retry() {
     attempt=$((attempt + 1))
   done
   echo "  ✗ $name: wszystkie próby nieudane — używam istniejącego pliku cache"
+  echo "$name" >> "$FAILURES_FILE"
   return 0
 }
 

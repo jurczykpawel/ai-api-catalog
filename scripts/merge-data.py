@@ -15,9 +15,33 @@ Użycie:
 import json
 import argparse
 import re
+import subprocess
 import sys
 from datetime import date
 from pathlib import Path
+
+# ── Per-source degradation guard ─────────────────────────────────────
+# Jeśli świeży fetch źródła ma drastycznie mniej modeli niż wersja z git HEAD
+# (last-good), używamy last-good zamiast degradować katalog — ale zapisujemy to
+# do raportu, żeby CI wysłało powiadomienie (źródło wymaga naprawy).
+SHRINK_TOLERANCE = 0.25  # >25% spadek per źródło = degradacja
+MIN_PREV = 15            # malutkich źródeł nie pilnujemy (szum)
+
+
+def _prev_models(path_str, parser_fn):
+    """Parsuje wersję raw z git HEAD (last-good). None gdy niedostępna."""
+    try:
+        name = Path(path_str).name
+        repo = Path(path_str).resolve().parent.parent
+        res = subprocess.run(
+            ["git", "show", f"HEAD:data/{name}"],
+            capture_output=True, text=True, cwd=repo,
+        )
+        if res.returncode != 0 or not res.stdout.strip():
+            return None
+        return parser_fn(json.loads(res.stdout))
+    except Exception:
+        return None
 
 # ── Mapowanie: litellm_provider → nasz provider_id ──────────────
 PROVIDER_MAP = {
@@ -1225,6 +1249,17 @@ def main():
     parser.add_argument("--output",      required=True, help="Ścieżka wyjściowa models.json")
     args = parser.parse_args()
 
+    degraded = []  # źródła które oddały drastycznie mniej modeli → użyto last-good
+
+    def _guard(fresh, path_str, parser_fn, label, source_name):
+        """Zwraca fresh, chyba że skurczył się >25% vs HEAD — wtedy last-good + flaga."""
+        prev = _prev_models(path_str, parser_fn)
+        if prev is not None and len(prev) >= MIN_PREV and len(fresh) < len(prev) * (1 - SHRINK_TOLERANCE):
+            degraded.append({"source": source_name, "fresh": len(fresh), "last_good": len(prev)})
+            print(f"  ⚠ {label}: {len(fresh)} vs {len(prev)} w HEAD (spadek >25%) — używam last-good")
+            return prev
+        return fresh
+
     # Load LiteLLM
     litellm_path = Path(args.litellm)
     if not litellm_path.exists():
@@ -1234,10 +1269,10 @@ def main():
     with open(litellm_path) as f:
         litellm_raw = json.load(f)
 
-    litellm_models = parse_litellm(litellm_raw)
+    litellm_models = _guard(parse_litellm(litellm_raw), args.litellm, parse_litellm, "LiteLLM    ", "litellm")
     print(f"  LiteLLM:     {len(litellm_models)} modeli")
 
-    def load_optional(path_str, parser_fn, label):
+    def load_optional(path_str, parser_fn, label, source_name):
         if not path_str:
             return []
         p = Path(path_str)
@@ -1248,21 +1283,21 @@ def main():
             raw = json.load(f)
         result = parser_fn(raw)
         print(f"  {label}: {len(result)} modeli")
-        return result
+        return _guard(result, path_str, parser_fn, label, source_name)
 
-    or_models       = load_optional(args.openrouter,  parse_openrouter,  "OpenRouter ")
-    fal_models      = load_optional(args.fal,          parse_fal,         "fal.ai     ")
-    hf_models       = load_optional(args.huggingface,  parse_huggingface, "HuggingFace")
-    aimlapi_models  = load_optional(args.aimlapi,      parse_aimlapi,     "AIMLAPI    ")
-    piapi_models    = load_optional(args.piapi,         lambda d: parse_curated(d, "piapi",     "https://piapi.ai/?ref=tsa"), "piapi.ai   ")
-    wavespeed_models= load_optional(args.wavespeed,     lambda d: parse_curated(d, "wavespeed", None),                       "WaveSpeed  ")
-    kie_models      = load_optional(args.kie,           lambda d: parse_curated(d, "kie",       "https://kie.ai/?ref=tsa"),  "kie.ai     ")
-    runway_models   = load_optional(args.runway,        lambda d: parse_curated(d, "runway",    None),                       "Runway     ")
-    minimax_models  = load_optional(args.minimax,       lambda d: parse_curated(d, "minimax",   None),                       "MiniMax    ")
-    bedrock_models  = load_optional(args.bedrock,       lambda d: parse_curated(d, "bedrock",   None),                       "Bedrock    ")
-    replicate_models= load_optional(args.replicate,     parse_replicate,                                                       "Replicate  ")
-    fireworks_models= load_optional(args.fireworks,     lambda d: parse_fireworks(d, litellm_raw),                             "Fireworks  ")
-    opencode_models = load_optional(args.opencode,      lambda d: parse_curated(d, "opencode",  None),                        "OpenCode   ")
+    or_models       = load_optional(args.openrouter,  parse_openrouter,  "OpenRouter ", "openrouter")
+    fal_models      = load_optional(args.fal,          parse_fal,         "fal.ai     ", "fal")
+    hf_models       = load_optional(args.huggingface,  parse_huggingface, "HuggingFace", "huggingface")
+    aimlapi_models  = load_optional(args.aimlapi,      parse_aimlapi,     "AIMLAPI    ", "aimlapi")
+    piapi_models    = load_optional(args.piapi,         lambda d: parse_curated(d, "piapi",     "https://piapi.ai/?ref=tsa"), "piapi.ai   ", "piapi")
+    wavespeed_models= load_optional(args.wavespeed,     lambda d: parse_curated(d, "wavespeed", None),                       "WaveSpeed  ", "wavespeed")
+    kie_models      = load_optional(args.kie,           lambda d: parse_curated(d, "kie",       "https://kie.ai/?ref=tsa"),  "kie.ai     ", "kie")
+    runway_models   = load_optional(args.runway,        lambda d: parse_curated(d, "runway",    None),                       "Runway     ", "runway")
+    minimax_models  = load_optional(args.minimax,       lambda d: parse_curated(d, "minimax",   None),                       "MiniMax    ", "minimax")
+    bedrock_models  = load_optional(args.bedrock,       lambda d: parse_curated(d, "bedrock",   None),                       "Bedrock    ", "bedrock")
+    replicate_models= load_optional(args.replicate,     parse_replicate,                                                       "Replicate  ", "replicate")
+    fireworks_models= load_optional(args.fireworks,     lambda d: parse_fireworks(d, litellm_raw),                             "Fireworks  ", "fireworks")
+    opencode_models = load_optional(args.opencode,      lambda d: parse_curated(d, "opencode",  None),                        "OpenCode   ", "opencode")
 
     # Load manual
     manual_path = Path(args.manual)
@@ -1400,6 +1435,14 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"✓ Zapisano: {args.output}")
+
+    # Raport zdrowia źródeł (czytany przez CI → ntfy). Gitignored, nie commitowany.
+    health_path = Path(args.output).parent / "_source-health.json"
+    with open(health_path, "w", encoding="utf-8") as f:
+        json.dump({"checked_at": date.today().isoformat(), "degraded": degraded}, f, indent=2)
+    if degraded:
+        names = ", ".join(f"{d['source']}({d['fresh']}/{d['last_good']})" for d in degraded)
+        print(f"⚠ ŹRÓDŁA ZDEGRADOWANE (użyto last-good): {names}")
 
     # ── Opcja 1: individual model files + search index ──────────────
     output_dir = Path(args.output).parent
