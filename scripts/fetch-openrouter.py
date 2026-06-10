@@ -15,9 +15,10 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-# Frontend API zwraca 642+ modeli (vs 346 w /api/v1/models) — w tym image gen i experimental.
-# Nieudokumentowany endpoint, dlatego fallback na v1 jeśli nie odpowie.
-OR_FRONTEND_URL = "https://openrouter.ai/api/frontend/models"
+# Frontend API zwraca 760+ modeli (vs ~340 w /api/v1/models) — w tym image gen i experimental.
+# Nieudokumentowany endpoint (ruchomy cel!): w 06/2026 OpenRouter przeniósł go z
+# /api/frontend/models na /api/frontend/v1/models/find. Dlatego fallback na v1 jeśli nie odpowie.
+OR_FRONTEND_URL = "https://openrouter.ai/api/frontend/v1/models/find"
 OR_V1_URL = "https://openrouter.ai/api/v1/models"
 OUTPUT_DEFAULT = "data/openrouter-raw.json"
 
@@ -31,6 +32,18 @@ def _get(url: str) -> dict:
         return json.loads(response.read())
 
 
+def _extract_models(payload: dict) -> list:
+    """Normalizuje odpowiedź do listy modeli.
+
+    - /api/v1/models           → {"data": [ {...} ]}              (lista)
+    - /api/frontend/v1/models/find → {"data": {"models": [ {...} ]}}  (dict)
+    """
+    data = payload.get("data", [])
+    if isinstance(data, dict):
+        return data.get("models", [])
+    return data
+
+
 def fetch(output_path: str):
     print("→ Pobieranie listy modeli z OpenRouter API...")
 
@@ -39,7 +52,7 @@ def fetch(output_path: str):
 
     try:
         data = _get(OR_FRONTEND_URL)
-        models = data.get("data", [])
+        models = _extract_models(data)
         if len(models) < 400:
             raise ValueError(f"Za mało modeli ({len(models)}) — frontend API mogło się zmienić")
         print(f"✓ Pobrano {len(models)} modeli z OpenRouter (frontend API)")
@@ -49,7 +62,7 @@ def fetch(output_path: str):
         print(f"⚠ Frontend API niedostępny: {e}")
         print("  → Fallback na v1 API...")
         data = _get(OR_V1_URL)
-        models = data.get("data", [])
+        models = _extract_models(data)
         print(f"✓ Pobrano {len(models)} modeli z OpenRouter (v1 API — FALLBACK)")
 
     # Zapisz status (do monitoringu / healthchecku)
@@ -82,8 +95,11 @@ def fetch(output_path: str):
     out_path = Path(output_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Zapis w znormalizowanym kształcie {"data": [...]} (lista) — taki parsuje
+    # merge-data.parse_openrouter, niezależnie czy źródłem był frontend (zagnieżdżał
+    # listę w data.models) czy v1 (data już jest listą).
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+        json.dump({"data": models}, f, ensure_ascii=False, indent=2)
 
     print(f"✓ Zapisano: {out_path}")
     return models
