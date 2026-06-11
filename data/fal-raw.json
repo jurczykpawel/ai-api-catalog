@@ -113,7 +113,7 @@
         "description": "Nano Banana 2 is Google's new state-of-the-art fast image generation and editing model",
         "status": "active",
         "tags": [],
-        "updated_at": "2026-04-28T16:29:09.509Z",
+        "updated_at": "2026-06-11T00:04:55.093Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0a900b9e/ptbZcVWIQ_fXGGHfv8Zez_0ea5ca41bdf143a29e21e30a53120672.jpg",
         "model_url": "https://fal.run/fal-ai/nano-banana-2",
@@ -142,7 +142,7 @@
           "typography",
           "chatgpt-images-2"
         ],
-        "updated_at": "2026-06-02T20:56:01.948Z",
+        "updated_at": "2026-06-11T00:04:42.458Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0a970c4a/BkrYELYOiaZMXCw-pgRcB_QlgOenEx.png",
         "model_url": "https://fal.run/openai/gpt-image-2",
@@ -1314,7 +1314,7 @@
           "krea",
           "krea-2"
         ],
-        "updated_at": "2026-05-29T18:51:14.629Z",
+        "updated_at": "2026-06-11T00:05:06.794Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0a9c2fb3/ATU9JDQwjBy0xRtTwPbft_7338811c31e94f11b04ef25761fe530f.jpg",
         "model_url": "https://fal.run/krea/v2/large/text-to-image",
@@ -1804,7 +1804,7 @@
           "typography",
           "stylized"
         ],
-        "updated_at": "2026-06-09T23:24:32.061Z",
+        "updated_at": "2026-06-11T00:05:19.252Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0a9cb567/UOWMMlOcuBA-NRLAWnP2G_8e662a91cf494675a0f6a83852cdb6e1.jpg",
         "model_url": "https://fal.run/ideogram/v4",
@@ -1816,6 +1816,7 @@
         },
         "highlighted": false,
         "kind": "inference",
+        "stream_url": "https://fal.run/ideogram/v4/stream",
         "pinned": false,
         "training_endpoint_ids": [
           "ideogram/v4/trainer"
@@ -7356,7 +7357,7 @@
           "typography",
           "stylized"
         ],
-        "updated_at": "2026-06-09T23:24:14.922Z",
+        "updated_at": "2026-06-10T22:07:34.385Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0a9d8504/vZt4MS5ALRjG0SPhvD7iC_36e62ea6ddaa4fb79692b0cd37fb9204.jpg",
         "model_url": "https://fal.run/ideogram/v4/lora",
@@ -7368,6 +7369,7 @@
         },
         "highlighted": false,
         "kind": "inference",
+        "stream_url": "https://fal.run/ideogram/v4/lora/stream",
         "pinned": false,
         "training_endpoint_ids": [
           "ideogram/v4/trainer"
@@ -22766,6 +22768,31 @@
       "_our_category": "video_generation"
     },
     {
+      "endpoint_id": "nvidia/nemotron-asr-multilingual/asr",
+      "metadata": {
+        "display_name": "Nemotron Asr Multilingual",
+        "category": "speech-to-text",
+        "description": "Nemotron-ASR-Streaming is a multi lingual, streaming Automatic Speech Recognition (ASR) engineered to deliver high-quality multi lingual transcription across both low-latency streaming and high-throughput batch workloads.",
+        "status": "active",
+        "tags": [
+          "utility",
+          "transcribe",
+          ""
+        ],
+        "updated_at": "2026-06-10T17:20:08.712Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0a9c2fbf/6-zNQDwpy54LnxDQx2dEO_a053aeaf6ad14a4fb4bce191086d95f1.jpg",
+        "model_url": "https://fal.run/nvidia/nemotron-asr-multilingual/asr",
+        "license_type": "commercial",
+        "date": "2026-06-01T19:37:56.514Z",
+        "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/nvidia/nemotron-asr-multilingual/asr/stream",
+        "pinned": false
+      },
+      "_our_category": "audio_stt"
+    },
+    {
       "endpoint_id": "fal-ai/ovis-image",
       "metadata": {
         "display_name": "Ovis Image",
@@ -23442,6 +23469,30 @@
       "_our_category": "music_generation"
     },
     {
+      "endpoint_id": "bria/genfill/v2",
+      "metadata": {
+        "display_name": "Genfill",
+        "category": "image-to-image",
+        "description": "The GenFill Route enables the generation of objects by prompt in a specific region of an image.\nYou can define the area for object generation by using a mask that outlines the region where the object will be created. Our model is optimized to work seamlessly with blob-shaped masks.",
+        "status": "active",
+        "tags": [],
+        "updated_at": "2026-06-10T18:55:53.634Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0a9d7ee2/ePYzrUawXgdh7Hq4be-v6_bd443c983e2e47d39d3ebd5ad65406a9.jpg",
+        "model_url": "https://fal.run/bria/genfill/v2",
+        "license_type": "commercial",
+        "date": "2026-06-08T16:59:30.074Z",
+        "group": {
+          "key": "bria",
+          "label": "GenFill v2"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "image_generation"
+    },
+    {
       "endpoint_id": "fal-ai/stable-audio-25/inpaint",
       "metadata": {
         "display_name": "Stable Audio 25",
@@ -23856,6 +23907,35 @@
         "pinned": false
       },
       "_our_category": "image_generation"
+    },
+    {
+      "endpoint_id": "bria/video/background-removal/realtime",
+      "metadata": {
+        "display_name": "Bria's VRMBG 3.0 Realtime",
+        "category": "video-to-video",
+        "description": "Remove video backgrounds in real time with Bria’s VRMBG 3.0 model. Built for live streaming, real-time video apps, content creation, and low-latency workflows that need fast, accurate background removal.",
+        "status": "active",
+        "tags": [
+          "bria",
+          "video",
+          "background-removal",
+          "realtime"
+        ],
+        "updated_at": "2026-06-10T16:27:36.192Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0a9d92ae/8pODM5dvxzvcRlvKxkjJt_da7ef3699aa947fdaca7b12cdc223500.jpg",
+        "model_url": "https://fal.run/bria/video/background-removal/realtime",
+        "license_type": "commercial",
+        "date": "2026-06-09T07:04:18.448Z",
+        "group": {
+          "key": "Bria-RMBG",
+          "label": "Video Remove Background Realtime"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
     },
     {
       "endpoint_id": "fal-ai/finegrain-eraser",
@@ -29274,6 +29354,33 @@
       "_our_category": "image_generation"
     },
     {
+      "endpoint_id": "bria/video/background-removal/v3",
+      "metadata": {
+        "display_name": "Bria's VRMBG 3.0",
+        "category": "video-to-video",
+        "description": "Remove backgrounds from any video with Bria's VRMBG 3.0. Fast, accurate background removal across talking heads, podcasts, product videos, commercials, and cinematic footage.",
+        "status": "active",
+        "tags": [
+          "video-to-video",
+          ""
+        ],
+        "updated_at": "2026-06-10T16:27:25.190Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0a9d7900/xGTehR9rmBwM3AQm_wwzT_473aa24e726a4f71a494e03c354fd91f.jpg",
+        "model_url": "https://fal.run/bria/video/background-removal/v3",
+        "license_type": "commercial",
+        "date": "2026-06-08T12:48:28.315Z",
+        "group": {
+          "key": "Bria-RMBG",
+          "label": "Video Remove Background "
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
       "endpoint_id": "fal-ai/calligrapher",
       "metadata": {
         "display_name": "Calligrapher",
@@ -29984,5 +30091,5 @@
       "_our_category": "music_generation"
     }
   ],
-  "total_fetched": 1321
+  "total_fetched": 1325
 }
