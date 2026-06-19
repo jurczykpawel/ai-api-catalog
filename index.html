@@ -6,7 +6,38 @@
 <title>Katalog API modeli AI — TechSkills Academy</title>
 <meta name="description" content="Kompletny katalog modeli AI dostępnych przez API. Porównaj ceny, dostawców i możliwości — od LLM po generowanie wideo i audio.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23008aff'/><rect x='6' y='6' width='8' height='8' rx='2' fill='white' opacity='.9'/><rect x='18' y='6' width='8' height='8' rx='2' fill='white' opacity='.6'/><rect x='6' y='18' width='8' height='8' rx='2' fill='white' opacity='.6'/><rect x='18' y='18' width='8' height='8' rx='2' fill='white' opacity='.3'/></svg>">
-<script defer src="https://stats.techskills.academy/script.js" data-website-id="3a14bbb3-3211-495b-9cb5-310ebd4d43a0"></script>
+<!-- ============================================================
+     ANALYTICS + CONSENT CONFIG
+     GTM container id  -> GTM-NTX3TGZR
+     Umami website id  -> c411854f-d12e-476a-8c8a-d482a65bd271
+     ============================================================ -->
+<script>
+  window.__AIAPI_GTM_ID = "GTM-NTX3TGZR";
+  window.__AIAPI_UMAMI_ID = "c411854f-d12e-476a-8c8a-d482a65bd271";
+  window.__AIAPI_UMAMI_SRC = "https://stats.techskills.academy/script.js";
+</script>
+
+<!-- Google Consent Mode V2 defaults (everything denied until opt-in). Set BEFORE GTM loads. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "granted",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    wait_for_update: 500
+  });
+  window.dataLayer.push({ source_brand: "aiapi" });
+</script>
+
+<!-- vanilla-cookieconsent v3 (CDN, jsdelivr) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -1805,6 +1836,11 @@
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTX3TGZR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
@@ -2028,6 +2064,7 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
         <span data-i18n="reportError">Report error</span>
       </a>
+      <a href="#" data-cc="show-preferences" class="footer-report-link" data-i18n="cookieSettings">Cookies</a>
       <br><span class="footer-eco" style="opacity:.7;font-size:.85em;">Part of the <a href="https://techskills.academy">techskills.academy</a> ecosystem · <a href="https://techskills.academy/narzedzia">Tools</a> · <a href="https://techskills.academy/#ekosystem">Open source</a></span>
     </div>
     <div class="footer-update">
@@ -2108,6 +2145,7 @@ const T = {
     presetVideo:    'Video generation',
     presetEmbedding:'Embeddings',
     reportError:    'Report error',
+    cookieSettings: 'Cookies',
     reportErrorSub: 'Wrong price or missing provider? Let us know.',
     thModel:        'Model',
     thInputPrice:   'Input / 1M',
@@ -2192,6 +2230,7 @@ const T = {
     presetVideo:    'Generowanie wideo',
     presetEmbedding:'Embeddingi',
     reportError:    'Zgłoś błąd',
+    cookieSettings: 'Pliki cookie',
     reportErrorSub: 'Błędna cena lub brak dostawcy? Daj nam znać.',
     thModel:        'Model',
     thInputPrice:   'Input / 1M',
@@ -3646,6 +3685,123 @@ function renderCompareTable() {
 // ─── INIT ────────────────────────────────────────────────────────
 loadData();
 
+</script>
+<!-- ============================================================
+     COOKIE CONSENT (vanilla-cookieconsent v3) + analytics loaders
+     On analytics consent -> gtag update + load GTM + load Umami.
+     GTM-NTX3TGZR / c411854f-d12e-476a-8c8a-d482a65bd271
+     ============================================================ -->
+<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script>
+<script>
+(function(){
+  var GTM_ID = window.__AIAPI_GTM_ID;
+  var UMAMI_ID = window.__AIAPI_UMAMI_ID;
+  var UMAMI_SRC = window.__AIAPI_UMAMI_SRC || "https://stats.techskills.academy/script.js";
+  var gtmLoaded = false, umamiLoaded = false;
+
+  function loadGtm(){
+    if (gtmLoaded || !GTM_ID) return;
+    gtmLoaded = true;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer',GTM_ID);
+  }
+  function loadUmami(){
+    if (umamiLoaded || !UMAMI_ID) return;
+    umamiLoaded = true;
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = UMAMI_SRC;
+    s.setAttribute('data-website-id', UMAMI_ID);
+    s.setAttribute('data-domains', 'aiapi.techskills.academy');
+    document.head.appendChild(s);
+  }
+  function onAnalytics(cc){
+    if (cc.acceptedCategory('analytics')) {
+      if (window.gtag) window.gtag('consent','update',{ analytics_storage:'granted' });
+      loadGtm();
+      loadUmami();
+    }
+  }
+
+  var ccLang = (localStorage.getItem('ai-catalog-lang') === 'pl') ? 'pl' : 'en';
+
+  CookieConsent.run({
+    guiOptions: {
+      consentModal: { layout: 'box', position: 'bottom left' },
+      preferencesModal: { layout: 'box' }
+    },
+    categories: {
+      necessary: { enabled: true, readOnly: true },
+      analytics: {}
+    },
+    onFirstConsent: function(){ onAnalytics(CookieConsent); },
+    onConsent: function(){ onAnalytics(CookieConsent); },
+    onChange: function(){ onAnalytics(CookieConsent); },
+    language: {
+      default: ccLang,
+      translations: {
+        en: {
+          consentModal: {
+            title: 'Cookies',
+            description: 'We use cookies to analyze site traffic. You can accept all or use only the necessary ones.',
+            acceptAllBtn: 'Accept all',
+            acceptNecessaryBtn: 'Necessary only',
+            showPreferencesBtn: 'Settings'
+          },
+          preferencesModal: {
+            title: 'Cookie settings',
+            acceptAllBtn: 'Accept all',
+            acceptNecessaryBtn: 'Necessary only',
+            savePreferencesBtn: 'Save choices',
+            closeIconLabel: 'Close',
+            sections: [
+              {
+                title: 'Necessary',
+                description: 'Required for the site to work properly. Always active.',
+                linkedCategory: 'necessary'
+              },
+              {
+                title: 'Analytics',
+                description: 'Helps us understand how you use the site (Google Tag Manager, Umami).',
+                linkedCategory: 'analytics'
+              }
+            ]
+          }
+        },
+        pl: {
+          consentModal: {
+            title: 'Pliki cookie',
+            description: 'Używamy plików cookie do analizy ruchu na stronie. Możesz zaakceptować wszystkie lub korzystać tylko z niezbędnych.',
+            acceptAllBtn: 'Akceptuj wszystkie',
+            acceptNecessaryBtn: 'Tylko niezbędne',
+            showPreferencesBtn: 'Ustawienia'
+          },
+          preferencesModal: {
+            title: 'Ustawienia plików cookie',
+            acceptAllBtn: 'Akceptuj wszystkie',
+            acceptNecessaryBtn: 'Tylko niezbędne',
+            savePreferencesBtn: 'Zapisz wybór',
+            closeIconLabel: 'Zamknij',
+            sections: [
+              {
+                title: 'Niezbędne',
+                description: 'Wymagane do prawidłowego działania strony. Zawsze aktywne.',
+                linkedCategory: 'necessary'
+              },
+              {
+                title: 'Analityka',
+                description: 'Pomaga nam zrozumieć, jak korzystasz ze strony (Google Tag Manager, Umami).',
+                linkedCategory: 'analytics'
+              }
+            ]
+          }
+        }
+      }
+    }
+  });
+})();
 </script>
 </body>
 </html>
