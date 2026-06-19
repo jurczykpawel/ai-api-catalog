@@ -3728,6 +3728,9 @@ loadData();
         ad_personalization: marketing ? 'granted' : 'denied'
       });
     }
+    // Notify GTM so the Meta Pixel tag (gated on this event + ad_storage) fires on first-accept AND every consented load.
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'cookieconsent_change' });
     // GTM holds individual tags behind their own consent gates; load it when EITHER is granted.
     if (analytics || marketing) {
       loadGtm();
