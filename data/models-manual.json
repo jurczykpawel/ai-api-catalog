@@ -4434,6 +4434,29 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "mistral-ocr",
+      "name": "Mistral OCR",
+      "category": "llm",
+      "description": "Mistral's document intelligence model providing structured document extraction with bounding boxes, block-type classification, and confidence scores, outperforming competitors in blind tests.",
+      "tags": [
+        "mistral"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-06-25",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "mistral",
+          "pricing": {
+            "notes": "Pay-per-use via Mistral API; check mistral.ai for current pricing"
+          },
+          "url": "https://docs.mistral.ai/capabilities/document/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     }
   ]
 }
