@@ -136,6 +136,27 @@
       "_api_id": "claude-opus-4-1"
     },
     {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "category": "llm",
+      "description": "Claude Sonnet 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-sonnet-5"
+    },
+    {
       "id": "claude-sonnet-4-6",
       "name": "Claude Sonnet 4 6",
       "category": "llm",
@@ -780,6 +801,25 @@
       "_api_id": "glm-5"
     },
     {
+      "id": "minimax-m3",
+      "name": "Minimax M3",
+      "category": "llm",
+      "description": "Minimax M3 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "minimax",
+        "fast",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "minimax-m3"
+    },
+    {
       "id": "minimax-m2-7",
       "name": "Minimax M2.7",
       "category": "llm",
@@ -817,6 +857,24 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "minimax-m2.5"
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "name": "Kimi K2.7 Code",
+      "category": "llm",
+      "description": "Kimi K2.7 Code via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "moonshot",
+        "kimi"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "kimi-k2.7-code"
     },
     {
       "id": "kimi-k2-6",
@@ -947,49 +1005,6 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "mimo-v2.5-free"
-    },
-    {
-      "id": "qwen3-6-plus-free",
-      "name": "Qwen3.6 Plus Free",
-      "category": "llm",
-      "description": "Qwen3.6 Plus Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free",
-        "alibaba",
-        "qwen"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "qwen3.6-plus-free"
-    },
-    {
-      "id": "minimax-m3-free",
-      "name": "Minimax M3 Free",
-      "category": "llm",
-      "description": "Minimax M3 Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free",
-        "minimax",
-        "fast",
-        "powerful"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "minimax-m3-free"
     },
     {
       "id": "nemotron-3-ultra-free",
