@@ -3265,37 +3265,38 @@ function escAttr(str) {
 // Fallback: most capable non-reasoning LLM from that provider.
 const FLAGSHIP_MODELS = {
   openai:    ['gpt-5-5-pro', 'gpt-5-4-pro', 'gpt-5', 'gpt-4-1', 'gpt-4o'],
-  anthropic: ['claude-opus-4-6', 'claude-4-sonnet', 'claude-4-opus'],
-  google:    ['vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
-  xai:       ['xai-grok-3-fast-beta', 'xai-grok-beta'],
-  deepseek:  ['deepseek-deepseek-v4-pro', 'deepseek-deepseek-chat-v3-1', 'deepseek-deepseek-chat', 'deepseek-chat'],
-  mistral:   ['mistral-mistral-large-latest', 'mistral-mistral-large-2402'],
+  anthropic: ['claude-opus-4-8', 'claude-sonnet-5', 'claude-opus-4-6', 'claude-4-opus', 'claude-4-sonnet'],
+  google:    ['vertex_ai-gemini-3-1-pro-preview', 'vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
+  xai:       ['xai-grok-4-3-latest', 'xai-grok-4-latest', 'xai-grok-3-fast-beta', 'xai-grok-beta'],
+  deepseek:  ['deepseek-deepseek-v3-2', 'deepseek-deepseek-v3-2-speciale', 'deepseek-deepseek-chat-v3-1', 'deepseek-deepseek-chat', 'deepseek-chat'],
+  mistral:   ['mistral-mistral-large-latest', 'mistral-mistral-large-2512', 'mistral-mistral-large-2402'],
 };
 
 const CODING_MODELS = {
-  anthropic: ['claude-4-sonnet', 'claude-opus-4-6', 'claude-4-opus'],
-  openai:    ['gpt-4-1', 'gpt-4o', 'gpt-5'],
-  google:    ['vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
-  deepseek:  ['deepseek-deepseek-chat', 'deepseek-chat'],
-  xai:       ['xai-grok-3-fast-beta'],
+  openai:    ['gpt-5-3-codex', 'gpt-5-2-codex', 'gpt-5-1-codex-max', 'gpt-5', 'gpt-4-1', 'gpt-4o'],
+  anthropic: ['claude-opus-4-8', 'claude-sonnet-5', 'claude-4-sonnet', 'claude-opus-4-6', 'claude-4-opus'],
+  google:    ['vertex_ai-gemini-3-1-pro-preview', 'vertex_ai-gemini-3-pro-preview', 'gemini-2-0-flash'],
+  deepseek:  ['deepseek-deepseek-v3-2', 'deepseek-deepseek-chat-v3-1', 'deepseek-deepseek-chat', 'deepseek-chat'],
+  xai:       ['xai-grok-code-fast-1', 'xai-grok-4-3-latest', 'xai-grok-3-fast-beta'],
+  mistral:   ['mistral-devstral-medium-latest', 'mistral-devstral-2512', 'mistral-mistral-large-latest'],
 };
 
 const REASONING_MODELS = {
-  openai:    ['o3-pro', 'gpt-5-4-pro', 'o1-pro'],
-  anthropic: ['claude-opus-4-6', 'claude-4-opus', 'claude-3-7-sonnet'],
-  google:    ['gemini-2-5-pro', 'vertex_ai-gemini-3-pro-preview'],
-  deepseek:  ['deepseek-reasoner', 'deepseek-deepseek-reasoner'],
-  xai:       ['xai-grok-4-20-beta-0309-reasoning', 'xai-grok-3-mini-fast'],
+  openai:    ['gpt-5-5-pro', 'gpt-5-4-pro', 'o3-pro', 'o1-pro'],
+  anthropic: ['claude-opus-4-8', 'claude-sonnet-5', 'claude-opus-4-6', 'claude-4-opus', 'claude-3-7-sonnet'],
+  google:    ['vertex_ai-gemini-3-1-pro-preview', 'vertex_ai-gemini-3-pro-preview', 'gemini-2-5-pro'],
+  deepseek:  ['deepseek-deepseek-reasoner', 'deepseek-reasoner'],
+  xai:       ['xai-grok-4-20-beta-0309-reasoning', 'xai-grok-4-1-fast-reasoning-latest', 'xai-grok-3-mini-fast'],
 };
 
 const IMAGE_MODELS = [
-  'openai-gpt-image-2', 'flux-2-pro', 'dalle-3', 'ideogram-v3',
-  'nano-banana-2', 'gemini-gemini-2-5-flash-image', 'imagen-4', 'seedream-4-5',
+  'gpt-image-2', 'black-forest-labs-flux-2-pro', 'dalle-3', 'ideogram-v4',
+  'nano-banana-2', 'gemini-gemini-2-5-flash-image', 'replicate-imagen-4-ultra', 'bytedance-seedream-v4-5',
 ];
 
 const VIDEO_MODELS = [
-  'sora-2', 'veo-3-1', 'runway-gen4', 'kling-3-0',
-  'luma-ray-2', 'hailuo-2-3', 'seedance-2', 'wan-2-6',
+  'sora-2', 'veo-3-1', 'runway-gen4', 'replicate-kling-v3-video',
+  'luma-agent-ray-v3-2', 'minimax-hailuo-2-3-pro', 'seedance-2', 'wan-v2-7',
 ];
 
 // Resolve preferred models: try each candidate in order, return first that exists in data
