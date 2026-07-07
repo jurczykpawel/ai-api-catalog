@@ -66,4 +66,4 @@ jobs:
                -H "Priority: high" \
                -H "Tags: warning,rocket" \
                -d "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-               https://frog01-30925.wykr.es/alerts-da13b58d3e16
+               https://ntfy.szepiet.ovh/alerts-da13b58d3e16

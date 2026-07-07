@@ -70,7 +70,7 @@ jobs:
                -H "Priority: default" \
                -H "Tags: warning,wrench" \
                -d "$MSG" \
-               https://frog01-30925.wykr.es/alerts-da13b58d3e16
+               https://ntfy.szepiet.ovh/alerts-da13b58d3e16
 
       - name: Commit updated data
         id: commit
@@ -101,4 +101,4 @@ jobs:
                -H "Priority: high" \
                -H "Tags: warning,robot" \
                -d "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-               https://frog01-30925.wykr.es/alerts-da13b58d3e16
+               https://ntfy.szepiet.ovh/alerts-da13b58d3e16
