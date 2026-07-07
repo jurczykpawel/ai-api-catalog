@@ -2257,7 +2257,7 @@ const T = {
 // ships English defaults — avoids an innerHTML mutation that would push LCP.
 if (lang !== 'en') applyTranslations();
 
-function t(key) {
+function tr(key) {
   return T[lang]?.[key] ?? T['en']?.[key] ?? key;
 }
 
@@ -2310,16 +2310,16 @@ function setLang(newLang) {
 
 function applyTranslations() {
   document.documentElement.lang = lang;
-  document.getElementById('search').placeholder = t('searchPlaceholder');
-  document.getElementById('search').setAttribute('aria-label', t('searchPlaceholder'));
+  document.getElementById('search').placeholder = tr('searchPlaceholder');
+  document.getElementById('search').setAttribute('aria-label', tr('searchPlaceholder'));
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
-    const val = t(key);
+    const val = tr(key);
     if (val !== key && el.innerHTML !== val) el.innerHTML = val;
   });
   // Sort select options
   document.querySelectorAll('#sort-select option[data-i18n]').forEach(el => {
-    el.textContent = t(el.dataset.i18n);
+    el.textContent = tr(el.dataset.i18n);
   });
   // Lang buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -2329,7 +2329,7 @@ function applyTranslations() {
 
 function updateNavCount() {
   const el = document.getElementById('nav-count');
-  if (el && allModels.length) el.textContent = allModels.length + ' ' + t('models');
+  if (el && allModels.length) el.textContent = allModels.length + ' ' + tr('models');
 }
 
 // ─── STATE ───────────────────────────────────────────────────────
@@ -2370,7 +2370,7 @@ async function loadData() {
     allProviders = {};
     providersData.providers.forEach(p => { allProviders[p.id] = p; });
 
-    document.getElementById('footer-date').textContent = t('dataFrom') + ' ' + modelsData.updated_at;
+    document.getElementById('footer-date').textContent = tr('dataFrom') + ' ' + modelsData.updated_at;
     const sourcesEl = document.getElementById('footer-sources');
     const srcNames = {
       fal: 'fal.ai', openrouter: 'OpenRouter', litellm: 'LiteLLM',
@@ -2438,7 +2438,7 @@ function buildCategoryPills() {
   container.innerHTML = '';
   container.appendChild(allPill);
   // Update "All" pill text
-  allPill.querySelector('span:not(.cat-icon):not(.cat-count)').textContent = t('filterAll');
+  allPill.querySelector('span:not(.cat-icon):not(.cat-count)').textContent = tr('filterAll');
 
   // Count per category
   const counts = { all: allModels.length };
@@ -2749,7 +2749,7 @@ function renderVersionBadge(model) {
   const prev = model.versions.filter(v => !v.is_current)[0];
   return `<div class="version-row">
     <span class="version-tag current">v${escHtml(current.version)}</span>
-    ${prev ? `<span class="version-tag">${t('prevLabel')} v${escHtml(prev.version)}</span>` : ''}
+    ${prev ? `<span class="version-tag">${tr('prevLabel')} v${escHtml(prev.version)}</span>` : ''}
   </div>`;
 }
 
@@ -2782,18 +2782,18 @@ function renderCard(model, idx) {
 
   const providerCountHtml = localOnly
     ? `<span class="provider-count local-only" title="Brak publicznego API — dostępny lokalnie${model.local_tool ? ' via ' + model.local_tool : ''}">tylko lokalnie</span>`
-    : `<span class="provider-count">${providerCount} ${providerCount === 1 ? t('thProvider').toLowerCase() : t('filterProvider').toLowerCase()}</span>`;
+    : `<span class="provider-count">${providerCount} ${providerCount === 1 ? tr('thProvider').toLowerCase() : tr('filterProvider').toLowerCase()}</span>`;
 
   const bottomHtml = localOnly
     ? `<div class="best-price"><span class="price-label">uruchom lokalnie</span><span class="price-value unknown">${escHtml(model.local_tool || 'open source')}</span></div>`
     : `<div class="best-price">
-        <span class="price-label">${t('bestPrice')}</span>
+        <span class="price-label">${tr('bestPrice')}</span>
         <span class="price-value ${bestPrice.isNote ? 'unknown' : ''}">${bestPrice.value}</span>
         <span class="price-unit">${bestPrice.unit}</span>
       </div>`;
 
   return `
-  <div class="model-card${localOnly ? ' local-only-card' : ''}" data-id="${model.id}" style="${delay}" role="button" tabindex="0" aria-label="${escHtml(model.name)} — ${escHtml(catName)}, ${t('compare')}">
+  <div class="model-card${localOnly ? ' local-only-card' : ''}" data-id="${model.id}" style="${delay}" role="button" tabindex="0" aria-label="${escHtml(model.name)} — ${escHtml(catName)}, ${tr('compare')}">
     <div class="card-top">
       <div class="card-badges">
         <span class="badge-cat">${cat.icon} ${catName}</span>
@@ -2809,7 +2809,7 @@ function renderCard(model, idx) {
     <div class="card-bottom">
       ${bottomHtml}
       <div class="card-cta" aria-hidden="true">
-        ${t('compare')}
+        ${tr('compare')}
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
       </div>
     </div>
@@ -2845,15 +2845,15 @@ function openModal(modelId) {
   // Meta
   const meta = [];
   if (model.context_k) {
-    meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h10"/></svg><strong>${model.context_k}k</strong> ${t('contextTokens')}</div>`);
+    meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h10"/></svg><strong>${model.context_k}k</strong> ${tr('contextTokens')}</div>`);
   }
-  meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>${t('updatedLabel')} <strong>${model.updated_at}</strong></div>`);
+  meta.push(`<div class="meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>${tr('updatedLabel')} <strong>${model.updated_at}</strong></div>`);
   // Versions
   if (model.versions && model.versions.length > 0) {
     const vHtml = model.versions.map(v =>
       `<span class="version-pill ${v.is_current ? 'current' : ''}">v${escHtml(v.version)}${v.released ? ' <span style="opacity:.5">'+escHtml(v.released)+'</span>' : ''}</span>`
     ).join('');
-    meta.push(`<div class="meta-item">${t('versionsLabel')} ${vHtml}</div>`);
+    meta.push(`<div class="meta-item">${tr('versionsLabel')} ${vHtml}</div>`);
   }
   if (model.tags && model.tags.length > 0) {
     meta.push(`<div class="meta-item">${model.tags.map(t => `<span style="padding:2px 6px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-3)">${t}</span>`).join('')}</div>`);
@@ -2888,7 +2888,7 @@ function openModal(modelId) {
       priceHtml = `<td><div class="price-cell notes">${escHtml(formatted.value)}</div><div class="price-note">${escHtml(formatted.unit)}</div></td><td></td>`;
     } else {
       priceHtml = `
-        <td><div class="price-cell" style="${p.available ? '' : 'color:var(--text-3)'}">${escHtml(formatted.value)}${isBest ? ` <span class="best-badge">${t('cheapest')}</span>` : ''}</div></td>
+        <td><div class="price-cell" style="${p.available ? '' : 'color:var(--text-3)'}">${escHtml(formatted.value)}${isBest ? ` <span class="best-badge">${tr('cheapest')}</span>` : ''}</div></td>
         <td><span style="font-size:12px;color:var(--text-3);font-family:'JetBrains Mono',monospace;">${escHtml(formatted.unit)}</span></td>
       `;
     }
@@ -2913,7 +2913,7 @@ function openModal(modelId) {
           <div class="prov-dot" style="background:${prov.logo_color || '#666'}"></div>
           <div>
             <div class="prov-name">${escHtml(prov.name)}</div>
-            <div class="prov-type">${prov.type === 'aggregator' ? t('typeAggregator') : prov.type === 'direct' ? t('typeDirect') : ''}</div>
+            <div class="prov-type">${prov.type === 'aggregator' ? tr('typeAggregator') : prov.type === 'direct' ? tr('typeDirect') : ''}</div>
           </div>
         </div>
       </td>
@@ -2926,9 +2926,9 @@ function openModal(modelId) {
           data-track-prop-model="${escAttr(model.id)}"
           data-track-prop-category="${escAttr(model.category)}"
           data-track-prop-affiliate="${isAffiliate ? '1' : '0'}">
-          ${isAffiliate ? '★ ' : ''}${t('visitLink')}
+          ${isAffiliate ? '★ ' : ''}${tr('visitLink')}
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="m10 14 11-11"/></svg>
-        </a>` : !p.available ? `<span style="font-size:11px;color:var(--text-3)">${t('unavailable')}</span>` : ''}
+        </a>` : !p.available ? `<span style="font-size:11px;color:var(--text-3)">${tr('unavailable')}</span>` : ''}
       </td>
     `;
     tbody.appendChild(row);
@@ -2939,7 +2939,7 @@ function openModal(modelId) {
   const reportUrl = buildReportUrl(model);
   reportEl.innerHTML = `<a href="${escAttr(reportUrl)}" target="_blank" rel="noopener" class="report-link">
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-    ${t('reportError')}
+    ${tr('reportError')}
   </a>`;
 
   lastFocusBeforeModal = document.activeElement;
@@ -2985,10 +2985,10 @@ function copyModalLink() {
     const btn = document.getElementById('modal-copy-link');
     const label = document.getElementById('modal-copy-label');
     btn.classList.add('copied');
-    label.textContent = t('copied');
+    label.textContent = tr('copied');
     setTimeout(() => {
       btn.classList.remove('copied');
-      label.textContent = t('copyLink');
+      label.textContent = tr('copyLink');
     }, 2000);
   });
 }
@@ -3055,7 +3055,7 @@ function updateActiveFilters() {
     chips.push(`<button type="button" class="filter-chip" onclick="clearCategory()" aria-label="Usuń filtr: ${getCatName(cat)}">${cat.icon} ${getCatName(cat)} ×</button>`);
   }
   if (filters.search) {
-    chips.push(`<button type="button" class="filter-chip" onclick="clearSearch()" aria-label="Usuń wyszukiwanie">${t('searchFilter')}: "${escHtml(filters.search)}" ×</button>`);
+    chips.push(`<button type="button" class="filter-chip" onclick="clearSearch()" aria-label="Usuń wyszukiwanie">${tr('searchFilter')}: "${escHtml(filters.search)}" ×</button>`);
   }
   filters.providers.forEach(pid => {
     const p = allProviders[pid];
@@ -3065,7 +3065,7 @@ function updateActiveFilters() {
   if (filters.capReasoning) chips.push(`<button type="button" class="filter-chip" onclick="clearCap('reasoning')" aria-label="Usuń filtr: Reasoning">Reasoning ×</button>`);
   if (filters.capFunctions) chips.push(`<button type="button" class="filter-chip" onclick="clearCap('functions')" aria-label="Usuń filtr: Functions">Functions ×</button>`);
   if (filters.capSearch)    chips.push(`<button type="button" class="filter-chip" onclick="clearCap('search')" aria-label="Usuń filtr: Web Search">Web Search ×</button>`);
-  if (filters.multiProvider) chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('multi')" aria-label="Usuń filtr: ${t('optionMulti')}">${t('optionMulti')} ×</button>`);
+  if (filters.multiProvider) chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('multi')" aria-label="Usuń filtr: ${tr('optionMulti')}">${tr('optionMulti')} ×</button>`);
   if (filters.affiliate)    chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('affiliate')" aria-label="Usuń filtr: Affiliate">Affiliate ×</button>`);
   if (filters.openSource)   chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('opensource')" aria-label="Usuń filtr: OSS">OSS ×</button>`);
   if (filters.freeApi)      chips.push(`<button type="button" class="filter-chip" onclick="clearToggle('freeapi')" aria-label="Usuń filtr: Free API">Free API ×</button>`);
@@ -3439,7 +3439,7 @@ function buildHeroPresetLinks() {
       data-track-event="preset_click"
       data-track-prop-preset="${id}"
       data-track-prop-source="hero"
-      onclick="event.preventDefault();goToPreset('${id}')">${preset.icon} ${t(preset.nameKey)}</a>`;
+      onclick="event.preventDefault();goToPreset('${id}')">${preset.icon} ${tr(preset.nameKey)}</a>`;
   }).join('');
 }
 
@@ -3468,8 +3468,8 @@ function buildPresets() {
     card.dataset.trackPropSource = 'page';
     card.innerHTML = `
       <div class="preset-card-icon">${preset.icon}</div>
-      <div class="preset-card-name">${t(preset.nameKey)}</div>
-      <div class="preset-card-count">${modelIds.length} ${t('models')}</div>
+      <div class="preset-card-name">${tr(preset.nameKey)}</div>
+      <div class="preset-card-count">${modelIds.length} ${tr('models')}</div>
       <div class="preset-card-models">${dotsHtml}</div>
     `;
     card.addEventListener('click', () => selectPreset(preset.id));
@@ -3535,10 +3535,10 @@ function renderCompareBar() {
   }
 
   html += `<div class="compare-add-btn" id="compare-add-btn" onclick="toggleCompareSearch(event)">
-    ${t('compareAddModel')}
+    ${tr('compareAddModel')}
     <div class="compare-search-dropdown" id="compare-search-dropdown">
       <input type="text" class="compare-search-input" id="compare-search-input"
-             placeholder="${t('compareSearchPh')}" onclick="event.stopPropagation()"
+             placeholder="${tr('compareSearchPh')}" onclick="event.stopPropagation()"
              oninput="filterCompareSearch(this.value)">
       <div id="compare-search-results"></div>
     </div>
@@ -3597,14 +3597,14 @@ function filterCompareSearch(query) {
       ${escHtml(m.name)}
       <span class="compare-search-item-price">${fp.value}</span>
     </div>`;
-  }).join('') || `<div style="padding:12px;color:var(--text-3);font-size:13px">${t('noResults')}</div>`;
+  }).join('') || `<div style="padding:12px;color:var(--text-3);font-size:13px">${tr('noResults')}</div>`;
 }
 
 function renderCompareTable() {
   const wrap = document.getElementById('compare-table-wrap');
 
   if (compareState.models.length === 0) {
-    wrap.innerHTML = `<div class="compare-empty">${t('compareEmpty')}</div>`;
+    wrap.innerHTML = `<div class="compare-empty">${tr('compareEmpty')}</div>`;
     return;
   }
 
@@ -3628,12 +3628,12 @@ function renderCompareTable() {
   }
 
   let html = '<table class="compare-table"><thead><tr>';
-  html += `<th>${t('thModel')}</th>`;
+  html += `<th>${tr('thModel')}</th>`;
 
   if (isLLM) {
-    html += `<th>${t('thInputPrice')}</th><th>${t('thOutputPrice')}</th><th>${t('thContext')}</th><th>${t('thCapabilities')}</th>`;
+    html += `<th>${tr('thInputPrice')}</th><th>${tr('thOutputPrice')}</th><th>${tr('thContext')}</th><th>${tr('thCapabilities')}</th>`;
   } else {
-    html += `<th>${t('thPrice')}</th><th>${t('thUnit')}</th><th>${t('thCapabilities')}</th>`;
+    html += `<th>${tr('thPrice')}</th><th>${tr('thUnit')}</th><th>${tr('thCapabilities')}</th>`;
   }
   html += '</tr></thead><tbody>';
 
@@ -3655,11 +3655,11 @@ function renderCompareTable() {
     if (isLLM) {
       const inp = r.pricing.input_per_1m;
       const isCheapestIn = inp != null && inp === cheapestInput && rows.length > 1;
-      html += `<td><div class="compare-price${isCheapestIn ? ' cheapest-cell' : ''}">${inp != null ? '$' + inp.toFixed(2) : '—'}${isCheapestIn ? ' <span class="best-badge">' + t('cheapest') + '</span>' : ''}</div></td>`;
+      html += `<td><div class="compare-price${isCheapestIn ? ' cheapest-cell' : ''}">${inp != null ? '$' + inp.toFixed(2) : '—'}${isCheapestIn ? ' <span class="best-badge">' + tr('cheapest') + '</span>' : ''}</div></td>`;
 
       const out = r.pricing.output_per_1m;
       const isCheapestOut = out != null && out === cheapestOutput && rows.length > 1;
-      html += `<td><div class="compare-price${isCheapestOut ? ' cheapest-cell' : ''}">${out != null ? '$' + out.toFixed(2) : '—'}${isCheapestOut ? ' <span class="best-badge">' + t('cheapest') + '</span>' : ''}</div></td>`;
+      html += `<td><div class="compare-price${isCheapestOut ? ' cheapest-cell' : ''}">${out != null ? '$' + out.toFixed(2) : '—'}${isCheapestOut ? ' <span class="best-badge">' + tr('cheapest') + '</span>' : ''}</div></td>`;
 
       html += `<td><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-2)">${r.model.context_k ? r.model.context_k + 'k' : '—'}</span></td>`;
       html += `<td>${capBadges}</td>`;
@@ -3670,7 +3670,7 @@ function renderCompareTable() {
       if (formatted.isNote) {
         html += `<td><span class="compare-price-na">${escHtml(formatted.unit)}</span></td><td></td>`;
       } else {
-        html += `<td><div class="compare-price${isCheap ? ' cheapest-cell' : ''}">${formatted.value}${isCheap ? ' <span class="best-badge">' + t('cheapest') + '</span>' : ''}</div></td>`;
+        html += `<td><div class="compare-price${isCheap ? ' cheapest-cell' : ''}">${formatted.value}${isCheap ? ' <span class="best-badge">' + tr('cheapest') + '</span>' : ''}</div></td>`;
         html += `<td><span style="font-size:12px;color:var(--text-3)">${formatted.unit}</span></td>`;
       }
       html += `<td>${capBadges}</td>`;
