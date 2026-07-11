@@ -3,6 +3,73 @@
     {
       "baseModelDetails": {
         "checkpointFormat": "HUGGINGFACE",
+        "defaultPrecision": "PRECISION_UNSPECIFIED",
+        "huggingfaceFiles": [],
+        "modelType": "xlm-roberta",
+        "moe": false,
+        "parameterCount": "567754752",
+        "supportsFireattention": false,
+        "supportsMtp": false,
+        "tunable": false,
+        "worldSize": 1
+      },
+      "calibrated": false,
+      "cluster": "",
+      "contextLength": 8192,
+      "conversationConfig": {
+        "style": "",
+        "system": "",
+        "template": ""
+      },
+      "createTime": "2026-06-29T21:21:53.456367Z",
+      "defaultDraftModel": "",
+      "defaultDraftTokenCount": 0,
+      "defaultSamplingParams": {},
+      "deployedModelRefs": [],
+      "deprecationDate": null,
+      "description": "BAAI bge-m3 multilingual embedding model (XLM-RoBERTa-large, 1024-dim dense, 8192 ctx).",
+      "displayName": "BGE-M3",
+      "encryptionState": "ENCRYPTION_STATE_PLAINTEXT",
+      "fineTuningJob": "",
+      "githubUrl": "",
+      "huggingFaceUrl": "https://huggingface.co/BAAI/bge-m3",
+      "importedFrom": "",
+      "kind": "EMBEDDING_MODEL",
+      "name": "accounts/fireworks/models/bge-m3",
+      "peftDetails": {
+        "baseModel": "",
+        "baseModelType": "",
+        "mergeAddonModelName": "",
+        "r": 0,
+        "targetModules": []
+      },
+      "public": true,
+      "rlFullParameterTunable": false,
+      "rlLoraTunable": false,
+      "rlTunable": false,
+      "serverlessModes": [],
+      "snapshotType": "FULL_SNAPSHOT",
+      "state": "READY",
+      "status": {
+        "code": "OK",
+        "message": ""
+      },
+      "supervisedFullParameterTunable": false,
+      "supervisedLoraTunable": false,
+      "supportsImageInput": false,
+      "supportsLora": false,
+      "supportsServerless": false,
+      "supportsTools": false,
+      "teftDetails": null,
+      "trainingContextLength": 0,
+      "tunable": false,
+      "updateTime": "2026-07-11T05:42:42.283469Z",
+      "useHfApplyChatTemplate": false,
+      "useTrainingV2": false
+    },
+    {
+      "baseModelDetails": {
+        "checkpointFormat": "HUGGINGFACE",
         "defaultPrecision": "FP16",
         "huggingfaceFiles": [
           ".gitattributes",
@@ -81,7 +148,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -165,7 +232,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -251,7 +318,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -338,7 +405,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -425,7 +492,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -516,7 +583,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -607,7 +674,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -696,7 +763,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -787,7 +854,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -858,7 +925,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -929,7 +996,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1000,7 +1067,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1090,7 +1157,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1177,7 +1244,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1262,7 +1329,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1343,7 +1410,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1452,7 +1519,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1535,7 +1602,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1623,7 +1690,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1719,7 +1786,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -1800,7 +1867,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1888,7 +1955,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -1971,7 +2038,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -2054,7 +2121,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -2137,7 +2204,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -2223,7 +2290,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -2294,7 +2361,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -2534,7 +2601,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -2609,7 +2676,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -2839,7 +2906,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -2918,7 +2985,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3166,7 +3233,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3263,7 +3330,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3336,7 +3403,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3409,7 +3476,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3489,7 +3556,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3577,7 +3644,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3659,7 +3726,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3746,7 +3813,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3883,7 +3950,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -3960,7 +4027,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4207,7 +4274,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4452,7 +4519,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4697,7 +4764,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4776,7 +4843,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4845,7 +4912,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4914,7 +4981,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -4992,7 +5059,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5082,7 +5149,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5196,7 +5263,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5261,7 +5328,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5328,7 +5395,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5395,7 +5462,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5452,7 +5519,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5509,7 +5576,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5570,7 +5637,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5662,7 +5729,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5866,7 +5933,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -5952,7 +6019,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6032,7 +6099,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6111,7 +6178,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6199,7 +6266,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6266,7 +6333,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6327,7 +6394,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6388,7 +6455,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6449,7 +6516,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6516,7 +6583,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6583,7 +6650,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6644,7 +6711,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6705,7 +6772,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6790,7 +6857,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6875,7 +6942,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6961,7 +7028,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7039,7 +7106,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7118,7 +7185,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7201,7 +7268,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7280,7 +7347,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -7359,7 +7426,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -7442,7 +7509,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -7518,7 +7585,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7604,7 +7671,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7675,7 +7742,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -7848,7 +7915,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -7975,7 +8042,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -8099,7 +8166,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -8272,7 +8339,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -8351,7 +8418,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -8475,7 +8542,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -8555,7 +8622,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -8772,7 +8839,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -9131,7 +9198,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -9198,7 +9265,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -9265,7 +9332,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -9332,7 +9399,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -9427,7 +9494,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -9510,7 +9577,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -9597,7 +9664,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -9692,7 +9759,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -9804,7 +9871,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -9887,7 +9954,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -9982,7 +10049,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -10127,7 +10194,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -10275,7 +10342,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -10367,7 +10434,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": true
     },
@@ -10520,7 +10587,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": true
     },
@@ -10672,7 +10739,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -10819,7 +10886,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -10965,7 +11032,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -11106,7 +11173,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -11177,7 +11244,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11259,7 +11326,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11346,7 +11413,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11433,7 +11500,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11504,7 +11571,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11575,7 +11642,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11646,7 +11713,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11717,7 +11784,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11788,7 +11855,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11859,7 +11926,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -11930,7 +11997,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12001,7 +12068,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12087,7 +12154,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12158,7 +12225,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12229,7 +12296,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12290,7 +12357,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12565,7 +12632,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12636,7 +12703,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12750,7 +12817,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12821,7 +12888,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -12911,7 +12978,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13021,7 +13088,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13110,7 +13177,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13192,7 +13259,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13272,7 +13339,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13356,7 +13423,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13438,7 +13505,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13559,7 +13626,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -13673,7 +13740,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -14168,7 +14235,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -14380,7 +14447,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -14594,7 +14661,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -14803,7 +14870,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -15008,7 +15075,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15120,7 +15187,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15206,7 +15273,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15291,7 +15358,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -15376,7 +15443,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15550,7 +15617,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15621,7 +15688,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15710,7 +15777,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15797,7 +15864,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15881,7 +15948,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16092,7 +16159,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16182,7 +16249,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16272,7 +16339,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16365,7 +16432,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16436,7 +16503,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16511,7 +16578,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16582,7 +16649,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16653,7 +16720,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16724,7 +16791,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16785,7 +16852,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16878,7 +16945,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -16975,7 +17042,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -17046,7 +17113,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -17182,7 +17249,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -17483,7 +17550,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -17787,7 +17854,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -17877,7 +17944,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": true
     },
@@ -17973,7 +18040,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18058,7 +18125,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18129,7 +18196,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18214,7 +18281,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18285,7 +18352,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18369,7 +18436,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18478,7 +18545,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18584,7 +18651,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18687,7 +18754,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18777,7 +18844,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18866,7 +18933,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -18953,7 +19020,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19036,7 +19103,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19124,7 +19191,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19208,7 +19275,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19295,7 +19362,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19366,7 +19433,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19437,7 +19504,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19498,7 +19565,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19586,7 +19653,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19674,7 +19741,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19762,7 +19829,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19845,7 +19912,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19916,7 +19983,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20039,7 +20106,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20126,7 +20193,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20208,7 +20275,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20298,7 +20365,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20388,7 +20455,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20466,7 +20533,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20565,7 +20632,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20664,7 +20731,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20783,7 +20850,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20902,7 +20969,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -20988,7 +21055,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21074,7 +21141,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -21156,7 +21223,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21238,7 +21305,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21326,7 +21393,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21414,7 +21481,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21496,7 +21563,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21578,7 +21645,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21651,7 +21718,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21724,7 +21791,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21797,7 +21864,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21870,7 +21937,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -21943,7 +22010,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22027,7 +22094,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22111,7 +22178,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22197,7 +22264,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22283,7 +22350,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22402,7 +22469,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22506,7 +22573,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22592,7 +22659,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22714,7 +22781,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22802,7 +22869,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -22888,7 +22955,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -23009,7 +23076,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -23098,7 +23165,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -23175,7 +23242,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -23262,7 +23329,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -23339,7 +23406,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -23468,7 +23535,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -23574,7 +23641,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -23679,7 +23746,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -23765,7 +23832,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -23863,7 +23930,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -23930,7 +23997,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -24016,7 +24083,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -24110,7 +24177,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -24190,7 +24257,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": true
     },
@@ -24271,7 +24338,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -24354,7 +24421,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": true
     },
@@ -24453,7 +24520,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -24585,7 +24652,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -24905,7 +24972,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -24984,7 +25051,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25065,7 +25132,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25149,7 +25216,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25267,7 +25334,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25385,7 +25452,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25478,7 +25545,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25599,7 +25666,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25690,7 +25757,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -25785,7 +25852,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -25876,9 +25943,91 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
+    },
+    {
+      "baseModelDetails": {
+        "checkpointFormat": "HUGGINGFACE",
+        "defaultPrecision": "PRECISION_UNSPECIFIED",
+        "huggingfaceFiles": [
+          ".gitattributes",
+          "LICENSE",
+          "README.md",
+          "chat_template.jinja",
+          "config.json",
+          "merges.txt",
+          "model.safetensors-00001-of-00002.safetensors",
+          "model.safetensors-00002-of-00002.safetensors",
+          "model.safetensors.index.json",
+          "preprocessor_config.json",
+          "tokenizer.json",
+          "tokenizer_config.json",
+          "video_preprocessor_config.json",
+          "vocab.json"
+        ],
+        "modelType": "qwen3_5",
+        "moe": false,
+        "parameterCount": "5174964736",
+        "supportsFireattention": true,
+        "supportsMtp": false,
+        "tunable": false,
+        "worldSize": 1
+      },
+      "calibrated": false,
+      "cluster": "",
+      "contextLength": 262144,
+      "conversationConfig": {
+        "style": "",
+        "system": "",
+        "template": ""
+      },
+      "createTime": "2026-04-09T06:05:55.051603Z",
+      "defaultDraftModel": "",
+      "defaultDraftTokenCount": 0,
+      "defaultSamplingParams": {},
+      "deployedModelRefs": [],
+      "deprecationDate": null,
+      "description": "Base model of 4B model from Qwen 3.5 series",
+      "displayName": "Qwen3.5 4B",
+      "encryptionState": "ENCRYPTION_STATE_UNSPECIFIED",
+      "fineTuningJob": "",
+      "githubUrl": "https://github.com/QwenLM/Qwen3.5",
+      "huggingFaceUrl": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "importedFrom": "",
+      "kind": "HF_BASE_MODEL",
+      "name": "accounts/fireworks/models/qwen3p5-4b",
+      "peftDetails": {
+        "baseModel": "",
+        "baseModelType": "",
+        "mergeAddonModelName": "",
+        "r": 0,
+        "targetModules": []
+      },
+      "public": true,
+      "rlFullParameterTunable": false,
+      "rlLoraTunable": false,
+      "rlTunable": false,
+      "serverlessModes": [],
+      "snapshotType": "FULL_SNAPSHOT",
+      "state": "READY",
+      "status": {
+        "code": "OK",
+        "message": ""
+      },
+      "supervisedFullParameterTunable": false,
+      "supervisedLoraTunable": false,
+      "supportsImageInput": false,
+      "supportsLora": false,
+      "supportsServerless": false,
+      "supportsTools": false,
+      "teftDetails": null,
+      "trainingContextLength": 131072,
+      "tunable": false,
+      "updateTime": "2026-07-11T05:42:42.283469Z",
+      "useHfApplyChatTemplate": false,
+      "useTrainingV2": false
     },
     {
       "baseModelDetails": {
@@ -25960,7 +26109,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -26057,7 +26206,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -26164,7 +26313,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -26235,7 +26384,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -26302,7 +26451,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -26369,7 +26518,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -26446,7 +26595,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -26526,7 +26675,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -26608,7 +26757,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.336282Z",
+      "updateTime": "2026-07-11T05:42:42.231640Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -26788,7 +26937,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -26968,7 +27117,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27065,7 +27214,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27162,7 +27311,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27256,7 +27405,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27340,7 +27489,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27439,7 +27588,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27529,7 +27678,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27615,7 +27764,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27713,7 +27862,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27798,7 +27947,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27893,7 +28042,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -27978,7 +28127,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28073,7 +28222,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28156,7 +28305,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28223,7 +28372,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28290,7 +28439,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28357,7 +28506,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28424,7 +28573,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28491,7 +28640,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28558,7 +28707,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -28654,7 +28803,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-10T06:41:35.404120Z",
+      "updateTime": "2026-07-11T05:42:42.283469Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     }
