@@ -252,6 +252,13 @@ server {
 
 ---
 
+## Support
+
+The catalog is free and open source, but model prices change weekly and the crawler
+doesn't run on air. You can top up the tank:
+
+[![⚡ Top up the tank](https://img.shields.io/badge/⚡_Top_up_the_tank-FFDD00)](https://sellf.techskills.academy/checkout/tip-ai-api-catalog?utm_source=github&utm_medium=readme&utm_campaign=tip-jar)
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
