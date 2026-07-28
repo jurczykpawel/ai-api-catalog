@@ -4845,7 +4845,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -4914,7 +4914,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6032,7 +6032,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-26T04:49:02.525396Z",
+      "updateTime": "2026-07-28T04:59:54.595519Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6111,7 +6111,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": true,
-      "updateTime": "2026-07-26T04:49:02.531906Z",
+      "updateTime": "2026-07-28T04:42:59.120274Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -8772,7 +8772,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -9131,7 +9131,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -9265,7 +9265,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -9332,7 +9332,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -9701,12 +9701,12 @@
       "supervisedLoraTunable": false,
       "supportsImageInput": true,
       "supportsLora": false,
-      "supportsServerless": false,
+      "supportsServerless": true,
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-22T09:38:23.698749Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -10629,7 +10629,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": true
     },
@@ -10781,7 +10781,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": true,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -10931,6 +10931,67 @@
       "updateTime": "2026-07-22T09:38:23.698749Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
+    },
+    {
+      "baseModelDetails": {
+        "checkpointFormat": "HUGGINGFACE",
+        "defaultPrecision": "PRECISION_UNSPECIFIED",
+        "huggingfaceFiles": [],
+        "modelType": "kimi_k3",
+        "moe": true,
+        "parameterCount": "2812400605312",
+        "supportsFireattention": true,
+        "supportsMtp": false,
+        "tunable": false,
+        "worldSize": 1
+      },
+      "calibrated": false,
+      "cluster": "",
+      "contextLength": 1048576,
+      "conversationConfig": {
+        "style": "",
+        "system": "",
+        "template": ""
+      },
+      "createTime": "2026-07-19T17:50:09.542588Z",
+      "defaultDraftModel": "",
+      "defaultDraftTokenCount": 0,
+      "defaultSamplingParams": {},
+      "deployedModelRefs": [],
+      "deprecationDate": null,
+      "description": "Kimi K3 is Kimi’s most capable flagship model to date, with 2.8 trillion parameters. It is built on Kimi Delta Attention (KDA), a hybrid linear attention mechanism, and Attention Residuals, with native visual understanding and a 1M-token context window. It is the world’s first open-source model in the 3-trillion-parameter class, designed for frontier intelligence scenarios including long-horizon coding, knowledge work, and reasoning.",
+      "displayName": "Kimi K3",
+      "encryptionState": "ENCRYPTION_STATE_PLAINTEXT",
+      "fineTuningJob": "",
+      "githubUrl": "",
+      "huggingFaceUrl": "https://huggingface.co/moonshotai/Kimi-K3",
+      "importedFrom": "",
+      "kind": "HF_BASE_MODEL",
+      "name": "accounts/fireworks/models/kimi-k3",
+      "peftDetails": null,
+      "public": true,
+      "rlFullParameterTunable": false,
+      "rlLoraTunable": false,
+      "rlTunable": false,
+      "serverlessModes": [],
+      "snapshotType": "FULL_SNAPSHOT",
+      "state": "READY",
+      "status": {
+        "code": "OK",
+        "message": ""
+      },
+      "supervisedFullParameterTunable": false,
+      "supervisedLoraTunable": false,
+      "supportsImageInput": true,
+      "supportsLora": true,
+      "supportsServerless": true,
+      "supportsTools": true,
+      "teftDetails": null,
+      "trainingContextLength": 0,
+      "tunable": false,
+      "updateTime": "2026-07-28T05:41:05.516066Z",
+      "useHfApplyChatTemplate": true,
+      "useTrainingV2": true
     },
     {
       "baseModelDetails": {
@@ -13114,7 +13175,7 @@
         "message": "Internal error occurred, please contact the Fireworks AI team at https://discord.gg/fireworks-ai"
       },
       "supervisedFullParameterTunable": false,
-      "supervisedLoraTunable": false,
+      "supervisedLoraTunable": true,
       "supportsImageInput": false,
       "supportsLora": true,
       "supportsServerless": false,
@@ -13122,9 +13183,9 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": true,
-      "updateTime": "2026-07-22T09:38:23.698749Z",
+      "updateTime": "2026-07-27T18:03:04.303449Z",
       "useHfApplyChatTemplate": false,
-      "useTrainingV2": false
+      "useTrainingV2": true
     },
     {
       "baseModelDetails": {
@@ -15219,7 +15280,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -15331,7 +15392,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -17998,7 +18059,7 @@
       "teftDetails": null,
       "trainingContextLength": 65536,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -25360,7 +25421,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -26662,7 +26723,7 @@
       "teftDetails": null,
       "trainingContextLength": 0,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -26901,7 +26962,7 @@
       "teftDetails": null,
       "trainingContextLength": 131072,
       "tunable": false,
-      "updateTime": "2026-07-26T06:02:15.034157Z",
+      "updateTime": "2026-07-28T05:41:05.516066Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
