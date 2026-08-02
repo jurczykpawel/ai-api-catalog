@@ -1,9 +1,334 @@
 {
   "data": [
     {
+      "slug": "~deepseek/deepseek-v4-flash-latest",
+      "hf_slug": null,
+      "updated_at": "2026-08-01T17:58:19.741Z",
+      "created_at": "2026-08-01T17:40:09.038Z",
+      "hf_updated_at": null,
+      "name": "DeepSeek V4 Flash Latest",
+      "short_name": "DeepSeek V4 Flash Latest",
+      "author": "deepseek",
+      "author_display_name": "DeepSeek",
+      "author_icon_uri": null,
+      "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
+      "model_version_group_id": "82f5b893-9a91-488e-b71d-77410fdf15d6",
+      "context_length": 1048576,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Router",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "~deepseek/deepseek-v4-flash-latest",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": "<think>",
+        "end_token": "</think>",
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "high",
+          "max",
+          "low"
+        ],
+        "default_reasoning_effort": "high",
+        "default_reasoning_enabled": true,
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": "<think>",
+          "end_token": "</think>",
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "high",
+            "max",
+            "low"
+          ],
+          "default_reasoning_effort": "high",
+          "default_reasoning_enabled": true,
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": [],
+      "endpoint": {
+        "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
+        "name": "DeepInfra | deepseek/deepseek-v4-flash-20260731",
+        "context_length": 1048576,
+        "model": {
+          "slug": "~deepseek/deepseek-v4-flash-latest",
+          "hf_slug": null,
+          "updated_at": "2026-08-01T17:58:19.741Z",
+          "created_at": "2026-08-01T17:40:09.038Z",
+          "hf_updated_at": null,
+          "name": "DeepSeek V4 Flash Latest",
+          "short_name": "DeepSeek V4 Flash Latest",
+          "author": "deepseek",
+          "author_display_name": "DeepSeek",
+          "author_icon_uri": null,
+          "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
+          "model_version_group_id": "82f5b893-9a91-488e-b71d-77410fdf15d6",
+          "context_length": 1048576,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Router",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "~deepseek/deepseek-v4-flash-latest",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": "<think>",
+            "end_token": "</think>",
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "high",
+              "max",
+              "low"
+            ],
+            "default_reasoning_effort": "high",
+            "default_reasoning_enabled": true,
+            "reasoning_return_mechanism": "reasoning-content"
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": "<think>",
+              "end_token": "</think>",
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "high",
+                "max",
+                "low"
+              ],
+              "default_reasoning_effort": "high",
+              "default_reasoning_enabled": true,
+              "reasoning_return_mechanism": "reasoning-content"
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": true,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": []
+        },
+        "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
+        "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
+        "provider_info": {
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/DeepInfra.webp"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_chat_completions"
+        },
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/fp4",
+        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "quantization": "fp4",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 65536,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "response_format",
+          "logit_bias",
+          "tools",
+          "tool_choice",
+          "structured_outputs",
+          "logprobs",
+          "top_logprobs",
+          "top_a"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
+        },
+        "pricing": {
+          "prompt": "0.00000009",
+          "completion": "0.00000018",
+          "input_cache_read": "0.000000018",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.00000009",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.00000018",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.000000018",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.00000009",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.00000018",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.000000018",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0.00000009",
+          "openai:completion_tokens": "0.00000018",
+          "openai:cached_prompt_tokens": "0.000000018"
+        },
+        "pricing_version_id": "cb51be06-90f6-44b1-ac11-bfa10fe7f86e",
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": true,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-07-31T18:32:07.894Z",
+        "status": 0
+      }
+    },
+    {
       "slug": "deepseek/deepseek-v4-flash-0731",
       "hf_slug": "deepseek-ai/DeepSeek-V4-Flash-0731",
-      "updated_at": "2026-07-31T13:10:26.664Z",
+      "updated_at": "2026-08-01T17:40:07.759Z",
       "created_at": "2026-07-31T06:21:48.816Z",
       "hf_updated_at": null,
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -12,7 +337,7 @@
       "author_display_name": "DeepSeek",
       "author_icon_uri": null,
       "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows.",
-      "model_version_group_id": null,
+      "model_version_group_id": "82f5b893-9a91-488e-b71d-77410fdf15d6",
       "context_length": 1048576,
       "input_modalities": [
         "text"
@@ -85,7 +410,7 @@
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "updated_at": "2026-07-31T13:10:26.664575+00:00",
+          "updated_at": "2026-08-01T17:40:07.759677+00:00",
           "created_at": "2026-07-31T06:21:48.816855+00:00",
           "hf_updated_at": null,
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -94,7 +419,7 @@
           "author_display_name": "DeepSeek",
           "author_icon_uri": null,
           "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows.",
-          "model_version_group_id": null,
+          "model_version_group_id": "82f5b893-9a91-488e-b71d-77410fdf15d6",
           "context_length": 1048576,
           "input_modalities": [
             "text"
@@ -593,7 +918,7 @@
           "privacyPolicyURL": "https://deepinfra.com/privacy"
         },
         "pricing": {
-          "prompt": "0.0000005",
+          "prompt": "0.00000045",
           "completion": "0.0000012",
           "input_cache_read": "0.0000001",
           "discount": 0,
@@ -601,7 +926,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000005",
+              "price": "0.00000045",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -625,7 +950,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000005",
+            "price": "0.00000045",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -645,11 +970,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000005",
+          "openai:prompt_tokens": "0.00000045",
           "openai:completion_tokens": "0.0000012",
           "openai:cached_prompt_tokens": "0.0000001"
         },
-        "pricing_version_id": "01428418-f009-47c7-bf85-1d0ca5911fcb",
+        "pricing_version_id": "3b78d579-2b0c-47e1-b6f3-094d8b9b668a",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -678,7 +1003,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-31T13:55:52.979Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -2086,7 +2411,7 @@
       "name": "Runway: Aleph 2.0",
       "short_name": "Aleph 2.0",
       "author": "runway",
-      "author_display_name": "runway",
+      "author_display_name": "Runway",
       "author_icon_uri": null,
       "description": "Runway Aleph 2.0 is an in-context video editing model from Runway. It applies text instructions and keyframe-guided edits across existing footage while preserving details that are not meant to change. It is suited for adding, removing, or replacing subjects and objects, changing backgrounds or outfits, relighting scenes, shifting weather or time of day, restyling footage, and expanding a shot to a new aspect ratio.",
       "model_version_group_id": null,
@@ -2141,7 +2466,7 @@
           "name": "Runway: Aleph 2.0",
           "short_name": "Aleph 2.0",
           "author": "runway",
-          "author_display_name": "runway",
+          "author_display_name": "Runway",
           "author_icon_uri": null,
           "description": "Runway Aleph 2.0 is an in-context video editing model from Runway. It applies text instructions and keyframe-guided edits across existing footage while preserving details that are not meant to change. It is suited for adding, removing, or replacing subjects and objects, changing backgrounds or outfits, relighting scenes, shifting weather or time of day, restyling footage, and expanding a shot to a new aspect ratio.",
           "model_version_group_id": null,
@@ -2327,7 +2652,7 @@
       "name": "Runway: Gen-4.5",
       "short_name": "Gen-4.5",
       "author": "runway",
-      "author_display_name": "runway",
+      "author_display_name": "Runway",
       "author_icon_uri": null,
       "description": "Runway Gen-4.5 is a video generation model from Runway for text-to-video and image-to-video workflows. It is designed for cinematic scene creation with strong motion quality, visual fidelity, and prompt adherence. The model can coordinate complex action sequences, detailed camera movement, precise event timing, and atmospheric changes, making it suited for narrative shots, product reveals, and controlled image animation.",
       "model_version_group_id": null,
@@ -2381,7 +2706,7 @@
           "name": "Runway: Gen-4.5",
           "short_name": "Gen-4.5",
           "author": "runway",
-          "author_display_name": "runway",
+          "author_display_name": "Runway",
           "author_icon_uri": null,
           "description": "Runway Gen-4.5 is a video generation model from Runway for text-to-video and image-to-video workflows. It is designed for cinematic scene creation with strong motion quality, visual fidelity, and prompt adherence. The model can coordinate complex action sequences, detailed camera movement, precise event timing, and atmospheric changes, making it suited for narrative shots, product reveals, and controlled image animation.",
           "model_version_group_id": null,
@@ -10971,7 +11296,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-27T15:22:21.828Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -22237,9 +22562,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "70e7c90a-8bde-453d-9906-c49b37167e24",
-        "name": "Decart | z-ai/glm-5.2-20260616",
-        "context_length": 1048576,
+        "id": "d3402db2-8df2-4611-8495-9c1c08ebc154",
+        "name": "StreamLake | z-ai/glm-5.2-20260616",
+        "context_length": 1024000,
         "model": {
           "slug": "z-ai/glm-5.2",
           "hf_slug": "zai-org/GLM-5.2",
@@ -22322,66 +22647,59 @@
         },
         "model_variant_slug": "z-ai/glm-5.2",
         "model_variant_permaslug": "z-ai/glm-5.2-20260616",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Decart",
+        "adapter_name": "StreamLakeAdapter",
+        "provider_name": "StreamLake",
         "provider_info": {
-          "name": "Decart",
-          "displayName": "Decart",
-          "slug": "decart",
-          "baseUrl": "https://api.cogito.decart.ai/v1",
+          "name": "StreamLake",
+          "displayName": "StreamLake",
+          "slug": "streamlake",
+          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-            "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy",
+            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "StreamLakeAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cogito.decart.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Decart",
-        "provider_slug": "decart/fp4",
-        "provider_model_id": "zai-org/GLM-5.2-NVFP4",
-        "quantization": "fp4",
+        "provider_display_name": "StreamLake",
+        "provider_slug": "streamlake/fp8",
+        "provider_model_id": "glm-5.2",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "max_tokens",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
           "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
           "stop",
-          "seed",
-          "max_tokens",
+          "tool_choice",
+          "tools",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "logprobs",
           "top_logprobs"
         ],
@@ -22391,35 +22709,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-          "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy"
+          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.00000072",
-          "completion": "0.0000018",
-          "input_cache_read": "0.00000012",
-          "discount": 0.4,
+          "prompt": "0.0000003528",
+          "completion": "0.0000011088",
+          "input_cache_read": "0.00000006552",
+          "discount": 0.748,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000072",
+              "price": "0.0000003528",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000018",
+              "price": "0.0000011088",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000012",
+              "price": "0.00000006552",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -22429,31 +22747,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000072",
+            "price": "0.0000003528",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000018",
+            "price": "0.0000011088",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000012",
+            "price": "0.00000006552",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000012",
-          "openai:completion_tokens": "0.000003",
-          "openai:cached_prompt_tokens": "0.0000002"
+          "openai:prompt_tokens": "0.0000014",
+          "openai:completion_tokens": "0.0000044",
+          "openai:cached_prompt_tokens": "0.00000026"
         },
-        "pricing_version_id": "8a840ce4-a87e-40c3-ad9c-9254b0c97c86",
+        "pricing_version_id": "d2a16bf4-6b46-4b2a-8d3f-d147cb5a492d",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -22469,10 +22787,10 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -22481,7 +22799,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-06-20T21:01:14.256Z",
+        "created_at": "2026-06-17T03:37:18.430Z",
         "status": 0
       }
     },
@@ -41242,7 +41560,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-27T15:22:21.828Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -45476,7 +45794,7 @@
     {
       "slug": "deepseek/deepseek-v4-flash",
       "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
-      "updated_at": "2026-07-31T07:34:52.211Z",
+      "updated_at": "2026-08-01T17:40:08.497Z",
       "created_at": "2026-04-24T03:17:46.710Z",
       "hf_updated_at": null,
       "name": "DeepSeek: DeepSeek V4 Flash",
@@ -45485,7 +45803,7 @@
       "author_display_name": "DeepSeek",
       "author_icon_uri": null,
       "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and high-throughput workloads, while maintaining strong reasoning and coding performance.\n\nThe model includes hybrid attention for efficient long-context processing. Reasoning efforts `high` and `xhigh` are supported; `xhigh` maps to max reasoning. It is well suited for applications such as coding assistants, chat systems, and agent workflows where responsiveness and cost efficiency are important.",
-      "model_version_group_id": null,
+      "model_version_group_id": "82f5b893-9a91-488e-b71d-77410fdf15d6",
       "context_length": 1048576,
       "input_modalities": [
         "text"
@@ -45561,7 +45879,7 @@
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
-          "updated_at": "2026-07-31T07:34:52.211974+00:00",
+          "updated_at": "2026-08-01T17:40:08.49754+00:00",
           "created_at": "2026-04-24T03:17:46.710737+00:00",
           "hf_updated_at": null,
           "name": "DeepSeek: DeepSeek V4 Flash",
@@ -45570,7 +45888,7 @@
           "author_display_name": "DeepSeek",
           "author_icon_uri": null,
           "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and high-throughput workloads, while maintaining strong reasoning and coding performance.\n\nThe model includes hybrid attention for efficient long-context processing. Reasoning efforts `high` and `xhigh` are supported; `xhigh` maps to max reasoning. It is well suited for applications such as coding assistants, chat systems, and agent workflows where responsiveness and cost efficiency are important.",
-          "model_version_group_id": null,
+          "model_version_group_id": "82f5b893-9a91-488e-b71d-77410fdf15d6",
           "context_length": 1048576,
           "input_modalities": [
             "text"
@@ -45710,29 +46028,29 @@
           "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.0000000896",
-          "completion": "0.0000001792",
-          "input_cache_read": "0.00000001792",
-          "discount": 0.36,
+          "prompt": "0.0000000868",
+          "completion": "0.0000001736",
+          "input_cache_read": "0.00000001736",
+          "discount": 0.38,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000896",
+              "price": "0.0000000868",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000001792",
+              "price": "0.0000001736",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000001792",
+              "price": "0.00000001736",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -45742,21 +46060,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000896",
+            "price": "0.0000000868",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000001792",
+            "price": "0.0000001736",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000001792",
+            "price": "0.00000001736",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -49360,7 +49678,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:07:20.204Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -52856,6 +53174,303 @@
       }
     },
     {
+      "slug": "alibaba/wan-2.7",
+      "hf_slug": null,
+      "updated_at": "2026-04-15T00:02:42.904Z",
+      "created_at": "2026-04-15T00:02:42.904Z",
+      "hf_updated_at": null,
+      "name": "Alibaba: Wan 2.7",
+      "short_name": "Wan 2.7",
+      "author": "alibaba",
+      "author_display_name": "alibaba",
+      "author_icon_uri": null,
+      "description": "Wan 2.7 is a video generation model from Alibaba. It supports text-to-video, image-to-video with first and last frame control, and reference-to-video, where multiple reference images guide the style and content of the generated scene.",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "alibaba/wan-2.7-20260414",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "video_generation",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "98595e20-68f4-4689-a7b2-6a824060897b",
+        "name": "AtlasCloud | alibaba/wan-2.7-20260414",
+        "context_length": 0,
+        "model": {
+          "slug": "alibaba/wan-2.7",
+          "hf_slug": null,
+          "updated_at": "2026-04-15T00:02:42.904726+00:00",
+          "created_at": "2026-04-15T00:02:42.904726+00:00",
+          "hf_updated_at": null,
+          "name": "Alibaba: Wan 2.7",
+          "short_name": "Wan 2.7",
+          "author": "alibaba",
+          "author_display_name": "alibaba",
+          "author_icon_uri": null,
+          "description": "Wan 2.7 is a video generation model from Alibaba. It supports text-to-video, image-to-video with first and last frame control, and reference-to-video, where multiple reference images guide the style and content of the generated scene.",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "alibaba/wan-2.7-20260414",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "video_generation",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "alibaba/wan-2.7",
+        "model_variant_permaslug": "alibaba/wan-2.7-20260414",
+        "adapter_name": "AtlasCloudWanAdapter",
+        "provider_name": "AtlasCloud",
+        "provider_info": {
+          "name": "AtlasCloud",
+          "displayName": "AtlasCloud",
+          "slug": "atlas-cloud",
+          "baseUrl": "https://api.atlascloud.ai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "privacyPolicyURL": "https://www.atlascloud.ai/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "adapterName": "AtlasCloudWanAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlascloud.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "atlas_cloud_video"
+        },
+        "provider_display_name": "AtlasCloud",
+        "provider_slug": "atlas-cloud",
+        "provider_model_id": "alibaba/wan-2.7",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "privacyPolicyURL": "https://www.atlascloud.ai/privacy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Video Output",
+              "price": "0.1",
+              "displayMultiplier": 1,
+              "unitLabel": "/second"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Video Output",
+            "price": "0.1",
+            "displayMultiplier": 1,
+            "unitLabel": "/second"
+          }
+        ],
+        "pricing_json": {
+          "atlas_cloud_video:duration_seconds": "0.1",
+          "atlas_cloud_video:text_to_video_duration_seconds_480p": "0",
+          "atlas_cloud_video:text_to_video_duration_seconds_720p": "0",
+          "atlas_cloud_video:image_to_video_duration_seconds_720p": "0",
+          "atlas_cloud_video:text_to_video_duration_seconds_1080p": "0",
+          "atlas_cloud_video:image_to_video_duration_seconds_1080p": "0"
+        },
+        "pricing_version_id": "12df872c-a03d-41cf-aabf-c437ff20e784",
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {
+          "supported_resolutions": null,
+          "supported_aspect_ratios": null,
+          "supported_sizes": [
+            "1280x720",
+            "720x1280",
+            "1920x1080",
+            "1080x1920",
+            "720x720",
+            "1080x1080",
+            "960x720",
+            "720x960",
+            "1440x1080",
+            "1080x1440"
+          ],
+          "supported_durations": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "supported_frame_images": [
+            "first_frame",
+            "last_frame"
+          ],
+          "generate_audio": true,
+          "seed": true
+        },
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [
+          "negative_prompt",
+          "prompt_extend",
+          "audio",
+          "ratio",
+          "last_image",
+          "video",
+          "videos",
+          "images"
+        ],
+        "capacity_tpm": null,
+        "created_at": "2026-04-15T00:02:42.904Z",
+        "status": 0
+      }
+    },
+    {
       "slug": "bytedance/seedance-2.0",
       "hf_slug": null,
       "updated_at": "2026-07-19T16:39:06.035Z",
@@ -53282,303 +53897,6 @@
         "allowed_passthrough_parameters": [
           "watermark",
           "req_key"
-        ],
-        "capacity_tpm": null,
-        "created_at": "2026-04-15T00:02:42.904Z",
-        "status": 0
-      }
-    },
-    {
-      "slug": "alibaba/wan-2.7",
-      "hf_slug": null,
-      "updated_at": "2026-04-15T00:02:42.904Z",
-      "created_at": "2026-04-15T00:02:42.904Z",
-      "hf_updated_at": null,
-      "name": "Alibaba: Wan 2.7",
-      "short_name": "Wan 2.7",
-      "author": "alibaba",
-      "author_display_name": "alibaba",
-      "author_icon_uri": null,
-      "description": "Wan 2.7 is a video generation model from Alibaba. It supports text-to-video, image-to-video with first and last frame control, and reference-to-video, where multiple reference images guide the style and content of the generated scene.",
-      "model_version_group_id": null,
-      "context_length": 0,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "video"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "alibaba/wan-2.7-20260414",
-      "supports_reasoning": false,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "default_order": [],
-      "quick_start_example_type": "video_generation",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "98595e20-68f4-4689-a7b2-6a824060897b",
-        "name": "AtlasCloud | alibaba/wan-2.7-20260414",
-        "context_length": 0,
-        "model": {
-          "slug": "alibaba/wan-2.7",
-          "hf_slug": null,
-          "updated_at": "2026-04-15T00:02:42.904726+00:00",
-          "created_at": "2026-04-15T00:02:42.904726+00:00",
-          "hf_updated_at": null,
-          "name": "Alibaba: Wan 2.7",
-          "short_name": "Wan 2.7",
-          "author": "alibaba",
-          "author_display_name": "alibaba",
-          "author_icon_uri": null,
-          "description": "Wan 2.7 is a video generation model from Alibaba. It supports text-to-video, image-to-video with first and last frame control, and reference-to-video, where multiple reference images guide the style and content of the generated scene.",
-          "model_version_group_id": null,
-          "context_length": 0,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "video"
-          ],
-          "has_text_output": false,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "alibaba/wan-2.7-20260414",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": null,
-            "top_p": null,
-            "top_k": null,
-            "frequency_penalty": null,
-            "presence_penalty": null,
-            "repetition_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": "video_generation",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": null,
-          "limit_rpd": null,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "alibaba/wan-2.7",
-        "model_variant_permaslug": "alibaba/wan-2.7-20260414",
-        "adapter_name": "AtlasCloudWanAdapter",
-        "provider_name": "AtlasCloud",
-        "provider_info": {
-          "name": "AtlasCloud",
-          "displayName": "AtlasCloud",
-          "slug": "atlas-cloud",
-          "baseUrl": "https://api.atlascloud.ai",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "canPublish": false,
-            "privacyPolicyURL": "https://www.atlascloud.ai/privacy",
-            "requiresUserIDs": false
-          },
-          "headquarters": "US",
-          "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "adapterName": "AtlasCloudWanAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlascloud.ai/&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "atlas_cloud_video"
-        },
-        "provider_display_name": "AtlasCloud",
-        "provider_slug": "atlas-cloud",
-        "provider_model_id": "alibaba/wan-2.7",
-        "quantization": "unknown",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": null,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "max_tokens",
-          "temperature",
-          "top_p"
-        ],
-        "excluded_parameters": [],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "canPublish": false,
-          "privacyPolicyURL": "https://www.atlascloud.ai/privacy"
-        },
-        "pricing": {
-          "prompt": "0",
-          "completion": "0",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "unit",
-              "sku_label": "Video Output",
-              "price": "0.1",
-              "displayMultiplier": 1,
-              "unitLabel": "/second"
-            }
-          ]
-        },
-        "display_pricing": [
-          {
-            "kind": "unit",
-            "sku_label": "Video Output",
-            "price": "0.1",
-            "displayMultiplier": 1,
-            "unitLabel": "/second"
-          }
-        ],
-        "pricing_json": {
-          "atlas_cloud_video:duration_seconds": "0.1",
-          "atlas_cloud_video:text_to_video_duration_seconds_480p": "0",
-          "atlas_cloud_video:text_to_video_duration_seconds_720p": "0",
-          "atlas_cloud_video:image_to_video_duration_seconds_720p": "0",
-          "atlas_cloud_video:text_to_video_duration_seconds_1080p": "0",
-          "atlas_cloud_video:image_to_video_duration_seconds_1080p": "0"
-        },
-        "pricing_version_id": "12df872c-a03d-41cf-aabf-c437ff20e784",
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "limit_rpm_cf": null,
-        "has_completions": false,
-        "has_chat_completions": false,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": {
-          "supported_resolutions": null,
-          "supported_aspect_ratios": null,
-          "supported_sizes": [
-            "1280x720",
-            "720x1280",
-            "1920x1080",
-            "1080x1920",
-            "720x720",
-            "1080x1080",
-            "960x720",
-            "720x960",
-            "1440x1080",
-            "1080x1440"
-          ],
-          "supported_durations": [
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-          ],
-          "supported_frame_images": [
-            "first_frame",
-            "last_frame"
-          ],
-          "generate_audio": true,
-          "seed": true
-        },
-        "supported_image_parameters": null,
-        "provider_region": null,
-        "deprecation_date": null,
-        "allowed_passthrough_parameters": [
-          "negative_prompt",
-          "prompt_extend",
-          "audio",
-          "ratio",
-          "last_image",
-          "video",
-          "videos",
-          "images"
         ],
         "capacity_tpm": null,
         "created_at": "2026-04-15T00:02:42.904Z",
@@ -57316,7 +57634,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-31T17:49:51.706Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -63646,7 +63964,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-22T04:01:57.517Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -77037,7 +77355,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-12-29T13:35:09.367Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -104984,7 +105302,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-08-07T01:46:37.240Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -119942,7 +120260,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-03-24T20:02:59.576Z",
-        "status": -2
+        "status": -5
       }
     },
     {
