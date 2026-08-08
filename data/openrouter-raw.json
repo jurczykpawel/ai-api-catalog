@@ -523,7 +523,7 @@
     {
       "slug": "meta/muse-spark-1.2",
       "hf_slug": null,
-      "updated_at": "2026-08-05T19:48:07.643Z",
+      "updated_at": "2026-08-07T14:07:15.947Z",
       "created_at": "2026-08-05T19:48:07.643Z",
       "hf_updated_at": null,
       "name": "Meta: Muse Spark 1.2",
@@ -554,7 +554,9 @@
       "warning_message": "",
       "promotion_message": null,
       "routing_error_message": null,
-      "required_attestation_types": [],
+      "required_attestation_types": [
+        "age_18plus"
+      ],
       "is_private": false,
       "permaslug": "meta/muse-spark-1.2-20260805",
       "supports_reasoning": true,
@@ -609,7 +611,7 @@
         "model": {
           "slug": "meta/muse-spark-1.2",
           "hf_slug": null,
-          "updated_at": "2026-08-05T19:48:07.643941+00:00",
+          "updated_at": "2026-08-07T14:07:15.947073+00:00",
           "created_at": "2026-08-05T19:48:07.643+00:00",
           "hf_updated_at": null,
           "name": "Meta: Muse Spark 1.2",
@@ -640,7 +642,9 @@
           "warning_message": "",
           "promotion_message": null,
           "routing_error_message": null,
-          "required_attestation_types": [],
+          "required_attestation_types": [
+            "age_18plus"
+          ],
           "is_private": false,
           "permaslug": "meta/muse-spark-1.2-20260805",
           "supports_reasoning": true,
@@ -3205,7 +3209,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-31T13:55:52.979Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -14979,7 +14983,7 @@
         },
         "model_variant_slug": "moonshotai/kimi-k3",
         "model_variant_permaslug": "moonshotai/kimi-k3-20260715",
-        "adapter_name": "VLLMOpenAIAdapter",
+        "adapter_name": "MorphAdapter",
         "provider_name": "Morph",
         "provider_info": {
           "name": "Morph",
@@ -15003,7 +15007,7 @@
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "MorphAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -15055,7 +15059,7 @@
           "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.0000029",
+          "prompt": "0.0000025",
           "completion": "0.000014",
           "input_cache_read": "0.00000029",
           "discount": 0,
@@ -15063,7 +15067,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000029",
+              "price": "0.0000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -15087,7 +15091,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000029",
+            "price": "0.0000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -15107,11 +15111,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000029",
+          "openai:prompt_tokens": "0.0000025",
           "openai:completion_tokens": "0.000014",
           "openai:cached_prompt_tokens": "0.00000029"
         },
-        "pricing_version_id": "a09ed6ea-05b8-4493-95a8-4c0945423f64",
+        "pricing_version_id": "865aff36-0dc3-40ce-996d-f40914d9682f",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -15641,7 +15645,7 @@
           "moderationRequired": false,
           "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -16686,7 +16690,7 @@
           "isAbortable": true,
           "moderationRequired": false,
           "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": null,
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
@@ -16978,7 +16982,7 @@
           "isAbortable": true,
           "moderationRequired": false,
           "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": null,
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
@@ -18901,7 +18905,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:14.159Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -22485,7 +22489,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:02.541Z",
-        "status": -5
+        "status": 0
       }
     },
     {
@@ -29583,29 +29587,29 @@
           "privacyPolicyURL": "https://novita.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000006958",
-          "completion": "0.0000021868",
-          "input_cache_read": "0.00000012922",
-          "discount": 0.503,
+          "prompt": "0.0000003626",
+          "completion": "0.0000011396",
+          "input_cache_read": "0.00000006734",
+          "discount": 0.741,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000006958",
+              "price": "0.0000003626",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000021868",
+              "price": "0.0000011396",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000012922",
+              "price": "0.00000006734",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -29615,21 +29619,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000006958",
+            "price": "0.0000003626",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000021868",
+            "price": "0.0000011396",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000012922",
+            "price": "0.00000006734",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -30846,7 +30850,7 @@
           "moderationRequired": false,
           "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -33334,7 +33338,7 @@
           "moderationRequired": false,
           "adapterName": "NvidiaAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -33646,7 +33650,7 @@
           "moderationRequired": false,
           "adapterName": "NvidiaAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -34422,7 +34426,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-06-04T15:12:31.621Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -36562,7 +36566,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-28T16:17:54.234Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -49094,7 +49098,7 @@
           "moderationRequired": false,
           "adapterName": "NvidiaAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -51199,7 +51203,7 @@
         },
         "model_variant_slug": "~moonshotai/kimi-latest",
         "model_variant_permaslug": "~moonshotai/kimi-latest",
-        "adapter_name": "VLLMOpenAIAdapter",
+        "adapter_name": "MorphAdapter",
         "provider_name": "Morph",
         "provider_info": {
           "name": "Morph",
@@ -51223,7 +51227,7 @@
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "MorphAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -51275,7 +51279,7 @@
           "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.0000029",
+          "prompt": "0.0000025",
           "completion": "0.000014",
           "input_cache_read": "0.00000029",
           "discount": 0,
@@ -51283,7 +51287,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000029",
+              "price": "0.0000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -51307,7 +51311,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000029",
+            "price": "0.0000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -51327,11 +51331,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000029",
+          "openai:prompt_tokens": "0.0000025",
           "openai:completion_tokens": "0.000014",
           "openai:cached_prompt_tokens": "0.00000029"
         },
-        "pricing_version_id": "a09ed6ea-05b8-4493-95a8-4c0945423f64",
+        "pricing_version_id": "865aff36-0dc3-40ce-996d-f40914d9682f",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -52661,7 +52665,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:02.541Z",
-        "status": -5
+        "status": 0
       }
     },
     {
@@ -54302,7 +54306,7 @@
         },
         "model_variant_slug": "qwen/qwen3.6-27b",
         "model_variant_permaslug": "qwen/qwen3.6-27b-20260422",
-        "adapter_name": "VLLMOpenAIAdapter",
+        "adapter_name": "MorphAdapter",
         "provider_name": "Morph",
         "provider_info": {
           "name": "Morph",
@@ -54326,7 +54330,7 @@
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "MorphAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -54454,7 +54458,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-27T03:41:02.996Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -56139,9 +56143,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "d084170b-dd99-4e53-9ae1-b63881f3cfbf",
-        "name": "DeepSeek | deepseek/deepseek-v4-pro-20260423",
-        "context_length": 1048576,
+        "id": "b3598fb1-4093-4373-93ec-4c671abaf943",
+        "name": "StreamLake | deepseek/deepseek-v4-pro-20260423",
+        "context_length": 1024000,
         "model": {
           "slug": "deepseek/deepseek-v4-pro",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Pro",
@@ -56226,40 +56230,41 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260423",
-        "adapter_name": "DeepSeekAdapter",
-        "provider_name": "DeepSeek",
+        "adapter_name": "StreamLakeAdapter",
+        "provider_name": "StreamLake",
         "provider_info": {
-          "name": "DeepSeek",
-          "displayName": "DeepSeek",
-          "slug": "deepseek",
-          "baseUrl": "https://api.deepseek.com/beta",
+          "name": "StreamLake",
+          "displayName": "StreamLake",
+          "slug": "streamlake",
+          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
           "dataPolicy": {
-            "training": true,
+            "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://chat.deepseek.com/downloads/DeepSeek%20Terms%20of%20Use.html",
-            "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html",
+            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
             "requiresUserIDs": false
           },
           "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "DeepSeekAdapter",
-          "statusPageUrl": "https://status.deepseek.com/",
+          "adapterName": "StreamLakeAdapter",
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepSeek.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "deepseek"
+          "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepSeek",
-        "provider_slug": "deepseek",
+        "provider_display_name": "StreamLake",
+        "provider_slug": "streamlake/fp8",
         "provider_model_id": "deepseek-v4-pro",
-        "quantization": "unknown",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -56272,50 +56277,50 @@
           "max_tokens",
           "temperature",
           "top_p",
-          "stop",
           "frequency_penalty",
-          "presence_penalty",
-          "logprobs",
-          "top_logprobs",
+          "stop",
           "tools",
           "tool_choice",
-          "response_format"
+          "response_format",
+          "logprobs",
+          "top_logprobs",
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
-          "training": true,
+          "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://chat.deepseek.com/downloads/DeepSeek%20Terms%20of%20Use.html",
-          "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html"
+          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.000000435",
-          "completion": "0.00000087",
-          "input_cache_read": "0.000000003625",
-          "discount": 0,
+          "prompt": "0.000000329382",
+          "completion": "0.000000658764",
+          "input_cache_read": "0.0000000274485",
+          "discount": 0.8107,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": ".435e-6",
+              "price": "0.000000329382",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": ".87e-6",
+              "price": "0.000000658764",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.003625e-6",
+              "price": "0.0000000274485",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -56325,31 +56330,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": ".435e-6",
+            "price": "0.000000329382",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": ".87e-6",
+            "price": "0.000000658764",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.003625e-6",
+            "price": "0.0000000274485",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "deepseek:cache_hit_tokens": "0.003625e-6",
-          "deepseek:cache_miss_tokens": ".435e-6",
-          "deepseek:completion_tokens": ".87e-6"
+          "openai:prompt_tokens": "0.00000174",
+          "openai:completion_tokens": "0.00000348",
+          "openai:cached_prompt_tokens": "0.000000145"
         },
-        "pricing_version_id": "68e0620a-e696-4b32-ad6d-45357bd4f11e",
+        "pricing_version_id": "34efd862-5999-49c6-9757-4321a2e52fd9",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -56364,27 +56369,20 @@
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_implicit_caching": true,
-          "reasoning_return_mechanism": "reasoning-content",
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
-        "supported_video_parameters": {
-          "supported_sizes": null,
-          "supported_frame_images": null,
-          "generate_audio": null,
-          "seed": null
-        },
+        "supported_video_parameters": null,
         "supported_image_parameters": null,
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-04-24T03:18:19.218Z",
+        "created_at": "2026-05-18T07:42:08.590Z",
         "status": 0
       }
     },
@@ -56463,9 +56461,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "ca159a90-46f3-436c-b3a3-92d856c59e37",
-        "name": "DigitalOcean | deepseek/deepseek-v4-flash-20260423",
-        "context_length": 1048576,
+        "id": "13515b01-fed6-4afb-a382-ca3b4d7d7b8b",
+        "name": "StreamLake | deepseek/deepseek-v4-flash-20260423",
+        "context_length": 1024000,
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
@@ -56543,58 +56541,61 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423",
-        "adapter_name": "DigitalOceanAdapter",
-        "provider_name": "DigitalOcean",
+        "adapter_name": "StreamLakeAdapter",
+        "provider_name": "StreamLake",
         "provider_info": {
-          "name": "DigitalOcean",
-          "displayName": "DigitalOcean",
-          "slug": "digitalocean",
-          "baseUrl": "https://inference.do-ai.run/v1",
+          "name": "StreamLake",
+          "displayName": "StreamLake",
+          "slug": "streamlake",
+          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
-            "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy",
+            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
             "requiresUserIDs": false
           },
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "DigitalOceanAdapter",
-          "statusPageUrl": null,
+          "adapterName": "StreamLakeAdapter",
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.digitalocean.com&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DigitalOcean",
-        "provider_slug": "digitalocean",
-        "provider_model_id": "deepseek-4-flash",
-        "quantization": "unknown",
+        "provider_display_name": "StreamLake",
+        "provider_slug": "streamlake/fp8",
+        "provider_model_id": "deepseek-v4-flash",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 384000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "max_tokens",
           "temperature",
           "top_p",
-          "max_tokens",
-          "tool_choice",
-          "tools",
-          "structured_outputs",
+          "frequency_penalty",
+          "stop",
           "response_format",
+          "tools",
+          "tool_choice",
           "logprobs",
-          "top_logprobs"
+          "top_logprobs",
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -56602,35 +56603,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
-          "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy"
+          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.000000084",
-          "completion": "0.000000168",
-          "input_cache_read": "0.0000000168",
-          "discount": 0,
+          "prompt": "0.00000006846",
+          "completion": "0.00000013692",
+          "input_cache_read": "0.000000013692",
+          "discount": 0.511,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000084",
+              "price": "0.00000006846",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000168",
+              "price": "0.00000013692",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000168",
+              "price": "0.000000013692",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -56640,31 +56641,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000084",
+            "price": "0.00000006846",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000168",
+            "price": "0.00000013692",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000168",
+            "price": "0.000000013692",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000084",
-          "openai:completion_tokens": "0.000000168",
-          "openai:cached_prompt_tokens": "0.0000000168"
+          "openai:prompt_tokens": "0.00000014",
+          "openai:completion_tokens": "0.00000028",
+          "openai:cached_prompt_tokens": "0.000000028"
         },
-        "pricing_version_id": "93ebe8e8-2324-4456-9bbc-888e6d3f6191",
+        "pricing_version_id": "343b22f6-9dae-45e1-ab5e-b82c70e8a153",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -56683,7 +56684,7 @@
             "literal_none": false,
             "literal_auto": true,
             "literal_required": false,
-            "type_function": true
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -56692,7 +56693,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-05-27T21:27:36.753Z",
+        "created_at": "2026-05-18T07:42:09.922Z",
         "status": 0
       }
     },
@@ -59738,9 +59739,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "362a7650-63ed-41d8-b74e-1886ad31b3d9",
-        "name": "GMICloud | xiaomi/mimo-v2.5-pro-20260422",
-        "context_length": 1050000,
+        "id": "ba38961a-dfae-445d-a176-c44a09930667",
+        "name": "DigitalOcean | xiaomi/mimo-v2.5-pro-20260422",
+        "context_length": 262144,
         "model": {
           "slug": "xiaomi/mimo-v2.5-pro",
           "hf_slug": "XiaomiMiMo/MiMo-V2.5-Pro",
@@ -59811,44 +59812,40 @@
         },
         "model_variant_slug": "xiaomi/mimo-v2.5-pro",
         "model_variant_permaslug": "xiaomi/mimo-v2.5-pro-20260422",
-        "adapter_name": "GMICloudAdapter",
-        "provider_name": "GMICloud",
+        "adapter_name": "DigitalOceanAdapter",
+        "provider_name": "DigitalOcean",
         "provider_info": {
-          "name": "GMICloud",
-          "displayName": "GMICloud",
-          "slug": "gmicloud",
-          "baseUrl": "https://api.gmi-serving.com/v1",
+          "name": "DigitalOcean",
+          "displayName": "DigitalOcean",
+          "slug": "digitalocean",
+          "baseUrl": "https://inference.do-ai.run/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
-            "privacyPolicyURL": "https://docs.gmicloud.ai/privacy",
+            "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
+            "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "GMICloudAdapter",
+          "adapterName": "DigitalOceanAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gmicloud.ai/&size=256",
-            "className": "invert-0 dark:invert"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.digitalocean.com&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "GMICloud",
-        "provider_slug": "gmicloud/bf16",
-        "provider_model_id": "XiaomiMiMo/MiMo-V2.5-Pro",
-        "quantization": "bf16",
+        "provider_display_name": "DigitalOcean",
+        "provider_slug": "digitalocean",
+        "provider_model_id": "mimo-v2.5-pro",
+        "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -59858,50 +59855,51 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "seed",
-          "response_format"
-        ],
-        "excluded_parameters": [
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
         ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
-          "privacyPolicyURL": "https://docs.gmicloud.ai/privacy"
+          "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
+          "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000348",
-          "completion": "0.000000696",
-          "input_cache_read": "0.0000000032",
-          "discount": 0.2,
+          "prompt": "0.0000004",
+          "completion": "0.0000015",
+          "input_cache_read": "0.00000008",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000348",
+              "price": "0.0000004",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000696",
+              "price": "0.0000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000032",
+              "price": "0.00000008",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -59911,48 +59909,48 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000348",
+            "price": "0.0000004",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000696",
+            "price": "0.0000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000032",
+            "price": "0.00000008",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000435",
-          "openai:completion_tokens": "0.00000087",
-          "openai:cached_prompt_tokens": "0.000000004"
+          "openai:prompt_tokens": "0.0000004",
+          "openai:completion_tokens": "0.0000015",
+          "openai:cached_prompt_tokens": "0.00000008"
         },
-        "pricing_version_id": "270b8d66-2665-4de5-aa2a-670625b5a003",
+        "pricing_version_id": "e8d5efb2-150c-45ab-9b7e-597ee64bb3ab",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
-            "literal_auto": false,
+            "literal_none": true,
+            "literal_auto": true,
             "literal_required": false,
             "type_function": false
           }
@@ -59963,8 +59961,8 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-07-06T20:21:58.311Z",
-        "status": -2
+        "created_at": "2026-06-17T20:01:55.266Z",
+        "status": 0
       }
     },
     {
@@ -60038,9 +60036,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "fb34a890-eaa9-428e-8fc4-4ad0fdcba2ff",
-        "name": "GMICloud | xiaomi/mimo-v2.5-20260422",
-        "context_length": 1050000,
+        "id": "2af4bf94-26fa-42b9-bce0-8b11071e105a",
+        "name": "Xiaomi | xiaomi/mimo-v2.5-20260422",
+        "context_length": 1048576,
         "model": {
           "slug": "xiaomi/mimo-v2.5",
           "hf_slug": "XiaomiMiMo/MiMo-V2.5",
@@ -60114,49 +60112,50 @@
         },
         "model_variant_slug": "xiaomi/mimo-v2.5",
         "model_variant_permaslug": "xiaomi/mimo-v2.5-20260422",
-        "adapter_name": "GMICloudAdapter",
-        "provider_name": "GMICloud",
+        "adapter_name": "XiaomiAdapter",
+        "provider_name": "Xiaomi",
         "provider_info": {
-          "name": "GMICloud",
-          "displayName": "GMICloud",
-          "slug": "gmicloud",
-          "baseUrl": "https://api.gmi-serving.com/v1",
+          "name": "Xiaomi",
+          "displayName": "Xiaomi",
+          "slug": "xiaomi",
+          "baseUrl": "https://api.xiaomimimo.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
+            "retentionDays": 30,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
-            "privacyPolicyURL": "https://docs.gmicloud.ai/privacy",
-            "requiresUserIDs": false
+            "termsOfServiceURL": "https://platform.xiaomimimo.com/#/docs/terms/user-agreement",
+            "privacyPolicyURL": "https://platform.xiaomimimo.com/#/docs/terms/privacy-policy",
+            "requiresUserIDs": true
           },
-          "headquarters": "US",
+          "headquarters": "CN",
           "datacenters": [
-            "US"
+            "SG",
+            "NL"
           ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
+          "hasCompletions": false,
+          "isAbortable": false,
           "moderationRequired": false,
-          "adapterName": "GMICloudAdapter",
+          "adapterName": "XiaomiAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gmicloud.ai/&size=256",
-            "className": "invert-0 dark:invert"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.mi.com/&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
+          "pricingStrategy": "xiaomi"
         },
-        "provider_display_name": "GMICloud",
-        "provider_slug": "gmicloud/fp8",
-        "provider_model_id": "XiaomiMiMo/MiMo-V2.5",
+        "provider_display_name": "Xiaomi",
+        "provider_slug": "xiaomi/fp8",
+        "provider_model_id": "xiaomi/mimo-v2.5",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": true,
+        "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -60164,47 +60163,50 @@
           "max_tokens",
           "temperature",
           "top_p",
-          "seed",
+          "stop",
+          "response_format",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "frequency_penalty",
+          "presence_penalty"
         ],
-        "excluded_parameters": [
-          "response_format"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": true,
+          "retentionDays": 30,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
-          "privacyPolicyURL": "https://docs.gmicloud.ai/privacy"
+          "termsOfServiceURL": "https://platform.xiaomimimo.com/#/docs/terms/user-agreement",
+          "privacyPolicyURL": "https://platform.xiaomimimo.com/#/docs/terms/privacy-policy",
+          "requiresUserIDs": true
         },
         "pricing": {
-          "prompt": "0.000000112",
-          "completion": "0.000000224",
-          "input_cache_read": "0.0000000024",
-          "discount": 0.2,
+          "prompt": "0.00000014",
+          "completion": "0.00000028",
+          "input_cache_read": "0.0000000028",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000112",
+              "price": "0.00000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000224",
+              "price": "0.00000028",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000024",
+              "price": "0.0000000028",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -60214,31 +60216,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000112",
+            "price": "0.00000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000224",
+            "price": "0.00000028",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000024",
+            "price": "0.0000000028",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000014",
-          "openai:completion_tokens": "0.00000028",
-          "openai:cached_prompt_tokens": "0.000000003"
+          "xiaomi:prompt_tokens": "0.00000014",
+          "xiaomi:completion_tokens": "0.00000028",
+          "xiaomi:cached_prompt_tokens": "0.0000000028"
         },
-        "pricing_version_id": "17dcc4d0-4781-4e7a-8072-fb2fb4b58220",
+        "pricing_version_id": "2ae0b109-374d-4246-aefa-956bd3dbf4f9",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -60250,24 +60252,30 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_video_urls": false,
+          "supports_base64_video_input": true,
+          "supports_video_urls": true,
           "supports_tool_choice": {
             "literal_none": false,
             "literal_auto": true,
-            "literal_required": false,
+            "literal_required": true,
             "type_function": false
           }
         },
-        "supported_video_parameters": null,
+        "supported_video_parameters": {
+          "supported_sizes": null,
+          "supported_frame_images": null,
+          "generate_audio": null,
+          "seed": null
+        },
         "supported_image_parameters": null,
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-07-06T20:07:20.204Z",
+        "created_at": "2026-04-17T15:45:49.427Z",
         "status": 0
       }
     },
@@ -62053,8 +62061,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "b16f9c10-99ee-4a75-bd5f-7f9b8b2b2b06",
-        "name": "Chutes | moonshotai/kimi-k2.6-20260420",
+        "id": "78cbd7eb-84cd-46ea-8347-0578e3415f83",
+        "name": "Baidu | moonshotai/kimi-k2.6-20260420",
         "context_length": 262144,
         "model": {
           "slug": "moonshotai/kimi-k2.6",
@@ -62135,61 +62143,60 @@
         },
         "model_variant_slug": "moonshotai/kimi-k2.6",
         "model_variant_permaslug": "moonshotai/kimi-k2.6-20260420",
-        "adapter_name": "ChutesAdapter",
-        "provider_name": "Chutes",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Chutes",
-          "displayName": "Chutes",
-          "slug": "chutes",
-          "baseUrl": "https://llm.chutes.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://chutes.ai/tos",
-            "privacyPolicyURL": "https://chutes.ai/privacy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "ChutesAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://chutes.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Chutes",
-        "provider_slug": "chutes/int4",
-        "provider_model_id": "moonshotai/Kimi-K2.6-TEE",
-        "quantization": "int4",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp4",
+        "provider_model_id": "kimi-k2.6",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 65535,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop",
+          "max_tokens",
           "frequency_penalty",
           "presence_penalty",
-          "seed",
-          "top_k",
-          "repetition_penalty",
+          "stop",
+          "response_format",
+          "structured_outputs",
           "tools",
-          "tool_choice",
-          "structured_outputs"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -62199,33 +62206,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://chutes.ai/tos",
-          "privacyPolicyURL": "https://chutes.ai/privacy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.00000058",
-          "completion": "0.0000034",
-          "input_cache_read": "0.000000058",
-          "discount": 0,
+          "prompt": "0.0000005795",
+          "completion": "0.00000244",
+          "input_cache_read": "0.0000000976",
+          "discount": 0.39,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000058",
+              "price": "0.0000005795",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000034",
+              "price": "0.00000244",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000058",
+              "price": "0.0000000976",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -62235,31 +62242,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000058",
+            "price": "0.0000005795",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000034",
+            "price": "0.00000244",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000058",
+            "price": "0.0000000976",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000058",
-          "openai:completion_tokens": "0.0000034",
-          "openai:cached_prompt_tokens": "0.000000058"
+          "openai:prompt_tokens": "0.00000095",
+          "openai:completion_tokens": "0.000004",
+          "openai:cached_prompt_tokens": "0.00000016"
         },
-        "pricing_version_id": "eaf9181e-d037-4dc4-b695-7b7319aa7d78",
+        "pricing_version_id": "74266252-a1bb-42ce-9716-876ccd8a057a",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -62271,11 +62278,11 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -62286,8 +62293,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-04-21T03:31:10.743Z",
+        "capacity_tpm": 30000000,
+        "created_at": "2026-05-21T14:24:00.671Z",
         "status": 0
       }
     },
@@ -63752,6 +63759,427 @@
       }
     },
     {
+      "slug": "bytedance/seedance-2.0-fast",
+      "hf_slug": null,
+      "updated_at": "2026-07-19T16:39:32.462Z",
+      "created_at": "2026-04-15T00:02:42.904Z",
+      "hf_updated_at": null,
+      "name": "ByteDance: Seedance 2.0 Fast",
+      "short_name": "Seedance 2.0 Fast",
+      "author": "bytedance",
+      "author_display_name": "bytedance",
+      "author_icon_uri": null,
+      "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output_modalities": [
+        "video"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "bytedance/seedance-2.0-fast-20260414",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "video_generation",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "a2a51aa0-13b6-4206-a022-2ea623cde439",
+        "name": "Seed | bytedance/seedance-2.0-fast-20260414",
+        "context_length": 0,
+        "model": {
+          "slug": "bytedance/seedance-2.0-fast",
+          "hf_slug": null,
+          "updated_at": "2026-07-19T16:39:32.462666+00:00",
+          "created_at": "2026-04-15T00:02:42.904726+00:00",
+          "hf_updated_at": null,
+          "name": "ByteDance: Seedance 2.0 Fast",
+          "short_name": "Seedance 2.0 Fast",
+          "author": "bytedance",
+          "author_display_name": "bytedance",
+          "author_icon_uri": null,
+          "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "audio"
+          ],
+          "output_modalities": [
+            "video"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "bytedance/seedance-2.0-fast-20260414",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "video_generation",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "bytedance/seedance-2.0-fast",
+        "model_variant_permaslug": "bytedance/seedance-2.0-fast-20260414",
+        "adapter_name": "BytePlusSeedanceAdapter",
+        "provider_name": "Seed",
+        "provider_info": {
+          "name": "Seed",
+          "displayName": "Seed",
+          "slug": "seed",
+          "baseUrl": "https://ark.ap-southeast.bytepluses.com/api/v3",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
+            "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "SG",
+          "datacenters": [],
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "adapterName": "BytePlusSeedanceAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "seedance"
+        },
+        "provider_display_name": "Seed",
+        "provider_slug": "seed",
+        "provider_model_id": "dreamina-seedance-2-0-fast-260128",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "frequency_penalty"
+        ],
+        "excluded_parameters": [
+          "temperature",
+          "top_p",
+          "tools",
+          "tool_choice",
+          "response_format",
+          "structured_outputs",
+          "seed",
+          "max_tokens"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
+          "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Video (with audio)",
+              "price": "0.12096",
+              "displayMultiplier": 1,
+              "unitLabel": "/second",
+              "tiers": [
+                {
+                  "sku_label": "480p",
+                  "price": "0.0538048"
+                },
+                {
+                  "sku_label": "720p",
+                  "price": "0.12096"
+                },
+                {
+                  "sku_label": "1080p",
+                  "price": "0.27216"
+                },
+                {
+                  "sku_label": "4K",
+                  "price": "1.08864"
+                }
+              ]
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video (no audio)",
+              "price": "0.12096",
+              "displayMultiplier": 1,
+              "unitLabel": "/second",
+              "tiers": [
+                {
+                  "sku_label": "480p",
+                  "price": "0.0538048"
+                },
+                {
+                  "sku_label": "720p",
+                  "price": "0.12096"
+                },
+                {
+                  "sku_label": "1080p",
+                  "price": "0.27216"
+                },
+                {
+                  "sku_label": "4K",
+                  "price": "1.08864"
+                }
+              ]
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video Tokens (with audio)",
+              "price": "0.0000056",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video Tokens (no audio)",
+              "price": "0.0000056",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Video (with audio)",
+            "price": "0.12096",
+            "displayMultiplier": 1,
+            "unitLabel": "/second",
+            "tiers": [
+              {
+                "sku_label": "480p",
+                "price": "0.0538048"
+              },
+              {
+                "sku_label": "720p",
+                "price": "0.12096"
+              },
+              {
+                "sku_label": "1080p",
+                "price": "0.27216"
+              },
+              {
+                "sku_label": "4K",
+                "price": "1.08864"
+              }
+            ]
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video (no audio)",
+            "price": "0.12096",
+            "displayMultiplier": 1,
+            "unitLabel": "/second",
+            "tiers": [
+              {
+                "sku_label": "480p",
+                "price": "0.0538048"
+              },
+              {
+                "sku_label": "720p",
+                "price": "0.12096"
+              },
+              {
+                "sku_label": "1080p",
+                "price": "0.27216"
+              },
+              {
+                "sku_label": "4K",
+                "price": "1.08864"
+              }
+            ]
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video Tokens (with audio)",
+            "price": "0.0000056",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video Tokens (no audio)",
+            "price": "0.0000056",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "seedance:video_tokens": "0.0000056",
+          "seedance:video_tokens_without_audio": "0.0000056"
+        },
+        "pricing_version_id": "2cff4a7c-ccee-44c6-b4b5-1ceeafeb7c99",
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "limit_rpm_cf": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {
+          "supported_resolutions": null,
+          "supported_aspect_ratios": null,
+          "supported_sizes": [
+            "480x480",
+            "480x640",
+            "480x854",
+            "640x480",
+            "854x480",
+            "1120x480",
+            "720x720",
+            "720x960",
+            "720x1280",
+            "720x1680",
+            "960x720",
+            "1280x720",
+            "1680x720"
+          ],
+          "supported_durations": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "supported_frame_images": [
+            "first_frame",
+            "last_frame"
+          ],
+          "generate_audio": true,
+          "seed": true
+        },
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [
+          "watermark",
+          "req_key"
+        ],
+        "capacity_tpm": null,
+        "created_at": "2026-04-15T00:02:42.904Z",
+        "status": 0
+      }
+    },
+    {
       "slug": "bytedance/seedance-2.0",
       "hf_slug": null,
       "updated_at": "2026-07-19T16:39:06.035Z",
@@ -64157,427 +64585,6 @@
             "2880x2160",
             "2160x2880",
             "5040x2160"
-          ],
-          "supported_durations": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "supported_frame_images": [
-            "first_frame",
-            "last_frame"
-          ],
-          "generate_audio": true,
-          "seed": true
-        },
-        "supported_image_parameters": null,
-        "provider_region": null,
-        "deprecation_date": null,
-        "allowed_passthrough_parameters": [
-          "watermark",
-          "req_key"
-        ],
-        "capacity_tpm": null,
-        "created_at": "2026-04-15T00:02:42.904Z",
-        "status": 0
-      }
-    },
-    {
-      "slug": "bytedance/seedance-2.0-fast",
-      "hf_slug": null,
-      "updated_at": "2026-07-19T16:39:32.462Z",
-      "created_at": "2026-04-15T00:02:42.904Z",
-      "hf_updated_at": null,
-      "name": "ByteDance: Seedance 2.0 Fast",
-      "short_name": "Seedance 2.0 Fast",
-      "author": "bytedance",
-      "author_display_name": "bytedance",
-      "author_icon_uri": null,
-      "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
-      "model_version_group_id": null,
-      "context_length": 0,
-      "input_modalities": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output_modalities": [
-        "video"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "bytedance/seedance-2.0-fast-20260414",
-      "supports_reasoning": false,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "default_order": [],
-      "quick_start_example_type": "video_generation",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "a2a51aa0-13b6-4206-a022-2ea623cde439",
-        "name": "Seed | bytedance/seedance-2.0-fast-20260414",
-        "context_length": 0,
-        "model": {
-          "slug": "bytedance/seedance-2.0-fast",
-          "hf_slug": null,
-          "updated_at": "2026-07-19T16:39:32.462666+00:00",
-          "created_at": "2026-04-15T00:02:42.904726+00:00",
-          "hf_updated_at": null,
-          "name": "ByteDance: Seedance 2.0 Fast",
-          "short_name": "Seedance 2.0 Fast",
-          "author": "bytedance",
-          "author_display_name": "bytedance",
-          "author_icon_uri": null,
-          "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
-          "model_version_group_id": null,
-          "context_length": 0,
-          "input_modalities": [
-            "text",
-            "image",
-            "video",
-            "audio"
-          ],
-          "output_modalities": [
-            "video"
-          ],
-          "has_text_output": false,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "bytedance/seedance-2.0-fast-20260414",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": null,
-            "top_p": null,
-            "top_k": null,
-            "frequency_penalty": null,
-            "presence_penalty": null,
-            "repetition_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": "video_generation",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "bytedance/seedance-2.0-fast",
-        "model_variant_permaslug": "bytedance/seedance-2.0-fast-20260414",
-        "adapter_name": "BytePlusSeedanceAdapter",
-        "provider_name": "Seed",
-        "provider_info": {
-          "name": "Seed",
-          "displayName": "Seed",
-          "slug": "seed",
-          "baseUrl": "https://ark.ap-southeast.bytepluses.com/api/v3",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
-            "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy",
-            "requiresUserIDs": false
-          },
-          "headquarters": "SG",
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "adapterName": "BytePlusSeedanceAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": false,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://avatars.githubusercontent.com/u/4158466?v=4&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "seedance"
-        },
-        "provider_display_name": "Seed",
-        "provider_slug": "seed",
-        "provider_model_id": "dreamina-seedance-2-0-fast-260128",
-        "quantization": "unknown",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": null,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "frequency_penalty"
-        ],
-        "excluded_parameters": [
-          "temperature",
-          "top_p",
-          "tools",
-          "tool_choice",
-          "response_format",
-          "structured_outputs",
-          "seed",
-          "max_tokens"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
-          "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0",
-          "completion": "0",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "unit",
-              "sku_label": "Video (with audio)",
-              "price": "0.12096",
-              "displayMultiplier": 1,
-              "unitLabel": "/second",
-              "tiers": [
-                {
-                  "sku_label": "480p",
-                  "price": "0.0538048"
-                },
-                {
-                  "sku_label": "720p",
-                  "price": "0.12096"
-                },
-                {
-                  "sku_label": "1080p",
-                  "price": "0.27216"
-                },
-                {
-                  "sku_label": "4K",
-                  "price": "1.08864"
-                }
-              ]
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video (no audio)",
-              "price": "0.12096",
-              "displayMultiplier": 1,
-              "unitLabel": "/second",
-              "tiers": [
-                {
-                  "sku_label": "480p",
-                  "price": "0.0538048"
-                },
-                {
-                  "sku_label": "720p",
-                  "price": "0.12096"
-                },
-                {
-                  "sku_label": "1080p",
-                  "price": "0.27216"
-                },
-                {
-                  "sku_label": "4K",
-                  "price": "1.08864"
-                }
-              ]
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video Tokens (with audio)",
-              "price": "0.0000056",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video Tokens (no audio)",
-              "price": "0.0000056",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "display_pricing": [
-          {
-            "kind": "unit",
-            "sku_label": "Video (with audio)",
-            "price": "0.12096",
-            "displayMultiplier": 1,
-            "unitLabel": "/second",
-            "tiers": [
-              {
-                "sku_label": "480p",
-                "price": "0.0538048"
-              },
-              {
-                "sku_label": "720p",
-                "price": "0.12096"
-              },
-              {
-                "sku_label": "1080p",
-                "price": "0.27216"
-              },
-              {
-                "sku_label": "4K",
-                "price": "1.08864"
-              }
-            ]
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video (no audio)",
-            "price": "0.12096",
-            "displayMultiplier": 1,
-            "unitLabel": "/second",
-            "tiers": [
-              {
-                "sku_label": "480p",
-                "price": "0.0538048"
-              },
-              {
-                "sku_label": "720p",
-                "price": "0.12096"
-              },
-              {
-                "sku_label": "1080p",
-                "price": "0.27216"
-              },
-              {
-                "sku_label": "4K",
-                "price": "1.08864"
-              }
-            ]
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video Tokens (with audio)",
-            "price": "0.0000056",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video Tokens (no audio)",
-            "price": "0.0000056",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "seedance:video_tokens": "0.0000056",
-          "seedance:video_tokens_without_audio": "0.0000056"
-        },
-        "pricing_version_id": "2cff4a7c-ccee-44c6-b4b5-1ceeafeb7c99",
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "limit_rpm_cf": null,
-        "has_completions": false,
-        "has_chat_completions": false,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": {
-          "supported_resolutions": null,
-          "supported_aspect_ratios": null,
-          "supported_sizes": [
-            "480x480",
-            "480x640",
-            "480x854",
-            "640x480",
-            "854x480",
-            "1120x480",
-            "720x720",
-            "720x960",
-            "720x1280",
-            "720x1680",
-            "960x720",
-            "1280x720",
-            "1680x720"
           ],
           "supported_durations": [
             4,
@@ -65210,7 +65217,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 1000000,
+        "capacity_tpm": 30000000,
         "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       }
@@ -66963,8 +66970,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "0178c93a-f177-44c9-8873-ac815d9ac7fe",
-        "name": "DeepInfra | google/gemma-4-31b-it-20260402",
+        "id": "6498d998-23ad-4dc5-b98f-9dee5a48d290",
+        "name": "OpenInference | google/gemma-4-31b-it-20260402",
         "context_length": 262144,
         "model": {
           "slug": "google/gemma-4-31b-it",
@@ -67042,20 +67049,20 @@
         },
         "model_variant_slug": "google/gemma-4-31b-it",
         "model_variant_permaslug": "google/gemma-4-31b-it-20260402",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "OpenInferenceAdapter",
+        "provider_name": "OpenInference",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra Turbo",
-          "slug": "deepinfra/turbo",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "OpenInference",
+          "displayName": "OpenInference",
+          "slug": "open-inference",
+          "baseUrl": "https://api.openinference.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://www.openinference.ai/terms",
+            "privacyPolicyURL": "https://www.openinference.ai/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
@@ -67063,41 +67070,43 @@
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "OpenInferenceAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
+            "className": "invert dark:invert-0"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra Turbo",
-        "provider_slug": "deepinfra/turbo",
-        "provider_model_id": "google/gemma-4-31B-it-turbo",
-        "quantization": "fp4",
+        "provider_display_name": "OpenInference",
+        "provider_slug": "open-inference/bf16",
+        "provider_model_id": "google/gemma-4-31B-it",
+        "quantization": "bf16",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": 8192,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
-          "top_p",
+          "max_tokens",
           "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "top_k",
           "seed",
-          "min_p",
           "response_format",
-          "logit_bias",
-          "structured_outputs"
+          "tools",
+          "tool_choice",
+          "structured_outputs",
+          "logprobs",
+          "top_logprobs",
+          "top_p",
+          "top_k",
+          "min_p",
+          "top_a"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -67107,33 +67116,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://www.openinference.ai/terms",
+          "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.00000009",
-          "completion": "0.00000034",
-          "input_cache_read": "0.00000005",
+          "prompt": "0.00000008",
+          "completion": "0.00000035",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000009",
+              "price": "0.00000008",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000034",
+              "price": "0.00000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000005",
+              "price": "0.00000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -67143,37 +67152,37 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000009",
+            "price": "0.00000008",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000034",
+            "price": "0.00000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000005",
+            "price": "0.00000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000009",
-          "openai:completion_tokens": "0.00000034",
-          "openai:cached_prompt_tokens": "0.00000005"
+          "openai:prompt_tokens": "0.00000008",
+          "openai:completion_tokens": "0.00000035",
+          "openai:cached_prompt_tokens": "0.00000001"
         },
-        "pricing_version_id": "7ef3d85c-714e-4612-af04-2b3052461b3b",
+        "pricing_version_id": "15dc591e-90e3-4ee2-b771-fcc7820fff4a",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
         "is_deranked": false,
         "is_disabled": false,
-        "supports_tool_parameters": false,
+        "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
@@ -67182,6 +67191,8 @@
         "has_completions": true,
         "has_chat_completions": true,
         "features": {
+          "supports_base64_video_input": false,
+          "supports_video_urls": false,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -67195,7 +67206,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-05-11T21:46:19.707Z",
+        "created_at": "2026-07-13T20:47:44.087Z",
         "status": 0
       }
     },
@@ -70065,7 +70076,7 @@
           "isAbortable": true,
           "moderationRequired": false,
           "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": null,
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
@@ -74624,7 +74635,7 @@
           "moderationRequired": false,
           "adapterName": "NvidiaAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -77702,8 +77713,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "1c18fce9-d45d-440d-8018-1dfee4c79588",
-        "name": "Azure | openai/gpt-5.3-chat-20260303",
+        "id": "b8d7b6e5-6b88-4b54-88bd-ae65aec40716",
+        "name": "OpenAI | openai/gpt-5.3-chat-20260303",
         "context_length": 128000,
         "model": {
           "slug": "openai/gpt-5.3-chat",
@@ -77778,39 +77789,40 @@
         },
         "model_variant_slug": "openai/gpt-5.3-chat",
         "model_variant_permaslug": "openai/gpt-5.3-chat-20260303",
-        "adapter_name": "InternalStreamAzureOpenAIResponsesAdapter",
-        "provider_name": "Azure",
+        "adapter_name": "OpenAIResponsesAdapter",
+        "provider_name": "OpenAI",
         "provider_info": {
-          "name": "Azure",
-          "displayName": "Azure",
-          "slug": "azure",
-          "baseUrl": "https://openrouter-foundry-east-resource.cognitiveservices.azure.com/openai",
+          "name": "OpenAI",
+          "displayName": "OpenAI",
+          "slug": "openai",
+          "baseUrl": "https://api.openai.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
-            "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement",
-            "requiresUserIDs": false
+            "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+            "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+            "requiresUserIDs": true
           },
           "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": false,
+          "hasCompletions": true,
           "isAbortable": true,
-          "moderationRequired": false,
-          "adapterName": "AzureOpenAIAdapter",
-          "statusPageUrl": "https://status.azure.com/",
+          "moderationRequired": true,
+          "adapterName": "OpenAIResponsesAdapter",
+          "statusPageUrl": "https://status.openai.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/Azure.svg"
+            "url": "/images/icons/OpenAI.svg",
+            "className": "invert-0 dark:invert"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_responses"
         },
-        "provider_display_name": "Azure",
-        "provider_slug": "azure",
-        "provider_model_id": "gpt-5.3-chat",
+        "provider_display_name": "OpenAI",
+        "provider_slug": "openai",
+        "provider_model_id": "gpt-5.3-chat-latest",
         "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
@@ -77819,26 +77831,27 @@
         "max_completion_tokens": 16384,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "seed",
+          "max_tokens",
           "response_format",
           "structured_outputs",
           "tools",
           "tool_choice"
         ],
         "excluded_parameters": [
-          "temperature",
-          "top_p"
+          "top_p",
+          "temperature"
         ],
         "is_byok": false,
-        "moderation_required": false,
+        "moderation_required": true,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
-          "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement"
+          "termsOfServiceURL": "https://openai.com/policies/row-terms-of-use/",
+          "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+          "requiresUserIDs": true
         },
         "pricing": {
           "prompt": "0.00000175",
@@ -77899,7 +77912,7 @@
           "openai_responses:completion_tokens": "0.000014",
           "openai_responses:cached_prompt_tokens": "1.75e-7"
         },
-        "pricing_version_id": "dd2fd0b4-b933-40c3-b2a7-f0967267bede",
+        "pricing_version_id": "e2345794-79c8-4f64-9231-d093ae6136a8",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -77911,11 +77924,14 @@
         "limit_rpm": null,
         "limit_rpd": null,
         "limit_rpm_cf": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
+          "supports_implicit_caching": true,
           "supports_file_urls": true,
+          "supports_native_web_search": true,
           "supports_native_apply_patch": true,
+          "supports_input_audio": false,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -77926,10 +77942,10 @@
         "supported_video_parameters": null,
         "supported_image_parameters": null,
         "provider_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-08-10T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-03-16T17:51:15.210Z",
+        "created_at": "2026-03-03T19:10:32.911Z",
         "status": 0
       }
     },
@@ -80946,7 +80962,7 @@
           "moderationRequired": false,
           "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -84548,7 +84564,7 @@
           "isAbortable": true,
           "moderationRequired": false,
           "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": null,
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
@@ -87596,6 +87612,8 @@
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
+            "termsOfServiceURL": "https://www.upstage.ai/terms-of-service",
+            "privacyPolicyURL": "https://www.upstage.ai/privacy-policy",
             "requiresUserIDs": false
           },
           "datacenters": [],
@@ -87605,7 +87623,7 @@
           "moderationRequired": false,
           "adapterName": "UpstageAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://upstage.ai&size=256"
           },
@@ -87642,7 +87660,9 @@
           "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": true,
-          "canPublish": false
+          "canPublish": false,
+          "termsOfServiceURL": "https://www.upstage.ai/terms-of-service",
+          "privacyPolicyURL": "https://www.upstage.ai/privacy-policy"
         },
         "pricing": {
           "prompt": "0.00000015",
@@ -92750,7 +92770,7 @@
           "moderationRequired": false,
           "adapterName": "NvidiaAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -93159,7 +93179,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-17T17:01:40.663Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -95393,7 +95413,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-12-09T01:31:51.193Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -97550,7 +97570,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 1000000,
+        "capacity_tpm": 40000000,
         "created_at": "2026-07-24T03:06:53.215Z",
         "status": 0
       }
@@ -108643,7 +108663,7 @@
           "moderationRequired": false,
           "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -116217,7 +116237,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-10-14T22:53:07.729Z",
-        "status": -5
+        "status": -2
       }
     },
     {
@@ -119782,7 +119802,7 @@
           "moderationRequired": false,
           "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.nvidia.com/en-us/&size=256"
           },
@@ -126480,7 +126500,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-10-10T18:41:28.549Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -126631,7 +126651,7 @@
           "isAbortable": true,
           "moderationRequired": false,
           "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": null,
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
@@ -127913,7 +127933,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-09-07T20:26:32.649Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -130139,7 +130159,7 @@
         },
         "model_variant_slug": "morph/morph-v3-large",
         "model_variant_permaslug": "morph/morph-v3-large",
-        "adapter_name": "MorphAdapter",
+        "adapter_name": "MorphFastApplyAdapter",
         "provider_name": "Morph",
         "provider_info": {
           "name": "Morph",
@@ -130163,7 +130183,7 @@
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "MorphAdapter",
+          "adapterName": "MorphFastApplyAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -130417,7 +130437,7 @@
         },
         "model_variant_slug": "morph/morph-v3-fast",
         "model_variant_permaslug": "morph/morph-v3-fast",
-        "adapter_name": "MorphAdapter",
+        "adapter_name": "MorphFastApplyAdapter",
         "provider_name": "Morph",
         "provider_info": {
           "name": "Morph",
@@ -130441,7 +130461,7 @@
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "MorphAdapter",
+          "adapterName": "MorphFastApplyAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
@@ -141164,7 +141184,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-04-14T13:30:58.236Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -142459,7 +142479,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-03-24T20:02:59.576Z",
-        "status": -5
+        "status": 0
       }
     },
     {
@@ -149844,7 +149864,7 @@
           "isAbortable": true,
           "moderationRequired": false,
           "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": null,
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
             "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
@@ -151788,7 +151808,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-28T20:44:52.471Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -161761,7 +161781,7 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 2000,
+        "max_completion_tokens": 6000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "response_format",
@@ -162018,7 +162038,7 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 2048,
+        "max_completion_tokens": 6144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "response_format",

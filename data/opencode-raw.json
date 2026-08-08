@@ -135,29 +135,6 @@
       "_api_id": "claude-opus-4-5"
     },
     {
-      "id": "claude-opus-4-1",
-      "name": "Claude Opus 4 1",
-      "category": "llm",
-      "description": "Claude Opus 4 1 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "anthropic",
-        "claude",
-        "powerful"
-      ],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "pricing": {
-        "input_per_1m": 15.0,
-        "output_per_1m": 75.0
-      },
-      "context_k": 200,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "claude-opus-4-1"
-    },
-    {
       "id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
       "category": "llm",
@@ -1185,6 +1162,25 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "ling-3.0-flash-free"
+    },
+    {
+      "id": "ling-3-0-tiny-free",
+      "name": "Ling 3.0 Tiny Free",
+      "category": "llm",
+      "description": "Ling 3.0 Tiny Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "ling-3.0-tiny-free"
     },
     {
       "id": "nemotron-3-ultra-free",
