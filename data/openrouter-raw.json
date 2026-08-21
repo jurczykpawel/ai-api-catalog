@@ -6998,7 +6998,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-13T00:02:08.355Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -8458,7 +8458,7 @@
       "author_icon_uri": null,
       "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or knowledge-heavy tasks.\n\nPrompts and outputs may be retained and used to train Liquid models.",
       "model_version_group_id": null,
-      "context_length": 128000,
+      "context_length": 65536,
       "input_modalities": [
         "text"
       ],
@@ -8514,7 +8514,7 @@
       "endpoint": {
         "id": "789f02b8-56f5-48d0-bae5-91b4957376c7",
         "name": "Liquid | liquid/lfm-2.5-2.6b-20260811:free",
-        "context_length": 128000,
+        "context_length": 65536,
         "model": {
           "slug": "liquid/lfm-2.5-2.6b",
           "hf_slug": "LiquidAI/LFM2.5-2.6B",
@@ -12759,8 +12759,8 @@
       "supported_tts_voices": [],
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
-        "name": "OpenInference | deepseek/deepseek-v4-flash-20260731",
-        "context_length": 262144,
+        "name": "Sail Research | deepseek/deepseek-v4-flash-20260731",
+        "context_length": 1048576,
         "model": {
           "slug": "~deepseek/deepseek-v4-flash-latest",
           "hf_slug": null,
@@ -12842,62 +12842,62 @@
         },
         "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
         "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
-        "adapter_name": "OpenInferenceAdapter",
-        "provider_name": "OpenInference",
+        "adapter_name": "SailResearchAdapter",
+        "provider_name": "Sail Research",
         "provider_info": {
-          "name": "OpenInference",
-          "displayName": "OpenInference",
-          "slug": "open-inference",
-          "baseUrl": "https://api.openinference.ai/v1",
+          "name": "Sail Research",
+          "displayName": "Sail Research",
+          "slug": "sail-research",
+          "baseUrl": "https://api.sailresearch.com/partner/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.openinference.ai/terms",
-            "privacyPolicyURL": "https://www.openinference.ai/privacy",
+            "termsOfServiceURL": "https://www.sailresearch.com/terms",
+            "privacyPolicyURL": "https://www.sailresearch.com/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "OpenInferenceAdapter",
-          "statusPageUrl": null,
+          "adapterName": "SailResearchAdapter",
+          "statusPageUrl": "https://status.sailresearch.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
-            "className": "invert dark:invert-0"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.sailresearch.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "OpenInference",
-        "provider_slug": "open-inference/fp4",
-        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "provider_display_name": "Sail Research",
+        "provider_slug": "sail-research/fp4",
+        "provider_model_id": "deepseek/deepseek-v4-flash-0731",
         "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
-          "max_tokens",
-          "stop",
-          "seed",
           "top_p",
+          "top_k",
           "frequency_penalty",
           "presence_penalty",
-          "structured_outputs",
+          "stop",
+          "seed",
+          "max_tokens",
           "response_format",
           "tools",
           "tool_choice",
-          "top_k",
+          "structured_outputs",
           "logprobs",
           "top_logprobs",
           "min_p",
@@ -12907,10 +12907,7 @@
           "reasoning_effort",
           "top_a"
         ],
-        "excluded_parameters": [
-          "logprobs",
-          "top_logprobs"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -12918,13 +12915,13 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.openinference.ai/terms",
-          "privacyPolicyURL": "https://www.openinference.ai/privacy"
+          "termsOfServiceURL": "https://www.sailresearch.com/terms",
+          "privacyPolicyURL": "https://www.sailresearch.com/privacy"
         },
         "pricing": {
           "prompt": "0.000000065",
-          "completion": "0.00000014",
-          "input_cache_read": "0.000000014",
+          "completion": "0.00000018",
+          "input_cache_read": "0.00000002",
           "discount": 0,
           "display_pricing": [
             {
@@ -12937,14 +12934,14 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000014",
+              "price": "0.00000018",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000014",
+              "price": "0.00000002",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -12961,24 +12958,24 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000014",
+            "price": "0.00000018",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000014",
+            "price": "0.00000002",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.000000065",
-          "openai:completion_tokens": "0.00000014",
-          "openai:cached_prompt_tokens": "0.000000014"
+          "openai:completion_tokens": "0.00000018",
+          "openai:cached_prompt_tokens": "0.00000002"
         },
-        "pricing_version_id": "22d283f1-9b21-4b6d-bb54-a7fee4367543",
+        "pricing_version_id": "bdbc1a74-f633-43be-a38c-f704b3282142",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -12990,7 +12987,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
@@ -13005,8 +13002,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-08-10T20:36:58.988Z",
+        "capacity_tpm": 37800000,
+        "created_at": "2026-08-05T19:22:23.682Z",
         "status": 0
       }
     },
@@ -13089,9 +13086,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": [],
       "endpoint": {
-        "id": "f954a48e-1c90-433b-9348-4720f8030331",
-        "name": "OpenInference | deepseek/deepseek-v4-flash-20260731",
-        "context_length": 262144,
+        "id": "5c1818a9-3b96-4418-b539-c1a28648f14d",
+        "name": "Sail Research | deepseek/deepseek-v4-flash-20260731",
+        "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -13173,66 +13170,66 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash-0731",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260731",
-        "adapter_name": "OpenInferenceAdapter",
-        "provider_name": "OpenInference",
+        "adapter_name": "SailResearchAdapter",
+        "provider_name": "Sail Research",
         "provider_info": {
-          "name": "OpenInference",
-          "displayName": "OpenInference",
-          "slug": "open-inference",
-          "baseUrl": "https://api.openinference.ai/v1",
+          "name": "Sail Research",
+          "displayName": "Sail Research",
+          "slug": "sail-research",
+          "baseUrl": "https://api.sailresearch.com/partner/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.openinference.ai/terms",
-            "privacyPolicyURL": "https://www.openinference.ai/privacy",
+            "termsOfServiceURL": "https://www.sailresearch.com/terms",
+            "privacyPolicyURL": "https://www.sailresearch.com/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "OpenInferenceAdapter",
-          "statusPageUrl": null,
+          "adapterName": "SailResearchAdapter",
+          "statusPageUrl": "https://status.sailresearch.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
-            "className": "invert dark:invert-0"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.sailresearch.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "OpenInference",
-        "provider_slug": "open-inference/fp4",
-        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "provider_display_name": "Sail Research",
+        "provider_slug": "sail-research/fp4",
+        "provider_model_id": "deepseek/deepseek-v4-flash-0731",
         "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
-          "max_tokens",
-          "stop",
-          "seed",
           "top_p",
+          "top_k",
           "frequency_penalty",
           "presence_penalty",
-          "structured_outputs",
+          "stop",
+          "seed",
+          "max_tokens",
           "response_format",
           "tools",
-          "tool_choice"
-        ],
-        "excluded_parameters": [
+          "tool_choice",
+          "structured_outputs",
           "logprobs",
           "top_logprobs"
         ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -13240,13 +13237,13 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.openinference.ai/terms",
-          "privacyPolicyURL": "https://www.openinference.ai/privacy"
+          "termsOfServiceURL": "https://www.sailresearch.com/terms",
+          "privacyPolicyURL": "https://www.sailresearch.com/privacy"
         },
         "pricing": {
           "prompt": "0.000000065",
-          "completion": "0.00000014",
-          "input_cache_read": "0.000000014",
+          "completion": "0.00000018",
+          "input_cache_read": "0.00000002",
           "discount": 0,
           "display_pricing": [
             {
@@ -13259,14 +13256,14 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000014",
+              "price": "0.00000018",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000014",
+              "price": "0.00000002",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -13283,24 +13280,24 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000014",
+            "price": "0.00000018",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000014",
+            "price": "0.00000002",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.000000065",
-          "openai:completion_tokens": "0.00000014",
-          "openai:cached_prompt_tokens": "0.000000014"
+          "openai:completion_tokens": "0.00000018",
+          "openai:cached_prompt_tokens": "0.00000002"
         },
-        "pricing_version_id": "22d283f1-9b21-4b6d-bb54-a7fee4367543",
+        "pricing_version_id": "bdbc1a74-f633-43be-a38c-f704b3282142",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -13312,7 +13309,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
@@ -13327,8 +13324,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-08-10T20:36:58.988Z",
+        "capacity_tpm": 37800000,
+        "created_at": "2026-08-05T19:22:23.682Z",
         "status": 0
       }
     },
@@ -29524,7 +29521,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:14.913Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -40763,7 +40760,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 16250000,
+        "capacity_tpm": 13000000,
         "created_at": "2026-07-14T22:36:32.103Z",
         "status": 0
       }
@@ -64974,7 +64971,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-14T20:52:18.212Z",
-        "status": -2
+        "status": -5
       }
     },
     {
@@ -71064,7 +71061,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:07:20.204Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -77530,7 +77527,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-17T02:17:07.792Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -83587,7 +83584,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-16T16:08:09.861Z",
-        "status": -2
+        "status": -5
       }
     },
     {
@@ -85762,7 +85759,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-06T21:57:52.861Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -102205,7 +102202,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-12-23T19:40:34.986Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -106221,7 +106218,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-12-09T01:31:51.193Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -132835,7 +132832,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-08-11T15:07:54.675Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -135324,7 +135321,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-22T21:06:52.094Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -138676,7 +138673,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-09-07T20:26:32.649Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -153415,7 +153412,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-03-24T20:02:59.576Z",
-        "status": -2
+        "status": -5
       }
     },
     {
@@ -162753,7 +162750,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-12-05T22:30:25.576Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -167855,7 +167852,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-11-07T21:19:02.383Z",
-        "status": -2
+        "status": 0
       }
     },
     {

@@ -4457,6 +4457,29 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "gpt-image-2",
+      "name": "GPT-Image-2",
+      "category": "image_generation",
+      "description": "OpenAI's GPT-Image-2 image generation model available via API, supporting features like transparent background generation with alpha channel output.",
+      "tags": [
+        "openai"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-08-21",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "openai",
+          "pricing": {
+            "notes": "Check current pricing"
+          },
+          "url": "https://platform.openai.com/docs/api-reference/images",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     }
   ]
 }
