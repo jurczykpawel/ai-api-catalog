@@ -583,125 +583,31 @@
           "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html"
         },
         "pricing": {
-          "prompt": "0.00000044",
-          "completion": "0.00000132",
-          "input_cache_read": "0.000000014",
+          "prompt": "0.00000022",
+          "completion": "0.00000066",
+          "input_cache_read": "0.000000007",
           "discount": 0,
-          "overrides": [
-            {
-              "utc_start": 1000,
-              "utc_end": 100,
-              "prompt": "0.00000022",
-              "completion": "0.00000066",
-              "input_cache_read": "0.000000007"
-            },
-            {
-              "utc_start": 100,
-              "utc_end": 400,
-              "prompt": "0.00000044",
-              "completion": "0.00000132",
-              "input_cache_read": "0.000000014"
-            },
-            {
-              "utc_start": 400,
-              "utc_end": 600,
-              "prompt": "0.00000022",
-              "completion": "0.00000066",
-              "input_cache_read": "0.000000007"
-            },
-            {
-              "utc_start": 600,
-              "utc_end": 1000,
-              "prompt": "0.00000044",
-              "completion": "0.00000132",
-              "input_cache_read": "0.000000014"
-            }
-          ],
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000044",
+              "price": "0.00000022",
               "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens",
-              "tiers": [
-                {
-                  "sku_label": "Off-peak",
-                  "price": "0.00000022"
-                },
-                {
-                  "sku_label": "Peak",
-                  "price": "0.00000044"
-                }
-              ]
+              "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000132",
+              "price": "0.00000066",
               "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens",
-              "tiers": [
-                {
-                  "sku_label": "Off-peak",
-                  "price": "0.00000066"
-                },
-                {
-                  "sku_label": "Peak",
-                  "price": "0.00000132"
-                }
-              ]
+              "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000014",
+              "price": "0.000000007",
               "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens",
-              "tiers": [
-                {
-                  "sku_label": "Off-peak",
-                  "price": "0.000000007"
-                },
-                {
-                  "sku_label": "Peak",
-                  "price": "0.000000014"
-                }
-              ]
-            },
-            {
-              "kind": "schedule",
-              "sku_label": "Off-peak Hours",
-              "price": "0",
-              "displayMultiplier": 1,
-              "unitLabel": "",
-              "scheduleWindows": [
-                {
-                  "utc_start": 1000,
-                  "utc_end": 100
-                },
-                {
-                  "utc_start": 400,
-                  "utc_end": 600
-                }
-              ]
-            },
-            {
-              "kind": "schedule",
-              "sku_label": "Peak Hours",
-              "price": "0",
-              "displayMultiplier": 1,
-              "unitLabel": "",
-              "scheduleWindows": [
-                {
-                  "utc_start": 100,
-                  "utc_end": 400
-                },
-                {
-                  "utc_start": 600,
-                  "utc_end": 1000
-                }
-              ]
+              "unitLabel": "/M tokens"
             }
           ]
         },
@@ -709,102 +615,34 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000044",
+            "price": "0.00000022",
             "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens",
-            "tiers": [
-              {
-                "sku_label": "Off-peak",
-                "price": "0.00000022"
-              },
-              {
-                "sku_label": "Peak",
-                "price": "0.00000044"
-              }
-            ]
+            "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000132",
+            "price": "0.00000066",
             "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens",
-            "tiers": [
-              {
-                "sku_label": "Off-peak",
-                "price": "0.00000066"
-              },
-              {
-                "sku_label": "Peak",
-                "price": "0.00000132"
-              }
-            ]
+            "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000014",
+            "price": "0.000000007",
             "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens",
-            "tiers": [
-              {
-                "sku_label": "Off-peak",
-                "price": "0.000000007"
-              },
-              {
-                "sku_label": "Peak",
-                "price": "0.000000014"
-              }
-            ]
-          },
-          {
-            "kind": "schedule",
-            "sku_label": "Off-peak Hours",
-            "price": "0",
-            "displayMultiplier": 1,
-            "unitLabel": "",
-            "scheduleWindows": [
-              {
-                "utc_start": 1000,
-                "utc_end": 100
-              },
-              {
-                "utc_start": 400,
-                "utc_end": 600
-              }
-            ]
-          },
-          {
-            "kind": "schedule",
-            "sku_label": "Peak Hours",
-            "price": "0",
-            "displayMultiplier": 1,
-            "unitLabel": "",
-            "scheduleWindows": [
-              {
-                "utc_start": 100,
-                "utc_end": 400
-              },
-              {
-                "utc_start": 600,
-                "utc_end": 1000
-              }
-            ]
+            "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
           "deepseek:cache_hit_tokens": "0.000000007",
           "deepseek:cache_miss_tokens": "0.00000022",
           "deepseek:completion_tokens": "0.00000066",
-          "deepseek:peak_window_0_end": "400",
-          "deepseek:peak_window_1_end": "1000",
-          "deepseek:peak_window_0_start": "100",
-          "deepseek:peak_window_1_start": "600",
           "deepseek:peak_cache_hit_tokens": "0.000000014",
           "deepseek:peak_cache_miss_tokens": "0.00000044",
           "deepseek:peak_completion_tokens": "0.00000132"
         },
-        "pricing_version_id": "10effbfe-de00-4b7d-b1d4-72753d8bf107",
+        "pricing_version_id": "46db92f8-d850-4d30-828d-15f1b89cc17f",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -1125,7 +963,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 750,
+        "limit_rpm": 500,
         "limit_rpd": null,
         "has_completions": false,
         "has_chat_completions": true,
@@ -2231,6 +2069,246 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-18T18:06:03.786Z",
+        "status": 0
+      }
+    },
+    {
+      "slug": "tencent/hy-mt2-7b",
+      "hf_slug": "tencent/Hy-MT2-7B",
+      "updated_at": "2026-08-19T14:13:17.727Z",
+      "created_at": "2026-08-19T14:13:17.727Z",
+      "hf_updated_at": null,
+      "name": "Tencent: Hy-MT2-7B",
+      "short_name": "Hy-MT2-7B",
+      "author": "tencent",
+      "author_display_name": "tencent",
+      "author_icon_uri": null,
+      "description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.",
+      "model_version_group_id": null,
+      "context_length": 8192,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "tencent/hy-mt2-7b-20260521",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "f8e78ec2-a9f6-4437-91e7-2e76267afdb7",
+        "name": "Tencent | tencent/hy-mt2-7b-20260521",
+        "context_length": 8192,
+        "model": {
+          "slug": "tencent/hy-mt2-7b",
+          "hf_slug": "tencent/Hy-MT2-7B",
+          "updated_at": "2026-08-19T14:13:17.727182+00:00",
+          "created_at": "2026-08-19T14:13:17.727+00:00",
+          "hf_updated_at": null,
+          "name": "Tencent: Hy-MT2-7B",
+          "short_name": "Hy-MT2-7B",
+          "author": "tencent",
+          "author_display_name": "tencent",
+          "author_icon_uri": null,
+          "description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.",
+          "model_version_group_id": null,
+          "context_length": 8192,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "tencent/hy-mt2-7b-20260521",
+          "supports_reasoning": false,
+          "reasoning_config": null,
+          "features": {},
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": null,
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "tencent/hy-mt2-7b",
+        "model_variant_permaslug": "tencent/hy-mt2-7b-20260521",
+        "adapter_name": "OpenAIAdapter",
+        "provider_name": "Tencent",
+        "provider_info": {
+          "name": "Tencent",
+          "displayName": "Tencent Cloud",
+          "slug": "tencent",
+          "baseUrl": "https://tokenhub-intl.tencentcloudmaas.com/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://www.tencentcloud.com/en/document/product/301/78869",
+            "privacyPolicyURL": "https://www.tencentcloud.com/en/document/product/1300/78952",
+            "requiresUserIDs": false
+          },
+          "headquarters": "CN",
+          "datacenters": [
+            "SG"
+          ],
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "adapterName": "OpenAIAdapter",
+          "statusPageUrl": "https://status.tencentcloud.com",
+          "byokEnabled": true,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.tencentcloud.com&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_extended"
+        },
+        "provider_display_name": "Tencent Cloud",
+        "provider_slug": "tencent/fp8",
+        "provider_model_id": "hy-mt2-plus",
+        "quantization": "fp8",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 4096,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "temperature",
+          "stop",
+          "max_completion_tokens",
+          "max_tokens",
+          "response_format",
+          "structured_outputs"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://www.tencentcloud.com/en/document/product/301/78869",
+          "privacyPolicyURL": "https://www.tencentcloud.com/en/document/product/1300/78952"
+        },
+        "pricing": {
+          "prompt": "0.000000074",
+          "completion": "0.000000295",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.000000074",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.000000295",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.000000074",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.000000295",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0.000000074",
+          "openai:completion_tokens": "0.000000295"
+        },
+        "pricing_version_id": "7e894887-85c1-4786-9ddb-312bc0ee1a01",
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-08-19T14:08:07.505Z",
         "status": 0
       }
     },
@@ -8270,9 +8348,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "e719d276-b080-47ee-ae4f-63ed656a0b7a",
-        "name": "Alibaba | deepseek/deepseek-v4-pro-20260813",
-        "context_length": 1000000,
+        "id": "3b1b0465-08e5-4144-9b29-24eb9e7d572d",
+        "name": "DeepSeek | deepseek/deepseek-v4-pro-20260813",
+        "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-pro-0813",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -8355,49 +8433,45 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro-0813",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260813",
-        "adapter_name": "AlibabaAdapter",
-        "provider_name": "Alibaba",
+        "adapter_name": "DeepSeekAdapter",
+        "provider_name": "DeepSeek",
         "provider_info": {
-          "name": "Alibaba",
-          "displayName": "Alibaba Cloud Int.",
-          "slug": "alibaba",
-          "baseUrl": "https://llm-6nbyml54yaaqvdb9.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1",
+          "name": "DeepSeek",
+          "displayName": "DeepSeek",
+          "slug": "deepseek",
+          "baseUrl": "https://api.deepseek.com/beta",
           "dataPolicy": {
-            "training": false,
+            "training": true,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-product-terms-of-service-v-3-8-0",
-            "privacyPolicyURL": "https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy",
+            "termsOfServiceURL": "https://chat.deepseek.com/downloads/DeepSeek%20Terms%20of%20Use.html",
+            "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html",
             "requiresUserIDs": false
           },
-          "headquarters": "SG",
-          "datacenters": [
-            "SG",
-            "CN"
-          ],
+          "headquarters": "CN",
           "hasChatCompletions": true,
           "hasCompletions": true,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "AlibabaAdapter",
-          "statusPageUrl": "https://status.alibabacloud.com/",
+          "adapterName": "DeepSeekAdapter",
+          "statusPageUrl": "https://status.deepseek.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.alibabacloud.com/&size=256"
+            "url": "/images/icons/DeepSeek.png"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_extended"
+          "pricingStrategy": "deepseek"
         },
-        "provider_display_name": "Alibaba Cloud Int.",
-        "provider_slug": "alibaba",
-        "provider_model_id": "deepseek-v4-pro-0813",
+        "provider_display_name": "DeepSeek",
+        "provider_slug": "deepseek",
+        "provider_model_id": "deepseek-v4-pro",
         "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 393216,
+        "max_completion_tokens": 384000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -8405,125 +8479,52 @@
           "max_tokens",
           "temperature",
           "top_p",
-          "seed",
-          "presence_penalty",
-          "response_format",
-          "top_k",
-          "frequency_penalty",
           "stop",
-          "structured_outputs",
+          "frequency_penalty",
+          "presence_penalty",
+          "logprobs",
+          "top_logprobs",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "response_format"
         ],
         "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
-          "training": false,
+          "training": true,
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-product-terms-of-service-v-3-8-0",
-          "privacyPolicyURL": "https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy"
+          "termsOfServiceURL": "https://chat.deepseek.com/downloads/DeepSeek%20Terms%20of%20Use.html",
+          "privacyPolicyURL": "https://chat.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html"
         },
         "pricing": {
-          "prompt": "0.0000011616",
-          "completion": "0.0000034848",
-          "input_cache_read": "0.00000011616",
+          "prompt": "0.00000066",
+          "completion": "0.00000198",
+          "input_cache_read": "0.000000022",
           "discount": 0,
-          "overrides": [
-            {
-              "utc_start": 0,
-              "utc_end": 1400,
-              "prompt": "0.0000011616",
-              "completion": "0.0000034848",
-              "input_cache_read": "0.00000011616"
-            },
-            {
-              "utc_start": 1400,
-              "utc_end": 0,
-              "prompt": "0.000000627",
-              "completion": "0.000001881",
-              "input_cache_read": "0.0000000627"
-            }
-          ],
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000011616",
+              "price": "0.00000066",
               "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens",
-              "tiers": [
-                {
-                  "sku_label": "Off-peak",
-                  "price": "0.000000627"
-                },
-                {
-                  "sku_label": "Peak",
-                  "price": "0.0000011616"
-                }
-              ]
+              "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000034848",
+              "price": "0.00000198",
               "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens",
-              "tiers": [
-                {
-                  "sku_label": "Off-peak",
-                  "price": "0.000001881"
-                },
-                {
-                  "sku_label": "Peak",
-                  "price": "0.0000034848"
-                }
-              ]
+              "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000011616",
+              "price": "0.000000022",
               "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens",
-              "tiers": [
-                {
-                  "sku_label": "Off-peak",
-                  "price": "0.0000000627"
-                },
-                {
-                  "sku_label": "Peak",
-                  "price": "0.00000011616"
-                }
-              ]
-            },
-            {
-              "kind": "schedule",
-              "sku_label": "Off-peak Hours",
-              "price": "0",
-              "displayMultiplier": 1,
-              "unitLabel": "",
-              "scheduleWindows": [
-                {
-                  "utc_start": 1400,
-                  "utc_end": 0
-                }
-              ]
-            },
-            {
-              "kind": "schedule",
-              "sku_label": "Peak Hours",
-              "price": "0",
-              "displayMultiplier": 1,
-              "unitLabel": "",
-              "scheduleWindows": [
-                {
-                  "utc_start": 0,
-                  "utc_end": 1400
-                }
-              ]
+              "unitLabel": "/M tokens"
             }
           ]
         },
@@ -8531,92 +8532,34 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000011616",
+            "price": "0.00000066",
             "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens",
-            "tiers": [
-              {
-                "sku_label": "Off-peak",
-                "price": "0.000000627"
-              },
-              {
-                "sku_label": "Peak",
-                "price": "0.0000011616"
-              }
-            ]
+            "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000034848",
+            "price": "0.00000198",
             "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens",
-            "tiers": [
-              {
-                "sku_label": "Off-peak",
-                "price": "0.000001881"
-              },
-              {
-                "sku_label": "Peak",
-                "price": "0.0000034848"
-              }
-            ]
+            "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000011616",
+            "price": "0.000000022",
             "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens",
-            "tiers": [
-              {
-                "sku_label": "Off-peak",
-                "price": "0.0000000627"
-              },
-              {
-                "sku_label": "Peak",
-                "price": "0.00000011616"
-              }
-            ]
-          },
-          {
-            "kind": "schedule",
-            "sku_label": "Off-peak Hours",
-            "price": "0",
-            "displayMultiplier": 1,
-            "unitLabel": "",
-            "scheduleWindows": [
-              {
-                "utc_start": 1400,
-                "utc_end": 0
-              }
-            ]
-          },
-          {
-            "kind": "schedule",
-            "sku_label": "Peak Hours",
-            "price": "0",
-            "displayMultiplier": 1,
-            "unitLabel": "",
-            "scheduleWindows": [
-              {
-                "utc_start": 0,
-                "utc_end": 1400
-              }
-            ]
+            "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000627",
-          "openai:completion_tokens": "0.000001881",
-          "openai:cached_prompt_tokens": "0.0000000627",
-          "openai_extended:peak_window_0_end": 1400,
-          "openai_extended:peak_prompt_tokens": "0.0000011616",
-          "openai_extended:peak_window_0_start": 0,
-          "openai_extended:peak_completion_tokens": "0.0000034848",
-          "openai_extended:peak_cached_prompt_tokens": "0.00000011616"
+          "deepseek:cache_hit_tokens": "0.000000022",
+          "deepseek:cache_miss_tokens": "0.00000066",
+          "deepseek:completion_tokens": "0.00000198",
+          "deepseek:peak_cache_hit_tokens": "0.000000044",
+          "deepseek:peak_cache_miss_tokens": "0.00000132",
+          "deepseek:peak_completion_tokens": "0.00000396"
         },
-        "pricing_version_id": "eb39ba14-4092-410d-8c4d-3f76c9ec8894",
+        "pricing_version_id": "294b4069-31c2-405a-9acb-af8a6a80a30e",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -8628,9 +8571,11 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
+          "supports_implicit_caching": true,
+          "reasoning_return_mechanism": "reasoning-content",
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -8644,7 +8589,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-17T21:02:06.005Z",
+        "created_at": "2026-08-12T15:42:55.168Z",
         "status": 0
       }
     },
@@ -9707,7 +9652,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-11T17:53:15.599Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -13739,8 +13684,8 @@
       "supported_tts_voices": [],
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
-        "name": "Sail Research | deepseek/deepseek-v4-flash-20260731",
-        "context_length": 1048576,
+        "name": "OpenInference | deepseek/deepseek-v4-flash-20260731",
+        "context_length": 262144,
         "model": {
           "slug": "~deepseek/deepseek-v4-flash-latest",
           "hf_slug": null,
@@ -13822,72 +13767,75 @@
         },
         "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
         "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
-        "adapter_name": "SailResearchAdapter",
-        "provider_name": "Sail Research",
+        "adapter_name": "OpenInferenceAdapter",
+        "provider_name": "OpenInference",
         "provider_info": {
-          "name": "Sail Research",
-          "displayName": "Sail Research",
-          "slug": "sail-research",
-          "baseUrl": "https://api.sailresearch.com/partner/v1",
+          "name": "OpenInference",
+          "displayName": "OpenInference",
+          "slug": "open-inference",
+          "baseUrl": "https://api.openinference.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.sailresearch.com/terms",
-            "privacyPolicyURL": "https://www.sailresearch.com/privacy",
+            "termsOfServiceURL": "https://www.openinference.ai/terms",
+            "privacyPolicyURL": "https://www.openinference.ai/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
-          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": false,
+          "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "SailResearchAdapter",
-          "statusPageUrl": "https://status.sailresearch.com/",
+          "adapterName": "OpenInferenceAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.sailresearch.com/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
+            "className": "invert dark:invert-0"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Sail Research",
-        "provider_slug": "sail-research/fp4",
-        "provider_model_id": "deepseek/deepseek-v4-flash-0731",
+        "provider_display_name": "OpenInference",
+        "provider_slug": "open-inference/fp4",
+        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
         "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "temperature",
+          "max_tokens",
+          "stop",
+          "seed",
+          "top_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "structured_outputs",
           "response_format",
           "tools",
           "tool_choice",
-          "structured_outputs",
-          "logprobs",
-          "top_logprobs",
-          "temperature",
-          "top_p",
           "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "stop",
-          "seed",
-          "max_tokens",
           "min_p",
           "repetition_penalty",
+          "logprobs",
+          "top_logprobs",
           "logit_bias",
           "parallel_tool_calls",
           "reasoning_effort",
           "top_a"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "logprobs",
+          "top_logprobs"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -13895,33 +13843,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.sailresearch.com/terms",
-          "privacyPolicyURL": "https://www.sailresearch.com/privacy"
+          "termsOfServiceURL": "https://www.openinference.ai/terms",
+          "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.000000065",
-          "completion": "0.00000018",
-          "input_cache_read": "0.00000002",
+          "prompt": "0.000000055",
+          "completion": "0.00000014",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000065",
+              "price": "0.000000055",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000018",
+              "price": "0.00000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000002",
+              "price": "0.00000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -13931,31 +13879,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000065",
+            "price": "0.000000055",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000018",
+            "price": "0.00000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000002",
+            "price": "0.00000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000065",
-          "openai:completion_tokens": "0.00000018",
-          "openai:cached_prompt_tokens": "0.00000002"
+          "openai:prompt_tokens": "0.000000055",
+          "openai:completion_tokens": "0.00000014",
+          "openai:cached_prompt_tokens": "0.00000001"
         },
-        "pricing_version_id": "bdbc1a74-f633-43be-a38c-f704b3282142",
+        "pricing_version_id": "dcff3c07-42ae-4639-9ec8-dc678d6e147e",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -13967,7 +13915,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
@@ -13982,8 +13930,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 12600000,
-        "created_at": "2026-08-05T19:22:23.682Z",
+        "capacity_tpm": null,
+        "created_at": "2026-08-10T20:36:58.988Z",
         "status": 0
       }
     },
@@ -14066,9 +14014,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": [],
       "endpoint": {
-        "id": "5c1818a9-3b96-4418-b539-c1a28648f14d",
-        "name": "Sail Research | deepseek/deepseek-v4-flash-20260731",
-        "context_length": 1048576,
+        "id": "f954a48e-1c90-433b-9348-4720f8030331",
+        "name": "OpenInference | deepseek/deepseek-v4-flash-20260731",
+        "context_length": 262144,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -14150,66 +14098,66 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash-0731",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260731",
-        "adapter_name": "SailResearchAdapter",
-        "provider_name": "Sail Research",
+        "adapter_name": "OpenInferenceAdapter",
+        "provider_name": "OpenInference",
         "provider_info": {
-          "name": "Sail Research",
-          "displayName": "Sail Research",
-          "slug": "sail-research",
-          "baseUrl": "https://api.sailresearch.com/partner/v1",
+          "name": "OpenInference",
+          "displayName": "OpenInference",
+          "slug": "open-inference",
+          "baseUrl": "https://api.openinference.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.sailresearch.com/terms",
-            "privacyPolicyURL": "https://www.sailresearch.com/privacy",
+            "termsOfServiceURL": "https://www.openinference.ai/terms",
+            "privacyPolicyURL": "https://www.openinference.ai/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
-          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": false,
+          "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "SailResearchAdapter",
-          "statusPageUrl": "https://status.sailresearch.com/",
+          "adapterName": "OpenInferenceAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.sailresearch.com/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
+            "className": "invert dark:invert-0"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Sail Research",
-        "provider_slug": "sail-research/fp4",
-        "provider_model_id": "deepseek/deepseek-v4-flash-0731",
+        "provider_display_name": "OpenInference",
+        "provider_slug": "open-inference/fp4",
+        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
         "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "response_format",
-          "tools",
-          "tool_choice",
-          "structured_outputs",
-          "logprobs",
-          "top_logprobs",
           "temperature",
-          "top_p",
-          "top_k",
-          "frequency_penalty",
-          "presence_penalty",
+          "max_tokens",
           "stop",
           "seed",
-          "max_tokens"
+          "top_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "structured_outputs",
+          "response_format",
+          "tools",
+          "tool_choice"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "logprobs",
+          "top_logprobs"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -14217,33 +14165,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.sailresearch.com/terms",
-          "privacyPolicyURL": "https://www.sailresearch.com/privacy"
+          "termsOfServiceURL": "https://www.openinference.ai/terms",
+          "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.000000065",
-          "completion": "0.00000018",
-          "input_cache_read": "0.00000002",
+          "prompt": "0.000000055",
+          "completion": "0.00000014",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000065",
+              "price": "0.000000055",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000018",
+              "price": "0.00000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000002",
+              "price": "0.00000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -14253,31 +14201,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000065",
+            "price": "0.000000055",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000018",
+            "price": "0.00000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000002",
+            "price": "0.00000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000065",
-          "openai:completion_tokens": "0.00000018",
-          "openai:cached_prompt_tokens": "0.00000002"
+          "openai:prompt_tokens": "0.000000055",
+          "openai:completion_tokens": "0.00000014",
+          "openai:cached_prompt_tokens": "0.00000001"
         },
-        "pricing_version_id": "bdbc1a74-f633-43be-a38c-f704b3282142",
+        "pricing_version_id": "dcff3c07-42ae-4639-9ec8-dc678d6e147e",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -14289,7 +14237,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
@@ -14304,8 +14252,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 12600000,
-        "created_at": "2026-08-05T19:22:23.682Z",
+        "capacity_tpm": null,
+        "created_at": "2026-08-10T20:36:58.988Z",
         "status": 0
       }
     },
@@ -27343,7 +27291,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 2400000,
+        "capacity_tpm": 2100000,
         "created_at": "2026-08-06T23:52:02.825Z",
         "status": 0
       }
@@ -36725,7 +36673,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 29730000,
+        "capacity_tpm": 30470000,
         "created_at": "2026-08-04T15:42:59.811Z",
         "status": 0
       }
@@ -64308,7 +64256,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 2400000,
+        "capacity_tpm": 2100000,
         "created_at": "2026-08-06T23:52:02.825Z",
         "status": 0
       }
@@ -66604,7 +66552,7 @@
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 8192,
+        "max_completion_tokens": 16384,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -66637,21 +66585,21 @@
           "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.00000008",
-          "completion": "0.00000075",
+          "prompt": "0.00000007",
+          "completion": "0.0000007",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000008",
+              "price": "0.00000007",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000075",
+              "price": "0.0000007",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -66661,23 +66609,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000008",
+            "price": "0.00000007",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000075",
+            "price": "0.0000007",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000008",
-          "openai:completion_tokens": "0.00000075"
+          "openai:prompt_tokens": "0.00000007",
+          "openai:completion_tokens": "0.0000007"
         },
-        "pricing_version_id": "394eba73-72c9-4035-9e23-5062a4661009",
+        "pricing_version_id": "86eaedc8-01ce-418a-adfc-49b24406a8b9",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -67419,7 +67367,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-27T02:11:01.546Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -69165,9 +69113,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "48f7c1a9-3b0c-4f31-a55b-4650d37e35f3",
-        "name": "Baidu | deepseek/deepseek-v4-pro-20260423",
-        "context_length": 1048576,
+        "id": "b3598fb1-4093-4373-93ec-4c671abaf943",
+        "name": "StreamLake | deepseek/deepseek-v4-pro-20260423",
+        "context_length": 1024000,
         "model": {
           "slug": "deepseek/deepseek-v4-pro",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Pro",
@@ -69248,20 +69196,20 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260423",
-        "adapter_name": "BaiduAdapter",
-        "provider_name": "Baidu",
+        "adapter_name": "StreamLakeAdapter",
+        "provider_name": "StreamLake",
         "provider_info": {
-          "name": "Baidu",
-          "displayName": "Baidu Qianfan",
-          "slug": "baidu",
-          "baseUrl": "https://api.baiduqianfan.ai/v1",
+          "name": "StreamLake",
+          "displayName": "StreamLake",
+          "slug": "streamlake",
+          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
+            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
             "requiresUserIDs": false
           },
           "headquarters": "CN",
@@ -69270,40 +69218,40 @@
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "BaiduAdapter",
-          "statusPageUrl": null,
+          "adapterName": "StreamLakeAdapter",
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Baidu Qianfan",
-        "provider_slug": "baidu/fp8",
+        "provider_display_name": "StreamLake",
+        "provider_slug": "streamlake/fp8",
         "provider_model_id": "deepseek-v4-pro",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 393216,
+        "max_completion_tokens": 384000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "tools",
+          "tool_choice",
+          "response_format",
+          "logprobs",
+          "top_logprobs",
+          "structured_outputs",
+          "max_tokens",
           "temperature",
           "top_p",
-          "max_tokens",
-          "stop",
-          "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "stop"
         ],
-        "excluded_parameters": [
-          "max_completion_tokens"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -69311,33 +69259,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
+          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.000000507",
-          "completion": "0.000001014",
-          "input_cache_read": "0.000000042",
-          "discount": 0.7,
+          "prompt": "0.000000413772",
+          "completion": "0.000000827544",
+          "input_cache_read": "0.000000034481",
+          "discount": 0.7622,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000507",
+              "price": "0.000000413772",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000001014",
+              "price": "0.000000827544",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000042",
+              "price": "0.000000034481",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -69347,31 +69295,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000507",
+            "price": "0.000000413772",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000001014",
+            "price": "0.000000827544",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000042",
+            "price": "0.000000034481",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000169",
-          "openai:completion_tokens": "0.00000338",
-          "openai:cached_prompt_tokens": "0.00000014"
+          "openai:prompt_tokens": "0.00000174",
+          "openai:completion_tokens": "0.00000348",
+          "openai:cached_prompt_tokens": "0.000000145"
         },
-        "pricing_version_id": "a60e16b6-e596-4a60-b617-255d342fd943",
+        "pricing_version_id": "34efd862-5999-49c6-9757-4321a2e52fd9",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -69387,7 +69335,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -69398,8 +69346,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 67590000,
-        "created_at": "2026-04-29T11:41:27.715Z",
+        "capacity_tpm": null,
+        "created_at": "2026-05-18T07:42:08.590Z",
         "status": 0
       }
     },
@@ -69478,9 +69426,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "ca159a90-46f3-436c-b3a3-92d856c59e37",
-        "name": "DigitalOcean | deepseek/deepseek-v4-flash-20260423",
-        "context_length": 1048576,
+        "id": "13515b01-fed6-4afb-a382-ca3b4d7d7b8b",
+        "name": "StreamLake | deepseek/deepseek-v4-flash-20260423",
+        "context_length": 1024000,
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
@@ -69558,58 +69506,60 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423",
-        "adapter_name": "DigitalOceanAdapter",
-        "provider_name": "DigitalOcean",
+        "adapter_name": "StreamLakeAdapter",
+        "provider_name": "StreamLake",
         "provider_info": {
-          "name": "DigitalOcean",
-          "displayName": "DigitalOcean",
-          "slug": "digitalocean",
-          "baseUrl": "https://inference.do-ai.run/v1",
+          "name": "StreamLake",
+          "displayName": "StreamLake",
+          "slug": "streamlake",
+          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
-            "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy",
+            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
             "requiresUserIDs": false
           },
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "DigitalOceanAdapter",
-          "statusPageUrl": null,
+          "adapterName": "StreamLakeAdapter",
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.digitalocean.com&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DigitalOcean",
-        "provider_slug": "digitalocean",
-        "provider_model_id": "deepseek-4-flash",
-        "quantization": "unknown",
+        "provider_display_name": "StreamLake",
+        "provider_slug": "streamlake/fp8",
+        "provider_model_id": "deepseek-v4-flash",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 384000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "response_format",
+          "tools",
+          "tool_choice",
+          "logprobs",
+          "top_logprobs",
+          "structured_outputs",
+          "max_tokens",
           "temperature",
           "top_p",
-          "max_tokens",
-          "tool_choice",
-          "tools",
-          "structured_outputs",
-          "response_format",
-          "logprobs",
-          "top_logprobs"
+          "stop"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -69617,35 +69567,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
-          "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy"
+          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.0000000679",
-          "completion": "0.000000168",
-          "input_cache_read": "0.0000000168",
-          "discount": 0,
+          "prompt": "0.00000005306",
+          "completion": "0.00000010612",
+          "input_cache_read": "0.000000010612",
+          "discount": 0.621,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000679",
+              "price": "0.00000005306",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000168",
+              "price": "0.00000010612",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000168",
+              "price": "0.000000010612",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -69655,31 +69605,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000679",
+            "price": "0.00000005306",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000168",
+            "price": "0.00000010612",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000168",
+            "price": "0.000000010612",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000679",
-          "openai:completion_tokens": "0.000000168",
-          "openai:cached_prompt_tokens": "0.0000000168"
+          "openai:prompt_tokens": "0.00000014",
+          "openai:completion_tokens": "0.00000028",
+          "openai:cached_prompt_tokens": "0.000000028"
         },
-        "pricing_version_id": "1c3fb361-a3e4-49f3-83e2-5a771dac8182",
+        "pricing_version_id": "343b22f6-9dae-45e1-ab5e-b82c70e8a153",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -69698,7 +69648,7 @@
             "literal_none": false,
             "literal_auto": true,
             "literal_required": false,
-            "type_function": true
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -69707,7 +69657,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-05-27T21:27:36.753Z",
+        "created_at": "2026-05-18T07:42:09.922Z",
         "status": 0
       }
     },
@@ -72798,7 +72748,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:07:20.204Z",
-        "status": -5
+        "status": -2
       }
     },
     {
@@ -74845,7 +74795,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 28340000,
+        "capacity_tpm": 26360000,
         "created_at": "2026-05-21T14:24:00.671Z",
         "status": 0
       }
@@ -77890,7 +77840,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 6670000,
+        "capacity_tpm": 5210000,
         "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       }
@@ -79193,21 +79143,21 @@
           "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.00000005",
-          "completion": "0.00000025",
+          "prompt": "0.000000042",
+          "completion": "0.00000022",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000005",
+              "price": "0.000000042",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000025",
+              "price": "0.00000022",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -79217,23 +79167,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000005",
+            "price": "0.000000042",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000025",
+            "price": "0.00000022",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000005",
-          "openai:completion_tokens": "0.00000025"
+          "openai:prompt_tokens": "0.000000042",
+          "openai:completion_tokens": "0.00000022"
         },
-        "pricing_version_id": "1fdc1df9-153e-42f5-b1fa-fd1ecfa88f5a",
+        "pricing_version_id": "233ffb0d-68d3-4809-a709-e7bee09723bf",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -92208,7 +92158,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-25T16:10:09.814Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -138380,7 +138330,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-10-10T18:41:28.549Z",
-        "status": 0
+        "status": -2
       }
     },
     {
@@ -140905,8 +140855,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "3e3e2284-a12c-46b5-b3db-bc4eb148c7d9",
-        "name": "DeepInfra | qwen/qwen3-235b-a22b-07-25",
+        "id": "7f8598e4-091b-424e-a9c2-158532af1537",
+        "name": "GMICloud | qwen/qwen3-235b-a22b-07-25",
         "context_length": 262144,
         "model": {
           "slug": "qwen/qwen3-235b-a22b-2507",
@@ -140970,62 +140920,61 @@
         },
         "model_variant_slug": "qwen/qwen3-235b-a22b-2507",
         "model_variant_permaslug": "qwen/qwen3-235b-a22b-07-25",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "GMICloudAdapter",
+        "provider_name": "GMICloud",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "GMICloud",
+          "displayName": "GMICloud",
+          "slug": "gmicloud",
+          "baseUrl": "https://api.gmi-serving.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
+            "privacyPolicyURL": "https://docs.gmicloud.ai/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "GMICloudAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gmicloud.ai/&size=256",
+            "className": "invert-0 dark:invert"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp8",
-        "provider_model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+        "provider_display_name": "GMICloud",
+        "provider_slug": "gmicloud/fp8",
+        "provider_model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "max_tokens",
           "temperature",
           "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "top_k",
           "seed",
-          "min_p",
           "response_format",
+          "structured_outputs",
           "tools",
           "tool_choice",
-          "logit_bias",
-          "structured_outputs"
+          "logprobs",
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -141033,27 +140982,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
+          "privacyPolicyURL": "https://docs.gmicloud.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.00000009",
-          "completion": "0.00000055",
-          "discount": 0,
+          "prompt": "0.0000000875",
+          "completion": "0.00000035",
+          "input_cache_read": "0.0000000175",
+          "discount": 0.75,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000009",
+              "price": "0.0000000875",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000055",
+              "price": "0.00000035",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.0000000175",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -141063,23 +141020,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000009",
+            "price": "0.0000000875",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000055",
+            "price": "0.00000035",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.0000000175",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000009",
-          "openai:completion_tokens": "0.00000055"
+          "openai:prompt_tokens": "0.00000035",
+          "openai:completion_tokens": "0.0000014",
+          "openai:cached_prompt_tokens": "0.00000007"
         },
-        "pricing_version_id": "590c8c83-a10b-4c4c-b381-0c967fc69468",
+        "pricing_version_id": "2cb96e92-fdb1-444a-8e44-8f85b001f293",
         "is_hidden": false,
         "is_private": false,
         "is_byok_only": false,
@@ -141089,7 +141054,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": false,
         "supports_multipart": true,
-        "limit_rpm": 250,
+        "limit_rpm": null,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -141097,8 +141062,8 @@
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -141107,7 +141072,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2025-07-22T14:07:59.439Z",
+        "created_at": "2026-08-19T14:13:11.602Z",
         "status": 0
       }
     },
@@ -154551,7 +154516,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-03-24T20:02:59.576Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -159196,7 +159161,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-12T02:21:41.369Z",
-        "status": -2
+        "status": 0
       }
     },
     {
@@ -163889,7 +163854,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-12-05T22:30:25.576Z",
-        "status": 0
+        "status": -5
       }
     },
     {
@@ -175499,57 +175464,6 @@
         "created_at": "2024-11-07T21:18:54.258Z",
         "status": 0
       }
-    },
-    {
-      "slug": "tencent/hy-mt2-7b",
-      "hf_slug": "tencent/Hy-MT2-7B",
-      "updated_at": "2026-08-19T14:13:17.727Z",
-      "created_at": "2026-08-19T14:13:17.727Z",
-      "hf_updated_at": null,
-      "name": "Tencent: Hy-MT2-7B",
-      "short_name": "Hy-MT2-7B",
-      "author": "tencent",
-      "author_display_name": "tencent",
-      "author_icon_uri": null,
-      "description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.",
-      "model_version_group_id": null,
-      "context_length": 8192,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "tencent/hy-mt2-7b-20260521",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null
     },
     {
       "slug": "inclusionai/ling-3.0-tiny",
