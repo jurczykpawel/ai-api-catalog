@@ -290,6 +290,28 @@
       "_api_id": "gemini-3.6-flash"
     },
     {
+      "id": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash",
+      "category": "llm",
+      "description": "Gemini 3.8 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-3.8-flash"
+    },
+    {
       "id": "gemini-3-7-flash",
       "name": "Gemini 3.7 Flash",
       "category": "llm",
@@ -1199,6 +1221,26 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "deepseek-v4-flash-free"
+    },
+    {
+      "id": "muse-spark-1-3-contributor-free",
+      "name": "Muse Spark 1.3 Contributor Free",
+      "category": "llm",
+      "description": "Muse Spark 1.3 Contributor Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "muse-spark-1.3-contributor-free"
     },
     {
       "id": "muse-spark-1-2-contributor-free",

@@ -4825,14 +4825,14 @@
         "code": "OK",
         "message": ""
       },
-      "supervisedLoraTunable": true,
+      "supervisedLoraTunable": false,
       "supportsImageInput": false,
       "supportsLora": true,
       "supportsServerless": true,
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-08-28T22:31:48.375402Z",
+      "updateTime": "2026-09-03T01:45:16.214598Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -6242,7 +6242,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-09-02T07:20:48.689683Z",
+      "updateTime": "2026-09-03T07:39:35.352930Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6318,7 +6318,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-09-02T07:20:49.005734Z",
+      "updateTime": "2026-09-03T07:39:47.925455Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -9593,7 +9593,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-08-29T06:47:04.720075Z",
+      "updateTime": "2026-09-02T16:09:47.056526Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -10271,7 +10271,7 @@
     {
       "baseModelDetails": {
         "checkpointFormat": "HUGGINGFACE",
-        "defaultPrecision": "FP16",
+        "defaultPrecision": "PRECISION_UNSPECIFIED",
         "huggingfaceFiles": [
           ".gitattributes",
           "README.md",
@@ -10324,7 +10324,7 @@
           "tokenizer_config.json",
           "vocab.json"
         ],
-        "modelType": "",
+        "modelType": "internvl_chat",
         "moe": false,
         "parameterCount": "78000000000",
         "supportsFireattention": false,
@@ -10355,7 +10355,13 @@
       "importedFrom": "",
       "kind": "HF_BASE_MODEL",
       "name": "accounts/fireworks/models/internvl3-78b",
-      "peftDetails": null,
+      "peftDetails": {
+        "baseModel": "",
+        "baseModelType": "",
+        "mergeAddonModelName": "",
+        "r": 0,
+        "targetModules": []
+      },
       "public": true,
       "rlLoraTunable": false,
       "rlTunable": false,
@@ -10372,8 +10378,8 @@
       "supportsServerless": false,
       "supportsTools": false,
       "teftDetails": null,
-      "trainingContextLength": 0,
-      "updateTime": "2026-07-22T09:38:23.698749Z",
+      "trainingContextLength": 131072,
+      "updateTime": "2026-09-03T00:00:12.177870Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
