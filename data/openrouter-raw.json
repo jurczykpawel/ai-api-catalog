@@ -1,6 +1,229 @@
 {
   "data": [
     {
+      "slug": "microsoft/mai-transcribe-2",
+      "hf_slug": null,
+      "updated_at": "2026-09-03T14:27:25.456Z",
+      "created_at": "2026-09-03T00:49:46.766Z",
+      "hf_updated_at": null,
+      "name": "Microsoft: MAI-Transcribe 2",
+      "short_name": "MAI-Transcribe 2",
+      "author": "microsoft",
+      "author_display_name": "Microsoft",
+      "author_icon_uri": null,
+      "description": "MAI-Transcribe 2 is a multilingual speech-to-text model from Microsoft AI, ranked #1 on the FLEURS multilingual benchmark. It supports 60 languages with automatic language identification, code switching for mixed-language speech, speaker diarization, word-level timestamps, keyword biasing for domain-specific terminology, and configurable verbatim or clean transcription styles. It is suited for captions, call transcription, subtitling, accessibility, and other voice-enabled applications, and is faster than MAI-Transcribe-1.5 on long-form audio.",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "audio"
+      ],
+      "output_modalities": [
+        "transcription"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "microsoft/mai-transcribe-2-20260903",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "stt",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "07350d2a-0b2b-47ff-b5c6-0805010dfb74",
+        "name": "Azure | microsoft/mai-transcribe-2-20260903",
+        "context_length": 0,
+        "model": {
+          "slug": "microsoft/mai-transcribe-2",
+          "hf_slug": null,
+          "updated_at": "2026-09-03T14:27:25.456097+00:00",
+          "created_at": "2026-09-03T00:49:46.766122+00:00",
+          "hf_updated_at": null,
+          "name": "Microsoft: MAI-Transcribe 2",
+          "short_name": "MAI-Transcribe 2",
+          "author": "microsoft",
+          "author_display_name": "Microsoft",
+          "author_icon_uri": null,
+          "description": "MAI-Transcribe 2 is a multilingual speech-to-text model from Microsoft AI, ranked #1 on the FLEURS multilingual benchmark. It supports 60 languages with automatic language identification, code switching for mixed-language speech, speaker diarization, word-level timestamps, keyword biasing for domain-specific terminology, and configurable verbatim or clean transcription styles. It is suited for captions, call transcription, subtitling, accessibility, and other voice-enabled applications, and is faster than MAI-Transcribe-1.5 on long-form audio.",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "audio"
+          ],
+          "output_modalities": [
+            "transcription"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "microsoft/mai-transcribe-2-20260903",
+          "supports_reasoning": false,
+          "reasoning_config": null,
+          "features": {},
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": "stt",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": true,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "microsoft/mai-transcribe-2",
+        "model_variant_permaslug": "microsoft/mai-transcribe-2-20260903",
+        "adapter_name": "AzureOpenAIAdapter",
+        "provider_name": "Azure",
+        "provider_info": {
+          "name": "Azure",
+          "displayName": "Azure",
+          "slug": "azure",
+          "baseUrl": "https://eastus-foundry-resource.cognitiveservices.azure.com",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
+            "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "AzureOpenAIAdapter",
+          "statusPageUrl": "https://status.azure.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/Azure.svg"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "microsoft_stt"
+        },
+        "provider_display_name": "Azure",
+        "provider_slug": "azure",
+        "provider_model_id": "mai-transcribe-2",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "max_completion_tokens"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
+          "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement"
+        },
+        "pricing": {
+          "prompt": "0.1",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Audio Hours",
+              "price": "0.1",
+              "displayMultiplier": 1,
+              "unitLabel": "/hour"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Audio Hours",
+            "price": "0.1",
+            "displayMultiplier": 1,
+            "unitLabel": "/hour"
+          }
+        ],
+        "pricing_json": {
+          "microsoft_stt:audio_hours": "0.1"
+        },
+        "pricing_version_id": "2d814102-9e68-43af-9bd5-d854f9a5b449",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": false,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-09-03T00:50:37.891Z",
+        "status": 0
+      },
+      "display_required_attestation_types": []
+    },
+    {
       "slug": "meta/muse-spark-1.3-contributor",
       "hf_slug": null,
       "updated_at": "2026-09-02T20:38:39.015Z",
@@ -3061,8 +3284,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "0aaad85e-20b0-4103-bd71-d6608c23d0e1",
-        "name": "CoreWeave | ibm-granite/granite-4.2-8b-20260831",
+        "id": "8efd9dc5-fd52-4046-a925-581ad09a6f22",
+        "name": "DeepInfra | ibm-granite/granite-4.2-8b-20260831",
         "context_length": 131072,
         "model": {
           "slug": "ibm-granite/granite-4.2-8b",
@@ -3150,49 +3373,46 @@
         },
         "model_variant_slug": "ibm-granite/granite-4.2-8b",
         "model_variant_permaslug": "ibm-granite/granite-4.2-8b-20260831",
-        "adapter_name": "WandbAdapter",
-        "provider_name": "CoreWeave",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
         "provider_info": {
-          "name": "CoreWeave",
-          "displayName": "CoreWeave",
-          "slug": "coreweave",
-          "baseUrl": "https://api.inference.wandb.ai/v1",
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://docs.coreweave.com/policies/terms-of-service",
-            "privacyPolicyURL": "https://docs.coreweave.com/policies/terms-of-service/privacy-policy",
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
           "hasChatCompletions": true,
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "WandbAdapter",
-          "statusPageUrl": null,
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/CoreWeave.svg"
+            "url": "/images/icons/DeepInfra.webp"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "CoreWeave",
-        "provider_slug": "coreweave/bf16",
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/bf16",
         "provider_model_id": "ibm-granite/granite-4.2-8b",
         "quantization": "bf16",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -3200,18 +3420,16 @@
           "max_tokens",
           "temperature",
           "top_p",
-          "top_k",
-          "repetition_penalty",
+          "stop",
           "frequency_penalty",
           "presence_penalty",
-          "stop",
+          "repetition_penalty",
+          "top_k",
           "seed",
+          "min_p",
           "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "logit_bias",
+          "tools"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -3221,33 +3439,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://docs.coreweave.com/policies/terms-of-service",
-          "privacyPolicyURL": "https://docs.coreweave.com/policies/terms-of-service/privacy-policy"
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
         },
         "pricing": {
-          "prompt": "0.0000001",
-          "completion": "0.00000015",
-          "input_cache_read": "0.00000005",
+          "prompt": "0.00000006",
+          "completion": "0.00000025",
+          "input_cache_read": "0.000000015",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001",
+              "price": "0.00000006",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000015",
+              "price": "0.00000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000005",
+              "price": "0.000000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -3257,31 +3475,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001",
+            "price": "0.00000006",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000015",
+            "price": "0.00000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000005",
+            "price": "0.000000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
-          "openai:completion_tokens": "0.00000015",
-          "openai:cached_prompt_tokens": "0.00000005"
+          "openai:prompt_tokens": "0.00000006",
+          "openai:completion_tokens": "0.00000025",
+          "openai:cached_prompt_tokens": "0.000000015"
         },
-        "pricing_version_id": "93ae2de9-ea27-4586-bd0d-03932047375a",
+        "pricing_version_id": "834dbe5e-ff3b-4150-bcbc-94a086647af3",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -3297,7 +3515,6 @@
         "has_completions": true,
         "has_chat_completions": true,
         "features": {
-          "reasoning_return_mechanism": "reasoning-content",
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -3311,7 +3528,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-31T19:16:27.771Z",
+        "created_at": "2026-08-31T19:19:30.494Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -4265,6 +4482,311 @@
       "display_required_attestation_types": []
     },
     {
+      "slug": "inclusionai/ling-3.0-flash-fin",
+      "hf_slug": null,
+      "updated_at": "2026-08-27T15:58:10.186Z",
+      "created_at": "2026-08-27T15:58:10.186Z",
+      "hf_updated_at": null,
+      "name": "Ling 3.0 Flash Fin",
+      "short_name": "Ling 3.0 Flash Fin",
+      "author": "inclusionai",
+      "author_display_name": "inclusionai",
+      "author_icon_uri": null,
+      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment workflows that require complex multi-step tasks and long-horizon planning and execution, while retaining general capabilities in reasoning, coding, and mathematics.",
+      "model_version_group_id": null,
+      "context_length": 262144,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": false,
+        "supports_reasoning_max_tokens": false,
+        "default_reasoning_enabled": true,
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": false,
+          "supports_reasoning_max_tokens": false,
+          "default_reasoning_enabled": true,
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "c48fe5e8-e0e7-4f6d-a9ec-84e20378b017",
+        "name": "DeepInfra | inclusionai/ling-3.0-flash-fin-20260827",
+        "context_length": 262144,
+        "model": {
+          "slug": "inclusionai/ling-3.0-flash-fin",
+          "hf_slug": null,
+          "updated_at": "2026-08-27T15:58:10.186891+00:00",
+          "created_at": "2026-08-27T15:58:10.186+00:00",
+          "hf_updated_at": null,
+          "name": "Ling 3.0 Flash Fin",
+          "short_name": "Ling 3.0 Flash Fin",
+          "author": "inclusionai",
+          "author_display_name": "inclusionai",
+          "author_icon_uri": null,
+          "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment workflows that require complex multi-step tasks and long-horizon planning and execution, while retaining general capabilities in reasoning, coding, and mathematics.",
+          "model_version_group_id": null,
+          "context_length": 262144,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "inclusionai/ling-3.0-flash-fin-20260827",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": false,
+            "supports_reasoning_max_tokens": false,
+            "default_reasoning_enabled": true,
+            "reasoning_return_mechanism": "reasoning-content"
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null,
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": false,
+              "supports_reasoning_max_tokens": false,
+              "default_reasoning_enabled": true,
+              "reasoning_return_mechanism": "reasoning-content"
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "inclusionai/ling-3.0-flash-fin",
+        "model_variant_permaslug": "inclusionai/ling-3.0-flash-fin-20260827",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
+        "provider_info": {
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/DeepInfra.webp"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_chat_completions"
+        },
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/fp4",
+        "provider_model_id": "inclusionAI/Ling-3.0-flash-Fin",
+        "quantization": "fp4",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "response_format",
+          "logit_bias",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
+        },
+        "pricing": {
+          "prompt": "0.00000006",
+          "completion": "0.00000018",
+          "input_cache_read": "0.000000012",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.00000006",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.00000018",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.000000012",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.00000006",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.00000018",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.000000012",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0.00000006",
+          "openai:completion_tokens": "0.00000018",
+          "openai:cached_prompt_tokens": "0.000000012"
+        },
+        "pricing_version_id": "208d628b-dee6-40d6-814e-2b46c7400b04",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": true,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-09-03T16:12:36.834Z",
+        "status": 0
+      },
+      "display_required_attestation_types": []
+    },
+    {
       "slug": "~z-ai/glm-flash-latest",
       "hf_slug": null,
       "updated_at": "2026-09-02T01:26:01.416Z",
@@ -4605,7 +5127,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-26T19:27:27.242Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -5542,7 +6064,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-26T19:27:27.242Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -8127,7 +8649,7 @@
       "endpoint": {
         "id": "53d3d2f0-295e-4fcc-8031-a4f19d41a9cd",
         "name": "DeepInfra | deepseek/deepseek-v4-flash-vision-exp-20260821",
-        "context_length": 131072,
+        "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-vision-exp",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
@@ -8249,7 +8771,7 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -9221,8 +9743,8 @@
       "supported_tts_voices": null,
       "endpoint": {
         "id": "tilde-latest-~z-ai/glm-latest",
-        "name": "Decart | z-ai/glm-5.3-20260816",
-        "context_length": 1048576,
+        "name": "Reka | z-ai/glm-5.3-20260816",
+        "context_length": 262144,
         "model": {
           "slug": "~z-ai/glm-latest",
           "hf_slug": null,
@@ -9307,49 +9829,46 @@
         },
         "model_variant_slug": "~z-ai/glm-latest",
         "model_variant_permaslug": "~z-ai/glm-latest",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Decart",
+        "adapter_name": "OpenAIAdapter",
+        "provider_name": "Reka",
         "provider_info": {
-          "name": "Decart",
-          "displayName": "Decart",
-          "slug": "decart",
-          "baseUrl": "https://api.cogito.decart.ai/v1",
+          "name": "Reka",
+          "displayName": "Reka AI",
+          "slug": "reka",
+          "baseUrl": "https://api.reka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-            "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy",
+            "termsOfServiceURL": "https://reka.ai/legal/terms-of-use",
+            "privacyPolicyURL": "https://reka.ai/legal/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
+          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cogito.decart.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://reka.ai&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Decart",
-        "provider_slug": "decart/fp4",
-        "provider_model_id": "z-ai/glm-5.3:openrouter",
-        "quantization": "fp4",
+        "provider_display_name": "Reka AI",
+        "provider_slug": "reka/fp8",
+        "provider_model_id": "glm5.3",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -9357,19 +9876,19 @@
           "temperature",
           "top_p",
           "top_k",
-          "min_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
+          "max_tokens",
           "stop",
           "seed",
-          "max_tokens",
+          "frequency_penalty",
+          "presence_penalty",
           "response_format",
           "structured_outputs",
           "tools",
           "tool_choice",
           "logprobs",
           "top_logprobs",
+          "min_p",
+          "repetition_penalty",
           "logit_bias",
           "parallel_tool_calls",
           "reasoning_effort"
@@ -9382,33 +9901,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-          "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy"
+          "termsOfServiceURL": "https://reka.ai/legal/terms-of-use",
+          "privacyPolicyURL": "https://reka.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000001106",
-          "completion": "0.000003476",
-          "input_cache_read": "0.0000001817",
-          "discount": 0.21,
+          "prompt": "0.00000115",
+          "completion": "0.0000035",
+          "input_cache_read": "0.0000001",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000001106",
+              "price": "0.00000115",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000003476",
+              "price": "0.0000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001817",
+              "price": "0.0000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -9418,31 +9937,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000001106",
+            "price": "0.00000115",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000003476",
+            "price": "0.0000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001817",
+            "price": "0.0000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000014",
-          "openai:completion_tokens": "0.0000044",
-          "openai:cached_prompt_tokens": "0.00000023"
+          "openai:prompt_tokens": "0.00000115",
+          "openai:completion_tokens": "0.0000035",
+          "openai:cached_prompt_tokens": "0.0000001"
         },
-        "pricing_version_id": "935c1c0b-2a21-43e5-a0d6-5e0d5a69beac",
+        "pricing_version_id": "6f6938e6-2634-4210-90c1-bfee0b84f20f",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -9470,9 +9989,9 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-08-31T14:26:49.192Z",
-        "status": 0
+        "capacity_tpm": 4000000,
+        "created_at": "2026-08-31T06:31:38.833Z",
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -9801,9 +10320,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "4d67d501-6f88-4519-b572-320d1e451f9d",
-        "name": "Decart | z-ai/glm-5.3-20260816",
-        "context_length": 1048576,
+        "id": "d99be598-65f7-4ff0-9c18-92be7290f06e",
+        "name": "Reka | z-ai/glm-5.3-20260816",
+        "context_length": 262144,
         "model": {
           "slug": "z-ai/glm-5.3",
           "hf_slug": "zai-org/GLM-5.3",
@@ -9888,49 +10407,46 @@
         },
         "model_variant_slug": "z-ai/glm-5.3",
         "model_variant_permaslug": "z-ai/glm-5.3-20260816",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Decart",
+        "adapter_name": "OpenAIAdapter",
+        "provider_name": "Reka",
         "provider_info": {
-          "name": "Decart",
-          "displayName": "Decart",
-          "slug": "decart",
-          "baseUrl": "https://api.cogito.decart.ai/v1",
+          "name": "Reka",
+          "displayName": "Reka AI",
+          "slug": "reka",
+          "baseUrl": "https://api.reka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-            "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy",
+            "termsOfServiceURL": "https://reka.ai/legal/terms-of-use",
+            "privacyPolicyURL": "https://reka.ai/legal/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
+          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cogito.decart.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://reka.ai&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Decart",
-        "provider_slug": "decart/fp4",
-        "provider_model_id": "z-ai/glm-5.3:openrouter",
-        "quantization": "fp4",
+        "provider_display_name": "Reka AI",
+        "provider_slug": "reka/fp8",
+        "provider_model_id": "glm5.3",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -9938,17 +10454,17 @@
           "temperature",
           "top_p",
           "top_k",
-          "min_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
+          "max_tokens",
           "stop",
           "seed",
-          "max_tokens",
+          "frequency_penalty",
+          "presence_penalty",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -9958,33 +10474,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-          "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy"
+          "termsOfServiceURL": "https://reka.ai/legal/terms-of-use",
+          "privacyPolicyURL": "https://reka.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000001106",
-          "completion": "0.000003476",
-          "input_cache_read": "0.0000001817",
-          "discount": 0.21,
+          "prompt": "0.00000115",
+          "completion": "0.0000035",
+          "input_cache_read": "0.0000001",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000001106",
+              "price": "0.00000115",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000003476",
+              "price": "0.0000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001817",
+              "price": "0.0000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -9994,31 +10510,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000001106",
+            "price": "0.00000115",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000003476",
+            "price": "0.0000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001817",
+            "price": "0.0000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000014",
-          "openai:completion_tokens": "0.0000044",
-          "openai:cached_prompt_tokens": "0.00000023"
+          "openai:prompt_tokens": "0.00000115",
+          "openai:completion_tokens": "0.0000035",
+          "openai:cached_prompt_tokens": "0.0000001"
         },
-        "pricing_version_id": "935c1c0b-2a21-43e5-a0d6-5e0d5a69beac",
+        "pricing_version_id": "6f6938e6-2634-4210-90c1-bfee0b84f20f",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -10046,9 +10562,9 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-08-31T14:26:49.192Z",
-        "status": 0
+        "capacity_tpm": 4000000,
+        "created_at": "2026-08-31T06:31:38.833Z",
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -10383,8 +10899,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "a58a4a1f-4e83-4776-a40e-9f55b72783cb",
-        "name": "Parasail | qwen/qwen3.8-27b-20260814",
+        "id": "c02dc976-15cf-47bb-9d26-bd5250f94b8d",
+        "name": "Darkbloom | qwen/qwen3.8-27b-20260814",
         "context_length": 262144,
         "model": {
           "slug": "qwen/qwen3.8-27b",
@@ -10475,60 +10991,59 @@
         },
         "model_variant_slug": "qwen/qwen3.8-27b",
         "model_variant_permaslug": "qwen/qwen3.8-27b-20260814",
-        "adapter_name": "ParasailAdapter",
-        "provider_name": "Parasail",
+        "adapter_name": "DarkbloomAdapter",
+        "provider_name": "Darkbloom",
         "provider_info": {
-          "name": "Parasail",
-          "displayName": "Parasail",
-          "slug": "parasail",
-          "baseUrl": "https://api.parasail.io/v1",
+          "name": "Darkbloom",
+          "displayName": "Darkbloom",
+          "slug": "darkbloom",
+          "baseUrl": "https://api.darkbloom.dev/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://parasail.io/legal/terms-of-service",
-            "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy",
+            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
+            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
+          "hasCompletions": false,
+          "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "ParasailAdapter",
+          "adapterName": "DarkbloomAdapter",
           "statusPageUrl": null,
-          "byokEnabled": true,
+          "byokEnabled": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.parasail.io/&size=256"
+            "url": "/images/icons/Darkbloom.png"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Parasail",
-        "provider_slug": "parasail/fp8",
-        "provider_model_id": "parasail-qwen38-27b",
-        "quantization": "fp8",
+        "provider_display_name": "Darkbloom",
+        "provider_slug": "darkbloom/fp4",
+        "provider_model_id": "EigenLabs/Qwen3.8-27B-4bit-mtp",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
-        "can_abort": true,
+        "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 32768,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
+          "top_k",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "seed",
           "stop",
-          "top_k",
-          "logit_bias",
+          "seed",
+          "max_tokens",
           "response_format",
           "structured_outputs",
           "tools",
@@ -10542,35 +11057,27 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://parasail.io/legal/terms-of-service",
-          "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
+          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
+          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.00000025",
-          "completion": "0.0000022",
-          "input_cache_read": "0.00000005",
+          "prompt": "0.00000022",
+          "completion": "0.00000242",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000025",
+              "price": "0.00000022",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000022",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Cache Read",
-              "price": "0.00000005",
+              "price": "0.00000242",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -10580,31 +11087,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000025",
+            "price": "0.00000022",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000022",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Cache Read",
-            "price": "0.00000005",
+            "price": "0.00000242",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000025",
-          "openai:completion_tokens": "0.0000022",
-          "openai:cached_prompt_tokens": "0.00000005"
+          "openai:prompt_tokens": "0.00000022",
+          "openai:completion_tokens": "0.00000242"
         },
-        "pricing_version_id": "7c92812d-8e97-4693-9e2f-2bb764bb593c",
+        "pricing_version_id": "13adacbb-4cc1-4361-ac64-cee2f7b2cdd8",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -10617,11 +11116,11 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -10633,7 +11132,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-19T16:43:30.765Z",
+        "created_at": "2026-09-03T22:17:07.864Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -16172,9 +16671,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "072c1c23-c069-4242-bb6d-1b30ca5f4eb8",
-        "name": "StreamLake | deepseek/deepseek-v4-pro-20260813",
-        "context_length": 1024000,
+        "id": "46f2098d-3994-4c59-b3f9-cbbbf44a2f45",
+        "name": "Novita | deepseek/deepseek-v4-pro-20260813",
+        "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-pro-0813",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -16257,47 +16756,46 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro-0813",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260813",
-        "adapter_name": "StreamLakeAdapter",
-        "provider_name": "StreamLake",
+        "adapter_name": "NovitaAdapter",
+        "provider_name": "Novita",
         "provider_info": {
-          "name": "StreamLake",
-          "displayName": "StreamLake",
-          "slug": "streamlake",
-          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
+          "name": "Novita",
+          "displayName": "NovitaAI",
+          "slug": "novita",
+          "baseUrl": "https://api.novita.ai/v3/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
-            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
+            "termsOfServiceURL": "https://novita.ai/legal/terms-of-service",
+            "privacyPolicyURL": "https://novita.ai/legal/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "CN",
-          "datacenters": [],
+          "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": false,
+          "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": "https://status.streamlake.ai/",
+          "adapterName": "NovitaAdapter",
+          "statusPageUrl": "https://status.novita.ai/",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://novita.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "StreamLake",
-        "provider_slug": "streamlake",
-        "provider_model_id": "deepseek-v4-pro-0813",
-        "quantization": "unknown",
+        "provider_display_name": "NovitaAI",
+        "provider_slug": "novita/fp8",
+        "provider_model_id": "deepseek/deepseek-v4-pro-0813",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 384000,
+        "max_completion_tokens": 393216,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -16306,11 +16804,12 @@
           "temperature",
           "top_p",
           "stop",
-          "response_format",
-          "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "top_k",
+          "repetition_penalty",
+          "response_format"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -16318,35 +16817,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
-          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
+          "termsOfServiceURL": "https://novita.ai/legal/terms-of-service",
+          "privacyPolicyURL": "https://novita.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000011154",
-          "completion": "0.0000033462",
-          "input_cache_read": "0.00000003718",
-          "discount": 0.155,
+          "prompt": "0.0000011088",
+          "completion": "0.0000033264",
+          "input_cache_read": "0.00000011088",
+          "discount": 0.16,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000011154",
+              "price": "0.0000011088",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000033462",
+              "price": "0.0000033264",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000003718",
+              "price": "0.00000011088",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -16356,21 +16855,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000011154",
+            "price": "0.0000011088",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000033462",
+            "price": "0.0000033264",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000003718",
+            "price": "0.00000011088",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -16378,9 +16877,9 @@
         "pricing_json": {
           "openai:prompt_tokens": "0.00000132",
           "openai:completion_tokens": "0.00000396",
-          "openai:cached_prompt_tokens": "0.000000044"
+          "openai:cached_prompt_tokens": "0.000000132"
         },
-        "pricing_version_id": "0fc8ebab-74d5-4781-9cce-61d650314b3f",
+        "pricing_version_id": "3bad9e35-7f2a-4a41-9ebb-e3fffe66b89a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -16388,19 +16887,19 @@
         "is_deranked": false,
         "is_disabled": false,
         "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
+        "supports_tool_parameters": false,
         "supports_reasoning": true,
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -16409,7 +16908,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-18T11:36:19.540Z",
+        "created_at": "2026-08-14T11:26:34.002Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -21759,7 +22258,7 @@
     {
       "slug": "qwen/qwen3.8-max",
       "hf_slug": null,
-      "updated_at": "2026-08-12T15:24:59.894Z",
+      "updated_at": "2026-09-03T21:41:42.433Z",
       "created_at": "2026-08-03T04:33:32.259Z",
       "hf_updated_at": null,
       "name": "Qwen: Qwen3.8 Max",
@@ -21785,7 +22284,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": null,
+      "warning_message": "Qwen3.8-Max-0902 arrives on OpenRouter on Saturday, September 5. Until then this model serves the current checkpoint. From September 5, `qwen/qwen3.8-max` routes to the new snapshot.",
       "promotion_message": null,
       "routing_error_message": null,
       "required_attestation_types": [],
@@ -21849,7 +22348,7 @@
         "model": {
           "slug": "qwen/qwen3.8-max",
           "hf_slug": null,
-          "updated_at": "2026-08-12T15:24:59.894725+00:00",
+          "updated_at": "2026-09-03T21:41:42.433006+00:00",
           "created_at": "2026-08-03T04:33:32.259838+00:00",
           "hf_updated_at": null,
           "name": "Qwen: Qwen3.8 Max",
@@ -21875,7 +22374,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": null,
+          "warning_message": "Qwen3.8-Max-0902 arrives on OpenRouter on Saturday, September 5. Until then this model serves the current checkpoint. From September 5, `qwen/qwen3.8-max` routes to the new snapshot.",
           "promotion_message": null,
           "routing_error_message": null,
           "required_attestation_types": [],
@@ -35028,7 +35527,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-22T09:41:15.666Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -35997,8 +36496,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "ef3af8e5-7a36-4eaa-af96-b68ca1dcdb68",
-        "name": "Makora | moonshotai/kimi-k3-20260715",
+        "id": "315170e6-0362-4b17-8c5c-1561d5d5cdb8",
+        "name": "Morph | moonshotai/kimi-k3-20260715",
         "context_length": 1048576,
         "model": {
           "slug": "moonshotai/kimi-k3",
@@ -36090,62 +36589,70 @@
         },
         "model_variant_slug": "moonshotai/kimi-k3",
         "model_variant_permaslug": "moonshotai/kimi-k3-20260715",
-        "adapter_name": "MakoraAdapter",
-        "provider_name": "Makora",
+        "adapter_name": "MorphAdapter",
+        "provider_name": "Morph",
         "provider_info": {
-          "name": "Makora",
-          "displayName": "Makora",
-          "slug": "makora",
-          "baseUrl": "https://inference.makora.com/v1",
+          "name": "Morph",
+          "displayName": "Morph",
+          "slug": "morph",
+          "baseUrl": "https://api.morphllm.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
+            "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+            "privacyPolicyURL": "https://morphllm.com/privacy",
             "requiresUserIDs": false
           },
+          "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
+          "hasCompletions": true,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "MakoraAdapter",
-          "statusPageUrl": "https://makora.statuspage.io",
-          "byokEnabled": false,
+          "adapterName": "MorphAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.makora.com&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://morphllm.com&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_extended"
+          "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Makora",
-        "provider_slug": "makora",
-        "provider_model_id": "moonshotai/Kimi-K3",
-        "quantization": "unknown",
+        "provider_display_name": "Morph",
+        "provider_slug": "morph/fp4",
+        "provider_model_id": "morph-kimik3",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
         "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "structured_outputs",
-          "response_format",
+          "max_tokens",
           "temperature",
+          "stop",
+          "response_format",
+          "structured_outputs",
+          "logprobs",
+          "top_logprobs",
+          "tools",
+          "tool_choice",
           "top_p",
           "top_k",
+          "min_p",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "stop",
-          "max_tokens",
           "seed",
-          "tools",
-          "logprobs",
-          "top_logprobs",
-          "tool_choice"
+          "logit_bias"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -36154,32 +36661,34 @@
           "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": false,
-          "canPublish": false
+          "canPublish": false,
+          "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+          "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000255",
-          "completion": "0.00001275",
-          "input_cache_read": "0.00000025599999",
+          "prompt": "0.0000025",
+          "completion": "0.000014",
+          "input_cache_read": "0.00000029",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000255",
+              "price": "0.0000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00001275",
+              "price": "0.000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000025599999",
+              "price": "0.00000029",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -36189,31 +36698,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000255",
+            "price": "0.0000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00001275",
+            "price": "0.000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000025599999",
+            "price": "0.00000029",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000255",
-          "openai:completion_tokens": "0.00001275",
-          "openai:cached_prompt_tokens": "0.00000025599999"
+          "openai:prompt_tokens": "0.0000025",
+          "openai:completion_tokens": "0.000014",
+          "openai:cached_prompt_tokens": "0.00000029"
         },
-        "pricing_version_id": "d5fa30b5-9cb8-4148-88bb-963011a3c535",
+        "pricing_version_id": "ed0791a5-397b-49e3-aa6f-d4d7fc49554a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -36226,20 +36735,16 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_base64_video_input": false,
           "supports_video_urls": false,
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
-          },
-          "supported_parameters": {
-            "response_format": true,
-            "structured_outputs": true
           }
         },
         "supported_video_parameters": null,
@@ -36247,8 +36752,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 32000,
-        "created_at": "2026-08-21T20:38:38.819Z",
+        "capacity_tpm": null,
+        "created_at": "2026-07-27T15:22:21.828Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -39910,7 +40415,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:14.913Z",
-        "status": -2
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -42701,7 +43206,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:05.594Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -54973,6 +55478,296 @@
       "display_required_attestation_types": []
     },
     {
+      "slug": "nvidia/nemotron-3.5-content-safety",
+      "hf_slug": "nvidia/Nemotron-3.5-Content-Safety",
+      "updated_at": "2026-06-04T14:19:12.864Z",
+      "created_at": "2026-06-04T14:04:24.276Z",
+      "hf_updated_at": null,
+      "name": "NVIDIA: Nemotron 3.5 Content Safety",
+      "short_name": "Nemotron 3.5 Content Safety",
+      "author": "nvidia",
+      "author_display_name": "Nvidia",
+      "author_icon_uri": null,
+      "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting text and image input and returning text output: a safe/unsafe classification for the user prompt and the response, safety category labels, and an optional reasoning trace. It covers 12 languages with a context window of up to 128K tokens.\n\nIt is suited for prompt and response moderation, content classification, safety pipelines, and enterprise AI guardrails with policy enforcement, and includes a togglable reasoning mode. It is part of the NVIDIA Nemotron family of open models for agentic AI.",
+      "model_version_group_id": null,
+      "context_length": 131072,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": "Please do not upload any confidential information. You may upload images, which we and our service providers will use for the sole purpose of providing you with this demo experience. Your use is logged for security purposes and anonymous session data may be used to improve NVIDIA products and services, including network performance metrics, AI-generated outputs, and audio transcriptions. The logged session data for improvement purposes is not linked to your identity or any persistent identifier. For more information about our data processing practices, see our [Privacy Policy](https://www.nvidia.com/en-us/about-nvidia/privacy-policy/). By uploading the file, you consent to our collection, recording, and use of such information and the [NVIDIA API Trial Terms of Service](https://assets.ngc.nvidia.com/products/api-catalog/legal/NVIDIA%20API%20Trial%20Terms%20of%20Service.pdf).",
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "nvidia/nemotron-3.5-content-safety-20260604",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": "<think>",
+        "end_token": "</think>",
+        "default_reasoning_enabled": true,
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": "<think>",
+          "end_token": "</think>",
+          "default_reasoning_enabled": true,
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "5158ac8e-39bb-43a9-8616-0b5b01ece4cb",
+        "name": "DeepInfra | nvidia/nemotron-3.5-content-safety-20260604",
+        "context_length": 131072,
+        "model": {
+          "slug": "nvidia/nemotron-3.5-content-safety",
+          "hf_slug": "nvidia/Nemotron-3.5-Content-Safety",
+          "updated_at": "2026-06-04T14:19:12.864088+00:00",
+          "created_at": "2026-06-04T14:04:24.276954+00:00",
+          "hf_updated_at": null,
+          "name": "NVIDIA: Nemotron 3.5 Content Safety",
+          "short_name": "Nemotron 3.5 Content Safety",
+          "author": "nvidia",
+          "author_display_name": "Nvidia",
+          "author_icon_uri": null,
+          "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting text and image input and returning text output: a safe/unsafe classification for the user prompt and the response, safety category labels, and an optional reasoning trace. It covers 12 languages with a context window of up to 128K tokens.\n\nIt is suited for prompt and response moderation, content classification, safety pipelines, and enterprise AI guardrails with policy enforcement, and includes a togglable reasoning mode. It is part of the NVIDIA Nemotron family of open models for agentic AI.",
+          "model_version_group_id": null,
+          "context_length": 128000,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": "Please do not upload any confidential information. You may upload images, which we and our service providers will use for the sole purpose of providing you with this demo experience. Your use is logged for security purposes and anonymous session data may be used to improve NVIDIA products and services, including network performance metrics, AI-generated outputs, and audio transcriptions. The logged session data for improvement purposes is not linked to your identity or any persistent identifier. For more information about our data processing practices, see our [Privacy Policy](https://www.nvidia.com/en-us/about-nvidia/privacy-policy/). By uploading the file, you consent to our collection, recording, and use of such information and the [NVIDIA API Trial Terms of Service](https://assets.ngc.nvidia.com/products/api-catalog/legal/NVIDIA%20API%20Trial%20Terms%20of%20Service.pdf).",
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "nvidia/nemotron-3.5-content-safety-20260604",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": "<think>",
+            "end_token": "</think>",
+            "default_reasoning_enabled": true,
+            "reasoning_return_mechanism": "reasoning-content"
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": "<think>",
+              "end_token": "</think>",
+              "default_reasoning_enabled": true,
+              "reasoning_return_mechanism": "reasoning-content"
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": true,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "nvidia/nemotron-3.5-content-safety",
+        "model_variant_permaslug": "nvidia/nemotron-3.5-content-safety-20260604",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
+        "provider_info": {
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "/images/icons/DeepInfra.webp"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_chat_completions"
+        },
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/bf16",
+        "provider_model_id": "nvidia/Nemotron-Content-Safety-3.5",
+        "quantization": "bf16",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "response_format",
+          "logit_bias"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
+        },
+        "pricing": {
+          "prompt": "0.0000002",
+          "completion": "0.0000002",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.0000002",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.0000002",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.0000002",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.0000002",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0.0000002",
+          "openai:completion_tokens": "0.0000002"
+        },
+        "pricing_version_id": "760bc124-615e-4e24-894c-7f114f1a8dff",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": true,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-09-03T23:20:13.167Z",
+        "status": 0
+      },
+      "display_required_attestation_types": []
+    },
+    {
       "slug": "nvidia/nemotron-3-ultra-550b-a55b",
       "hf_slug": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
       "updated_at": "2026-06-04T13:45:46.170Z",
@@ -57102,7 +57897,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 60,
+        "limit_rpm": 40,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -68245,6 +69040,454 @@
       "updated_at": "2026-08-04T17:55:06.013Z",
       "created_at": "2026-04-30T23:30:21.141Z",
       "hf_updated_at": null,
+      "name": "SpaceXAI: Grok 4.3 (batch)",
+      "short_name": "Grok 4.3 (batch)",
+      "author": "x-ai",
+      "author_display_name": "SpaceXAI",
+      "author_icon_uri": null,
+      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual accuracy. Reasoning can be configured between none/low/medium/high (default low) effort levels.\n\nIt supports a 1 million token context window with no output token limit, making it well-suited for long-document analysis, deep research, and multi-step agentic tasks. Pricing is tiered: requests exceeding 200k total tokens are billed at a higher rate.",
+      "model_version_group_id": "bb483e52-2699-4b22-8fff-d0a2cb828cd7",
+      "context_length": 1000000,
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Grok",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "x-ai/grok-4.3-20260430",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "low",
+          "medium",
+          "high",
+          "none"
+        ],
+        "default_reasoning_effort": "low",
+        "default_reasoning_enabled": true
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "none"
+          ],
+          "default_reasoning_effort": "low",
+          "default_reasoning_enabled": true
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [
+        "xai",
+        "xai/zdr"
+      ],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "7447a255-268c-4075-8aec-d3545bb256bf",
+        "name": "xAI | x-ai/grok-4.3-20260430:batch",
+        "context_length": 1000000,
+        "model": {
+          "slug": "x-ai/grok-4.3",
+          "hf_slug": null,
+          "updated_at": "2026-08-04T17:55:06.013767+00:00",
+          "created_at": "2026-04-30T23:30:21.141+00:00",
+          "hf_updated_at": null,
+          "name": "SpaceXAI: Grok 4.3",
+          "short_name": "Grok 4.3",
+          "author": "x-ai",
+          "author_display_name": "SpaceXAI",
+          "author_icon_uri": null,
+          "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual accuracy. Reasoning can be configured between none/low/medium/high (default low) effort levels.\n\nIt supports a 1 million token context window with no output token limit, making it well-suited for long-document analysis, deep research, and multi-step agentic tasks. Pricing is tiered: requests exceeding 200k total tokens are billed at a higher rate.",
+          "model_version_group_id": "bb483e52-2699-4b22-8fff-d0a2cb828cd7",
+          "context_length": 1000000,
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Grok",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "x-ai/grok-4.3-20260430",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null,
+            "is_mandatory_reasoning": false,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "low",
+              "medium",
+              "high",
+              "none"
+            ],
+            "default_reasoning_effort": "low",
+            "default_reasoning_enabled": true
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null,
+              "is_mandatory_reasoning": false,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "low",
+                "medium",
+                "high",
+                "none"
+              ],
+              "default_reasoning_effort": "low",
+              "default_reasoning_enabled": true
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [
+            "xai",
+            "xai/zdr"
+          ],
+          "quick_start_example_type": "reasoning",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "x-ai/grok-4.3:batch",
+        "model_variant_permaslug": "x-ai/grok-4.3-20260430:batch",
+        "adapter_name": "XAIBatchAdapter",
+        "provider_name": "xAI",
+        "provider_info": {
+          "name": "xAI",
+          "displayName": "SpaceXAI",
+          "slug": "xai",
+          "baseUrl": "https://api.x.ai/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "retentionDays": 30,
+            "canPublish": false,
+            "termsOfServiceURL": "https://x.ai/legal/terms-of-service-enterprise",
+            "privacyPolicyURL": "https://x.ai/legal/privacy-policy",
+            "requiresUserIDs": true
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "XAIBatchAdapter",
+          "statusPageUrl": "https://status.x.ai/",
+          "byokEnabled": true,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://x.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "xai_responses"
+        },
+        "provider_display_name": "SpaceXAI",
+        "provider_slug": "xai",
+        "provider_model_id": "grok-4.3",
+        "quantization": "unknown",
+        "variant": "batch",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "structured_outputs",
+          "response_format",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "logprobs",
+          "top_logprobs",
+          "tools",
+          "tool_choice"
+        ],
+        "excluded_parameters": [
+          "reasoning_effort"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "retentionDays": 30,
+          "canPublish": false,
+          "termsOfServiceURL": "https://x.ai/legal/terms-of-service-enterprise",
+          "privacyPolicyURL": "https://x.ai/legal/privacy-policy",
+          "requiresUserIDs": true
+        },
+        "pricing": {
+          "prompt": "0.000001",
+          "completion": "0.000002",
+          "input_cache_read": "0.00000016",
+          "web_search": "0.005",
+          "discount": 0,
+          "overrides": [
+            {
+              "min_prompt_tokens": 200000,
+              "prompt": "0.000002",
+              "completion": "0.000004",
+              "input_cache_read": "0.00000032"
+            }
+          ],
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.000001",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens",
+              "tiers": [
+                {
+                  "sku_label": "≤200K",
+                  "price": "0.000001"
+                },
+                {
+                  "sku_label": ">200K",
+                  "price": "0.000002"
+                }
+              ]
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.000002",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens",
+              "tiers": [
+                {
+                  "sku_label": "≤200K",
+                  "price": "0.000002"
+                },
+                {
+                  "sku_label": ">200K",
+                  "price": "0.000004"
+                }
+              ]
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.00000016",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens",
+              "tiers": [
+                {
+                  "sku_label": "≤200K",
+                  "price": "0.00000016"
+                },
+                {
+                  "sku_label": ">200K",
+                  "price": "0.00000032"
+                }
+              ]
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Web Search",
+              "price": "0.005",
+              "displayMultiplier": 1000,
+              "unitLabel": "/1K calls",
+              "isServerTool": true
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.000001",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens",
+            "tiers": [
+              {
+                "sku_label": "≤200K",
+                "price": "0.000001"
+              },
+              {
+                "sku_label": ">200K",
+                "price": "0.000002"
+              }
+            ]
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.000002",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens",
+            "tiers": [
+              {
+                "sku_label": "≤200K",
+                "price": "0.000002"
+              },
+              {
+                "sku_label": ">200K",
+                "price": "0.000004"
+              }
+            ]
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.00000016",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens",
+            "tiers": [
+              {
+                "sku_label": "≤200K",
+                "price": "0.00000016"
+              },
+              {
+                "sku_label": ">200K",
+                "price": "0.00000032"
+              }
+            ]
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Web Search",
+            "price": "0.005",
+            "displayMultiplier": 1000,
+            "unitLabel": "/1K calls",
+            "isServerTool": true
+          }
+        ],
+        "pricing_json": {
+          "xai_responses:prompt_tokens": "0.000001",
+          "xai_responses:x_search_calls": "0.005",
+          "xai_responses:web_search_calls": "0.005",
+          "xai_responses:completion_tokens": "0.000002",
+          "xai_responses:cached_prompt_tokens": "0.00000016",
+          "xai_responses:high_context_threshold": "200000",
+          "xai_responses:prompt_tokens_high_context": "0.000002",
+          "xai_responses:completion_tokens_high_context": "0.000004",
+          "xai_responses:usage_guidelines_violation_fee": "0.05",
+          "xai_responses:cached_prompt_tokens_high_context": "0.00000032"
+        },
+        "pricing_version_id": "96760de2-d3dd-4edf-8b04-9346e04be93a",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_file_urls": true,
+          "supports_native_web_search": true,
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          },
+          "supported_parameters": {
+            "response_format": true,
+            "structured_outputs": true
+          },
+          "is_mandatory_reasoning": true
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "provider_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-08-31T17:28:09.794Z",
+        "status": 0
+      },
+      "display_required_attestation_types": []
+    },
+    {
+      "slug": "x-ai/grok-4.3",
+      "hf_slug": null,
+      "updated_at": "2026-08-04T17:55:06.013Z",
+      "created_at": "2026-04-30T23:30:21.141Z",
+      "hf_updated_at": null,
       "name": "SpaceXAI: Grok 4.3",
       "short_name": "Grok 4.3",
       "author": "x-ai",
@@ -69005,7 +70248,7 @@
       "author_icon_uri": null,
       "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex multi-step reasoning. It is particularly strong at reliable multi-tool calling and long-horizon tasks, with a 256K context window, configurable reasoning effort per request, and a custom vision encoder that handles variable image sizes and aspect ratios. Self-hostable on as few as four GPUs and available under open weights.",
       "model_version_group_id": null,
-      "context_length": 262144,
+      "context_length": 32768,
       "input_modalities": [
         "text",
         "image",
@@ -69076,7 +70319,7 @@
       "endpoint": {
         "id": "d0131604-f3be-43b4-a1ca-54e97a5db7e4",
         "name": "Mistral | mistralai/mistral-medium-3.5-20260430:batch",
-        "context_length": 262144,
+        "context_length": 32768,
         "model": {
           "slug": "mistralai/mistral-medium-3-5",
           "hf_slug": null,
@@ -70479,7 +71722,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-04-27T16:35:21.655Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -72390,7 +73633,7 @@
       "supported_tts_voices": null,
       "endpoint": {
         "id": "tilde-latest-~moonshotai/kimi-latest",
-        "name": "Makora | moonshotai/kimi-k3-20260715",
+        "name": "Morph | moonshotai/kimi-k3-20260715",
         "context_length": 1048576,
         "model": {
           "slug": "~moonshotai/kimi-latest",
@@ -72482,63 +73725,69 @@
         },
         "model_variant_slug": "~moonshotai/kimi-latest",
         "model_variant_permaslug": "~moonshotai/kimi-latest",
-        "adapter_name": "MakoraAdapter",
-        "provider_name": "Makora",
+        "adapter_name": "MorphAdapter",
+        "provider_name": "Morph",
         "provider_info": {
-          "name": "Makora",
-          "displayName": "Makora",
-          "slug": "makora",
-          "baseUrl": "https://inference.makora.com/v1",
+          "name": "Morph",
+          "displayName": "Morph",
+          "slug": "morph",
+          "baseUrl": "https://api.morphllm.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
+            "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+            "privacyPolicyURL": "https://morphllm.com/privacy",
             "requiresUserIDs": false
           },
+          "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
+          "hasCompletions": true,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "MakoraAdapter",
-          "statusPageUrl": "https://makora.statuspage.io",
-          "byokEnabled": false,
+          "adapterName": "MorphAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.makora.com&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://morphllm.com&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_extended"
+          "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Makora",
-        "provider_slug": "makora",
-        "provider_model_id": "moonshotai/Kimi-K3",
-        "quantization": "unknown",
+        "provider_display_name": "Morph",
+        "provider_slug": "morph/fp4",
+        "provider_model_id": "morph-kimik3",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
         "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "structured_outputs",
-          "response_format",
+          "max_tokens",
           "temperature",
+          "stop",
+          "response_format",
+          "structured_outputs",
+          "logprobs",
+          "top_logprobs",
+          "tools",
+          "tool_choice",
           "top_p",
           "top_k",
+          "min_p",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "stop",
-          "max_tokens",
           "seed",
-          "tools",
-          "logprobs",
-          "top_logprobs",
-          "tool_choice",
-          "min_p",
           "logit_bias"
         ],
         "excluded_parameters": [],
@@ -72548,32 +73797,34 @@
           "training": false,
           "trainingOpenRouter": false,
           "retainsPrompts": false,
-          "canPublish": false
+          "canPublish": false,
+          "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+          "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000255",
-          "completion": "0.00001275",
-          "input_cache_read": "0.00000025599999",
+          "prompt": "0.0000025",
+          "completion": "0.000014",
+          "input_cache_read": "0.00000029",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000255",
+              "price": "0.0000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00001275",
+              "price": "0.000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000025599999",
+              "price": "0.00000029",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -72583,31 +73834,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000255",
+            "price": "0.0000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00001275",
+            "price": "0.000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000025599999",
+            "price": "0.00000029",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000255",
-          "openai:completion_tokens": "0.00001275",
-          "openai:cached_prompt_tokens": "0.00000025599999"
+          "openai:prompt_tokens": "0.0000025",
+          "openai:completion_tokens": "0.000014",
+          "openai:cached_prompt_tokens": "0.00000029"
         },
-        "pricing_version_id": "d5fa30b5-9cb8-4148-88bb-963011a3c535",
+        "pricing_version_id": "ed0791a5-397b-49e3-aa6f-d4d7fc49554a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -72620,20 +73871,16 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_base64_video_input": false,
           "supports_video_urls": false,
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
-          },
-          "supported_parameters": {
-            "response_format": true,
-            "structured_outputs": true
           }
         },
         "supported_video_parameters": null,
@@ -72641,8 +73888,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 32000,
-        "created_at": "2026-08-21T20:38:38.819Z",
+        "capacity_tpm": null,
+        "created_at": "2026-07-27T15:22:21.828Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -77761,7 +79008,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-24T12:31:53.854Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -80588,7 +81835,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:21:58.311Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -80895,7 +82142,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:07:20.204Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -82405,8 +83652,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "641632d6-7216-4329-9ac3-32491a8889c0",
-        "name": "Decart | moonshotai/kimi-k2.6-20260420",
+        "id": "9bdd7d54-5cfa-4fa8-988b-345ef4b9fd68",
+        "name": "Inceptron | moonshotai/kimi-k2.6-20260420",
         "context_length": 262144,
         "model": {
           "slug": "moonshotai/kimi-k2.6",
@@ -82487,44 +83734,44 @@
         },
         "model_variant_slug": "moonshotai/kimi-k2.6",
         "model_variant_permaslug": "moonshotai/kimi-k2.6-20260420",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Decart",
+        "adapter_name": "InceptronAdapter",
+        "provider_name": "Inceptron",
         "provider_info": {
-          "name": "Decart",
-          "displayName": "Decart",
-          "slug": "decart",
-          "baseUrl": "https://api.cogito.decart.ai/v1",
+          "name": "Inceptron",
+          "displayName": "Inceptron",
+          "slug": "inceptron",
+          "baseUrl": "https://api.inceptron.io/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-            "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy",
+            "termsOfServiceURL": "https://www.inceptron.io/termsofservice",
+            "privacyPolicyURL": "https://www.inceptron.io/privacy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "SE",
           "datacenters": [
-            "US"
+            "FI"
           ],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "InceptronAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cogito.decart.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.inceptron.io&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Decart",
-        "provider_slug": "decart/fp4",
-        "provider_model_id": "moonshotai/kimi-k2.6:openrouter",
-        "quantization": "fp4",
+        "provider_display_name": "Inceptron",
+        "provider_slug": "inceptron/int4",
+        "provider_model_id": "moonshotai/Kimi-K2.6",
+        "quantization": "int4",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
@@ -82535,24 +83782,22 @@
           "reasoning",
           "include_reasoning",
           "temperature",
-          "top_p",
-          "top_k",
-          "min_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
           "max_tokens",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "logit_bias",
+          "parallel_tool_calls",
+          "presence_penalty",
+          "seed",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice"
-        ],
-        "excluded_parameters": [
+          "tool_choice",
           "logprobs",
           "top_logprobs"
         ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -82560,33 +83805,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-          "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy"
+          "termsOfServiceURL": "https://www.inceptron.io/termsofservice",
+          "privacyPolicyURL": "https://www.inceptron.io/privacy"
         },
         "pricing": {
-          "prompt": "0.0000005194",
-          "completion": "0.00000245",
-          "input_cache_read": "0.000000098",
+          "prompt": "0.00000051",
+          "completion": "0.0000025",
+          "input_cache_read": "0.0000001",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000005194",
+              "price": "0.00000051",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000245",
+              "price": "0.0000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000098",
+              "price": "0.0000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -82596,31 +83841,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000005194",
+            "price": "0.00000051",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000245",
+            "price": "0.0000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000098",
+            "price": "0.0000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000005194",
-          "openai:completion_tokens": "0.00000245",
-          "openai:cached_prompt_tokens": "0.000000098"
+          "openai:prompt_tokens": "0.00000051",
+          "openai:completion_tokens": "0.0000025",
+          "openai:cached_prompt_tokens": "0.0000001"
         },
-        "pricing_version_id": "bcfa85ac-69f4-4c77-9652-a23e9ff7bda9",
+        "pricing_version_id": "d2ea26f4-6230-4042-a590-78935d7cff35",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -82639,7 +83884,7 @@
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
+            "literal_required": true,
             "type_function": true
           }
         },
@@ -82649,7 +83894,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-06-09T23:41:46.259Z",
+        "created_at": "2026-04-23T06:40:41.125Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -93064,7 +94309,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-21T20:07:30.893Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -126307,7 +127552,7 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "13fc4fba-4a70-4768-8c95-4837d1919201",
+        "id": "3a7af933-48c8-45a7-8105-067c6976c8be",
         "name": "Mistral | mistralai/mistral-embed-2312",
         "context_length": 8192,
         "model": {
@@ -126382,7 +127627,7 @@
         "provider_info": {
           "name": "Mistral",
           "displayName": "Mistral",
-          "slug": "mistral",
+          "slug": "mistral/zdr",
           "baseUrl": "https://api.mistral.ai/v1",
           "dataPolicy": {
             "training": false,
@@ -126409,8 +127654,8 @@
           "sendClientIp": false,
           "pricingStrategy": "openai_embeddings"
         },
-        "provider_display_name": "Mistral",
-        "provider_slug": "mistral",
+        "provider_display_name": "Mistral (ZDR)",
+        "provider_slug": "mistral/zdr",
         "provider_model_id": "mistral-embed-2312",
         "quantization": "unknown",
         "variant": "standard",
@@ -126436,7 +127681,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "retentionDays": 30,
           "canPublish": false,
           "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
@@ -126468,7 +127713,7 @@
         "pricing_json": {
           "openai-embeddings:prompt_tokens": 1e-07
         },
-        "pricing_version_id": "1848c96a-ba43-47fe-9da9-3943427f5dd5",
+        "pricing_version_id": "6c110f2f-bad1-4ba0-946d-cfddf63cb646",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -126498,7 +127743,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2025-10-31T21:03:43.055Z",
+        "created_at": "2026-08-18T16:05:04.313Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -127433,7 +128678,7 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "a93321a4-2cbf-4bd0-a0cf-09cb593fb821",
+        "id": "e3993ee7-54c0-4f62-89cd-a9d4820c9605",
         "name": "Mistral | mistralai/codestral-embed-2505",
         "context_length": 8192,
         "model": {
@@ -127508,7 +128753,7 @@
         "provider_info": {
           "name": "Mistral",
           "displayName": "Mistral",
-          "slug": "mistral",
+          "slug": "mistral/zdr",
           "baseUrl": "https://api.mistral.ai/v1",
           "dataPolicy": {
             "training": false,
@@ -127535,8 +128780,8 @@
           "sendClientIp": false,
           "pricingStrategy": "openai_embeddings"
         },
-        "provider_display_name": "Mistral",
-        "provider_slug": "mistral",
+        "provider_display_name": "Mistral (ZDR)",
+        "provider_slug": "mistral/zdr",
         "provider_model_id": "codestral-embed-2505",
         "quantization": "unknown",
         "variant": "standard",
@@ -127562,7 +128807,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "retentionDays": 30,
           "canPublish": false,
           "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
@@ -127594,7 +128839,7 @@
         "pricing_json": {
           "openai-embeddings:prompt_tokens": 1.5e-07
         },
-        "pricing_version_id": "dbe6877e-a993-4c82-85b3-f78bc414d0ee",
+        "pricing_version_id": "4862ff0b-093f-4361-a17a-dfc40f27501f",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -127624,7 +128869,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2025-10-30T22:48:16.456Z",
+        "created_at": "2026-08-18T16:05:09.958Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -137224,7 +138469,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-12T14:20:51.130Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -137523,7 +138768,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-10-14T22:53:07.729Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -141033,7 +142278,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-08-26T19:24:29.292Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -149683,7 +150928,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-19T14:13:11.602Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -162078,7 +163323,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-03-24T20:02:59.576Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -165122,7 +166367,7 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "c5a8bebe-8564-47ed-9d05-4151aa3c6e3a",
+        "id": "b86f6347-ac74-4160-9bfe-561894a7ef93",
         "name": "Mistral | mistralai/mistral-saba-2502",
         "context_length": 32768,
         "model": {
@@ -165185,7 +166430,7 @@
         "provider_info": {
           "name": "Mistral",
           "displayName": "Mistral",
-          "slug": "mistral",
+          "slug": "mistral/zdr",
           "baseUrl": "https://api.mistral.ai/v1",
           "dataPolicy": {
             "training": false,
@@ -165212,8 +166457,8 @@
           "sendClientIp": false,
           "pricingStrategy": "mistral"
         },
-        "provider_display_name": "Mistral",
-        "provider_slug": "mistral",
+        "provider_display_name": "Mistral (ZDR)",
+        "provider_slug": "mistral/zdr",
         "provider_model_id": "mistral-saba-2502",
         "quantization": "unknown",
         "variant": "standard",
@@ -165241,7 +166486,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "retentionDays": 30,
           "canPublish": false,
           "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
@@ -165270,7 +166515,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "2e-8",
+              "price": "0.00000002",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -165294,7 +166539,7 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "2e-8",
+            "price": "0.00000002",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -165302,9 +166547,9 @@
         "pricing_json": {
           "mistral:prompt_tokens": 2e-07,
           "mistral:completion_tokens": 6e-07,
-          "mistral:cached_prompt_tokens": "2e-8"
+          "mistral:cached_prompt_tokens": "0.00000002"
         },
-        "pricing_version_id": "27c1ea75-e219-46b8-9b76-824ad6ba5ec2",
+        "pricing_version_id": "e2155b7d-d576-46c8-b7d3-b3392090887e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -165335,7 +166580,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2025-02-17T15:45:06.399Z",
+        "created_at": "2026-08-18T16:05:11.735Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -165967,9 +167212,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "c61ab1c0-3660-4391-8385-773c7a3d1de8",
-        "name": "Nebius | qwen/qwen2.5-vl-72b-instruct",
-        "context_length": 32000,
+        "id": "3f0b8e14-7b24-431d-a19e-f2e257967b0a",
+        "name": "Parasail | qwen/qwen2.5-vl-72b-instruct",
+        "context_length": 128000,
         "model": {
           "slug": "qwen/qwen2.5-vl-72b-instruct",
           "hf_slug": "Qwen/Qwen2.5-VL-72B-Instruct",
@@ -166023,62 +167268,62 @@
         },
         "model_variant_slug": "qwen/qwen2.5-vl-72b-instruct",
         "model_variant_permaslug": "qwen/qwen2.5-vl-72b-instruct",
-        "adapter_name": "NebiusAdapter",
-        "provider_name": "Nebius",
+        "adapter_name": "ParasailAdapter",
+        "provider_name": "Parasail",
         "provider_info": {
-          "name": "Nebius",
-          "displayName": "Nebius Token Factory",
-          "slug": "nebius",
-          "baseUrl": "https://api.studio.nebius.ai/v1",
+          "name": "Parasail",
+          "displayName": "Parasail",
+          "slug": "parasail",
+          "baseUrl": "https://api.parasail.io/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://docs.nebius.com/legal/studio/terms-of-use/",
-            "privacyPolicyURL": "https://docs.nebius.com/legal/studio/privacy/",
+            "termsOfServiceURL": "https://parasail.io/legal/terms-of-service",
+            "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "NL",
+          "headquarters": "US",
           "hasChatCompletions": true,
           "hasCompletions": true,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "NebiusAdapter",
+          "adapterName": "ParasailAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://docs.nebius.com/&size=256",
-            "className": "invert-0 dark:invert"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.parasail.io/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Nebius Token Factory",
-        "provider_slug": "nebius/fp8",
-        "provider_model_id": "Qwen/Qwen2.5-VL-72B-Instruct",
+        "provider_display_name": "Parasail",
+        "provider_slug": "parasail/fp8",
+        "provider_model_id": "parasail-qwen25-vl-72b-instruct",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "max_tokens",
           "temperature",
           "top_p",
-          "stop",
           "frequency_penalty",
           "presence_penalty",
+          "repetition_penalty",
           "seed",
+          "stop",
           "top_k",
           "logit_bias",
-          "logprobs",
-          "top_logprobs",
+          "structured_outputs",
           "response_format",
-          "structured_outputs"
+          "logprobs",
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -166088,25 +167333,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://docs.nebius.com/legal/studio/terms-of-use/",
-          "privacyPolicyURL": "https://docs.nebius.com/legal/studio/privacy/"
+          "termsOfServiceURL": "https://parasail.io/legal/terms-of-service",
+          "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000025",
-          "completion": "0.00000075",
+          "prompt": "0.0000008",
+          "completion": "0.000001",
+          "input_cache_read": "0.0000004",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000025",
+              "price": "0.0000008",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000075",
+              "price": "0.000001",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.0000004",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -166116,23 +167369,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000025",
+            "price": "0.0000008",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000075",
+            "price": "0.000001",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.0000004",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000025",
-          "openai:completion_tokens": "0.00000075"
+          "openai:prompt_tokens": "0.0000008",
+          "openai:completion_tokens": "0.000001",
+          "openai:cached_prompt_tokens": "0.0000004"
         },
-        "pricing_version_id": "3604eace-252c-4b44-b301-a063b439bc3d",
+        "pricing_version_id": "79647b1b-bc20-4848-8a3b-52f83d5a655e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -166153,7 +167414,8 @@
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
-          }
+          },
+          "supported_parameters": {}
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
@@ -166161,7 +167423,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-07-12T02:21:41.369Z",
+        "created_at": "2025-02-27T15:14:02.952Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -171175,7 +172437,7 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "4a128170-b056-42d7-8462-a5cea647f9ad",
+        "id": "5155ea3c-d700-416c-879d-89a8e266f470",
         "name": "Mistral | mistralai/mistral-large-2407",
         "context_length": 131072,
         "model": {
@@ -171238,7 +172500,7 @@
         "provider_info": {
           "name": "Mistral",
           "displayName": "Mistral",
-          "slug": "mistral",
+          "slug": "mistral/zdr",
           "baseUrl": "https://api.mistral.ai/v1",
           "dataPolicy": {
             "training": false,
@@ -171265,8 +172527,8 @@
           "sendClientIp": false,
           "pricingStrategy": "mistral"
         },
-        "provider_display_name": "Mistral",
-        "provider_slug": "mistral",
+        "provider_display_name": "Mistral (ZDR)",
+        "provider_slug": "mistral/zdr",
         "provider_model_id": "mistral-large-2407",
         "quantization": "unknown",
         "variant": "standard",
@@ -171294,7 +172556,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "retentionDays": 30,
           "canPublish": false,
           "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
@@ -171357,7 +172619,7 @@
           "mistral:completion_tokens": 6e-06,
           "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "af0a1f36-618d-4aba-9cd1-8edf06ca3d48",
+        "pricing_version_id": "013351f0-36fa-44bd-a687-9ffffaacf5f1",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -171388,7 +172650,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2024-11-19T01:08:22.651Z",
+        "created_at": "2026-08-18T16:05:07.255Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -173959,7 +175221,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-11-07T21:19:02.136Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -175758,7 +177020,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-11-07T21:19:01.596Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -177667,7 +178929,7 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "e55a0c16-08a0-4871-ae6a-97482cc3231a",
+        "id": "424c1412-9232-4520-ba87-dd7c985b328f",
         "name": "Mistral | mistralai/mixtral-8x22b-instruct",
         "context_length": 65536,
         "model": {
@@ -177733,7 +178995,7 @@
         "provider_info": {
           "name": "Mistral",
           "displayName": "Mistral",
-          "slug": "mistral",
+          "slug": "mistral/zdr",
           "baseUrl": "https://api.mistral.ai/v1",
           "dataPolicy": {
             "training": false,
@@ -177760,8 +179022,8 @@
           "sendClientIp": false,
           "pricingStrategy": "mistral"
         },
-        "provider_display_name": "Mistral",
-        "provider_slug": "mistral",
+        "provider_display_name": "Mistral (ZDR)",
+        "provider_slug": "mistral/zdr",
         "provider_model_id": "open-mixtral-8x22b",
         "quantization": "unknown",
         "variant": "standard",
@@ -177789,7 +179051,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "retentionDays": 30,
           "canPublish": false,
           "termsOfServiceURL": "https://mistral.ai/terms/#terms-of-use",
@@ -177852,7 +179114,7 @@
           "mistral:completion_tokens": 6e-06,
           "mistral:cached_prompt_tokens": "0.0000002"
         },
-        "pricing_version_id": "06607651-4441-4e0f-afd1-2c0508452775",
+        "pricing_version_id": "ee1ffc07-59d6-4963-93c9-a21be356484b",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -177882,7 +179144,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2024-11-07T21:18:58.887Z",
+        "created_at": "2026-08-18T16:05:14.389Z",
         "status": 0
       },
       "display_required_attestation_types": []
