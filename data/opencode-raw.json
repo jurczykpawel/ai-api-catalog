@@ -426,6 +426,26 @@
       "_api_id": "gemini-3-flash"
     },
     {
+      "id": "gpt-6-astra",
+      "name": "GPT 6 Astra",
+      "category": "llm",
+      "description": "GPT 6 Astra via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-6-astra"
+    },
+    {
       "id": "gpt-5-6-sol",
       "name": "GPT 5.6 Sol",
       "category": "llm",
@@ -912,6 +932,23 @@
       "_api_id": "grok-4.5"
     },
     {
+      "id": "muse-spark-1-3",
+      "name": "Muse Spark 1.3",
+      "category": "llm",
+      "description": "Muse Spark 1.3 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "muse-spark-1.3"
+    },
+    {
       "id": "muse-spark-1-2",
       "name": "Muse Spark 1.2",
       "category": "llm",
@@ -961,6 +998,60 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "deepseek-v4-flash"
+    },
+    {
+      "id": "deepseek-v4-flash-vision-exp",
+      "name": "Deepseek V4 Flash Vision Exp",
+      "category": "llm",
+      "description": "Deepseek V4 Flash Vision Exp via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "deepseek-v4-flash-vision-exp"
+    },
+    {
+      "id": "glm-5-3-flash",
+      "name": "GLM 5.3 Flash",
+      "category": "llm",
+      "description": "GLM 5.3 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "zhipu",
+        "glm",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "glm-5.3-flash"
+    },
+    {
+      "id": "glm-5-3",
+      "name": "GLM 5.3",
+      "category": "llm",
+      "description": "GLM 5.3 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "zhipu",
+        "glm"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "glm-5.3"
     },
     {
       "id": "glm-5-2",
@@ -1340,25 +1431,6 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "nemotron-3.5-lightning-free"
-    },
-    {
-      "id": "laguna-s-2-1-free",
-      "name": "Laguna S 2.1 Free",
-      "category": "llm",
-      "description": "Laguna S 2.1 Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "laguna-s-2.1-free"
     }
   ],
   "source": "opencode",
