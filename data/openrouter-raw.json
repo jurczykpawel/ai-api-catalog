@@ -927,7 +927,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-03T17:12:07.484Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -1858,7 +1858,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-03T17:12:10.644Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -11930,7 +11930,7 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -13064,29 +13064,29 @@
           "privacyPolicyURL": "https://reka.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000115",
-          "completion": "0.0000035",
-          "input_cache_read": "0.0000001",
+          "prompt": "0.00000117",
+          "completion": "0.00000396",
+          "input_cache_read": "0.000000234",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000115",
+              "price": "0.00000117",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000035",
+              "price": "0.00000396",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001",
+              "price": "0.000000234",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -13096,31 +13096,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000115",
+            "price": "0.00000117",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000035",
+            "price": "0.00000396",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001",
+            "price": "0.000000234",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000115",
-          "openai:completion_tokens": "0.0000035",
-          "openai:cached_prompt_tokens": "0.0000001"
+          "openai:prompt_tokens": "0.00000117",
+          "openai:completion_tokens": "0.00000396",
+          "openai:cached_prompt_tokens": "0.000000234"
         },
-        "pricing_version_id": "6f6938e6-2634-4210-90c1-bfee0b84f20f",
+        "pricing_version_id": "1c5391f5-c5d5-43a2-92f4-e673a2a80dc4",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -13637,29 +13637,29 @@
           "privacyPolicyURL": "https://reka.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000115",
-          "completion": "0.0000035",
-          "input_cache_read": "0.0000001",
+          "prompt": "0.00000117",
+          "completion": "0.00000396",
+          "input_cache_read": "0.000000234",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000115",
+              "price": "0.00000117",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000035",
+              "price": "0.00000396",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001",
+              "price": "0.000000234",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -13669,31 +13669,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000115",
+            "price": "0.00000117",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000035",
+            "price": "0.00000396",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001",
+            "price": "0.000000234",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000115",
-          "openai:completion_tokens": "0.0000035",
-          "openai:cached_prompt_tokens": "0.0000001"
+          "openai:prompt_tokens": "0.00000117",
+          "openai:completion_tokens": "0.00000396",
+          "openai:cached_prompt_tokens": "0.000000234"
         },
-        "pricing_version_id": "6f6938e6-2634-4210-90c1-bfee0b84f20f",
+        "pricing_version_id": "1c5391f5-c5d5-43a2-92f4-e673a2a80dc4",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -14222,21 +14222,21 @@
           "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.00000022",
-          "completion": "0.00000242",
+          "prompt": "0.00000015",
+          "completion": "0.000002",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000022",
+              "price": "0.00000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000242",
+              "price": "0.000002",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -14246,23 +14246,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000022",
+            "price": "0.00000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000242",
+            "price": "0.000002",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000022",
-          "openai:completion_tokens": "0.00000242"
+          "openai:prompt_tokens": "0.00000015",
+          "openai:completion_tokens": "0.000002"
         },
-        "pricing_version_id": "13adacbb-4cc1-4361-ac64-cee2f7b2cdd8",
+        "pricing_version_id": "b4b7c14a-8f1f-46b4-b155-84d4f5dd9101",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -25872,10 +25872,10 @@
           "seed",
           "frequency_penalty",
           "presence_penalty",
+          "repetition_penalty",
           "top_k",
           "min_p",
           "logit_bias",
-          "repetition_penalty",
           "logprobs",
           "top_logprobs",
           "parallel_tool_calls",
@@ -43422,7 +43422,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-08T19:30:14.913Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -60900,8 +60900,8 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 30,
-        "limit_rpd": null,
+        "limit_rpm": 20,
+        "limit_rpd": 100,
         "has_completions": true,
         "has_chat_completions": true,
         "features": {
@@ -76239,7 +76239,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-19T14:06:37.489Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -78892,7 +78892,7 @@
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": 32768,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -81469,8 +81469,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "fa8537ee-adda-4a95-b729-e0a1547dccbd",
-        "name": "DigitalOcean | deepseek/deepseek-v4-pro-20260423",
+        "id": "48f7c1a9-3b0c-4f31-a55b-4650d37e35f3",
+        "name": "Baidu | deepseek/deepseek-v4-pro-20260423",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-pro",
@@ -81552,46 +81552,47 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260423",
-        "adapter_name": "DigitalOceanAdapter",
-        "provider_name": "DigitalOcean",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "DigitalOcean",
-          "displayName": "DigitalOcean",
-          "slug": "digitalocean",
-          "baseUrl": "https://inference.do-ai.run/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
-            "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DigitalOceanAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.digitalocean.com&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DigitalOcean",
-        "provider_slug": "digitalocean",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "provider_model_id": "deepseek-v4-pro",
-        "quantization": "unknown",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 393216,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -81599,47 +81600,49 @@
           "temperature",
           "top_p",
           "max_tokens",
+          "stop",
           "response_format",
-          "tool_choice",
+          "structured_outputs",
           "tools",
-          "logprobs",
-          "top_logprobs"
+          "tool_choice"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "max_completion_tokens"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.digitalocean.com/legal/terms-of-service-agreement",
-          "privacyPolicyURL": "https://www.digitalocean.com/legal/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.00000087",
-          "completion": "0.00000174",
-          "input_cache_read": "0.000000174",
-          "discount": 0,
+          "prompt": "0.0000007267",
+          "completion": "0.0000014534",
+          "input_cache_read": "0.0000000602",
+          "discount": 0.57,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000087",
+              "price": "0.0000007267",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000174",
+              "price": "0.0000014534",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000174",
+              "price": "0.0000000602",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -81649,31 +81652,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000087",
+            "price": "0.0000007267",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000174",
+            "price": "0.0000014534",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000174",
+            "price": "0.0000000602",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000087",
-          "openai:completion_tokens": "0.00000174",
-          "openai:cached_prompt_tokens": "0.000000174"
+          "openai:prompt_tokens": "0.00000169",
+          "openai:completion_tokens": "0.00000338",
+          "openai:cached_prompt_tokens": "0.00000014"
         },
-        "pricing_version_id": "b480656c-c17d-4d41-8499-457c79a669c6",
+        "pricing_version_id": "a60e16b6-e596-4a60-b617-255d342fd943",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -81690,7 +81693,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -81701,8 +81704,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-05-24T12:31:53.854Z",
+        "capacity_tpm": 67230000,
+        "created_at": "2026-04-29T11:41:27.715Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -84837,7 +84840,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:07:20.204Z",
-        "status": -2
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -86347,8 +86350,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "641632d6-7216-4329-9ac3-32491a8889c0",
-        "name": "Decart | moonshotai/kimi-k2.6-20260420",
+        "id": "78cbd7eb-84cd-46ea-8347-0578e3415f83",
+        "name": "Baidu | moonshotai/kimi-k2.6-20260420",
         "context_length": 262144,
         "model": {
           "slug": "moonshotai/kimi-k2.6",
@@ -86429,47 +86432,45 @@
         },
         "model_variant_slug": "moonshotai/kimi-k2.6",
         "model_variant_permaslug": "moonshotai/kimi-k2.6-20260420",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Decart",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Decart",
-          "displayName": "Decart",
-          "slug": "decart",
-          "baseUrl": "https://api.cogito.decart.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-            "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cogito.decart.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Decart",
-        "provider_slug": "decart/fp4",
-        "provider_model_id": "moonshotai/kimi-k2.6:openrouter",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp4",
+        "provider_model_id": "kimi-k2.6",
         "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
         "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
@@ -86478,57 +86479,50 @@
           "include_reasoning",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
+          "max_tokens",
           "frequency_penalty",
           "presence_penalty",
-          "repetition_penalty",
           "stop",
-          "seed",
-          "max_tokens",
           "response_format",
           "structured_outputs",
           "tools",
           "tool_choice"
         ],
-        "excluded_parameters": [
-          "logprobs",
-          "top_logprobs"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://cogito.decart.ai/legal/terms",
-          "privacyPolicyURL": "https://cogito.decart.ai/legal/privacy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.0000005484",
-          "completion": "0.0000023089",
-          "input_cache_read": "0.0000000924",
-          "discount": 0,
+          "prompt": "0.00000053675",
+          "completion": "0.00000226",
+          "input_cache_read": "0.0000000904",
+          "discount": 0.435,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000005484",
+              "price": "0.00000053675",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000023089",
+              "price": "0.00000226",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000924",
+              "price": "0.0000000904",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -86538,31 +86532,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000005484",
+            "price": "0.00000053675",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000023089",
+            "price": "0.00000226",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000924",
+            "price": "0.0000000904",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000005484",
-          "openai:completion_tokens": "0.0000023089",
-          "openai:cached_prompt_tokens": "0.0000000924"
+          "openai:prompt_tokens": "0.00000095",
+          "openai:completion_tokens": "0.000004",
+          "openai:cached_prompt_tokens": "0.00000016"
         },
-        "pricing_version_id": "90a97f2f-6822-49da-8cfa-c64c9c6fd8d5",
+        "pricing_version_id": "74266252-a1bb-42ce-9716-876ccd8a057a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -86582,7 +86576,7 @@
             "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
-            "type_function": true
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -86590,8 +86584,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-06-09T23:41:46.259Z",
+        "capacity_tpm": 17320000,
+        "created_at": "2026-05-21T14:24:00.671Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -89674,7 +89668,7 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 6410000,
+        "capacity_tpm": 5790000,
         "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       },
@@ -97006,7 +97000,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-21T20:07:30.893Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -104528,7 +104522,7 @@
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": 32768,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -104927,7 +104921,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-25T16:10:09.814Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -107475,7 +107469,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-19T14:06:37.489Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -141167,7 +141161,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-12T14:20:51.130Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -144976,7 +144970,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-08-26T19:24:29.292Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -150857,7 +150851,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-10-10T18:41:28.549Z",
-        "status": -2
+        "status": -5
       },
       "display_required_attestation_types": []
     },
@@ -166021,7 +166015,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-03-24T20:02:59.576Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
