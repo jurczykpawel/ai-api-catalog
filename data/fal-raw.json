@@ -199,7 +199,7 @@
           "transform",
           "lipsync"
         ],
-        "updated_at": "2026-09-08T23:20:10.422Z",
+        "updated_at": "2026-09-14T18:01:38.749Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aa7658f/fSQlWMcduHn4_abgJ7qhQ.jpg",
         "model_url": "https://fal.run/minimax/h3-max/image-to-video",
@@ -1641,7 +1641,7 @@
           "music",
           "text-to-music"
         ],
-        "updated_at": "2026-08-18T21:02:01.110Z",
+        "updated_at": "2026-09-15T03:31:04.015Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0a875694/SZffdb8layV90JxfN5fkP_d2048a658d9e4dc9973598f3542833a0.jpg",
         "model_url": "https://fal.run/fal-ai/elevenlabs/music",
@@ -33547,7 +33547,109 @@
         "pinned": false
       },
       "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "elevenlabs/music/v2.5",
+      "metadata": {
+        "display_name": "Elevenlabs Music v2.5",
+        "category": "text-to-audio",
+        "description": "Generate high quality, realistic music with fine controls using Elevenlabs Music v2.5!",
+        "status": "active",
+        "tags": [
+          "music",
+          "text-to-music"
+        ],
+        "updated_at": "2026-09-15T03:31:04.015Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6adb/-Z3Ays503mRIC-atq70g8.jpg",
+        "model_url": "https://fal.run/elevenlabs/music/v2.5",
+        "license_type": "commercial",
+        "date": "2026-09-14T17:20:06.936Z",
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "elevenlabs/music/v2",
+      "metadata": {
+        "display_name": "Elevenlabs Music v2",
+        "category": "text-to-audio",
+        "description": "Generate high quality, realistic music with fine controls using Elevenlabs Music v2!",
+        "status": "active",
+        "tags": [
+          "music",
+          "text-to-music"
+        ],
+        "updated_at": "2026-09-15T03:31:04.015Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6ac9/dGujDO5lw_IneNzkkfJBe.jpg",
+        "model_url": "https://fal.run/elevenlabs/music/v2",
+        "license_type": "commercial",
+        "date": "2026-09-14T17:17:25.899Z",
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "fal-ai/id-v2v/relight",
+      "metadata": {
+        "display_name": "ID-V2V Relight",
+        "category": "video-to-video",
+        "description": "Change a video’s lighting using a relit reference frame while preserving the scene, subjects, and original performance. ID-V2V Relight propagates the new illumination across the video.",
+        "status": "active",
+        "tags": [
+          "relighting",
+          "editing",
+          "cinematic"
+        ],
+        "updated_at": "2026-09-14T19:03:32.767Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6a5a/ifWNILkuHssMXbhOBPUtN.jpg",
+        "model_url": "https://fal.run/fal-ai/id-v2v/relight",
+        "license_type": "commercial",
+        "date": "2026-09-14T17:35:16.149Z",
+        "group": {
+          "key": "id-v2v",
+          "label": "Relight"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "fal-ai/id-v2v",
+      "metadata": {
+        "display_name": "ID-V2V",
+        "category": "video-to-video",
+        "description": "Restyle a video’s scene, lighting, and visual style from edited keyframes while preserving the source subjects’ identity, expressions, gaze, and motion. Developed by Eyeline Labs and Netflix researchers.",
+        "status": "active",
+        "tags": [
+          "stylized",
+          "transform",
+          "editing"
+        ],
+        "updated_at": "2026-09-14T19:03:19.741Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6a17/6YqXGZz-1L8Z4GPc56Bld.jpg",
+        "model_url": "https://fal.run/fal-ai/id-v2v",
+        "license_type": "commercial",
+        "date": "2026-09-14T17:35:40.190Z",
+        "group": {
+          "key": "id-v2v",
+          "label": "Video Restyling"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
     }
   ],
-  "total_fetched": 1500
+  "total_fetched": 1504
 }
