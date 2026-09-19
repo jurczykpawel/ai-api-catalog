@@ -966,6 +966,23 @@
       "_api_id": "muse-spark-1.2"
     },
     {
+      "id": "deepseek-v4-1-flash",
+      "name": "Deepseek V4.1 Flash",
+      "category": "llm",
+      "description": "Deepseek V4.1 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "deepseek-v4.1-flash"
+    },
+    {
       "id": "deepseek-v4-pro",
       "name": "Deepseek V4 Pro",
       "category": "llm",
@@ -1240,6 +1257,25 @@
       "_api_id": "kimi-k2.5"
     },
     {
+      "id": "qwen3-8-flash",
+      "name": "Qwen3.8 Flash",
+      "category": "llm",
+      "description": "Qwen3.8 Flash via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "alibaba",
+        "qwen",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "qwen3.8-flash"
+    },
+    {
       "id": "qwen3-6-plus",
       "name": "Qwen3.6 Plus",
       "category": "llm",
@@ -1276,6 +1312,22 @@
       "_api_id": "qwen3.5-plus"
     },
     {
+      "id": "jev-1-13",
+      "name": "Jev 1.13",
+      "category": "llm",
+      "description": "Jev 1.13 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "jev-1.13"
+    },
+    {
       "id": "big-pickle",
       "name": "Big Pickle",
       "category": "llm",
@@ -1294,20 +1346,23 @@
       "_api_id": "big-pickle"
     },
     {
-      "id": "union-alpha",
-      "name": "Union Alpha",
+      "id": "jev-1-13-free",
+      "name": "Jev 1.13 Free",
       "category": "llm",
-      "description": "Union Alpha via OpenCode Zen curated gateway.",
+      "description": "Jev 1.13 Free via OpenCode Zen curated gateway.",
       "tags": [
-        "opencode"
+        "opencode",
+        "free"
       ],
       "capabilities": [],
       "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
       },
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "union-alpha"
+      "_api_id": "jev-1.13-free"
     },
     {
       "id": "deepseek-v4-flash-free",
