@@ -900,22 +900,6 @@
       "_api_id": "grok-build-0.1"
     },
     {
-      "id": "grok-4-6",
-      "name": "Grok 4.6",
-      "category": "llm",
-      "description": "Grok 4.6 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "grok-4.6"
-    },
-    {
       "id": "grok-4-7",
       "name": "Grok 4.7",
       "category": "llm",
@@ -930,6 +914,22 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "grok-4.7"
+    },
+    {
+      "id": "grok-4-6",
+      "name": "Grok 4.6",
+      "category": "llm",
+      "description": "Grok 4.6 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "grok-4.6"
     },
     {
       "id": "grok-4-5",
@@ -1439,6 +1439,26 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "muse-spark-1.2-contributor-free"
+    },
+    {
+      "id": "mimo-v2-6-flash-free",
+      "name": "Mimo V2.6 Flash Free",
+      "category": "llm",
+      "description": "Mimo V2.6 Flash Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "mimo-v2.6-flash-free"
     },
     {
       "id": "mimo-v2-5-free",
