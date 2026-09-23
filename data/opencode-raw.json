@@ -43,6 +43,28 @@
       "_api_id": "claude-fable-5-1"
     },
     {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5 5",
+      "category": "llm",
+      "description": "Claude Opus 5 5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "anthropic",
+        "claude",
+        "powerful"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "claude-opus-5-5"
+    },
+    {
       "id": "claude-opus-5",
       "name": "Claude Opus 5",
       "category": "llm",
@@ -444,6 +466,46 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "gpt-6-astra"
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT 6 Sol",
+      "category": "llm",
+      "description": "GPT 6 Sol via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-6-sol"
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT 6 Luna",
+      "category": "llm",
+      "description": "GPT 6 Luna via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-6-luna"
     },
     {
       "id": "gpt-5-6-sol",
