@@ -12021,7 +12021,7 @@
       "supported_tts_voices": null,
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-pro-latest",
-        "name": "Wafer | deepseek/deepseek-v4-pro-20260813",
+        "name": "Baidu | deepseek/deepseek-v4-pro-20260813",
         "context_length": 1048576,
         "model": {
           "slug": "~deepseek/deepseek-pro-latest",
@@ -12105,68 +12105,68 @@
         },
         "model_variant_slug": "~deepseek/deepseek-pro-latest",
         "model_variant_permaslug": "~deepseek/deepseek-pro-latest",
-        "adapter_name": "WaferAdapter",
-        "provider_name": "Wafer",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Wafer",
-          "displayName": "Wafer",
-          "slug": "wafer",
-          "baseUrl": "https://pass.wafer.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.wafer.ai/terms",
-            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "WaferAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wafer.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Wafer",
-        "provider_slug": "wafer",
-        "provider_model_id": "DeepSeek-V4-Pro",
-        "quantization": "unknown",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
+        "provider_model_id": "deepseek-v4-pro-0813-intl",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 393216,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
+          "max_tokens",
+          "stop",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
           "top_k",
           "min_p",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "stop",
           "seed",
-          "max_tokens",
           "logit_bias",
-          "response_format",
-          "structured_outputs",
-          "tools",
           "logprobs",
-          "top_logprobs",
-          "tool_choice"
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -12174,35 +12174,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.wafer.ai/terms",
-          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.00000039",
-          "completion": "0.0000029",
-          "input_cache_read": "0.00000025",
-          "discount": 0,
+          "prompt": "0.0000003894",
+          "completion": "0.0000011682",
+          "input_cache_read": "0.00000001239",
+          "discount": 0.705,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000039",
+              "price": "0.0000003894",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000029",
+              "price": "0.0000011682",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000025",
+              "price": "0.00000001239",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -12213,31 +12213,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000039",
+            "price": "0.0000003894",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000029",
+            "price": "0.0000011682",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000025",
+            "price": "0.00000001239",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000039",
-          "openai:completion_tokens": "0.0000029",
-          "openai:cached_prompt_tokens": "0.00000025"
+          "openai:prompt_tokens": "0.00000132",
+          "openai:completion_tokens": "0.00000396",
+          "openai:cached_prompt_tokens": "0.000000042"
         },
-        "pricing_version_id": "25932152-7b98-4a48-9b4a-b8c487ccb29c",
+        "pricing_version_id": "26719f10-c0cd-4c89-9661-6438c7a42b2e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -12265,8 +12265,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-09-19T01:31:43.752Z",
+        "capacity_tpm": 60560000,
+        "created_at": "2026-09-04T11:46:10.473Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -26845,8 +26845,8 @@
           "repetition_penalty",
           "logprobs",
           "top_logprobs",
-          "parallel_tool_calls",
-          "reasoning_effort"
+          "reasoning_effort",
+          "parallel_tool_calls"
         ],
         "excluded_parameters": [
           "top_logprobs",
@@ -31586,7 +31586,7 @@
       "supported_tts_voices": null,
       "endpoint": {
         "id": "tilde-latest-~z-ai/glm-latest",
-        "name": "DeepInfra | z-ai/glm-5.3-20260816",
+        "name": "Baidu | z-ai/glm-5.3-20260816",
         "context_length": 1048576,
         "model": {
           "slug": "~z-ai/glm-latest",
@@ -31672,41 +31672,42 @@
         },
         "model_variant_slug": "~z-ai/glm-latest",
         "model_variant_permaslug": "~z-ai/glm-latest",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp4",
-        "provider_model_id": "zai-org/GLM-5.3",
-        "quantization": "fp4",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
+        "provider_model_id": "glm-5.3-intl",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -31716,21 +31717,21 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop",
+          "max_tokens",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "top_k",
-          "seed",
-          "min_p",
-          "logit_bias",
+          "stop",
           "response_format",
           "structured_outputs",
           "tools",
           "tool_choice",
+          "top_k",
+          "seed",
+          "min_p",
+          "logit_bias",
           "logprobs",
           "top_logprobs",
           "reasoning_effort",
@@ -31742,35 +31743,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.0000005625",
-          "completion": "0.0000025",
-          "input_cache_read": "0.000000125",
-          "discount": 0.375,
+          "prompt": "0.0000005614",
+          "completion": "0.0000017644",
+          "input_cache_read": "0.00000010426",
+          "discount": 0.599,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000005625",
+              "price": "0.0000005614",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000025",
+              "price": "0.0000017644",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000125",
+              "price": "0.00000010426",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -31781,31 +31782,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000005625",
+            "price": "0.0000005614",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000025",
+            "price": "0.0000017644",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000125",
+            "price": "0.00000010426",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000009",
-          "openai:completion_tokens": "0.000004",
-          "openai:cached_prompt_tokens": "0.0000002"
+          "openai:prompt_tokens": "0.0000014",
+          "openai:completion_tokens": "0.0000044",
+          "openai:cached_prompt_tokens": "0.00000026"
         },
-        "pricing_version_id": "b1040766-7a14-4674-94d0-7b13da13a174",
+        "pricing_version_id": "2a89b126-af1b-4c88-98f2-5830c8f05e67",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -31818,24 +31819,24 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
-            "type_function": true
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-08-28T15:13:57.546Z",
-        "status": -5
+        "capacity_tpm": 26130000,
+        "created_at": "2026-09-18T07:56:37.240Z",
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -32498,8 +32499,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "b711bea7-3994-4935-873d-fb845bd40c00",
-        "name": "DeepInfra | z-ai/glm-5.3-20260816",
+        "id": "d310b8a8-c1a6-42e2-85f2-c7b07d132e98",
+        "name": "Baidu | z-ai/glm-5.3-20260816",
         "context_length": 1048576,
         "model": {
           "slug": "z-ai/glm-5.3",
@@ -32585,41 +32586,42 @@
         },
         "model_variant_slug": "z-ai/glm-5.3",
         "model_variant_permaslug": "z-ai/glm-5.3-20260816",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp4",
-        "provider_model_id": "zai-org/GLM-5.3",
-        "quantization": "fp4",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
+        "provider_model_id": "glm-5.3-intl",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -32629,17 +32631,13 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop",
+          "max_tokens",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "top_k",
-          "seed",
-          "min_p",
-          "logit_bias",
+          "stop",
           "response_format",
           "structured_outputs",
           "tools",
@@ -32651,35 +32649,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.0000005625",
-          "completion": "0.0000025",
-          "input_cache_read": "0.000000125",
-          "discount": 0.375,
+          "prompt": "0.0000005614",
+          "completion": "0.0000017644",
+          "input_cache_read": "0.00000010426",
+          "discount": 0.599,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000005625",
+              "price": "0.0000005614",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000025",
+              "price": "0.0000017644",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000125",
+              "price": "0.00000010426",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -32690,31 +32688,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000005625",
+            "price": "0.0000005614",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000025",
+            "price": "0.0000017644",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000125",
+            "price": "0.00000010426",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000009",
-          "openai:completion_tokens": "0.000004",
-          "openai:cached_prompt_tokens": "0.0000002"
+          "openai:prompt_tokens": "0.0000014",
+          "openai:completion_tokens": "0.0000044",
+          "openai:cached_prompt_tokens": "0.00000026"
         },
-        "pricing_version_id": "b1040766-7a14-4674-94d0-7b13da13a174",
+        "pricing_version_id": "2a89b126-af1b-4c88-98f2-5830c8f05e67",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -32727,24 +32725,24 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
-            "type_function": true
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-08-28T15:13:57.546Z",
-        "status": -5
+        "capacity_tpm": 26130000,
+        "created_at": "2026-09-18T07:56:37.240Z",
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -33393,8 +33391,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "7cb52d81-c430-4e58-87f4-69de4f96808e",
-        "name": "DekaLLM | qwen/qwen3.8-27b-20260814",
+        "id": "15086968-df2f-4d69-86bb-c74c31644bb6",
+        "name": "Reka | qwen/qwen3.8-27b-20260814",
         "context_length": 262144,
         "model": {
           "slug": "qwen/qwen3.8-27b",
@@ -33485,61 +33483,58 @@
         },
         "model_variant_slug": "qwen/qwen3.8-27b",
         "model_variant_permaslug": "qwen/qwen3.8-27b-20260814",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "DekaLLM",
+        "adapter_name": "OpenAIAdapter",
+        "provider_name": "Reka",
         "provider_info": {
-          "name": "DekaLLM",
-          "displayName": "DekaLLM",
-          "slug": "dekallm",
-          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
+          "name": "Reka",
+          "displayName": "Reka AI",
+          "slug": "reka",
+          "baseUrl": "https://api.reka.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
-            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/",
+            "termsOfServiceURL": "https://reka.ai/legal/terms-of-use",
+            "privacyPolicyURL": "https://reka.ai/legal/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "ID",
-          "datacenters": [
-            "ID"
-          ],
+          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "OpenAIAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://reka.ai&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DekaLLM",
-        "provider_slug": "dekallm",
-        "provider_model_id": "qwen/qwen3.8-27b",
-        "quantization": "unknown",
+        "provider_display_name": "Reka AI",
+        "provider_slug": "reka/fp8",
+        "provider_model_id": "qwen3.8-27b",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "presence_penalty",
-          "seed",
-          "stop",
           "temperature",
           "top_p",
+          "top_k",
+          "max_tokens",
+          "stop",
+          "seed",
+          "frequency_penalty",
+          "presence_penalty",
           "response_format",
           "structured_outputs",
           "tools",
@@ -33555,19 +33550,19 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
-          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
+          "termsOfServiceURL": "https://reka.ai/legal/terms-of-use",
+          "privacyPolicyURL": "https://reka.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000096",
+          "prompt": "0.000000094",
           "completion": "0.0000044",
-          "input_cache_read": "0.000000087",
+          "input_cache_read": "0.000000085",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000096",
+              "price": "0.000000094",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -33581,7 +33576,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000087",
+              "price": "0.000000085",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -33592,7 +33587,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000096",
+            "price": "0.000000094",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -33606,17 +33601,17 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000087",
+            "price": "0.000000085",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000096",
+          "openai:prompt_tokens": "0.000000094",
           "openai:completion_tokens": "0.0000044",
-          "openai:cached_prompt_tokens": "0.000000087"
+          "openai:cached_prompt_tokens": "0.000000085"
         },
-        "pricing_version_id": "f923bf4f-d03d-4f2e-a7b8-4c8b1563cc0d",
+        "pricing_version_id": "400d5e1d-b84e-480f-8174-870afd926122",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -33644,8 +33639,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-09-12T14:46:06.851Z",
+        "capacity_tpm": 20000000,
+        "created_at": "2026-08-17T23:41:58.861Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -38778,8 +38773,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "9469918e-687e-4536-ad5e-cff40023919c",
-        "name": "Wafer | deepseek/deepseek-v4-pro-20260813",
+        "id": "a040a5d7-5f1a-416e-bc79-f4b86d692ba5",
+        "name": "Baidu | deepseek/deepseek-v4-pro-20260813",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-pro-0813",
@@ -38863,67 +38858,58 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro-0813",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260813",
-        "adapter_name": "WaferAdapter",
-        "provider_name": "Wafer",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Wafer",
-          "displayName": "Wafer",
-          "slug": "wafer",
-          "baseUrl": "https://pass.wafer.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.wafer.ai/terms",
-            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "WaferAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wafer.ai/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Wafer",
-        "provider_slug": "wafer",
-        "provider_model_id": "DeepSeek-V4-Pro",
-        "quantization": "unknown",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
+        "provider_model_id": "deepseek-v4-pro-0813-intl",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 393216,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
           "max_tokens",
-          "logit_bias",
+          "stop",
           "response_format",
           "structured_outputs",
           "tools",
-          "logprobs",
-          "top_logprobs",
           "tool_choice"
         ],
         "excluded_parameters": [],
@@ -38932,35 +38918,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.wafer.ai/terms",
-          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.00000039",
-          "completion": "0.0000029",
-          "input_cache_read": "0.00000025",
-          "discount": 0,
+          "prompt": "0.0000003894",
+          "completion": "0.0000011682",
+          "input_cache_read": "0.00000001239",
+          "discount": 0.705,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000039",
+              "price": "0.0000003894",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000029",
+              "price": "0.0000011682",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000025",
+              "price": "0.00000001239",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -38971,31 +38957,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000039",
+            "price": "0.0000003894",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000029",
+            "price": "0.0000011682",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000025",
+            "price": "0.00000001239",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000039",
-          "openai:completion_tokens": "0.0000029",
-          "openai:cached_prompt_tokens": "0.00000025"
+          "openai:prompt_tokens": "0.00000132",
+          "openai:completion_tokens": "0.00000396",
+          "openai:cached_prompt_tokens": "0.000000042"
         },
-        "pricing_version_id": "25932152-7b98-4a48-9b4a-b8c487ccb29c",
+        "pricing_version_id": "26719f10-c0cd-4c89-9661-6438c7a42b2e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -39023,8 +39009,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-09-19T01:31:43.752Z",
+        "capacity_tpm": 60560000,
+        "created_at": "2026-09-04T11:46:10.473Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -71803,8 +71789,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "6260c35a-6fd4-44be-98c0-3c3d4edbb56f",
-        "name": "DeepInfra | z-ai/glm-5.2-20260616",
+        "id": "515ff417-d0f5-4455-9f58-b5a82be6d842",
+        "name": "Baidu | z-ai/glm-5.2-20260616",
         "context_length": 1048576,
         "model": {
           "slug": "z-ai/glm-5.2",
@@ -71888,65 +71874,62 @@
         },
         "model_variant_slug": "z-ai/glm-5.2",
         "model_variant_permaslug": "z-ai/glm-5.2-20260616",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp4",
-        "provider_model_id": "zai-org/GLM-5.2",
-        "quantization": "fp4",
+        "provider_display_name": "Baidu Qianfan (fp8)",
+        "provider_slug": "baidu/fp8",
+        "provider_model_id": "glm-5.2",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 163840,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop",
+          "max_tokens",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "top_k",
-          "seed",
-          "min_p",
+          "stop",
+          "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice",
-          "response_format",
-          "logit_bias"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -71954,35 +71937,35 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.0000005625",
-          "completion": "0.0000018",
-          "input_cache_read": "0.000000105",
-          "discount": 0.25,
+          "prompt": "0.0000005614",
+          "completion": "0.0000017644",
+          "input_cache_read": "0.00000010426",
+          "discount": 0.599,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000005625",
+              "price": "0.0000005614",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000018",
+              "price": "0.0000017644",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000105",
+              "price": "0.00000010426",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -71993,31 +71976,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000005625",
+            "price": "0.0000005614",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000018",
+            "price": "0.0000017644",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000105",
+            "price": "0.00000010426",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000075",
-          "openai:completion_tokens": "0.0000024",
-          "openai:cached_prompt_tokens": "0.00000014"
+          "openai:prompt_tokens": "0.0000014",
+          "openai:completion_tokens": "0.0000044",
+          "openai:cached_prompt_tokens": "0.00000026"
         },
-        "pricing_version_id": "da311faa-385e-44da-839a-682dc86bc068",
+        "pricing_version_id": "0e9d0c51-4559-4b43-ab6e-754f29bfb53f",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -72030,23 +72013,23 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-06-16T18:12:57.786Z",
+        "capacity_tpm": 60460000,
+        "created_at": "2026-06-18T12:20:54.242Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -72192,8 +72175,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "e7a9a3c1-6f00-4524-9dd4-ca1ae87050d6",
-        "name": "DeepInfra | moonshotai/kimi-k2.7-code-20260612",
+        "id": "7371d3a6-b4b2-4175-9efa-7f75319aa509",
+        "name": "Inceptron | moonshotai/kimi-k2.7-code-20260612",
         "context_length": 262144,
         "model": {
           "slug": "moonshotai/kimi-k2.7-code",
@@ -72270,63 +72253,68 @@
         },
         "model_variant_slug": "moonshotai/kimi-k2.7-code",
         "model_variant_permaslug": "moonshotai/kimi-k2.7-code-20260612",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "InceptronAdapter",
+        "provider_name": "Inceptron",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "Inceptron",
+          "displayName": "Inceptron",
+          "slug": "inceptron",
+          "baseUrl": "https://api.inceptron.io/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://www.inceptron.io/termsofservice",
+            "privacyPolicyURL": "https://www.inceptron.io/privacy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "SE",
+          "datacenters": [
+            "FI"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
+          "hasCompletions": false,
+          "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "InceptronAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.inceptron.io&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp4",
+        "provider_display_name": "Inceptron",
+        "provider_slug": "inceptron/int4",
         "provider_model_id": "moonshotai/Kimi-K2.7-Code",
-        "quantization": "fp4",
+        "quantization": "int4",
         "variant": "standard",
         "is_free": false,
-        "can_abort": true,
+        "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
+          "max_tokens",
           "top_p",
           "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "top_k",
-          "seed",
-          "min_p",
+          "response_format",
+          "structured_outputs",
           "tools",
           "tool_choice",
-          "logit_bias"
+          "logprobs",
+          "top_logprobs",
+          "frequency_penalty",
+          "logit_bias",
+          "parallel_tool_calls",
+          "presence_penalty",
+          "seed"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -72336,33 +72324,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://www.inceptron.io/termsofservice",
+          "privacyPolicyURL": "https://www.inceptron.io/privacy"
         },
         "pricing": {
-          "prompt": "0.00000068",
-          "completion": "0.0000034",
-          "input_cache_read": "0.000000136",
+          "prompt": "0.0000006562",
+          "completion": "0.0000033",
+          "input_cache_read": "0.00000018",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000068",
+              "price": "0.0000006562",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000034",
+              "price": "0.0000033",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000136",
+              "price": "0.00000018",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -72373,31 +72361,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000068",
+            "price": "0.0000006562",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000034",
+            "price": "0.0000033",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000136",
+            "price": "0.00000018",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000068",
-          "openai:completion_tokens": "0.0000034",
-          "openai:cached_prompt_tokens": "0.000000136"
+          "openai:prompt_tokens": "0.0000006562",
+          "openai:completion_tokens": "0.0000033",
+          "openai:cached_prompt_tokens": "0.00000018"
         },
-        "pricing_version_id": "a62b2dee-3d4f-4275-8400-a20bd2cc72e1",
+        "pricing_version_id": "dfc3b370-f264-4dfe-85dc-2ee9327b2af6",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -72410,23 +72398,23 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
-        "provider_region": "us",
-        "deprecation_date": "2026-09-29T13:00:00.000Z",
+        "provider_region": "eu",
+        "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-06-16T17:02:52.170Z",
+        "created_at": "2026-06-22T12:50:54.773Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -90218,7 +90206,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-04-27T16:35:21.655Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -95012,7 +95000,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-27T02:11:01.546Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -96922,29 +96910,29 @@
           "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.0000009396",
-          "completion": "0.0000018792",
-          "input_cache_read": "0.0000000783",
-          "discount": 0.46,
+          "prompt": "0.000000934554",
+          "completion": "0.000001869108",
+          "input_cache_read": "0.0000000778795",
+          "discount": 0.4629,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000009396",
+              "price": "0.000000934554",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000018792",
+              "price": "0.000001869108",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000783",
+              "price": "0.0000000778795",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -96955,21 +96943,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000009396",
+            "price": "0.000000934554",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000018792",
+            "price": "0.000001869108",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000783",
+            "price": "0.0000000778795",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -97088,9 +97076,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "13515b01-fed6-4afb-a382-ca3b4d7d7b8b",
-        "name": "StreamLake | deepseek/deepseek-v4-flash-20260423",
-        "context_length": 1024000,
+        "id": "fa22fe84-7ea9-49b0-a8eb-4d87ede9de31",
+        "name": "Baidu | deepseek/deepseek-v4-flash-20260423",
+        "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Flash",
@@ -97168,20 +97156,20 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423",
-        "adapter_name": "StreamLakeAdapter",
-        "provider_name": "StreamLake",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "StreamLake",
-          "displayName": "StreamLake",
-          "slug": "streamlake",
-          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
-            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
           "headquarters": "CN",
@@ -97191,40 +97179,40 @@
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": "https://status.streamlake.ai/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "StreamLake",
-        "provider_slug": "streamlake/fp8",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "provider_model_id": "deepseek-v4-flash",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 384000,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "response_format",
-          "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs",
-          "structured_outputs",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop"
+          "max_tokens",
+          "stop",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "max_completion_tokens"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -97232,33 +97220,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
-          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.000000088606",
-          "completion": "0.000000177212",
-          "input_cache_read": "0.0000000177212",
-          "discount": 0.3671,
+          "prompt": "0.00000008694",
+          "completion": "0.00000017388",
+          "input_cache_read": "0.000000017388",
+          "discount": 0.379,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000088606",
+              "price": "0.00000008694",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000177212",
+              "price": "0.00000017388",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000177212",
+              "price": "0.000000017388",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -97269,21 +97257,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000088606",
+            "price": "0.00000008694",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000177212",
+            "price": "0.00000017388",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000177212",
+            "price": "0.000000017388",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -97293,7 +97281,7 @@
           "openai:completion_tokens": "0.00000028",
           "openai:cached_prompt_tokens": "0.000000028"
         },
-        "pricing_version_id": "343b22f6-9dae-45e1-ab5e-b82c70e8a153",
+        "pricing_version_id": "705a8343-d43b-4fe1-b4d8-06aa7b2313dd",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -97310,7 +97298,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -97321,8 +97309,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-05-18T07:42:09.922Z",
+        "capacity_tpm": 163910000,
+        "created_at": "2026-05-11T09:35:35.608Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -99799,7 +99787,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-06T20:21:58.311Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -101773,15 +101761,15 @@
           "privacyPolicyURL": "https://www.inceptron.io/privacy"
         },
         "pricing": {
-          "prompt": "0.0000004972",
+          "prompt": "0.0000004627",
           "completion": "0.00000297",
-          "input_cache_read": "0.0000001284",
+          "input_cache_read": "0.0000001298",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000004972",
+              "price": "0.0000004627",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -101795,7 +101783,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001284",
+              "price": "0.0000001298",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -101806,7 +101794,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000004972",
+            "price": "0.0000004627",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -101820,17 +101808,17 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001284",
+            "price": "0.0000001298",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000004972",
+          "openai:prompt_tokens": "0.0000004627",
           "openai:completion_tokens": "0.00000297",
-          "openai:cached_prompt_tokens": "0.0000001284"
+          "openai:cached_prompt_tokens": "0.0000001298"
         },
-        "pricing_version_id": "a6dc28ab-fc55-4fbd-814a-954903003c8e",
+        "pricing_version_id": "0e54799e-d29a-4e0c-b5a2-0c899898f98d",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -104699,9 +104687,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "a6757bd7-f1e5-4f4d-bcb3-a2719537142a",
-        "name": "StreamLake | z-ai/glm-5.1-20260406",
-        "context_length": 200000,
+        "id": "44b42eb7-1926-4e06-99ce-29b6f710b86f",
+        "name": "Baidu | z-ai/glm-5.1-20260406",
+        "context_length": 202752,
         "model": {
           "slug": "z-ai/glm-5.1",
           "hf_slug": "zai-org/GLM-5.1",
@@ -104774,20 +104762,20 @@
         },
         "model_variant_slug": "z-ai/glm-5.1",
         "model_variant_permaslug": "z-ai/glm-5.1-20260406",
-        "adapter_name": "StreamLakeAdapter",
-        "provider_name": "StreamLake",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "StreamLake",
-          "displayName": "StreamLake",
-          "slug": "streamlake",
-          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
-            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
           "headquarters": "CN",
@@ -104797,38 +104785,39 @@
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "StreamLakeAdapter",
-          "statusPageUrl": "https://status.streamlake.ai/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "StreamLake",
-        "provider_slug": "streamlake/fp8",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "provider_model_id": "glm-5.1",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 128000,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "tools",
-          "tool_choice",
-          "response_format",
-          "structured_outputs",
-          "logprobs",
-          "top_logprobs",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop"
+          "max_tokens",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "stop",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -104838,33 +104827,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
-          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.000000966",
-          "completion": "0.000003036",
-          "input_cache_read": "0.0000001794",
-          "discount": 0.31,
+          "prompt": "0.0000009646",
+          "completion": "0.0000030316",
+          "input_cache_read": "0.00000017914",
+          "discount": 0.311,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000966",
+              "price": "0.0000009646",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000003036",
+              "price": "0.0000030316",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001794",
+              "price": "0.00000017914",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -104875,21 +104864,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000966",
+            "price": "0.0000009646",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000003036",
+            "price": "0.0000030316",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001794",
+            "price": "0.00000017914",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -104899,7 +104888,7 @@
           "openai:completion_tokens": "0.0000044",
           "openai:cached_prompt_tokens": "0.00000026"
         },
-        "pricing_version_id": "5f2d8d92-e534-4486-9015-3db4a0d0c414",
+        "pricing_version_id": "d03336e2-a101-42c5-823e-f15e37b2d0d7",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -104918,8 +104907,8 @@
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -104927,8 +104916,8 @@
         "provider_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-05-15T03:26:37.031Z",
+        "capacity_tpm": 2570000,
+        "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       },
       "display_required_attestation_types": []
@@ -114920,7 +114909,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-23T19:42:35.342Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -124035,7 +124024,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-02T16:04:45.697Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": []
     },
@@ -165414,7 +165403,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-10-10T18:41:28.549Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -186783,7 +186772,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-25T12:58:22.835Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": []
     },
@@ -188094,7 +188083,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-28T20:44:52.471Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": []
     },

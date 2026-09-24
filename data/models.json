@@ -1,9 +1,9 @@
 {
   "updated_at": "2026-09-24",
   "source_counts": {
-    "fal": 760,
+    "fal": 761,
     "openrouter": 696,
-    "replicate": 325,
+    "replicate": 324,
     "bedrock": 57,
     "huggingface": 76,
     "manual": 73,
@@ -11,16 +11,16 @@
     "litellm": 580,
     "fireworks": 111,
     "piapi": 2,
-    "news-radar": 4,
+    "news-radar": 5,
     "wavespeed": 2,
     "minimax": 3,
     "runway": 2
   },
   "update_stats": {
-    "added": 44,
-    "removed": 22,
-    "updated": 27,
-    "unchanged": 2634
+    "added": 10,
+    "removed": 9,
+    "updated": 14,
+    "unchanged": 2682
   },
   "models": [
     {
@@ -2403,20 +2403,27 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "replicate-bagel",
+      "id": "bagel",
       "name": "Bagel",
       "category": "image_generation",
-      "description": "🥯ByteDance Seed's Bagel Unified multimodal AI that generates images, edits images, and understands images in one 7B parameter model🥯",
-      "tags": [
-        "open-source"
+      "description": "Bagel is a 7B parameter from Bytedance-Seed multimodal model that can generate both text and images.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
       ],
-      "capabilities": [],
       "context_k": null,
-      "open_source": true,
-      "local_available": true,
       "updated_at": "2026-09-24",
-      "source": "replicate",
+      "source": "fal",
       "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/bagel",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        },
         {
           "provider_id": "replicate",
           "pricing": {
@@ -2427,8 +2434,10 @@
           "available": true
         }
       ],
+      "open_source": true,
+      "local_available": true,
       "local_tool": "ComfyUI / diffusers",
-      "first_seen_at": "2026-08-26"
+      "first_seen_at": "2026-09-24"
     },
     {
       "id": "jondurbin-bagel-34b",
@@ -2864,7 +2873,7 @@
       "id": "hf-bge-small-zh-v1-5",
       "name": "Bge Small Zh V1.5",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 5,114,670 downloads · 143 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 5,114,670 downloads · 144 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -3035,7 +3044,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/boogu-image/edit",
+          "url": "https://fal.ai/models/fal-ai/boogu-image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -7737,25 +7746,6 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "hf-controlnet-union-sdxl-1-0",
-      "name": "Controlnet Union Sdxl 1.0",
-      "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 121,839 downloads · 1,835 likes. License: apache-2.0.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "ComfyUI / diffusers",
-      "updated_at": "2026-09-24",
-      "source": "huggingface",
-      "providers": [],
-      "first_seen_at": "2026-09-24"
-    },
-    {
       "id": "nvidia-cosmos-3-super",
       "name": "Cosmos 3 Super",
       "category": "image_generation",
@@ -9042,8 +9032,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.39,
-            "output_per_1m": 2.9
+            "input_per_1m": 0.3894,
+            "output_per_1m": 1.1682
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-pro-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10168,8 +10158,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0886,
-            "output_per_1m": 0.1772
+            "input_per_1m": 0.0869,
+            "output_per_1m": 0.1739
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10396,8 +10386,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.9396,
-            "output_per_1m": 1.8792
+            "input_per_1m": 0.9346,
+            "output_per_1m": 1.8691
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10444,8 +10434,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.39,
-            "output_per_1m": 2.9
+            "input_per_1m": 0.3894,
+            "output_per_1m": 1.1682
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -12550,12 +12540,14 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "emu-3-5-image",
+      "id": "emu-3-5-image-edit-image",
       "name": "Emu 3.5 Image",
       "category": "image_generation",
-      "description": "Generate images from text using Emu 3.5 Image",
+      "description": "Edit images with a text prompt using Emu 3.5 Image",
       "tags": [],
-      "capabilities": [],
+      "capabilities": [
+        "image_editing"
+      ],
       "context_k": null,
       "updated_at": "2026-09-24",
       "source": "fal",
@@ -12565,7 +12557,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/emu-3.5-image/text-to-image",
+          "url": "https://fal.ai/models/fal-ai/emu-3.5-image/edit-image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -13334,7 +13326,7 @@
       "id": "hf-fastvideo-fasth3-4-step-preview-v1-vsa-datafree",
       "name": "FastVideo FastH3 4 step Preview v1 VSA DataFree",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 533,959 downloads · 313 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 591,844 downloads · 314 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -13355,7 +13347,7 @@
       "id": "hf-fastwan2-2-ti2v-5b-fullattn-diffusers",
       "name": "FastWan2.2 TI2V 5B FullAttn Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 80,672 downloads · 72 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 79,578 downloads · 72 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -17279,7 +17271,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux-krea-lora/image-to-image",
+          "url": "https://fal.ai/models/fal-ai/flux-krea-lora",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -20380,6 +20372,30 @@
       "first_seen_at": "2026-04-22"
     },
     {
+      "id": "gemini-flash-lite-tts",
+      "name": "Gemini Flash-Lite TTS",
+      "category": "audio_tts",
+      "description": "Google's lightweight text-to-speech model supporting 100+ languages with voice design from text descriptions and stage direction support for individual lines.",
+      "tags": [
+        "google"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-09-24",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "google",
+          "pricing": {
+            "notes": "Check current pricing"
+          },
+          "url": "https://ai.google.dev/gemini-api/docs/speech-generation",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-09-24"
+    },
+    {
       "id": "gemini-gemini-gemma-2-27b-it",
       "name": "Gemini Gemma 2 27B It",
       "category": "llm",
@@ -20980,7 +20996,7 @@
       "id": "hf-gemma-3-1b-it",
       "name": "Gemma 3 1B It",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,368,136 downloads · 1,179 likes. License: gemma.",
+      "description": "Open-source model on HuggingFace. 3,368,136 downloads · 1,181 likes. License: gemma.",
       "tags": [
         "open-source",
         "local"
@@ -22465,8 +22481,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.966,
-            "output_per_1m": 3.036
+            "input_per_1m": 0.9646,
+            "output_per_1m": 3.0316
           },
           "url": "https://openrouter.ai/z-ai/glm-5.1",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -22896,8 +22912,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.5625,
-            "output_per_1m": 2.5
+            "input_per_1m": 0.5614,
+            "output_per_1m": 1.7644
           },
           "url": "https://openrouter.ai/~z-ai/glm-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -26850,7 +26866,7 @@
       "id": "hf-gpt2",
       "name": "Gpt2",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 15,375,302 downloads · 4,168 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 15,375,302 downloads · 4,169 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -27060,7 +27076,7 @@
       "id": "hf-granite-embedding-small-english-r2",
       "name": "Granite Embedding Small English R2",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 6,197,338 downloads · 84 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 6,132,881 downloads · 84 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -30758,6 +30774,35 @@
       "first_seen_at": "2026-05-11"
     },
     {
+      "id": "hf-higgs-tts-2-3b-base",
+      "name": "Higgs Tts 2 3B Base",
+      "category": "audio_tts",
+      "description": "Open-source model on HuggingFace. 207,602 downloads · 693 likes. License: other.",
+      "tags": [
+        "open-source",
+        "local"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": true,
+      "local_available": true,
+      "local_tool": "Ollama / transformers",
+      "updated_at": "2026-09-24",
+      "source": "huggingface",
+      "providers": [
+        {
+          "provider_id": "huggingface",
+          "pricing": {
+            "notes": "Via HF Inference API — check hf.co/pricing"
+          },
+          "url": "https://huggingface.co/bosonai/higgs-tts-2-3b-base",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-09-24"
+    },
+    {
       "id": "stable-video",
       "name": "High Quality Stable Video Diffusion",
       "category": "video_generation",
@@ -33954,7 +33999,7 @@
       "id": "hf-ip-adapter-faceid",
       "name": "IP Adapter FaceID",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 188,575 downloads · 1,886 likes. License: .",
+      "description": "Open-source model on HuggingFace. 188,575 downloads · 1,887 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -34875,7 +34920,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.4972,
+            "input_per_1m": 0.4627,
             "output_per_1m": 2.97
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
@@ -34931,8 +34976,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.68,
-            "output_per_1m": 3.4
+            "input_per_1m": 0.6562,
+            "output_per_1m": 3.3
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -35106,7 +35151,7 @@
       "id": "hf-kimi-k3-dspark",
       "name": "Kimi K3 DSpark",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,139,009 downloads · 58 likes. License: .",
+      "description": "Open-source model on HuggingFace. 4,241,144 downloads · 57 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -35674,7 +35719,7 @@
     },
     {
       "id": "kling-video-o1",
-      "name": "Kling O1 First Frame Last Frame to Video [Pro]",
+      "name": "Kling O1 Edit Video [Pro]",
       "category": "video_generation",
       "description": "Generate a video by taking a start frame and an end frame, animating the transition between them while following text-driven style and scene guidance.",
       "tags": [],
@@ -35692,7 +35737,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/kling-video/o1/image-to-video",
+          "url": "https://fal.ai/models/fal-ai/kling-video/o1/video-to-video/edit",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -36618,7 +36663,7 @@
       "id": "hf-kokoro-inno-clone-tuner",
       "name": "Kokoro Inno Clone Tuner",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 361,502 downloads · 16 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 395,106 downloads · 16 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -37793,14 +37838,13 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "live-portrait",
+      "id": "live-portrait-image",
       "name": "Live Portrait",
-      "category": "video_generation",
+      "category": "image_generation",
       "description": "Transfer expression from a video to a portrait.",
       "tags": [],
       "capabilities": [
-        "image_to_video",
-        "text_to_video"
+        "image_editing"
       ],
       "context_k": null,
       "updated_at": "2026-09-24",
@@ -37811,7 +37855,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/live-portrait",
+          "url": "https://fal.ai/models/fal-ai/live-portrait/image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         },
@@ -37825,7 +37869,7 @@
           "available": true
         }
       ],
-      "first_seen_at": "2026-08-28"
+      "first_seen_at": "2026-09-24"
     },
     {
       "id": "fireworks-llama-v2-13b",
@@ -40994,7 +41038,7 @@
       "id": "hf-ltx-2",
       "name": "LTX 2",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 301,464 downloads · 1,782 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 299,293 downloads · 1,782 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -41178,7 +41222,7 @@
       "id": "hf-ltx-2-3-fp8",
       "name": "LTX 2.3 fp8",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 544,011 downloads · 138 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 544,138 downloads · 138 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -41224,13 +41268,12 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "ltx-2-3-quality",
+      "id": "ltx-2-3-quality-render-to-real",
       "name": "Ltx 2.3 Quality",
       "category": "video_generation",
-      "description": "Generate high-quality video with audio from images using LTX-2.3",
+      "description": "Transform your 3D video render into realistic using first frame with Ltx 2.3",
       "tags": [],
       "capabilities": [
-        "image_to_video",
         "text_to_video"
       ],
       "context_k": null,
@@ -41242,12 +41285,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/ltx-2.3-quality/image-to-video",
+          "url": "https://fal.ai/models/fal-ai/ltx-2.3-quality/render-to-real",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-09-19"
+      "first_seen_at": "2026-09-24"
     },
     {
       "id": "ltx-2-3-fast",
@@ -41305,7 +41348,7 @@
       "id": "hf-ltx-2-5-diffusers",
       "name": "LTX 2.5 Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 103,759 downloads · 72 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 99,600 downloads · 72 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -41435,7 +41478,7 @@
       "id": "hf-ltx-video-iclora-detailer-13b-0-9-8",
       "name": "LTX Video ICLoRA detailer 13b 0.9.8",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 25,199 downloads · 34 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 24,706 downloads · 34 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -42501,13 +42544,12 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "magi-distilled",
+      "id": "magi-distilled-extend-video",
       "name": "MAGI-1 (Distilled)",
       "category": "video_generation",
-      "description": "MAGI-1 distilled is a faster video generation model with exceptional understanding of physical interactions and cinematic prompts",
+      "description": "MAGI-1 distilled extends videos faster with an exceptional understanding of physical interactions and prompts",
       "tags": [],
       "capabilities": [
-        "image_to_video",
         "text_to_video"
       ],
       "context_k": null,
@@ -42519,7 +42561,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/magi-distilled/image-to-video",
+          "url": "https://fal.ai/models/fal-ai/magi-distilled/extend-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -42817,7 +42859,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/microsoft/mai-image-2.5-pro/edit",
+          "url": "https://fal.ai/models/microsoft/mai-image-2.5-pro",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -43877,7 +43919,7 @@
     },
     {
       "id": "minimax-video-01-director",
-      "name": "MiniMax (Hailuo AI) Video 01 Director",
+      "name": "MiniMax (Hailuo AI) Video 01 Director -",
       "category": "video_generation",
       "description": "Generate video clips more accurately with respect to initial image, natural language descriptions, and using camera movement instructions for shot control.",
       "tags": [],
@@ -43894,7 +43936,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/minimax/video-01-director",
+          "url": "https://fal.ai/models/fal-ai/minimax/video-01-director/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -43957,7 +43999,7 @@
       "id": "hf-minimax_h3_fl2v_lightx2v_4step_int8-convrot_comfy",
       "name": "Minimax H3 Fl2V Lightx2V 4Step Int8 Convrot Comfy",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 18,806 downloads · 5 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 18,769 downloads · 5 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -44004,7 +44046,7 @@
       "id": "hf-minimax-h3-turbo",
       "name": "Minimax h3 Turbo",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 1,561,416 downloads · 993 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,564,716 downloads · 993 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -47891,25 +47933,6 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "hf-moss-tts-v1-5",
-      "name": "MOSS TTS v1.5",
-      "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 224,281 downloads · 206 likes. License: apache-2.0.",
-      "tags": [
-        "open-source",
-        "local"
-      ],
-      "capabilities": [],
-      "context_k": null,
-      "open_source": true,
-      "local_available": true,
-      "local_tool": "transformers / diffusers",
-      "updated_at": "2026-09-24",
-      "source": "huggingface",
-      "providers": [],
-      "first_seen_at": "2026-09-23"
-    },
-    {
       "id": "replicate-motion-2-0",
       "name": "Motion 2.0",
       "category": "video_generation",
@@ -47940,7 +47963,7 @@
       "id": "hf-mova-360p",
       "name": "MOVA 360p",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 156,370 downloads · 216 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 155,020 downloads · 216 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -50138,7 +50161,7 @@
       "id": "hf-nova-furry-xl-il-v120-sdxl",
       "name": "Nova Furry Xl Il V120 Sdxl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 129,089 downloads · 8 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 127,779 downloads · 8 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -50375,7 +50398,7 @@
       "id": "hf-nvidia-nemotron-3-nano-4b-bf16",
       "name": "NVIDIA Nemotron 3 Nano 4B BF16",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 3,784,770 downloads · 122 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 4,090,411 downloads · 123 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -52039,7 +52062,7 @@
       "id": "hf-otel-2-0-llm-31b-it",
       "name": "OTel 2.0 LLM 31B IT",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 5,635,532 downloads · 22 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 5,367,575 downloads · 22 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -55780,7 +55803,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/vidu/q2/reference-to-video/pro",
+          "url": "https://fal.ai/models/fal-ai/vidu/q2/image-to-video/pro",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -56615,7 +56638,7 @@
       "id": "hf-qwen-image-2512-lightning",
       "name": "Qwen Image 2512 Lightning",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 200,681 downloads · 231 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 206,860 downloads · 231 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -57251,7 +57274,7 @@
       "id": "hf-qwen-image-lightning",
       "name": "Qwen Image Lightning",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 416,591 downloads · 830 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 411,455 downloads · 830 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -57759,7 +57782,7 @@
       "id": "hf-qwen2-5-0-5b-instruct",
       "name": "Qwen2.5 0.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 8,730,980 downloads · 635 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 8,730,980 downloads · 636 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -57939,7 +57962,7 @@
       "id": "hf-qwen2-5-3b-instruct",
       "name": "Qwen2.5 3B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,384,958 downloads · 575 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 4,384,958 downloads · 576 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -60797,7 +60820,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-base",
       "name": "Qwen3 TTS 12Hz 0.6B Base",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 681,478 downloads · 301 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 679,611 downloads · 301 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -60816,7 +60839,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-customvoice",
       "name": "Qwen3 TTS 12Hz 0.6B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 993,955 downloads · 193 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 981,532 downloads · 193 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -60835,7 +60858,7 @@
       "id": "hf-qwen3-tts-12hz-1-7b-customvoice",
       "name": "Qwen3 TTS 12Hz 1.7B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 2,520,471 downloads · 1,997 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,490,950 downloads · 1,997 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -66293,10 +66316,10 @@
       "first_seen_at": "2026-09-19"
     },
     {
-      "id": "bytedance-seedream-v5-lite",
+      "id": "bytedance-seedream-v5-flash",
       "name": "Seedream",
       "category": "image_generation",
-      "description": "Image editing endpoint for the fast Lite version of Seedream 5.0, supporting high quality intelligent image editing with multiple inputs.",
+      "description": "Seedream 5.0 Flash is a fast image generation and editing model, built for workflows where speed and budget matter.",
       "tags": [],
       "capabilities": [
         "image_editing"
@@ -66310,12 +66333,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/bytedance/seedream/v5/lite/edit",
+          "url": "https://fal.ai/models/bytedance/seedream/v5/flash/edit",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-04-22"
+      "first_seen_at": "2026-09-24"
     },
     {
       "id": "replicate-seedream-3",
@@ -68537,7 +68560,7 @@
       "id": "hf-stable-diffusion-3-tiny-random",
       "name": "Stable Diffusion 3 Tiny Random",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 126,526 downloads · 0 likes. License: .",
+      "description": "Open-source model on HuggingFace. 128,007 downloads · 0 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -69366,7 +69389,7 @@
       "id": "hf-stable-video-diffusion-img2vid-xt",
       "name": "Stable Video Diffusion Img2Vid Xt",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 264,801 downloads · 3,424 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 264,801 downloads · 3,425 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -70511,7 +70534,7 @@
       "id": "hf-tiny-random-stable-diffusion-xl",
       "name": "Tiny Random Stable Diffusion Xl",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 142,906 downloads · 1 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 144,878 downloads · 1 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -70540,7 +70563,7 @@
       "id": "hf-tiny-stable-diffusion-torch",
       "name": "Tiny Stable Diffusion Torch",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 156,524 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 159,628 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -71266,7 +71289,7 @@
       "id": "hf-turbowan2-1-t2v-1-3b-diffusers",
       "name": "TurboWan2.1 T2V 1.3B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 58,295 downloads · 0 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 58,067 downloads · 0 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -72455,7 +72478,7 @@
       "id": "hf-vibevoice-realtime-0-5b",
       "name": "VibeVoice Realtime 0.5B",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 268,044 downloads · 1,291 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 251,613 downloads · 1,291 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -74249,7 +74272,7 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "wan-22-vace-fun-a14b-depth",
+      "id": "wan-22-vace-fun-a14b",
       "name": "Wan 2.2 VACE Fun A14B",
       "category": "video_generation",
       "description": "VACE Fun for Wan 2.2 A14B from Alibaba-PAI",
@@ -74266,7 +74289,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/wan-22-vace-fun-a14b/depth",
+          "url": "https://fal.ai/models/fal-ai/wan-22-vace-fun-a14b/inpainting",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -75145,7 +75168,7 @@
       "id": "hf-wan2-2-distill-loras",
       "name": "Wan2.2 Distill Loras",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 96,470 downloads · 286 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 91,336 downloads · 286 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -75167,7 +75190,7 @@
       "id": "hf-wan2-2-i2v-a14b-diffusers",
       "name": "Wan2.2 I2V A14B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 145,281 downloads · 305 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 145,622 downloads · 305 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -75188,7 +75211,7 @@
       "id": "hf-wan2-2-i2v-a14b-lightning-diffusers",
       "name": "Wan2.2 I2V A14B Lightning Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 36,980 downloads · 3 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 36,341 downloads · 3 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -75207,10 +75230,28 @@
       "first_seen_at": "2026-04-22"
     },
     {
+      "id": "hf-wan2-2-i2v_general-nsfw-lora",
+      "name": "Wan2.2 I2V General NSFW LoRA",
+      "category": "image_generation",
+      "description": "Open-source model on HuggingFace. 129,217 downloads · 117 likes. License: .",
+      "tags": [
+        "open-source"
+      ],
+      "capabilities": [],
+      "context_k": null,
+      "open_source": false,
+      "local_available": false,
+      "local_tool": null,
+      "updated_at": "2026-09-24",
+      "source": "huggingface",
+      "providers": [],
+      "first_seen_at": "2026-09-24"
+    },
+    {
       "id": "hf-wan2-2-ti2v-5b-diffusers",
       "name": "Wan2.2 TI2V 5B Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 161,905 downloads · 166 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 161,210 downloads · 166 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -76407,7 +76448,7 @@
       "id": "hf-z-image-lora",
       "name": "Z Image Lora",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 339,988 downloads · 155 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 326,876 downloads · 155 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
