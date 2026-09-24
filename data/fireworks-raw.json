@@ -5979,6 +5979,71 @@
     {
       "baseModelDetails": {
         "checkpointFormat": "HUGGINGFACE",
+        "defaultPrecision": "FP8",
+        "huggingfaceFiles": [],
+        "modelType": "kimi_k3",
+        "moe": true,
+        "parameterCount": "2780913302112",
+        "supportsFireattention": true,
+        "supportsMtp": false,
+        "tunable": false,
+        "worldSize": 1
+      },
+      "calibrated": false,
+      "cluster": "",
+      "contextLength": 1048576,
+      "conversationConfig": {
+        "style": "",
+        "system": "",
+        "template": ""
+      },
+      "createTime": "2026-09-22T20:52:19.824310Z",
+      "defaultDraftModel": "",
+      "defaultDraftTokenCount": 0,
+      "defaultSamplingParams": {},
+      "deployedModelRefs": [],
+      "deprecationDate": null,
+      "description": "Ember-1 is a specialized model from Fireworks. Built on Kimi K3, it produces shorter reasoning traces, using approximately 40% fewer tokens while maintaining comparable quality across our evaluations",
+      "displayName": "Ember-1",
+      "enableVisionEncoderTuning": false,
+      "encryptionState": "ENCRYPTION_STATE_PLAINTEXT",
+      "fineTuningJob": "",
+      "githubUrl": "",
+      "huggingFaceUrl": "",
+      "importedFrom": "",
+      "kind": "HF_BASE_MODEL",
+      "name": "accounts/fireworks/models/ember-1",
+      "peftDetails": {
+        "baseModel": "",
+        "baseModelType": "",
+        "mergeAddonModelName": "",
+        "r": 0,
+        "targetModules": []
+      },
+      "public": true,
+      "rlLoraTunable": false,
+      "rlTunable": false,
+      "serverlessModes": [],
+      "snapshotType": "FULL_SNAPSHOT",
+      "state": "READY",
+      "status": {
+        "code": "OK",
+        "message": ""
+      },
+      "supervisedLoraTunable": false,
+      "supportsImageInput": true,
+      "supportsLora": true,
+      "supportsServerless": true,
+      "supportsTools": true,
+      "teftDetails": null,
+      "trainingContextLength": 65536,
+      "updateTime": "2026-09-23T21:09:10.467491Z",
+      "useHfApplyChatTemplate": false,
+      "useTrainingV2": true
+    },
+    {
+      "baseModelDetails": {
+        "checkpointFormat": "HUGGINGFACE",
         "defaultPrecision": "PRECISION_UNSPECIFIED",
         "huggingfaceFiles": [
           ".gitattributes",
@@ -6426,7 +6491,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-09-23T07:44:05.988791Z",
+      "updateTime": "2026-09-24T07:57:46.857300Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6503,7 +6568,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-09-23T07:57:53.223484Z",
+      "updateTime": "2026-09-24T07:58:03.743038Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
