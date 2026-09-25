@@ -33323,7 +33323,87 @@
         "pinned": false
       },
       "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "fal-ai/flux-3-action/so101",
+      "metadata": {
+        "display_name": "Flux 3 Action",
+        "category": "video-to-video",
+        "description": "FLUX 3 Action turns what the robot sees into what it does next. Give it the scene camera image, the wrist camera image, the current SO-101 joint state (shoulder pan, shoulder lift, elbow flex, wrist flex, wrist roll, gripper) and a plain-language instruction such as \"Pick up the yellow cube and place it inside the black rectangle\". It returns a chunk of 42 target joint positions at 30 Hz, that is 1.4 s of motion. In a control loop, execute the first 32 steps (about 1 s), then call again with fresh images and joint state.",
+        "status": "active",
+        "tags": [
+          "robotic",
+          "arm"
+        ],
+        "updated_at": "2026-09-24T16:00:08.802Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aabba6a/HgY7GtEEg8k7fh0OmZoZQ.jpg",
+        "model_url": "https://fal.run/fal-ai/flux-3-action/so101",
+        "license_type": "commercial",
+        "date": "2026-09-24T16:00:08.802Z",
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "minimax/h3-max/extend-video",
+      "metadata": {
+        "display_name": "H3 Max Extend Video",
+        "category": "video-to-video",
+        "description": "H3 Max Extend Video adds a text-guided continuation to an existing video. It supports prompt expansion, adjustable duration and aspect ratio, and output resolutions from 480p to 2K, returning either the full extended video or only the new footage.",
+        "status": "active",
+        "tags": [
+          "extend",
+          "video",
+          "continuation"
+        ],
+        "updated_at": "2026-09-24T15:29:07.327Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaac3c2/Kw78XBxyzztvFFG4978eo.jpg",
+        "model_url": "https://fal.run/minimax/h3-max/extend-video",
+        "license_type": "commercial",
+        "date": "2026-09-17T08:33:13.639Z",
+        "group": {
+          "key": "hailuo-03-new-turbo",
+          "label": "Extend Video Max"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "minimax/h3-max/3d-to-video",
+      "metadata": {
+        "display_name": "H3 Max 3D to Video",
+        "category": "video-to-video",
+        "description": "Transform Blender renders and 3D previs into photorealistic video. H3 Max uses the source clip to guide scene layout, camera movement, and timing, with optional image references for appearance.",
+        "status": "active",
+        "tags": [
+          "3d",
+          "photorealistic",
+          "previs",
+          "video-to-video"
+        ],
+        "updated_at": "2026-09-24T21:39:06.542Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaad6ca/MkosWDWpYq9MCbeM0oopg_e4SyohXH.png",
+        "model_url": "https://fal.run/minimax/h3-max/3d-to-video",
+        "license_type": "commercial",
+        "date": "2026-09-16T16:39:24.294Z",
+        "group": {
+          "key": "hailuo-03-new-turbo",
+          "label": "3D to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
     }
   ],
-  "total_fetched": 1496
+  "total_fetched": 1500
 }
