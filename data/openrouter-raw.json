@@ -3802,15 +3802,15 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
-          "seed",
-          "response_format",
-          "structured_outputs",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
-          "verbosity"
+          "verbosity",
+          "response_format",
+          "seed",
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "temperature",
@@ -4271,15 +4271,15 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
-          "seed",
-          "response_format",
-          "structured_outputs",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
-          "verbosity"
+          "verbosity",
+          "response_format",
+          "seed",
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "temperature",
@@ -19959,7 +19959,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 55140000,
+        "capacity_tpm": 54550000,
         "created_at": "2026-09-04T11:46:10.473Z",
         "status": 0
       },
@@ -20192,8 +20192,7 @@
           "tools",
           "tool_choice",
           "logprobs",
-          "top_logprobs",
-          "reasoning_effort"
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -20207,7 +20206,7 @@
           "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.000000010125",
+          "prompt": "0.000000015",
           "completion": "0.0000012",
           "input_cache_read": "0.000000002115",
           "discount": 0,
@@ -20215,7 +20214,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000010125",
+              "price": "0.000000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -20240,7 +20239,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000010125",
+            "price": "0.000000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -20260,11 +20259,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000010125",
+          "openai:prompt_tokens": "0.000000015",
           "openai:completion_tokens": "0.0000012",
           "openai:cached_prompt_tokens": "0.000000002115"
         },
-        "pricing_version_id": "ee2594dc-b130-4670-91a4-29cf9e2e1f05",
+        "pricing_version_id": "433fd3fd-2782-42b7-bf11-c3c08b2ec60e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -24588,7 +24587,7 @@
           "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.000000010125",
+          "prompt": "0.000000015",
           "completion": "0.0000012",
           "input_cache_read": "0.000000002115",
           "discount": 0,
@@ -24596,7 +24595,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000010125",
+              "price": "0.000000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -24621,7 +24620,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000010125",
+            "price": "0.000000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -24641,11 +24640,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000010125",
+          "openai:prompt_tokens": "0.000000015",
           "openai:completion_tokens": "0.0000012",
           "openai:cached_prompt_tokens": "0.000000002115"
         },
-        "pricing_version_id": "ee2594dc-b130-4670-91a4-29cf9e2e1f05",
+        "pricing_version_id": "433fd3fd-2782-42b7-bf11-c3c08b2ec60e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -25190,15 +25189,7 @@
           "seed",
           "max_tokens",
           "response_format",
-          "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs"
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -25556,15 +25547,7 @@
           "seed",
           "max_tokens",
           "response_format",
-          "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs"
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -27420,14 +27403,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -28360,14 +28343,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -39258,10 +39241,10 @@
           "structured_outputs",
           "logprobs",
           "top_logprobs",
+          "reasoning_effort",
           "min_p",
           "logit_bias",
-          "parallel_tool_calls",
-          "reasoning_effort"
+          "parallel_tool_calls"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -39277,7 +39260,7 @@
         "pricing": {
           "prompt": "0.00000012",
           "completion": "0.000004",
-          "input_cache_read": "0.00000006",
+          "input_cache_read": "0.00000008",
           "discount": 0,
           "display_pricing": [
             {
@@ -39297,7 +39280,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000006",
+              "price": "0.00000008",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -39322,7 +39305,7 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000006",
+            "price": "0.00000008",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -39330,9 +39313,9 @@
         "pricing_json": {
           "openai:prompt_tokens": "0.00000012",
           "openai:completion_tokens": "0.000004",
-          "openai:cached_prompt_tokens": "0.00000006"
+          "openai:cached_prompt_tokens": "0.00000008"
         },
-        "pricing_version_id": "8a4f3285-02ec-4e49-a6ed-993c67831e94",
+        "pricing_version_id": "e7509ee2-2cfd-4efb-a7e3-98a5b6b57d32",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -39854,7 +39837,7 @@
         "pricing": {
           "prompt": "0.00000012",
           "completion": "0.000004",
-          "input_cache_read": "0.00000006",
+          "input_cache_read": "0.00000008",
           "discount": 0,
           "display_pricing": [
             {
@@ -39874,7 +39857,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000006",
+              "price": "0.00000008",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -39899,7 +39882,7 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000006",
+            "price": "0.00000008",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -39907,9 +39890,9 @@
         "pricing_json": {
           "openai:prompt_tokens": "0.00000012",
           "openai:completion_tokens": "0.000004",
-          "openai:cached_prompt_tokens": "0.00000006"
+          "openai:cached_prompt_tokens": "0.00000008"
         },
-        "pricing_version_id": "8a4f3285-02ec-4e49-a6ed-993c67831e94",
+        "pricing_version_id": "e7509ee2-2cfd-4efb-a7e3-98a5b6b57d32",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -46588,7 +46571,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 55140000,
+        "capacity_tpm": 54550000,
         "created_at": "2026-09-04T11:46:10.473Z",
         "status": 0
       },
@@ -47943,7 +47926,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-08-07T17:16:51.370Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -51426,7 +51409,7 @@
       "supported_tts_voices": [],
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
-        "name": "OpenInference | deepseek/deepseek-v4-flash-20260731",
+        "name": "Relace | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "~deepseek/deepseek-v4-flash-latest",
@@ -51509,42 +51492,41 @@
         },
         "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
         "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
-        "adapter_name": "OpenInferenceAdapter",
-        "provider_name": "OpenInference",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "Relace",
         "provider_info": {
-          "name": "OpenInference",
-          "displayName": "Open Inference",
-          "slug": "open-inference",
-          "baseUrl": "https://api.openinference.ai/v1",
+          "name": "Relace",
+          "displayName": "Relace",
+          "slug": "relace",
+          "baseUrl": "https://models.relace.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.openinference.ai/terms",
-            "privacyPolicyURL": "https://www.openinference.ai/privacy",
+            "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
+            "privacyPolicyURL": "https://www.relace.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "OpenInferenceAdapter",
-          "statusPageUrl": null,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": "https://status.relace.ai",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
-            "className": "invert dark:invert-0"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://relace.ai&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Open Inference",
-        "provider_slug": "open-inference/fp8",
+        "provider_display_name": "Relace",
+        "provider_slug": "relace/fp4",
         "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-        "quantization": "fp8",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -51554,21 +51536,21 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "temperature",
-          "max_tokens",
-          "stop",
-          "seed",
-          "response_format",
-          "top_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "top_k",
-          "min_p",
-          "logit_bias",
-          "repetition_penalty",
-          "structured_outputs",
           "tools",
           "tool_choice",
+          "temperature",
+          "top_p",
+          "top_k",
+          "min_p",
+          "stop",
+          "max_tokens",
+          "logit_bias",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "response_format",
+          "structured_outputs",
           "logprobs",
           "top_logprobs",
           "reasoning_effort",
@@ -51576,6 +51558,8 @@
           "top_a"
         ],
         "excluded_parameters": [
+          "response_format",
+          "structured_outputs",
           "logprobs",
           "top_logprobs"
         ],
@@ -51586,33 +51570,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.openinference.ai/terms",
-          "privacyPolicyURL": "https://www.openinference.ai/privacy"
+          "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
+          "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000003825",
-          "completion": "0.0000016",
-          "input_cache_read": "0.000000003825",
+          "prompt": "0.0000000051",
+          "completion": "0.00000128",
+          "input_cache_read": "0.0000000051",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000003825",
+              "price": "0.0000000051",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000016",
+              "price": "0.00000128",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000003825",
+              "price": "0.0000000051",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -51623,31 +51607,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000003825",
+            "price": "0.0000000051",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000016",
+            "price": "0.00000128",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000003825",
+            "price": "0.0000000051",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000003825",
-          "openai:completion_tokens": "0.0000016",
-          "openai:cached_prompt_tokens": "0.000000003825"
+          "openai:prompt_tokens": "0.0000000051",
+          "openai:completion_tokens": "0.00000128",
+          "openai:cached_prompt_tokens": "0.0000000051"
         },
-        "pricing_version_id": "0fd44959-c51d-407d-b6f7-1d6d743a7cc3",
+        "pricing_version_id": "d8eb3782-b0ef-436c-aa01-7a6f2f4cfbf3",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -51660,11 +51644,11 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
@@ -51677,7 +51661,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-10T20:36:58.988Z",
+        "created_at": "2026-08-11T06:35:58.413Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -51762,8 +51746,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": [],
       "endpoint": {
-        "id": "f954a48e-1c90-433b-9348-4720f8030331",
-        "name": "OpenInference | deepseek/deepseek-v4-flash-20260731",
+        "id": "57c1bfab-049c-4d6a-ab34-ac1007a6043b",
+        "name": "Relace | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
@@ -51846,42 +51830,41 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash-0731",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260731",
-        "adapter_name": "OpenInferenceAdapter",
-        "provider_name": "OpenInference",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "Relace",
         "provider_info": {
-          "name": "OpenInference",
-          "displayName": "Open Inference",
-          "slug": "open-inference",
-          "baseUrl": "https://api.openinference.ai/v1",
+          "name": "Relace",
+          "displayName": "Relace",
+          "slug": "relace",
+          "baseUrl": "https://models.relace.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.openinference.ai/terms",
-            "privacyPolicyURL": "https://www.openinference.ai/privacy",
+            "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
+            "privacyPolicyURL": "https://www.relace.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "OpenInferenceAdapter",
-          "statusPageUrl": null,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": "https://status.relace.ai",
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
-            "className": "invert dark:invert-0"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://relace.ai&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Open Inference",
-        "provider_slug": "open-inference/fp8",
+        "provider_display_name": "Relace",
+        "provider_slug": "relace/fp4",
         "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-        "quantization": "fp8",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -51891,23 +51874,22 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "tools",
+          "tool_choice",
           "temperature",
-          "max_tokens",
-          "stop",
-          "seed",
-          "response_format",
           "top_p",
-          "frequency_penalty",
-          "presence_penalty",
           "top_k",
           "min_p",
+          "stop",
+          "max_tokens",
           "logit_bias",
-          "repetition_penalty",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty"
         ],
         "excluded_parameters": [
+          "response_format",
+          "structured_outputs",
           "logprobs",
           "top_logprobs"
         ],
@@ -51918,33 +51900,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.openinference.ai/terms",
-          "privacyPolicyURL": "https://www.openinference.ai/privacy"
+          "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
+          "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000003825",
-          "completion": "0.0000016",
-          "input_cache_read": "0.000000003825",
+          "prompt": "0.0000000051",
+          "completion": "0.00000128",
+          "input_cache_read": "0.0000000051",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000003825",
+              "price": "0.0000000051",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000016",
+              "price": "0.00000128",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000003825",
+              "price": "0.0000000051",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -51955,31 +51937,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000003825",
+            "price": "0.0000000051",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000016",
+            "price": "0.00000128",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000003825",
+            "price": "0.0000000051",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000003825",
-          "openai:completion_tokens": "0.0000016",
-          "openai:cached_prompt_tokens": "0.000000003825"
+          "openai:prompt_tokens": "0.0000000051",
+          "openai:completion_tokens": "0.00000128",
+          "openai:cached_prompt_tokens": "0.0000000051"
         },
-        "pricing_version_id": "0fd44959-c51d-407d-b6f7-1d6d743a7cc3",
+        "pricing_version_id": "d8eb3782-b0ef-436c-aa01-7a6f2f4cfbf3",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -51992,11 +51974,11 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
@@ -52009,7 +51991,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-10T20:36:58.988Z",
+        "created_at": "2026-08-11T06:35:58.413Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -59330,14 +59312,14 @@
         "supported_image_parameters": null,
         "provider_region": null,
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-10-31T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-20T14:22:26.860Z",
         "status": 0
       },
       "display_required_attestation_types": [],
-      "variant_deprecation_date": null
+      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
     },
     {
       "slug": "poolside/laguna-s-2.1",
@@ -59627,14 +59609,14 @@
         "supported_image_parameters": null,
         "provider_region": null,
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-10-31T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-20T14:22:28.186Z",
         "status": 0
       },
       "display_required_attestation_types": [],
-      "variant_deprecation_date": null
+      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
     },
     {
       "slug": "google/gemini-3.6-flash",
@@ -64255,8 +64237,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "21fab3d0-2708-427e-b0dd-e37008d23179",
-        "name": "InferenceNet | moonshotai/kimi-k3-20260715",
+        "id": "315170e6-0362-4b17-8c5c-1561d5d5cdb8",
+        "name": "Morph | moonshotai/kimi-k3-20260715",
         "context_length": 1048576,
         "model": {
           "slug": "moonshotai/kimi-k3",
@@ -64348,42 +64330,44 @@
         },
         "model_variant_slug": "moonshotai/kimi-k3",
         "model_variant_permaslug": "moonshotai/kimi-k3-20260715",
-        "adapter_name": "InferenceNetAdapter",
-        "provider_name": "InferenceNet",
+        "adapter_name": "MorphAdapter",
+        "provider_name": "Morph",
         "provider_info": {
-          "name": "InferenceNet",
-          "displayName": "inference.net",
-          "slug": "inference-net",
-          "baseUrl": "https://api.inference.net/v1",
+          "name": "Morph",
+          "displayName": "Morph",
+          "slug": "morph",
+          "baseUrl": "https://api.morphllm.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://inference.net/terms-of-service",
-            "privacyPolicyURL": "https://inference.net/privacy-policy",
+            "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+            "privacyPolicyURL": "https://morphllm.com/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "InferenceNetAdapter",
-          "statusPageUrl": "https://status.inference.net",
+          "adapterName": "MorphAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://inference.net/&size=256",
-            "className": "invert-0 dark:invert"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://morphllm.com&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "inference.net",
-        "provider_slug": "inference-net/fp4",
-        "provider_model_id": "moonshotai/kimi-k3",
-        "quantization": "fp4",
+        "provider_display_name": "Morph",
+        "provider_slug": "morph/fp8",
+        "provider_model_id": "morph-kimik3",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -64395,24 +64379,23 @@
           "include_reasoning",
           "max_tokens",
           "temperature",
-          "top_p",
           "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "seed",
-          "top_k",
-          "min_p",
-          "logit_bias",
           "response_format",
           "structured_outputs",
+          "logprobs",
+          "top_logprobs",
           "tools",
           "tool_choice",
-          "repetition_penalty"
+          "top_p",
+          "top_k",
+          "min_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "logit_bias"
         ],
-        "excluded_parameters": [
-          "logprobs",
-          "top_logprobs"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -64420,33 +64403,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://inference.net/terms-of-service",
-          "privacyPolicyURL": "https://inference.net/privacy-policy"
+          "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+          "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000139",
-          "completion": "0.000013",
-          "input_cache_read": "0.0000008",
+          "prompt": "0.00000135",
+          "completion": "0.000011357",
+          "input_cache_read": "0.00000029",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000139",
+              "price": "0.00000135",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000013",
+              "price": "0.000011357",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000008",
+              "price": "0.00000029",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -64457,31 +64440,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000139",
+            "price": "0.00000135",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000013",
+            "price": "0.000011357",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000008",
+            "price": "0.00000029",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000139",
-          "openai:completion_tokens": "0.000013",
-          "openai:cached_prompt_tokens": "0.0000008"
+          "openai:prompt_tokens": "0.00000135",
+          "openai:completion_tokens": "0.000011357",
+          "openai:cached_prompt_tokens": "0.00000029"
         },
-        "pricing_version_id": "f79a7c5e-8fd8-449a-929c-1d0f40c9224e",
+        "pricing_version_id": "4ebc6b51-1623-40ad-aa45-7380e1f5f905",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -64513,7 +64496,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-12T01:45:57.602Z",
+        "created_at": "2026-07-27T15:22:21.828Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -67007,14 +66990,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -67945,14 +67928,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -68883,14 +68866,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -69821,14 +69804,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -74536,14 +74519,14 @@
         "supported_image_parameters": null,
         "provider_region": null,
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-10-31T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-06-25T18:16:07.639Z",
         "status": 0
       },
       "display_required_attestation_types": [],
-      "variant_deprecation_date": null
+      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
     },
     {
       "slug": "poolside/laguna-xs-2.1",
@@ -74833,14 +74816,14 @@
         "supported_image_parameters": null,
         "provider_region": null,
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-10-31T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-06-25T18:16:08.126Z",
         "status": 0
       },
       "display_required_attestation_types": [],
-      "variant_deprecation_date": null
+      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
     },
     {
       "slug": "anthropic/claude-sonnet-5",
@@ -76882,15 +76865,7 @@
           "seed",
           "max_tokens",
           "response_format",
-          "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs"
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -77227,15 +77202,7 @@
           "seed",
           "max_tokens",
           "response_format",
-          "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs"
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -77568,15 +77535,7 @@
           "seed",
           "max_tokens",
           "response_format",
-          "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs"
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -84923,7 +84882,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-07-24T16:46:48.095Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -99712,7 +99671,7 @@
       "supported_tts_voices": null,
       "endpoint": {
         "id": "tilde-latest-~moonshotai/kimi-latest",
-        "name": "InferenceNet | moonshotai/kimi-k3-20260715",
+        "name": "Morph | moonshotai/kimi-k3-20260715",
         "context_length": 1048576,
         "model": {
           "slug": "~moonshotai/kimi-latest",
@@ -99804,42 +99763,44 @@
         },
         "model_variant_slug": "~moonshotai/kimi-latest",
         "model_variant_permaslug": "~moonshotai/kimi-latest",
-        "adapter_name": "InferenceNetAdapter",
-        "provider_name": "InferenceNet",
+        "adapter_name": "MorphAdapter",
+        "provider_name": "Morph",
         "provider_info": {
-          "name": "InferenceNet",
-          "displayName": "inference.net",
-          "slug": "inference-net",
-          "baseUrl": "https://api.inference.net/v1",
+          "name": "Morph",
+          "displayName": "Morph",
+          "slug": "morph",
+          "baseUrl": "https://api.morphllm.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://inference.net/terms-of-service",
-            "privacyPolicyURL": "https://inference.net/privacy-policy",
+            "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+            "privacyPolicyURL": "https://morphllm.com/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "InferenceNetAdapter",
-          "statusPageUrl": "https://status.inference.net",
+          "adapterName": "MorphAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://inference.net/&size=256",
-            "className": "invert-0 dark:invert"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://morphllm.com&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "inference.net",
-        "provider_slug": "inference-net/fp4",
-        "provider_model_id": "moonshotai/kimi-k3",
-        "quantization": "fp4",
+        "provider_display_name": "Morph",
+        "provider_slug": "morph/fp8",
+        "provider_model_id": "morph-kimik3",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -99851,26 +99812,23 @@
           "include_reasoning",
           "max_tokens",
           "temperature",
-          "top_p",
           "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "seed",
-          "top_k",
-          "min_p",
-          "logit_bias",
           "response_format",
           "structured_outputs",
+          "logprobs",
+          "top_logprobs",
           "tools",
           "tool_choice",
+          "top_p",
+          "top_k",
+          "min_p",
+          "frequency_penalty",
+          "presence_penalty",
           "repetition_penalty",
-          "logprobs",
-          "top_logprobs"
+          "seed",
+          "logit_bias"
         ],
-        "excluded_parameters": [
-          "logprobs",
-          "top_logprobs"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -99878,33 +99836,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://inference.net/terms-of-service",
-          "privacyPolicyURL": "https://inference.net/privacy-policy"
+          "termsOfServiceURL": "https://www.morphllm.com/privacy/tos",
+          "privacyPolicyURL": "https://morphllm.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000139",
-          "completion": "0.000013",
-          "input_cache_read": "0.0000008",
+          "prompt": "0.00000135",
+          "completion": "0.000011357",
+          "input_cache_read": "0.00000029",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000139",
+              "price": "0.00000135",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000013",
+              "price": "0.000011357",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000008",
+              "price": "0.00000029",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -99915,31 +99873,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000139",
+            "price": "0.00000135",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000013",
+            "price": "0.000011357",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000008",
+            "price": "0.00000029",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000139",
-          "openai:completion_tokens": "0.000013",
-          "openai:cached_prompt_tokens": "0.0000008"
+          "openai:prompt_tokens": "0.00000135",
+          "openai:completion_tokens": "0.000011357",
+          "openai:cached_prompt_tokens": "0.00000029"
         },
-        "pricing_version_id": "f79a7c5e-8fd8-449a-929c-1d0f40c9224e",
+        "pricing_version_id": "4ebc6b51-1623-40ad-aa45-7380e1f5f905",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -99971,7 +99929,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-12T01:45:57.602Z",
+        "created_at": "2026-07-27T15:22:21.828Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -103660,14 +103618,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -104721,8 +104679,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "f967eede-84b1-45f9-8c98-50f4feb2d8a8",
-        "name": "Relace | deepseek/deepseek-v4-flash-20260423",
+        "id": "97ed71df-df80-41d5-bf45-607dbca8d28a",
+        "name": "OpenInference | deepseek/deepseek-v4-flash-20260423",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
@@ -104801,41 +104759,42 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Relace",
+        "adapter_name": "OpenInferenceAdapter",
+        "provider_name": "OpenInference",
         "provider_info": {
-          "name": "Relace",
-          "displayName": "Relace",
-          "slug": "relace",
-          "baseUrl": "https://models.relace.ai/v1",
+          "name": "OpenInference",
+          "displayName": "Open Inference",
+          "slug": "open-inference",
+          "baseUrl": "https://api.openinference.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
-            "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
-            "privacyPolicyURL": "https://www.relace.ai/privacy-policy",
+            "termsOfServiceURL": "https://www.openinference.ai/terms",
+            "privacyPolicyURL": "https://www.openinference.ai/privacy",
             "requiresUserIDs": false
           },
-          "datacenters": [],
+          "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": false,
+          "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": "https://status.relace.ai",
+          "adapterName": "OpenInferenceAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://relace.ai&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://openinference.xyz/&size=256",
+            "className": "invert dark:invert-0"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_display_name": "Relace",
-        "provider_slug": "relace/fp4",
-        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0423",
-        "quantization": "fp4",
+        "provider_display_name": "Open Inference",
+        "provider_slug": "open-inference/fp8",
+        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -104846,16 +104805,18 @@
           "reasoning",
           "include_reasoning",
           "temperature",
-          "top_p",
-          "top_k",
-          "min_p",
-          "stop",
           "max_tokens",
-          "logit_bias",
+          "stop",
+          "seed",
+          "response_format",
+          "top_p",
           "frequency_penalty",
           "presence_penalty",
+          "top_k",
+          "min_p",
+          "logit_bias",
           "repetition_penalty",
-          "response_format",
+          "structured_outputs",
           "tools",
           "tool_choice"
         ],
@@ -104867,33 +104828,33 @@
           "trainingOpenRouter": false,
           "retainsPrompts": false,
           "canPublish": false,
-          "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
-          "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
+          "termsOfServiceURL": "https://www.openinference.ai/terms",
+          "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.0000000022",
-          "completion": "0.00000128",
-          "input_cache_read": "0.0000000022",
+          "prompt": "0.000000002325",
+          "completion": "0.0000016",
+          "input_cache_read": "0.000000002325",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000022",
+              "price": "0.000000002325",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000128",
+              "price": "0.0000016",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000022",
+              "price": "0.000000002325",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -104904,31 +104865,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000022",
+            "price": "0.000000002325",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000128",
+            "price": "0.0000016",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000022",
+            "price": "0.000000002325",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000022",
-          "openai:completion_tokens": "0.00000128",
-          "openai:cached_prompt_tokens": "0.0000000022"
+          "openai:prompt_tokens": "0.000000002325",
+          "openai:completion_tokens": "0.0000016",
+          "openai:cached_prompt_tokens": "0.000000002325"
         },
-        "pricing_version_id": "753dc59a-a675-4424-9333-fd650dd4a356",
+        "pricing_version_id": "d36fe0ff-3d42-4bbc-8e88-a28971b5a88a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -104941,14 +104902,14 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -104958,7 +104919,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-24T18:23:09.521Z",
+        "created_at": "2026-09-10T07:41:19.522Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -108019,13 +107980,9 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
+          "verbosity",
           "logprobs",
-          "top_logprobs",
-          "verbosity"
+          "top_logprobs"
         ],
         "excluded_parameters": [
           "temperature",
@@ -109518,7 +109475,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 11810000,
+        "capacity_tpm": 14240000,
         "created_at": "2026-05-21T14:24:00.671Z",
         "status": 0
       },
@@ -112604,7 +112561,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 4600000,
+        "capacity_tpm": 2390000,
         "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       },
@@ -117998,14 +117955,7 @@
         "max_prompt_tokens": null,
         "max_completion_tokens": null,
         "max_tokens_per_image": null,
-        "supported_parameters": [
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs"
-        ],
+        "supported_parameters": [],
         "excluded_parameters": [
           "temperature",
           "top_p",
@@ -119329,14 +119279,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -120064,14 +120014,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -123579,14 +123529,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -124366,14 +124316,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -127144,7 +127094,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-25T16:10:09.814Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -128744,14 +128694,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -131886,7 +131836,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-02T16:04:45.697Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -136096,16 +136046,16 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
+          "presence_penalty",
+          "stop",
+          "temperature",
           "top_logprobs",
-          "tools",
-          "tool_choice"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -136409,16 +136359,16 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tool_choice",
+          "tools",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
+          "presence_penalty",
+          "stop",
+          "temperature",
           "top_logprobs",
-          "tool_choice",
-          "tools"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -137349,14 +137299,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -140805,12 +140755,12 @@
         "max_completion_tokens": 32000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -141867,14 +141817,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -143532,14 +143482,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -151330,14 +151280,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -152055,14 +152005,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -152398,14 +152348,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -157982,15 +157932,11 @@
           "response_format",
           "seed",
           "max_tokens",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
+          "verbosity",
           "logprobs",
+          "temperature",
           "top_logprobs",
-          "verbosity"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -159713,15 +159659,11 @@
           "response_format",
           "seed",
           "max_tokens",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "logit_bias",
+          "verbosity",
           "logprobs",
+          "temperature",
           "top_logprobs",
-          "verbosity"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -159987,8 +159929,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "2341e1bc-99ea-46ab-ae2d-9a83846afb43",
-        "name": "Google AI Studio | google/gemini-2.5-flash-image",
+        "id": "9fc81a95-52d2-4a94-adc5-f99869ab1351",
+        "name": "Google | google/gemini-2.5-flash-image",
         "context_length": 32768,
         "model": {
           "slug": "google/gemini-2.5-flash-image",
@@ -160062,22 +160004,21 @@
         },
         "model_variant_slug": "google/gemini-2.5-flash-image",
         "model_variant_permaslug": "google/gemini-2.5-flash-image",
-        "adapter_name": "GoogleAIStudioGeminiAdapter",
-        "provider_name": "Google AI Studio",
+        "adapter_name": "GoogleVertexGeminiAdapter",
+        "provider_name": "Google",
         "provider_info": {
-          "name": "Google AI Studio",
-          "displayName": "Google AI Studio",
-          "slug": "google-ai-studio",
-          "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+          "name": "Google",
+          "displayName": "Google Vertex",
+          "slug": "google-vertex",
+          "baseUrl": "not_used",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "retentionDays": 55,
+            "retainsPrompts": false,
             "canPublish": false,
             "termsOfServiceURL": "https://cloud.google.com/terms/",
             "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
-            "requiresUserIDs": false
+            "requiresUserIDs": true
           },
           "headquarters": "US",
           "hasChatCompletions": true,
@@ -160085,24 +160026,24 @@
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "GoogleAIStudioGeminiAdapter",
-          "statusPageUrl": null,
+          "adapterName": "GoogleVertexGeminiAdapter",
+          "statusPageUrl": "https://status.cloud.google.com/products/sdXM79fz1FS6ekNpu37K/history",
           "byokEnabled": true,
           "icon": {
-            "url": "/images/icons/GoogleAIStudio.svg"
+            "url": "/images/icons/GoogleVertex.svg"
           },
           "sendClientIp": false,
           "pricingStrategy": "gemini"
         },
-        "provider_display_name": "Google AI Studio",
-        "provider_slug": "google-ai-studio",
+        "provider_display_name": "Google Vertex",
+        "provider_slug": "google-vertex/global",
         "provider_model_id": "gemini-2.5-flash-image",
         "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 32768,
+        "max_completion_tokens": 8192,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "max_tokens",
@@ -160110,6 +160051,7 @@
           "top_p",
           "seed",
           "response_format",
+          "stop",
           "structured_outputs"
         ],
         "excluded_parameters": [],
@@ -160118,11 +160060,11 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "retentionDays": 55,
+          "retainsPrompts": false,
           "canPublish": false,
           "termsOfServiceURL": "https://cloud.google.com/terms/",
-          "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice"
+          "privacyPolicyURL": "https://cloud.google.com/terms/cloud-privacy-notice",
+          "requiresUserIDs": true
         },
         "pricing": {
           "prompt": "0.0000003",
@@ -160276,7 +160218,7 @@
           "gemini:cache_read_video_tokens_high_context": 1e-07,
           "gemini:informational_cache_write_tokens_count": 0
         },
-        "pricing_version_id": "2cd7818e-7088-45d1-b126-14d0eea4d689",
+        "pricing_version_id": "78054afd-32b5-4d4c-aa89-6e435908234a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -160330,14 +160272,14 @@
           "output_compression": null,
           "seed": null
         },
-        "provider_region": null,
+        "provider_region": "global",
         "declared_region": null,
-        "deprecation_date": "2026-10-02T13:00:00.000Z",
+        "deprecation_date": "2027-03-15T13:00:00.000Z",
         "allowed_passthrough_parameters": [
           "cachedContent"
         ],
         "capacity_tpm": null,
-        "created_at": "2025-10-02T22:43:20.484Z",
+        "created_at": "2025-10-02T22:40:57.951Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -164075,7 +164017,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-12T14:20:51.130Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": "2026-10-09T16:00:00.000Z"
@@ -169732,14 +169674,14 @@
         "max_completion_tokens": 128000,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
           "structured_outputs",
           "response_format",
-          "seed",
+          "max_completion_tokens",
           "tools",
           "tool_choice",
+          "seed",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -170087,14 +170029,14 @@
         "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -170807,14 +170749,14 @@
         "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "reasoning",
           "include_reasoning",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "seed",
           "response_format",
           "structured_outputs",
-          "tools",
-          "tool_choice",
           "verbosity"
         ],
         "excluded_parameters": [
@@ -186635,14 +186577,14 @@
         "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "temperature",
+          "top_p",
           "max_completion_tokens",
-          "seed",
-          "response_format",
-          "structured_outputs",
           "tools",
           "tool_choice",
-          "temperature",
-          "top_p"
+          "structured_outputs",
+          "response_format",
+          "seed"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -187206,14 +187148,14 @@
         "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "temperature",
+          "top_p",
           "max_completion_tokens",
-          "seed",
-          "response_format",
-          "structured_outputs",
           "tools",
           "tool_choice",
-          "temperature",
-          "top_p"
+          "structured_outputs",
+          "response_format",
+          "seed"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -187778,14 +187720,14 @@
         "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
+          "temperature",
+          "top_p",
           "max_completion_tokens",
-          "seed",
-          "response_format",
-          "structured_outputs",
           "tool_choice",
           "tools",
-          "temperature",
-          "top_p"
+          "structured_outputs",
+          "response_format",
+          "seed"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -196757,7 +196699,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-28T20:44:52.471Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -197000,7 +196942,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-28T20:44:52.471Z",
-        "status": -5
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -197412,18 +197354,18 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
-          "web_search_options",
           "logit_bias",
           "logprobs",
-          "top_logprobs",
           "prediction",
-          "tools",
-          "tool_choice"
+          "presence_penalty",
+          "stop",
+          "temperature",
+          "top_logprobs",
+          "top_p",
+          "web_search_options"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -199638,7 +199580,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-11-07T21:19:02.568Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -201325,9 +201267,11 @@
         "max_completion_tokens": 16384,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -201337,9 +201281,7 @@
           "logprobs",
           "top_logprobs",
           "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -202394,18 +202336,18 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
-          "web_search_options",
           "logit_bias",
           "logprobs",
-          "top_logprobs",
           "prediction",
-          "tools",
-          "tool_choice"
+          "presence_penalty",
+          "stop",
+          "temperature",
+          "top_logprobs",
+          "top_p",
+          "web_search_options"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -202666,9 +202608,9 @@
         "max_completion_tokens": 16384,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -202943,18 +202885,18 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
-          "web_search_options",
           "logit_bias",
           "logprobs",
-          "top_logprobs",
           "prediction",
-          "tools",
-          "tool_choice"
+          "presence_penalty",
+          "stop",
+          "temperature",
+          "top_logprobs",
+          "top_p",
+          "web_search_options"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -203476,18 +203418,18 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
-          "web_search_options",
           "logit_bias",
           "logprobs",
-          "top_logprobs",
           "prediction",
-          "tools",
-          "tool_choice"
+          "presence_penalty",
+          "stop",
+          "temperature",
+          "top_logprobs",
+          "top_p",
+          "web_search_options"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -203749,9 +203691,11 @@
         "max_completion_tokens": 16384,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -203761,9 +203705,7 @@
           "logprobs",
           "top_logprobs",
           "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -204007,9 +203949,11 @@
         "max_completion_tokens": 4096,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -204019,9 +203963,7 @@
           "logprobs",
           "top_logprobs",
           "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -204798,16 +204740,16 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
+          "presence_penalty",
+          "stop",
+          "temperature",
           "top_logprobs",
-          "tools",
-          "tool_choice"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -205055,16 +204997,16 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
+          "presence_penalty",
+          "stop",
+          "temperature",
           "top_logprobs",
-          "tools",
-          "tool_choice"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -205575,9 +205517,11 @@
         "max_completion_tokens": 4096,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -205586,9 +205530,7 @@
           "logprobs",
           "top_logprobs",
           "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -205910,14 +205852,14 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
-          "top_logprobs"
+          "presence_penalty",
+          "stop",
+          "temperature",
+          "top_logprobs",
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -206156,9 +206098,11 @@
         "max_completion_tokens": 4096,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -206167,9 +206111,7 @@
           "logprobs",
           "top_logprobs",
           "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "structured_outputs"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -207190,9 +207132,11 @@
         "max_completion_tokens": 4096,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "max_completion_tokens",
           "temperature",
           "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
           "stop",
           "frequency_penalty",
           "presence_penalty",
@@ -207200,9 +207144,7 @@
           "logit_bias",
           "logprobs",
           "top_logprobs",
-          "response_format",
-          "tools",
-          "tool_choice"
+          "response_format"
         ],
         "excluded_parameters": [
           "max_tokens"
@@ -207447,16 +207389,16 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
+          "presence_penalty",
+          "stop",
+          "temperature",
           "top_logprobs",
-          "tools",
-          "tool_choice"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -207702,16 +207644,16 @@
           "max_tokens",
           "response_format",
           "structured_outputs",
-          "temperature",
-          "top_p",
-          "stop",
+          "tools",
+          "tool_choice",
           "frequency_penalty",
-          "presence_penalty",
           "logit_bias",
           "logprobs",
+          "presence_penalty",
+          "stop",
+          "temperature",
           "top_logprobs",
-          "tools",
-          "tool_choice"
+          "top_p"
         ],
         "excluded_parameters": [],
         "is_byok": false,

@@ -11,16 +11,16 @@
     "litellm": 583,
     "fireworks": 112,
     "piapi": 2,
-    "news-radar": 5,
+    "news-radar": 6,
     "wavespeed": 2,
     "minimax": 3,
     "runway": 2
   },
   "update_stats": {
-    "added": 18,
-    "removed": 10,
-    "updated": 30,
-    "unchanged": 2688
+    "added": 4,
+    "removed": 3,
+    "updated": 12,
+    "unchanged": 2721
   },
   "models": [
     {
@@ -9081,7 +9081,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0101,
+            "input_per_1m": 0.015,
             "output_per_1m": 1.2
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
@@ -10294,8 +10294,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0022,
-            "output_per_1m": 1.28
+            "input_per_1m": 0.0023,
+            "output_per_1m": 1.6
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10342,8 +10342,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0038,
-            "output_per_1m": 1.6
+            "input_per_1m": 0.0051,
+            "output_per_1m": 1.28
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10417,8 +10417,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0038,
-            "output_per_1m": 1.6
+            "input_per_1m": 0.0051,
+            "output_per_1m": 1.28
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10598,7 +10598,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0101,
+            "input_per_1m": 0.015,
             "output_per_1m": 1.2
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
@@ -14642,7 +14642,7 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "florence-2-large-object-detection",
+      "id": "florence-2-large-ocr-with-region",
       "name": "Florence-2 Large",
       "category": "image_generation",
       "description": "Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks",
@@ -14659,7 +14659,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/florence-2-large/object-detection",
+          "url": "https://fal.ai/models/fal-ai/florence-2-large/ocr-with-region",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -15074,7 +15074,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux-2-flex",
+          "url": "https://fal.ai/models/fal-ai/flux-2-flex/edit",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         },
@@ -32181,6 +32181,30 @@
       "first_seen_at": "2026-03-08"
     },
     {
+      "id": "ideogram-4-5",
+      "name": "Ideogram 4.5",
+      "category": "image_generation",
+      "description": "Ideogram's latest image generation model featuring native 2K resolution output and partial image editing capabilities without disrupting surrounding context.",
+      "tags": [
+        "ideogram"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-10-02",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "ideogram",
+          "pricing": {
+            "notes": "Starting at $0.008 (0.8 cents) per image"
+          },
+          "url": "https://api.ideogram.ai/docs",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-10-02"
+    },
+    {
       "id": "replicate-ideogram-character",
       "name": "Ideogram Character",
       "category": "image_generation",
@@ -33932,7 +33956,7 @@
       "id": "hf-indic-parler-tts",
       "name": "Indic Parler Tts",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 295,699 downloads · 373 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 295,699 downloads · 376 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -35700,8 +35724,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 1.39,
-            "output_per_1m": 13.0
+            "input_per_1m": 1.35,
+            "output_per_1m": 11.357
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k3",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -35755,8 +35779,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 1.39,
-            "output_per_1m": 13.0
+            "input_per_1m": 1.35,
+            "output_per_1m": 11.357
           },
           "url": "https://openrouter.ai/~moonshotai/kimi-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -37555,7 +37579,7 @@
     },
     {
       "id": "krea-wan-14b",
-      "name": "Krea Wan 14b-",
+      "name": "Krea Wan 14B",
       "category": "video_generation",
       "description": "Superfast video model based on Wan 2.1 14b by Krea, excelling at real-time video-editing.",
       "tags": [],
@@ -37571,7 +37595,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/krea-wan-14b/text-to-video",
+          "url": "https://fal.ai/models/fal-ai/krea-wan-14b/video-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -43041,12 +43065,13 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "magi-distilled-extend-video",
+      "id": "magi-distilled",
       "name": "MAGI-1 (Distilled)",
       "category": "video_generation",
-      "description": "MAGI-1 distilled extends videos faster with an exceptional understanding of physical interactions and prompts",
+      "description": "MAGI-1 distilled is a faster video generation model with exceptional understanding of physical interactions and cinematic prompts",
       "tags": [],
       "capabilities": [
+        "image_to_video",
         "text_to_video"
       ],
       "context_k": null,
@@ -43058,12 +43083,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/magi-distilled/extend-video",
+          "url": "https://fal.ai/models/fal-ai/magi-distilled/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-09-27"
+      "first_seen_at": "2026-10-02"
     },
     {
       "id": "mistralai-magistral-medium-2506",
@@ -44666,7 +44691,7 @@
       "id": "hf-minimax-h3-turbo",
       "name": "Minimax h3 Turbo",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 1,542,346 downloads · 1,024 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,542,346 downloads · 1,025 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -54919,7 +54944,7 @@
     },
     {
       "id": "pixverse-v4-5-fast",
-      "name": "PixVerse V4.5 Text To Video Fast",
+      "name": "PixVerse V4.5 Image To Video Fast",
       "category": "video_generation",
       "description": "Generate high quality and fast video clips from text and image prompts using PixVerse v4.5 fast",
       "tags": [],
@@ -54936,7 +54961,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/pixverse/v4.5/text-to-video/fast",
+          "url": "https://fal.ai/models/fal-ai/pixverse/v4.5/image-to-video/fast",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -58668,7 +58693,7 @@
       "id": "hf-qwen2-5-3b-instruct",
       "name": "Qwen2.5 3B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,129,187 downloads · 586 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 4,129,187 downloads · 587 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -61564,7 +61589,7 @@
       "id": "hf-qwen3-tts-12hz-1-7b-customvoice",
       "name": "Qwen3 TTS 12Hz 1.7B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 2,408,133 downloads · 2,019 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 2,408,133 downloads · 2,021 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -66377,7 +66402,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/sdxl-controlnet-union",
+          "url": "https://fal.ai/models/fal-ai/sdxl-controlnet-union/image-to-image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -74054,7 +74079,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/vidu/reference-to-video",
+          "url": "https://fal.ai/models/fal-ai/vidu/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -74062,10 +74087,10 @@
       "first_seen_at": "2026-07-08"
     },
     {
-      "id": "vidu-start-end-to-video",
-      "name": "Vidu Start-End to Video",
+      "id": "vidu-q1-start-end-to-video",
+      "name": "Vidu Start End to Video",
       "category": "video_generation",
-      "description": "Vidu Start-End to Video generates smooth transition videos between specified start and end images.",
+      "description": "Vidu Q1 Start-End to Video generates smooth transition 1080p videos between specified start and end images.",
       "tags": [],
       "capabilities": [
         "image_to_video",
@@ -74080,7 +74105,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/vidu/start-end-to-video",
+          "url": "https://fal.ai/models/fal-ai/vidu/q1/start-end-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -76135,7 +76160,7 @@
       "id": "hf-wan2-2-distill-loras",
       "name": "Wan2.2 Distill Loras",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 88,826 downloads · 287 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 88,826 downloads · 288 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -76200,7 +76225,7 @@
       "id": "hf-wan2-2-i2v_general-nsfw-lora",
       "name": "Wan2.2 I2V General NSFW LoRA",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 176,738 downloads · 132 likes. License: .",
+      "description": "Open-source model on HuggingFace. 176,738 downloads · 133 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -76709,7 +76734,7 @@
       "id": "hf-whisper-small",
       "name": "Whisper Small",
       "category": "audio_stt",
-      "description": "Open-source model on HuggingFace. 3,194,625 downloads · 609 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 3,194,625 downloads · 610 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
