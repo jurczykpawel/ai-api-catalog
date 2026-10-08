@@ -2,12 +2,12 @@
   "updated_at": "2026-10-08",
   "source_counts": {
     "fal": 768,
-    "openrouter": 738,
+    "openrouter": 739,
     "replicate": 325,
     "bedrock": 58,
     "huggingface": 75,
     "manual": 73,
-    "opencode": 16,
+    "opencode": 17,
     "litellm": 590,
     "fireworks": 112,
     "piapi": 2,
@@ -17,10 +17,10 @@
     "runway": 2
   },
   "update_stats": {
-    "added": 26,
-    "removed": 10,
-    "updated": 31,
-    "unchanged": 2713
+    "added": 4,
+    "removed": 2,
+    "updated": 21,
+    "unchanged": 2747
   },
   "models": [
     {
@@ -2891,7 +2891,7 @@
       "id": "hf-bge-small-en-v1-5",
       "name": "Bge Small En V1.5",
       "category": "embedding",
-      "description": "Open-source model on HuggingFace. 61,931,132 downloads · 601 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 61,931,132 downloads · 602 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -4497,10 +4497,10 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "anthropic-claude-3-5-haiku-20241022",
-      "name": "Claude 3.5 Haiku (2024-10-22)",
+      "id": "anthropic-claude-3-5-haiku",
+      "name": "Claude 3.5 Haiku",
       "category": "llm",
-      "description": "Claude 3.5 Haiku features enhancements across all skill sets including coding, tool use, and reasoning. As the fastest model in the Anthropic lineup, it offers rapid response times suitable for applications that require high interactivity and low latency, such as user-facing chatbots and on-the-f...",
+      "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic tasks such as chat interactions and immediate coding suggestions.\n\nThis makes it highly su...",
       "tags": [],
       "capabilities": [
         "vision"
@@ -4512,7 +4512,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {},
-          "url": "https://openrouter.ai/anthropic/claude-3.5-haiku-20241022",
+          "url": "https://openrouter.ai/anthropic/claude-3.5-haiku",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
           "available": true
         },
@@ -4538,7 +4538,7 @@
           "available": true
         }
       ],
-      "first_seen_at": "2026-10-07"
+      "first_seen_at": "2026-10-08"
     },
     {
       "id": "claude-3-5-sonnet",
@@ -9260,7 +9260,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0351,
+            "input_per_1m": 0.0283,
             "output_per_1m": 1.0
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
@@ -9335,7 +9335,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.108,
+            "input_per_1m": 0.1575,
             "output_per_1m": 8.0
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-pro-latest",
@@ -10473,8 +10473,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0079,
-            "output_per_1m": 0.3904
+            "input_per_1m": 0.0057,
+            "output_per_1m": 1.28
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10521,8 +10521,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0079,
-            "output_per_1m": 1.28
+            "input_per_1m": 0.0037,
+            "output_per_1m": 0.4584
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10560,8 +10560,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0079,
-            "output_per_1m": 1.28
+            "input_per_1m": 0.0037,
+            "output_per_1m": 0.4584
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10665,7 +10665,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.3,
+            "input_per_1m": 0.2894,
             "output_per_1m": 4.2
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
@@ -10713,7 +10713,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.108,
+            "input_per_1m": 0.1575,
             "output_per_1m": 8.0
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
@@ -10741,7 +10741,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0351,
+            "input_per_1m": 0.0283,
             "output_per_1m": 1.0
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
@@ -13948,7 +13948,7 @@
       "id": "hf-fastvideo-fasth3-4-step-preview-v1-vsa-datafree",
       "name": "FastVideo FastH3 4 step Preview v1 VSA DataFree",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 967,949 downloads · 323 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 967,949 downloads · 324 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -17975,7 +17975,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux-krea-lora",
+          "url": "https://fal.ai/models/fal-ai/flux-krea-lora/image-to-image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -18122,7 +18122,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux/srpo",
+          "url": "https://fal.ai/models/fal-ai/flux/srpo/image-to-image",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -23298,8 +23298,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.966,
-            "output_per_1m": 3.036
+            "input_per_1m": 0.9646,
+            "output_per_1m": 3.0316
           },
           "url": "https://openrouter.ai/z-ai/glm-5.1",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -23379,7 +23379,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.036,
+            "input_per_1m": 0.0552,
             "output_per_1m": 12.0
           },
           "url": "https://openrouter.ai/z-ai/glm-5.3",
@@ -23436,7 +23436,7 @@
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 0.032,
-            "output_per_1m": 2.2785
+            "output_per_1m": 4.8842
           },
           "url": "https://openrouter.ai/z-ai/glm-5.3-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -23678,7 +23678,7 @@
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 0.032,
-            "output_per_1m": 2.2785
+            "output_per_1m": 4.8842
           },
           "url": "https://openrouter.ai/~z-ai/glm-flash-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -23729,7 +23729,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.036,
+            "input_per_1m": 0.0552,
             "output_per_1m": 12.0
           },
           "url": "https://openrouter.ai/~z-ai/glm-latest",
@@ -27810,7 +27810,7 @@
       "id": "hf-gpt2",
       "name": "Gpt2",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 15,483,903 downloads · 4,213 likes. License: mit.",
+      "description": "Open-source model on HuggingFace. 15,483,903 downloads · 4,217 likes. License: mit.",
       "tags": [
         "open-source",
         "local"
@@ -32516,8 +32516,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.13,
-            "output_per_1m": 0.53
+            "input_per_1m": 0.132,
+            "output_per_1m": 0.528
           },
           "url": "https://openrouter.ai/tencent/hy3",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -34530,7 +34530,7 @@
       "id": "hf-indic-parler-tts",
       "name": "Indic Parler Tts",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 236,829 downloads · 396 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 236,829 downloads · 398 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -35474,7 +35474,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/rundiffusion-fal/juggernaut-flux/base/image-to-image",
+          "url": "https://fal.ai/models/rundiffusion-fal/juggernaut-flux/base",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -36143,7 +36143,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.465,
+            "input_per_1m": 0.4375,
             "output_per_1m": 2.45
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
@@ -43775,7 +43775,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/magi-distilled",
+          "url": "https://fal.ai/models/fal-ai/magi-distilled/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -45289,7 +45289,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/minimax/h3/image-to-video",
+          "url": "https://fal.ai/models/minimax/h3/reference-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -52267,27 +52267,6 @@
       "first_seen_at": "2026-03-08"
     },
     {
-      "id": "openai-o1-preview",
-      "name": "O1 Preview",
-      "category": "llm",
-      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding.\n\nThe o1 models are optimized for math, science, programming, and other STEM-related tasks. They consistently exhibit PhD-level accuracy on benchmarks in physics, chemistry, and biology...",
-      "tags": [],
-      "capabilities": [],
-      "context_k": 128,
-      "updated_at": "2026-10-08",
-      "source": "openrouter",
-      "providers": [
-        {
-          "provider_id": "openrouter",
-          "pricing": {},
-          "url": "https://openrouter.ai/openai/o1-preview",
-          "affiliate_url": "https://openrouter.ai/?ref=tsa",
-          "available": true
-        }
-      ],
-      "first_seen_at": "2026-10-07"
-    },
-    {
       "id": "o1-pro",
       "name": "O1 Pro",
       "category": "llm",
@@ -52325,6 +52304,27 @@
         }
       ],
       "first_seen_at": "2026-04-22"
+    },
+    {
+      "id": "openai-o1-preview-2024-09-12",
+      "name": "o1-preview (2024-09-12)",
+      "category": "llm",
+      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding.\n\nThe o1 models are optimized for math, science, programming, and other STEM-related tasks. They consistently exhibit PhD-level accuracy on benchmarks in physics, chemistry, and biology...",
+      "tags": [],
+      "capabilities": [],
+      "context_k": 128,
+      "updated_at": "2026-10-08",
+      "source": "openrouter",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {},
+          "url": "https://openrouter.ai/openai/o1-preview-2024-09-12",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-10-08"
     },
     {
       "id": "o3",
@@ -54951,6 +54951,32 @@
       "first_seen_at": "2026-04-22"
     },
     {
+      "id": "pika-v2-turbo",
+      "name": "Pika Image to Video Turbo (v2)",
+      "category": "video_generation",
+      "description": "Turbo is the model to use when you feel the need for speed. Turn your image to stunning video up to 3x faster – all with high quality outputs. ",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-10-08",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/pika/v2/turbo/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-04-22"
+    },
+    {
       "id": "pika-v2-2-pikascenes",
       "name": "Pika Scenes (v2.2)",
       "category": "video_generation",
@@ -54970,32 +54996,6 @@
             "notes": "Check fal.ai for current pricing"
           },
           "url": "https://fal.ai/models/fal-ai/pika/v2.2/pikascenes",
-          "affiliate_url": "https://fal.ai?ref=tsa",
-          "available": true
-        }
-      ],
-      "first_seen_at": "2026-04-22"
-    },
-    {
-      "id": "pika-v2-turbo",
-      "name": "Pika Text to Video Turbo (v2)",
-      "category": "video_generation",
-      "description": "Turbo is the model to use when you feel the need for speed. Turn your image to stunning video up to 3x faster – all with high quality outputs. ",
-      "tags": [],
-      "capabilities": [
-        "image_to_video",
-        "text_to_video"
-      ],
-      "context_k": null,
-      "updated_at": "2026-10-08",
-      "source": "fal",
-      "providers": [
-        {
-          "provider_id": "fal",
-          "pricing": {
-            "notes": "Check fal.ai for current pricing"
-          },
-          "url": "https://fal.ai/models/fal-ai/pika/v2/turbo/text-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -62409,7 +62409,7 @@
       "id": "hf-qwen3-tts-12hz-0-6b-base",
       "name": "Qwen3 TTS 12Hz 0.6B Base",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 590,763 downloads · 318 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 590,763 downloads · 320 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -64335,7 +64335,7 @@
       "id": "hf-realvisxl_v5-0",
       "name": "RealVisXL V5.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 544,921 downloads · 247 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 544,921 downloads · 248 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -70696,7 +70696,7 @@
       "id": "stable-diffusion-xl",
       "name": "Stable Diffusion Xl Base 1.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 4,367,759 downloads · 8,282 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 4,367,759 downloads · 8,283 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -71490,6 +71490,69 @@
         }
       ],
       "first_seen_at": "2026-05-29"
+    },
+    {
+      "id": "stepfun-step-5-preview",
+      "name": "Step 5 Preview",
+      "category": "llm",
+      "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional knowledge work, with particular strength in finance.\n\nIt is designed for extended task...",
+      "tags": [],
+      "capabilities": [
+        "function_calling",
+        "reasoning",
+        "vision"
+      ],
+      "context_k": 1000,
+      "updated_at": "2026-10-08",
+      "source": "openrouter",
+      "providers": [
+        {
+          "provider_id": "openrouter",
+          "pricing": {
+            "input_per_1m": 1.0,
+            "output_per_1m": 2.7
+          },
+          "url": "https://openrouter.ai/stepfun/step-5-preview",
+          "affiliate_url": "https://openrouter.ai/?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-10-08"
+    },
+    {
+      "id": "step-5-preview-free",
+      "name": "Step 5 Preview Free",
+      "category": "llm",
+      "description": "Step 5 Preview Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "step-5-preview-free",
+      "source": "opencode",
+      "updated_at": "2026-10-08",
+      "providers": [
+        {
+          "provider_id": "opencode",
+          "pricing": {
+            "input_per_1m": 0.0,
+            "output_per_1m": 0.0,
+            "notes": "Free"
+          },
+          "url": "https://opencode.ai/docs/zen/",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-10-08"
     },
     {
       "id": "fireworks-step-3p7-flash-nvfp4",
