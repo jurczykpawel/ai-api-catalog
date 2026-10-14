@@ -214,6 +214,22 @@
       "_api_id": "space-bunny-free"
     },
     {
+      "id": "test",
+      "name": "Test",
+      "category": "llm",
+      "description": "Test via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "test"
+    },
+    {
       "id": "claude-fable-5",
       "name": "Claude Fable 5",
       "category": "llm",
@@ -767,6 +783,28 @@
       "context_k": 200,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "gemini-3.8-flash"
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "category": "llm",
+      "description": "Gemini 4 Argon via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-4-argon"
     },
     {
       "id": "glm-5",
