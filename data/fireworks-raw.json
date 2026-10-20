@@ -5362,7 +5362,7 @@
         "code": "OK",
         "message": ""
       },
-      "supervisedLoraTunable": false,
+      "supervisedLoraTunable": true,
       "supportsImageInput": true,
       "supportsLora": true,
       "supportsServerless": true,
@@ -5370,7 +5370,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-10-18T22:16:53.098393Z",
+      "updateTime": "2026-10-20T00:08:50.874407Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -6810,7 +6810,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-10-19T08:22:50.996671Z",
+      "updateTime": "2026-10-20T05:59:07.922145Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -6888,7 +6888,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-10-19T06:58:50.046052Z",
+      "updateTime": "2026-10-20T06:28:37.413257Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -10259,7 +10259,11 @@
       "defaultDraftTokenCount": 0,
       "defaultSamplingParams": {},
       "deployedModelRefs": [],
-      "deprecationDate": null,
+      "deprecationDate": {
+        "day": 7,
+        "month": 11,
+        "year": 2026
+      },
       "description": "Welcome to the gpt-oss series, OpenAI's open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases. gpt-oss-120b is used for production, general purpose, high reasoning use-cases that fits into a single H100 GPU.",
       "displayName": "OpenAI gpt-oss-120b",
       "enableVisionEncoderTuning": false,
@@ -10295,7 +10299,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-08-28T22:31:48.375402Z",
+      "updateTime": "2026-10-20T07:03:58.698229Z",
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
     },
@@ -10699,7 +10703,11 @@
       "defaultDraftTokenCount": 0,
       "defaultSamplingParams": {},
       "deployedModelRefs": [],
-      "deprecationDate": null,
+      "deprecationDate": {
+        "day": 7,
+        "month": 11,
+        "year": 2026
+      },
       "description": "Inkling - Thinking Machines multimodal (audio+vision) MoE. Inkling is the first open-weights model released by Thinking Machines Lab. It is a 975B Mixture-of-Experts with 41B active parameters, trained natively across text, image, and audio. Built as a broad generalist foundation for fine-tuning, with controllable thinking effort.",
       "displayName": "Inkling",
       "enableVisionEncoderTuning": false,
@@ -10735,7 +10743,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-08-28T22:31:48.375402Z",
+      "updateTime": "2026-10-20T07:03:59.935113Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
@@ -19207,7 +19215,11 @@
       "defaultDraftTokenCount": 0,
       "defaultSamplingParams": {},
       "deployedModelRefs": [],
-      "deprecationDate": null,
+      "deprecationDate": {
+        "day": 7,
+        "month": 11,
+        "year": 2026
+      },
       "description": "Nemotron-3-Ultra-550B-A55B-NVFP4 is a frontier-scale large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for the most demanding workloads, including complex multi-step agents, long-context analysis, and high-accuracy reasoning over code, math, and science. The model employs a hybrid Latent Mixture-of-Experts (LatentMoE) architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. Like the Super model, the Ultra model incorporates Multi-Token Prediction (MTP) layers for faster text generation and improved quality, and it is trained using an NVFP4 pre-training recipe to maximize compute efficiency. The model has 55B active parameters and 550B parameters in total.",
       "displayName": "NVIDIA Nemotron 3 Ultra NVFP4",
       "enableVisionEncoderTuning": false,
@@ -19243,7 +19255,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-08-28T22:31:48.375402Z",
+      "updateTime": "2026-10-20T07:04:01.136612Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
     },
@@ -19273,7 +19285,11 @@
       "defaultDraftTokenCount": 0,
       "defaultSamplingParams": {},
       "deployedModelRefs": [],
-      "deprecationDate": null,
+      "deprecationDate": {
+        "day": 7,
+        "month": 11,
+        "year": 2026
+      },
       "description": "Nemotron-Lightning-3.5-30B-A3B is a 30B-parameter Mixture-of-Experts language model (3B active) from NVIDIA's Nemotron-H family, built on a hybrid Mamba-Transformer architecture for efficient long-context inference. Like other models in the family, it responds to queries by first generating a reasoning trace and then concluding with a final response, with reasoning behavior configurable through a flag in the chat template. It includes a multi-token prediction (MTP) speculative decoding head for low-latency serving.",
       "displayName": "Nemotron Lightning 3.5 30B A3B",
       "enableVisionEncoderTuning": false,
@@ -19309,7 +19325,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 131072,
-      "updateTime": "2026-09-29T08:13:00.421684Z",
+      "updateTime": "2026-10-20T07:04:02.531261Z",
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
     },
