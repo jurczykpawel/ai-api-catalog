@@ -4549,6 +4549,29 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "eleven-realtime",
+      "name": "Eleven Realtime",
+      "category": "audio_tts",
+      "description": "Real-time speech-to-speech model optimized for low-latency AI conversations, with v1 Max variant achieving 98.8% on Big Bench Audio benchmark and 0.57-second response time.",
+      "tags": [
+        "elevenlabs"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-10-21",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "elevenlabs",
+          "pricing": {
+            "notes": "Check current pricing"
+          },
+          "url": "https://elevenlabs.io/docs/api-reference/speech-to-speech",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     }
   ]
 }
