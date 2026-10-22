@@ -1162,7 +1162,7 @@
           "fast",
           "audio"
         ],
-        "updated_at": "2026-10-19T21:56:02.820Z",
+        "updated_at": "2026-10-21T15:17:05.730Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aae8ccd/cfm_KIh1OltujxYuHIzzV.jpg",
         "model_url": "https://fal.run/blackforestlabs/flux-3-max/text-to-video",
@@ -3347,7 +3347,7 @@
           "video-editing",
           "character-replacement"
         ],
-        "updated_at": "2026-10-19T14:47:29.186Z",
+        "updated_at": "2026-10-21T20:31:41.459Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aacabd7/P2ptkl7_WVxobibHV7Ti7.jpg",
         "model_url": "https://fal.run/minimax/h3-max/recast",
@@ -12756,7 +12756,7 @@
           "transform",
           "lipsync"
         ],
-        "updated_at": "2026-10-20T22:28:40.471Z",
+        "updated_at": "2026-10-21T15:16:16.333Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aa4eec9/YRkVDI1WNJNET3ET9H26M.jpg",
         "model_url": "https://fal.run/blackforestlabs/flux-3/text-to-video/draft",
@@ -33741,7 +33741,270 @@
         "pinned": false
       },
       "_our_category": "image_generation"
+    },
+    {
+      "endpoint_id": "heygen/heygen-video/text-to-video",
+      "metadata": {
+        "display_name": "HeyGen Video Text to Video",
+        "category": "text-to-video",
+        "description": "HeyGen Video, built on MiniMax H3 and post-trained by HeyGen, turns a prompt into a 5 to 15 second clip with its own sound.",
+        "status": "active",
+        "tags": [
+          "heygen",
+          "text-to-video",
+          "audio",
+          "video"
+        ],
+        "updated_at": "2026-10-21T21:01:35.526Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf310e/ILb3IF4i4sFXwWa_JvJca.jpg",
+        "model_url": "https://fal.run/heygen/heygen-video/text-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-20T22:42:24.099Z",
+        "group": {
+          "key": "heygen-video",
+          "label": "Text to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "heygen/heygen-video/image-to-video",
+      "metadata": {
+        "display_name": "HeyGen Video Image to Video",
+        "category": "image-to-video",
+        "description": "HeyGen Video animates your image as the first frame of a 5 to 15 second clip, with generated sound, built on MiniMax H3 and post-trained by HeyGen.",
+        "status": "active",
+        "tags": [
+          "heygen",
+          "image-to-video",
+          "audio",
+          "video"
+        ],
+        "updated_at": "2026-10-21T21:01:22.831Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf314c/yeLGH-MM-_N78NxqoZ9Rj.jpg",
+        "model_url": "https://fal.run/heygen/heygen-video/image-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-20T22:36:17.886Z",
+        "group": {
+          "key": "heygen-video",
+          "label": "Image to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "heygen/heygen-video/reference-to-video",
+      "metadata": {
+        "display_name": "HeyGen Video Reference to Video",
+        "category": "image-to-video",
+        "description": "HeyGen Video builds a new 5 to 15 second scene with sound that keeps the products, people or places from your reference images, videos or audio.",
+        "status": "active",
+        "tags": [
+          "heygen",
+          "reference-to-video",
+          "audio",
+          "video"
+        ],
+        "updated_at": "2026-10-21T21:01:16.582Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf3125/dgnBBX3mq3uzXTqTgOuOM.jpg",
+        "model_url": "https://fal.run/heygen/heygen-video/reference-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-20T22:33:27.250Z",
+        "group": {
+          "key": "heygen-video",
+          "label": "Reference to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "heygen/heygen-voice",
+      "metadata": {
+        "display_name": "HeyGen Voice",
+        "category": "text-to-speech",
+        "description": "HeyGen Voice turns text into natural speech with a library voice or an instant clone from a reference clip.",
+        "status": "active",
+        "tags": [
+          "heygen",
+          "text-to-speech",
+          "tts",
+          "voice cloning"
+        ],
+        "updated_at": "2026-10-21T21:01:06.377Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf3121/SYQYxjbCy5qaMJKYlhY8y.jpg",
+        "model_url": "https://fal.run/heygen/heygen-voice",
+        "license_type": "commercial",
+        "date": "2026-10-20T22:33:02.360Z",
+        "group": {
+          "key": "heygen-voice",
+          "label": "Standard"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "audio_tts"
+    },
+    {
+      "endpoint_id": "heygen/heygen-voice/turbo",
+      "metadata": {
+        "display_name": "HeyGen Voice Turbo",
+        "category": "text-to-speech",
+        "description": "HeyGen Voice Turbo is the fast, low-cost tier of HeyGen Voice, with library voices and instant cloning from a reference clip.",
+        "status": "active",
+        "tags": [
+          "heygen",
+          "text-to-speech",
+          "tts",
+          "voice cloning",
+          "turbo"
+        ],
+        "updated_at": "2026-10-21T21:00:59.636Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf3122/Zv-3HScnTaRrOrw9g3ze-.jpg",
+        "model_url": "https://fal.run/heygen/heygen-voice/turbo",
+        "license_type": "commercial",
+        "date": "2026-10-20T22:32:38.032Z",
+        "group": {
+          "key": "heygen-voice",
+          "label": "Turbo"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "audio_tts"
+    },
+    {
+      "endpoint_id": "kling/v4/video-to-video/edit",
+      "metadata": {
+        "display_name": "Kling 4.0 Video Editing",
+        "category": "video-to-video",
+        "description": "Kling 4.0 edits an input video using text instructions and optional image references, producing 3 to 30-second videos at 720p or 1080p. Kling 4.0 is available in the playground and fal Agent. API access is coming soon.",
+        "status": "active",
+        "tags": [
+          "video-to-video",
+          "video-editing",
+          "image-reference",
+          "kling"
+        ],
+        "updated_at": "2026-10-21T18:08:16.439Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaea01a/b-K4ZK92VhCWa6fE4LMS9.jpg",
+        "model_url": "https://fal.run/kling/v4/video-to-video/edit",
+        "license_type": "commercial",
+        "date": "2026-10-16T15:21:55.287Z",
+        "group": {
+          "key": "kling-v4",
+          "label": "Video Editing"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "kling/v4/text-to-video",
+      "metadata": {
+        "display_name": "Kling 4.0 Text to Video",
+        "category": "text-to-video",
+        "description": "Kling 4.0 generates videos from text prompts at 720p or 1080p, with durations from 3 to 30 seconds and support for per-shot prompts. Kling 4.0 is available in the playground and fal Agent. API access is coming soon.",
+        "status": "active",
+        "tags": [
+          "text-to-video",
+          "multi-shot",
+          "cinematic",
+          "kling"
+        ],
+        "updated_at": "2026-10-21T18:07:47.838Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aae9ff4/BBn7FmeY6HUb0EJgkXkWJ.jpg",
+        "model_url": "https://fal.run/kling/v4/text-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-16T15:18:34.007Z",
+        "group": {
+          "key": "kling-v4",
+          "label": "Text to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "kling/v4/image-to-video",
+      "metadata": {
+        "display_name": "Kling 4.0 Image to Video",
+        "category": "image-to-video",
+        "description": "Kling 4.0 animates a starting image into a 3 to 30-second video at 720p or 1080p, with optional ending frames and per-shot prompts. Kling 4.0 is available in the playground and fal Agent. API access is coming soon.",
+        "status": "active",
+        "tags": [
+          "image-to-video",
+          "multi-shot",
+          "cinematic",
+          "kling"
+        ],
+        "updated_at": "2026-10-21T18:07:57.959Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaea00f/kDSSuRNelHs4Q40pk4QFR.jpg",
+        "model_url": "https://fal.run/kling/v4/image-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-16T15:20:11.407Z",
+        "group": {
+          "key": "kling-v4",
+          "label": "Image to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
+    },
+    {
+      "endpoint_id": "kling/v4/reference-to-video",
+      "metadata": {
+        "display_name": "Kling 4.0 Reference to Video",
+        "category": "video-to-video",
+        "description": "Kling 4.0 generates videos from text prompts and image or video references at 720p or 1080p, with durations from 3 to 30 seconds and per-shot prompts. Kling 4.0 is available in the playground and fal Agent. API access is coming soon.",
+        "status": "active",
+        "tags": [
+          "reference-to-video",
+          "multi-shot",
+          "image-reference",
+          "video-reference",
+          "kling"
+        ],
+        "updated_at": "2026-10-21T22:11:08.589Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaea014/-781kCHOSCW9vaMcaPfMS.jpg",
+        "model_url": "https://fal.run/kling/v4/reference-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-16T15:21:08.011Z",
+        "group": {
+          "key": "kling-v4",
+          "label": "Reference to Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
     }
   ],
-  "total_fetched": 1516
+  "total_fetched": 1525
 }
