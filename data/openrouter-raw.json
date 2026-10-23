@@ -1252,7 +1252,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-10-20T22:33:25.779Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -2568,18 +2568,18 @@
     },
     {
       "slug": "minimax/minimax-m3.1-flash",
-      "hf_slug": null,
-      "updated_at": "2026-10-20T17:19:06.082Z",
+      "hf_slug": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "updated_at": "2026-10-23T01:33:06.223Z",
       "created_at": "2026-10-19T03:12:49.576Z",
       "hf_updated_at": null,
-      "name": "MiniMax: MiniMax M3.1 Flash (free)",
-      "short_name": "MiniMax M3.1 Flash (free)",
+      "name": "MiniMax: MiniMax M3.1 Flash",
+      "short_name": "MiniMax M3.1 Flash",
       "author": "minimax",
       "author_display_name": "MiniMax",
       "author_icon_uri": null,
-      "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex, multi-step co-work automation, understanding real codebases, fixing bugs, and building features, and visual understanding and creation, including frontend and presentation creation. Open weights are planned.",
+      "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex, multi-step co-work automation, understanding real codebases, fixing bugs, and building features, and visual understanding and creation, including frontend and presentation creation. It is an open-weight mixture-of-experts model with 23B active / 428B total parameters.",
       "model_version_group_id": null,
-      "context_length": 1000000,
+      "context_length": 1048576,
       "input_modalities": [
         "text",
         "image",
@@ -2595,7 +2595,7 @@
       "default_stops": [],
       "hidden": false,
       "router": null,
-      "warning_message": "Free launch period ends Thursday, Oct 22, 2026 at 12:00 UTC (72h after launch). After that, `minimax/minimax-m3.1-flash` is served at MiniMax list price ($0.15/M input, $0.60/M output, $0.015/M cached input) and the `:free` variant is retired; switch to the base slug to avoid interruption.",
+      "warning_message": "The free launch period ended Oct 22, 2026. MiniMax M3.1 Flash is now served at list price ($0.15/M input, $0.60/M output, $0.015/M cached input).",
       "promotion_message": null,
       "routing_error_message": "The free launch period for MiniMax M3.1 Flash ended on Oct 22, 2026. The `:free` variant has been retired; use `minimax/minimax-m3.1-flash` (list price: $0.15/M input, $0.60/M output) instead.",
       "required_attestation_types": [],
@@ -2649,13 +2649,13 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "77430d33-e8ad-45fb-9170-e9a23e6c58f7",
-        "name": "Minimax | minimax/minimax-m3.1-flash-20261019:free",
+        "id": "4ea7752e-fcf8-4725-b282-b7d87434971d",
+        "name": "InferenceNet | minimax/minimax-m3.1-flash-20261019",
         "context_length": 1000000,
         "model": {
           "slug": "minimax/minimax-m3.1-flash",
-          "hf_slug": null,
-          "updated_at": "2026-10-20T17:19:06.082486+00:00",
+          "hf_slug": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "updated_at": "2026-10-23T01:33:06.22333+00:00",
           "created_at": "2026-10-19T03:12:49.576464+00:00",
           "hf_updated_at": null,
           "name": "MiniMax: MiniMax M3.1 Flash",
@@ -2663,9 +2663,9 @@
           "author": "minimax",
           "author_display_name": "MiniMax",
           "author_icon_uri": null,
-          "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex, multi-step co-work automation, understanding real codebases, fixing bugs, and building features, and visual understanding and creation, including frontend and presentation creation. Open weights are planned.",
+          "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex, multi-step co-work automation, understanding real codebases, fixing bugs, and building features, and visual understanding and creation, including frontend and presentation creation. It is an open-weight mixture-of-experts model with 23B active / 428B total parameters.",
           "model_version_group_id": null,
-          "context_length": 1000000,
+          "context_length": 1048576,
           "input_modalities": [
             "text",
             "image",
@@ -2681,7 +2681,7 @@
           "default_stops": [],
           "hidden": false,
           "router": null,
-          "warning_message": "Free launch period ends Thursday, Oct 22, 2026 at 12:00 UTC (72h after launch). After that, `minimax/minimax-m3.1-flash` is served at MiniMax list price ($0.15/M input, $0.60/M output, $0.015/M cached input) and the `:free` variant is retired; switch to the base slug to avoid interruption.",
+          "warning_message": "The free launch period ended Oct 22, 2026. MiniMax M3.1 Flash is now served at list price ($0.15/M input, $0.60/M output, $0.015/M cached input).",
           "promotion_message": null,
           "routing_error_message": "The free launch period for MiniMax M3.1 Flash ended on Oct 22, 2026. The `:free` variant has been retired; use `minimax/minimax-m3.1-flash` (list price: $0.15/M input, $0.60/M output) instead.",
           "required_attestation_types": [],
@@ -2735,53 +2735,50 @@
           "limit_rpd": null,
           "supported_tts_voices": null
         },
-        "model_variant_slug": "minimax/minimax-m3.1-flash:free",
-        "model_variant_permaslug": "minimax/minimax-m3.1-flash-20261019:free",
-        "adapter_name": "MinimaxAdapter",
-        "provider_name": "Minimax",
+        "model_variant_slug": "minimax/minimax-m3.1-flash",
+        "model_variant_permaslug": "minimax/minimax-m3.1-flash-20261019",
+        "adapter_name": "InferenceNetAdapter",
+        "provider_name": "InferenceNet",
         "provider_info": {
-          "name": "Minimax",
-          "displayName": "MiniMax",
-          "slug": "minimax",
-          "baseUrl": "https://api.minimaxi.chat/v1",
+          "name": "InferenceNet",
+          "displayName": "inference.net",
+          "slug": "inference-net",
+          "baseUrl": "https://api.inference.net/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.minimax.io/platform/protocol/terms-of-service",
-            "privacyPolicyURL": "https://www.minimax.io/platform/protocol/privacy-policy",
+            "termsOfServiceURL": "https://inference.net/terms-of-service",
+            "privacyPolicyURL": "https://inference.net/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "SG",
-          "datacenters": [
-            "US"
-          ],
+          "headquarters": "US",
           "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
+          "hasCompletions": true,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "MinimaxAdapter",
-          "statusPageUrl": null,
+          "adapterName": "InferenceNetAdapter",
+          "statusPageUrl": "https://status.inference.net",
           "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://minimaxi.com/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://inference.net/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "minimax",
-        "provider_display_name": "MiniMax",
-        "provider_slug": "minimax",
+        "provider_permaslug": "inference-net",
+        "provider_display_name": "inference.net",
+        "provider_slug": "inference-net/fp4",
         "derived_service_tier": null,
-        "provider_model_id": "MiniMax-M3.1-Flash",
-        "quantization": "unknown",
-        "variant": "free",
-        "is_free": true,
-        "can_abort": false,
+        "provider_model_id": "minimax-m3.1-flash",
+        "quantization": "fp4",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
         "max_completion_tokens": 524288,
         "max_tokens_per_image": null,
@@ -2791,40 +2788,58 @@
           "max_tokens",
           "temperature",
           "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "top_k",
+          "min_p",
+          "logit_bias",
+          "response_format",
+          "structured_outputs",
+          "repetition_penalty",
           "tools",
-          "tool_choice",
-          "response_format"
+          "tool_choice"
         ],
         "excluded_parameters": [
-          "seed"
+          "top_logprobs",
+          "logprobs"
         ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.minimax.io/platform/protocol/terms-of-service",
-          "privacyPolicyURL": "https://www.minimax.io/platform/protocol/privacy-policy"
+          "termsOfServiceURL": "https://inference.net/terms-of-service",
+          "privacyPolicyURL": "https://inference.net/privacy-policy"
         },
         "pricing": {
-          "prompt": "0",
-          "completion": "0",
+          "prompt": "0.0000001",
+          "completion": "0.00000055",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0",
+              "price": "0.0000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0",
+              "price": "0.00000055",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.00000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -2835,24 +2850,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0",
+            "price": "0.0000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0",
+            "price": "0.00000055",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.00000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0",
-          "openai:completion_tokens": "0",
-          "openai:cached_prompt_tokens": "0"
+          "openai:prompt_tokens": "0.0000001",
+          "openai:completion_tokens": "0.00000055",
+          "openai:cached_prompt_tokens": "0.00000001"
         },
-        "pricing_version_id": "9e94cc4e-e48b-4305-97ad-c4104c7bd86e",
+        "pricing_version_id": "344f02db-87cb-44d1-96c0-b494a27331fe",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -2863,28 +2885,29 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 4000,
+        "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
-          "disable_free_endpoint_limits": true,
+          "supports_base64_video_input": false,
+          "supports_video_urls": false,
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
-        "provider_region": null,
+        "provider_region": "us",
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-10-19T03:16:10.733Z",
+        "created_at": "2026-10-23T01:36:03.546Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -3197,7 +3220,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": null,
+        "limit_rpm": 100,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -7561,7 +7584,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 150000,
+        "capacity_tpm": 5000000,
         "created_at": "2026-10-16T20:21:00.271Z",
         "status": 0
       },
@@ -8185,7 +8208,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-10-09T14:42:24.102Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -8779,7 +8802,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-10-17T21:09:06.397Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -9817,7 +9840,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-10-17T21:09:06.397Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -25498,7 +25521,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-29T01:20:24.516Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -26450,7 +26473,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-29T01:08:23.283Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -38218,9 +38241,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "e4495a5b-36ee-45b8-be70-95af1fa34dc7",
-        "name": "Darkbloom | xiaomi/mimo-v2.6-flash-20260921",
-        "context_length": 1048576,
+        "id": "26aaacd7-6d71-4b8a-a902-f264dccea66c",
+        "name": "Io Net | xiaomi/mimo-v2.6-flash-20260921",
+        "context_length": 1048320,
         "model": {
           "slug": "xiaomi/mimo-v2.6-flash",
           "hf_slug": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
@@ -38291,67 +38314,70 @@
         },
         "model_variant_slug": "xiaomi/mimo-v2.6-flash",
         "model_variant_permaslug": "xiaomi/mimo-v2.6-flash-20260921",
-        "adapter_name": "DarkbloomAdapter",
-        "provider_name": "Darkbloom",
+        "adapter_name": "IonetAdapter",
+        "provider_name": "Io Net",
         "provider_info": {
-          "name": "Darkbloom",
-          "displayName": "Darkbloom",
-          "slug": "darkbloom",
-          "baseUrl": "https://api.darkbloom.dev/v1",
+          "name": "Io Net",
+          "displayName": "io.net",
+          "slug": "io-net",
+          "baseUrl": "https://api.intelligence.io.solutions/api/openrouter/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
+            "termsOfServiceURL": "https://io.net/terms",
+            "privacyPolicyURL": "https://io.net/privacy",
             "requiresUserIDs": false
           },
+          "headquarters": "US",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
-          "isAbortable": false,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DarkbloomAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": false,
+          "adapterName": "IonetAdapter",
+          "statusPageUrl": "https://status.io.net/",
+          "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "/images/icons/Darkbloom.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://io.net/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "darkbloom",
-        "provider_display_name": "Darkbloom",
-        "provider_slug": "darkbloom/fp4",
+        "provider_permaslug": "io-net",
+        "provider_display_name": "io.net",
+        "provider_slug": "io-net/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "mimo-v2.6-flash-mopd",
-        "quantization": "fp4",
+        "provider_model_id": "XiaomiMiMo/MiMo-V2.6-Flash",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
+        "can_abort": true,
         "max_prompt_tokens": null,
         "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "temperature",
-          "top_p",
-          "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
           "max_tokens",
-          "response_format",
-          "structured_outputs",
+          "temperature",
+          "seed",
+          "stop",
+          "top_k",
+          "top_p",
+          "presence_penalty",
+          "frequency_penalty",
+          "repetition_penalty",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "logprobs",
+          "top_logprobs",
+          "response_format",
+          "structured_outputs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -38359,16 +38385,16 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
+          "termsOfServiceURL": "https://io.net/terms",
+          "privacyPolicyURL": "https://io.net/privacy"
         },
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.00000028",
-          "input_cache_read": "0.00000005",
+          "input_cache_read": "0.000000003",
           "discount": 0,
           "display_pricing": [
             {
@@ -38388,7 +38414,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000005",
+              "price": "0.000000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -38413,7 +38439,7 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000005",
+            "price": "0.000000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -38421,9 +38447,9 @@
         "pricing_json": {
           "openai:prompt_tokens": "0.0000001",
           "openai:completion_tokens": "0.00000028",
-          "openai:cached_prompt_tokens": "0.00000005"
+          "openai:cached_prompt_tokens": "0.000000003"
         },
-        "pricing_version_id": "dcee511e-595e-4aaa-a880-09df6335dbd4",
+        "pricing_version_id": "feba5357-897c-46c9-9409-2b9cea3db6a2",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -38434,16 +38460,18 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": null,
+        "limit_rpm": 90,
         "limit_rpd": null,
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
+          "supports_base64_image_input": true,
+          "supports_image_urls": true,
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -38454,7 +38482,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-30T05:01:48.568Z",
+        "created_at": "2026-10-02T13:37:18.371Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -39530,7 +39558,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-21T03:06:01.448Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -40956,7 +40984,7 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000002235",
+          "prompt": "0.0000002247",
           "completion": "0.000008",
           "input_cache_read": "0.00000022",
           "discount": 0,
@@ -40964,7 +40992,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000002235",
+              "price": "0.0000002247",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -40989,7 +41017,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000002235",
+            "price": "0.0000002247",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -41009,11 +41037,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000002235",
+          "openai:prompt_tokens": "0.0000002247",
           "openai:completion_tokens": "0.000008",
           "openai:cached_prompt_tokens": "0.00000022"
         },
-        "pricing_version_id": "27014bea-301b-4748-adc6-6d8e5dcb2026",
+        "pricing_version_id": "118d6ef9-a7d6-4662-8d3d-a05614d22d49",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -41365,7 +41393,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": null,
+        "limit_rpm": 100,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -43118,7 +43146,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-29T01:08:23.283Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -46145,7 +46173,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 20,
+        "limit_rpm": 75,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -54297,29 +54325,29 @@
           "privacyPolicyURL": "https://deepinfra.com/privacy"
         },
         "pricing": {
-          "prompt": "0.000000834",
-          "completion": "0.000002501",
-          "input_cache_read": "0.000000042",
-          "discount": 0,
+          "prompt": "0.0000007923",
+          "completion": "0.00000237595",
+          "input_cache_read": "0.0000000399",
+          "discount": 0.05,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000834",
+              "price": "0.0000007923",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000002501",
+              "price": "0.00000237595",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000042",
+              "price": "0.0000000399",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -54330,21 +54358,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000834",
+            "price": "0.0000007923",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000002501",
+            "price": "0.00000237595",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000042",
+            "price": "0.0000000399",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -54997,29 +55025,29 @@
           "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.0000000071",
-          "completion": "0.000000188",
-          "input_cache_read": "0.0000000071",
+          "prompt": "0.0000000052",
+          "completion": "0.0000001985",
+          "input_cache_read": "0.0000000052",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000071",
+              "price": "0.0000000052",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000188",
+              "price": "0.0000001985",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000071",
+              "price": "0.0000000052",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -55030,31 +55058,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000071",
+            "price": "0.0000000052",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000188",
+            "price": "0.0000001985",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000071",
+            "price": "0.0000000052",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000071",
-          "openai:completion_tokens": "0.000000188",
-          "openai:cached_prompt_tokens": "0.0000000071"
+          "openai:prompt_tokens": "0.0000000052",
+          "openai:completion_tokens": "0.0000001985",
+          "openai:cached_prompt_tokens": "0.0000000052"
         },
-        "pricing_version_id": "c0c8ba0c-a22f-42b3-9302-0337dde8e419",
+        "pricing_version_id": "20b3b0b4-05b8-44dd-a5e0-fc11b474ad38",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -55065,7 +55093,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 20,
+        "limit_rpm": 100,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -55930,29 +55958,29 @@
           "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.0000000071",
-          "completion": "0.000000188",
-          "input_cache_read": "0.0000000071",
+          "prompt": "0.0000000052",
+          "completion": "0.0000001985",
+          "input_cache_read": "0.0000000052",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000071",
+              "price": "0.0000000052",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000188",
+              "price": "0.0000001985",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000071",
+              "price": "0.0000000052",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -55963,31 +55991,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000071",
+            "price": "0.0000000052",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000188",
+            "price": "0.0000001985",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000071",
+            "price": "0.0000000052",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000071",
-          "openai:completion_tokens": "0.000000188",
-          "openai:cached_prompt_tokens": "0.0000000071"
+          "openai:prompt_tokens": "0.0000000052",
+          "openai:completion_tokens": "0.0000001985",
+          "openai:cached_prompt_tokens": "0.0000000052"
         },
-        "pricing_version_id": "c0c8ba0c-a22f-42b3-9302-0337dde8e419",
+        "pricing_version_id": "20b3b0b4-05b8-44dd-a5e0-fc11b474ad38",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -55998,7 +56026,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 20,
+        "limit_rpm": 100,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -57944,7 +57972,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-24T20:42:38.104Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -61331,9 +61359,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "c02dc976-15cf-47bb-9d26-bd5250f94b8d",
-        "name": "Darkbloom | qwen/qwen3.8-27b-20260814",
-        "context_length": 262144,
+        "id": "214262f7-b9f8-44a9-860d-001c353a9fb7",
+        "name": "Tenstorrent | qwen/qwen3.8-27b-20260814",
+        "context_length": 65421,
         "model": {
           "slug": "qwen/qwen3.8-27b",
           "hf_slug": "Qwen/Qwen3.8-27B",
@@ -61423,50 +61451,53 @@
         },
         "model_variant_slug": "qwen/qwen3.8-27b",
         "model_variant_permaslug": "qwen/qwen3.8-27b-20260814",
-        "adapter_name": "DarkbloomAdapter",
-        "provider_name": "Darkbloom",
+        "adapter_name": "TenstorrentAdapter",
+        "provider_name": "Tenstorrent",
         "provider_info": {
-          "name": "Darkbloom",
-          "displayName": "Darkbloom",
-          "slug": "darkbloom",
-          "baseUrl": "https://api.darkbloom.dev/v1",
+          "name": "Tenstorrent",
+          "displayName": "Tenstorrent",
+          "slug": "tenstorrent",
+          "baseUrl": "https://console.tenstorrent.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
+            "termsOfServiceURL": "https://console.tenstorrent.com/terms",
+            "privacyPolicyURL": "https://tenstorrent.com/privacy",
             "requiresUserIDs": false
           },
-          "datacenters": [],
+          "headquarters": "US",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DarkbloomAdapter",
-          "statusPageUrl": null,
+          "adapterName": "TenstorrentAdapter",
+          "statusPageUrl": "https://status.tenstorrent.com/",
           "byokEnabled": false,
           "isPrivate": false,
           "icon": {
-            "url": "/images/icons/Darkbloom.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tenstorrent.com&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "darkbloom",
-        "provider_display_name": "Darkbloom",
-        "provider_slug": "darkbloom/fp4",
+        "provider_permaslug": "tenstorrent",
+        "provider_display_name": "Tenstorrent",
+        "provider_slug": "tenstorrent/fp4",
         "derived_service_tier": null,
-        "provider_model_id": "EigenLabs/Qwen3.8-27B-4bit-mtp",
+        "provider_model_id": "Qwen/Qwen3.8-27B",
         "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 32768,
+        "max_completion_tokens": 65536,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -61474,55 +61505,53 @@
           "temperature",
           "top_p",
           "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
           "stop",
           "seed",
           "max_tokens",
-          "response_format",
-          "structured_outputs",
           "tools",
           "tool_choice",
           "logprobs",
           "top_logprobs"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "response_format",
+          "structured_outputs"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
+          "termsOfServiceURL": "https://console.tenstorrent.com/terms",
+          "privacyPolicyURL": "https://tenstorrent.com/privacy"
         },
         "pricing": {
-          "prompt": "0.000000035",
-          "completion": "0.0000022",
-          "input_cache_read": "0.0000000175",
+          "prompt": "0.00000002",
+          "completion": "0.0000005",
+          "input_cache_read": "0.000000009",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000035",
+              "price": "0.00000002",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000022",
+              "price": "0.0000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000175",
+              "price": "0.000000009",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -61533,31 +61562,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000035",
+            "price": "0.00000002",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000022",
+            "price": "0.0000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000175",
+            "price": "0.000000009",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000035",
-          "openai:completion_tokens": "0.0000022",
-          "openai:cached_prompt_tokens": "0.0000000175"
+          "openai:prompt_tokens": "0.00000002",
+          "openai:completion_tokens": "0.0000005",
+          "openai:cached_prompt_tokens": "0.000000009"
         },
-        "pricing_version_id": "fd76c3e9-7de9-49b2-b695-a87a92eb1f62",
+        "pricing_version_id": "10fe7220-610b-4668-aff5-aec7a95ca01e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -61574,10 +61603,10 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -61585,10 +61614,10 @@
         "supported_stt_parameters": null,
         "provider_region": null,
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2027-01-01T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-03T22:17:07.864Z",
+        "created_at": "2026-10-10T22:21:38.207Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -66402,7 +66431,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
+        "capacity_tpm": 47000000,
         "created_at": "2026-08-26T18:19:10.609Z",
         "status": 0
       },
@@ -67005,7 +67034,7 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000002235",
+          "prompt": "0.0000002247",
           "completion": "0.000008",
           "input_cache_read": "0.00000022",
           "discount": 0,
@@ -67013,7 +67042,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000002235",
+              "price": "0.0000002247",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -67038,7 +67067,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000002235",
+            "price": "0.0000002247",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -67058,11 +67087,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000002235",
+          "openai:prompt_tokens": "0.0000002247",
           "openai:completion_tokens": "0.000008",
           "openai:cached_prompt_tokens": "0.00000022"
         },
-        "pricing_version_id": "27014bea-301b-4748-adc6-6d8e5dcb2026",
+        "pricing_version_id": "118d6ef9-a7d6-4662-8d3d-a05614d22d49",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -72266,7 +72295,7 @@
           "openai:completion_tokens": "0.0000001568",
           "openai:cached_prompt_tokens": "0.000000028"
         },
-        "pricing_version_id": "6f7b4bdd-d67c-4abe-b500-f25d2a432635",
+        "pricing_version_id": "9d7b115b-0478-4660-8413-6b1c87ffae6c",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -72601,7 +72630,7 @@
           "openai:completion_tokens": "0.0000001568",
           "openai:cached_prompt_tokens": "0.000000028"
         },
-        "pricing_version_id": "6f7b4bdd-d67c-4abe-b500-f25d2a432635",
+        "pricing_version_id": "9d7b115b-0478-4660-8413-6b1c87ffae6c",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -84218,8 +84247,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "d6b9d68e-115a-49d7-81cd-1ad1c6942b0e",
-        "name": "DeepInfra | thinkingmachines/inkling-20260715",
+        "id": "9911deb9-f44e-4e18-87fe-9d7b60acee72",
+        "name": "Together | thinkingmachines/inkling-20260715",
         "context_length": 524288,
         "model": {
           "slug": "thinkingmachines/inkling",
@@ -84319,21 +84348,21 @@
         },
         "model_variant_slug": "thinkingmachines/inkling",
         "model_variant_permaslug": "thinkingmachines/inkling-20260715",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "TogetherAdapter",
+        "provider_name": "Together",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://api.deepinfra.com/v1/openai",
+          "name": "Together",
+          "displayName": "Together",
+          "slug": "together",
+          "baseUrl": "https://api-inference.together.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://www.together.ai/terms-of-service",
+            "privacyPolicyURL": "https://www.together.ai/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
@@ -84342,27 +84371,27 @@
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "TogetherAdapter",
+          "statusPageUrl": "https://status.together.ai/",
           "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "/images/icons/DeepInfra.webp"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.together.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "deepinfra",
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp8",
+        "provider_permaslug": "together",
+        "provider_display_name": "Together",
+        "provider_slug": "together",
         "derived_service_tier": null,
         "provider_model_id": "thinkingmachines/Inkling",
-        "quantization": "fp8",
+        "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -84373,13 +84402,12 @@
           "stop",
           "frequency_penalty",
           "presence_penalty",
-          "repetition_penalty",
           "top_k",
-          "seed",
+          "repetition_penalty",
+          "logit_bias",
           "min_p",
           "tools",
-          "tool_choice",
-          "logit_bias"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -84390,19 +84418,19 @@
           "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://www.together.ai/terms-of-service",
+          "privacyPolicyURL": "https://www.together.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.00000095",
+          "prompt": "0.000001",
           "completion": "0.00000405",
-          "input_cache_read": "0.00000016",
+          "input_cache_read": "0.00000017",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000095",
+              "price": "0.000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -84416,7 +84444,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000016",
+              "price": "0.00000017",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -84427,7 +84455,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000095",
+            "price": "0.000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -84441,17 +84469,17 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000016",
+            "price": "0.00000017",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000095",
+          "openai:prompt_tokens": "0.000001",
           "openai:completion_tokens": "0.00000405",
-          "openai:cached_prompt_tokens": "0.00000016"
+          "openai:cached_prompt_tokens": "0.00000017"
         },
-        "pricing_version_id": "21d3d581-2fa6-442c-816d-480d03ea2c16",
+        "pricing_version_id": "01bac0c3-401e-498b-a34d-3662eeaa1322",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -84467,7 +84495,6 @@
         "has_completions": true,
         "has_chat_completions": true,
         "features": {
-          "reasoning_disabled_as": "reasoning_effort_none",
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -84478,12 +84505,12 @@
         "supported_video_parameters": null,
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "declared_region": null,
-        "deprecation_date": "2026-10-22T13:00:00.000Z",
+        "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-07-22T09:41:15.666Z",
+        "created_at": "2026-07-16T22:42:03.900Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -85323,7 +85350,7 @@
           "openai:completion_tokens": "0.000016",
           "openai:cached_prompt_tokens": "0.000000228"
         },
-        "pricing_version_id": "a377a4f1-3d68-4c9d-ac6b-435cd819352f",
+        "pricing_version_id": "af2c5ef9-218e-45d3-87c3-10f0be9affc8",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -103292,7 +103319,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-06-04T14:04:43.776Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -121094,7 +121121,10 @@
           "tools",
           "tool_choice",
           "logprobs",
-          "top_logprobs"
+          "top_logprobs",
+          "max_completion_tokens",
+          "parallel_tool_calls",
+          "reasoning_effort"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -121166,7 +121196,7 @@
           "openai:completion_tokens": "0.000016",
           "openai:cached_prompt_tokens": "0.000000228"
         },
-        "pricing_version_id": "a377a4f1-3d68-4c9d-ac6b-435cd819352f",
+        "pricing_version_id": "af2c5ef9-218e-45d3-87c3-10f0be9affc8",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -125271,8 +125301,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "deb583ce-a8c7-4034-b8df-7df27c8e162d",
-        "name": "Parasail | deepseek/deepseek-v4-pro-20260423",
+        "id": "2ea81970-3427-4ca6-a707-824832e58904",
+        "name": "Relace | deepseek/deepseek-v4-pro-20260423",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-pro",
@@ -125354,70 +125384,67 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260423",
-        "adapter_name": "ParasailAdapter",
-        "provider_name": "Parasail",
+        "adapter_name": "VLLMOpenAIAdapter",
+        "provider_name": "Relace",
         "provider_info": {
-          "name": "Parasail",
-          "displayName": "Parasail",
-          "slug": "parasail",
-          "baseUrl": "https://api.parasail.io/v1",
+          "name": "Relace",
+          "displayName": "Relace",
+          "slug": "relace",
+          "baseUrl": "https://models.relace.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://parasail.io/legal/terms-of-service",
-            "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy",
+            "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
+            "privacyPolicyURL": "https://www.relace.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "ParasailAdapter",
-          "statusPageUrl": null,
+          "adapterName": "VLLMOpenAIAdapter",
+          "statusPageUrl": "https://status.relace.ai",
           "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.parasail.io/&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://relace.ai&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "parasail",
-        "provider_display_name": "Parasail",
-        "provider_slug": "parasail/fp8",
+        "provider_permaslug": "relace",
+        "provider_display_name": "Relace",
+        "provider_slug": "relace/fp4",
         "derived_service_tier": null,
-        "provider_model_id": "parasail-deepseek-v4-pro",
-        "quantization": "fp8",
+        "provider_model_id": "deepseek-ai/DeepSeek-V4-Pro",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 393216,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
+          "top_k",
+          "min_p",
+          "stop",
+          "max_tokens",
+          "logit_bias",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "seed",
-          "stop",
-          "top_k",
-          "logit_bias",
-          "response_format",
-          "structured_outputs",
           "tools",
           "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "response_format"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -125428,33 +125455,33 @@
           "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://parasail.io/legal/terms-of-service",
-          "privacyPolicyURL": "https://www.parasail.io/legal/privacy-policy"
+          "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
+          "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000045",
-          "completion": "0.00000348",
-          "input_cache_read": "0.0000001",
+          "prompt": "0.0000009",
+          "completion": "0.0000015",
+          "input_cache_read": "0.00000025",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000045",
+              "price": "0.0000009",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000348",
+              "price": "0.0000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000001",
+              "price": "0.00000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -125465,31 +125492,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000045",
+            "price": "0.0000009",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000348",
+            "price": "0.0000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000001",
+            "price": "0.00000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000045",
-          "openai:completion_tokens": "0.00000348",
-          "openai:cached_prompt_tokens": "0.0000001"
+          "openai:prompt_tokens": "0.0000009",
+          "openai:completion_tokens": "0.0000015",
+          "openai:cached_prompt_tokens": "0.00000025"
         },
-        "pricing_version_id": "81f8ebe3-3664-4424-ba58-2568ecdeacdb",
+        "pricing_version_id": "b23da829-2754-4835-8deb-fd10777ac369",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -125502,14 +125529,14 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": false,
             "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
+            "literal_required": false,
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -125520,8 +125547,8 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-04-24T05:36:09.470Z",
-        "status": -2
+        "created_at": "2026-09-28T09:10:57.629Z",
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -127725,7 +127752,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-04-23T16:01:36.956Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -131976,503 +132003,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "bytedance/seedance-2.0-fast",
-      "hf_slug": null,
-      "updated_at": "2026-07-19T16:39:32.462Z",
-      "created_at": "2026-04-15T00:02:42.904Z",
-      "hf_updated_at": null,
-      "name": "ByteDance: Seedance 2.0 Fast",
-      "short_name": "Seedance 2.0 Fast",
-      "author": "bytedance",
-      "author_display_name": "bytedance",
-      "author_icon_uri": null,
-      "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
-      "model_version_group_id": null,
-      "context_length": 0,
-      "input_modalities": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output_modalities": [
-        "video"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "bytedance/seedance-2.0-fast-20260414",
-      "supports_reasoning": false,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "default_order": [],
-      "quick_start_example_type": "video_generation",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "a2a51aa0-13b6-4206-a022-2ea623cde439",
-        "name": "Seed | bytedance/seedance-2.0-fast-20260414",
-        "context_length": 0,
-        "model": {
-          "slug": "bytedance/seedance-2.0-fast",
-          "hf_slug": null,
-          "updated_at": "2026-07-19T16:39:32.462666+00:00",
-          "created_at": "2026-04-15T00:02:42.904726+00:00",
-          "hf_updated_at": null,
-          "name": "ByteDance: Seedance 2.0 Fast",
-          "short_name": "Seedance 2.0 Fast",
-          "author": "bytedance",
-          "author_display_name": "bytedance",
-          "author_icon_uri": null,
-          "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
-          "model_version_group_id": null,
-          "context_length": 0,
-          "input_modalities": [
-            "text",
-            "image",
-            "video",
-            "audio"
-          ],
-          "output_modalities": [
-            "video"
-          ],
-          "has_text_output": false,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "bytedance/seedance-2.0-fast-20260414",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": null,
-            "top_p": null,
-            "top_k": null,
-            "frequency_penalty": null,
-            "presence_penalty": null,
-            "repetition_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": "video_generation",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "bytedance/seedance-2.0-fast",
-        "model_variant_permaslug": "bytedance/seedance-2.0-fast-20260414",
-        "adapter_name": "BytePlusSeedanceAdapter",
-        "provider_name": "Seed",
-        "provider_info": {
-          "name": "Seed",
-          "displayName": "Seed",
-          "slug": "seed",
-          "baseUrl": "https://ark.ap-southeast.bytepluses.com/api/v3",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
-            "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy",
-            "requiresUserIDs": false
-          },
-          "headquarters": "SG",
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "BytePlusSeedanceAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": false,
-          "isPrivate": false,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://seed.bytedance.com/&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "seedance"
-        },
-        "provider_permaslug": "seed",
-        "provider_display_name": "Seed",
-        "provider_slug": "seed",
-        "derived_service_tier": null,
-        "provider_model_id": "dreamina-seedance-2-0-fast-260128",
-        "quantization": "unknown",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": null,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "frequency_penalty"
-        ],
-        "excluded_parameters": [
-          "temperature",
-          "top_p",
-          "tools",
-          "tool_choice",
-          "response_format",
-          "structured_outputs",
-          "seed",
-          "max_tokens"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
-          "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0",
-          "completion": "0",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "unit",
-              "sku_label": "Video (with audio)",
-              "price": "0.09072",
-              "displayMultiplier": 1,
-              "unitLabel": "/second",
-              "tiers": [
-                {
-                  "sku_label": "480p",
-                  "price": "0.0403536"
-                },
-                {
-                  "sku_label": "720p",
-                  "price": "0.09072"
-                },
-                {
-                  "sku_label": "1080p",
-                  "price": "0.20412"
-                },
-                {
-                  "sku_label": "4K",
-                  "price": "0.81648"
-                }
-              ]
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video (no audio)",
-              "price": "0.09072",
-              "displayMultiplier": 1,
-              "unitLabel": "/second",
-              "tiers": [
-                {
-                  "sku_label": "480p",
-                  "price": "0.0403536"
-                },
-                {
-                  "sku_label": "720p",
-                  "price": "0.09072"
-                },
-                {
-                  "sku_label": "1080p",
-                  "price": "0.20412"
-                },
-                {
-                  "sku_label": "4K",
-                  "price": "0.81648"
-                }
-              ]
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video (with video input)",
-              "price": "0.05346",
-              "displayMultiplier": 1,
-              "unitLabel": "/second",
-              "tiers": [
-                {
-                  "sku_label": "480p",
-                  "price": "0.0237798"
-                },
-                {
-                  "sku_label": "720p",
-                  "price": "0.05346"
-                },
-                {
-                  "sku_label": "1080p",
-                  "price": "0.120285"
-                },
-                {
-                  "sku_label": "4K",
-                  "price": "0.48114"
-                }
-              ]
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video Tokens (with audio)",
-              "price": "0.0000042",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video Tokens (no audio)",
-              "price": "0.0000042",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "unit",
-              "sku_label": "Video Tokens (with video input)",
-              "price": "0.000002475",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "display_pricing": [
-          {
-            "kind": "unit",
-            "sku_label": "Video (with audio)",
-            "price": "0.09072",
-            "displayMultiplier": 1,
-            "unitLabel": "/second",
-            "tiers": [
-              {
-                "sku_label": "480p",
-                "price": "0.0403536"
-              },
-              {
-                "sku_label": "720p",
-                "price": "0.09072"
-              },
-              {
-                "sku_label": "1080p",
-                "price": "0.20412"
-              },
-              {
-                "sku_label": "4K",
-                "price": "0.81648"
-              }
-            ]
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video (no audio)",
-            "price": "0.09072",
-            "displayMultiplier": 1,
-            "unitLabel": "/second",
-            "tiers": [
-              {
-                "sku_label": "480p",
-                "price": "0.0403536"
-              },
-              {
-                "sku_label": "720p",
-                "price": "0.09072"
-              },
-              {
-                "sku_label": "1080p",
-                "price": "0.20412"
-              },
-              {
-                "sku_label": "4K",
-                "price": "0.81648"
-              }
-            ]
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video (with video input)",
-            "price": "0.05346",
-            "displayMultiplier": 1,
-            "unitLabel": "/second",
-            "tiers": [
-              {
-                "sku_label": "480p",
-                "price": "0.0237798"
-              },
-              {
-                "sku_label": "720p",
-                "price": "0.05346"
-              },
-              {
-                "sku_label": "1080p",
-                "price": "0.120285"
-              },
-              {
-                "sku_label": "4K",
-                "price": "0.48114"
-              }
-            ]
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video Tokens (with audio)",
-            "price": "0.0000042",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video Tokens (no audio)",
-            "price": "0.0000042",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "unit",
-            "sku_label": "Video Tokens (with video input)",
-            "price": "0.000002475",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "seedance:video_tokens": "0.0000042",
-          "seedance:video_tokens_without_audio": "0.0000042",
-          "seedance:video_tokens_with_video_input": "0.000002475"
-        },
-        "pricing_version_id": "8993fe90-1b13-422a-9ce4-70ab8746112a",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": false,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": {
-          "supported_resolutions": null,
-          "supported_aspect_ratios": null,
-          "supported_sizes": [
-            "480x480",
-            "480x640",
-            "480x854",
-            "640x480",
-            "854x480",
-            "1120x480",
-            "720x720",
-            "720x960",
-            "720x1280",
-            "720x1680",
-            "960x720",
-            "1280x720",
-            "1680x720"
-          ],
-          "supported_durations": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
-          ],
-          "supported_frame_images": [
-            "first_frame",
-            "last_frame"
-          ],
-          "generate_audio": true,
-          "seed": true
-        },
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": null,
-        "allowed_passthrough_parameters": [
-          "watermark",
-          "req_key"
-        ],
-        "capacity_tpm": null,
-        "created_at": "2026-04-15T00:02:42.904Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "bytedance/seedance-2.0",
       "hf_slug": null,
       "updated_at": "2026-07-19T16:39:06.035Z",
@@ -133295,6 +132825,503 @@
           "video",
           "videos",
           "images"
+        ],
+        "capacity_tpm": null,
+        "created_at": "2026-04-15T00:02:42.904Z",
+        "status": 0
+      },
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "bytedance/seedance-2.0-fast",
+      "hf_slug": null,
+      "updated_at": "2026-07-19T16:39:32.462Z",
+      "created_at": "2026-04-15T00:02:42.904Z",
+      "hf_updated_at": null,
+      "name": "ByteDance: Seedance 2.0 Fast",
+      "short_name": "Seedance 2.0 Fast",
+      "author": "bytedance",
+      "author_display_name": "bytedance",
+      "author_icon_uri": null,
+      "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output_modalities": [
+        "video"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "bytedance/seedance-2.0-fast-20260414",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "video_generation",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "a2a51aa0-13b6-4206-a022-2ea623cde439",
+        "name": "Seed | bytedance/seedance-2.0-fast-20260414",
+        "context_length": 0,
+        "model": {
+          "slug": "bytedance/seedance-2.0-fast",
+          "hf_slug": null,
+          "updated_at": "2026-07-19T16:39:32.462666+00:00",
+          "created_at": "2026-04-15T00:02:42.904726+00:00",
+          "hf_updated_at": null,
+          "name": "ByteDance: Seedance 2.0 Fast",
+          "short_name": "Seedance 2.0 Fast",
+          "author": "bytedance",
+          "author_display_name": "bytedance",
+          "author_icon_uri": null,
+          "description": "Seedance 2.0 Fast is a video generation model from ByteDance. It supports text-to-video, image-to-video with first and last frame control, and multimodal reference-to-video. It prioritizes generation speed and lower cost over maximum output quality. The number of tokens is given by (height of output video * width of output video * duration * 24) / 1024",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "audio"
+          ],
+          "output_modalities": [
+            "video"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "bytedance/seedance-2.0-fast-20260414",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "video_generation",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "bytedance/seedance-2.0-fast",
+        "model_variant_permaslug": "bytedance/seedance-2.0-fast-20260414",
+        "adapter_name": "BytePlusSeedanceAdapter",
+        "provider_name": "Seed",
+        "provider_info": {
+          "name": "Seed",
+          "displayName": "Seed",
+          "slug": "seed",
+          "baseUrl": "https://ark.ap-southeast.bytepluses.com/api/v3",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "safetyRetention": false,
+            "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
+            "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "SG",
+          "datacenters": [],
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "BytePlusSeedanceAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": false,
+          "isPrivate": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://seed.bytedance.com/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "seedance"
+        },
+        "provider_permaslug": "seed",
+        "provider_display_name": "Seed",
+        "provider_slug": "seed",
+        "derived_service_tier": null,
+        "provider_model_id": "dreamina-seedance-2-0-fast-260128",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "frequency_penalty"
+        ],
+        "excluded_parameters": [
+          "temperature",
+          "top_p",
+          "tools",
+          "tool_choice",
+          "response_format",
+          "structured_outputs",
+          "seed",
+          "max_tokens"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "safetyRetention": false,
+          "termsOfServiceURL": "https://docs.byteplus.com/en/docs/legal/docs-terms-of-service",
+          "privacyPolicyURL": "https://docs.byteplus.com/en/docs/legal/docs-privacy-policy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Video (with audio)",
+              "price": "0.09072",
+              "displayMultiplier": 1,
+              "unitLabel": "/second",
+              "tiers": [
+                {
+                  "sku_label": "480p",
+                  "price": "0.0403536"
+                },
+                {
+                  "sku_label": "720p",
+                  "price": "0.09072"
+                },
+                {
+                  "sku_label": "1080p",
+                  "price": "0.20412"
+                },
+                {
+                  "sku_label": "4K",
+                  "price": "0.81648"
+                }
+              ]
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video (no audio)",
+              "price": "0.09072",
+              "displayMultiplier": 1,
+              "unitLabel": "/second",
+              "tiers": [
+                {
+                  "sku_label": "480p",
+                  "price": "0.0403536"
+                },
+                {
+                  "sku_label": "720p",
+                  "price": "0.09072"
+                },
+                {
+                  "sku_label": "1080p",
+                  "price": "0.20412"
+                },
+                {
+                  "sku_label": "4K",
+                  "price": "0.81648"
+                }
+              ]
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video (with video input)",
+              "price": "0.05346",
+              "displayMultiplier": 1,
+              "unitLabel": "/second",
+              "tiers": [
+                {
+                  "sku_label": "480p",
+                  "price": "0.0237798"
+                },
+                {
+                  "sku_label": "720p",
+                  "price": "0.05346"
+                },
+                {
+                  "sku_label": "1080p",
+                  "price": "0.120285"
+                },
+                {
+                  "sku_label": "4K",
+                  "price": "0.48114"
+                }
+              ]
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video Tokens (with audio)",
+              "price": "0.0000042",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video Tokens (no audio)",
+              "price": "0.0000042",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video Tokens (with video input)",
+              "price": "0.000002475",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Video (with audio)",
+            "price": "0.09072",
+            "displayMultiplier": 1,
+            "unitLabel": "/second",
+            "tiers": [
+              {
+                "sku_label": "480p",
+                "price": "0.0403536"
+              },
+              {
+                "sku_label": "720p",
+                "price": "0.09072"
+              },
+              {
+                "sku_label": "1080p",
+                "price": "0.20412"
+              },
+              {
+                "sku_label": "4K",
+                "price": "0.81648"
+              }
+            ]
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video (no audio)",
+            "price": "0.09072",
+            "displayMultiplier": 1,
+            "unitLabel": "/second",
+            "tiers": [
+              {
+                "sku_label": "480p",
+                "price": "0.0403536"
+              },
+              {
+                "sku_label": "720p",
+                "price": "0.09072"
+              },
+              {
+                "sku_label": "1080p",
+                "price": "0.20412"
+              },
+              {
+                "sku_label": "4K",
+                "price": "0.81648"
+              }
+            ]
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video (with video input)",
+            "price": "0.05346",
+            "displayMultiplier": 1,
+            "unitLabel": "/second",
+            "tiers": [
+              {
+                "sku_label": "480p",
+                "price": "0.0237798"
+              },
+              {
+                "sku_label": "720p",
+                "price": "0.05346"
+              },
+              {
+                "sku_label": "1080p",
+                "price": "0.120285"
+              },
+              {
+                "sku_label": "4K",
+                "price": "0.48114"
+              }
+            ]
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video Tokens (with audio)",
+            "price": "0.0000042",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video Tokens (no audio)",
+            "price": "0.0000042",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video Tokens (with video input)",
+            "price": "0.000002475",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "seedance:video_tokens": "0.0000042",
+          "seedance:video_tokens_without_audio": "0.0000042",
+          "seedance:video_tokens_with_video_input": "0.000002475"
+        },
+        "pricing_version_id": "8993fe90-1b13-422a-9ce4-70ab8746112a",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {
+          "supported_resolutions": null,
+          "supported_aspect_ratios": null,
+          "supported_sizes": [
+            "480x480",
+            "480x640",
+            "480x854",
+            "640x480",
+            "854x480",
+            "1120x480",
+            "720x720",
+            "720x960",
+            "720x1280",
+            "720x1680",
+            "960x720",
+            "1280x720",
+            "1680x720"
+          ],
+          "supported_durations": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "supported_frame_images": [
+            "first_frame",
+            "last_frame"
+          ],
+          "generate_audio": true,
+          "seed": true
+        },
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [
+          "watermark",
+          "req_key"
         ],
         "capacity_tpm": null,
         "created_at": "2026-04-15T00:02:42.904Z",
@@ -136705,14 +136732,14 @@
         "supported_stt_parameters": null,
         "provider_region": null,
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-10-26T13:00:00.000Z",
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-01T03:16:05.323Z",
         "status": 0
       },
       "display_required_attestation_types": [],
-      "variant_deprecation_date": null
+      "variant_deprecation_date": "2026-10-26T13:00:00.000Z"
     },
     {
       "slug": "x-ai/grok-4.20-multi-agent",
@@ -137856,7 +137883,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-30T20:55:17.376Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -148042,7 +148069,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-02-25T16:10:09.814Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -152863,7 +152890,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-02T16:04:45.697Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -155681,7 +155708,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-01-28T14:30:31.814Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -159850,7 +159877,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-12-23T19:40:34.986Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -182466,7 +182493,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-03-20T16:46:18.048Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -184057,7 +184084,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-09-27T00:15:42.092Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -210432,7 +210459,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-01-31T19:30:05.479Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -213118,7 +213145,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-28T20:44:52.471Z",
-        "status": -2
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -213369,7 +213396,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-04-28T20:44:52.471Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -222083,7 +222110,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-11-07T21:18:55.530Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -223147,6 +223174,264 @@
       "variant_deprecation_date": null
     },
     {
+      "slug": "openai/gpt-4",
+      "hf_slug": null,
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-05-28T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "OpenAI: GPT-4",
+      "short_name": "GPT-4",
+      "author": "openai",
+      "author_display_name": "OpenAI",
+      "author_icon_uri": null,
+      "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
+      "model_version_group_id": null,
+      "context_length": 8191,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "GPT",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "openai/gpt-4",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2021-09-30T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "1fef5a78-ade5-4602-a137-509eec665653",
+        "name": "Azure | openai/gpt-4",
+        "context_length": 8191,
+        "model": {
+          "slug": "openai/gpt-4",
+          "hf_slug": null,
+          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "created_at": "2023-05-28T00:00:00+00:00",
+          "hf_updated_at": null,
+          "name": "OpenAI: GPT-4",
+          "short_name": "GPT-4",
+          "author": "openai",
+          "author_display_name": "OpenAI",
+          "author_icon_uri": null,
+          "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
+          "model_version_group_id": null,
+          "context_length": 8191,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "GPT",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "openai/gpt-4",
+          "supports_reasoning": false,
+          "reasoning_config": null,
+          "features": {},
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": null,
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": "2021-09-30T23:59:59+00:00",
+          "limit_rpm": null,
+          "limit_rpd": null,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "openai/gpt-4",
+        "model_variant_permaslug": "openai/gpt-4",
+        "adapter_name": "AzureOpenAIAdapter",
+        "provider_name": "Azure",
+        "provider_info": {
+          "name": "Azure",
+          "displayName": "Azure",
+          "slug": "azure",
+          "baseUrl": "https://openrouter-east-us-2.openai.azure.com/openai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "safetyRetention": false,
+            "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
+            "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "AzureOpenAIAdapter",
+          "statusPageUrl": "https://status.azure.com/",
+          "byokEnabled": true,
+          "isPrivate": false,
+          "icon": {
+            "url": "/images/icons/Azure.svg"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_chat_completions"
+        },
+        "provider_permaslug": "azure",
+        "provider_display_name": "Azure",
+        "provider_slug": "azure",
+        "derived_service_tier": null,
+        "provider_model_id": "gpt-4",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 4096,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "temperature",
+          "top_p",
+          "max_completion_tokens",
+          "tools",
+          "tool_choice",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "logit_bias",
+          "logprobs",
+          "top_logprobs",
+          "response_format"
+        ],
+        "excluded_parameters": [
+          "max_tokens"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "safetyRetention": false,
+          "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
+          "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement"
+        },
+        "pricing": {
+          "prompt": "0.00003",
+          "completion": "0.00006",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.00003",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.00006",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "server_tool_costs_discount_exempt": true,
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.00003",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.00006",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": 3e-05,
+          "openai:completion_tokens": 6e-05
+        },
+        "pricing_version_id": "45871658-f39c-4fa1-97f0-3f75e4d6881a",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2024-11-07T21:19:05.633Z",
+        "status": 0
+      },
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
       "slug": "openai/gpt-3.5-turbo",
       "hf_slug": null,
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -223661,264 +223946,6 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2024-11-07T21:18:54.258Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
-      "slug": "openai/gpt-4",
-      "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-05-28T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "OpenAI: GPT-4",
-      "short_name": "GPT-4",
-      "author": "openai",
-      "author_display_name": "OpenAI",
-      "author_icon_uri": null,
-      "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
-      "model_version_group_id": null,
-      "context_length": 8191,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "GPT",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "openai/gpt-4",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2021-09-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "1fef5a78-ade5-4602-a137-509eec665653",
-        "name": "Azure | openai/gpt-4",
-        "context_length": 8191,
-        "model": {
-          "slug": "openai/gpt-4",
-          "hf_slug": null,
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
-          "created_at": "2023-05-28T00:00:00+00:00",
-          "hf_updated_at": null,
-          "name": "OpenAI: GPT-4",
-          "short_name": "GPT-4",
-          "author": "openai",
-          "author_display_name": "OpenAI",
-          "author_icon_uri": null,
-          "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
-          "model_version_group_id": null,
-          "context_length": 8191,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "GPT",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "openai/gpt-4",
-          "supports_reasoning": false,
-          "reasoning_config": null,
-          "features": {},
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": null,
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": "2021-09-30T23:59:59+00:00",
-          "limit_rpm": null,
-          "limit_rpd": null,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "openai/gpt-4",
-        "model_variant_permaslug": "openai/gpt-4",
-        "adapter_name": "AzureOpenAIAdapter",
-        "provider_name": "Azure",
-        "provider_info": {
-          "name": "Azure",
-          "displayName": "Azure",
-          "slug": "azure",
-          "baseUrl": "https://openrouter-east-us-2.openai.azure.com/openai",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
-            "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement",
-            "requiresUserIDs": false
-          },
-          "headquarters": "US",
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "AzureOpenAIAdapter",
-          "statusPageUrl": "https://status.azure.com/",
-          "byokEnabled": true,
-          "isPrivate": false,
-          "icon": {
-            "url": "/images/icons/Azure.svg"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_permaslug": "azure",
-        "provider_display_name": "Azure",
-        "provider_slug": "azure",
-        "derived_service_tier": null,
-        "provider_model_id": "gpt-4",
-        "quantization": "unknown",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 4096,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "temperature",
-          "top_p",
-          "max_completion_tokens",
-          "tools",
-          "tool_choice",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "seed",
-          "logit_bias",
-          "logprobs",
-          "top_logprobs",
-          "response_format"
-        ],
-        "excluded_parameters": [
-          "max_tokens"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://www.microsoft.com/en-us/legal/terms-of-use?oneroute=true",
-          "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement"
-        },
-        "pricing": {
-          "prompt": "0.00003",
-          "completion": "0.00006",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0.00003",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0.00006",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0.00003",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0.00006",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": 3e-05,
-          "openai:completion_tokens": 6e-05
-        },
-        "pricing_version_id": "45871658-f39c-4fa1-97f0-3f75e4d6881a",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": null,
-        "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2024-11-07T21:19:05.633Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -241458,59 +241485,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "x-ai/grok-2-mini",
-      "hf_slug": null,
-      "updated_at": "2026-05-04T18:57:38.540Z",
-      "created_at": "2024-10-12T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "xAI: Grok 2 mini",
-      "short_name": "Grok 2 mini",
-      "author": "x-ai",
-      "author_display_name": "SpaceXAI",
-      "author_icon_uri": null,
-      "description": "Grok 2 Mini is xAI's fast, lightweight language model that offers a balance between speed and answer quality.\n\nTo use the stronger model, see [Grok Beta](/x-ai/grok-beta).\n\nFor more information, see the [launch announcement](https://x.ai/blog/grok-2).",
-      "model_version_group_id": null,
-      "context_length": 32768,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Grok",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "x-ai/grok-2-mini",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2024-05-31T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "x-ai/grok-2",
       "hf_slug": null,
       "updated_at": "2026-05-04T18:57:37.302Z",
@@ -241543,6 +241517,59 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "x-ai/grok-2",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2024-05-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "x-ai/grok-2-mini",
+      "hf_slug": null,
+      "updated_at": "2026-05-04T18:57:38.540Z",
+      "created_at": "2024-10-12T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "xAI: Grok 2 mini",
+      "short_name": "Grok 2 mini",
+      "author": "x-ai",
+      "author_display_name": "SpaceXAI",
+      "author_icon_uri": null,
+      "description": "Grok 2 Mini is xAI's fast, lightweight language model that offers a balance between speed and answer quality.\n\nTo use the stronger model, see [Grok Beta](/x-ai/grok-beta).\n\nFor more information, see the [launch announcement](https://x.ai/blog/grok-2).",
+      "model_version_group_id": null,
+      "context_length": 32768,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Grok",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "x-ai/grok-2-mini",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -244727,59 +244754,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "deepseek/deepseek-chat-v2.5",
-      "hf_slug": "deepseek-ai/DeepSeek-V2.5",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2024-05-14T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "DeepSeek V2.5",
-      "short_name": "DeepSeek V2.5",
-      "author": "deepseek",
-      "author_display_name": "DeepSeek",
-      "author_icon_uri": null,
-      "description": "DeepSeek-V2.5 is an upgraded version that combines DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct. The new model integrates the general and coding abilities of the two previous versions. For model details, please visit [DeepSeek-V2 page](https://github.com/deepseek-ai/DeepSeek-V2) for more information.",
-      "model_version_group_id": null,
-      "context_length": 128000,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "deepseek/deepseek-chat",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2024-07-31T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "perplexity/llama-3-sonar-large-32k-online",
       "hf_slug": null,
       "updated_at": "2025-11-10T16:00:38.246Z",
@@ -244825,6 +244799,59 @@
       "is_trainable_text": null,
       "is_trainable_image": null,
       "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "deepseek/deepseek-chat-v2.5",
+      "hf_slug": "deepseek-ai/DeepSeek-V2.5",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2024-05-14T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "DeepSeek V2.5",
+      "short_name": "DeepSeek V2.5",
+      "author": "deepseek",
+      "author_display_name": "DeepSeek",
+      "author_icon_uri": null,
+      "description": "DeepSeek-V2.5 is an upgraded version that combines DeepSeek-V2-Chat and DeepSeek-Coder-V2-Instruct. The new model integrates the general and coding abilities of the two previous versions. For model details, please visit [DeepSeek-V2 page](https://github.com/deepseek-ai/DeepSeek-V2) for more information.",
+      "model_version_group_id": null,
+      "context_length": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "deepseek/deepseek-chat",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2024-07-31T23:59:59.000Z",
       "limit_rpm": null,
       "limit_rpd": null,
       "supported_tts_voices": null,
@@ -245327,120 +245354,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "qwen/qwen-72b-chat",
-      "hf_slug": "Qwen/Qwen1.5-72B-Chat",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2024-05-09T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Qwen 1.5 72B Chat",
-      "short_name": "Qwen 1.5 72B Chat",
-      "author": "qwen",
-      "author_display_name": "Qwen",
-      "author_icon_uri": null,
-      "description": "Qwen1.5 72B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-      "model_version_group_id": null,
-      "context_length": 32768,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Qwen",
-      "instruct_type": "chatml",
-      "default_system": null,
-      "default_stops": [
-        "<|im_start|>",
-        "<|im_end|>",
-        "<|endoftext|>"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "qwen/qwen-72b-chat",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-09-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
-      "slug": "qwen/qwen-110b-chat",
-      "hf_slug": "Qwen/Qwen1.5-110B-Chat",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2024-05-09T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Qwen 1.5 110B Chat",
-      "short_name": "Qwen 1.5 110B Chat",
-      "author": "qwen",
-      "author_display_name": "Qwen",
-      "author_icon_uri": null,
-      "description": "Qwen1.5 110B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-      "model_version_group_id": null,
-      "context_length": 32768,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Qwen",
-      "instruct_type": "chatml",
-      "default_system": null,
-      "default_stops": [
-        "<|im_start|>",
-        "<|im_end|>",
-        "<|endoftext|>"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "qwen/qwen-110b-chat",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2024-03-31T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "qwen/qwen-14b-chat",
       "hf_slug": "Qwen/Qwen1.5-14B-Chat",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -245498,17 +245411,17 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "qwen/qwen-32b-chat",
-      "hf_slug": "Qwen/Qwen1.5-32B-Chat",
+      "slug": "qwen/qwen-7b-chat",
+      "hf_slug": "Qwen/Qwen1.5-7B-Chat",
       "updated_at": "2026-03-24T19:43:16.801Z",
       "created_at": "2024-05-09T00:00:00.000Z",
       "hf_updated_at": null,
-      "name": "Qwen 1.5 32B Chat",
-      "short_name": "Qwen 1.5 32B Chat",
+      "name": "Qwen 1.5 7B Chat",
+      "short_name": "Qwen 1.5 7B Chat",
       "author": "qwen",
       "author_display_name": "Qwen",
       "author_icon_uri": null,
-      "description": "Qwen1.5 32B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+      "description": "Qwen1.5 7B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
       "model_version_group_id": null,
       "context_length": 32768,
       "input_modalities": [
@@ -245533,7 +245446,64 @@
       "routing_error_message": null,
       "required_attestation_types": [],
       "is_private": false,
-      "permaslug": "qwen/qwen-32b-chat",
+      "permaslug": "qwen/qwen-7b-chat",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-09-30T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "qwen/qwen-72b-chat",
+      "hf_slug": "Qwen/Qwen1.5-72B-Chat",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2024-05-09T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Qwen 1.5 72B Chat",
+      "short_name": "Qwen 1.5 72B Chat",
+      "author": "qwen",
+      "author_display_name": "Qwen",
+      "author_icon_uri": null,
+      "description": "Qwen1.5 72B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+      "model_version_group_id": null,
+      "context_length": 32768,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Qwen",
+      "instruct_type": "chatml",
+      "default_system": null,
+      "default_stops": [
+        "<|im_start|>",
+        "<|im_end|>",
+        "<|endoftext|>"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "qwen/qwen-72b-chat",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -245612,17 +245582,17 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "qwen/qwen-7b-chat",
-      "hf_slug": "Qwen/Qwen1.5-7B-Chat",
+      "slug": "qwen/qwen-110b-chat",
+      "hf_slug": "Qwen/Qwen1.5-110B-Chat",
       "updated_at": "2026-03-24T19:43:16.801Z",
       "created_at": "2024-05-09T00:00:00.000Z",
       "hf_updated_at": null,
-      "name": "Qwen 1.5 7B Chat",
-      "short_name": "Qwen 1.5 7B Chat",
+      "name": "Qwen 1.5 110B Chat",
+      "short_name": "Qwen 1.5 110B Chat",
       "author": "qwen",
       "author_display_name": "Qwen",
       "author_icon_uri": null,
-      "description": "Qwen1.5 7B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+      "description": "Qwen1.5 110B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
       "model_version_group_id": null,
       "context_length": 32768,
       "input_modalities": [
@@ -245647,7 +245617,64 @@
       "routing_error_message": null,
       "required_attestation_types": [],
       "is_private": false,
-      "permaslug": "qwen/qwen-7b-chat",
+      "permaslug": "qwen/qwen-110b-chat",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2024-03-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "qwen/qwen-32b-chat",
+      "hf_slug": "Qwen/Qwen1.5-32B-Chat",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2024-05-09T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Qwen 1.5 32B Chat",
+      "short_name": "Qwen 1.5 32B Chat",
+      "author": "qwen",
+      "author_display_name": "Qwen",
+      "author_icon_uri": null,
+      "description": "Qwen1.5 32B is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:\n\n- Significant performance improvement in human preference for chat models\n- Multilingual support of both base and chat models\n- Stable support of 32K context length for models of all sizes\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen1.5/) and [GitHub repo](https://github.com/QwenLM/Qwen1.5).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+      "model_version_group_id": null,
+      "context_length": 32768,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Qwen",
+      "instruct_type": "chatml",
+      "default_system": null,
+      "default_stops": [
+        "<|im_start|>",
+        "<|im_end|>",
+        "<|endoftext|>"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "qwen/qwen-32b-chat",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -246063,62 +246090,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "microsoft/wizardlm-2-8x22b",
-      "hf_slug": "microsoft/WizardLM-2-8x22B",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2024-04-16T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "WizardLM-2 8x22B",
-      "short_name": "WizardLM-2 8x22B",
-      "author": "microsoft",
-      "author_display_name": "Microsoft",
-      "author_icon_uri": null,
-      "description": "WizardLM-2 8x22B is Microsoft AI's most advanced Wizard model. It demonstrates highly competitive performance compared to leading proprietary models, and it consistently outperforms all existing state-of-the-art opensource models.\n\nIt is an instruct finetune of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b).\n\nTo read more about the model release, [click here](https://wizardlm.github.io/WizardLM2/).\n\n#moe",
-      "model_version_group_id": null,
-      "context_length": 65536,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Mistral",
-      "instruct_type": "vicuna",
-      "default_system": null,
-      "default_stops": [
-        "USER:",
-        "</s>"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "microsoft/wizardlm-2-8x22b",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2024-04-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "microsoft/wizardlm-2-7b",
       "hf_slug": "microsoft/WizardLM-2-7B",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -246167,6 +246138,62 @@
       "is_trainable_text": true,
       "is_trainable_image": null,
       "knowledge_cutoff": "2024-01-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "microsoft/wizardlm-2-8x22b",
+      "hf_slug": "microsoft/WizardLM-2-8x22B",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2024-04-16T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "WizardLM-2 8x22B",
+      "short_name": "WizardLM-2 8x22B",
+      "author": "microsoft",
+      "author_display_name": "Microsoft",
+      "author_icon_uri": null,
+      "description": "WizardLM-2 8x22B is Microsoft AI's most advanced Wizard model. It demonstrates highly competitive performance compared to leading proprietary models, and it consistently outperforms all existing state-of-the-art opensource models.\n\nIt is an instruct finetune of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b).\n\nTo read more about the model release, [click here](https://wizardlm.github.io/WizardLM2/).\n\n#moe",
+      "model_version_group_id": null,
+      "context_length": 65536,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Mistral",
+      "instruct_type": "vicuna",
+      "default_system": null,
+      "default_stops": [
+        "USER:",
+        "</s>"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "microsoft/wizardlm-2-8x22b",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2024-04-30T23:59:59.000Z",
       "limit_rpm": null,
       "limit_rpd": null,
       "supported_tts_voices": null,
@@ -246723,60 +246750,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "anthropic/claude-3-opus",
-      "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2024-03-05T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Anthropic: Claude 3 Opus",
-      "short_name": "Claude 3 Opus",
-      "author": "anthropic",
-      "author_display_name": "Anthropic",
-      "author_icon_uri": null,
-      "description": "Claude 3 Opus is Anthropic's most powerful model for highly complex tasks. It boasts top-level performance, intelligence, fluency, and understanding.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-family)\n\n#multimodal",
-      "model_version_group_id": null,
-      "context_length": 200000,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Claude",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "anthropic/claude-3-opus",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-08-31T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "anthropic/claude-3-sonnet",
       "hf_slug": null,
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -246810,6 +246783,60 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "anthropic/claude-3-sonnet",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-08-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "anthropic/claude-3-opus",
+      "hf_slug": null,
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2024-03-05T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Anthropic: Claude 3 Opus",
+      "short_name": "Claude 3 Opus",
+      "author": "anthropic",
+      "author_display_name": "Anthropic",
+      "author_icon_uri": null,
+      "description": "Claude 3 Opus is Anthropic's most powerful model for highly complex tasks. It boasts top-level performance, intelligence, fluency, and understanding.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-family)\n\n#multimodal",
+      "model_version_group_id": null,
+      "context_length": 200000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Claude",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "anthropic/claude-3-opus",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -247385,61 +247412,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "mistralai/mistral-tiny",
-      "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2024-01-10T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Mistral Tiny",
-      "short_name": "Mistral Tiny",
-      "author": "mistralai",
-      "author_display_name": "Mistral AI",
-      "author_icon_uri": null,
-      "description": "Note: This model is being deprecated. Recommended replacement is the newer [Ministral 8B](/mistral/ministral-8b)\n\nThis model is currently powered by Mistral-7B-v0.2, and incorporates a \"better\" fine-tuning than [Mistral 7B](/models/mistralai/mistral-7b-instruct-v0.1), inspired by community work. It's best used for large batch processing tasks where cost is a significant factor but reasoning capabilities are not crucial.",
-      "model_version_group_id": null,
-      "context_length": 32000,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Mistral",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": "This model is deprecated and slated for retirement. Please see [Ministral 8B](/mistral/ministral-8b) for the Mistral suggested upgrade.",
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "mistralai/mistral-tiny",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-09-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "mistralai/mistral-small",
       "hf_slug": null,
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -247472,6 +247444,61 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "mistralai/mistral-small",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {
+        "temperature": 0.3
+      },
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-09-30T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "mistralai/mistral-tiny",
+      "hf_slug": null,
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2024-01-10T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Mistral Tiny",
+      "short_name": "Mistral Tiny",
+      "author": "mistralai",
+      "author_display_name": "Mistral AI",
+      "author_icon_uri": null,
+      "description": "Note: This model is being deprecated. Recommended replacement is the newer [Ministral 8B](/mistral/ministral-8b)\n\nThis model is currently powered by Mistral-7B-v0.2, and incorporates a \"better\" fine-tuning than [Mistral 7B](/models/mistralai/mistral-7b-instruct-v0.1), inspired by community work. It's best used for large batch processing tasks where cost is a significant factor but reasoning capabilities are not crucial.",
+      "model_version_group_id": null,
+      "context_length": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Mistral",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": "This model is deprecated and slated for retirement. Please see [Ministral 8B](/mistral/ministral-8b) for the Mistral suggested upgrade.",
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "mistralai/mistral-tiny",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -247779,17 +247806,17 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "recursal/rwkv-5-3b-ai-town",
-      "hf_slug": "recursal/rwkv-5-3b-ai-town",
+      "slug": "rwkv/rwkv-5-world-3b",
+      "hf_slug": "RWKV/rwkv-5-world-3b",
       "updated_at": "2026-03-24T19:43:16.801Z",
       "created_at": "2023-12-10T00:00:00.000Z",
       "hf_updated_at": null,
-      "name": "RWKV v5 3B AI Town",
-      "short_name": "RWKV v5 3B AI Town",
-      "author": "recursal",
-      "author_display_name": "recursal",
+      "name": "RWKV v5 World 3B",
+      "short_name": "RWKV v5 World 3B",
+      "author": "rwkv",
+      "author_display_name": "RWKV",
       "author_icon_uri": null,
-      "description": "This is an [RWKV 3B model](/models/rwkv/rwkv-5-world-3b) finetuned specifically for the [AI Town](https://github.com/a16z-infra/ai-town) project.\n\n[RWKV](https://wiki.rwkv.com) is an RNN (recurrent neural network) with transformer-level performance. It aims to combine the best of RNNs and transformers - great performance, fast inference, low VRAM, fast training, \"infinite\" context length, and free sentence embedding.\n\nRWKV 3B models are provided for free, by Recursal.AI, for the beta period. More details [here](https://substack.recursal.ai/p/public-rwkv-3b-model-via-openrouter).\n\n#rnn",
+      "description": "[RWKV](https://wiki.rwkv.com) is an RNN (recurrent neural network) with transformer-level performance. It aims to combine the best of RNNs and transformers - great performance, fast inference, low VRAM, fast training, \"infinite\" context length, and free sentence embedding.\n\nRWKV-5 is trained on 100+ world languages (70% English, 15% multilang, 15% code).\n\nRWKV 3B models are provided for free, by Recursal.AI, for the beta period. More details [here](https://substack.recursal.ai/p/public-rwkv-3b-model-via-openrouter).\n\n#rnn",
       "model_version_group_id": null,
       "context_length": 10000,
       "input_modalities": [
@@ -247813,7 +247840,7 @@
       "routing_error_message": null,
       "required_attestation_types": [],
       "is_private": false,
-      "permaslug": "recursal/rwkv-5-3b-ai-town",
+      "permaslug": "rwkv/rwkv-5-world-3b",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -247893,17 +247920,17 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "rwkv/rwkv-5-world-3b",
-      "hf_slug": "RWKV/rwkv-5-world-3b",
+      "slug": "recursal/rwkv-5-3b-ai-town",
+      "hf_slug": "recursal/rwkv-5-3b-ai-town",
       "updated_at": "2026-03-24T19:43:16.801Z",
       "created_at": "2023-12-10T00:00:00.000Z",
       "hf_updated_at": null,
-      "name": "RWKV v5 World 3B",
-      "short_name": "RWKV v5 World 3B",
-      "author": "rwkv",
-      "author_display_name": "RWKV",
+      "name": "RWKV v5 3B AI Town",
+      "short_name": "RWKV v5 3B AI Town",
+      "author": "recursal",
+      "author_display_name": "recursal",
       "author_icon_uri": null,
-      "description": "[RWKV](https://wiki.rwkv.com) is an RNN (recurrent neural network) with transformer-level performance. It aims to combine the best of RNNs and transformers - great performance, fast inference, low VRAM, fast training, \"infinite\" context length, and free sentence embedding.\n\nRWKV-5 is trained on 100+ world languages (70% English, 15% multilang, 15% code).\n\nRWKV 3B models are provided for free, by Recursal.AI, for the beta period. More details [here](https://substack.recursal.ai/p/public-rwkv-3b-model-via-openrouter).\n\n#rnn",
+      "description": "This is an [RWKV 3B model](/models/rwkv/rwkv-5-world-3b) finetuned specifically for the [AI Town](https://github.com/a16z-infra/ai-town) project.\n\n[RWKV](https://wiki.rwkv.com) is an RNN (recurrent neural network) with transformer-level performance. It aims to combine the best of RNNs and transformers - great performance, fast inference, low VRAM, fast training, \"infinite\" context length, and free sentence embedding.\n\nRWKV 3B models are provided for free, by Recursal.AI, for the beta period. More details [here](https://substack.recursal.ai/p/public-rwkv-3b-model-via-openrouter).\n\n#rnn",
       "model_version_group_id": null,
       "context_length": 10000,
       "input_modalities": [
@@ -247927,7 +247954,7 @@
       "routing_error_message": null,
       "required_attestation_types": [],
       "is_private": false,
-      "permaslug": "rwkv/rwkv-5-world-3b",
+      "permaslug": "recursal/rwkv-5-3b-ai-town",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -248114,59 +248141,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "01-ai/yi-6b",
-      "hf_slug": "01-ai/Yi-6B",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-12-07T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Yi 6B (base)",
-      "short_name": "Yi 6B (base)",
-      "author": "01-ai",
-      "author_display_name": "01.AI",
-      "author_icon_uri": null,
-      "description": "The Yi series models are large language models trained from scratch by developers at [01.AI](https://01.ai/). This is the base 6B parameter model.",
-      "model_version_group_id": null,
-      "context_length": 4096,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Yi",
-      "instruct_type": "none",
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "01-ai/yi-6b",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-06-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "01-ai/yi-34b-chat",
       "hf_slug": "01-ai/Yi-34B-Chat",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -248203,6 +248177,59 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "01-ai/yi-34b-chat",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-06-30T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "01-ai/yi-34b",
+      "hf_slug": "01-ai/Yi-34B",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-12-07T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Yi 34B (base)",
+      "short_name": "Yi 34B (base)",
+      "author": "01-ai",
+      "author_display_name": "01.AI",
+      "author_icon_uri": null,
+      "description": "The Yi series models are large language models trained from scratch by developers at [01.AI](https://01.ai/). This is the base 34B parameter model.",
+      "model_version_group_id": null,
+      "context_length": 4096,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Yi",
+      "instruct_type": "none",
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "01-ai/yi-34b",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -248334,17 +248361,17 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "01-ai/yi-34b",
-      "hf_slug": "01-ai/Yi-34B",
+      "slug": "01-ai/yi-6b",
+      "hf_slug": "01-ai/Yi-6B",
       "updated_at": "2026-03-24T19:43:16.801Z",
       "created_at": "2023-12-07T00:00:00.000Z",
       "hf_updated_at": null,
-      "name": "Yi 34B (base)",
-      "short_name": "Yi 34B (base)",
+      "name": "Yi 6B (base)",
+      "short_name": "Yi 6B (base)",
       "author": "01-ai",
       "author_display_name": "01.AI",
       "author_icon_uri": null,
-      "description": "The Yi series models are large language models trained from scratch by developers at [01.AI](https://01.ai/). This is the base 34B parameter model.",
+      "description": "The Yi series models are large language models trained from scratch by developers at [01.AI](https://01.ai/). This is the base 6B parameter model.",
       "model_version_group_id": null,
       "context_length": 4096,
       "input_modalities": [
@@ -248365,7 +248392,7 @@
       "routing_error_message": null,
       "required_attestation_types": [],
       "is_private": false,
-      "permaslug": "01-ai/yi-34b",
+      "permaslug": "01-ai/yi-6b",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -248775,59 +248802,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "anthropic/claude-2",
-      "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-11-22T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Anthropic: Claude v2",
-      "short_name": "Claude v2",
-      "author": "anthropic",
-      "author_display_name": "Anthropic",
-      "author_icon_uri": null,
-      "description": "Claude 2 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and a new beta feature: tool use.",
-      "model_version_group_id": null,
-      "context_length": 200000,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Claude",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "anthropic/claude-2",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-02-28T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "anthropic/claude-instant-1.1",
       "hf_slug": null,
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -248875,6 +248849,59 @@
       "is_trainable_text": null,
       "is_trainable_image": null,
       "knowledge_cutoff": "2023-03-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "anthropic/claude-2",
+      "hf_slug": null,
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-11-22T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Anthropic: Claude v2",
+      "short_name": "Claude v2",
+      "author": "anthropic",
+      "author_display_name": "Anthropic",
+      "author_icon_uri": null,
+      "description": "Claude 2 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and a new beta feature: tool use.",
+      "model_version_group_id": null,
+      "context_length": 200000,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Claude",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "anthropic/claude-2",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-02-28T23:59:59.000Z",
       "limit_rpm": null,
       "limit_rpd": null,
       "supported_tts_voices": null,
@@ -249160,62 +249187,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "undi95/toppy-m-7b",
-      "hf_slug": "Undi95/Toppy-M-7B",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-11-10T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Toppy M 7B",
-      "short_name": "Toppy M 7B",
-      "author": "undi95",
-      "author_display_name": "Undi",
-      "author_icon_uri": null,
-      "description": "A wild 7B parameter model that merges several models using the new task_arithmetic merge method from mergekit.\nList of merged models:\n- NousResearch/Nous-Capybara-7B-V1.9\n- [HuggingFaceH4/zephyr-7b-beta](/models/huggingfaceh4/zephyr-7b-beta)\n- lemonilia/AshhLimaRP-Mistral-7B\n- Vulkane/120-Days-of-Sodom-LoRA-Mistral-7b\n- Undi95/Mistral-pippa-sharegpt-7b-qlora\n\n#merge #uncensored",
-      "model_version_group_id": null,
-      "context_length": 4096,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Mistral",
-      "instruct_type": "alpaca",
-      "default_system": null,
-      "default_stops": [
-        "###",
-        "</s>"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "undi95/toppy-m-7b",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-06-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "alpindale/goliath-120b",
       "hf_slug": "alpindale/goliath-120b",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -249264,6 +249235,62 @@
       "is_trainable_text": null,
       "is_trainable_image": null,
       "knowledge_cutoff": "2023-12-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "undi95/toppy-m-7b",
+      "hf_slug": "Undi95/Toppy-M-7B",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-11-10T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Toppy M 7B",
+      "short_name": "Toppy M 7B",
+      "author": "undi95",
+      "author_display_name": "Undi",
+      "author_icon_uri": null,
+      "description": "A wild 7B parameter model that merges several models using the new task_arithmetic merge method from mergekit.\nList of merged models:\n- NousResearch/Nous-Capybara-7B-V1.9\n- [HuggingFaceH4/zephyr-7b-beta](/models/huggingfaceh4/zephyr-7b-beta)\n- lemonilia/AshhLimaRP-Mistral-7B\n- Vulkane/120-Days-of-Sodom-LoRA-Mistral-7b\n- Undi95/Mistral-pippa-sharegpt-7b-qlora\n\n#merge #uncensored",
+      "model_version_group_id": null,
+      "context_length": 4096,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Mistral",
+      "instruct_type": "alpaca",
+      "default_system": null,
+      "default_stops": [
+        "###",
+        "</s>"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "undi95/toppy-m-7b",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-06-30T23:59:59.000Z",
       "limit_rpm": null,
       "limit_rpd": null,
       "supported_tts_voices": null,
@@ -250042,62 +250069,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "nousresearch/nous-hermes-llama2-13b",
-      "hf_slug": "NousResearch/Nous-Hermes-Llama2-13b",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-08-20T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Nous: Hermes 13B",
-      "short_name": "Hermes 13B",
-      "author": "nousresearch",
-      "author_display_name": "Nous Research",
-      "author_icon_uri": null,
-      "description": "A state-of-the-art language model fine-tuned on over 300k instructions by Nous Research, with Teknium and Emozilla leading the fine tuning process.",
-      "model_version_group_id": null,
-      "context_length": 4096,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Llama2",
-      "instruct_type": "alpaca",
-      "default_system": null,
-      "default_stops": [
-        "###",
-        "</s>"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "nousresearch/nous-hermes-llama2-13b",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-06-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "phind/phind-codellama-34b",
       "hf_slug": "Phind/Phind-CodeLlama-34B-v2",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -250133,6 +250104,62 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "phind/phind-codellama-34b",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-06-30T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "nousresearch/nous-hermes-llama2-13b",
+      "hf_slug": "NousResearch/Nous-Hermes-Llama2-13b",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-08-20T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Nous: Hermes 13B",
+      "short_name": "Hermes 13B",
+      "author": "nousresearch",
+      "author_display_name": "Nous Research",
+      "author_icon_uri": null,
+      "description": "A state-of-the-art language model fine-tuned on over 300k instructions by Nous Research, with Teknium and Emozilla leading the fine tuning process.",
+      "model_version_group_id": null,
+      "context_length": 4096,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Llama2",
+      "instruct_type": "alpaca",
+      "default_system": null,
+      "default_stops": [
+        "###",
+        "</s>"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "nousresearch/nous-hermes-llama2-13b",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -250266,61 +250293,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "anthropic/claude-instant-1.0",
-      "hf_slug": null,
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-07-28T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Anthropic: Claude Instant v1.0",
-      "short_name": "Claude Instant v1.0",
-      "author": "anthropic",
-      "author_display_name": "Anthropic",
-      "author_icon_uri": null,
-      "description": "Anthropic's model for low-latency, high throughput text generation. Supports hundreds of pages of text.",
-      "model_version_group_id": null,
-      "context_length": 100000,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Claude",
-      "instruct_type": "claude",
-      "default_system": null,
-      "default_stops": [
-        "\n\nHuman:"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "anthropic/claude-instant-1.0",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-01-31T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "anthropic/claude-1",
       "hf_slug": null,
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -250410,6 +250382,61 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "anthropic/claude-1.2",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-01-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "anthropic/claude-instant-1.0",
+      "hf_slug": null,
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-07-28T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Anthropic: Claude Instant v1.0",
+      "short_name": "Claude Instant v1.0",
+      "author": "anthropic",
+      "author_display_name": "Anthropic",
+      "author_icon_uri": null,
+      "description": "Anthropic's model for low-latency, high throughput text generation. Supports hundreds of pages of text.",
+      "model_version_group_id": null,
+      "context_length": 100000,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Claude",
+      "instruct_type": "claude",
+      "default_system": null,
+      "default_stops": [
+        "\n\nHuman:"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "anthropic/claude-instant-1.0",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
@@ -250643,62 +250670,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "meta-llama/llama-2-70b-chat",
-      "hf_slug": "meta-llama/Llama-2-70b-chat-hf",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2023-06-20T00:00:00.000Z",
-      "hf_updated_at": null,
-      "name": "Meta: Llama 2 70B Chat",
-      "short_name": "Llama 2 70B Chat",
-      "author": "meta-llama",
-      "author_display_name": "Meta Llama",
-      "author_icon_uri": null,
-      "description": "The flagship, 70 billion parameter language model from Meta, fine tuned for chat completions. Llama 2 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety.",
-      "model_version_group_id": null,
-      "context_length": 4096,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Llama2",
-      "instruct_type": "llama2",
-      "default_system": null,
-      "default_stops": [
-        "</s>",
-        "[INST]"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "meta-llama/llama-2-70b-chat",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2023-07-31T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "meta-llama/llama-2-13b-chat",
       "hf_slug": "meta-llama/Llama-2-13b-chat-hf",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -250734,6 +250705,62 @@
       "required_attestation_types": [],
       "is_private": false,
       "permaslug": "meta-llama/llama-2-13b-chat",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2023-07-31T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "meta-llama/llama-2-70b-chat",
+      "hf_slug": "meta-llama/Llama-2-70b-chat-hf",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2023-06-20T00:00:00.000Z",
+      "hf_updated_at": null,
+      "name": "Meta: Llama 2 70B Chat",
+      "short_name": "Llama 2 70B Chat",
+      "author": "meta-llama",
+      "author_display_name": "Meta Llama",
+      "author_icon_uri": null,
+      "description": "The flagship, 70 billion parameter language model from Meta, fine tuned for chat completions. Llama 2 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety.",
+      "model_version_group_id": null,
+      "context_length": 4096,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Llama2",
+      "instruct_type": "llama2",
+      "default_system": null,
+      "default_stops": [
+        "</s>",
+        "[INST]"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "meta-llama/llama-2-70b-chat",
       "supports_reasoning": false,
       "reasoning_config": null,
       "features": {},
