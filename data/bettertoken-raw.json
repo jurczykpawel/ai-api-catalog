@@ -1,0 +1,696 @@
+{
+  "models": [
+    {
+      "id": "glm-5-2",
+      "name": "GLM 5.2",
+      "category": "llm",
+      "description": "GLM 5.2 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "zhipu"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.05,
+        "output_per_1m": 3.3,
+        "notes": "Cache read: $0.195/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "glm-5.2"
+    },
+    {
+      "id": "glm-5-3-flash",
+      "name": "GLM 5.3 Flash",
+      "category": "llm",
+      "description": "GLM 5.3 Flash via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "zhipu",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.1125,
+        "output_per_1m": 0.375,
+        "notes": "Cache read: $0.0225/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "glm-5.3-flash"
+    },
+    {
+      "id": "gpt-image-2-5-sunburst",
+      "name": "GPT Image 2.5 Sunburst",
+      "category": "image_generation",
+      "description": "GPT Image 2.5 Sunburst via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-image-2.5-sunburst"
+    },
+    {
+      "id": "claude-opus-4-8",
+      "name": "Claude Opus 4 8",
+      "category": "llm",
+      "description": "Claude Opus 4 8 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-opus-4-8"
+    },
+    {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5 5",
+      "category": "llm",
+      "description": "Claude Opus 5 5 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-opus-5-5"
+    },
+    {
+      "id": "glm-5-3",
+      "name": "GLM 5.3",
+      "category": "llm",
+      "description": "GLM 5.3 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "zhipu"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.05,
+        "output_per_1m": 3.3,
+        "notes": "Cache read: $0.195/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "glm-5.3"
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT 6 Sol",
+      "category": "llm",
+      "description": "GPT 6 Sol via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-6-sol"
+    },
+    {
+      "id": "gpt-image-2",
+      "name": "GPT Image 2",
+      "category": "image_generation",
+      "description": "GPT Image 2 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-image-2"
+    },
+    {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "category": "llm",
+      "description": "Kimi K3.1 Pro via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "moonshot"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.36,
+        "output_per_1m": 6.8,
+        "notes": "Cache read: $0.136/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "kimi-k3.1-pro"
+    },
+    {
+      "id": "nano-banana-2",
+      "name": "Nano Banana 2",
+      "category": "image_generation",
+      "description": "Nano Banana 2 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "google"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "nano-banana-2"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5 5",
+      "category": "llm",
+      "description": "Claude Haiku 5 5 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-haiku-5-5"
+    },
+    {
+      "id": "gpt-5-6-sol",
+      "name": "GPT 5.6 Sol",
+      "category": "llm",
+      "description": "GPT 5.6 Sol via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-5.6-sol"
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT 6 Astra",
+      "category": "llm",
+      "description": "GPT 6 Astra via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-6-astra"
+    },
+    {
+      "id": "claude-haiku-4-5-20251001",
+      "name": "Claude Haiku 4 5 20251001",
+      "category": "llm",
+      "description": "Claude Haiku 4 5 20251001 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.68,
+        "output_per_1m": 3.4,
+        "notes": "Cache read: $0.068/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-haiku-4-5-20251001"
+    },
+    {
+      "id": "minimax-m3-1-flash",
+      "name": "MiniMax M3.1 Flash",
+      "category": "llm",
+      "description": "MiniMax M3.1 Flash via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "minimax",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.087,
+        "output_per_1m": 0.348,
+        "notes": "Cache read: $0.0087/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "MiniMax-M3.1-Flash"
+    },
+    {
+      "id": "nano-banana-pro",
+      "name": "Nano Banana Pro",
+      "category": "image_generation",
+      "description": "Nano Banana Pro via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "google"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "nano-banana-pro"
+    },
+    {
+      "id": "qwen3-8-max",
+      "name": "Qwen3.8 Max",
+      "category": "llm",
+      "description": "Qwen3.8 Max via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "alibaba"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.44,
+        "output_per_1m": 4.32,
+        "notes": "Cache read: $0.18/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "qwen3.8-max"
+    },
+    {
+      "id": "deepseek-pro",
+      "name": "Deepseek Pro",
+      "category": "llm",
+      "description": "Deepseek Pro via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "deepseek"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.0296,
+        "output_per_1m": 3.0888,
+        "notes": "Cache read: $0.0343/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "deepseek-pro"
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT 5.6 Terra",
+      "category": "llm",
+      "description": "GPT 5.6 Terra via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-5.6-terra"
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT 6 Luna",
+      "category": "llm",
+      "description": "GPT 6 Luna via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-6-luna"
+    },
+    {
+      "id": "gpt-image-2-5-flare",
+      "name": "GPT Image 2.5 Flare",
+      "category": "image_generation",
+      "description": "GPT Image 2.5 Flare via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-image-2.5-flare"
+    },
+    {
+      "id": "deepseek-flash",
+      "name": "Deepseek Flash",
+      "category": "llm",
+      "description": "Deepseek Flash via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "deepseek",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.234,
+        "output_per_1m": 0.936,
+        "notes": "Cache read: $0.0047/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "deepseek-flash"
+    },
+    {
+      "id": "gpt-5-6-luna",
+      "name": "GPT 5.6 Luna",
+      "category": "llm",
+      "description": "GPT 5.6 Luna via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-5.6-luna"
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "name": "GPT 6.1 Sol",
+      "category": "llm",
+      "description": "GPT 6.1 Sol via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-6.1-sol"
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "category": "llm",
+      "description": "Kimi K3 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "moonshot"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "kimi-k3"
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4 6",
+      "category": "llm",
+      "description": "Claude Opus 4 6 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 3.4,
+        "output_per_1m": 17.0,
+        "notes": "Cache read: $0.34/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-opus-4-6"
+    },
+    {
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "category": "llm",
+      "description": "Claude Opus 5 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-opus-5"
+    },
+    {
+      "id": "deepseek-v4-pro-0813",
+      "name": "Deepseek V4 Pro 0813",
+      "category": "llm",
+      "description": "Deepseek V4 Pro 0813 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "deepseek"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.0296,
+        "output_per_1m": 3.0888,
+        "notes": "Cache read: $0.0343/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "deepseek-v4-pro-0813"
+    },
+    {
+      "id": "gpt-6-1-terra",
+      "name": "GPT 6.1 Terra",
+      "category": "llm",
+      "description": "GPT 6.1 Terra via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "openai"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gpt-6.1-terra"
+    },
+    {
+      "id": "minimax-m3",
+      "name": "MiniMax M3",
+      "category": "llm",
+      "description": "MiniMax M3 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "minimax"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "MiniMax-M3"
+    },
+    {
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5 1",
+      "category": "llm",
+      "description": "Claude Fable 5 1 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 6.8,
+        "output_per_1m": 34.0,
+        "notes": "Cache read: $0.17/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-fable-5-1"
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash",
+      "category": "llm",
+      "description": "Gemini 3.8 Flash via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "google",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.51,
+        "output_per_1m": 2.55,
+        "notes": "Cache read: $0.051/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gemini-3.8-flash"
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "category": "llm",
+      "description": "Gemini 4 Argon via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "google"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.36,
+        "output_per_1m": 6.8,
+        "notes": "Cache read: $0.068/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "gemini-4-argon"
+    },
+    {
+      "id": "nano-banana-2-1",
+      "name": "Nano Banana 2.1",
+      "category": "image_generation",
+      "description": "Nano Banana 2.1 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "google"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "Tiered pricing, see https://bettertoken.ai/en/pricing/"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "nano-banana-2.1"
+    },
+    {
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "category": "llm",
+      "description": "Claude Fable 5 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 6.8,
+        "output_per_1m": 34.0,
+        "notes": "Cache read: $0.68/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-fable-5"
+    },
+    {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "category": "llm",
+      "description": "Claude Sonnet 5 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.36,
+        "output_per_1m": 6.8,
+        "notes": "Cache read: $0.136/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-sonnet-5"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5 5",
+      "category": "llm",
+      "description": "Claude Sonnet 5 5 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "anthropic"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 1.36,
+        "output_per_1m": 6.8,
+        "notes": "Cache read: $0.068/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "claude-sonnet-5-5"
+    },
+    {
+      "id": "deepseek-v4-1-flash-1017",
+      "name": "Deepseek V4.1 Flash 1017",
+      "category": "llm",
+      "description": "Deepseek V4.1 Flash 1017 via BetterToken (OpenAI- and Anthropic-compatible gateway).",
+      "tags": [
+        "bettertoken",
+        "deepseek",
+        "fast"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.234,
+        "output_per_1m": 0.936,
+        "notes": "Cache read: $0.0047/1M"
+      },
+      "context_k": null,
+      "url": "https://bettertoken.ai/en/pricing/",
+      "_api_id": "deepseek-v4.1-flash-1017"
+    }
+  ],
+  "source": "bettertoken",
+  "base_url": "https://bettertoken.ai/v1/",
+  "note": "Models and pricing from https://bettertoken.ai/api/pricing"
+}

@@ -80,12 +80,13 @@ echo "[7/9] Pobieranie WaveSpeed (curated)..."
 python3 "$SCRIPT_DIR/fetch-wavespeed.py" "$DATA_DIR/wavespeed-raw.json"
 
 echo ""
-echo "[8/9] Pobieranie kie.ai + Runway ML + Replicate + Fireworks + MiniMax + Bedrock + OpenCode (curated/API)..."
+echo "[8/9] Pobieranie kie.ai + Runway ML + Replicate + Fireworks + MiniMax + Bedrock + OpenCode + BetterToken (curated/API)..."
 python3 "$SCRIPT_DIR/fetch-kie.py" "$DATA_DIR/kie-raw.json"
 python3 "$SCRIPT_DIR/fetch-minimax.py" "$DATA_DIR/minimax-raw.json"
 python3 "$SCRIPT_DIR/fetch-bedrock.py" "$DATA_DIR/bedrock-raw.json"
 python3 "$SCRIPT_DIR/fetch-runway.py" "$DATA_DIR/runway-raw.json"
 fetch_with_retry "OpenCode" python3 "$SCRIPT_DIR/fetch-opencode.py" "$DATA_DIR/opencode-raw.json"
+fetch_with_retry "BetterToken" python3 "$SCRIPT_DIR/fetch-bettertoken.py" "$DATA_DIR/bettertoken-raw.json"
 if [ -n "$REPLICATE_API_TOKEN" ]; then
   python3 "$SCRIPT_DIR/fetch-replicate.py" "$DATA_DIR/replicate-raw.json"
 else
@@ -114,6 +115,7 @@ python3 "$SCRIPT_DIR/merge-data.py" \
     --minimax     "$DATA_DIR/minimax-raw.json" \
     --bedrock     "$DATA_DIR/bedrock-raw.json" \
     --opencode    "$DATA_DIR/opencode-raw.json" \
+    --bettertoken "$DATA_DIR/bettertoken-raw.json" \
     --manual      "$DATA_DIR/models-manual.json" \
     --output      "$DATA_DIR/models.json"
 
