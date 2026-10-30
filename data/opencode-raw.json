@@ -117,25 +117,6 @@
       "_api_id": "nemotron-3.5-lightning-free"
     },
     {
-      "id": "jev-1-13-free",
-      "name": "Jev 1.13 Free",
-      "category": "llm",
-      "description": "Jev 1.13 Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "jev-1.13-free"
-    },
-    {
       "id": "deepseek-v4-1-flash-free",
       "name": "Deepseek V4.1 Flash Free",
       "category": "llm",
@@ -197,22 +178,6 @@
       "context_k": 200,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "claude-fable-5"
-    },
-    {
-      "id": "jev-1-13",
-      "name": "Jev 1.13",
-      "category": "llm",
-      "description": "Jev 1.13 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "jev-1.13"
     },
     {
       "id": "claude-fable-5-1",
@@ -414,28 +379,6 @@
       "_api_id": "claude-opus-5-5"
     },
     {
-      "id": "claude-opus-5-5-backup",
-      "name": "Claude Opus 5 5 Backup",
-      "category": "llm",
-      "description": "Claude Opus 5 5 Backup via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "anthropic",
-        "claude",
-        "powerful"
-      ],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
-      },
-      "context_k": 200,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "claude-opus-5-5-backup"
-    },
-    {
       "id": "claude-sonnet-4-5",
       "name": "Claude Sonnet 4 5",
       "category": "llm",
@@ -556,54 +499,6 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "deepseek-v4-pro"
-    },
-    {
-      "id": "gemini-3-flash",
-      "name": "Gemini 3 Flash",
-      "category": "llm",
-      "description": "Gemini 3 Flash via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "google",
-        "gemini",
-        "fast"
-      ],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "pricing": {
-        "input_per_1m": 0.5,
-        "output_per_1m": 3.0
-      },
-      "context_k": 200,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "gemini-3-flash"
-    },
-    {
-      "id": "gemini-3-1-pro",
-      "name": "Gemini 3.1 Pro",
-      "category": "llm",
-      "description": "Gemini 3.1 Pro via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "google",
-        "gemini",
-        "fast",
-        "powerful"
-      ],
-      "capabilities": [
-        "function_calling",
-        "vision"
-      ],
-      "pricing": {
-        "input_per_1m": 2.0,
-        "output_per_1m": 12.0,
-        "notes": ">200K ctx: $4/$18"
-      },
-      "context_k": 200,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "gemini-3.1-pro"
     },
     {
       "id": "gemini-3-5-flash",
