@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-10-30",
   "source_counts": {
-    "fal": 728,
+    "fal": 729,
     "openrouter": 796,
     "replicate": 329,
     "bedrock": 59,
@@ -17,10 +17,10 @@
     "runway": 2
   },
   "update_stats": {
-    "added": 12,
-    "removed": 10,
-    "updated": 28,
-    "unchanged": 2769
+    "added": 3,
+    "removed": 2,
+    "updated": 19,
+    "unchanged": 2788
   },
   "models": [
     {
@@ -9255,8 +9255,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0339,
-            "output_per_1m": 1.14
+            "input_per_1m": 0.022,
+            "output_per_1m": 0.192
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-flash-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10426,8 +10426,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0339,
-            "output_per_1m": 1.14
+            "input_per_1m": 0.022,
+            "output_per_1m": 0.192
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10532,7 +10532,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0304,
+            "input_per_1m": 0.0522,
             "output_per_1m": 0.3
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
@@ -10571,7 +10571,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0304,
+            "input_per_1m": 0.0522,
             "output_per_1m": 0.3
           },
           "url": "https://openrouter.ai/~deepseek/deepseek-v4-flash-latest",
@@ -10667,8 +10667,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.8162,
-            "output_per_1m": 1.6325
+            "input_per_1m": 0.9,
+            "output_per_1m": 1.5
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10753,8 +10753,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0433,
-            "output_per_1m": 1.04
+            "input_per_1m": 0.022,
+            "output_per_1m": 0.192
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -18385,7 +18385,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux-krea-lora/image-to-image",
+          "url": "https://fal.ai/models/fal-ai/flux-krea-lora",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -23811,8 +23811,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0313,
-            "output_per_1m": 0.0823
+            "input_per_1m": 0.018,
+            "output_per_1m": 0.1402
           },
           "url": "https://openrouter.ai/z-ai/glm-5.3-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -24091,8 +24091,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.0313,
-            "output_per_1m": 0.0823
+            "input_per_1m": 0.018,
+            "output_per_1m": 0.1402
           },
           "url": "https://openrouter.ai/~z-ai/glm-flash-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -36003,7 +36003,7 @@
       "id": "hf-juggernaut-xl-v9",
       "name": "Juggernaut XL v9",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 470,791 downloads · 502 likes. License: creativeml-openrail-m.",
+      "description": "Open-source model on HuggingFace. 470,791 downloads · 503 likes. License: creativeml-openrail-m.",
       "tags": [
         "open-source",
         "local"
@@ -36122,7 +36122,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/kandinsky6-pro/text-to-video",
+          "url": "https://fal.ai/models/fal-ai/kandinsky6-pro/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -36693,8 +36693,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.56,
-            "output_per_1m": 3.1
+            "input_per_1m": 0.6,
+            "output_per_1m": 3.0
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -36845,8 +36845,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.17,
-            "output_per_1m": 9.75
+            "input_per_1m": 0.1615,
+            "output_per_1m": 10.1551
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k3",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -36910,8 +36910,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.17,
-            "output_per_1m": 9.75
+            "input_per_1m": 0.1615,
+            "output_per_1m": 10.1551
           },
           "url": "https://openrouter.ai/~moonshotai/kimi-latest",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -42845,7 +42845,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/longcat-video/image-to-video/720p",
+          "url": "https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -43192,7 +43192,7 @@
       "id": "hf-ltx-2-5-diffusers",
       "name": "LTX 2.5 Diffusers",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 39,558 downloads · 111 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 39,558 downloads · 112 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -44742,13 +44742,13 @@
       "first_seen_at": "2026-10-22"
     },
     {
-      "id": "moonvalley-marey-i2v",
+      "id": "moonvalley-marey-motion-transfer",
       "name": "Marey Realism V1.5",
       "category": "video_generation",
-      "description": "Generate a video starting from an image as the first frame with Marey, a generative video model trained exclusively on fully licensed data.",
+      "description": "Pull motion from a reference video and apply it to new subjects or scenes.",
       "tags": [],
       "capabilities": [
-        "image_to_video"
+        "text_to_video"
       ],
       "context_k": null,
       "updated_at": "2026-10-30",
@@ -44759,12 +44759,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/moonvalley/marey/i2v",
+          "url": "https://fal.ai/models/moonvalley/marey/motion-transfer",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-10-20"
+      "first_seen_at": "2026-10-30"
     },
     {
       "id": "imageutils-marigold-depth",
@@ -47412,6 +47412,15 @@
           "available": true,
           "free_api": true,
           "free_type": "open"
+        },
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/tbc/mischief-1/image-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
         }
       ],
       "first_seen_at": "2026-10-30"
@@ -49896,10 +49905,10 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "motion-to-code-glsl",
+      "id": "motion-to-code-gsap",
       "name": "Motion To Code",
       "category": "video_generation",
-      "description": "Turn a prompt, an image or a reference video into a seamlessly looping GLSL shader, with a page that plays it live.",
+      "description": "Turn a prompt, an image or a reference video into an editable GSAP animation: one self-contained HTML page you can play, tweak and ship.",
       "tags": [],
       "capabilities": [
         "text_to_video"
@@ -49913,7 +49922,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/motion-to-code/glsl",
+          "url": "https://fal.ai/models/fal-ai/motion-to-code/gsap",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -54496,7 +54505,7 @@
       "id": "hf-p-q-image-2-1",
       "name": "P Q Image 2.1",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 430,223 downloads · 180 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 430,223 downloads · 181 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -54940,7 +54949,7 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.25,
+            "input_per_1m": 0.1,
             "output_per_1m": 1.0
           },
           "url": "https://openrouter.ai/particle-ai/particle-1",
@@ -56284,7 +56293,7 @@
     },
     {
       "id": "pixverse-v4-fast",
-      "name": "PixVerse V4 Text To Video Fast",
+      "name": "PixVerse V4 Image To Video Fast",
       "category": "video_generation",
       "description": "Generate high quality and fast video clips from text and image prompts using PixVerse v4 fast",
       "tags": [],
@@ -56301,7 +56310,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/pixverse/v4/text-to-video/fast",
+          "url": "https://fal.ai/models/fal-ai/pixverse/v4/image-to-video/fast",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -58018,6 +58027,32 @@
       "first_seen_at": "2026-08-18"
     },
     {
+      "id": "vidu-q1",
+      "name": "Q1",
+      "category": "video_generation",
+      "description": "Vidu Q1 Image to Video generates high-quality 1080p videos with exceptional visual quality and motion diversity from a single image",
+      "tags": [],
+      "capabilities": [
+        "image_to_video",
+        "text_to_video"
+      ],
+      "context_k": null,
+      "updated_at": "2026-10-30",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/fal-ai/vidu/q1/reference-to-video",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-06-25"
+    },
+    {
       "id": "vidu-q2",
       "name": "Q2",
       "category": "video_generation",
@@ -58880,7 +58915,7 @@
       "id": "hf-qwen-image-2-1-lightning",
       "name": "Qwen Image 2.1 Lightning",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 358,095 downloads · 110 likes. License: .",
+      "description": "Open-source model on HuggingFace. 386,964 downloads · 110 likes. License: .",
       "tags": [
         "open-source"
       ],
@@ -58948,7 +58983,7 @@
       "id": "hf-qwen-image-2-1-turbo-fp8",
       "name": "Qwen Image 2.1 Turbo FP8",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 272,523 downloads · 24 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 285,975 downloads · 24 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -60098,7 +60133,7 @@
       "id": "hf-qwen2-5-0-5b-instruct",
       "name": "Qwen2.5 0.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 5,162,870 downloads · 719 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 5,162,870 downloads · 720 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -60137,7 +60172,7 @@
       "id": "hf-qwen2-5-1-5b-instruct",
       "name": "Qwen2.5 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 4,473,405 downloads · 921 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 4,473,405 downloads · 920 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -63654,8 +63689,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.06,
-            "output_per_1m": 0.088
+            "input_per_1m": 0.08,
+            "output_per_1m": 0.13
           },
           "url": "https://openrouter.ai/qwen/qwen3.5-9b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -65020,7 +65055,7 @@
       "id": "hf-realvisxl_v5-0",
       "name": "RealVisXL V5.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 1,010,778 downloads · 272 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 1,010,778 downloads · 273 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -71432,7 +71467,7 @@
       "id": "stable-diffusion-xl",
       "name": "Stable Diffusion Xl Base 1.0",
       "category": "image_generation",
-      "description": "Open-source model on HuggingFace. 4,339,028 downloads · 8,412 likes. License: openrail++.",
+      "description": "Open-source model on HuggingFace. 4,339,028 downloads · 8,414 likes. License: openrail++.",
       "tags": [
         "open-source",
         "local"
@@ -71912,7 +71947,7 @@
       "id": "hf-stable-video-diffusion-img2vid-xt",
       "name": "Stable Video Diffusion Img2Vid Xt",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 125,300 downloads · 3,476 likes. License: other.",
+      "description": "Open-source model on HuggingFace. 125,300 downloads · 3,477 likes. License: other.",
       "tags": [
         "open-source",
         "local"
@@ -75759,10 +75794,10 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "vidu-q1",
+      "id": "vidu",
       "name": "Vidu",
       "category": "video_generation",
-      "description": "Vidu Q1 Image to Video generates high-quality 1080p videos with exceptional visual quality and motion diversity from a single image",
+      "description": "Vidu Image to Video generates high-quality videos with exceptional visual quality and motion diversity from a single image",
       "tags": [],
       "capabilities": [
         "image_to_video",
@@ -75777,12 +75812,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/vidu/q1/image-to-video",
+          "url": "https://fal.ai/models/fal-ai/vidu/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-06-25"
+      "first_seen_at": "2026-10-30"
     },
     {
       "id": "vidu-q4",
@@ -77900,7 +77935,7 @@
       "id": "hf-wan2-1-t2v-14b",
       "name": "Wan2.1 T2V 14B",
       "category": "video_generation",
-      "description": "Open-source model on HuggingFace. 89,695 downloads · 1,606 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 89,695 downloads · 1,607 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
