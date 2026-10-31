@@ -332,7 +332,7 @@
           "transform",
           "lipsync"
         ],
-        "updated_at": "2026-10-24T02:47:44.558Z",
+        "updated_at": "2026-10-30T18:45:22.007Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aa7658f/fSQlWMcduHn4_abgJ7qhQ.jpg",
         "model_url": "https://fal.run/minimax/h3-max/image-to-video",
@@ -472,7 +472,7 @@
           "transform",
           "lipsync"
         ],
-        "updated_at": "2026-10-18T22:17:00.576Z",
+        "updated_at": "2026-10-30T18:46:24.968Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aa8d532/tsMg9lPG9DaXI7bqzqz6Y.jpg",
         "model_url": "https://fal.run/minimax/h3-max-turbo/image-to-video",
@@ -1032,7 +1032,7 @@
           "fast",
           "audio"
         ],
-        "updated_at": "2026-10-28T20:23:04.519Z",
+        "updated_at": "2026-10-30T22:37:32.324Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aaf0ae2/vqNYPsX9h49SQulyxqJyL.jpg",
         "model_url": "https://fal.run/blackforestlabs/flux-3-max/image-to-video",
@@ -1218,7 +1218,7 @@
           "transform",
           "lipsync"
         ],
-        "updated_at": "2026-10-24T02:43:33.845Z",
+        "updated_at": "2026-10-30T18:44:30.635Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aa7657e/LlavC7cCdZ_GGyvyglA82.jpg",
         "model_url": "https://fal.run/minimax/h3-max/text-to-video",
@@ -1845,7 +1845,7 @@
           "transform",
           "lipsync"
         ],
-        "updated_at": "2026-10-18T22:16:53.458Z",
+        "updated_at": "2026-10-30T18:46:09.233Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aa8d50b/vj4BiCoQwOlmK7ku4KBZq.jpg",
         "model_url": "https://fal.run/minimax/h3-max-turbo/text-to-video",
@@ -2560,7 +2560,7 @@
           "fast",
           "audio"
         ],
-        "updated_at": "2026-10-28T20:23:04.519Z",
+        "updated_at": "2026-10-30T22:35:55.706Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aae8ccd/cfm_KIh1OltujxYuHIzzV.jpg",
         "model_url": "https://fal.run/blackforestlabs/flux-3-max/text-to-video",
@@ -4509,7 +4509,7 @@
           "image-to-video",
           "control"
         ],
-        "updated_at": "2026-10-28T20:23:04.519Z",
+        "updated_at": "2026-10-30T20:43:22.337Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aae8cf6/-Cuw8bwhTM9rdnwq7eICJ.jpg",
         "model_url": "https://fal.run/blackforestlabs/flux-3-max/keyframes-to-video",
@@ -7462,7 +7462,7 @@
           "transform",
           "editing"
         ],
-        "updated_at": "2026-10-28T23:54:57.451Z",
+        "updated_at": "2026-10-30T18:45:37.103Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aaa0943/TDxACZJeJzny7u-Q-tV7w.jpg",
         "model_url": "https://fal.run/minimax/h3-max/camera-controls",
@@ -8759,35 +8759,6 @@
       "_our_category": "video_generation"
     },
     {
-      "endpoint_id": "mureka/api/generate/song",
-      "metadata": {
-        "display_name": "Mureka 9.5 Song Generation",
-        "category": "text-to-audio",
-        "description": "Generates songs from a text prompt or supplied lyrics, with musical style, vocal, reference-audio, and melody controls, plus support for multiple variations.",
-        "status": "active",
-        "tags": [
-          "music",
-          "vocals",
-          "song generation"
-        ],
-        "updated_at": "2026-10-29T16:59:00.025Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa61bd/nUKHfwGHS0eFH_BoR-mDL.jpg",
-        "model_url": "https://fal.run/mureka/api/generate/song",
-        "license_type": "commercial",
-        "date": "2026-09-15T14:11:38.713Z",
-        "group": {
-          "key": "mureka-v9.5-new",
-          "label": "Song Generation"
-        },
-        "highlighted": false,
-        "kind": "inference",
-        "stream_url": "https://fal.run/mureka/api/generate/song/stream",
-        "pinned": false
-      },
-      "_our_category": "music_generation"
-    },
-    {
       "endpoint_id": "google/nano-banana-lite",
       "metadata": {
         "display_name": "Nano Banana Lite",
@@ -9102,30 +9073,6 @@
         "pinned": false
       },
       "_our_category": "image_generation"
-    },
-    {
-      "endpoint_id": "bytedance/seedance-2.5/draft/complete",
-      "metadata": {
-        "display_name": "Seedance 2.5",
-        "category": "video-to-video",
-        "description": "Draft completion endpoint for Seedance 2.5 - submit a draft id to regenerate the task at 1080p.",
-        "status": "active",
-        "tags": [],
-        "updated_at": "2026-10-20T22:29:23.864Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://v3b.fal.media/files/b/0aabd09d/Dkiw932-_aN4ED31_H3NC.jpg",
-        "model_url": "https://fal.run/bytedance/seedance-2.5/draft/complete",
-        "license_type": "commercial",
-        "date": "2026-09-25T07:42:11.289Z",
-        "group": {
-          "key": "Seedance-25",
-          "label": "Draft Completion"
-        },
-        "highlighted": false,
-        "kind": "inference",
-        "pinned": false
-      },
-      "_our_category": "video_generation"
     },
     {
       "endpoint_id": "fal-ai/flux-2-flex/edit",
@@ -12460,35 +12407,6 @@
         "pinned": false
       },
       "_our_category": "image_generation"
-    },
-    {
-      "endpoint_id": "mureka/api/generate/instrumental",
-      "metadata": {
-        "display_name": "Mureka 9.5 Instrumental Generation",
-        "category": "text-to-audio",
-        "description": "Generates instrumental music from a text description or uploaded instrumental reference, with support for multiple variations.",
-        "status": "active",
-        "tags": [
-          "music",
-          "instrumental",
-          "music generation"
-        ],
-        "updated_at": "2026-10-29T16:59:44.506Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6193/e-XLyqpAgL2AXHiNGr1Fz.jpg",
-        "model_url": "https://fal.run/mureka/api/generate/instrumental",
-        "license_type": "commercial",
-        "date": "2026-09-15T14:02:55.993Z",
-        "group": {
-          "key": "mureka-v9.5-new",
-          "label": "Instrumental Generation"
-        },
-        "highlighted": false,
-        "kind": "inference",
-        "stream_url": "https://fal.run/mureka/api/generate/instrumental/stream",
-        "pinned": false
-      },
-      "_our_category": "music_generation"
     },
     {
       "endpoint_id": "fal-ai/flux-lora-fill",
@@ -30143,7 +30061,7 @@
     {
       "endpoint_id": "mureka/api/generate/podcast",
       "metadata": {
-        "display_name": "Mureka 9.5 Podcast Generation",
+        "display_name": "Mureka Podcast Generation",
         "category": "text-to-audio",
         "description": "Generates podcast audio from an ordered sequence of conversation turns, with text and a voice selection for each turn.",
         "status": "active",
@@ -30152,14 +30070,14 @@
           "speech",
           "audio generation"
         ],
-        "updated_at": "2026-10-29T16:19:24.284Z",
+        "updated_at": "2026-10-30T21:14:08.924Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0aaa61ce/rxfwDlsIueQFyAUppFLNV.jpg",
         "model_url": "https://fal.run/mureka/api/generate/podcast",
         "license_type": "commercial",
         "date": "2026-09-15T14:10:08.912Z",
         "group": {
-          "key": "mureka-v9.5-new",
+          "key": "mureka-api",
           "label": "Podcast Generation"
         },
         "highlighted": false,
@@ -32003,31 +31921,6 @@
       "_our_category": "video_generation"
     },
     {
-      "endpoint_id": "fal-ai/fast-fooocus-sdxl/image-to-image",
-      "metadata": {
-        "display_name": "Fooocus",
-        "category": "text-to-image",
-        "description": "Fooocus extreme speed mode as a standalone app.",
-        "status": "active",
-        "tags": [
-          "stylized"
-        ],
-        "updated_at": "2026-01-26T21:44:53.355Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://storage.googleapis.com/falserverless/fooocus/fal_ai_fooocus_cyberpunk-city.jpeg",
-        "model_url": "https://fal.run/fal-ai/fast-fooocus-sdxl/image-to-image",
-        "github_url": "https://github.com/lllyasviel/Fooocus/blob/main/LICENSE",
-        "date": "2024-03-13T00:00:00.000Z",
-        "group": {
-          "key": "fooocus-extreme-speed",
-          "label": "Image to Image"
-        },
-        "highlighted": false,
-        "pinned": false
-      },
-      "_our_category": "image_generation"
-    },
-    {
       "endpoint_id": "fal-ai/ltx-2.3-22b/distilled/reference-video-to-video/lora",
       "metadata": {
         "display_name": "LTX-2.3 22B Distilled",
@@ -32166,27 +32059,6 @@
       "_our_category": "video_generation"
     },
     {
-      "endpoint_id": "fal-ai/pixart-sigma",
-      "metadata": {
-        "display_name": "PixArt-Σ",
-        "category": "text-to-image",
-        "description": "Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
-        "status": "active",
-        "tags": [
-          "diffusion"
-        ],
-        "updated_at": "2026-01-26T21:44:43.509Z",
-        "is_favorited": null,
-        "thumbnail_url": "https://storage.googleapis.com/falserverless/gallery/pixart-sigma.jpeg",
-        "model_url": "https://fal.run/fal-ai/pixart-sigma",
-        "github_url": "https://github.com/PixArt-alpha/PixArt-sigma/blob/master/LICENSE",
-        "date": "2024-08-01T00:00:00.000Z",
-        "highlighted": false,
-        "pinned": false
-      },
-      "_our_category": "image_generation"
-    },
-    {
       "endpoint_id": "fal-ai/pixverse/v3.5/image-to-video/fast",
       "metadata": {
         "display_name": "PixVerse V3.5 Image To Video Fast",
@@ -32234,51 +32106,480 @@
       "_our_category": "audio_stt"
     },
     {
-      "endpoint_id": "fal-ai/stable-cascade",
+      "endpoint_id": "minimax/h3-max-turbo/reference-to-video",
       "metadata": {
-        "display_name": "Stable Cascade",
-        "category": "text-to-image",
-        "description": "Stable Cascade: Image generation on a smaller & cheaper latent space.",
+        "display_name": "H3 Max Turbo Reference to Video",
+        "category": "image-to-video",
+        "description": "Generate video with synchronized audio from a prompt and image, video, or audio references with H3 Max Turbo, at 480p, 768p, or 1080p for up to 15 seconds.",
         "status": "active",
         "tags": [
-          "diffusion",
-          "lcm"
+          "reference-to-video",
+          "video-generation",
+          "audio"
         ],
-        "updated_at": "2026-04-26T23:19:12.923Z",
+        "updated_at": "2026-10-30T21:35:41.595Z",
         "is_favorited": null,
-        "thumbnail_url": "https://storage.googleapis.com/falserverless/gallery/stable-cascade.jpeg",
-        "model_url": "https://fal.run/fal-ai/stable-cascade",
-        "github_url": "https://huggingface.co/stabilityai/stable-cascade/blob/main/LICENSE",
-        "license_type": "research",
-        "date": "2024-06-25T00:00:00.000Z",
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aadb4ed/Nc_-PFaAPZ_9ikSRTCisF.jpg",
+        "model_url": "https://fal.run/minimax/h3-max-turbo/reference-to-video",
+        "license_type": "commercial",
+        "date": "2026-10-09T16:07:15.973Z",
+        "group": {
+          "key": "hailuo-03-new-max-turbo",
+          "label": "Reference to Video Max Turbo"
+        },
         "highlighted": false,
         "kind": "inference",
         "pinned": false
       },
-      "_our_category": "image_generation"
+      "_our_category": "video_generation"
     },
     {
-      "endpoint_id": "fal-ai/stable-cascade/sote-diffusion",
+      "endpoint_id": "mureka/v9.5/generate/song",
       "metadata": {
-        "display_name": "SoteDiffusion",
-        "category": "text-to-image",
-        "description": "Anime finetune of Würstchen V3.",
+        "display_name": "Mureka 9.5 Song Generation",
+        "category": "text-to-audio",
+        "description": "Generates songs from a text prompt or supplied lyrics, with musical style, vocal, reference-audio, and melody controls, plus support for multiple variations.",
         "status": "active",
         "tags": [
-          "lcm",
-          "stylized"
+          "music",
+          "vocals",
+          "song generation"
         ],
-        "updated_at": "2026-04-26T23:19:12.923Z",
+        "updated_at": "2026-10-30T21:18:39.431Z",
         "is_favorited": null,
-        "thumbnail_url": "https://storage.googleapis.com/falserverless/gallery/sotediffusion.jpeg",
-        "model_url": "https://fal.run/fal-ai/stable-cascade/sote-diffusion",
-        "github_url": "https://huggingface.co/stabilityai/stable-cascade/blob/main/LICENSE",
-        "license_type": "research",
-        "date": "2024-06-10T00:00:00.000Z",
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa61bd/nUKHfwGHS0eFH_BoR-mDL.jpg",
+        "model_url": "https://fal.run/mureka/v9.5/generate/song",
+        "license_type": "commercial",
+        "date": "2026-09-14T10:31:07.248Z",
+        "group": {
+          "key": "mureka-v9.5",
+          "label": "Song Generation"
+        },
         "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/mureka/v9.5/generate/song/stream",
         "pinned": false
       },
-      "_our_category": "image_generation"
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v9.5/generate/instrumental",
+      "metadata": {
+        "display_name": "Mureka 9.5 Instrumental Generation",
+        "category": "text-to-audio",
+        "description": "Generates instrumental music from a text description or uploaded instrumental reference, with support for multiple variations.",
+        "status": "active",
+        "tags": [
+          "music",
+          "instrumental",
+          "music generation"
+        ],
+        "updated_at": "2026-10-30T21:16:28.295Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6193/e-XLyqpAgL2AXHiNGr1Fz.jpg",
+        "model_url": "https://fal.run/mureka/v9.5/generate/instrumental",
+        "license_type": "commercial",
+        "date": "2026-09-14T10:29:28.303Z",
+        "group": {
+          "key": "mureka-v9.5",
+          "label": "Instrumental Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/mureka/v9.5/generate/instrumental/stream",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v9/generate/soundtrack",
+      "metadata": {
+        "display_name": "Mureka 9 Soundtrack Generation",
+        "category": "audio-to-audio",
+        "description": "Generates soundtracks from an uploaded image or video, with optional style and mood guidance, audio-range selection, and multiple variations.",
+        "status": "active",
+        "tags": [
+          "music",
+          "soundtrack",
+          "image to audio",
+          "video to audio"
+        ],
+        "updated_at": "2026-10-30T21:15:48.273Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaff1ef/_Rj7C3h4nbFzIekBD9VY6.jpg",
+        "model_url": "https://fal.run/mureka/v9/generate/soundtrack",
+        "license_type": "commercial",
+        "date": "2026-10-26T15:37:03.848Z",
+        "group": {
+          "key": "mureka-v9",
+          "label": "Soundtrack Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v9/generate/instrumental",
+      "metadata": {
+        "display_name": "Mureka 9 Instrumental Generation",
+        "category": "text-to-audio",
+        "description": "Generates instrumental music from a text description or uploaded instrumental reference, with support for multiple variations.\n",
+        "status": "active",
+        "tags": [
+          "music",
+          "instrumental",
+          "music generation"
+        ],
+        "updated_at": "2026-10-30T21:15:41.843Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaff1b0/QdgRyEDZMctEvdrsBhiPQ.jpg",
+        "model_url": "https://fal.run/mureka/v9/generate/instrumental",
+        "license_type": "commercial",
+        "date": "2026-10-26T15:26:03.856Z",
+        "group": {
+          "key": "mureka-v9",
+          "label": "Instrumental Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/mureka/v9/generate/instrumental/stream",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v9/generate/song",
+      "metadata": {
+        "display_name": "Mureka 9 Song Generation",
+        "category": "text-to-audio",
+        "description": "Generates songs from a text prompt or supplied lyrics, with musical style, vocal, reference-audio, and melody controls, plus support for multiple variations.\n",
+        "status": "active",
+        "tags": [
+          "music",
+          "vocals",
+          "song generation"
+        ],
+        "updated_at": "2026-10-30T21:15:36.120Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaff182/4drxC0q8eOOC6uSU4RyCQ.jpg",
+        "model_url": "https://fal.run/mureka/v9/generate/song",
+        "license_type": "commercial",
+        "date": "2026-10-26T15:18:55.682Z",
+        "group": {
+          "key": "mureka-v9",
+          "label": "Song Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/mureka/v9/generate/song/stream",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v8/song/remix",
+      "metadata": {
+        "display_name": "Mureka 8 Song Remix",
+        "category": "audio-to-audio",
+        "description": "Remixes a generated song or uploaded audio with Mureka 8, using complete lyrics and a prompt that controls genre, mood, instrumentation, and arrangement. Accepts source audio from 10 to 350 seconds; vocal-only, accompaniment-only, and instrumental tracks are not supported.",
+        "status": "active",
+        "tags": [
+          "music",
+          "remix",
+          "audio to audio"
+        ],
+        "updated_at": "2026-10-30T21:15:13.003Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa620b/dzA6SjokYI-4v7xeUE9wD.jpg",
+        "model_url": "https://fal.run/mureka/v8/song/remix",
+        "license_type": "commercial",
+        "date": "2026-10-30T17:00:19.213Z",
+        "group": {
+          "key": "mureka-v8",
+          "label": "Song Remix"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v8/song/extend",
+      "metadata": {
+        "display_name": "Mureka 8 Song Extension",
+        "category": "audio-to-audio",
+        "description": "Extends a generated song or uploaded audio from a specified timestamp using supplied lyrics, with head or tail extension depending on the selected model.",
+        "status": "active",
+        "tags": [
+          "music",
+          "audio extension",
+          "lyrics"
+        ],
+        "updated_at": "2026-10-30T21:15:07.026Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf8fb4/v6gy1QvfavujHKZWT4w8k.jpg",
+        "model_url": "https://fal.run/mureka/v8/song/extend",
+        "license_type": "commercial",
+        "date": "2026-10-23T17:45:48.931Z",
+        "group": {
+          "key": "mureka-v8",
+          "label": "Song Extension"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v8/generate/track",
+      "metadata": {
+        "display_name": "Mureka 8 Track Generation",
+        "category": "audio-to-audio",
+        "description": "Generates vocal or instrumental tracks for an existing song or uploaded audio, with controls for track type, musical style, generation region, and optional vocal lyrics.",
+        "status": "active",
+        "tags": [
+          "music",
+          "track generation",
+          "vocals",
+          "instruments"
+        ],
+        "updated_at": "2026-10-30T21:15:00.972Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf8eff/1tEZt1_oDHDlJAglrgzeU.jpg",
+        "model_url": "https://fal.run/mureka/v8/generate/track",
+        "license_type": "commercial",
+        "date": "2026-10-23T17:15:36.565Z",
+        "group": {
+          "key": "mureka-v8",
+          "label": "Track Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v8/generate/soundtrack",
+      "metadata": {
+        "display_name": "Mureka 8 Soundtrack Generation",
+        "category": "text-to-audio",
+        "description": "Generates soundtracks from an uploaded image or video, with optional style and mood guidance, audio-range selection, and multiple variations.",
+        "status": "active",
+        "tags": [],
+        "updated_at": "2026-10-30T21:14:54.743Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf8e6a/8Yz-UopodquIrDrrZ8K3z.jpg",
+        "model_url": "https://fal.run/mureka/v8/generate/soundtrack",
+        "license_type": "commercial",
+        "date": "2026-10-23T16:51:00.729Z",
+        "group": {
+          "key": "mureka-v8",
+          "label": "Soundtrack Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v8/generate/instrumental",
+      "metadata": {
+        "display_name": "Mureka 8 Instrumental Generation",
+        "category": "text-to-audio",
+        "description": "Generates instrumental music from a text description or uploaded instrumental reference, with support for multiple variations.",
+        "status": "active",
+        "tags": [
+          "music",
+          "instrumental",
+          "music generation"
+        ],
+        "updated_at": "2026-10-30T21:14:48.261Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf6b91/Od9WiNXGMRlQgps9WYwQz.jpg",
+        "model_url": "https://fal.run/mureka/v8/generate/instrumental",
+        "license_type": "commercial",
+        "date": "2026-10-22T16:08:44.251Z",
+        "group": {
+          "key": "mureka-v8",
+          "label": "Instrumental Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/mureka/v8/generate/instrumental/stream",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/v8/generate/song",
+      "metadata": {
+        "display_name": "Mureka 8 Song Generation",
+        "category": "text-to-audio",
+        "description": "Generates songs from a text prompt or supplied lyrics, with musical style, vocal, reference-audio, and melody controls, plus support for multiple variations.",
+        "status": "active",
+        "tags": [
+          "music",
+          "vocals",
+          "song generation"
+        ],
+        "updated_at": "2026-10-30T21:14:41.867Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaf8dce/0lFfMSKWP3ocUh7XnGkO8.jpg",
+        "model_url": "https://fal.run/mureka/v8/generate/song",
+        "license_type": "commercial",
+        "date": "2026-10-23T16:24:49.308Z",
+        "group": {
+          "key": "mureka-v8",
+          "label": "Song Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "stream_url": "https://fal.run/mureka/v8/generate/song/stream",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/api/generate/speech",
+      "metadata": {
+        "display_name": "Mureka Speech Generation",
+        "category": "text-to-audio",
+        "description": "Synthesizes speech from text using a built-in voice preset or an uploaded custom voice.",
+        "status": "active",
+        "tags": [
+          "speech",
+          "text to speech",
+          "voice"
+        ],
+        "updated_at": "2026-10-30T21:14:04.490Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa61da/W8yYhfA_YR6yVzWvoIAbh.jpg",
+        "model_url": "https://fal.run/mureka/api/generate/speech",
+        "license_type": "commercial",
+        "date": "2026-09-15T14:16:37.857Z",
+        "group": {
+          "key": "mureka-api",
+          "label": "Speech Generation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/api/song/edit",
+      "metadata": {
+        "display_name": "Mureka Song Editing",
+        "category": "audio-to-audio",
+        "description": "Rewrites a selected time region of a generated song or uploaded audio using replacement lyrics.",
+        "status": "active",
+        "tags": [
+          "music",
+          "audio editing",
+          "lyrics"
+        ],
+        "updated_at": "2026-10-30T21:13:58.965Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa61f3/3wLOBspCEcfdX8pDqVZA5.jpg",
+        "model_url": "https://fal.run/mureka/api/song/edit",
+        "license_type": "commercial",
+        "date": "2026-09-15T14:21:42.828Z",
+        "group": {
+          "key": "mureka-api",
+          "label": "Song Editing"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/api/song/stem",
+      "metadata": {
+        "display_name": "Mureka Stem Separation",
+        "category": "audio-to-audio",
+        "description": "Separates a song into downloadable audio stems, with available stem types and optional MIDI output determined by the selected separation model.",
+        "status": "active",
+        "tags": [
+          "music",
+          "stem separation",
+          "midi"
+        ],
+        "updated_at": "2026-10-30T21:13:52.581Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6214/x2KU6ElS5zAlLVic8_wMj.jpg",
+        "model_url": "https://fal.run/mureka/api/song/stem",
+        "license_type": "commercial",
+        "date": "2026-09-15T14:27:43.103Z",
+        "group": {
+          "key": "mureka-api",
+          "label": "Stem Separation"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "mureka/api/voice/clone",
+      "metadata": {
+        "display_name": "Mureka Voice Cloning",
+        "category": "audio-to-audio",
+        "description": "Creates a reusable custom voice from a short vocal recording and returns a voice identifier for supported generation workflows.",
+        "status": "active",
+        "tags": [
+          "voice cloning",
+          "vocals",
+          "custom voice"
+        ],
+        "updated_at": "2026-10-30T21:10:28.148Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aaa6235/kH7JRPJYphhcNVbMoCM13.jpg",
+        "model_url": "https://fal.run/mureka/api/voice/clone",
+        "license_type": "commercial",
+        "date": "2026-09-15T14:31:59.003Z",
+        "group": {
+          "key": "mureka-api",
+          "label": "Voice Cloning"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "music_generation"
+    },
+    {
+      "endpoint_id": "bytedance/seedance-2.5/us/draft/complete",
+      "metadata": {
+        "display_name": "Seedance 2.5 US Draft Complete",
+        "category": "video-to-video",
+        "description": "Draft completion endpoint for Seedance 2.5 US - submit a draft id to regenerate the task at 1080p.",
+        "status": "active",
+        "tags": [],
+        "updated_at": "2026-10-30T19:20:44.815Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0ab079c2/LA6hgIjqVX_nrQ8SEkhlb.jpg",
+        "model_url": "https://fal.run/bytedance/seedance-2.5/us/draft/complete",
+        "license_type": "commercial",
+        "date": "2026-10-30T16:12:34.390Z",
+        "group": {
+          "key": "seedance-2.5-us",
+          "label": "Draft Completion"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "_our_category": "video_generation"
     },
     {
       "endpoint_id": "tbc/mischief-1/image-to-video",
@@ -32305,5 +32606,5 @@
       "_our_category": "video_generation"
     }
   ],
-  "total_fetched": 1448
+  "total_fetched": 1464
 }
