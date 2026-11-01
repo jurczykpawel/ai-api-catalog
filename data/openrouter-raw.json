@@ -9298,29 +9298,29 @@
           "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.0000000141",
-          "completion": "0.000000144",
-          "input_cache_read": "0.000000013",
+          "prompt": "0.000000035",
+          "completion": "0.0000005",
+          "input_cache_read": "0.000000005",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000141",
+              "price": "0.000000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000144",
+              "price": "0.0000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000013",
+              "price": "0.000000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -9331,31 +9331,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000141",
+            "price": "0.000000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000144",
+            "price": "0.0000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000013",
+            "price": "0.000000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000141",
-          "openai:completion_tokens": "0.000000144",
-          "openai:cached_prompt_tokens": "0.000000013"
+          "openai:prompt_tokens": "0.000000035",
+          "openai:completion_tokens": "0.0000005",
+          "openai:cached_prompt_tokens": "0.000000005"
         },
-        "pricing_version_id": "61717fb2-7b6c-4b4e-9d68-feafcee5d827",
+        "pricing_version_id": "c660241c-25fc-4c42-945f-2238527bde97",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -9366,7 +9366,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 20,
+        "limit_rpm": 50,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -14998,7 +14998,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-10-21T00:56:17.755Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -20711,7 +20711,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-10-17T00:56:15.799Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -34188,7 +34188,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-26T00:00:24.361Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -44466,9 +44466,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "487e5c2f-9236-45db-a6fc-6ed2694cc894",
-        "name": "GMICloud | xiaomi/mimo-v2.6-pro-20260921",
-        "context_length": 1050000,
+        "id": "2605413e-4a82-494f-ba65-d75f37ac3f11",
+        "name": "DeepInfra | xiaomi/mimo-v2.6-pro-20260921",
+        "context_length": 1048576,
         "model": {
           "slug": "xiaomi/mimo-v2.6-pro",
           "hf_slug": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
@@ -44539,48 +44539,45 @@
         },
         "model_variant_slug": "xiaomi/mimo-v2.6-pro",
         "model_variant_permaslug": "xiaomi/mimo-v2.6-pro-20260921",
-        "adapter_name": "GMICloudAdapter",
-        "provider_name": "GMICloud",
+        "adapter_name": "DeepInfraAdapter",
+        "provider_name": "DeepInfra",
         "provider_info": {
-          "name": "GMICloud",
-          "displayName": "GMICloud",
-          "slug": "gmicloud",
-          "baseUrl": "https://api.gmi-serving.com/v1",
+          "name": "DeepInfra",
+          "displayName": "DeepInfra",
+          "slug": "deepinfra",
+          "baseUrl": "https://api.deepinfra.com/v1/openai",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
-            "privacyPolicyURL": "https://docs.gmicloud.ai/privacy",
+            "termsOfServiceURL": "https://deepinfra.com/terms",
+            "privacyPolicyURL": "https://deepinfra.com/privacy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
           "hasChatCompletions": true,
           "hasCompletions": true,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "GMICloudAdapter",
-          "statusPageUrl": null,
+          "adapterName": "DeepInfraAdapter",
+          "statusPageUrl": "https://status.deepinfra.com/",
           "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gmicloud.ai/&size=256"
+            "url": "/images/icons/DeepInfra.webp"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "gmicloud",
-        "provider_display_name": "GMICloud",
-        "provider_slug": "gmicloud/bf16",
+        "provider_permaslug": "deepinfra",
+        "provider_display_name": "DeepInfra",
+        "provider_slug": "deepinfra/fp8",
         "derived_service_tier": null,
         "provider_model_id": "XiaomiMiMo/MiMo-V2.6-Pro",
-        "quantization": "bf16",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -44593,7 +44590,14 @@
           "max_tokens",
           "temperature",
           "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
           "seed",
+          "min_p",
+          "logit_bias",
           "response_format",
           "structured_outputs",
           "tools",
@@ -44605,36 +44609,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.gmicloud.ai/terms-and-conditions",
-          "privacyPolicyURL": "https://docs.gmicloud.ai/privacy"
+          "termsOfServiceURL": "https://deepinfra.com/terms",
+          "privacyPolicyURL": "https://deepinfra.com/privacy"
         },
         "pricing": {
-          "prompt": "0.00000036975",
-          "completion": "0.0000007395",
-          "input_cache_read": "0.0000000034",
-          "discount": 0.15,
+          "prompt": "0.000000387",
+          "completion": "0.000000783",
+          "input_cache_read": "0.00000000324",
+          "discount": 0.1,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000036975",
+              "price": "0.000000387",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000007395",
+              "price": "0.000000783",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000034",
+              "price": "0.00000000324",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -44645,31 +44649,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000036975",
+            "price": "0.000000387",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000007395",
+            "price": "0.000000783",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000034",
+            "price": "0.00000000324",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000435",
+          "openai:prompt_tokens": "0.00000043",
           "openai:completion_tokens": "0.00000087",
-          "openai:cached_prompt_tokens": "0.000000004"
+          "openai:cached_prompt_tokens": "0.0000000036"
         },
-        "pricing_version_id": "5b486b4a-454b-47d3-9872-f777fc55ebd5",
+        "pricing_version_id": "434e10d3-7eb7-470a-a58c-687c3a1f8967",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -44686,21 +44690,21 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
-        "provider_region": null,
+        "provider_region": "us",
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-25T20:22:02.915Z",
+        "created_at": "2026-09-22T18:52:24.489Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -45808,7 +45812,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-09-18T17:54:07.233Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -47212,8 +47216,8 @@
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "reasoning_effort",
           "logprobs",
+          "reasoning_effort",
           "top_logprobs",
           "parallel_tool_calls",
           "max_completion_tokens"
@@ -47231,29 +47235,29 @@
           "privacyPolicyURL": "https://www.openinference.ai/privacy"
         },
         "pricing": {
-          "prompt": "0.0000000141",
-          "completion": "0.000000144",
-          "input_cache_read": "0.000000013",
+          "prompt": "0.000000035",
+          "completion": "0.0000005",
+          "input_cache_read": "0.000000005",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000141",
+              "price": "0.000000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000144",
+              "price": "0.0000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000013",
+              "price": "0.000000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -47264,31 +47268,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000141",
+            "price": "0.000000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000144",
+            "price": "0.0000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000013",
+            "price": "0.000000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000141",
-          "openai:completion_tokens": "0.000000144",
-          "openai:cached_prompt_tokens": "0.000000013"
+          "openai:prompt_tokens": "0.000000035",
+          "openai:completion_tokens": "0.0000005",
+          "openai:cached_prompt_tokens": "0.000000005"
         },
-        "pricing_version_id": "61717fb2-7b6c-4b4e-9d68-feafcee5d827",
+        "pricing_version_id": "c660241c-25fc-4c42-945f-2238527bde97",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -47299,7 +47303,7 @@
         "supports_tool_parameters": true,
         "supports_reasoning": true,
         "supports_multipart": true,
-        "limit_rpm": 20,
+        "limit_rpm": 50,
         "limit_rpd": null,
         "has_completions": true,
         "has_chat_completions": true,
@@ -51628,29 +51632,29 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000000134",
-          "completion": "0.0000005307",
-          "input_cache_read": "0.000000006",
+          "prompt": "0.0000000028",
+          "completion": "0.0000006426",
+          "input_cache_read": "0.0000000028",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000134",
+              "price": "0.0000000028",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000005307",
+              "price": "0.0000006426",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000006",
+              "price": "0.0000000028",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -51661,31 +51665,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000134",
+            "price": "0.0000000028",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000005307",
+            "price": "0.0000006426",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000006",
+            "price": "0.0000000028",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000134",
-          "openai:completion_tokens": "0.0000005307",
-          "openai:cached_prompt_tokens": "0.000000006"
+          "openai:prompt_tokens": "0.0000000028",
+          "openai:completion_tokens": "0.0000006426",
+          "openai:cached_prompt_tokens": "0.0000000028"
         },
-        "pricing_version_id": "1732d6f5-54b1-47ac-b182-e465fccac98e",
+        "pricing_version_id": "3fcba7f0-ed27-4a48-b96a-cecbda96f495",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -60881,29 +60885,29 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000000163",
-          "completion": "0.0000001479",
-          "input_cache_read": "0.0000000163",
+          "prompt": "0.0000000285",
+          "completion": "0.0000000923",
+          "input_cache_read": "0.0000000285",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000163",
+              "price": "0.0000000285",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000001479",
+              "price": "0.0000000923",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000163",
+              "price": "0.0000000285",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -60914,31 +60918,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000163",
+            "price": "0.0000000285",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000001479",
+            "price": "0.0000000923",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000163",
+            "price": "0.0000000285",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000163",
-          "openai:completion_tokens": "0.0000001479",
-          "openai:cached_prompt_tokens": "0.0000000163"
+          "openai:prompt_tokens": "0.0000000285",
+          "openai:completion_tokens": "0.0000000923",
+          "openai:cached_prompt_tokens": "0.0000000285"
         },
-        "pricing_version_id": "8a75f5d2-a3e9-4f4e-972c-21a6970ed401",
+        "pricing_version_id": "2393609d-4b45-4287-b153-e7da4f9821bc",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -61814,29 +61818,29 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000000163",
-          "completion": "0.0000001479",
-          "input_cache_read": "0.0000000163",
+          "prompt": "0.0000000285",
+          "completion": "0.0000000923",
+          "input_cache_read": "0.0000000285",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000163",
+              "price": "0.0000000285",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000001479",
+              "price": "0.0000000923",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000163",
+              "price": "0.0000000285",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -61847,31 +61851,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000163",
+            "price": "0.0000000285",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000001479",
+            "price": "0.0000000923",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000163",
+            "price": "0.0000000285",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000163",
-          "openai:completion_tokens": "0.0000001479",
-          "openai:cached_prompt_tokens": "0.0000000163"
+          "openai:prompt_tokens": "0.0000000285",
+          "openai:completion_tokens": "0.0000000923",
+          "openai:cached_prompt_tokens": "0.0000000285"
         },
-        "pricing_version_id": "8a75f5d2-a3e9-4f4e-972c-21a6970ed401",
+        "pricing_version_id": "2393609d-4b45-4287-b153-e7da4f9821bc",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -67218,9 +67222,9 @@
       "limit_rpd": 0,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "c02dc976-15cf-47bb-9d26-bd5250f94b8d",
-        "name": "Darkbloom | qwen/qwen3.8-27b-20260814",
-        "context_length": 262144,
+        "id": "a5d87341-6ae9-4c73-94c3-447f3c3b6373",
+        "name": "PrimeIntellect | qwen/qwen3.8-27b-20260814",
+        "context_length": 131072,
         "model": {
           "slug": "qwen/qwen3.8-27b",
           "hf_slug": "Qwen/Qwen3.8-27B",
@@ -67310,45 +67314,42 @@
         },
         "model_variant_slug": "qwen/qwen3.8-27b",
         "model_variant_permaslug": "qwen/qwen3.8-27b-20260814",
-        "adapter_name": "DarkbloomAdapter",
-        "provider_name": "Darkbloom",
+        "adapter_name": "PrimeIntellectAdapter",
+        "provider_name": "PrimeIntellect",
         "provider_info": {
-          "name": "Darkbloom",
-          "displayName": "Darkbloom",
-          "slug": "darkbloom",
-          "baseUrl": "https://api.darkbloom.dev/v1",
+          "name": "PrimeIntellect",
+          "displayName": "Prime Intellect",
+          "slug": "primeintellect",
+          "baseUrl": "https://api.pinference.ai/api/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
             "requiresUserIDs": false
           },
-          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DarkbloomAdapter",
+          "adapterName": "PrimeIntellectAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "/images/icons/Darkbloom.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.primeintellect.ai/&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
+          "pricingStrategy": "openai_extended"
         },
-        "provider_permaslug": "darkbloom",
-        "provider_display_name": "Darkbloom",
-        "provider_slug": "darkbloom/fp4",
+        "provider_permaslug": "primeintellect",
+        "provider_display_name": "Prime Intellect",
+        "provider_slug": "primeintellect/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "EigenLabs/Qwen3.8-27B-4bit-mtp",
-        "quantization": "fp4",
+        "provider_model_id": "qwen/qwen3.8-27b",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
@@ -67358,21 +67359,23 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "temperature",
-          "top_p",
-          "top_k",
           "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
+          "logit_bias",
           "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "reasoning_effort",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_a",
+          "top_k",
+          "top_p",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -67380,36 +67383,34 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
+          "safetyRetention": false
         },
         "pricing": {
-          "prompt": "0.000000035",
-          "completion": "0.0000015",
-          "input_cache_read": "0.0000000175",
+          "prompt": "0.000000012",
+          "completion": "0.000000683",
+          "input_cache_read": "0.000000011",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000035",
+              "price": "0.000000012",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000015",
+              "price": "0.000000683",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000175",
+              "price": "0.000000011",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -67420,31 +67421,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000035",
+            "price": "0.000000012",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000015",
+            "price": "0.000000683",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000175",
+            "price": "0.000000011",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000035",
-          "openai:completion_tokens": "0.0000015",
-          "openai:cached_prompt_tokens": "0.0000000175"
+          "openai:prompt_tokens": "0.000000012",
+          "openai:completion_tokens": "0.000000683",
+          "openai:cached_prompt_tokens": "0.000000011"
         },
-        "pricing_version_id": "aaef9cbc-ffd2-4b0e-b088-7023a8a9b353",
+        "pricing_version_id": "84dbf39b-979a-4e8f-8c68-c27e6dc83952",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -67460,11 +67461,13 @@
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
+          "supports_base64_video_input": true,
+          "supports_video_urls": true,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -67475,7 +67478,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-03T22:17:07.864Z",
+        "created_at": "2026-10-18T05:06:00.208Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -78243,7 +78246,7 @@
       "supported_tts_voices": [],
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
-        "name": "Baidu | deepseek/deepseek-v4-flash-20260731",
+        "name": "Wafer | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "~deepseek/deepseek-v4-flash-latest",
@@ -78326,70 +78329,70 @@
         },
         "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
         "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
-        "adapter_name": "BaiduAdapter",
-        "provider_name": "Baidu",
+        "adapter_name": "WaferAdapter",
+        "provider_name": "Wafer",
         "provider_info": {
-          "name": "Baidu",
-          "displayName": "Baidu Qianfan",
-          "slug": "baidu",
-          "baseUrl": "https://api.baiduqianfan.ai/v1",
+          "name": "Wafer",
+          "displayName": "Wafer",
+          "slug": "wafer/us",
+          "baseUrl": "https://us.pass.wafer.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
+            "termsOfServiceURL": "https://www.wafer.ai/terms",
+            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "CN",
+          "headquarters": "US",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "BaiduAdapter",
+          "adapterName": "WaferAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wafer.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "baidu",
-        "provider_display_name": "Baidu Qianfan",
-        "provider_slug": "baidu/fp8",
+        "provider_permaslug": "wafer",
+        "provider_display_name": "Wafer",
+        "provider_slug": "wafer/us",
         "derived_service_tier": null,
-        "provider_model_id": "deepseek-v4-flash-0731",
-        "quantization": "fp8",
+        "provider_model_id": "DeepSeek-V4-Flash-0731-Fast-US",
+        "quantization": "nvfp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "max_tokens",
-          "stop",
-          "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice",
           "top_k",
           "min_p",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
+          "stop",
           "seed",
+          "max_tokens",
           "logit_bias",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
           "logprobs",
           "top_logprobs",
           "reasoning_effort",
@@ -78402,36 +78405,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
+          "termsOfServiceURL": "https://www.wafer.ai/terms",
+          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000005764",
-          "completion": "0.00000017292",
-          "input_cache_read": "0.000000001834",
-          "discount": 0.869,
+          "prompt": "0.0000000434",
+          "completion": "0.0000003",
+          "input_cache_read": "0.000000035",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000005764",
+              "price": "0.0000000434",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000017292",
+              "price": "0.0000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000001834",
+              "price": "0.000000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -78442,31 +78445,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000005764",
+            "price": "0.0000000434",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000017292",
+            "price": "0.0000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000001834",
+            "price": "0.000000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000044",
-          "openai:completion_tokens": "0.00000132",
-          "openai:cached_prompt_tokens": "0.000000014"
+          "openai:prompt_tokens": "0.0000000434",
+          "openai:completion_tokens": "0.0000003",
+          "openai:cached_prompt_tokens": "0.000000035"
         },
-        "pricing_version_id": "50b4d4e3-6268-4155-a421-752ab5e49a65",
+        "pricing_version_id": "68f7e222-1297-49ec-a98d-64b9d36f260b",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -78492,12 +78495,12 @@
         "supported_video_parameters": null,
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
-        "provider_region": null,
+        "provider_region": "us",
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 1000000,
-        "created_at": "2026-08-03T15:03:08.203Z",
+        "capacity_tpm": null,
+        "created_at": "2026-10-27T05:21:06.259Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -78582,8 +78585,8 @@
       "limit_rpd": 0,
       "supported_tts_voices": [],
       "endpoint": {
-        "id": "223c54e7-4db1-4098-980f-47741e7637ab",
-        "name": "Baidu | deepseek/deepseek-v4-flash-20260731",
+        "id": "7ff39bf4-2128-455b-b2b5-42e48371865e",
+        "name": "Wafer | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
@@ -78666,63 +78669,72 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash-0731",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260731",
-        "adapter_name": "BaiduAdapter",
-        "provider_name": "Baidu",
+        "adapter_name": "WaferAdapter",
+        "provider_name": "Wafer",
         "provider_info": {
-          "name": "Baidu",
-          "displayName": "Baidu Qianfan",
-          "slug": "baidu",
-          "baseUrl": "https://api.baiduqianfan.ai/v1",
+          "name": "Wafer",
+          "displayName": "Wafer",
+          "slug": "wafer/us",
+          "baseUrl": "https://us.pass.wafer.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
+            "termsOfServiceURL": "https://www.wafer.ai/terms",
+            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "CN",
+          "headquarters": "US",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "BaiduAdapter",
+          "adapterName": "WaferAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wafer.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "baidu",
-        "provider_display_name": "Baidu Qianfan",
-        "provider_slug": "baidu/fp8",
+        "provider_permaslug": "wafer",
+        "provider_display_name": "Wafer",
+        "provider_slug": "wafer/us",
         "derived_service_tier": null,
-        "provider_model_id": "deepseek-v4-flash-0731",
-        "quantization": "fp8",
+        "provider_model_id": "DeepSeek-V4-Flash-0731-Fast-US",
+        "quantization": "nvfp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "max_tokens",
+          "top_k",
+          "min_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
           "stop",
+          "seed",
+          "max_tokens",
+          "logit_bias",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -78730,36 +78742,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
+          "termsOfServiceURL": "https://www.wafer.ai/terms",
+          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000005764",
-          "completion": "0.00000017292",
-          "input_cache_read": "0.000000001834",
-          "discount": 0.869,
+          "prompt": "0.0000000434",
+          "completion": "0.0000003",
+          "input_cache_read": "0.000000035",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000005764",
+              "price": "0.0000000434",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000017292",
+              "price": "0.0000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000001834",
+              "price": "0.000000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -78770,31 +78782,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000005764",
+            "price": "0.0000000434",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000017292",
+            "price": "0.0000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000001834",
+            "price": "0.000000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000044",
-          "openai:completion_tokens": "0.00000132",
-          "openai:cached_prompt_tokens": "0.000000014"
+          "openai:prompt_tokens": "0.0000000434",
+          "openai:completion_tokens": "0.0000003",
+          "openai:cached_prompt_tokens": "0.000000035"
         },
-        "pricing_version_id": "50b4d4e3-6268-4155-a421-752ab5e49a65",
+        "pricing_version_id": "68f7e222-1297-49ec-a98d-64b9d36f260b",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -78820,12 +78832,12 @@
         "supported_video_parameters": null,
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
-        "provider_region": null,
+        "provider_region": "us",
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 1000000,
-        "created_at": "2026-08-03T15:03:08.203Z",
+        "capacity_tpm": null,
+        "created_at": "2026-10-27T05:21:06.259Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -86018,595 +86030,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "poolside/laguna-s-2.1",
-      "hf_slug": "poolside/Laguna-S-2.1",
-      "updated_at": "2026-07-31T12:24:19.274Z",
-      "created_at": "2026-07-21T16:51:23.607Z",
-      "hf_updated_at": null,
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "short_name": "Laguna S 2.1 (free)",
-      "author": "poolside",
-      "author_display_name": "poolside",
-      "author_icon_uri": null,
-      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and 40.4% on DeepSWE, making it one of the strongest coding models in its category. Open-weight under the OpenMDW-1.1 license.\n\nLaguna S 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna S 2.1 is subject to the [OpenMDW-1.1 License](<https://openmdw.ai/license/1-1/>), and should be used consistently with Poolside's [Acceptable Use Policy](<https://poolside.ai/legal/acceptable-use-policy>). We advise against circumventing Laguna S 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](<mailto:security@poolside.ai>).\n\nIf you are using Laguna S 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-      "model_version_group_id": null,
-      "context_length": 262144,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "poolside/laguna-s-2.1-20260720",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null,
-        "is_mandatory_reasoning": false,
-        "supports_reasoning_effort": false,
-        "default_reasoning_enabled": true,
-        "reasoning_return_mechanism": "reasoning-content"
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null,
-          "is_mandatory_reasoning": false,
-          "supports_reasoning_effort": false,
-          "default_reasoning_enabled": true,
-          "reasoning_return_mechanism": "reasoning-content"
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "reasoning",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "1671d9aa-18c8-444a-96c7-f5f6231591bb",
-        "name": "Poolside | poolside/laguna-s-2.1-20260720:free",
-        "context_length": 262144,
-        "model": {
-          "slug": "poolside/laguna-s-2.1",
-          "hf_slug": "poolside/Laguna-S-2.1",
-          "updated_at": "2026-07-31T12:24:19.274341+00:00",
-          "created_at": "2026-07-21T16:51:23.607+00:00",
-          "hf_updated_at": null,
-          "name": "Poolside: Laguna S 2.1",
-          "short_name": "Laguna S 2.1",
-          "author": "poolside",
-          "author_display_name": "poolside",
-          "author_icon_uri": null,
-          "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and 40.4% on DeepSWE, making it one of the strongest coding models in its category. Open-weight under the OpenMDW-1.1 license.\n\nLaguna S 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna S 2.1 is subject to the [OpenMDW-1.1 License](<https://openmdw.ai/license/1-1/>), and should be used consistently with Poolside's [Acceptable Use Policy](<https://poolside.ai/legal/acceptable-use-policy>). We advise against circumventing Laguna S 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](<mailto:security@poolside.ai>).\n\nIf you are using Laguna S 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-          "model_version_group_id": null,
-          "context_length": 1048576,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "poolside/laguna-s-2.1-20260720",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": false,
-            "supports_reasoning_effort": false,
-            "default_reasoning_enabled": true,
-            "reasoning_return_mechanism": "reasoning-content"
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null,
-              "is_mandatory_reasoning": false,
-              "supports_reasoning_effort": false,
-              "default_reasoning_enabled": true,
-              "reasoning_return_mechanism": "reasoning-content"
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "reasoning",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "poolside/laguna-s-2.1:free",
-        "model_variant_permaslug": "poolside/laguna-s-2.1-20260720:free",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Poolside",
-        "provider_info": {
-          "name": "Poolside",
-          "displayName": "Poolside",
-          "slug": "poolside",
-          "baseUrl": "https://inference.poolside.ai/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "http://poolside.ai/legal",
-            "privacyPolicyURL": "https://poolside.ai/legal/privacy",
-            "requiresUserIDs": false
-          },
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "isPrivate": false,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://poolside.ai/&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_permaslug": "poolside",
-        "provider_display_name": "Poolside",
-        "provider_slug": "poolside/fp4",
-        "derived_service_tier": null,
-        "provider_model_id": "poolside/laguna-s-2.1",
-        "quantization": "fp4",
-        "variant": "free",
-        "is_free": true,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 32768,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "temperature",
-          "max_tokens",
-          "tools",
-          "tool_choice"
-        ],
-        "excluded_parameters": [
-          "response_format",
-          "structured_outputs"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": true,
-          "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "http://poolside.ai/legal",
-          "privacyPolicyURL": "https://poolside.ai/legal/privacy"
-        },
-        "pricing": {
-          "prompt": "0",
-          "completion": "0",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": "0",
-          "openai:completion_tokens": "0"
-        },
-        "pricing_version_id": "613946c7-c046-4c53-ba17-ef145c679846",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": false,
-            "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-10-31T13:00:00.000Z",
-        "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-07-20T14:22:26.860Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
-    },
-    {
-      "slug": "poolside/laguna-s-2.1",
-      "hf_slug": "poolside/Laguna-S-2.1",
-      "updated_at": "2026-07-31T12:24:19.274Z",
-      "created_at": "2026-07-21T16:51:23.607Z",
-      "hf_updated_at": null,
-      "name": "Poolside: Laguna S 2.1",
-      "short_name": "Laguna S 2.1",
-      "author": "poolside",
-      "author_display_name": "poolside",
-      "author_icon_uri": null,
-      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and 40.4% on DeepSWE, making it one of the strongest coding models in its category. Open-weight under the OpenMDW-1.1 license.\n\nLaguna S 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna S 2.1 is subject to the [OpenMDW-1.1 License](<https://openmdw.ai/license/1-1/>), and should be used consistently with Poolside's [Acceptable Use Policy](<https://poolside.ai/legal/acceptable-use-policy>). We advise against circumventing Laguna S 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](<mailto:security@poolside.ai>).\n\nIf you are using Laguna S 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-      "model_version_group_id": null,
-      "context_length": 1048576,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "poolside/laguna-s-2.1-20260720",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null,
-        "is_mandatory_reasoning": false,
-        "supports_reasoning_effort": false,
-        "default_reasoning_enabled": true,
-        "reasoning_return_mechanism": "reasoning-content"
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null,
-          "is_mandatory_reasoning": false,
-          "supports_reasoning_effort": false,
-          "default_reasoning_enabled": true,
-          "reasoning_return_mechanism": "reasoning-content"
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "reasoning",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "ab7f9e97-1af5-4b81-b099-cc932f54234e",
-        "name": "Poolside | poolside/laguna-s-2.1-20260720",
-        "context_length": 1048576,
-        "model": {
-          "slug": "poolside/laguna-s-2.1",
-          "hf_slug": "poolside/Laguna-S-2.1",
-          "updated_at": "2026-07-31T12:24:19.274341+00:00",
-          "created_at": "2026-07-21T16:51:23.607+00:00",
-          "hf_updated_at": null,
-          "name": "Poolside: Laguna S 2.1",
-          "short_name": "Laguna S 2.1",
-          "author": "poolside",
-          "author_display_name": "poolside",
-          "author_icon_uri": null,
-          "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and 40.4% on DeepSWE, making it one of the strongest coding models in its category. Open-weight under the OpenMDW-1.1 license.\n\nLaguna S 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna S 2.1 is subject to the [OpenMDW-1.1 License](<https://openmdw.ai/license/1-1/>), and should be used consistently with Poolside's [Acceptable Use Policy](<https://poolside.ai/legal/acceptable-use-policy>). We advise against circumventing Laguna S 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](<mailto:security@poolside.ai>).\n\nIf you are using Laguna S 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-          "model_version_group_id": null,
-          "context_length": 1048576,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "poolside/laguna-s-2.1-20260720",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": false,
-            "supports_reasoning_effort": false,
-            "default_reasoning_enabled": true,
-            "reasoning_return_mechanism": "reasoning-content"
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null,
-              "is_mandatory_reasoning": false,
-              "supports_reasoning_effort": false,
-              "default_reasoning_enabled": true,
-              "reasoning_return_mechanism": "reasoning-content"
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "reasoning",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "poolside/laguna-s-2.1",
-        "model_variant_permaslug": "poolside/laguna-s-2.1-20260720",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Poolside",
-        "provider_info": {
-          "name": "Poolside",
-          "displayName": "Poolside",
-          "slug": "poolside",
-          "baseUrl": "https://inference.poolside.ai/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "http://poolside.ai/legal",
-            "privacyPolicyURL": "https://poolside.ai/legal/privacy",
-            "requiresUserIDs": false
-          },
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "isPrivate": false,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://poolside.ai/&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_permaslug": "poolside",
-        "provider_display_name": "Poolside",
-        "provider_slug": "poolside/fp4",
-        "derived_service_tier": null,
-        "provider_model_id": "poolside/laguna-s-2.1:fast",
-        "quantization": "fp4",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "tools",
-          "tool_choice",
-          "temperature",
-          "max_tokens"
-        ],
-        "excluded_parameters": [
-          "response_format",
-          "structured_outputs"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "retentionDays": 90,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "http://poolside.ai/legal",
-          "privacyPolicyURL": "https://poolside.ai/legal/privacy"
-        },
-        "pricing": {
-          "prompt": "0.00000009",
-          "completion": "0.00000018",
-          "input_cache_read": "0.000000009",
-          "discount": 0.1,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0.00000009",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0.00000018",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Cache Read",
-              "price": "0.000000009",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0.00000009",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0.00000018",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Cache Read",
-            "price": "0.000000009",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
-          "openai:completion_tokens": "0.0000002",
-          "openai:cached_prompt_tokens": "0.00000001"
-        },
-        "pricing_version_id": "d2d2a866-78ad-4f08-a263-be05c1095c87",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": 50,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": false,
-            "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-10-31T13:00:00.000Z",
-        "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-07-20T14:22:28.186Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
-    },
-    {
       "slug": "google/gemini-3.6-flash",
       "hf_slug": null,
       "updated_at": "2026-08-31T22:32:35.672Z",
@@ -91547,7 +90970,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 52000000,
+        "capacity_tpm": 24000000,
         "created_at": "2026-08-06T23:52:02.825Z",
         "status": 0
       },
@@ -101171,595 +100594,6 @@
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
-    },
-    {
-      "slug": "poolside/laguna-xs-2.1",
-      "hf_slug": "poolside/Laguna-XS-2.1",
-      "updated_at": "2026-07-31T12:24:29.676Z",
-      "created_at": "2026-07-02T14:27:09.627Z",
-      "hf_updated_at": null,
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "short_name": "Laguna XS 2.1 (free)",
-      "author": "poolside",
-      "author_display_name": "poolside",
-      "author_icon_uri": null,
-      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines tool calling and reasoning capabilities with a compact footprint, offering a 256K context window and up to 32K output tokens. Quantized to FP8 for fast, cost-efficient agentic coding workflows.\n\nLaguna XS 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna XS 2.1 is subject to the [OpenMDW-1.1 License](https://openmdw.ai/license/1-1/), and should be used consistently with Poolside's [Acceptable Use Policy](https://poolside.ai/legal/acceptable-use-policy). We advise against circumventing Laguna XS 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](mailto:security@poolside.ai).\n\nIf you are using Laguna XS 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-      "model_version_group_id": null,
-      "context_length": 262144,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "poolside/laguna-xs-2.1-20260625",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null,
-        "is_mandatory_reasoning": false,
-        "supports_reasoning_effort": false,
-        "default_reasoning_enabled": true,
-        "reasoning_return_mechanism": "reasoning-content"
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null,
-          "is_mandatory_reasoning": false,
-          "supports_reasoning_effort": false,
-          "default_reasoning_enabled": true,
-          "reasoning_return_mechanism": "reasoning-content"
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "reasoning",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "9c35bcfc-edcc-405a-acee-a0b991ec61cb",
-        "name": "Poolside | poolside/laguna-xs-2.1-20260625:free",
-        "context_length": 262144,
-        "model": {
-          "slug": "poolside/laguna-xs-2.1",
-          "hf_slug": "poolside/Laguna-XS-2.1",
-          "updated_at": "2026-07-31T12:24:29.676191+00:00",
-          "created_at": "2026-07-02T14:27:09.627+00:00",
-          "hf_updated_at": null,
-          "name": "Poolside: Laguna XS 2.1",
-          "short_name": "Laguna XS 2.1",
-          "author": "poolside",
-          "author_display_name": "poolside",
-          "author_icon_uri": null,
-          "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines tool calling and reasoning capabilities with a compact footprint, offering a 256K context window and up to 32K output tokens. Quantized to FP8 for fast, cost-efficient agentic coding workflows.\n\nLaguna XS 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna XS 2.1 is subject to the [OpenMDW-1.1 License](https://openmdw.ai/license/1-1/), and should be used consistently with Poolside's [Acceptable Use Policy](https://poolside.ai/legal/acceptable-use-policy). We advise against circumventing Laguna XS 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](mailto:security@poolside.ai).\n\nIf you are using Laguna XS 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-          "model_version_group_id": null,
-          "context_length": 262144,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "poolside/laguna-xs-2.1-20260625",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": false,
-            "supports_reasoning_effort": false,
-            "default_reasoning_enabled": true,
-            "reasoning_return_mechanism": "reasoning-content"
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null,
-              "is_mandatory_reasoning": false,
-              "supports_reasoning_effort": false,
-              "default_reasoning_enabled": true,
-              "reasoning_return_mechanism": "reasoning-content"
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "reasoning",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "poolside/laguna-xs-2.1:free",
-        "model_variant_permaslug": "poolside/laguna-xs-2.1-20260625:free",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Poolside",
-        "provider_info": {
-          "name": "Poolside",
-          "displayName": "Poolside",
-          "slug": "poolside",
-          "baseUrl": "https://inference.poolside.ai/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "http://poolside.ai/legal",
-            "privacyPolicyURL": "https://poolside.ai/legal/privacy",
-            "requiresUserIDs": false
-          },
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "isPrivate": false,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://poolside.ai/&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_permaslug": "poolside",
-        "provider_display_name": "Poolside",
-        "provider_slug": "poolside/fp8",
-        "derived_service_tier": null,
-        "provider_model_id": "poolside/laguna-xs-2.1",
-        "quantization": "fp8",
-        "variant": "free",
-        "is_free": true,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 32768,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "temperature",
-          "max_tokens",
-          "tools",
-          "tool_choice"
-        ],
-        "excluded_parameters": [
-          "response_format",
-          "structured_outputs"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": true,
-          "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "http://poolside.ai/legal",
-          "privacyPolicyURL": "https://poolside.ai/legal/privacy"
-        },
-        "pricing": {
-          "prompt": "0",
-          "completion": "0",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": "0",
-          "openai:completion_tokens": "0"
-        },
-        "pricing_version_id": "13fb57ef-d952-4302-b2a0-6831036b60fa",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": false,
-            "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-10-31T13:00:00.000Z",
-        "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-06-25T18:16:07.639Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
-    },
-    {
-      "slug": "poolside/laguna-xs-2.1",
-      "hf_slug": "poolside/Laguna-XS-2.1",
-      "updated_at": "2026-07-31T12:24:29.676Z",
-      "created_at": "2026-07-02T14:27:09.627Z",
-      "hf_updated_at": null,
-      "name": "Poolside: Laguna XS 2.1",
-      "short_name": "Laguna XS 2.1",
-      "author": "poolside",
-      "author_display_name": "poolside",
-      "author_icon_uri": null,
-      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines tool calling and reasoning capabilities with a compact footprint, offering a 256K context window and up to 32K output tokens. Quantized to FP8 for fast, cost-efficient agentic coding workflows.\n\nLaguna XS 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna XS 2.1 is subject to the [OpenMDW-1.1 License](https://openmdw.ai/license/1-1/), and should be used consistently with Poolside's [Acceptable Use Policy](https://poolside.ai/legal/acceptable-use-policy). We advise against circumventing Laguna XS 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](mailto:security@poolside.ai).\n\nIf you are using Laguna XS 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-      "model_version_group_id": null,
-      "context_length": 262144,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "poolside/laguna-xs-2.1-20260625",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null,
-        "is_mandatory_reasoning": false,
-        "supports_reasoning_effort": false,
-        "default_reasoning_enabled": true,
-        "reasoning_return_mechanism": "reasoning-content"
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null,
-          "is_mandatory_reasoning": false,
-          "supports_reasoning_effort": false,
-          "default_reasoning_enabled": true,
-          "reasoning_return_mechanism": "reasoning-content"
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "reasoning",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "089ec178-f6dc-4450-aff5-46f68798ce97",
-        "name": "Poolside | poolside/laguna-xs-2.1-20260625",
-        "context_length": 262144,
-        "model": {
-          "slug": "poolside/laguna-xs-2.1",
-          "hf_slug": "poolside/Laguna-XS-2.1",
-          "updated_at": "2026-07-31T12:24:29.676191+00:00",
-          "created_at": "2026-07-02T14:27:09.627+00:00",
-          "hf_updated_at": null,
-          "name": "Poolside: Laguna XS 2.1",
-          "short_name": "Laguna XS 2.1",
-          "author": "poolside",
-          "author_display_name": "poolside",
-          "author_icon_uri": null,
-          "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines tool calling and reasoning capabilities with a compact footprint, offering a 256K context window and up to 32K output tokens. Quantized to FP8 for fast, cost-efficient agentic coding workflows.\n\nLaguna XS 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna XS 2.1 is subject to the [OpenMDW-1.1 License](https://openmdw.ai/license/1-1/), and should be used consistently with Poolside's [Acceptable Use Policy](https://poolside.ai/legal/acceptable-use-policy). We advise against circumventing Laguna XS 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](mailto:security@poolside.ai).\n\nIf you are using Laguna XS 2.1 for free, we may use your inputs and outputs to train and improve our models.",
-          "model_version_group_id": null,
-          "context_length": 262144,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "poolside/laguna-xs-2.1-20260625",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null,
-            "is_mandatory_reasoning": false,
-            "supports_reasoning_effort": false,
-            "default_reasoning_enabled": true,
-            "reasoning_return_mechanism": "reasoning-content"
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null,
-              "is_mandatory_reasoning": false,
-              "supports_reasoning_effort": false,
-              "default_reasoning_enabled": true,
-              "reasoning_return_mechanism": "reasoning-content"
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "reasoning",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "poolside/laguna-xs-2.1",
-        "model_variant_permaslug": "poolside/laguna-xs-2.1-20260625",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Poolside",
-        "provider_info": {
-          "name": "Poolside",
-          "displayName": "Poolside",
-          "slug": "poolside",
-          "baseUrl": "https://inference.poolside.ai/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "http://poolside.ai/legal",
-            "privacyPolicyURL": "https://poolside.ai/legal/privacy",
-            "requiresUserIDs": false
-          },
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "isPrivate": false,
-          "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://poolside.ai/&size=256"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
-        },
-        "provider_permaslug": "poolside",
-        "provider_display_name": "Poolside",
-        "provider_slug": "poolside/fp8",
-        "derived_service_tier": null,
-        "provider_model_id": "poolside/laguna-xs-2.1:fast",
-        "quantization": "fp8",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 32768,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "temperature",
-          "max_tokens",
-          "tools",
-          "tool_choice"
-        ],
-        "excluded_parameters": [
-          "response_format",
-          "structured_outputs"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": true,
-          "retentionDays": 90,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "http://poolside.ai/legal",
-          "privacyPolicyURL": "https://poolside.ai/legal/privacy"
-        },
-        "pricing": {
-          "prompt": "0.00000006",
-          "completion": "0.00000012",
-          "input_cache_read": "0.00000003",
-          "discount": 0.4,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0.00000006",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0.00000012",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Cache Read",
-              "price": "0.00000003",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0.00000006",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0.00000012",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Cache Read",
-            "price": "0.00000003",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
-          "openai:completion_tokens": "0.0000002",
-          "openai:cached_prompt_tokens": "0.00000005"
-        },
-        "pricing_version_id": "5e2c8f9c-9109-4f5c-b390-01bd43bd383a",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": 50,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": false,
-            "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-10-31T13:00:00.000Z",
-        "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-06-25T18:16:08.126Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-10-31T13:00:00.000Z"
     },
     {
       "slug": "anthropic/claude-sonnet-5",
@@ -127241,20 +126075,20 @@
           "temperature",
           "top_p",
           "top_k",
+          "min_p",
           "frequency_penalty",
           "presence_penalty",
+          "repetition_penalty",
           "stop",
           "seed",
           "max_tokens",
-          "tools",
-          "tool_choice",
+          "logit_bias",
           "response_format",
           "structured_outputs",
-          "repetition_penalty",
-          "min_p",
-          "logit_bias",
           "logprobs",
           "top_logprobs",
+          "tools",
+          "tool_choice",
           "max_completion_tokens",
           "parallel_tool_calls",
           "reasoning_effort"
@@ -127365,7 +126199,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 52000000,
+        "capacity_tpm": 24000000,
         "created_at": "2026-08-06T23:52:02.825Z",
         "status": 0
       },
@@ -131597,29 +130431,29 @@
           "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.000000819366",
-          "completion": "0.000001638732",
-          "input_cache_read": "0.0000000682805",
-          "discount": 0.5291,
+          "prompt": "0.000000241338",
+          "completion": "0.000000482676",
+          "input_cache_read": "0.0000000201115",
+          "discount": 0.8613,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000819366",
+              "price": "0.000000241338",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000001638732",
+              "price": "0.000000482676",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000682805",
+              "price": "0.0000000201115",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -131630,21 +130464,21 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000819366",
+            "price": "0.000000241338",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000001638732",
+            "price": "0.000000482676",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000682805",
+            "price": "0.0000000201115",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -131921,15 +130755,15 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000000467",
+          "prompt": "0.0000000379",
           "completion": "0.00000045",
-          "input_cache_read": "0.0000000467",
+          "input_cache_read": "0.0000000379",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000467",
+              "price": "0.0000000379",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -131943,7 +130777,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000467",
+              "price": "0.0000000379",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -131954,7 +130788,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000467",
+            "price": "0.0000000379",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -131968,17 +130802,17 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000467",
+            "price": "0.0000000379",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000467",
+          "openai:prompt_tokens": "0.0000000379",
           "openai:completion_tokens": "0.00000045",
-          "openai:cached_prompt_tokens": "0.0000000467"
+          "openai:cached_prompt_tokens": "0.0000000379"
         },
-        "pricing_version_id": "4d65e01f-29e5-4680-900f-2ef2e08bd7b1",
+        "pricing_version_id": "8469a5e9-7e9d-45b3-b39a-84d2a1b8fb1b",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -133890,7 +132724,7 @@
         ],
         "capacity_tpm": null,
         "created_at": "2026-04-23T16:01:36.956Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -136638,9 +135472,9 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 1000000,
+        "capacity_tpm": 8360000,
         "created_at": "2026-05-21T14:24:00.671Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -139773,7 +138607,7 @@
         "declared_region": null,
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
-        "capacity_tpm": 1000000,
+        "capacity_tpm": 1310000,
         "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       },
@@ -140944,9 +139778,9 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "484aa713-3b4b-456a-8586-e666d97114aa",
-        "name": "PrimeIntellect | google/gemma-4-26b-a4b-it-20260403",
-        "context_length": 262144,
+        "id": "0e9b72a2-e1eb-45bd-adc5-81f0f31e185f",
+        "name": "Darkbloom | google/gemma-4-26b-a4b-it-20260403",
+        "context_length": 131072,
         "model": {
           "slug": "google/gemma-4-26b-a4b-it",
           "hf_slug": "google/gemma-4-26B-A4B-it",
@@ -141020,42 +139854,45 @@
         },
         "model_variant_slug": "google/gemma-4-26b-a4b-it",
         "model_variant_permaslug": "google/gemma-4-26b-a4b-it-20260403",
-        "adapter_name": "PrimeIntellectAdapter",
-        "provider_name": "PrimeIntellect",
+        "adapter_name": "DarkbloomAdapter",
+        "provider_name": "Darkbloom",
         "provider_info": {
-          "name": "PrimeIntellect",
-          "displayName": "Prime Intellect",
-          "slug": "primeintellect",
-          "baseUrl": "https://api.pinference.ai/api/v1",
+          "name": "Darkbloom",
+          "displayName": "Darkbloom",
+          "slug": "darkbloom",
+          "baseUrl": "https://api.darkbloom.dev/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
+            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
+            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
             "requiresUserIDs": false
           },
+          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "PrimeIntellectAdapter",
+          "adapterName": "DarkbloomAdapter",
           "statusPageUrl": null,
-          "byokEnabled": true,
+          "byokEnabled": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.primeintellect.ai/&size=256"
+            "url": "/images/icons/Darkbloom.png"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_extended"
+          "pricingStrategy": "openai_chat_completions"
         },
-        "provider_permaslug": "primeintellect",
-        "provider_display_name": "Prime Intellect",
-        "provider_slug": "primeintellect/bf16",
+        "provider_permaslug": "darkbloom",
+        "provider_display_name": "Darkbloom",
+        "provider_slug": "darkbloom",
         "derived_service_tier": null,
-        "provider_model_id": "google/gemma-4-26b-a4b-it",
-        "quantization": "bf16",
+        "provider_model_id": "gemma-4-26b-a4b-it",
+        "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
@@ -141068,13 +139905,16 @@
           "temperature",
           "top_p",
           "top_k",
-          "min_p",
+          "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
+          "stop",
+          "seed",
           "max_tokens",
-          "max_completion_tokens",
           "response_format",
           "structured_outputs",
+          "logprobs",
+          "top_logprobs",
           "tools",
           "tool_choice"
         ],
@@ -141084,34 +139924,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
-          "safetyRetention": false
+          "safetyRetention": false,
+          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
+          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.00000001",
-          "completion": "0.00000003",
-          "input_cache_read": "0.000000005",
+          "prompt": "0.000000024",
+          "completion": "0.0000001",
+          "input_cache_read": "0.00000001",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000001",
+              "price": "0.000000024",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000003",
+              "price": "0.0000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000005",
+              "price": "0.00000001",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -141122,31 +139964,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000001",
+            "price": "0.000000024",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000003",
+            "price": "0.0000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000005",
+            "price": "0.00000001",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000001",
-          "openai:completion_tokens": "0.00000003",
-          "openai:cached_prompt_tokens": "0.000000005"
+          "openai:prompt_tokens": "0.000000024",
+          "openai:completion_tokens": "0.0000001",
+          "openai:cached_prompt_tokens": "0.00000001"
         },
-        "pricing_version_id": "ce565c5b-90db-4004-93e2-8531713ace14",
+        "pricing_version_id": "a23c6dc2-6666-48c6-afb1-def28a72ac31",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -141162,8 +140004,7 @@
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
-          "supports_base64_video_input": false,
-          "supports_video_urls": false,
+          "supports_video_urls": true,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
@@ -141179,7 +140020,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-10-26T23:43:36.163Z",
+        "created_at": "2026-08-17T02:17:07.792Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -149154,8 +147995,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "a805a3bd-3eec-4311-b47c-d3d75bbff5c3",
-        "name": "Darkbloom | qwen/qwen3.5-9b-20260310",
+        "id": "8c3fbe50-de8a-43eb-a1f0-3621a4202f03",
+        "name": "PrimeIntellect | qwen/qwen3.5-9b-20260310",
         "context_length": 262144,
         "model": {
           "slug": "qwen/qwen3.5-9b",
@@ -149227,69 +148068,63 @@
         },
         "model_variant_slug": "qwen/qwen3.5-9b",
         "model_variant_permaslug": "qwen/qwen3.5-9b-20260310",
-        "adapter_name": "DarkbloomAdapter",
-        "provider_name": "Darkbloom",
+        "adapter_name": "PrimeIntellectAdapter",
+        "provider_name": "PrimeIntellect",
         "provider_info": {
-          "name": "Darkbloom",
-          "displayName": "Darkbloom",
-          "slug": "darkbloom",
-          "baseUrl": "https://api.darkbloom.dev/v1",
+          "name": "PrimeIntellect",
+          "displayName": "Prime Intellect",
+          "slug": "primeintellect",
+          "baseUrl": "https://api.pinference.ai/api/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
             "requiresUserIDs": false
           },
-          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DarkbloomAdapter",
+          "adapterName": "PrimeIntellectAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "/images/icons/Darkbloom.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.primeintellect.ai/&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
+          "pricingStrategy": "openai_extended"
         },
-        "provider_permaslug": "darkbloom",
-        "provider_display_name": "Darkbloom",
-        "provider_slug": "darkbloom/fp4",
+        "provider_permaslug": "primeintellect",
+        "provider_display_name": "Prime Intellect",
+        "provider_slug": "primeintellect/bf16",
         "derived_service_tier": null,
-        "provider_model_id": "Qwen3.5-9B",
-        "quantization": "fp4",
+        "provider_model_id": "qwen/qwen3.5-9b",
+        "quantization": "bf16",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 40960,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "temperature",
-          "top_p",
-          "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
-          "max_tokens",
           "response_format",
           "structured_outputs",
           "tools",
           "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "temperature",
+          "top_p",
+          "top_k",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "max_tokens",
+          "max_completion_tokens"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -149297,36 +148132,34 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
+          "safetyRetention": false
         },
         "pricing": {
-          "prompt": "0.00000008",
-          "completion": "0.00000013",
-          "input_cache_read": "0.00000004",
+          "prompt": "0.00000002",
+          "completion": "0.000000029",
+          "input_cache_read": "0.000000018",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000008",
+              "price": "0.00000002",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000013",
+              "price": "0.000000029",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000004",
+              "price": "0.000000018",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -149337,31 +148170,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000008",
+            "price": "0.00000002",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000013",
+            "price": "0.000000029",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000004",
+            "price": "0.000000018",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000008",
-          "openai:completion_tokens": "0.00000013",
-          "openai:cached_prompt_tokens": "0.00000004"
+          "openai:prompt_tokens": "0.00000002",
+          "openai:completion_tokens": "0.000000029",
+          "openai:cached_prompt_tokens": "0.000000018"
         },
-        "pricing_version_id": "a5133031-842a-47b8-9b11-9bb779e3e20e",
+        "pricing_version_id": "69b8750d-c99a-485d-a09a-4067ec107441",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -149377,11 +148210,13 @@
         "has_completions": false,
         "has_chat_completions": true,
         "features": {
+          "supports_base64_video_input": true,
+          "supports_video_urls": true,
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -149392,7 +148227,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-09-03T23:47:04.016Z",
+        "created_at": "2026-10-25T03:31:05.676Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -161170,7 +160005,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-01-23T14:15:24.112Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -193423,6 +192258,328 @@
       "updated_at": "2026-03-24T19:43:16.801Z",
       "created_at": "2025-08-05T17:17:11.000Z",
       "hf_updated_at": null,
+      "name": "OpenAI: gpt-oss-120b",
+      "short_name": "gpt-oss-120b",
+      "author": "openai",
+      "author_display_name": "OpenAI",
+      "author_icon_uri": null,
+      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
+      "model_version_group_id": null,
+      "context_length": 131072,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "GPT",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": "",
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "openai/gpt-oss-120b",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": "<think>",
+        "end_token": "</think>",
+        "system_prompt": null,
+        "is_mandatory_reasoning": true,
+        "supports_reasoning_effort": true,
+        "supported_reasoning_efforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "default_reasoning_effort": "medium"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": "<think>",
+          "end_token": "</think>",
+          "system_prompt": null,
+          "is_mandatory_reasoning": true,
+          "supports_reasoning_effort": true,
+          "supported_reasoning_efforts": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "default_reasoning_effort": "medium"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2024-06-30T23:59:59.000Z",
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "supported_tts_voices": null,
+      "endpoint": {
+        "id": "6a042b7a-82b2-425b-8d0f-4834f7be44dd",
+        "name": "PrimeIntellect | openai/gpt-oss-120b",
+        "context_length": 131072,
+        "model": {
+          "slug": "openai/gpt-oss-120b",
+          "hf_slug": "openai/gpt-oss-120b",
+          "updated_at": "2026-03-24T19:43:16.801719+00:00",
+          "created_at": "2025-08-05T17:17:11+00:00",
+          "hf_updated_at": null,
+          "name": "OpenAI: gpt-oss-120b",
+          "short_name": "gpt-oss-120b",
+          "author": "openai",
+          "author_display_name": "OpenAI",
+          "author_icon_uri": null,
+          "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
+          "model_version_group_id": null,
+          "context_length": 131072,
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "GPT",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": "",
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "openai/gpt-oss-120b",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": "<think>",
+            "end_token": "</think>",
+            "system_prompt": null,
+            "is_mandatory_reasoning": true,
+            "supports_reasoning_effort": true,
+            "supported_reasoning_efforts": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "default_reasoning_effort": "medium"
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": "<think>",
+              "end_token": "</think>",
+              "system_prompt": null,
+              "is_mandatory_reasoning": true,
+              "supports_reasoning_effort": true,
+              "supported_reasoning_efforts": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "default_reasoning_effort": "medium"
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "frequency_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": "2024-06-30T23:59:59+00:00",
+          "limit_rpm": null,
+          "limit_rpd": null,
+          "supported_tts_voices": null
+        },
+        "model_variant_slug": "openai/gpt-oss-120b",
+        "model_variant_permaslug": "openai/gpt-oss-120b",
+        "adapter_name": "PrimeIntellectAdapter",
+        "provider_name": "PrimeIntellect",
+        "provider_info": {
+          "name": "PrimeIntellect",
+          "displayName": "Prime Intellect",
+          "slug": "primeintellect",
+          "baseUrl": "https://api.pinference.ai/api/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": false,
+            "canPublish": false,
+            "safetyRetention": false,
+            "requiresUserIDs": false
+          },
+          "hasChatCompletions": true,
+          "hasCompletions": false,
+          "isAbortable": false,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "PrimeIntellectAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
+          "isPrivate": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.primeintellect.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_extended"
+        },
+        "provider_permaslug": "primeintellect",
+        "provider_display_name": "Prime Intellect",
+        "provider_slug": "primeintellect/fp4",
+        "derived_service_tier": null,
+        "provider_model_id": "openai/gpt-oss-120b",
+        "quantization": "fp4",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": false,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 65536,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "reasoning_effort",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_a",
+          "top_k",
+          "top_p",
+          "tools",
+          "response_format",
+          "structured_outputs",
+          "tool_choice"
+        ],
+        "excluded_parameters": [
+          "logprobs",
+          "top_logprobs"
+        ],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": false,
+          "canPublish": false,
+          "safetyRetention": false
+        },
+        "pricing": {
+          "prompt": "0.000000019",
+          "completion": "0.00000007",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0.000000019",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0.00000007",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "server_tool_costs_discount_exempt": true,
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0.000000019",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0.00000007",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0.000000019",
+          "openai:completion_tokens": "0.00000007"
+        },
+        "pricing_version_id": "48f42013-9833-4756-8cac-e7000db36883",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": true,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": false,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": null,
+        "allowed_passthrough_parameters": [],
+        "capacity_tpm": null,
+        "created_at": "2026-10-04T00:21:46.063Z",
+        "status": 0
+      },
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "openai/gpt-oss-120b",
+      "hf_slug": "openai/gpt-oss-120b",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2025-08-05T17:17:11.000Z",
+      "hf_updated_at": null,
       "name": "OpenAI: gpt-oss-120b (batch)",
       "short_name": "gpt-oss-120b (batch)",
       "author": "openai",
@@ -193741,344 +192898,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "openai/gpt-oss-120b",
-      "hf_slug": "openai/gpt-oss-120b",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2025-08-05T17:17:11.000Z",
-      "hf_updated_at": null,
-      "name": "OpenAI: gpt-oss-120b",
-      "short_name": "gpt-oss-120b",
-      "author": "openai",
-      "author_display_name": "OpenAI",
-      "author_icon_uri": null,
-      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
-      "model_version_group_id": null,
-      "context_length": 131072,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "GPT",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": "",
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "openai/gpt-oss-120b",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": "<think>",
-        "end_token": "</think>",
-        "system_prompt": null,
-        "is_mandatory_reasoning": true,
-        "supports_reasoning_effort": true,
-        "supported_reasoning_efforts": [
-          "low",
-          "medium",
-          "high"
-        ],
-        "default_reasoning_effort": "medium"
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": "<think>",
-          "end_token": "</think>",
-          "system_prompt": null,
-          "is_mandatory_reasoning": true,
-          "supports_reasoning_effort": true,
-          "supported_reasoning_efforts": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "default_reasoning_effort": "medium"
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "default_order": [],
-      "quick_start_example_type": "reasoning",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2024-06-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "supported_tts_voices": null,
-      "endpoint": {
-        "id": "cb90ebe8-debc-4bf6-a79f-c1f0f2fbbe88",
-        "name": "Near AI | openai/gpt-oss-120b",
-        "context_length": 131072,
-        "model": {
-          "slug": "openai/gpt-oss-120b",
-          "hf_slug": "openai/gpt-oss-120b",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
-          "created_at": "2025-08-05T17:17:11+00:00",
-          "hf_updated_at": null,
-          "name": "OpenAI: gpt-oss-120b",
-          "short_name": "gpt-oss-120b",
-          "author": "openai",
-          "author_display_name": "OpenAI",
-          "author_icon_uri": null,
-          "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
-          "model_version_group_id": null,
-          "context_length": 131072,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "GPT",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": "",
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "openai/gpt-oss-120b",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": "<think>",
-            "end_token": "</think>",
-            "system_prompt": null,
-            "is_mandatory_reasoning": true,
-            "supports_reasoning_effort": true,
-            "supported_reasoning_efforts": [
-              "low",
-              "medium",
-              "high"
-            ],
-            "default_reasoning_effort": "medium"
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": "<think>",
-              "end_token": "</think>",
-              "system_prompt": null,
-              "is_mandatory_reasoning": true,
-              "supports_reasoning_effort": true,
-              "supported_reasoning_efforts": [
-                "low",
-                "medium",
-                "high"
-              ],
-              "default_reasoning_effort": "medium"
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": null,
-            "top_p": null,
-            "frequency_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": "reasoning",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": "2024-06-30T23:59:59+00:00",
-          "limit_rpm": null,
-          "limit_rpd": null,
-          "supported_tts_voices": null
-        },
-        "model_variant_slug": "openai/gpt-oss-120b",
-        "model_variant_permaslug": "openai/gpt-oss-120b",
-        "adapter_name": "NearAIAdapter",
-        "provider_name": "Near AI",
-        "provider_info": {
-          "name": "Near AI",
-          "displayName": "NEAR AI",
-          "slug": "near-ai",
-          "baseUrl": "https://openrouter.cloud.near.ai/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://near.ai/terms-of-service",
-            "privacyPolicyURL": "https://near.ai/privacy-policy",
-            "requiresUserIDs": false
-          },
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "NearAIAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": false,
-          "isPrivate": false,
-          "icon": {
-            "url": "/images/icons/NearAI.png"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_extended"
-        },
-        "provider_permaslug": "near-ai",
-        "provider_display_name": "NEAR AI",
-        "provider_slug": "near-ai/fp4",
-        "derived_service_tier": null,
-        "provider_model_id": "openai/gpt-oss-120b",
-        "quantization": "fp4",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "temperature",
-          "top_p",
-          "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "max_tokens",
-          "stop",
-          "seed",
-          "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
-        ],
-        "excluded_parameters": [],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://near.ai/terms-of-service",
-          "privacyPolicyURL": "https://near.ai/privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0.00000003",
-          "completion": "0.00000015",
-          "input_cache_read": "0.000000015",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0.00000003",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0.00000015",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Cache Read",
-              "price": "0.000000015",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0.00000003",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0.00000015",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Cache Read",
-            "price": "0.000000015",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.00000003",
-          "openai:completion_tokens": "0.00000015",
-          "openai:cached_prompt_tokens": "0.000000015"
-        },
-        "pricing_version_id": "4ce5e9dd-2620-4393-8394-f8483b658b54",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": false,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": null,
-        "allowed_passthrough_parameters": [],
-        "capacity_tpm": null,
-        "created_at": "2026-10-15T07:46:14.864Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "openai/gpt-oss-20b",
       "hf_slug": "openai/gpt-oss-20b",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -194163,8 +192982,8 @@
       "limit_rpd": null,
       "supported_tts_voices": null,
       "endpoint": {
-        "id": "e5149726-1456-4cba-8f55-2fd44345af51",
-        "name": "Darkbloom | openai/gpt-oss-20b",
+        "id": "e51a0e22-c86d-4fce-8344-5989e5d68461",
+        "name": "PrimeIntellect | openai/gpt-oss-20b",
         "context_length": 131072,
         "model": {
           "slug": "openai/gpt-oss-20b",
@@ -194253,45 +193072,42 @@
         },
         "model_variant_slug": "openai/gpt-oss-20b",
         "model_variant_permaslug": "openai/gpt-oss-20b",
-        "adapter_name": "DarkbloomAdapter",
-        "provider_name": "Darkbloom",
+        "adapter_name": "PrimeIntellectAdapter",
+        "provider_name": "PrimeIntellect",
         "provider_info": {
-          "name": "Darkbloom",
-          "displayName": "Darkbloom",
-          "slug": "darkbloom",
-          "baseUrl": "https://api.darkbloom.dev/v1",
+          "name": "PrimeIntellect",
+          "displayName": "Prime Intellect",
+          "slug": "primeintellect",
+          "baseUrl": "https://api.pinference.ai/api/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
             "requiresUserIDs": false
           },
-          "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DarkbloomAdapter",
+          "adapterName": "PrimeIntellectAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "isPrivate": false,
           "icon": {
-            "url": "/images/icons/Darkbloom.png"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.primeintellect.ai/&size=256"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions"
+          "pricingStrategy": "openai_extended"
         },
-        "provider_permaslug": "darkbloom",
-        "provider_display_name": "Darkbloom",
-        "provider_slug": "darkbloom/fp8",
+        "provider_permaslug": "primeintellect",
+        "provider_display_name": "Prime Intellect",
+        "provider_slug": "primeintellect/fp4",
         "derived_service_tier": null,
-        "provider_model_id": "openai-gpt-oss-20b",
-        "quantization": "fp8",
+        "provider_model_id": "openai/gpt-oss-20b",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
@@ -194301,21 +193117,22 @@
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "temperature",
-          "top_p",
-          "top_k",
           "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
+          "logit_bias",
           "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "reasoning_effort",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -194323,36 +193140,26 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
-          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
+          "safetyRetention": false
         },
         "pricing": {
-          "prompt": "0.000000018",
-          "completion": "0.00000009",
-          "input_cache_read": "0.000000009",
+          "prompt": "0.000000004",
+          "completion": "0.000000019",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000018",
+              "price": "0.000000004",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000009",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Cache Read",
-              "price": "0.000000009",
+              "price": "0.000000019",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -194363,31 +193170,23 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000018",
+            "price": "0.000000004",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000009",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Cache Read",
-            "price": "0.000000009",
+            "price": "0.000000019",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000018",
-          "openai:completion_tokens": "0.00000009",
-          "openai:cached_prompt_tokens": "0.000000009"
+          "openai:prompt_tokens": "0.000000004",
+          "openai:completion_tokens": "0.000000019"
         },
-        "pricing_version_id": "7564d5a0-00ac-4afd-9a0b-811a41fb65d2",
+        "pricing_version_id": "f5c55026-01b8-49a2-897b-13ac2ce510fa",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -194418,7 +193217,7 @@
         "deprecation_date": null,
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
-        "created_at": "2026-08-21T23:37:18.367Z",
+        "created_at": "2026-10-04T00:21:48.120Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -198548,7 +197347,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-08-19T14:13:11.602Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -211575,7 +210374,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2025-02-01T11:39:07.039Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -213241,7 +212040,7 @@
         "allowed_passthrough_parameters": [],
         "capacity_tpm": null,
         "created_at": "2026-05-25T12:58:22.835Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -225187,6 +223986,76 @@
       "variant_deprecation_date": null
     },
     {
+      "slug": "poolside/laguna-s-2.1",
+      "hf_slug": "poolside/Laguna-S-2.1",
+      "updated_at": "2026-07-31T12:24:19.274Z",
+      "created_at": "2026-07-21T16:51:23.607Z",
+      "hf_updated_at": null,
+      "name": "Poolside: Laguna S 2.1",
+      "short_name": "Laguna S 2.1",
+      "author": "poolside",
+      "author_display_name": "poolside",
+      "author_icon_uri": null,
+      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and 40.4% on DeepSWE, making it one of the strongest coding models in its category. Open-weight under the OpenMDW-1.1 license.\n\nLaguna S 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna S 2.1 is subject to the [OpenMDW-1.1 License](<https://openmdw.ai/license/1-1/>), and should be used consistently with Poolside's [Acceptable Use Policy](<https://poolside.ai/legal/acceptable-use-policy>). We advise against circumventing Laguna S 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](<mailto:security@poolside.ai>).\n\nIf you are using Laguna S 2.1 for free, we may use your inputs and outputs to train and improve our models.",
+      "model_version_group_id": null,
+      "context_length": 1048576,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "poolside/laguna-s-2.1-20260720",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": false,
+        "default_reasoning_enabled": true,
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": false,
+          "default_reasoning_enabled": true,
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
       "slug": "kwaipilot/kat-coder-air-v2.5",
       "hf_slug": null,
       "updated_at": "2026-07-14T15:38:32.195Z",
@@ -225310,6 +224179,76 @@
       },
       "default_order": [],
       "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "supported_tts_voices": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "poolside/laguna-xs-2.1",
+      "hf_slug": "poolside/Laguna-XS-2.1",
+      "updated_at": "2026-07-31T12:24:29.676Z",
+      "created_at": "2026-07-02T14:27:09.627Z",
+      "hf_updated_at": null,
+      "name": "Poolside: Laguna XS 2.1",
+      "short_name": "Laguna XS 2.1",
+      "author": "poolside",
+      "author_display_name": "poolside",
+      "author_icon_uri": null,
+      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines tool calling and reasoning capabilities with a compact footprint, offering a 256K context window and up to 32K output tokens. Quantized to FP8 for fast, cost-efficient agentic coding workflows.\n\nLaguna XS 2.1 is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna XS 2.1 is subject to the [OpenMDW-1.1 License](https://openmdw.ai/license/1-1/), and should be used consistently with Poolside's [Acceptable Use Policy](https://poolside.ai/legal/acceptable-use-policy). We advise against circumventing Laguna XS 2.1 safety guardrails without implementing substantially equivalent mitigations appropriate for your use case.\n\nPlease report security vulnerabilities or safety concerns to [security@poolside.ai](mailto:security@poolside.ai).\n\nIf you are using Laguna XS 2.1 for free, we may use your inputs and outputs to train and improve our models.",
+      "model_version_group_id": null,
+      "context_length": 262144,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "poolside/laguna-xs-2.1-20260625",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null,
+        "is_mandatory_reasoning": false,
+        "supports_reasoning_effort": false,
+        "default_reasoning_enabled": true,
+        "reasoning_return_mechanism": "reasoning-content"
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null,
+          "is_mandatory_reasoning": false,
+          "supports_reasoning_effort": false,
+          "default_reasoning_enabled": true,
+          "reasoning_return_mechanism": "reasoning-content"
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
       "previews_by_modality": {},
       "preview_thumbnail_url": null,
       "preview_audio": null,
