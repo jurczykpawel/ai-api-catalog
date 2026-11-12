@@ -1,4 +1,50 @@
 {
   "_comment": "Ręczne dorzucenie providerów do istniejących modeli. Używaj gdy provider nie ma publicznego API (Fireworks) lub gdy LiteLLM/OR jeszcze nie ma danego modelu.",
-  "patches": []
+  "patches": [
+    {
+      "model_id": "kling-3-0",
+      "provider_id": "magic-hour",
+      "pricing": {
+        "notes": "48 credits/s at 720p; 72 credits/s at 1080p; tier and volume rates vary"
+      },
+      "url": "https://docs.magichour.ai/api-reference/models#video-credit-costs",
+      "available": true
+    },
+    {
+      "model_id": "seedance-2",
+      "provider_id": "magic-hour",
+      "pricing": {
+        "notes": "144 credits/s at 480p; 288 credits/s at 720p; tier and volume rates vary"
+      },
+      "url": "https://docs.magichour.ai/api-reference/models#video-credit-costs",
+      "available": true
+    },
+    {
+      "model_id": "sora-2",
+      "provider_id": "magic-hour",
+      "pricing": {
+        "notes": "120 credits/s at 720p; tier and volume rates vary"
+      },
+      "url": "https://docs.magichour.ai/api-reference/models#video-credit-costs",
+      "available": true
+    },
+    {
+      "model_id": "veo-3-1",
+      "provider_id": "magic-hour",
+      "pricing": {
+        "notes": "96 credits/s at 720p; 120 credits/s at 1080p; audio costs 24 credits/s extra"
+      },
+      "url": "https://docs.magichour.ai/api-reference/models#video-credit-costs",
+      "available": true
+    },
+    {
+      "model_id": "wan-2-2",
+      "provider_id": "magic-hour",
+      "pricing": {
+        "notes": "24 credits/s at 480p; 48 credits/s at 720p; 72 credits/s at 1080p"
+      },
+      "url": "https://docs.magichour.ai/api-reference/models#video-credit-costs",
+      "available": true
+    }
+  ]
 }
