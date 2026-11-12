@@ -4595,6 +4595,29 @@
           "available": true
         }
       ]
+    },
+    {
+      "id": "scribe-v3",
+      "name": "Scribe v3",
+      "category": "audio_stt",
+      "description": "ElevenLabs' speech recognition model designed for accurate transcription in noisy environments with background noise and crosstalk handling, benchmarked above OpenAI's Whisper.",
+      "tags": [
+        "elevenlabs"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-11-12",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "elevenlabs",
+          "pricing": {
+            "notes": "Check current pricing"
+          },
+          "url": "https://elevenlabs.io/docs/api-reference/speech-to-text",
+          "affiliate_url": null,
+          "available": true
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-12",
   "source_counts": {
-    "fal": 734,
+    "fal": 736,
     "openrouter": 821,
     "replicate": 329,
     "bedrock": 59,
@@ -10,17 +10,17 @@
     "opencode": 15,
     "fireworks": 119,
     "litellm": 623,
-    "news-radar": 7,
+    "news-radar": 8,
     "piapi": 2,
     "wavespeed": 2,
     "minimax": 3,
     "runway": 2
   },
   "update_stats": {
-    "added": 8,
-    "removed": 5,
-    "updated": 17,
-    "unchanged": 2837
+    "added": 5,
+    "removed": 2,
+    "updated": 14,
+    "unchanged": 2846
   },
   "models": [
     {
@@ -10536,8 +10536,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.011,
-            "output_per_1m": 0.2
+            "input_per_1m": 0.022,
+            "output_per_1m": 0.4
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10595,7 +10595,7 @@
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 0.05,
-            "output_per_1m": 0.45
+            "output_per_1m": 0.1
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -10777,8 +10777,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.9,
-            "output_per_1m": 1.5
+            "input_per_1m": 0.8923,
+            "output_per_1m": 1.7845
           },
           "url": "https://openrouter.ai/deepseek/deepseek-v4-pro",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -18538,7 +18538,7 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "flux-1-krea-redux",
+      "id": "flux-krea-redux",
       "name": "FLUX.1 Krea [dev] Redux",
       "category": "image_generation",
       "description": "FLUX.1 Krea [dev] Redux is a high-performance endpoint for the FLUX.1 Krea [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities.",
@@ -18555,12 +18555,12 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/flux-1/krea/redux",
+          "url": "https://fal.ai/models/fal-ai/flux/krea/redux",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
       ],
-      "first_seen_at": "2026-11-03"
+      "first_seen_at": "2026-11-12"
     },
     {
       "id": "flux-krea-lora",
@@ -19416,7 +19416,7 @@
       "id": "hf-fun-cosyvoice3-0-5b-2512",
       "name": "Fun CosyVoice3 0.5B 2512",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 207,593 downloads · 683 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 207,593 downloads · 684 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -33709,8 +33709,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.132,
-            "output_per_1m": 0.528
+            "input_per_1m": 0.0825,
+            "output_per_1m": 0.33
           },
           "url": "https://openrouter.ai/tencent/hy3",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -33791,8 +33791,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.834,
-            "output_per_1m": 2.501
+            "input_per_1m": 0.7506,
+            "output_per_1m": 2.2509
           },
           "url": "https://openrouter.ai/tencent/hy4-preview",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -34582,7 +34582,7 @@
     },
     {
       "id": "ideogram-v4-lora",
-      "name": "Ideogram V4.0q Image to Image LoRA",
+      "name": "Ideogram V4.0q (LoRA)",
       "category": "image_generation",
       "description": "Generate high-quality images, posters, and logos with Ideogram's latest V4.0q using LoRA — producing crisp visuals with accurate text rendering, fine detail, and full creative control for polished, ready-to-use designs.",
       "tags": [],
@@ -34598,7 +34598,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/ideogram/v4/image-to-image/lora",
+          "url": "https://fal.ai/models/ideogram/v4/lora",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -35784,7 +35784,7 @@
       "id": "hf-indic-parler-tts",
       "name": "Indic Parler Tts",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 166,891 downloads · 548 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 166,891 downloads · 549 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -37392,8 +37392,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.39,
-            "output_per_1m": 1.8
+            "input_per_1m": 0.3895,
+            "output_per_1m": 1.64
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -37638,7 +37638,7 @@
           "provider_id": "openrouter",
           "pricing": {
             "input_per_1m": 0.2375,
-            "output_per_1m": 8.4085
+            "output_per_1m": 8.7856
           },
           "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -45441,7 +45441,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/microsoft/mai-image-2.5/edit",
+          "url": "https://fal.ai/models/microsoft/mai-image-2.5",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -47524,8 +47524,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.1125,
-            "output_per_1m": 0.45
+            "input_per_1m": 0.075,
+            "output_per_1m": 0.3
           },
           "url": "https://openrouter.ai/minimax/minimax-m3.1-flash",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -55307,7 +55307,7 @@
       "first_seen_at": "2026-04-22"
     },
     {
-      "id": "one-to-all-animation-1-3b",
+      "id": "one-to-all-animation-14b",
       "name": "One To All Animation",
       "category": "video_generation",
       "description": "One-to-All Animation is a pose driven video model that animates characters from a single reference image, enabling flexible, alignment-free motion transfer across diverse styles and scenes",
@@ -55324,7 +55324,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/one-to-all-animation/1.3b",
+          "url": "https://fal.ai/models/fal-ai/one-to-all-animation/14b",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -58252,7 +58252,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/pixverse/v6/max/text-to-video",
+          "url": "https://fal.ai/models/pixverse/v6/max/image-to-video",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -59622,7 +59622,7 @@
           "pricing": {
             "notes": "Check fal.ai for current pricing"
           },
-          "url": "https://fal.ai/models/fal-ai/vidu/q2/image-to-video/pro",
+          "url": "https://fal.ai/models/fal-ai/vidu/q2/reference-to-video/pro",
           "affiliate_url": "https://fal.ai?ref=tsa",
           "available": true
         }
@@ -61698,7 +61698,7 @@
       "id": "hf-qwen2-5-1-5b-instruct",
       "name": "Qwen2.5 1.5B Instruct",
       "category": "llm",
-      "description": "Open-source model on HuggingFace. 5,181,515 downloads · 940 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 5,181,515 downloads · 941 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -64738,7 +64738,7 @@
       "id": "hf-qwen3-tts-12hz-1-7b-customvoice",
       "name": "Qwen3 TTS 12Hz 1.7B CustomVoice",
       "category": "audio_tts",
-      "description": "Open-source model on HuggingFace. 1,270,835 downloads · 2,224 likes. License: apache-2.0.",
+      "description": "Open-source model on HuggingFace. 1,270,835 downloads · 2,226 likes. License: apache-2.0.",
       "tags": [
         "open-source",
         "local"
@@ -65200,8 +65200,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.07,
-            "output_per_1m": 0.103
+            "input_per_1m": 0.08,
+            "output_per_1m": 0.13
           },
           "url": "https://openrouter.ai/qwen/qwen3.5-9b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -65302,8 +65302,8 @@
         {
           "provider_id": "openrouter",
           "pricing": {
-            "input_per_1m": 0.018,
-            "output_per_1m": 0.161
+            "input_per_1m": 0.013,
+            "output_per_1m": 0.124
           },
           "url": "https://openrouter.ai/qwen/qwen3.6-35b-a3b",
           "affiliate_url": "https://openrouter.ai/?ref=tsa",
@@ -69636,6 +69636,30 @@
       "first_seen_at": "2026-10-08"
     },
     {
+      "id": "scribe-v3",
+      "name": "Scribe v3",
+      "category": "audio_stt",
+      "description": "ElevenLabs' speech recognition model designed for accurate transcription in noisy environments with background noise and crosstalk handling, benchmarked above OpenAI's Whisper.",
+      "tags": [
+        "elevenlabs"
+      ],
+      "capabilities": [],
+      "updated_at": "2026-11-12",
+      "source": "news-radar",
+      "providers": [
+        {
+          "provider_id": "elevenlabs",
+          "pricing": {
+            "notes": "Check current pricing"
+          },
+          "url": "https://elevenlabs.io/docs/api-reference/speech-to-text",
+          "affiliate_url": null,
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-11-12"
+    },
+    {
       "id": "hf-sd-turbo",
       "name": "Sd Turbo",
       "category": "image_generation",
@@ -70719,6 +70743,56 @@
         }
       ],
       "first_seen_at": "2026-08-07"
+    },
+    {
+      "id": "bytedance-seedream-v5-5",
+      "name": "Seedream 5.5 Edit",
+      "category": "image_generation",
+      "description": "Seedream 5.5 edits images from text instructions and up to 10 reference images, with configurable output dimensions and support for transparent PNG backgrounds.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-11-12",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/bytedance/seedream/v5.5/edit",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-11-12"
+    },
+    {
+      "id": "bytedance-seedream-v5-5-layerize",
+      "name": "Seedream 5.5 Layerize",
+      "category": "image_generation",
+      "description": "Seedream 5.5 decomposes an image into a base image and independently editable PNG layers, with layer positions, stacking order, and optional text recognition.",
+      "tags": [],
+      "capabilities": [
+        "image_editing"
+      ],
+      "context_k": null,
+      "updated_at": "2026-11-12",
+      "source": "fal",
+      "providers": [
+        {
+          "provider_id": "fal",
+          "pricing": {
+            "notes": "Check fal.ai for current pricing"
+          },
+          "url": "https://fal.ai/models/bytedance/seedream/v5.5/layerize",
+          "affiliate_url": "https://fal.ai?ref=tsa",
+          "available": true
+        }
+      ],
+      "first_seen_at": "2026-11-12"
     },
     {
       "id": "seedvr-upscale-image",
