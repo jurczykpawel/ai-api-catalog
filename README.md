@@ -107,7 +107,8 @@ ai-api-catalog/
 │   ├── fetch-piapi.py          # piapi.ai curated pricing
 │   ├── fetch-wavespeed.py      # WaveSpeed AI curated pricing
 │   ├── fetch-kie.py            # kie.ai curated pricing
-│   └── fetch-runway.py         # Runway ML curated pricing
+│   ├── fetch-runway.py         # Runway ML curated pricing
+│   └── fetch-bettertoken.py    # BetterToken public pricing API
 └── n8n/
     ├── model-radar-workflow.json   # Weekly update + change detection
     └── news-radar-workflow.json    # Daily AI news → extract new models → Discord
