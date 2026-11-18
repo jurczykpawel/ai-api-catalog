@@ -59,28 +59,6 @@
       "_api_id": "deepseek-v4.1-flash-free"
     },
     {
-      "id": "glm-5-3-flash-free",
-      "name": "GLM 5.3 Flash Free",
-      "category": "llm",
-      "description": "GLM 5.3 Flash Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free",
-        "zhipu",
-        "glm",
-        "fast"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "glm-5.3-flash-free"
-    },
-    {
       "id": "claude-fable-5",
       "name": "Claude Fable 5",
       "category": "llm",
@@ -1734,6 +1712,46 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "hy4-flash-free"
+    },
+    {
+      "id": "gpt-6-2-sol",
+      "name": "GPT 6.2 Sol",
+      "category": "llm",
+      "description": "GPT 6.2 Sol via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-6.2-sol"
+    },
+    {
+      "id": "gpt-6-2-astra",
+      "name": "GPT 6.2 Astra",
+      "category": "llm",
+      "description": "GPT 6.2 Astra via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-6.2-astra"
     }
   ],
   "source": "opencode",
