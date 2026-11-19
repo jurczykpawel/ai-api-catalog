@@ -80,6 +80,22 @@
       "_api_id": "claude-fable-5"
     },
     {
+      "id": "jev-1-13",
+      "name": "Jev 1.13",
+      "category": "llm",
+      "description": "Jev 1.13 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "jev-1.13"
+    },
+    {
       "id": "claude-fable-5-1",
       "name": "Claude Fable 5 1",
       "category": "llm",
@@ -531,61 +547,6 @@
       "context_k": 200,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "gemini-4-argon"
-    },
-    {
-      "id": "glm-5",
-      "name": "GLM 5",
-      "category": "llm",
-      "description": "GLM 5 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "zhipu",
-        "glm"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 1.0,
-        "output_per_1m": 3.2
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "glm-5"
-    },
-    {
-      "id": "glm-5-1",
-      "name": "GLM 5.1",
-      "category": "llm",
-      "description": "GLM 5.1 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "zhipu",
-        "glm"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "glm-5.1"
-    },
-    {
-      "id": "glm-5-2",
-      "name": "GLM 5.2",
-      "category": "llm",
-      "description": "GLM 5.2 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "zhipu",
-        "glm"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "glm-5.2"
     },
     {
       "id": "glm-5-3",
@@ -1143,6 +1104,26 @@
       "_api_id": "gpt-5.6-terra"
     },
     {
+      "id": "gpt-image-2-5-sunburst",
+      "name": "GPT Image 2.5 Sunburst",
+      "category": "llm",
+      "description": "GPT Image 2.5 Sunburst via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-image-2.5-sunburst"
+    },
+    {
       "id": "grok-4-5",
       "name": "Grok 4.5",
       "category": "llm",
@@ -1205,43 +1186,6 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "grok-build-0.1"
-    },
-    {
-      "id": "kimi-k2-5",
-      "name": "Kimi K2.5",
-      "category": "llm",
-      "description": "Kimi K2.5 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "moonshot",
-        "kimi"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 3.0
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "kimi-k2.5"
-    },
-    {
-      "id": "kimi-k2-6",
-      "name": "Kimi K2.6",
-      "category": "llm",
-      "description": "Kimi K2.6 via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "moonshot",
-        "kimi"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "notes": "pricing unknown — update PRICING dict"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "kimi-k2.6"
     },
     {
       "id": "kimi-k2-7-code",
@@ -1478,6 +1422,26 @@
       "_api_id": "qwen3.8-max"
     },
     {
+      "id": "gpt-live-1",
+      "name": "GPT Live 1",
+      "category": "llm",
+      "description": "GPT Live 1 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-live-1"
+    },
+    {
       "id": "longcat-2-5-free",
       "name": "Longcat 2.5 Free",
       "category": "llm",
@@ -1593,6 +1557,25 @@
       "_api_id": "nemotron-3.5-super-vl-free"
     },
     {
+      "id": "jev-1-13-free",
+      "name": "Jev 1.13 Free",
+      "category": "llm",
+      "description": "Jev 1.13 Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "jev-1.13-free"
+    },
+    {
       "id": "nemotron-3-5-lightning-free",
       "name": "Nemotron 3.5 Lightning Free",
       "category": "llm",
@@ -1672,6 +1655,48 @@
       "_api_id": "gemini-4-carbon"
     },
     {
+      "id": "gemini-decision-1",
+      "name": "Gemini Decision 1",
+      "category": "llm",
+      "description": "Gemini Decision 1 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-decision-1"
+    },
+    {
+      "id": "gpt-6-luna-decision",
+      "name": "GPT 6 Luna Decision",
+      "category": "llm",
+      "description": "GPT 6 Luna Decision via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-6-luna-decision"
+    },
+    {
       "id": "gemini-4-hydrogen",
       "name": "Gemini 4 Hydrogen",
       "category": "llm",
@@ -1694,6 +1719,28 @@
       "_api_id": "gemini-4-hydrogen"
     },
     {
+      "id": "gemini-nano-banana-2-1",
+      "name": "Gemini Nano Banana 2.1",
+      "category": "llm",
+      "description": "Gemini Nano Banana 2.1 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-nano-banana-2.1"
+    },
+    {
       "id": "hy4-flash-free",
       "name": "Hy4 Flash Free",
       "category": "llm",
@@ -1712,6 +1759,22 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "hy4-flash-free"
+    },
+    {
+      "id": "grok-imagine-image-2-0",
+      "name": "Grok Imagine Image 2.0",
+      "category": "llm",
+      "description": "Grok Imagine Image 2.0 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "grok-imagine-image-2.0"
     },
     {
       "id": "gpt-6-2-sol",
@@ -1752,6 +1815,47 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "gpt-6.2-astra"
+    },
+    {
+      "id": "tidepool-alpha-free",
+      "name": "Tidepool Alpha Free",
+      "category": "llm",
+      "description": "Tidepool Alpha Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "tidepool-alpha-free"
+    },
+    {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "category": "llm",
+      "description": "Gemini 4 Neon via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-4-neon"
     }
   ],
   "source": "opencode",
