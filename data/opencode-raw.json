@@ -1480,25 +1480,6 @@
       "_api_id": "iceman-free"
     },
     {
-      "id": "inkling-2-small-free",
-      "name": "Inkling 2 Small Free",
-      "category": "llm",
-      "description": "Inkling 2 Small Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "inkling-2-small-free"
-    },
-    {
       "id": "beam-free",
       "name": "Beam Free",
       "category": "llm",
@@ -1856,6 +1837,213 @@
       "context_k": 200,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "gemini-4-neon"
+    },
+    {
+      "id": "text-embedding-3-small",
+      "name": "Text Embedding 3 Small",
+      "category": "llm",
+      "description": "Text Embedding 3 Small via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "text-embedding-3-small"
+    },
+    {
+      "id": "text-embedding-3-large",
+      "name": "Text Embedding 3 Large",
+      "category": "llm",
+      "description": "Text Embedding 3 Large via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "text-embedding-3-large"
+    },
+    {
+      "id": "gemini-embedding-001",
+      "name": "Gemini Embedding 001",
+      "category": "llm",
+      "description": "Gemini Embedding 001 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-embedding-001"
+    },
+    {
+      "id": "gemini-embedding-2",
+      "name": "Gemini Embedding 2",
+      "category": "llm",
+      "description": "Gemini Embedding 2 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "google",
+        "gemini",
+        "fast"
+      ],
+      "capabilities": [
+        "function_calling",
+        "vision"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": 200,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gemini-embedding-2"
+    },
+    {
+      "id": "codestral-embed",
+      "name": "Codestral Embed",
+      "category": "llm",
+      "description": "Codestral Embed via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "codestral-embed"
+    },
+    {
+      "id": "mistral-embed",
+      "name": "Mistral Embed",
+      "category": "llm",
+      "description": "Mistral Embed via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "mistral-embed"
+    },
+    {
+      "id": "qwen3-embedding-8b",
+      "name": "Qwen3 Embedding 8b",
+      "category": "llm",
+      "description": "Qwen3 Embedding 8b via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "alibaba",
+        "qwen"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "qwen3-embedding-8b"
+    },
+    {
+      "id": "bge-m3",
+      "name": "Bge M3",
+      "category": "llm",
+      "description": "Bge M3 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "bge-m3"
+    },
+    {
+      "id": "cohere-embed-v5-fast",
+      "name": "Cohere Embed V5 Fast",
+      "category": "llm",
+      "description": "Cohere Embed V5 Fast via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "cohere-embed-v5-fast"
+    },
+    {
+      "id": "cohere-embed-v5-pro",
+      "name": "Cohere Embed V5 Pro",
+      "category": "llm",
+      "description": "Cohere Embed V5 Pro via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "cohere-embed-v5-pro"
+    },
+    {
+      "id": "voyage-4",
+      "name": "Voyage 4",
+      "category": "llm",
+      "description": "Voyage 4 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "voyage-4"
+    },
+    {
+      "id": "voyage-code-4",
+      "name": "Voyage Code 4",
+      "category": "llm",
+      "description": "Voyage Code 4 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "voyage-code-4"
     }
   ],
   "source": "opencode",
