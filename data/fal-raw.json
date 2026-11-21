@@ -3426,7 +3426,7 @@
         "description": "MAI-Image-2.7 edits images from text instructions and up to five input images, with preset or custom dimensions and PNG, JPEG, or WebP output.",
         "status": "active",
         "tags": [],
-        "updated_at": "2026-11-18T12:09:16.796Z",
+        "updated_at": "2026-11-20T17:19:44.900Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab2755a/mLEyU_G669SqcTVOjbhia.jpg",
         "model_url": "https://fal.run/microsoft/mai-image-2.7/edit",
@@ -5212,7 +5212,7 @@
         "description": "MAI-Image-2.7 is Microsoft’s image model for generating images from text prompts, with preset or custom image dimensions and PNG, JPEG, or WebP output.",
         "status": "active",
         "tags": [],
-        "updated_at": "2026-11-18T11:49:47.226Z",
+        "updated_at": "2026-11-20T17:19:42.593Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab27553/2icsh20uq8YSOyh3yz14x.jpg",
         "model_url": "https://fal.run/microsoft/mai-image-2.7/text-to-image",
@@ -5385,7 +5385,7 @@
         "description": "MAI-Image-2.7 Flash edits images from text instructions and up to five input images, using Microsoft’s lower-cost Flash variant with PNG, JPEG, or WebP output.",
         "status": "active",
         "tags": [],
-        "updated_at": "2026-11-18T19:49:54.893Z",
+        "updated_at": "2026-11-20T17:19:56.997Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab2755a/mLEyU_G669SqcTVOjbhia.jpg",
         "model_url": "https://fal.run/microsoft/mai-image-2.7/flash/edit",
@@ -6419,7 +6419,7 @@
         "description": "MAI-Image-2.7 Flash is Microsoft’s lower-cost image generation variant, producing images from text prompts with preset or custom dimensions and PNG, JPEG, or WebP output.",
         "status": "active",
         "tags": [],
-        "updated_at": "2026-11-18T12:21:15.108Z",
+        "updated_at": "2026-11-20T17:20:08.580Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab2755a/7zqAwmkh67eFaVLhzdm5X.jpg",
         "model_url": "https://fal.run/microsoft/mai-image-2.7/flash/text-to-image",
@@ -6447,7 +6447,7 @@
         "tags": [
           "image-to-image"
         ],
-        "updated_at": "2026-11-17T16:57:35.299Z",
+        "updated_at": "2026-11-20T21:13:40.568Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab2067f/EaxCgo2dtIcYQV2aGGCqa.jpg",
         "model_url": "https://fal.run/kling/v4/image-to-image",
@@ -7577,7 +7577,7 @@
         "tags": [
           "text-to-image"
         ],
-        "updated_at": "2026-11-17T16:57:42.643Z",
+        "updated_at": "2026-11-20T21:13:35.147Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab2067c/GUX67LJgaLS09BM4J6UqA.jpg",
         "model_url": "https://fal.run/kling/v4/text-to-image",
@@ -9916,7 +9916,7 @@
           "video-to-video",
           "video-editing"
         ],
-        "updated_at": "2026-11-15T03:23:38.859Z",
+        "updated_at": "2026-11-20T21:13:29.641Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab120bb/w0HVopjuQHDaXLX9I-pfa.jpg",
         "model_url": "https://fal.run/kling/v4/flash/video-to-video",
@@ -10975,7 +10975,7 @@
           "webpage",
           "ecommerce"
         ],
-        "updated_at": "2026-11-17T15:23:10.793Z",
+        "updated_at": "2026-11-20T21:13:45.485Z",
         "is_favorited": null,
         "thumbnail_url": "https://v3b.fal.media/files/b/0ab2067c/GUX67LJgaLS09BM4J6UqA.jpg",
         "model_url": "https://fal.run/kling/v4/long-image",
@@ -32755,6 +32755,36 @@
       "_our_category": "video_generation"
     },
     {
+      "endpoint_id": "minimax/h3-max/insert-video",
+      "metadata": {
+        "display_name": "H3 Max",
+        "category": "video-to-video",
+        "description": "Insert a new scene into an existing video with H3 Max. Guide the scene with a prompt, reference images, or reference videos, then return to the original footage.",
+        "status": "active",
+        "tags": [
+          "video-to-video",
+          "video-editing",
+          "scene-insertion"
+        ],
+        "updated_at": "2026-11-20T20:33:26.224Z",
+        "is_favorited": null,
+        "thumbnail_url": "https://v3b.fal.media/files/b/0aac45ed/CUlIKgQ55O4HiSkSG0OEL.jpg",
+        "model_url": "https://fal.run/minimax/h3-max/insert-video",
+        "license_type": "commercial",
+        "date": "2026-09-28T23:44:04.870Z",
+        "group": {
+          "key": "hailuo-03-new-turbo",
+          "label": "Insert Video"
+        },
+        "highlighted": false,
+        "kind": "inference",
+        "pinned": false
+      },
+      "retires_at": null,
+      "replacement": null,
+      "_our_category": "video_generation"
+    },
+    {
       "endpoint_id": "fal-ai/glm-image/image-to-image",
       "metadata": {
         "display_name": "Glm Image",
@@ -33037,7 +33067,7 @@
         "pinned": false
       },
       "retires_at": "2027-01-04T08:00:00.000Z",
-      "replacement": null,
+      "replacement": "minimax/h3-max/insert-video",
       "_our_category": "video_generation"
     },
     {
@@ -33586,7 +33616,7 @@
         "pinned": false
       },
       "retires_at": "2027-01-04T08:00:00.000Z",
-      "replacement": null,
+      "replacement": "minimax/h3-max/insert-video",
       "_our_category": "video_generation"
     },
     {
@@ -33843,5 +33873,5 @@
       "_our_category": "video_generation"
     }
   ],
-  "total_fetched": 1406
+  "total_fetched": 1407
 }
