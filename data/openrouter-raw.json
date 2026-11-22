@@ -259,29 +259,29 @@
           "privacyPolicyURL": "https://www.primeintellect.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000001",
-          "completion": "0.0000004",
-          "input_cache_read": "0.00000002",
+          "prompt": "0.000000075",
+          "completion": "0.0000003",
+          "input_cache_read": "0.000000015",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001",
+              "price": "0.000000075",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000004",
+              "price": "0.0000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000002",
+              "price": "0.000000015",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -292,31 +292,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001",
+            "price": "0.000000075",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000004",
+            "price": "0.0000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000002",
+            "price": "0.000000015",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001",
-          "openai:completion_tokens": "0.0000004",
-          "openai:cached_prompt_tokens": "0.00000002"
+          "openai:prompt_tokens": "0.000000075",
+          "openai:completion_tokens": "0.0000003",
+          "openai:cached_prompt_tokens": "0.000000015"
         },
-        "pricing_version_id": "02eb1d23-4d26-40fa-b230-1f9dcab1254c",
+        "pricing_version_id": "78c27603-69f3-4c70-8344-bb8a522493e8",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -26903,7 +26903,7 @@
         "pricing": {
           "prompt": "0.00000007",
           "completion": "0.0000005",
-          "input_cache_read": "0.000000006",
+          "input_cache_read": "0.00000003",
           "discount": 0,
           "display_pricing": [
             {
@@ -26923,7 +26923,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000006",
+              "price": "0.00000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -26948,7 +26948,7 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000006",
+            "price": "0.00000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
@@ -26956,9 +26956,9 @@
         "pricing_json": {
           "openai:prompt_tokens": "0.00000007",
           "openai:completion_tokens": "0.0000005",
-          "openai:cached_prompt_tokens": "0.000000006"
+          "openai:cached_prompt_tokens": "0.00000003"
         },
-        "pricing_version_id": "a6c33b5e-8e7c-47d5-be7d-db4417be6058",
+        "pricing_version_id": "73978305-3c01-4d72-9be4-b2133741f2b0",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -32960,7 +32960,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-10-20T22:33:25.779Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -69566,7 +69566,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-09-30T05:01:48.568Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -85669,7 +85669,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-08-31T19:16:27.771Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -85997,7 +85997,7 @@
         "supported_tts_output_parameters": null,
         "provider_region": "us",
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-11-27T13:00:00.000Z",
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
@@ -86595,10 +86595,10 @@
           "tool_choice",
           "response_format",
           "structured_outputs",
-          "logprobs",
-          "top_logprobs",
           "min_p",
           "logit_bias",
+          "logprobs",
+          "top_logprobs",
           "reasoning_effort",
           "parallel_tool_calls"
         ],
@@ -86615,22 +86615,22 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000000399",
-          "completion": "0.0000000784",
+          "prompt": "0.000000047",
+          "completion": "0.0000000729",
           "input_cache_read": "0.00000003",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000399",
+              "price": "0.000000047",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000000784",
+              "price": "0.0000000729",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -86648,14 +86648,14 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000399",
+            "price": "0.000000047",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000000784",
+            "price": "0.0000000729",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -86668,11 +86668,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000399",
-          "openai:completion_tokens": "0.0000000784",
+          "openai:prompt_tokens": "0.000000047",
+          "openai:completion_tokens": "0.0000000729",
           "openai:cached_prompt_tokens": "0.00000003"
         },
-        "pricing_version_id": "92ff2e19-f3f7-49ef-9450-6a8dd8f3230e",
+        "pricing_version_id": "feb66605-4b07-49b6-9737-256672022572",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -87906,22 +87906,22 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000000399",
-          "completion": "0.0000000784",
+          "prompt": "0.000000047",
+          "completion": "0.0000000729",
           "input_cache_read": "0.00000003",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000399",
+              "price": "0.000000047",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000000784",
+              "price": "0.0000000729",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -87939,14 +87939,14 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000399",
+            "price": "0.000000047",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000000784",
+            "price": "0.0000000729",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -87959,11 +87959,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000399",
-          "openai:completion_tokens": "0.0000000784",
+          "openai:prompt_tokens": "0.000000047",
+          "openai:completion_tokens": "0.0000000729",
           "openai:cached_prompt_tokens": "0.00000003"
         },
-        "pricing_version_id": "92ff2e19-f3f7-49ef-9450-6a8dd8f3230e",
+        "pricing_version_id": "feb66605-4b07-49b6-9737-256672022572",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -97957,8 +97957,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "fbb272e9-93a9-4f8e-9abf-d9cac58b46c5",
-        "name": "Novita | qwen/qwen3.8-2.4t-a95b-20260812",
+        "id": "05a479b8-b5d7-46af-8932-3c9a543c6f54",
+        "name": "Fireworks | qwen/qwen3.8-2.4t-a95b-20260812",
         "context_length": 1000000,
         "model": {
           "slug": "qwen/qwen3.8-2.4t-a95b",
@@ -98048,21 +98048,21 @@
         },
         "model_variant_slug": "qwen/qwen3.8-2.4t-a95b",
         "model_variant_permaslug": "qwen/qwen3.8-2.4t-a95b-20260812",
-        "adapter_name": "NovitaAdapter",
-        "provider_name": "Novita",
+        "adapter_name": "FireworksAdapter",
+        "provider_name": "Fireworks",
         "provider_info": {
-          "name": "Novita",
-          "displayName": "NovitaAI",
-          "slug": "novita",
-          "baseUrl": "https://api.novita.ai/v3/openai",
+          "name": "Fireworks",
+          "displayName": "Fireworks",
+          "slug": "fireworks",
+          "baseUrl": "https://api.fireworks.ai/inference/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://novita.ai/legal/terms-of-service",
-            "privacyPolicyURL": "https://novita.ai/legal/privacy-policy",
+            "termsOfServiceURL": "https://fireworks.ai/terms-of-service",
+            "privacyPolicyURL": "https://fireworks.ai/privacy-policy",
             "requiresUserIDs": false
           },
           "headquarters": "US",
@@ -98071,29 +98071,29 @@
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "NovitaAdapter",
-          "statusPageUrl": "https://status.novita.ai/",
+          "adapterName": "FireworksAdapter",
+          "statusPageUrl": "https://status.fireworks.ai/",
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://novita.ai/&size=256"
+            "url": "/images/icons/Fireworks.png"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.novita.ai/v3/openai"
+          "genericBaseUrl": "https://api.fireworks.ai/inference/v1"
         },
-        "provider_permaslug": "novita",
-        "provider_display_name": "NovitaAI",
-        "provider_slug": "novita",
+        "provider_permaslug": "fireworks",
+        "provider_display_name": "Fireworks",
+        "provider_slug": "fireworks",
         "derived_service_tier": null,
-        "provider_model_id": "qwen/qwen3.8-2.4t-a95b",
+        "provider_model_id": "accounts/fireworks/models/qwen3p8-max",
         "quantization": "unknown",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": null,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -98104,15 +98104,15 @@
           "stop",
           "frequency_penalty",
           "presence_penalty",
-          "seed",
           "top_k",
           "repetition_penalty",
+          "logit_bias",
+          "logprobs",
+          "top_logprobs",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -98120,11 +98120,11 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://novita.ai/legal/terms-of-service",
-          "privacyPolicyURL": "https://novita.ai/legal/privacy-policy"
+          "termsOfServiceURL": "https://fireworks.ai/terms-of-service",
+          "privacyPolicyURL": "https://fireworks.ai/privacy-policy"
         },
         "pricing": {
           "prompt": "0.000002",
@@ -98184,7 +98184,7 @@
           "openai:completion_tokens": "0.000006",
           "openai:cached_prompt_tokens": "0.00000025"
         },
-        "pricing_version_id": "c6edca72-feae-425a-8ce2-5c9fd9c153b5",
+        "pricing_version_id": "9f1512d8-ec42-4e49-8413-f7df5af8f52f",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -98203,8 +98203,8 @@
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
+            "literal_required": true,
+            "type_function": true
           }
         },
         "supported_video_parameters": null,
@@ -98217,7 +98217,7 @@
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-08-26T18:19:10.609Z",
+        "created_at": "2026-11-21T16:31:13.174Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -116529,7 +116529,7 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000001805",
+          "prompt": "0.0000001824",
           "completion": "0.0000110055",
           "input_cache_read": "0.00000018",
           "discount": 0,
@@ -116537,7 +116537,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001805",
+              "price": "0.0000001824",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -116562,7 +116562,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001805",
+            "price": "0.0000001824",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -116582,11 +116582,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001805",
+          "openai:prompt_tokens": "0.0000001824",
           "openai:completion_tokens": "0.0000110055",
           "openai:cached_prompt_tokens": "0.00000018"
         },
-        "pricing_version_id": "25da5e2e-88d1-4830-afdb-923c0af55008",
+        "pricing_version_id": "9a23b339-89dc-4440-9672-e47c0454bf73",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -131422,7 +131422,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-22T21:06:45.471Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -134108,8 +134108,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "fb092d0f-7526-4865-877b-2a3572180a7c",
-        "name": "KT | nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "id": "b532518d-d1f4-4a77-8006-b908aab3cb1c",
+        "name": "CoreWeave | nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "context_length": 262144,
         "model": {
           "slug": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -134196,72 +134196,74 @@
         },
         "model_variant_slug": "nvidia/nemotron-3-ultra-550b-a55b",
         "model_variant_permaslug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "adapter_name": "VLLMChatCompletionsAdapter",
-        "provider_name": "KT",
+        "adapter_name": "WandbAdapter",
+        "provider_name": "CoreWeave",
         "provider_info": {
-          "name": "KT",
-          "displayName": "KT",
-          "slug": "kt",
-          "baseUrl": "https://api.tokenfactory.kt.com/v1",
+          "name": "CoreWeave",
+          "displayName": "CoreWeave",
+          "slug": "coreweave",
+          "baseUrl": "https://api.inference.wandb.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://tokenfactory.kt.com/terms/service",
-            "privacyPolicyURL": "https://tokenfactory.kt.com/terms/privacy",
+            "termsOfServiceURL": "https://docs.coreweave.com/policies/terms-of-service",
+            "privacyPolicyURL": "https://docs.coreweave.com/policies/terms-of-service/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "KR",
+          "headquarters": "US",
           "datacenters": [
-            "KR"
+            "US"
           ],
           "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
+          "hasCompletions": true,
+          "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMChatCompletionsAdapter",
+          "adapterName": "WandbAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tokenfactory.kt.com/&size=256"
+            "url": "/images/icons/CoreWeave.svg"
           },
           "sendClientIp": false,
-          "pricingStrategy": "openai_extended",
-          "genericBaseUrl": "https://api.tokenfactory.kt.com/v1"
+          "pricingStrategy": "openai_chat_completions",
+          "genericBaseUrl": "https://api.inference.wandb.ai/v1"
         },
-        "provider_permaslug": "kt",
-        "provider_display_name": "KT",
-        "provider_slug": "kt",
+        "provider_permaslug": "coreweave",
+        "provider_display_name": "CoreWeave",
+        "provider_slug": "coreweave/bf16",
         "derived_service_tier": null,
-        "provider_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-        "quantization": "unknown",
+        "provider_model_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+        "quantization": "bf16",
         "variant": "standard",
         "is_free": false,
-        "can_abort": false,
-        "max_prompt_tokens": 262144,
+        "can_abort": true,
+        "max_prompt_tokens": null,
         "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "top_k",
+          "repetition_penalty",
           "frequency_penalty",
           "presence_penalty",
-          "repetition_penalty",
-          "temperature",
-          "top_k",
-          "top_p",
-          "max_tokens",
+          "stop",
+          "seed",
           "response_format",
           "structured_outputs",
-          "logprobs",
-          "top_logprobs",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -134269,15 +134271,15 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://tokenfactory.kt.com/terms/service",
-          "privacyPolicyURL": "https://tokenfactory.kt.com/terms/privacy"
+          "termsOfServiceURL": "https://docs.coreweave.com/policies/terms-of-service",
+          "privacyPolicyURL": "https://docs.coreweave.com/policies/terms-of-service/privacy-policy"
         },
         "pricing": {
           "prompt": "0.0000005",
-          "completion": "0.0000022",
+          "completion": "0.00000215",
           "input_cache_read": "0.0000001",
           "discount": 0,
           "display_pricing": [
@@ -134291,7 +134293,7 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000022",
+              "price": "0.00000215",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -134316,7 +134318,7 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000022",
+            "price": "0.00000215",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -134330,10 +134332,10 @@
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.0000005",
-          "openai:completion_tokens": "0.0000022",
+          "openai:completion_tokens": "0.00000215",
           "openai:cached_prompt_tokens": "0.0000001"
         },
-        "pricing_version_id": "e81a3b39-98f1-4595-88b8-d66dedfbcf98",
+        "pricing_version_id": "7e9b1ab6-0490-4158-8a9e-87b3ee93c9c7",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -134346,7 +134348,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": false,
+        "has_completions": true,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
@@ -134366,8 +134368,8 @@
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-10-30T19:26:21.200Z",
-        "status": 0
+        "created_at": "2026-11-21T17:21:15.974Z",
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -136578,7 +136580,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-24T16:46:48.095Z",
-        "status": -2
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -150426,7 +150428,7 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000001805",
+          "prompt": "0.0000001824",
           "completion": "0.0000110055",
           "input_cache_read": "0.00000018",
           "discount": 0,
@@ -150434,7 +150436,7 @@
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001805",
+              "price": "0.0000001824",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -150459,7 +150461,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001805",
+            "price": "0.0000001824",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -150479,11 +150481,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001805",
+          "openai:prompt_tokens": "0.0000001824",
           "openai:completion_tokens": "0.0000110055",
           "openai:cached_prompt_tokens": "0.00000018"
         },
-        "pricing_version_id": "25da5e2e-88d1-4830-afdb-923c0af55008",
+        "pricing_version_id": "9a23b339-89dc-4440-9672-e47c0454bf73",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -152818,7 +152820,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-04-27T02:11:01.546Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -163117,7 +163119,7 @@
       "endpoint": {
         "id": "0e9b72a2-e1eb-45bd-adc5-81f0f31e185f",
         "name": "Darkbloom | google/gemma-4-26b-a4b-it-20260403",
-        "context_length": 131072,
+        "context_length": 262144,
         "model": {
           "slug": "google/gemma-4-26b-a4b-it",
           "hf_slug": "google/gemma-4-26B-A4B-it",
@@ -163227,15 +163229,15 @@
         },
         "provider_permaslug": "darkbloom",
         "provider_display_name": "Darkbloom",
-        "provider_slug": "darkbloom",
+        "provider_slug": "darkbloom/int4",
         "derived_service_tier": null,
         "provider_model_id": "gemma-4-26b-a4b-it",
-        "quantization": "unknown",
+        "quantization": "int4",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 235929,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
@@ -174628,7 +174630,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-05-22T04:01:55.471Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -178561,7 +178563,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-02-16T06:42:50.609Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -182923,7 +182925,7 @@
         ],
         "required_attestation_types": [],
         "created_at": "2026-01-14T22:26:03.413Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -186859,7 +186861,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-01-06T00:46:01.181Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -192226,7 +192228,7 @@
         ],
         "required_attestation_types": [],
         "created_at": "2025-11-20T16:23:08.965Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -204459,7 +204461,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2025-10-14T22:53:07.893Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -215440,7 +215442,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-08-23T19:37:39.160Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -217640,7 +217642,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2025-07-22T14:07:59.439Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -241659,7 +241661,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-29T22:42:01.728Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null

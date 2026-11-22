@@ -7215,7 +7215,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-11-21T06:46:19.106084Z",
+      "updateTime": "2026-11-22T07:03:26.586408Z",
       "uploadValidation": null,
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
@@ -7297,7 +7297,7 @@
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-11-21T07:04:48.804407Z",
+      "updateTime": "2026-11-22T07:03:49.209861Z",
       "uploadValidation": null,
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
@@ -10838,13 +10838,13 @@
       "supervisedLoraTunable": false,
       "supportsImageInput": false,
       "supportsLora": false,
-      "supportsServerless": true,
+      "supportsServerless": false,
       "supportsServerlessLora": false,
       "supportsServerlessTraining": false,
       "supportsTools": true,
       "teftDetails": null,
       "trainingContextLength": 65536,
-      "updateTime": "2026-11-21T01:50:59.093854Z",
+      "updateTime": "2026-11-21T19:25:19.953495Z",
       "uploadValidation": null,
       "useHfApplyChatTemplate": true,
       "useTrainingV2": false
@@ -11782,7 +11782,7 @@
       "supportsTools": false,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-11-21T10:46:57.880061Z",
+      "updateTime": "2026-11-22T10:56:19.814316Z",
       "uploadValidation": null,
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
@@ -31541,7 +31541,7 @@
         "modelType": "ricursive",
         "moe": false,
         "parameterCount": "64782689360",
-        "supportsFireattention": false,
+        "supportsFireattention": true,
         "supportsMtp": false,
         "tunable": false,
         "worldSize": 1
@@ -31549,7 +31549,11 @@
       "calibrated": false,
       "cluster": "",
       "contextLength": 1048576,
-      "conversationConfig": null,
+      "conversationConfig": {
+        "style": "",
+        "system": "",
+        "template": ""
+      },
       "createTime": "2026-11-04T20:57:17.283132Z",
       "createdBy": "",
       "defaultDraftModel": "",
@@ -31567,7 +31571,13 @@
       "importedFrom": "",
       "kind": "HF_BASE_MODEL",
       "name": "accounts/fireworks/models/ripple-65b-preview",
-      "peftDetails": null,
+      "peftDetails": {
+        "baseModel": "",
+        "baseModelType": "",
+        "mergeAddonModelName": "",
+        "r": 0,
+        "targetModules": []
+      },
       "public": true,
       "rewardModelDetails": null,
       "rlLoraTunable": false,
@@ -31587,8 +31597,8 @@
       "supportsServerlessTraining": false,
       "supportsTools": true,
       "teftDetails": null,
-      "trainingContextLength": 0,
-      "updateTime": "2026-11-05T00:30:30.099075Z",
+      "trainingContextLength": 131072,
+      "updateTime": "2026-11-21T22:21:36.164701Z",
       "uploadValidation": null,
       "useHfApplyChatTemplate": false,
       "useTrainingV2": true
@@ -32304,7 +32314,7 @@
       "supportsTools": false,
       "teftDetails": null,
       "trainingContextLength": 0,
-      "updateTime": "2026-11-21T10:46:17.343938Z",
+      "updateTime": "2026-11-22T10:56:20.132450Z",
       "uploadValidation": null,
       "useHfApplyChatTemplate": false,
       "useTrainingV2": false
