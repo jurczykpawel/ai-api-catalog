@@ -1442,25 +1442,6 @@
       "_api_id": "gpt-live-1"
     },
     {
-      "id": "longcat-2-5-free",
-      "name": "Longcat 2.5 Free",
-      "category": "llm",
-      "description": "Longcat 2.5 Free via OpenCode Zen curated gateway.",
-      "tags": [
-        "opencode",
-        "free"
-      ],
-      "capabilities": [],
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
-      },
-      "context_k": null,
-      "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "longcat-2.5-free"
-    },
-    {
       "id": "iceman-free",
       "name": "Iceman Free",
       "category": "llm",
@@ -2086,6 +2067,44 @@
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
       "_api_id": "gpt-live-1.1"
+    },
+    {
+      "id": "jev-1-14",
+      "name": "Jev 1.14",
+      "category": "llm",
+      "description": "Jev 1.14 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "jev-1.14"
+    },
+    {
+      "id": "qwen4-max-free",
+      "name": "Qwen4 Max Free",
+      "category": "llm",
+      "description": "Qwen4 Max Free via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "free",
+        "alibaba",
+        "qwen",
+        "powerful"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "notes": "Free"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "qwen4-max-free"
     }
   ],
   "source": "opencode",

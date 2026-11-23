@@ -11609,7 +11609,7 @@
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
             "termsOfServiceURL": "https://maas-global.oss-ap-southeast-1.aliyuncs.com/Terms%20of%20Service.pdf",
@@ -11672,7 +11672,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
           "termsOfServiceURL": "https://maas-global.oss-ap-southeast-1.aliyuncs.com/Terms%20of%20Service.pdf",
@@ -37841,7 +37841,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-10-15T21:35:21.948Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -46016,7 +46016,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-10-15T16:10:37.749Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -51361,7 +51361,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-11-12T19:23:44.571Z",
-        "status": -2
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -51976,7 +51976,7 @@
       "author_icon_uri": null,
       "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
       "model_version_group_id": null,
-      "context_length": 1000000,
+      "context_length": 1048576,
       "input_modalities": [
         "text"
       ],
@@ -72548,7 +72548,7 @@
         },
         "pricing": {
           "prompt": "0.0000000999",
-          "completion": "0.000008",
+          "completion": "0.000005",
           "input_cache_read": "0.0000000999",
           "discount": 0,
           "display_pricing": [
@@ -72562,7 +72562,7 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000008",
+              "price": "0.000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -72587,7 +72587,7 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000008",
+            "price": "0.000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -72601,10 +72601,10 @@
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.0000000999",
-          "openai:completion_tokens": "0.000008",
+          "openai:completion_tokens": "0.000005",
           "openai:cached_prompt_tokens": "0.0000000999"
         },
-        "pricing_version_id": "f3067faf-1c86-4c1b-84c3-fadb2af11ef5",
+        "pricing_version_id": "f8668e3b-0461-4f28-925f-f5cb759516a3",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -78836,7 +78836,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-09-22T02:11:04.803Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -85669,7 +85669,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-08-31T19:16:27.771Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -86615,22 +86615,22 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000047",
-          "completion": "0.0000000729",
+          "prompt": "0.0000000399",
+          "completion": "0.0000000784",
           "input_cache_read": "0.00000003",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000047",
+              "price": "0.0000000399",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000000729",
+              "price": "0.0000000784",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -86648,14 +86648,14 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000047",
+            "price": "0.0000000399",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000000729",
+            "price": "0.0000000784",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -86668,11 +86668,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000047",
-          "openai:completion_tokens": "0.0000000729",
+          "openai:prompt_tokens": "0.0000000399",
+          "openai:completion_tokens": "0.0000000784",
           "openai:cached_prompt_tokens": "0.00000003"
         },
-        "pricing_version_id": "feb66605-4b07-49b6-9737-256672022572",
+        "pricing_version_id": "0767c2d8-521a-4f8b-b906-4156fd374984",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -87906,22 +87906,22 @@
           "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000047",
-          "completion": "0.0000000729",
+          "prompt": "0.0000000399",
+          "completion": "0.0000000784",
           "input_cache_read": "0.00000003",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000047",
+              "price": "0.0000000399",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000000729",
+              "price": "0.0000000784",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -87939,14 +87939,14 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000047",
+            "price": "0.0000000399",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000000729",
+            "price": "0.0000000784",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -87959,11 +87959,11 @@
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000047",
-          "openai:completion_tokens": "0.0000000729",
+          "openai:prompt_tokens": "0.0000000399",
+          "openai:completion_tokens": "0.0000000784",
           "openai:cached_prompt_tokens": "0.00000003"
         },
-        "pricing_version_id": "feb66605-4b07-49b6-9737-256672022572",
+        "pricing_version_id": "0767c2d8-521a-4f8b-b906-4156fd374984",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -93627,6 +93627,280 @@
       "variant_deprecation_date": null
     },
     {
+      "slug": "dots-studio/dots-3-note-preview",
+      "hf_slug": "dots-studio/dots3-note-prev",
+      "updated_at": "2026-11-11T07:01:22.742Z",
+      "created_at": "2026-08-14T04:06:01.117Z",
+      "hf_updated_at": null,
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "short_name": "Dots3-Note Preview (free)",
+      "author": "dots-studio",
+      "author_display_name": "Dots Studio",
+      "author_icon_uri": "DotsStudio.png",
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is suited for reasoning, coding, multimodal understanding, long-context processing, and multi-step agent workflows.",
+      "model_version_group_id": null,
+      "context_length": 512000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "dots-studio/dots-3-note-preview-20260813",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "reasoning",
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "endpoint": {
+        "id": "2b0adee4-4900-4027-98f1-e49712ae42b8",
+        "name": "AtlasCloud | dots-studio/dots-3-note-preview-20260813:free",
+        "context_length": 512000,
+        "model": {
+          "slug": "dots-studio/dots-3-note-preview",
+          "hf_slug": "dots-studio/dots3-note-prev",
+          "updated_at": "2026-11-11T07:01:22.742027+00:00",
+          "created_at": "2026-08-14T04:06:01.117+00:00",
+          "hf_updated_at": null,
+          "name": "Dots Studio: Dots3-Note Preview",
+          "short_name": "Dots3-Note Preview",
+          "author": "dots-studio",
+          "author_display_name": "Dots Studio",
+          "author_icon_uri": "DotsStudio.png",
+          "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is suited for reasoning, coding, multimodal understanding, long-context processing, and multi-step agent workflows.",
+          "model_version_group_id": null,
+          "context_length": 512000,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "has_text_output": true,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "dots-studio/dots-3-note-preview-20260813",
+          "supports_reasoning": true,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": "reasoning",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": 0,
+          "limit_rpd": 0
+        },
+        "model_variant_slug": "dots-studio/dots-3-note-preview:free",
+        "model_variant_permaslug": "dots-studio/dots-3-note-preview-20260813:free",
+        "adapter_name": "AtlasCloudAdapter",
+        "provider_name": "AtlasCloud",
+        "provider_info": {
+          "name": "AtlasCloud",
+          "displayName": "AtlasCloud",
+          "slug": "atlas-cloud",
+          "baseUrl": "https://api.atlascloud.ai/v1",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "safetyRetention": false,
+            "privacyPolicyURL": "https://www.atlascloud.ai/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "AtlasCloudAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
+          "isByokOnly": false,
+          "isPrivate": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlascloud.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "openai_extended",
+          "genericBaseUrl": "https://api.atlascloud.ai/v1"
+        },
+        "provider_permaslug": "atlas-cloud",
+        "provider_display_name": "AtlasCloud",
+        "provider_slug": "atlas-cloud/fp8",
+        "derived_service_tier": null,
+        "provider_model_id": "dots-studio/dots-3-note-prev-free",
+        "quantization": "fp8",
+        "variant": "free",
+        "is_free": true,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": 512000,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "safetyRetention": false,
+          "privacyPolicyURL": "https://www.atlascloud.ai/privacy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "token",
+              "sku_label": "Input Price",
+              "price": "0",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Output Price",
+              "price": "0",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            }
+          ]
+        },
+        "server_tool_costs_discount_exempt": true,
+        "display_pricing": [
+          {
+            "kind": "token",
+            "sku_label": "Input Price",
+            "price": "0",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Output Price",
+            "price": "0",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          }
+        ],
+        "pricing_json": {
+          "openai:prompt_tokens": "0",
+          "openai:completion_tokens": "0"
+        },
+        "pricing_version_id": "5471b650-d62e-4357-a79c-a85fe5dc9cfc",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": true,
+        "supports_reasoning": true,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": true,
+        "has_chat_completions": true,
+        "features": {
+          "supports_file_urls": false,
+          "supports_input_audio": false,
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": false,
+            "type_function": false
+          }
+        },
+        "supported_video_parameters": null,
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "supported_tts_output_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": "2026-12-31T13:00:00.000Z",
+        "discount_to_user": 0,
+        "allowed_passthrough_parameters": [],
+        "required_attestation_types": [],
+        "created_at": "2026-08-13T14:30:06.720Z",
+        "status": 0
+      },
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": "2026-12-31T13:00:00.000Z"
+    },
+    {
       "slug": "nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b",
       "hf_slug": "nvidia/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b",
       "updated_at": "2026-08-13T20:52:51.442Z",
@@ -98464,7 +98738,7 @@
         },
         "pricing": {
           "prompt": "0.0000000999",
-          "completion": "0.000008",
+          "completion": "0.000005",
           "input_cache_read": "0.0000000999",
           "discount": 0,
           "display_pricing": [
@@ -98478,7 +98752,7 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000008",
+              "price": "0.000005",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -98503,7 +98777,7 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000008",
+            "price": "0.000005",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -98517,10 +98791,10 @@
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.0000000999",
-          "openai:completion_tokens": "0.000008",
+          "openai:completion_tokens": "0.000005",
           "openai:cached_prompt_tokens": "0.0000000999"
         },
-        "pricing_version_id": "f3067faf-1c86-4c1b-84c3-fadb2af11ef5",
+        "pricing_version_id": "f8668e3b-0461-4f28-925f-f5cb759516a3",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -102464,7 +102738,7 @@
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
             "termsOfServiceURL": "https://maas-global.oss-ap-southeast-1.aliyuncs.com/Terms%20of%20Service.pdf",
@@ -102528,7 +102802,7 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
           "termsOfServiceURL": "https://maas-global.oss-ap-southeast-1.aliyuncs.com/Terms%20of%20Service.pdf",
@@ -104368,7 +104642,7 @@
       "limit_rpd": 0,
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
-        "name": "Baidu | deepseek/deepseek-v4-flash-20260731",
+        "name": "Wafer | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "~deepseek/deepseek-v4-flash-latest",
@@ -104450,72 +104724,72 @@
         },
         "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
         "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
-        "adapter_name": "BaiduAdapter",
-        "provider_name": "Baidu",
+        "adapter_name": "WaferAdapter",
+        "provider_name": "Wafer",
         "provider_info": {
-          "name": "Baidu",
-          "displayName": "Baidu Qianfan",
-          "slug": "baidu",
-          "baseUrl": "https://api.baiduqianfan.ai/v1",
+          "name": "Wafer",
+          "displayName": "Wafer",
+          "slug": "wafer/us",
+          "baseUrl": "https://us.pass.wafer.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
+            "termsOfServiceURL": "https://www.wafer.ai/terms",
+            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "CN",
+          "headquarters": "US",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "BaiduAdapter",
+          "adapterName": "WaferAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wafer.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
+          "genericBaseUrl": "https://pass.wafer.ai/v1"
         },
-        "provider_permaslug": "baidu",
-        "provider_display_name": "Baidu Qianfan",
-        "provider_slug": "baidu/fp8",
+        "provider_permaslug": "wafer",
+        "provider_display_name": "Wafer",
+        "provider_slug": "wafer/us",
         "derived_service_tier": null,
-        "provider_model_id": "deepseek-v4-flash-0731",
-        "quantization": "fp8",
+        "provider_model_id": "DeepSeek-V4-Flash-0731-Fast-US",
+        "quantization": "nvfp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "max_tokens",
-          "stop",
-          "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice",
           "top_k",
           "min_p",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
+          "stop",
           "seed",
+          "max_tokens",
           "logit_bias",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
           "logprobs",
           "top_logprobs",
           "parallel_tool_calls",
@@ -104528,36 +104802,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
+          "termsOfServiceURL": "https://www.wafer.ai/terms",
+          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000044",
-          "completion": "0.000000132",
-          "input_cache_read": "0.0000000014",
-          "discount": 0.9,
+          "prompt": "0.0000000434",
+          "completion": "0.0000003",
+          "input_cache_read": "0.000000035",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000044",
+              "price": "0.0000000434",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000132",
+              "price": "0.0000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000014",
+              "price": "0.000000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -104568,31 +104842,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000044",
+            "price": "0.0000000434",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000132",
+            "price": "0.0000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000014",
+            "price": "0.000000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000044",
-          "openai:completion_tokens": "0.00000132",
-          "openai:cached_prompt_tokens": "0.000000014"
+          "openai:prompt_tokens": "0.0000000434",
+          "openai:completion_tokens": "0.0000003",
+          "openai:cached_prompt_tokens": "0.000000035"
         },
-        "pricing_version_id": "50b4d4e3-6268-4155-a421-752ab5e49a65",
+        "pricing_version_id": "1abd400f-c9b0-4f48-a4d5-4d6f61bbb65b",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -104619,13 +104893,13 @@
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
         "supported_tts_output_parameters": null,
-        "provider_region": null,
+        "provider_region": "us",
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0.9,
+        "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-08-03T15:03:08.203Z",
+        "created_at": "2026-10-27T05:21:06.259Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -104709,8 +104983,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "223c54e7-4db1-4098-980f-47741e7637ab",
-        "name": "Baidu | deepseek/deepseek-v4-flash-20260731",
+        "id": "7ff39bf4-2128-455b-b2b5-42e48371865e",
+        "name": "Wafer | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
@@ -104792,65 +105066,74 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash-0731",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260731",
-        "adapter_name": "BaiduAdapter",
-        "provider_name": "Baidu",
+        "adapter_name": "WaferAdapter",
+        "provider_name": "Wafer",
         "provider_info": {
-          "name": "Baidu",
-          "displayName": "Baidu Qianfan",
-          "slug": "baidu",
-          "baseUrl": "https://api.baiduqianfan.ai/v1",
+          "name": "Wafer",
+          "displayName": "Wafer",
+          "slug": "wafer/us",
+          "baseUrl": "https://us.pass.wafer.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": true,
+            "retainsPrompts": false,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
+            "termsOfServiceURL": "https://www.wafer.ai/terms",
+            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "CN",
+          "headquarters": "US",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "BaiduAdapter",
+          "adapterName": "WaferAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wafer.ai/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
+          "genericBaseUrl": "https://pass.wafer.ai/v1"
         },
-        "provider_permaslug": "baidu",
-        "provider_display_name": "Baidu Qianfan",
-        "provider_slug": "baidu/fp8",
+        "provider_permaslug": "wafer",
+        "provider_display_name": "Wafer",
+        "provider_slug": "wafer/us",
         "derived_service_tier": null,
-        "provider_model_id": "deepseek-v4-flash-0731",
-        "quantization": "fp8",
+        "provider_model_id": "DeepSeek-V4-Flash-0731-Fast-US",
+        "quantization": "nvfp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 1048576,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "max_tokens",
+          "top_k",
+          "min_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
           "stop",
+          "seed",
+          "max_tokens",
+          "logit_bias",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice"
+          "tool_choice",
+          "logprobs",
+          "top_logprobs"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -104858,36 +105141,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": true,
+          "retainsPrompts": false,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
+          "termsOfServiceURL": "https://www.wafer.ai/terms",
+          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.000000044",
-          "completion": "0.000000132",
-          "input_cache_read": "0.0000000014",
-          "discount": 0.9,
+          "prompt": "0.0000000434",
+          "completion": "0.0000003",
+          "input_cache_read": "0.000000035",
+          "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000044",
+              "price": "0.0000000434",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000132",
+              "price": "0.0000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000014",
+              "price": "0.000000035",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -104898,31 +105181,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000044",
+            "price": "0.0000000434",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000132",
+            "price": "0.0000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000014",
+            "price": "0.000000035",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000044",
-          "openai:completion_tokens": "0.00000132",
-          "openai:cached_prompt_tokens": "0.000000014"
+          "openai:prompt_tokens": "0.0000000434",
+          "openai:completion_tokens": "0.0000003",
+          "openai:cached_prompt_tokens": "0.000000035"
         },
-        "pricing_version_id": "50b4d4e3-6268-4155-a421-752ab5e49a65",
+        "pricing_version_id": "1abd400f-c9b0-4f48-a4d5-4d6f61bbb65b",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -104949,13 +105232,13 @@
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
         "supported_tts_output_parameters": null,
-        "provider_region": null,
+        "provider_region": "us",
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0.9,
+        "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-08-03T15:03:08.203Z",
+        "created_at": "2026-10-27T05:21:06.259Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -117618,7 +117901,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-17T20:03:16.932Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -130342,7 +130625,7 @@
         ],
         "required_attestation_types": [],
         "created_at": "2026-06-18T03:41:22.084Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -131422,7 +131705,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-22T21:06:45.471Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -133686,7 +133969,7 @@
         "supported_tts_output_parameters": null,
         "provider_region": "us",
         "declared_region": null,
-        "deprecation_date": null,
+        "deprecation_date": "2026-11-30T13:00:00.000Z",
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
@@ -133694,7 +133977,7 @@
         "status": 0
       },
       "display_required_attestation_types": [],
-      "variant_deprecation_date": null
+      "variant_deprecation_date": "2026-11-30T13:00:00.000Z"
     },
     {
       "slug": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -134369,7 +134652,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-11-21T17:21:15.974Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -136580,7 +136863,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-24T16:46:48.095Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -147970,6 +148253,582 @@
       "variant_deprecation_date": "2027-04-30T13:00:00.000Z"
     },
     {
+      "slug": "kwaivgi/kling-v3.0-pro",
+      "hf_slug": null,
+      "updated_at": "2026-04-29T21:04:40.949Z",
+      "created_at": "2026-04-29T20:56:46.024Z",
+      "hf_updated_at": null,
+      "name": "Kling: Video v3.0 Pro",
+      "short_name": "Video v3.0 Pro",
+      "author": "kwaivgi",
+      "author_display_name": "kwaivgi",
+      "author_icon_uri": null,
+      "description": "Kling v3.0 Pro is Kuaishou's premium video generation model, offering higher visual quality than the Standard tier. It supports text-to-video and image-to-video workflows, with first-frame and last-frame control for precise scene composition. Clips range from 3 to 15 seconds in 16:9, 9:16, or 1:1 aspect ratios. Native audio generation is available as an option.",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "kwaivgi/kling-v3.0-pro-20260429",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "video_generation",
+      "previews_by_modality": {
+        "video": {
+          "url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-pro-20260429/659fd963-b8c3-4735-b774-a67b4c1cf872/original-0.mp4",
+          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-pro-20260429/659fd963-b8c3-4735-b774-a67b4c1cf872/thumb-0.webp"
+        }
+      },
+      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-pro-20260429/659fd963-b8c3-4735-b774-a67b4c1cf872/thumb-0.webp",
+      "preview_audio": null,
+      "author_flagship_modalities": [
+        "video"
+      ],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "endpoint": {
+        "id": "f7274a61-92ec-488a-935b-1d1c3677eb9f",
+        "name": "AtlasCloud | kwaivgi/kling-v3.0-pro-20260429",
+        "context_length": 0,
+        "model": {
+          "slug": "kwaivgi/kling-v3.0-pro",
+          "hf_slug": null,
+          "updated_at": "2026-04-29T21:04:40.949771+00:00",
+          "created_at": "2026-04-29T20:56:46.024286+00:00",
+          "hf_updated_at": null,
+          "name": "Kling: Video v3.0 Pro",
+          "short_name": "Video v3.0 Pro",
+          "author": "kwaivgi",
+          "author_display_name": "kwaivgi",
+          "author_icon_uri": null,
+          "description": "Kling v3.0 Pro is Kuaishou's premium video generation model, offering higher visual quality than the Standard tier. It supports text-to-video and image-to-video workflows, with first-frame and last-frame control for precise scene composition. Clips range from 3 to 15 seconds in 16:9, 9:16, or 1:1 aspect ratios. Native audio generation is available as an option.",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "kwaivgi/kling-v3.0-pro-20260429",
+          "supports_reasoning": false,
+          "reasoning_config": null,
+          "features": {},
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": "video_generation",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null
+        },
+        "model_variant_slug": "kwaivgi/kling-v3.0-pro",
+        "model_variant_permaslug": "kwaivgi/kling-v3.0-pro-20260429",
+        "adapter_name": "AtlasCloudKlingV3Adapter",
+        "provider_name": "AtlasCloud",
+        "provider_info": {
+          "name": "AtlasCloud",
+          "displayName": "AtlasCloud",
+          "slug": "atlas-cloud",
+          "baseUrl": "https://api.atlascloud.ai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "safetyRetention": false,
+            "privacyPolicyURL": "https://www.atlascloud.ai/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "AtlasCloudKlingV3Adapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
+          "isByokOnly": false,
+          "isPrivate": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlascloud.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "atlas_cloud_video",
+          "genericBaseUrl": "https://api.atlascloud.ai/v1"
+        },
+        "provider_permaslug": "atlas-cloud",
+        "provider_display_name": "AtlasCloud",
+        "provider_slug": "atlas-cloud",
+        "derived_service_tier": null,
+        "provider_model_id": "kwaivgi/kling-v3.0-pro",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "safetyRetention": false,
+          "privacyPolicyURL": "https://www.atlascloud.ai/privacy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Video (with audio)",
+              "price": "0.168",
+              "displayMultiplier": 1,
+              "unitLabel": "/second"
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video (no audio)",
+              "price": "0.112",
+              "displayMultiplier": 1,
+              "unitLabel": "/second"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Video (with audio)",
+            "price": "0.168",
+            "displayMultiplier": 1,
+            "unitLabel": "/second"
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video (no audio)",
+            "price": "0.112",
+            "displayMultiplier": 1,
+            "unitLabel": "/second"
+          }
+        ],
+        "pricing_json": {
+          "atlas_cloud_video:duration_seconds": "0.112",
+          "atlas_cloud_video:duration_seconds_with_audio": "0.168",
+          "atlas_cloud_video:text_to_video_duration_seconds_480p": "0.112",
+          "atlas_cloud_video:text_to_video_duration_seconds_720p": "0.112",
+          "atlas_cloud_video:image_to_video_duration_seconds_720p": "0.112",
+          "atlas_cloud_video:text_to_video_duration_seconds_1080p": "0.112",
+          "atlas_cloud_video:image_to_video_duration_seconds_1080p": "0.112"
+        },
+        "pricing_version_id": "ac4986c2-eda9-4042-bf40-8d2ed7a91838",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {
+          "supported_sizes": [
+            "1280x720",
+            "720x1280",
+            "720x720"
+          ],
+          "supported_durations": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "supported_frame_images": [
+            "first_frame",
+            "last_frame"
+          ],
+          "generate_audio": true,
+          "seed": false
+        },
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "supported_tts_output_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": null,
+        "discount_to_user": 0,
+        "allowed_passthrough_parameters": [
+          "negative_prompt",
+          "cfg_scale"
+        ],
+        "required_attestation_types": [],
+        "created_at": "2026-04-29T20:57:40.395Z",
+        "status": 0
+      },
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "kwaivgi/kling-v3.0-std",
+      "hf_slug": null,
+      "updated_at": "2026-04-29T21:04:55.155Z",
+      "created_at": "2026-04-29T20:56:45.463Z",
+      "hf_updated_at": null,
+      "name": "Kling: Video v3.0 Standard",
+      "short_name": "Video v3.0 Standard",
+      "author": "kwaivgi",
+      "author_display_name": "kwaivgi",
+      "author_icon_uri": null,
+      "description": "Kling v3.0 Standard is a video generation model from Kuaishou. It supports text-to-video and image-to-video workflows, with first-frame and last-frame control for guided scene composition. Clips range from 3 to 15 seconds in 16:9, 9:16, or 1:1 aspect ratios. Native audio generation is available as an option.",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "kwaivgi/kling-v3.0-std-20260429",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "video_generation",
+      "previews_by_modality": {
+        "video": {
+          "url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-std-20260429/8110c001-9dde-42dc-b58c-3e8928553467/original-0.mp4",
+          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-std-20260429/8110c001-9dde-42dc-b58c-3e8928553467/thumb-0.webp"
+        }
+      },
+      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-std-20260429/8110c001-9dde-42dc-b58c-3e8928553467/thumb-0.webp",
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "endpoint": {
+        "id": "9fe6972f-58ec-4e11-837a-bb4553940817",
+        "name": "AtlasCloud | kwaivgi/kling-v3.0-std-20260429",
+        "context_length": 0,
+        "model": {
+          "slug": "kwaivgi/kling-v3.0-std",
+          "hf_slug": null,
+          "updated_at": "2026-04-29T21:04:55.155914+00:00",
+          "created_at": "2026-04-29T20:56:45.463815+00:00",
+          "hf_updated_at": null,
+          "name": "Kling: Video v3.0 Standard",
+          "short_name": "Video v3.0 Standard",
+          "author": "kwaivgi",
+          "author_display_name": "kwaivgi",
+          "author_icon_uri": null,
+          "description": "Kling v3.0 Standard is a video generation model from Kuaishou. It supports text-to-video and image-to-video workflows, with first-frame and last-frame control for guided scene composition. Clips range from 3 to 15 seconds in 16:9, 9:16, or 1:1 aspect ratios. Native audio generation is available as an option.",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "kwaivgi/kling-v3.0-std-20260429",
+          "supports_reasoning": false,
+          "reasoning_config": null,
+          "features": {},
+          "default_parameters": {},
+          "default_order": [],
+          "quick_start_example_type": "video_generation",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null
+        },
+        "model_variant_slug": "kwaivgi/kling-v3.0-std",
+        "model_variant_permaslug": "kwaivgi/kling-v3.0-std-20260429",
+        "adapter_name": "AtlasCloudKlingV3Adapter",
+        "provider_name": "AtlasCloud",
+        "provider_info": {
+          "name": "AtlasCloud",
+          "displayName": "AtlasCloud",
+          "slug": "atlas-cloud",
+          "baseUrl": "https://api.atlascloud.ai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "safetyRetention": false,
+            "privacyPolicyURL": "https://www.atlascloud.ai/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "AtlasCloudKlingV3Adapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
+          "isByokOnly": false,
+          "isPrivate": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlascloud.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "atlas_cloud_video",
+          "genericBaseUrl": "https://api.atlascloud.ai/v1"
+        },
+        "provider_permaslug": "atlas-cloud",
+        "provider_display_name": "AtlasCloud",
+        "provider_slug": "atlas-cloud",
+        "derived_service_tier": null,
+        "provider_model_id": "kwaivgi/kling-v3.0-std",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "safetyRetention": false,
+          "privacyPolicyURL": "https://www.atlascloud.ai/privacy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Video (with audio)",
+              "price": "0.126",
+              "displayMultiplier": 1,
+              "unitLabel": "/second"
+            },
+            {
+              "kind": "unit",
+              "sku_label": "Video (no audio)",
+              "price": "0.084",
+              "displayMultiplier": 1,
+              "unitLabel": "/second"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Video (with audio)",
+            "price": "0.126",
+            "displayMultiplier": 1,
+            "unitLabel": "/second"
+          },
+          {
+            "kind": "unit",
+            "sku_label": "Video (no audio)",
+            "price": "0.084",
+            "displayMultiplier": 1,
+            "unitLabel": "/second"
+          }
+        ],
+        "pricing_json": {
+          "atlas_cloud_video:duration_seconds": "0.084",
+          "atlas_cloud_video:duration_seconds_with_audio": "0.126",
+          "atlas_cloud_video:text_to_video_duration_seconds_480p": "0.084",
+          "atlas_cloud_video:text_to_video_duration_seconds_720p": "0.084",
+          "atlas_cloud_video:image_to_video_duration_seconds_720p": "0.084",
+          "atlas_cloud_video:text_to_video_duration_seconds_1080p": "0.084",
+          "atlas_cloud_video:image_to_video_duration_seconds_1080p": "0.084"
+        },
+        "pricing_version_id": "80a6e366-4ab9-4ccd-8e4a-745cfb093b52",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {
+          "supported_sizes": [
+            "1280x720",
+            "720x1280",
+            "720x720"
+          ],
+          "supported_durations": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "supported_frame_images": [
+            "first_frame",
+            "last_frame"
+          ],
+          "generate_audio": true,
+          "seed": false
+        },
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "supported_tts_output_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": null,
+        "discount_to_user": 0,
+        "allowed_passthrough_parameters": [
+          "negative_prompt",
+          "cfg_scale"
+        ],
+        "required_attestation_types": [],
+        "created_at": "2026-04-29T20:57:22.945Z",
+        "status": 0
+      },
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
       "slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
       "hf_slug": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
       "updated_at": "2026-06-17T15:56:59.768Z",
@@ -154612,9 +155471,9 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "48f7c1a9-3b0c-4f31-a55b-4650d37e35f3",
-        "name": "Baidu | deepseek/deepseek-v4-pro-20260423",
-        "context_length": 1048576,
+        "id": "b3598fb1-4093-4373-93ec-4c671abaf943",
+        "name": "StreamLake | deepseek/deepseek-v4-pro-20260423",
+        "context_length": 1024000,
         "model": {
           "slug": "deepseek/deepseek-v4-pro",
           "hf_slug": "deepseek-ai/DeepSeek-V4-Pro",
@@ -154694,21 +155553,21 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260423",
-        "adapter_name": "BaiduAdapter",
-        "provider_name": "Baidu",
+        "adapter_name": "StreamLakeAdapter",
+        "provider_name": "StreamLake",
         "provider_info": {
-          "name": "Baidu",
-          "displayName": "Baidu Qianfan",
-          "slug": "baidu",
-          "baseUrl": "https://api.baiduqianfan.ai/v1",
+          "name": "StreamLake",
+          "displayName": "StreamLake",
+          "slug": "streamlake",
+          "baseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
+            "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+            "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54",
             "requiresUserIDs": false
           },
           "headquarters": "CN",
@@ -154718,21 +155577,21 @@
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "BaiduAdapter",
-          "statusPageUrl": null,
+          "adapterName": "StreamLakeAdapter",
+          "statusPageUrl": "https://status.streamlake.ai/",
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.streamlake.com/&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
+          "genericBaseUrl": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints"
         },
-        "provider_permaslug": "baidu",
-        "provider_display_name": "Baidu Qianfan",
-        "provider_slug": "baidu/fp8",
+        "provider_permaslug": "streamlake",
+        "provider_display_name": "StreamLake",
+        "provider_slug": "streamlake/fp8",
         "derived_service_tier": null,
         "provider_model_id": "deepseek-v4-pro",
         "quantization": "fp8",
@@ -154740,23 +155599,23 @@
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 393216,
+        "max_completion_tokens": 384000,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
+          "tools",
+          "tool_choice",
+          "response_format",
+          "logprobs",
+          "top_logprobs",
+          "structured_outputs",
+          "max_tokens",
           "temperature",
           "top_p",
-          "max_tokens",
-          "stop",
-          "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice"
+          "stop"
         ],
-        "excluded_parameters": [
-          "max_completion_tokens"
-        ],
+        "excluded_parameters": [],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
@@ -154765,33 +155624,33 @@
           "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
-          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
+          "termsOfServiceURL": "https://www.streamlake.ai/document/DOC/mgkchnd89grpt1961fw",
+          "privacyPolicyURL": "https://www.streamlake.ai/document/DOC/mgkci47q13qr66h9i54"
         },
         "pricing": {
-          "prompt": "0.00000066079",
-          "completion": "0.00000132158",
-          "input_cache_read": "0.00000005474",
-          "discount": 0.609,
+          "prompt": "0.000000659112",
+          "completion": "0.000001318224",
+          "input_cache_read": "0.000000054926",
+          "discount": 0.6212,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000066079",
+              "price": "0.000000659112",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000132158",
+              "price": "0.000001318224",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000005474",
+              "price": "0.000000054926",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -154802,31 +155661,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000066079",
+            "price": "0.000000659112",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000132158",
+            "price": "0.000001318224",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000005474",
+            "price": "0.000000054926",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000169",
-          "openai:completion_tokens": "0.00000338",
-          "openai:cached_prompt_tokens": "0.00000014"
+          "openai:prompt_tokens": "0.00000174",
+          "openai:completion_tokens": "0.00000348",
+          "openai:cached_prompt_tokens": "0.000000145"
         },
-        "pricing_version_id": "a60e16b6-e596-4a60-b617-255d342fd943",
+        "pricing_version_id": "34efd862-5999-49c6-9757-4321a2e52fd9",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -154843,7 +155702,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": true,
+            "literal_none": false,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -154856,10 +155715,10 @@
         "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0.609,
+        "discount_to_user": 0.6212,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-04-29T11:41:27.715Z",
+        "created_at": "2026-05-18T07:42:08.590Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -154939,8 +155798,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "f967eede-84b1-45f9-8c98-50f4feb2d8a8",
-        "name": "Relace | deepseek/deepseek-v4-flash-20260423",
+        "id": "fa22fe84-7ea9-49b0-a8eb-4d87ede9de31",
+        "name": "Baidu | deepseek/deepseek-v4-flash-20260423",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash",
@@ -155018,106 +155877,104 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260423",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Relace",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Relace",
-          "displayName": "Relace",
-          "slug": "relace",
-          "baseUrl": "https://models.relace.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
-            "privacyPolicyURL": "https://www.relace.ai/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": "https://status.relace.ai",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://relace.ai&size=256"
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://intl.cloud.baidu.com/en&size=256"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://models.relace.ai/v1"
+          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
         },
-        "provider_permaslug": "relace",
-        "provider_display_name": "Relace",
-        "provider_slug": "relace/fp4",
+        "provider_permaslug": "baidu",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "deepseek-ai/DeepSeek-V4-Flash-0423",
-        "quantization": "fp4",
+        "provider_model_id": "deepseek-v4-flash",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
-          "stop",
           "max_tokens",
-          "logit_bias",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
+          "stop",
           "response_format",
+          "structured_outputs",
           "tools",
           "tool_choice"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "max_completion_tokens"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.relace.ai/terms-of-use",
-          "privacyPolicyURL": "https://www.relace.ai/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.0000000138",
-          "completion": "0.00000045",
-          "input_cache_read": "0.0000000138",
-          "discount": 0,
+          "prompt": "0.00000001456",
+          "completion": "0.00000002912",
+          "input_cache_read": "0.000000002912",
+          "discount": 0.896,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000138",
+              "price": "0.00000001456",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000045",
+              "price": "0.00000002912",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000138",
+              "price": "0.000000002912",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -155128,31 +155985,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000138",
+            "price": "0.00000001456",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000045",
+            "price": "0.00000002912",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000138",
+            "price": "0.000000002912",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000138",
-          "openai:completion_tokens": "0.00000045",
-          "openai:cached_prompt_tokens": "0.0000000138"
+          "openai:prompt_tokens": "0.00000014",
+          "openai:completion_tokens": "0.00000028",
+          "openai:cached_prompt_tokens": "0.000000028"
         },
-        "pricing_version_id": "0acf2b0a-f374-41db-94dd-8f122aeb7093",
+        "pricing_version_id": "705a8343-d43b-4fe1-b4d8-06aa7b2313dd",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -155169,7 +156026,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -155182,10 +156039,10 @@
         "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0,
+        "discount_to_user": 0.896,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-09-24T18:23:09.521Z",
+        "created_at": "2026-05-11T09:35:35.608Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -155846,7 +156703,7 @@
         ],
         "required_attestation_types": [],
         "created_at": "2026-04-24T01:35:53.021Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -158555,6 +159412,298 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "kwaivgi/kling-video-o1",
+      "hf_slug": null,
+      "updated_at": "2026-04-21T02:06:28.711Z",
+      "created_at": "2026-04-20T17:06:17.379Z",
+      "hf_updated_at": null,
+      "name": "Kling: Video O1",
+      "short_name": "Video O1",
+      "author": "kwaivgi",
+      "author_display_name": "kwaivgi",
+      "author_icon_uri": null,
+      "description": "Kling Video O1 is a video generation model from Kuaishou. It supports text and image inputs with video output, enabling text-to-video and image-to-video workflows. It is suited for cinematic content production, with first-frame and last-frame control for precise scene composition. It generates 5 or 10 second clips in 16:9, 9:16, or 1:1 aspect ratios.",
+      "model_version_group_id": null,
+      "context_length": 0,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "video"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "kwaivgi/kling-video-o1-20260420",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": "video_generation",
+      "previews_by_modality": {
+        "video": {
+          "url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-video-o1-20260420/fd4d865a-2cf3-43b2-80d0-e6b76a2d89d9/original-0.mp4",
+          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-video-o1-20260420/fd4d865a-2cf3-43b2-80d0-e6b76a2d89d9/thumb-0.webp"
+        }
+      },
+      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-video-o1-20260420/fd4d865a-2cf3-43b2-80d0-e6b76a2d89d9/thumb-0.webp",
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "endpoint": {
+        "id": "b45f820f-db7f-4088-98a6-f6fc73de1f21",
+        "name": "AtlasCloud | kwaivgi/kling-video-o1-20260420",
+        "context_length": 0,
+        "model": {
+          "slug": "kwaivgi/kling-video-o1",
+          "hf_slug": null,
+          "updated_at": "2026-04-21T02:06:28.711249+00:00",
+          "created_at": "2026-04-20T17:06:17.379321+00:00",
+          "hf_updated_at": null,
+          "name": "Kling: Video O1",
+          "short_name": "Video O1",
+          "author": "kwaivgi",
+          "author_display_name": "kwaivgi",
+          "author_icon_uri": null,
+          "description": "Kling Video O1 is a video generation model from Kuaishou. It supports text and image inputs with video output, enabling text-to-video and image-to-video workflows. It is suited for cinematic content production, with first-frame and last-frame control for precise scene composition. It generates 5 or 10 second clips in 16:9, 9:16, or 1:1 aspect ratios.",
+          "model_version_group_id": null,
+          "context_length": 0,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "video"
+          ],
+          "has_text_output": false,
+          "group": "Other",
+          "instruct_type": null,
+          "default_system": null,
+          "default_stops": [],
+          "hidden": false,
+          "router": null,
+          "warning_message": null,
+          "promotion_message": null,
+          "routing_error_message": null,
+          "required_attestation_types": [],
+          "is_private": false,
+          "permaslug": "kwaivgi/kling-video-o1-20260420",
+          "supports_reasoning": false,
+          "reasoning_config": {
+            "start_token": null,
+            "end_token": null
+          },
+          "features": {
+            "reasoning_config": {
+              "start_token": null,
+              "end_token": null
+            },
+            "chat_template_config": {}
+          },
+          "default_parameters": {
+            "temperature": null,
+            "top_p": null,
+            "top_k": null,
+            "frequency_penalty": null,
+            "presence_penalty": null,
+            "repetition_penalty": null
+          },
+          "default_order": [],
+          "quick_start_example_type": "video_generation",
+          "previews_by_modality": {},
+          "preview_thumbnail_url": null,
+          "preview_audio": null,
+          "author_flagship_modalities": [],
+          "is_trainable_text": null,
+          "is_trainable_image": null,
+          "knowledge_cutoff": null,
+          "limit_rpm": null,
+          "limit_rpd": null
+        },
+        "model_variant_slug": "kwaivgi/kling-video-o1",
+        "model_variant_permaslug": "kwaivgi/kling-video-o1-20260420",
+        "adapter_name": "AtlasCloudWanAdapter",
+        "provider_name": "AtlasCloud",
+        "provider_info": {
+          "name": "AtlasCloud",
+          "displayName": "AtlasCloud",
+          "slug": "atlas-cloud",
+          "baseUrl": "https://api.atlascloud.ai",
+          "dataPolicy": {
+            "training": false,
+            "trainingOpenRouter": false,
+            "retainsPrompts": true,
+            "canPublish": false,
+            "safetyRetention": false,
+            "privacyPolicyURL": "https://www.atlascloud.ai/privacy",
+            "requiresUserIDs": false
+          },
+          "headquarters": "US",
+          "hasChatCompletions": true,
+          "hasCompletions": true,
+          "isAbortable": true,
+          "moderationRequired": false,
+          "requiredAttestationTypes": [],
+          "adapterName": "AtlasCloudWanAdapter",
+          "statusPageUrl": null,
+          "byokEnabled": true,
+          "isByokOnly": false,
+          "isPrivate": false,
+          "icon": {
+            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlascloud.ai/&size=256"
+          },
+          "sendClientIp": false,
+          "pricingStrategy": "atlas_cloud_video",
+          "genericBaseUrl": "https://api.atlascloud.ai/v1"
+        },
+        "provider_permaslug": "atlas-cloud",
+        "provider_display_name": "AtlasCloud",
+        "provider_slug": "atlas-cloud",
+        "derived_service_tier": null,
+        "provider_model_id": "kwaivgi/kling-video-o1",
+        "quantization": "unknown",
+        "variant": "standard",
+        "is_free": false,
+        "can_abort": true,
+        "max_prompt_tokens": null,
+        "max_completion_tokens": null,
+        "max_tokens_per_image": null,
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p"
+        ],
+        "excluded_parameters": [],
+        "is_byok": false,
+        "moderation_required": false,
+        "data_policy": {
+          "training": false,
+          "trainingOpenRouter": false,
+          "retainsPrompts": true,
+          "canPublish": false,
+          "safetyRetention": false,
+          "privacyPolicyURL": "https://www.atlascloud.ai/privacy"
+        },
+        "pricing": {
+          "prompt": "0",
+          "completion": "0",
+          "discount": 0,
+          "display_pricing": [
+            {
+              "kind": "unit",
+              "sku_label": "Video Output",
+              "price": "0.1120",
+              "displayMultiplier": 1,
+              "unitLabel": "/second"
+            }
+          ]
+        },
+        "display_pricing": [
+          {
+            "kind": "unit",
+            "sku_label": "Video Output",
+            "price": "0.1120",
+            "displayMultiplier": 1,
+            "unitLabel": "/second"
+          }
+        ],
+        "pricing_json": {
+          "atlas_cloud_video:duration_seconds": "0.1120",
+          "atlas_cloud_video:text_to_video_duration_seconds_480p": "0",
+          "atlas_cloud_video:text_to_video_duration_seconds_720p": "0",
+          "atlas_cloud_video:image_to_video_duration_seconds_720p": "0",
+          "atlas_cloud_video:text_to_video_duration_seconds_1080p": "0",
+          "atlas_cloud_video:image_to_video_duration_seconds_1080p": "0"
+        },
+        "pricing_version_id": "02a95704-187c-4510-abff-4dded413c9c1",
+        "is_pricing_unresolved": false,
+        "is_hidden": false,
+        "is_private": false,
+        "is_byok_only": false,
+        "is_deranked": false,
+        "is_disabled": false,
+        "is_hipaa_eligible": false,
+        "supports_tool_parameters": false,
+        "supports_reasoning": false,
+        "supports_multipart": true,
+        "limit_rpm": null,
+        "limit_rpd": null,
+        "has_completions": false,
+        "has_chat_completions": false,
+        "features": {
+          "supports_tool_choice": {
+            "literal_none": true,
+            "literal_auto": true,
+            "literal_required": true,
+            "type_function": true
+          }
+        },
+        "supported_video_parameters": {
+          "supported_sizes": [
+            "1280x720",
+            "720x1280",
+            "720x720"
+          ],
+          "supported_durations": [
+            5,
+            10
+          ],
+          "supported_frame_images": [
+            "first_frame",
+            "last_frame"
+          ],
+          "generate_audio": true,
+          "seed": false
+        },
+        "supported_image_parameters": null,
+        "supported_stt_parameters": null,
+        "supported_tts_output_parameters": null,
+        "provider_region": null,
+        "declared_region": null,
+        "deprecation_date": null,
+        "discount_to_user": 0,
+        "allowed_passthrough_parameters": [
+          "negative_prompt"
+        ],
+        "required_attestation_types": [],
+        "created_at": "2026-04-20T17:06:49.074Z",
+        "status": 0
+      },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
     },
@@ -163328,7 +164477,7 @@
           "openai:completion_tokens": "0.00000019",
           "openai:cached_prompt_tokens": "0.0000000125"
         },
-        "pricing_version_id": "e7c0af1c-b205-43cc-995c-c424d45c4f2d",
+        "pricing_version_id": "e8e47e7f-83aa-45b1-8764-01ade8ea19dd",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -174630,7 +175779,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-05-22T04:01:55.471Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -178563,7 +179712,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-02-16T06:42:50.609Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -192228,7 +193377,7 @@
         ],
         "required_attestation_types": [],
         "created_at": "2025-11-20T16:23:08.965Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -204461,7 +205610,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2025-10-14T22:53:07.893Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -213410,29 +214559,29 @@
           "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.000000017",
-          "completion": "0.000000085",
-          "input_cache_read": "0.0000000085",
+          "prompt": "0.0000000153",
+          "completion": "0.0000000765",
+          "input_cache_read": "0.00000000765",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000017",
+              "price": "0.0000000153",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000085",
+              "price": "0.0000000765",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000000085",
+              "price": "0.00000000765",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -213443,31 +214592,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000017",
+            "price": "0.0000000153",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000085",
+            "price": "0.0000000765",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000000085",
+            "price": "0.00000000765",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000017",
-          "openai:completion_tokens": "0.000000085",
-          "openai:cached_prompt_tokens": "0.0000000085"
+          "openai:prompt_tokens": "0.0000000153",
+          "openai:completion_tokens": "0.0000000765",
+          "openai:cached_prompt_tokens": "0.00000000765"
         },
-        "pricing_version_id": "6f13b497-cb5c-484e-92aa-85a222c6e5a2",
+        "pricing_version_id": "eed0e67d-2900-4a5c-bfd6-1f22b647320d",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -215224,8 +216373,8 @@
       "limit_rpm": null,
       "limit_rpd": null,
       "endpoint": {
-        "id": "817708f7-1cab-454b-b034-1678c88ba332",
-        "name": "DekaLLM | qwen/qwen3-30b-a3b-instruct-2507",
+        "id": "73b51933-48c6-42d4-9440-2ce3c91ce131",
+        "name": "SiliconFlow | qwen/qwen3-30b-a3b-instruct-2507",
         "context_length": 262144,
         "model": {
           "slug": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -215288,71 +216437,66 @@
         },
         "model_variant_slug": "qwen/qwen3-30b-a3b-instruct-2507",
         "model_variant_permaslug": "qwen/qwen3-30b-a3b-instruct-2507",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "DekaLLM",
+        "adapter_name": "SiliconFlowAdapter",
+        "provider_name": "SiliconFlow",
         "provider_info": {
-          "name": "DekaLLM",
-          "displayName": "DekaLLM",
-          "slug": "dekallm",
-          "baseUrl": "https://dekallm.openrouter.cloudeka.ai/v1",
+          "name": "SiliconFlow",
+          "displayName": "SiliconFlow",
+          "slug": "siliconflow",
+          "baseUrl": "https://api.siliconflow.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
-            "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/",
+            "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
+            "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "ID",
+          "headquarters": "SG",
           "datacenters": [
-            "ID"
+            "US"
           ],
           "hasChatCompletions": true,
           "hasCompletions": false,
-          "isAbortable": true,
+          "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
+          "adapterName": "SiliconFlowAdapter",
           "statusPageUrl": null,
-          "byokEnabled": false,
+          "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "icon": {
-            "url": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cloudeka.id&size=256"
+            "url": "/images/icons/SiliconFlow.svg"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://dekallm.openrouter.cloudeka.ai/v1"
+          "genericBaseUrl": "https://api.siliconflow.com/v1"
         },
-        "provider_permaslug": "dekallm",
-        "provider_display_name": "DekaLLM",
-        "provider_slug": "dekallm",
+        "provider_permaslug": "siliconflow",
+        "provider_display_name": "SiliconFlow",
+        "provider_slug": "siliconflow/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "qwen/qwen3-30b-a3b-instruct-2507",
-        "quantization": "unknown",
+        "provider_model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": true,
+        "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "presence_penalty",
-          "seed",
-          "stop",
+          "structured_outputs",
+          "response_format",
           "temperature",
           "top_p",
-          "response_format",
-          "structured_outputs",
+          "top_k",
+          "frequency_penalty",
           "tools",
           "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "max_tokens"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -215360,11 +216504,11 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://docs.cloudeka.ai/service-portal-ai/end-user-license-agreement",
-          "privacyPolicyURL": "https://www.cloudeka.id/id/privacy-policy/"
+          "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
+          "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy"
         },
         "pricing": {
           "prompt": "0.00000009",
@@ -215408,7 +216552,7 @@
           "openai:prompt_tokens": "0.00000009",
           "openai:completion_tokens": "0.0000003"
         },
-        "pricing_version_id": "a2e28b36-b94a-4461-b61f-2604f51d864c",
+        "pricing_version_id": "b5750548-d3d4-43fc-ba81-bbd04cfa747e",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -215425,10 +216569,14 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": true,
             "type_function": true
+          },
+          "supported_parameters": {
+            "response_format": true,
+            "structured_outputs": true
           }
         },
         "supported_video_parameters": null,
@@ -215441,8 +216589,8 @@
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-08-23T19:37:39.160Z",
-        "status": -2
+        "created_at": "2025-09-15T17:36:01.876Z",
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -217642,7 +218790,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2025-07-22T14:07:59.439Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -225298,7 +226446,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2025-10-23T15:48:18.902Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -241661,7 +242809,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-07-29T22:42:01.728Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -243259,68 +244407,6 @@
       "knowledge_cutoff": null,
       "limit_rpm": null,
       "limit_rpd": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
-      "slug": "dots-studio/dots-3-note-preview",
-      "hf_slug": "dots-studio/dots3-note-prev",
-      "updated_at": "2026-11-11T07:01:22.742Z",
-      "created_at": "2026-08-14T04:06:01.117Z",
-      "hf_updated_at": null,
-      "name": "Dots Studio: Dots3-Note Preview",
-      "short_name": "Dots3-Note Preview",
-      "author": "dots-studio",
-      "author_display_name": "Dots Studio",
-      "author_icon_uri": "DotsStudio.png",
-      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is suited for reasoning, coding, multimodal understanding, long-context processing, and multi-step agent workflows.",
-      "model_version_group_id": null,
-      "context_length": 512000,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "dots-studio/dots-3-note-preview-20260813",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "reasoning",
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
       "endpoint": null,
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -244968,124 +246054,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "kwaivgi/kling-v3.0-pro",
-      "hf_slug": null,
-      "updated_at": "2026-04-29T21:04:40.949Z",
-      "created_at": "2026-04-29T20:56:46.024Z",
-      "hf_updated_at": null,
-      "name": "Kling: Video v3.0 Pro",
-      "short_name": "Video v3.0 Pro",
-      "author": "kwaivgi",
-      "author_display_name": "kwaivgi",
-      "author_icon_uri": null,
-      "description": "Kling v3.0 Pro is Kuaishou's premium video generation model, offering higher visual quality than the Standard tier. It supports text-to-video and image-to-video workflows, with first-frame and last-frame control for precise scene composition. Clips range from 3 to 15 seconds in 16:9, 9:16, or 1:1 aspect ratios. Native audio generation is available as an option.",
-      "model_version_group_id": null,
-      "context_length": 0,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "video"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "kwaivgi/kling-v3.0-pro-20260429",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "video_generation",
-      "previews_by_modality": {
-        "video": {
-          "url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-pro-20260429/659fd963-b8c3-4735-b774-a67b4c1cf872/original-0.mp4",
-          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-pro-20260429/659fd963-b8c3-4735-b774-a67b4c1cf872/thumb-0.webp"
-        }
-      },
-      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-pro-20260429/659fd963-b8c3-4735-b774-a67b4c1cf872/thumb-0.webp",
-      "preview_audio": null,
-      "author_flagship_modalities": [
-        "video"
-      ],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
-      "slug": "kwaivgi/kling-v3.0-std",
-      "hf_slug": null,
-      "updated_at": "2026-04-29T21:04:55.155Z",
-      "created_at": "2026-04-29T20:56:45.463Z",
-      "hf_updated_at": null,
-      "name": "Kling: Video v3.0 Standard",
-      "short_name": "Video v3.0 Standard",
-      "author": "kwaivgi",
-      "author_display_name": "kwaivgi",
-      "author_icon_uri": null,
-      "description": "Kling v3.0 Standard is a video generation model from Kuaishou. It supports text-to-video and image-to-video workflows, with first-frame and last-frame control for guided scene composition. Clips range from 3 to 15 seconds in 16:9, 9:16, or 1:1 aspect ratios. Native audio generation is available as an option.",
-      "model_version_group_id": null,
-      "context_length": 0,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "video"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "kwaivgi/kling-v3.0-std-20260429",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "video_generation",
-      "previews_by_modality": {
-        "video": {
-          "url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-std-20260429/8110c001-9dde-42dc-b58c-3e8928553467/original-0.mp4",
-          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-std-20260429/8110c001-9dde-42dc-b58c-3e8928553467/thumb-0.webp"
-        }
-      },
-      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-v3.0-std-20260429/8110c001-9dde-42dc-b58c-3e8928553467/thumb-0.webp",
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "openrouter/owl-alpha",
       "hf_slug": null,
       "updated_at": "2026-06-30T11:53:34.049Z",
@@ -245765,80 +246733,6 @@
       "knowledge_cutoff": null,
       "limit_rpm": 0,
       "limit_rpd": 0,
-      "endpoint": null,
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
-      "slug": "kwaivgi/kling-video-o1",
-      "hf_slug": null,
-      "updated_at": "2026-04-21T02:06:28.711Z",
-      "created_at": "2026-04-20T17:06:17.379Z",
-      "hf_updated_at": null,
-      "name": "Kling: Video O1",
-      "short_name": "Video O1",
-      "author": "kwaivgi",
-      "author_display_name": "kwaivgi",
-      "author_icon_uri": null,
-      "description": "Kling Video O1 is a video generation model from Kuaishou. It supports text and image inputs with video output, enabling text-to-video and image-to-video workflows. It is suited for cinematic content production, with first-frame and last-frame control for precise scene composition. It generates 5 or 10 second clips in 16:9, 9:16, or 1:1 aspect ratios.",
-      "model_version_group_id": null,
-      "context_length": 0,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "video"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "kwaivgi/kling-video-o1-20260420",
-      "supports_reasoning": false,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "default_order": [],
-      "quick_start_example_type": "video_generation",
-      "previews_by_modality": {
-        "video": {
-          "url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-video-o1-20260420/fd4d865a-2cf3-43b2-80d0-e6b76a2d89d9/original-0.mp4",
-          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-video-o1-20260420/fd4d865a-2cf3-43b2-80d0-e6b76a2d89d9/thumb-0.webp"
-        }
-      },
-      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/kwaivgi/kling-video-o1-20260420/fd4d865a-2cf3-43b2-80d0-e6b76a2d89d9/thumb-0.webp",
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
       "endpoint": null,
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
