@@ -2085,26 +2085,55 @@
       "_api_id": "jev-1.14"
     },
     {
-      "id": "qwen4-max-free",
-      "name": "Qwen4 Max Free",
+      "id": "grok-imagine-video-1-5",
+      "name": "Grok Imagine Video 1.5",
       "category": "llm",
-      "description": "Qwen4 Max Free via OpenCode Zen curated gateway.",
+      "description": "Grok Imagine Video 1.5 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "grok-imagine-video-1.5"
+    },
+    {
+      "id": "grok-imagine-video-1-5-lite",
+      "name": "Grok Imagine Video 1.5 Lite",
+      "category": "llm",
+      "description": "Grok Imagine Video 1.5 Lite via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "grok-imagine-video-1.5-lite"
+    },
+    {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "category": "llm",
+      "description": "Kimi K3.1 Pro via OpenCode Zen curated gateway.",
       "tags": [
         "opencode",
-        "free",
-        "alibaba",
-        "qwen",
+        "moonshot",
+        "kimi",
         "powerful"
       ],
       "capabilities": [],
       "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "notes": "Free"
+        "notes": "pricing unknown — update PRICING dict"
       },
       "context_k": null,
       "url": "https://opencode.ai/docs/zen/",
-      "_api_id": "qwen4-max-free"
+      "_api_id": "kimi-k3.1-pro"
     }
   ],
   "source": "opencode",
