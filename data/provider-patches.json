@@ -1,4 +1,65 @@
 {
   "_comment": "Ręczne dorzucenie providerów do istniejących modeli. Używaj gdy provider nie ma publicznego API (Fireworks) lub gdy LiteLLM/OR jeszcze nie ma danego modelu.",
-  "patches": []
+  "patches": [
+    {
+      "model_id": "bytedance-seedance-2-5",
+      "provider_id": "modelhub",
+      "pricing": {
+        "per_second": 0.06,
+        "notes": "720p. 480p $0.055/s, 1080p $0.192/s, 4K $0.40/s. Failed jobs not charged."
+      },
+      "url": "https://modelhub.cc/models",
+      "available": true
+    },
+    {
+      "model_id": "bytedance-seedance-2-5-flash",
+      "provider_id": "modelhub",
+      "pricing": {
+        "per_second": 0.057,
+        "notes": "720p. 480p $0.034/s."
+      },
+      "url": "https://modelhub.cc/models",
+      "available": true
+    },
+    {
+      "model_id": "seedance-2",
+      "provider_id": "modelhub",
+      "pricing": {
+        "per_second": 0.054,
+        "notes": "480p/720p. 1080p $0.185/s, 4K $0.385/s."
+      },
+      "url": "https://modelhub.cc/models",
+      "available": true
+    },
+    {
+      "model_id": "bytedance-seedance-2-0-fast",
+      "provider_id": "modelhub",
+      "pricing": {
+        "per_second": 0.038,
+        "notes": "720p. 480p $0.032/s, 1080p $0.075/s, 2K $0.106/s, 4K $0.137/s."
+      },
+      "url": "https://modelhub.cc/models",
+      "available": true
+    },
+    {
+      "model_id": "bytedance-seedance-2-0-mini",
+      "provider_id": "modelhub",
+      "pricing": {
+        "per_second": 0.023,
+        "notes": "480p/720p. 1080p $0.060/s, 2K $0.075/s, 4K $0.106/s."
+      },
+      "url": "https://modelhub.cc/models",
+      "available": true
+    },
+    {
+      "model_id": "alibaba-wan-3-0",
+      "provider_id": "modelhub",
+      "pricing": {
+        "per_second": 0.038,
+        "notes": "720p. 480p $0.037/s, 1080p $0.089/s."
+      },
+      "url": "https://modelhub.cc/models",
+      "available": true
+    }
+  ]
 }
