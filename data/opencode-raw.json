@@ -2117,6 +2117,42 @@
       "_api_id": "kimi-k3.1-pro"
     },
     {
+      "id": "gpt-transcribe",
+      "name": "GPT Transcribe",
+      "category": "llm",
+      "description": "GPT Transcribe via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode",
+        "openai",
+        "gpt"
+      ],
+      "capabilities": [
+        "function_calling"
+      ],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "gpt-transcribe"
+    },
+    {
+      "id": "grok-voice-transcribe-2-0",
+      "name": "Grok Voice Transcribe 2.0",
+      "category": "llm",
+      "description": "Grok Voice Transcribe 2.0 via OpenCode Zen curated gateway.",
+      "tags": [
+        "opencode"
+      ],
+      "capabilities": [],
+      "pricing": {
+        "notes": "pricing unknown — update PRICING dict"
+      },
+      "context_k": null,
+      "url": "https://opencode.ai/docs/zen/",
+      "_api_id": "grok-voice-transcribe-2.0"
+    },
+    {
       "id": "seaglass-alpha-free",
       "name": "Seaglass Alpha Free",
       "category": "llm",
