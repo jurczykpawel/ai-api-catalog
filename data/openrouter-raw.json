@@ -2329,7 +2329,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-11-23T18:01:21.422Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -13096,305 +13096,6 @@
       "updated_at": "2026-11-13T22:19:45.570Z",
       "created_at": "2026-11-13T22:19:45.486Z",
       "hf_updated_at": null,
-      "name": "Recraft: Recraft V4.1 Flash V2 (free)",
-      "short_name": "Recraft V4.1 Flash V2 (free)",
-      "author": "recraft",
-      "author_display_name": "Recraft",
-      "author_icon_uri": null,
-      "description": "Recraft V4.1 Flash V2 is a text-to-image model from Recraft, an updated version of [Recraft V4.1 Flash](/recraft/recraft-v4.1-flash) in the speed tier of the V4.1 family. It is suited for rapid iteration, prototyping, and high-volume generation, and improves on its predecessor in generation speed and in rendering text inside images.\n\nIt is generation only: image inputs, styles, and style references are not supported. Supports the same aspect ratios as V4.1 Flash and the `image_config` parameters `rgb_colors` (sets a color palette) and `background_rgb_color` (sets the background color). See the image generation docs for details: https://openrouter.ai/docs/features/multimodal/image-generation",
-      "model_version_group_id": null,
-      "context_length": 65536,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "image"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "recraft/recraft-v4.1-flash-v2-20261113",
-      "supports_reasoning": false,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "image_generation",
-      "previews_by_modality": {
-        "image": {
-          "url": "https://model-assets.openrouter.ai/model-examples/recraft/recraft-v4.1-flash-v2-20261113/b28674d2-f81c-476a-83df-427fd0ac1e85/original-0.webp",
-          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/recraft/recraft-v4.1-flash-v2-20261113/b28674d2-f81c-476a-83df-427fd0ac1e85/thumb-0.webp"
-        }
-      },
-      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/recraft/recraft-v4.1-flash-v2-20261113/b28674d2-f81c-476a-83df-427fd0ac1e85/thumb-0.webp",
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": null,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "endpoint": {
-        "id": "5143f733-a61f-4e84-b2ff-6e7c50b5ac09",
-        "name": "Recraft | recraft/recraft-v4.1-flash-v2-20261113:free",
-        "context_length": 65536,
-        "model": {
-          "slug": "recraft/recraft-v4.1-flash-v2",
-          "hf_slug": null,
-          "updated_at": "2026-11-13T22:19:45.57083+00:00",
-          "created_at": "2026-11-13T22:19:45.486+00:00",
-          "hf_updated_at": null,
-          "name": "Recraft: Recraft V4.1 Flash V2",
-          "short_name": "Recraft V4.1 Flash V2",
-          "author": "recraft",
-          "author_display_name": "Recraft",
-          "author_icon_uri": null,
-          "description": "Recraft V4.1 Flash V2 is a text-to-image model from Recraft, an updated version of [Recraft V4.1 Flash](/recraft/recraft-v4.1-flash) in the speed tier of the V4.1 family. It is suited for rapid iteration, prototyping, and high-volume generation, and improves on its predecessor in generation speed and in rendering text inside images.\n\nIt is generation only: image inputs, styles, and style references are not supported. Supports the same aspect ratios as V4.1 Flash and the `image_config` parameters `rgb_colors` (sets a color palette) and `background_rgb_color` (sets the background color). See the image generation docs for details: https://openrouter.ai/docs/features/multimodal/image-generation",
-          "model_version_group_id": null,
-          "context_length": 65536,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "image"
-          ],
-          "has_text_output": false,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "recraft/recraft-v4.1-flash-v2-20261113",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "image_generation",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": null,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": null,
-          "limit_rpd": null
-        },
-        "model_variant_slug": "recraft/recraft-v4.1-flash-v2:free",
-        "model_variant_permaslug": "recraft/recraft-v4.1-flash-v2-20261113:free",
-        "adapter_name": "RecraftAdapter",
-        "provider_name": "Recraft",
-        "provider_info": {
-          "name": "Recraft",
-          "displayName": "Recraft",
-          "slug": "recraft",
-          "baseUrl": "https://external.api.recraft.ai/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": true,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://www.recraft.ai/legal/developer-terms",
-            "privacyPolicyURL": "https://www.recraft.ai/legal/privacy",
-            "requiresUserIDs": false
-          },
-          "datacenters": [],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": false,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "RecraftAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": false,
-          "isByokOnly": false,
-          "isPrivate": false,
-          "isProvisional": false,
-          "icon": {
-            "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/recraft.svg?v=28640cd4",
-            "monoUrl": "/images/icons/brands/recraft.svg?v=28640cd4"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "recraft",
-          "genericBaseUrl": "https://external.api.recraft.ai/v1"
-        },
-        "provider_permaslug": "recraft",
-        "provider_display_name": "Recraft",
-        "provider_slug": "recraft",
-        "derived_service_tier": null,
-        "provider_model_id": "recraftv4_1_flash_v2",
-        "quantization": "unknown",
-        "variant": "free",
-        "is_free": true,
-        "can_abort": false,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": null,
-        "max_tokens_per_image": null,
-        "supported_parameters": [],
-        "excluded_parameters": [],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": true,
-          "trainingOpenRouter": true,
-          "retainsPrompts": true,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://www.recraft.ai/legal/developer-terms",
-          "privacyPolicyURL": "https://www.recraft.ai/legal/privacy"
-        },
-        "pricing": {
-          "prompt": "0",
-          "completion": "0",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "image_token_mirrors_output_rate": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "recraft:cents_per_image_output": "0"
-        },
-        "pricing_version_id": "d68885b5-e8ae-4fd2-b875-3b77f27db9ed",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_provisional": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": {
-          "resolutions": null,
-          "aspect_ratios": [
-            "1:1",
-            "2:1",
-            "1:2",
-            "3:2",
-            "2:3",
-            "4:3",
-            "3:4",
-            "5:4",
-            "4:5",
-            "16:9",
-            "9:16",
-            "auto"
-          ],
-          "output_formats": null,
-          "qualities": null,
-          "backgrounds": null,
-          "n": {
-            "min": 1,
-            "max": 6
-          },
-          "input_references": null,
-          "output_compression": null,
-          "seed": null
-        },
-        "supported_stt_parameters": null,
-        "supported_tts_output_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-11-28T00:00:00.000Z",
-        "discount_to_user": 0,
-        "allowed_passthrough_parameters": [
-          "controls"
-        ],
-        "required_attestation_types": [],
-        "created_at": "2026-11-13T06:03:22.554Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-11-28T00:00:00.000Z"
-    },
-    {
-      "slug": "recraft/recraft-v4.1-flash-v2",
-      "hf_slug": null,
-      "updated_at": "2026-11-13T22:19:45.570Z",
-      "created_at": "2026-11-13T22:19:45.486Z",
-      "hf_updated_at": null,
       "name": "Recraft: Recraft V4.1 Flash V2",
       "short_name": "Recraft V4.1 Flash V2",
       "author": "recraft",
@@ -13950,8 +13651,8 @@
       "updated_at": "2026-11-13T19:06:59.900Z",
       "created_at": "2026-11-13T17:45:58.618Z",
       "hf_updated_at": null,
-      "name": "inclusionAI: Ling 3.2 Flash (free)",
-      "short_name": "Ling 3.2 Flash (free)",
+      "name": "inclusionAI: Ling 3.2 Flash",
+      "short_name": "Ling 3.2 Flash",
       "author": "inclusionai",
       "author_display_name": "inclusionai",
       "author_icon_uri": null,
@@ -14013,8 +13714,8 @@
       "limit_rpm": null,
       "limit_rpd": null,
       "endpoint": {
-        "id": "29d1aca3-0609-42eb-8d0a-cba9ed72226e",
-        "name": "Ant Digital | inclusionai/ling-3.2-flash-20261113:free",
+        "id": "98068bd7-3db5-407e-9a04-3cbebbc0143a",
+        "name": "Ant Digital | inclusionai/ling-3.2-flash-20261113",
         "context_length": 1048576,
         "model": {
           "slug": "inclusionai/ling-3.2-flash",
@@ -14085,8 +13786,8 @@
           "limit_rpm": null,
           "limit_rpd": null
         },
-        "model_variant_slug": "inclusionai/ling-3.2-flash:free",
-        "model_variant_permaslug": "inclusionai/ling-3.2-flash-20261113:free",
+        "model_variant_slug": "inclusionai/ling-3.2-flash",
+        "model_variant_permaslug": "inclusionai/ling-3.2-flash-20261113",
         "adapter_name": "OpenAIAdapter",
         "provider_name": "Ant Digital",
         "provider_info": {
@@ -14136,8 +13837,8 @@
         "derived_service_tier": null,
         "provider_model_id": "ling-3.2-flash",
         "quantization": "fp8",
-        "variant": "free",
-        "is_free": true,
+        "variant": "standard",
+        "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
         "max_completion_tokens": 262144,
@@ -14171,21 +13872,29 @@
           "privacyPolicyURL": "https://maas-global.oss-ap-southeast-1.aliyuncs.com/Privacy%20Policy%20Legal.pdf"
         },
         "pricing": {
-          "prompt": "0",
-          "completion": "0",
+          "prompt": "0.0000003",
+          "completion": "0.0000009",
+          "input_cache_read": "0.00000006",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0",
+              "price": "0.0000003",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0",
+              "price": "0.0000009",
+              "displayMultiplier": 1000000,
+              "unitLabel": "/M tokens"
+            },
+            {
+              "kind": "token",
+              "sku_label": "Cache Read",
+              "price": "0.00000006",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -14196,23 +13905,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0",
+            "price": "0.0000003",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0",
+            "price": "0.0000009",
+            "displayMultiplier": 1000000,
+            "unitLabel": "/M tokens"
+          },
+          {
+            "kind": "token",
+            "sku_label": "Cache Read",
+            "price": "0.00000006",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0",
-          "openai:completion_tokens": "0"
+          "openai:prompt_tokens": "0.0000003",
+          "openai:completion_tokens": "0.0000009",
+          "openai:cached_prompt_tokens": "0.00000006"
         },
-        "pricing_version_id": "6f425139-b856-4964-9cea-82265a7ac06f",
+        "pricing_version_id": "59f8821c-94bb-4ae6-9730-a83bbb519d94",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -14246,7 +13963,7 @@
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-11-13T17:46:47.993Z",
+        "created_at": "2026-11-13T17:46:47.594Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -19552,7 +19269,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-11-09T20:32:01.679Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -26693,7 +26410,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-10-30T01:52:14.939Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -45506,7 +45223,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-10-12T21:05:13.676Z",
-        "status": -2
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -53409,7 +53126,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-11-12T19:23:44.571Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -79591,8 +79308,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "e60ec254-043a-4595-845a-8ffaa1de3d9a",
-        "name": "Wafer | deepseek/deepseek-v4.1-flash-20260910",
+        "id": "6cadd6c2-cfae-47ac-8997-c79825bd9047",
+        "name": "Baidu | deepseek/deepseek-v4.1-flash-20260910",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4.1-flash",
@@ -79675,31 +79392,31 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4.1-flash",
         "model_variant_permaslug": "deepseek/deepseek-v4.1-flash-20260910",
-        "adapter_name": "WaferAdapter",
-        "provider_name": "Wafer",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Wafer",
-          "displayName": "Wafer",
-          "slug": "wafer/us",
-          "baseUrl": "https://us.pass.wafer.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.wafer.ai/terms",
-            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "WaferAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
@@ -79707,40 +79424,33 @@
           "isProvisional": false,
           "icon": {
             "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/wafer.svg?v=a325be4e",
-            "monoUrl": "/images/icons/brands/wafer.svg?v=a325be4e"
+            "treatment": "color",
+            "url": "/images/icons/brands/baidu.svg?v=1f5bda21",
+            "monoUrl": "/images/icons/brands/baidu-mono.svg?v=6394ce9d"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://pass.wafer.ai/v1"
+          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
         },
-        "provider_permaslug": "wafer",
-        "provider_display_name": "Wafer",
-        "provider_slug": "wafer/us",
+        "provider_permaslug": "baidu",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "DeepSeek-V4.1-Flash-US",
-        "quantization": "mxfp4",
+        "provider_model_id": "deepseek-v4.1-flash-intl",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 393216,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
           "max_tokens",
-          "logit_bias",
+          "stop",
           "response_format",
           "structured_outputs",
           "tools",
@@ -79752,36 +79462,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.wafer.ai/terms",
-          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.000000051",
-          "completion": "0.000000567",
-          "input_cache_read": "0.000000018",
-          "discount": 0,
+          "prompt": "0.0000000507",
+          "completion": "0.0000002028",
+          "input_cache_read": "0.000000001014",
+          "discount": 0.831,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000051",
+              "price": "0.0000000507",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.000000567",
+              "price": "0.0000002028",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000018",
+              "price": "0.000000001014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -79792,31 +79502,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000051",
+            "price": "0.0000000507",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.000000567",
+            "price": "0.0000002028",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000018",
+            "price": "0.000000001014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000051",
-          "openai:completion_tokens": "0.000000567",
-          "openai:cached_prompt_tokens": "0.000000018"
+          "openai:prompt_tokens": "0.0000003",
+          "openai:completion_tokens": "0.0000012",
+          "openai:cached_prompt_tokens": "0.000000006"
         },
-        "pricing_version_id": "408ecdbf-82d9-492f-9ef3-de2ef691d892",
+        "pricing_version_id": "4d9065f3-f5aa-4ac2-be92-736830b1e804",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -79836,7 +79546,7 @@
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": true,
+            "literal_required": false,
             "type_function": true
           }
         },
@@ -79844,13 +79554,13 @@
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
         "supported_tts_output_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0,
+        "discount_to_user": 0.831,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-10-26T21:23:36.027Z",
+        "created_at": "2026-09-28T02:41:45.088Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -80951,7 +80661,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-09-22T02:11:04.803Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -87953,8 +87663,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "d5c31532-0ebe-4c95-b4d4-d14a1916215a",
-        "name": "DeepInfra | tencent/hy4-preview-20260827",
+        "id": "4ebb1303-aefa-4362-ba3c-25ff7e8093a3",
+        "name": "SiliconFlow | tencent/hy4-preview-20260827",
         "context_length": 1048576,
         "model": {
           "slug": "tencent/hy4-preview",
@@ -88034,31 +87744,34 @@
         },
         "model_variant_slug": "tencent/hy4-preview",
         "model_variant_permaslug": "tencent/hy4-preview-20260827",
-        "adapter_name": "DeepInfraAdapter",
-        "provider_name": "DeepInfra",
+        "adapter_name": "SiliconFlowAdapter",
+        "provider_name": "SiliconFlow",
         "provider_info": {
-          "name": "DeepInfra",
-          "displayName": "DeepInfra",
-          "slug": "deepinfra",
-          "baseUrl": "https://us.api.deepinfra.com/v1/openai",
+          "name": "SiliconFlow",
+          "displayName": "SiliconFlow",
+          "slug": "siliconflow",
+          "baseUrl": "https://api.siliconflow.com/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://deepinfra.com/terms",
-            "privacyPolicyURL": "https://deepinfra.com/privacy",
+            "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
+            "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "SG",
+          "datacenters": [
+            "US"
+          ],
           "hasChatCompletions": true,
-          "hasCompletions": true,
-          "isAbortable": true,
+          "hasCompletions": false,
+          "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "DeepInfraAdapter",
-          "statusPageUrl": "https://status.deepinfra.com/",
+          "adapterName": "SiliconFlowAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
@@ -88066,39 +87779,33 @@
           "icon": {
             "kind": "registry",
             "treatment": "color",
-            "url": "/images/icons/brands/deepinfra.svg?v=5760bc8d",
-            "monoUrl": "/images/icons/brands/deepinfra-mono.svg?v=d9f5adbb"
+            "url": "/images/icons/brands/siliconflow.svg?v=33111de7",
+            "monoUrl": "/images/icons/brands/siliconflow-mono.svg?v=53a022ea"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.deepinfra.com/v1/openai"
+          "genericBaseUrl": "https://api.siliconflow.com/v1"
         },
-        "provider_permaslug": "deepinfra",
-        "provider_display_name": "DeepInfra",
-        "provider_slug": "deepinfra/fp4",
+        "provider_permaslug": "siliconflow",
+        "provider_display_name": "SiliconFlow",
+        "provider_slug": "siliconflow/fp8",
         "derived_service_tier": null,
         "provider_model_id": "tencent/Hy4-preview",
-        "quantization": "fp4",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
-        "can_abort": true,
+        "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 262144,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
           "top_k",
-          "seed",
-          "min_p",
-          "logit_bias",
+          "frequency_penalty",
+          "max_tokens",
           "response_format",
           "structured_outputs",
           "tools",
@@ -88110,11 +87817,11 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://deepinfra.com/terms",
-          "privacyPolicyURL": "https://deepinfra.com/privacy"
+          "termsOfServiceURL": "https://docs.siliconflow.com/en/legals/terms-of-service",
+          "privacyPolicyURL": "https://docs.siliconflow.com/en/legals/privacy-policy"
         },
         "pricing": {
           "prompt": "0.000000834",
@@ -88174,7 +87881,7 @@
           "openai:completion_tokens": "0.000002501",
           "openai:cached_prompt_tokens": "0.000000042"
         },
-        "pricing_version_id": "89e13d40-cfcd-4edd-998d-e0047bb49692",
+        "pricing_version_id": "760e9e11-b140-4ef9-a709-a64e93ceacdc",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -88188,7 +87895,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "reasoning_disabled_as": "reasoning_effort_none",
@@ -88203,13 +87910,13 @@
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
         "supported_tts_output_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "declared_region": null,
-        "deprecation_date": "2026-11-27T13:00:00.000Z",
+        "deprecation_date": null,
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-09-28T17:09:02.055Z",
+        "created_at": "2026-09-14T05:51:13.491Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -106895,7 +106602,7 @@
       "limit_rpd": 0,
       "endpoint": {
         "id": "tilde-latest-~deepseek/deepseek-v4-flash-latest",
-        "name": "Wafer | deepseek/deepseek-v4-flash-20260731",
+        "name": "Baidu | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "~deepseek/deepseek-v4-flash-latest",
@@ -106977,31 +106684,31 @@
         },
         "model_variant_slug": "~deepseek/deepseek-v4-flash-latest",
         "model_variant_permaslug": "~deepseek/deepseek-v4-flash-latest",
-        "adapter_name": "WaferAdapter",
-        "provider_name": "Wafer",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Wafer",
-          "displayName": "Wafer",
-          "slug": "wafer/us",
-          "baseUrl": "https://us.pass.wafer.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.wafer.ai/terms",
-            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "WaferAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
@@ -107009,44 +106716,44 @@
           "isProvisional": false,
           "icon": {
             "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/wafer.svg?v=a325be4e",
-            "monoUrl": "/images/icons/brands/wafer.svg?v=a325be4e"
+            "treatment": "color",
+            "url": "/images/icons/brands/baidu.svg?v=1f5bda21",
+            "monoUrl": "/images/icons/brands/baidu-mono.svg?v=6394ce9d"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://pass.wafer.ai/v1"
+          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
         },
-        "provider_permaslug": "wafer",
-        "provider_display_name": "Wafer",
-        "provider_slug": "wafer/us",
+        "provider_permaslug": "baidu",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "DeepSeek-V4-Flash-0731-Fast-US",
-        "quantization": "nvfp4",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
+          "max_tokens",
+          "stop",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
           "top_k",
           "min_p",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "stop",
           "seed",
-          "max_tokens",
           "logit_bias",
-          "response_format",
-          "structured_outputs",
-          "tools",
-          "tool_choice",
           "logprobs",
           "top_logprobs",
           "parallel_tool_calls",
@@ -107059,36 +106766,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.wafer.ai/terms",
-          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.000000047",
-          "completion": "0.0000003",
-          "input_cache_read": "0.000000035",
-          "discount": 0,
+          "prompt": "0.00000004532",
+          "completion": "0.00000013596",
+          "input_cache_read": "0.000000001442",
+          "discount": 0.897,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000047",
+              "price": "0.00000004532",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000003",
+              "price": "0.00000013596",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000035",
+              "price": "0.000000001442",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -107099,31 +106806,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000047",
+            "price": "0.00000004532",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000003",
+            "price": "0.00000013596",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000035",
+            "price": "0.000000001442",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000047",
-          "openai:completion_tokens": "0.0000003",
-          "openai:cached_prompt_tokens": "0.000000035"
+          "openai:prompt_tokens": "0.00000044",
+          "openai:completion_tokens": "0.00000132",
+          "openai:cached_prompt_tokens": "0.000000014"
         },
-        "pricing_version_id": "2d1d4a6b-9559-4efc-b802-77442514ae0d",
+        "pricing_version_id": "50b4d4e3-6268-4155-a421-752ab5e49a65",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -107151,13 +106858,13 @@
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
         "supported_tts_output_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0,
+        "discount_to_user": 0.897,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-10-27T05:21:06.259Z",
+        "created_at": "2026-08-03T15:03:08.203Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -107241,8 +106948,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "7ff39bf4-2128-455b-b2b5-42e48371865e",
-        "name": "Wafer | deepseek/deepseek-v4-flash-20260731",
+        "id": "223c54e7-4db1-4098-980f-47741e7637ab",
+        "name": "Baidu | deepseek/deepseek-v4-flash-20260731",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-flash-0731",
@@ -107324,31 +107031,31 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-flash-0731",
         "model_variant_permaslug": "deepseek/deepseek-v4-flash-20260731",
-        "adapter_name": "WaferAdapter",
-        "provider_name": "Wafer",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Wafer",
-          "displayName": "Wafer",
-          "slug": "wafer/us",
-          "baseUrl": "https://us.pass.wafer.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://www.wafer.ai/terms",
-            "privacyPolicyURL": "https://www.wafer.ai/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "WaferAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
@@ -107356,46 +107063,37 @@
           "isProvisional": false,
           "icon": {
             "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/wafer.svg?v=a325be4e",
-            "monoUrl": "/images/icons/brands/wafer.svg?v=a325be4e"
+            "treatment": "color",
+            "url": "/images/icons/brands/baidu.svg?v=1f5bda21",
+            "monoUrl": "/images/icons/brands/baidu-mono.svg?v=6394ce9d"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://pass.wafer.ai/v1"
+          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
         },
-        "provider_permaslug": "wafer",
-        "provider_display_name": "Wafer",
-        "provider_slug": "wafer/us",
+        "provider_permaslug": "baidu",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "DeepSeek-V4-Flash-0731-Fast-US",
-        "quantization": "nvfp4",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 1048576,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "seed",
           "max_tokens",
-          "logit_bias",
+          "stop",
           "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice",
-          "logprobs",
-          "top_logprobs"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -107403,36 +107101,36 @@
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://www.wafer.ai/terms",
-          "privacyPolicyURL": "https://www.wafer.ai/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.000000047",
-          "completion": "0.0000003",
-          "input_cache_read": "0.000000035",
-          "discount": 0,
+          "prompt": "0.00000004532",
+          "completion": "0.00000013596",
+          "input_cache_read": "0.000000001442",
+          "discount": 0.897,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000047",
+              "price": "0.00000004532",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000003",
+              "price": "0.00000013596",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000035",
+              "price": "0.000000001442",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -107443,31 +107141,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000047",
+            "price": "0.00000004532",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000003",
+            "price": "0.00000013596",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000035",
+            "price": "0.000000001442",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000047",
-          "openai:completion_tokens": "0.0000003",
-          "openai:cached_prompt_tokens": "0.000000035"
+          "openai:prompt_tokens": "0.00000044",
+          "openai:completion_tokens": "0.00000132",
+          "openai:cached_prompt_tokens": "0.000000014"
         },
-        "pricing_version_id": "2d1d4a6b-9559-4efc-b802-77442514ae0d",
+        "pricing_version_id": "50b4d4e3-6268-4155-a421-752ab5e49a65",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -107495,13 +107193,13 @@
         "supported_image_parameters": null,
         "supported_stt_parameters": null,
         "supported_tts_output_parameters": null,
-        "provider_region": "us",
+        "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0,
+        "discount_to_user": 0.897,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-10-27T05:21:06.259Z",
+        "created_at": "2026-08-03T15:03:08.203Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -113628,318 +113326,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "microsoft/mai-image-2.5-pro",
-      "hf_slug": null,
-      "updated_at": "2026-11-24T14:51:02.805Z",
-      "created_at": "2026-07-23T17:28:21.536Z",
-      "hf_updated_at": null,
-      "name": "Microsoft AI: MAI-Image-2.5 Pro",
-      "short_name": "MAI-Image-2.5 Pro",
-      "author": "microsoft",
-      "author_display_name": "Microsoft",
-      "author_icon_uri": "/images/icons/brands/microsoft-mai.svg?v=fd783cc5",
-      "description": "Microsoft AI's MAI-Image-2.5 is a high-quality image generation model available via Azure AI Foundry. It produces photorealistic and artistic images from text prompts with support for various aspect ratios.",
-      "model_version_group_id": null,
-      "context_length": 4096,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "image"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": "microsoft/mai-image-2.5-pro was deprecated by Microsoft on Nov 27, 2026. Use model \"microsoft/mai-image-2.6\" (GA) or \"microsoft/mai-image-2.7\" (public preview) instead.",
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "microsoft/mai-image-2.5-pro-20260723",
-      "supports_reasoning": false,
-      "reasoning_config": null,
-      "features": {},
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "image_generation",
-      "previews_by_modality": {
-        "image": {
-          "url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5-pro-20260723/8d081ac7-ebbb-4ac0-9c63-9a981efe3255/original-0.png",
-          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5-pro-20260723/8d081ac7-ebbb-4ac0-9c63-9a981efe3255/thumb-0.webp"
-        }
-      },
-      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5-pro-20260723/8d081ac7-ebbb-4ac0-9c63-9a981efe3255/thumb-0.webp",
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "endpoint": {
-        "id": "f4d4585f-c6f5-447d-8957-f9bb3e6c7cdd",
-        "name": "Azure | microsoft/mai-image-2.5-pro-20260723",
-        "context_length": 4096,
-        "model": {
-          "slug": "microsoft/mai-image-2.5-pro",
-          "hf_slug": null,
-          "updated_at": "2026-11-24T14:51:02.805404+00:00",
-          "created_at": "2026-07-23T17:28:21.536+00:00",
-          "hf_updated_at": null,
-          "name": "Microsoft AI: MAI-Image-2.5 Pro",
-          "short_name": "MAI-Image-2.5 Pro",
-          "author": "microsoft",
-          "author_display_name": "Microsoft",
-          "author_icon_uri": "/images/icons/brands/microsoft-mai.svg?v=fd783cc5",
-          "description": "Microsoft AI's MAI-Image-2.5 is a high-quality image generation model available via Azure AI Foundry. It produces photorealistic and artistic images from text prompts with support for various aspect ratios.",
-          "model_version_group_id": null,
-          "context_length": 4096,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "image"
-          ],
-          "has_text_output": false,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": "microsoft/mai-image-2.5-pro was deprecated by Microsoft on Nov 27, 2026. Use model \"microsoft/mai-image-2.6\" (GA) or \"microsoft/mai-image-2.7\" (public preview) instead.",
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "microsoft/mai-image-2.5-pro-20260723",
-          "supports_reasoning": false,
-          "reasoning_config": null,
-          "features": {},
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "image_generation",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": true,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": null,
-          "limit_rpd": null
-        },
-        "model_variant_slug": "microsoft/mai-image-2.5-pro",
-        "model_variant_permaslug": "microsoft/mai-image-2.5-pro-20260723",
-        "adapter_name": "AzureMAIImageAdapter",
-        "provider_name": "Azure",
-        "provider_info": {
-          "name": "Azure",
-          "displayName": "Azure",
-          "slug": "azure",
-          "baseUrl": "https://westcentralus.api.cognitive.microsoft.com",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://learn.microsoft.com/en-us/legal/ai-code-of-conduct",
-            "privacyPolicyURL": "https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/MCA",
-            "requiresUserIDs": false
-          },
-          "headquarters": "US",
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "AzureMAIImageAdapter",
-          "statusPageUrl": "https://status.azure.com/",
-          "byokEnabled": true,
-          "isByokOnly": false,
-          "isPrivate": false,
-          "isProvisional": false,
-          "icon": {
-            "kind": "registry",
-            "treatment": "color",
-            "url": "/images/icons/brands/azure.svg?v=b8a47543",
-            "monoUrl": "/images/icons/brands/azure-mono.svg?v=0f4924ad"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "azure_mai_image",
-          "genericBaseUrl": "https://openrouter-east-us-2.openai.azure.com/openai"
-        },
-        "provider_permaslug": "azure",
-        "provider_display_name": "Azure",
-        "provider_slug": "azure",
-        "derived_service_tier": null,
-        "provider_model_id": "maiimage25pro",
-        "quantization": "unknown",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 1024,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "max_tokens",
-          "temperature",
-          "max_completion_tokens"
-        ],
-        "excluded_parameters": [
-          "tools",
-          "tool_choice",
-          "response_format",
-          "top_p",
-          "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "seed"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://learn.microsoft.com/en-us/legal/ai-code-of-conduct",
-          "privacyPolicyURL": "https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/MCA"
-        },
-        "pricing": {
-          "prompt": "0.000005",
-          "completion": "0",
-          "image_token": "0.000108",
-          "image_output": "0.000108",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Text Input",
-              "price": "0.000005",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Image Input",
-              "price": "0.000008",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Image Output",
-              "price": "0.000108",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "image_token_mirrors_output_rate": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Text Input",
-            "price": "0.000005",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Image Input",
-            "price": "0.000008",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Image Output",
-            "price": "0.000108",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "azure_mai_image:text_input_tokens": "0.000005",
-          "azure_mai_image:image_input_tokens": "0.000008",
-          "azure_mai_image:image_output_tokens": "0.000108"
-        },
-        "pricing_version_id": "d61deee3-60d1-4b8e-9485-00842f2081ab",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_provisional": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": false,
-        "features": {
-          "supports_multipart": true,
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": {
-          "resolutions": null,
-          "aspect_ratios": [
-            "1:1",
-            "4:3",
-            "3:4",
-            "16:9",
-            "9:16",
-            "3:2",
-            "2:3",
-            "auto"
-          ],
-          "output_formats": null,
-          "qualities": null,
-          "backgrounds": null,
-          "n": {
-            "min": 1,
-            "max": 1
-          },
-          "input_references": {
-            "min": 0,
-            "max": 1
-          },
-          "output_compression": null,
-          "seed": null
-        },
-        "supported_stt_parameters": null,
-        "supported_tts_output_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-11-27T17:00:00.000Z",
-        "discount_to_user": 0,
-        "allowed_passthrough_parameters": [],
-        "required_attestation_types": [],
-        "created_at": "2026-07-22T23:16:09.284Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-11-27T17:00:00.000Z"
-    },
-    {
       "slug": "microsoft/mai-voice-2-flash",
       "hf_slug": null,
       "updated_at": "2026-11-18T03:48:33.028Z",
@@ -119253,29 +118639,29 @@
           "privacyPolicyURL": "https://relace.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000001824",
-          "completion": "0.0000110055",
-          "input_cache_read": "0.00000018",
+          "prompt": "0.0000001453",
+          "completion": "0.0000122894",
+          "input_cache_read": "0.00000014",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001824",
+              "price": "0.0000001453",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000110055",
+              "price": "0.0000122894",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000018",
+              "price": "0.00000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -119286,31 +118672,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001824",
+            "price": "0.0000001453",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000110055",
+            "price": "0.0000122894",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000018",
+            "price": "0.00000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001824",
-          "openai:completion_tokens": "0.0000110055",
-          "openai:cached_prompt_tokens": "0.00000018"
+          "openai:prompt_tokens": "0.0000001453",
+          "openai:completion_tokens": "0.0000122894",
+          "openai:cached_prompt_tokens": "0.00000014"
         },
-        "pricing_version_id": "9323dea9-067d-41cd-8b8d-1ea19fb7c821",
+        "pricing_version_id": "980b10b4-431f-4cec-b934-cd5aad8a6330",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -133228,7 +132614,7 @@
         ],
         "required_attestation_types": [],
         "created_at": "2026-06-18T03:41:22.084Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -138554,338 +137940,6 @@
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": "2026-12-22T13:00:00.000Z"
-    },
-    {
-      "slug": "microsoft/mai-image-2.5",
-      "hf_slug": null,
-      "updated_at": "2026-11-24T14:51:01.845Z",
-      "created_at": "2026-06-02T18:28:16.412Z",
-      "hf_updated_at": null,
-      "name": "Microsoft AI: MAI-Image-2.5",
-      "short_name": "MAI-Image-2.5",
-      "author": "microsoft",
-      "author_display_name": "Microsoft",
-      "author_icon_uri": "/images/icons/brands/microsoft-mai.svg?v=fd783cc5",
-      "description": "Microsoft AI's MAI-Image-2.5 is a high-quality image generation model available via Azure AI Foundry. It produces photorealistic and artistic images from text prompts with support for various aspect ratios.",
-      "model_version_group_id": null,
-      "context_length": 4096,
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "image"
-      ],
-      "has_text_output": false,
-      "group": "Other",
-      "instruct_type": null,
-      "default_system": null,
-      "default_stops": [],
-      "hidden": false,
-      "router": null,
-      "warning_message": null,
-      "promotion_message": null,
-      "routing_error_message": "microsoft/mai-image-2.5 was deprecated by Microsoft on Nov 27, 2026. Use model \"microsoft/mai-image-2.6\" (GA) or \"microsoft/mai-image-2.7\" (public preview) instead.",
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "microsoft/mai-image-2.5",
-      "supports_reasoning": false,
-      "reasoning_config": {
-        "start_token": null,
-        "end_token": null
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": null,
-          "end_token": null
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {},
-      "default_order": [],
-      "quick_start_example_type": "image_generation",
-      "previews_by_modality": {
-        "image": {
-          "url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5/d74e1d36-4cfa-42cb-9381-abcad58703df/original-0.png",
-          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5/d74e1d36-4cfa-42cb-9381-abcad58703df/thumb-0.webp"
-        }
-      },
-      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5/d74e1d36-4cfa-42cb-9381-abcad58703df/thumb-0.webp",
-      "preview_audio": null,
-      "author_flagship_modalities": [
-        "image"
-      ],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": null,
-      "limit_rpm": 0,
-      "limit_rpd": 0,
-      "endpoint": {
-        "id": "5721af71-f7fa-4496-8c19-3bc21d707f30",
-        "name": "Azure | microsoft/mai-image-2.5",
-        "context_length": 4096,
-        "model": {
-          "slug": "microsoft/mai-image-2.5",
-          "hf_slug": null,
-          "updated_at": "2026-11-24T14:51:01.845501+00:00",
-          "created_at": "2026-06-02T18:28:16.412+00:00",
-          "hf_updated_at": null,
-          "name": "Microsoft AI: MAI-Image-2.5",
-          "short_name": "MAI-Image-2.5",
-          "author": "microsoft",
-          "author_display_name": "Microsoft",
-          "author_icon_uri": "/images/icons/brands/microsoft-mai.svg?v=fd783cc5",
-          "description": "Microsoft AI's MAI-Image-2.5 is a high-quality image generation model available via Azure AI Foundry. It produces photorealistic and artistic images from text prompts with support for various aspect ratios.",
-          "model_version_group_id": null,
-          "context_length": 4096,
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "image"
-          ],
-          "has_text_output": false,
-          "group": "Other",
-          "instruct_type": null,
-          "default_system": null,
-          "default_stops": [],
-          "hidden": false,
-          "router": null,
-          "warning_message": null,
-          "promotion_message": null,
-          "routing_error_message": "microsoft/mai-image-2.5 was deprecated by Microsoft on Nov 27, 2026. Use model \"microsoft/mai-image-2.6\" (GA) or \"microsoft/mai-image-2.7\" (public preview) instead.",
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "microsoft/mai-image-2.5",
-          "supports_reasoning": false,
-          "reasoning_config": {
-            "start_token": null,
-            "end_token": null
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": null,
-              "end_token": null
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {},
-          "default_order": [],
-          "quick_start_example_type": "image_generation",
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": true,
-          "is_trainable_image": null,
-          "knowledge_cutoff": null,
-          "limit_rpm": 0,
-          "limit_rpd": 0
-        },
-        "model_variant_slug": "microsoft/mai-image-2.5",
-        "model_variant_permaslug": "microsoft/mai-image-2.5",
-        "adapter_name": "AzureMAIImageAdapter",
-        "provider_name": "Azure",
-        "provider_info": {
-          "name": "Azure",
-          "displayName": "Azure",
-          "slug": "azure",
-          "baseUrl": "https://westcentralus.api.cognitive.microsoft.com",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://learn.microsoft.com/en-us/legal/ai-code-of-conduct",
-            "privacyPolicyURL": "https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/MCA",
-            "requiresUserIDs": false
-          },
-          "headquarters": "US",
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "AzureMAIImageAdapter",
-          "statusPageUrl": "https://status.azure.com/",
-          "byokEnabled": true,
-          "isByokOnly": false,
-          "isPrivate": false,
-          "isProvisional": false,
-          "icon": {
-            "kind": "registry",
-            "treatment": "color",
-            "url": "/images/icons/brands/azure.svg?v=b8a47543",
-            "monoUrl": "/images/icons/brands/azure-mono.svg?v=0f4924ad"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "azure_mai_image",
-          "genericBaseUrl": "https://openrouter-east-us-2.openai.azure.com/openai"
-        },
-        "provider_permaslug": "azure",
-        "provider_display_name": "Azure",
-        "provider_slug": "azure",
-        "derived_service_tier": null,
-        "provider_model_id": "maiimage25",
-        "quantization": "unknown",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 1024,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "max_tokens",
-          "temperature",
-          "max_completion_tokens"
-        ],
-        "excluded_parameters": [
-          "tools",
-          "tool_choice",
-          "response_format",
-          "top_p",
-          "top_k",
-          "frequency_penalty",
-          "presence_penalty",
-          "seed"
-        ],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://learn.microsoft.com/en-us/legal/ai-code-of-conduct",
-          "privacyPolicyURL": "https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/MCA"
-        },
-        "pricing": {
-          "prompt": "0.000005",
-          "completion": "0",
-          "image_token": "0.000047",
-          "image_output": "0.000047",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Text Input",
-              "price": "0.000005",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Image Input",
-              "price": "0.000008",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Image Output",
-              "price": "0.000047",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "image_token_mirrors_output_rate": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Text Input",
-            "price": "0.000005",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Image Input",
-            "price": "0.000008",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Image Output",
-            "price": "0.000047",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "azure_mai_image:text_input_tokens": "0.000005",
-          "azure_mai_image:image_input_tokens": "0.000008",
-          "azure_mai_image:image_output_tokens": "0.000047"
-        },
-        "pricing_version_id": "d9c6ef03-0e81-433c-8b00-ca815cdb6e27",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_provisional": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": false,
-        "supports_reasoning": false,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": false,
-        "features": {
-          "supports_multipart": true,
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": true,
-            "type_function": true
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": {
-          "resolutions": null,
-          "aspect_ratios": [
-            "1:1",
-            "4:3",
-            "3:4",
-            "16:9",
-            "9:16",
-            "3:2",
-            "2:3",
-            "auto"
-          ],
-          "output_formats": null,
-          "qualities": null,
-          "backgrounds": null,
-          "n": {
-            "min": 1,
-            "max": 1
-          },
-          "input_references": {
-            "min": 0,
-            "max": 1
-          },
-          "output_compression": null,
-          "seed": null
-        },
-        "supported_stt_parameters": null,
-        "supported_tts_output_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": "2026-11-27T17:00:00.000Z",
-        "discount_to_user": 0,
-        "allowed_passthrough_parameters": [],
-        "required_attestation_types": [],
-        "created_at": "2026-06-02T17:21:38.695Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": "2026-11-27T17:00:00.000Z"
     },
     {
       "slug": "minimax/minimax-m3",
@@ -153317,7 +152371,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-11-09T20:32:01.679Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -153558,20 +152612,20 @@
           "temperature",
           "top_p",
           "top_k",
-          "min_p",
+          "stop",
           "frequency_penalty",
           "presence_penalty",
           "repetition_penalty",
-          "stop",
-          "seed",
           "max_tokens",
+          "tools",
+          "tool_choice",
+          "min_p",
+          "seed",
           "logit_bias",
           "response_format",
           "structured_outputs",
           "logprobs",
           "top_logprobs",
-          "tools",
-          "tool_choice",
           "reasoning_effort"
         ],
         "excluded_parameters": [
@@ -153590,29 +152644,29 @@
           "privacyPolicyURL": "https://relace.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.0000001824",
-          "completion": "0.0000110055",
-          "input_cache_read": "0.00000018",
+          "prompt": "0.0000001453",
+          "completion": "0.0000122894",
+          "input_cache_read": "0.00000014",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000001824",
+              "price": "0.0000001453",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000110055",
+              "price": "0.0000122894",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000018",
+              "price": "0.00000014",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -153623,31 +152677,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000001824",
+            "price": "0.0000001453",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000110055",
+            "price": "0.0000122894",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000018",
+            "price": "0.00000014",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000001824",
-          "openai:completion_tokens": "0.0000110055",
-          "openai:cached_prompt_tokens": "0.00000018"
+          "openai:prompt_tokens": "0.0000001453",
+          "openai:completion_tokens": "0.0000122894",
+          "openai:cached_prompt_tokens": "0.00000014"
         },
-        "pricing_version_id": "9323dea9-067d-41cd-8b8d-1ea19fb7c821",
+        "pricing_version_id": "980b10b4-431f-4cec-b934-cd5aad8a6330",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -155432,8 +154486,8 @@
       "limit_rpm": null,
       "limit_rpd": null,
       "endpoint": {
-        "id": "c0a694e3-0317-4a15-8c53-14a8cf4d116a",
-        "name": "Ambient | qwen/qwen3.6-35b-a3b-20260415",
+        "id": "babd4746-9e93-4855-8578-4b40539a5f4a",
+        "name": "Darkbloom | qwen/qwen3.6-35b-a3b-20260415",
         "context_length": 262144,
         "model": {
           "slug": "qwen/qwen3.6-35b-a3b",
@@ -155507,28 +154561,30 @@
         },
         "model_variant_slug": "qwen/qwen3.6-35b-a3b",
         "model_variant_permaslug": "qwen/qwen3.6-35b-a3b-20260415",
-        "adapter_name": "AmbientAdapter",
-        "provider_name": "Ambient",
+        "adapter_name": "DarkbloomAdapter",
+        "provider_name": "Darkbloom",
         "provider_info": {
-          "name": "Ambient",
-          "displayName": "Ambient",
-          "slug": "ambient",
-          "baseUrl": "https://api.ambient.xyz/v1",
+          "name": "Darkbloom",
+          "displayName": "Darkbloom",
+          "slug": "darkbloom",
+          "baseUrl": "https://api.darkbloom.dev/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
+            "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
+            "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html",
             "requiresUserIDs": false
           },
           "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": false,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "AmbientAdapter",
+          "adapterName": "DarkbloomAdapter",
           "statusPageUrl": null,
           "byokEnabled": false,
           "isByokOnly": false,
@@ -155536,45 +154592,43 @@
           "isProvisional": false,
           "icon": {
             "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/ambient.svg?v=227fad82",
-            "monoUrl": "/images/icons/brands/ambient.svg?v=227fad82"
+            "treatment": "color",
+            "url": "/images/icons/brands/darkbloom.svg?v=8a29f154",
+            "monoUrl": "/images/icons/brands/darkbloom-mono.svg?v=f3a6036b"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.ambient.xyz/v1"
+          "genericBaseUrl": "https://api.darkbloom.dev/v1"
         },
-        "provider_permaslug": "ambient",
-        "provider_display_name": "Ambient",
-        "provider_slug": "ambient/fp8",
+        "provider_permaslug": "darkbloom",
+        "provider_display_name": "Darkbloom",
+        "provider_slug": "darkbloom/fp4",
         "derived_service_tier": null,
-        "provider_model_id": "qwen/qwen3.6-35b-a3b",
-        "quantization": "fp8",
+        "provider_model_id": "qwen3.6-35b-a3b-vl-mtp-mxfp8",
+        "quantization": "fp4",
         "variant": "standard",
         "is_free": false,
         "can_abort": false,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 235929,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
           "temperature",
-          "max_tokens",
+          "top_p",
+          "top_k",
           "frequency_penalty",
-          "logit_bias",
-          "min_p",
           "presence_penalty",
           "repetition_penalty",
-          "seed",
           "stop",
-          "top_k",
-          "top_p",
+          "seed",
+          "max_tokens",
           "response_format",
           "structured_outputs",
-          "tools",
           "logprobs",
           "top_logprobs",
+          "tools",
           "tool_choice"
         ],
         "excluded_parameters": [],
@@ -155585,12 +154639,14 @@
           "trainingOpenRouter": false,
           "retainsPrompts": true,
           "canPublish": false,
-          "safetyRetention": false
+          "safetyRetention": false,
+          "termsOfServiceURL": "https://www.darkbloom.dev/terms.html",
+          "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
           "prompt": "0.00000005",
-          "completion": "0.00000069",
-          "input_cache_read": "0.000000024",
+          "completion": "0.0000007",
+          "input_cache_read": "0.000000025",
           "discount": 0,
           "display_pricing": [
             {
@@ -155603,14 +154659,14 @@
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.00000069",
+              "price": "0.0000007",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.000000024",
+              "price": "0.000000025",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -155628,24 +154684,24 @@
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.00000069",
+            "price": "0.0000007",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.000000024",
+            "price": "0.000000025",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
           "openai:prompt_tokens": "0.00000005",
-          "openai:completion_tokens": "0.00000069",
-          "openai:cached_prompt_tokens": "0.000000024"
+          "openai:completion_tokens": "0.0000007",
+          "openai:cached_prompt_tokens": "0.000000025"
         },
-        "pricing_version_id": "b5d34790-1e7b-4302-ba8e-b8f6ab959203",
+        "pricing_version_id": "074f3f0f-ba8f-4cf1-8140-c0d03005bd83",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -155659,7 +154715,7 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_base64_video_input": false,
@@ -155667,7 +154723,7 @@
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
-            "literal_required": false,
+            "literal_required": true,
             "type_function": true
           }
         },
@@ -155681,7 +154737,7 @@
         "discount_to_user": 0,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-11-08T14:41:43.958Z",
+        "created_at": "2026-08-14T20:52:18.212Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -156011,7 +155067,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-04-27T02:11:01.546Z",
-        "status": 0
+        "status": -5
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -157820,8 +156876,8 @@
       "limit_rpm": 0,
       "limit_rpd": 0,
       "endpoint": {
-        "id": "2ea81970-3427-4ca6-a707-824832e58904",
-        "name": "Relace | deepseek/deepseek-v4-pro-20260423",
+        "id": "48f7c1a9-3b0c-4f31-a55b-4650d37e35f3",
+        "name": "Baidu | deepseek/deepseek-v4-pro-20260423",
         "context_length": 1048576,
         "model": {
           "slug": "deepseek/deepseek-v4-pro",
@@ -157902,51 +156958,52 @@
         },
         "model_variant_slug": "deepseek/deepseek-v4-pro",
         "model_variant_permaslug": "deepseek/deepseek-v4-pro-20260423",
-        "adapter_name": "VLLMOpenAIAdapter",
-        "provider_name": "Relace",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Relace",
-          "displayName": "Relace",
-          "slug": "relace",
-          "baseUrl": "https://models.relace.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
-            "retainsPrompts": false,
+            "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://relace.ai/legal/terms-of-use",
-            "privacyPolicyURL": "https://relace.ai/legal/privacy-policy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
+          "headquarters": "CN",
           "datacenters": [],
           "hasChatCompletions": true,
           "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "VLLMOpenAIAdapter",
-          "statusPageUrl": "https://status.relace.ai/",
+          "adapterName": "BaiduAdapter",
+          "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
           "isPrivate": false,
           "isProvisional": false,
           "icon": {
             "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/relace.svg?v=3f18cdf1",
-            "monoUrl": "/images/icons/brands/relace.svg?v=3f18cdf1"
+            "treatment": "color",
+            "url": "/images/icons/brands/baidu.svg?v=1f5bda21",
+            "monoUrl": "/images/icons/brands/baidu-mono.svg?v=6394ce9d"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://models.relace.ai/v1"
+          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
         },
-        "provider_permaslug": "relace",
-        "provider_display_name": "Relace",
-        "provider_slug": "relace/fp4",
+        "provider_permaslug": "baidu",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "deepseek-ai/DeepSeek-V4-Pro",
-        "quantization": "fp4",
+        "provider_model_id": "deepseek-v4-pro",
+        "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
@@ -157958,54 +157015,51 @@
           "include_reasoning",
           "temperature",
           "top_p",
-          "top_k",
-          "min_p",
-          "stop",
           "max_tokens",
-          "logit_bias",
-          "frequency_penalty",
-          "presence_penalty",
-          "repetition_penalty",
+          "stop",
+          "response_format",
+          "structured_outputs",
           "tools",
-          "tool_choice",
-          "response_format"
+          "tool_choice"
         ],
-        "excluded_parameters": [],
+        "excluded_parameters": [
+          "max_completion_tokens"
+        ],
         "is_byok": false,
         "moderation_required": false,
         "data_policy": {
           "training": false,
           "trainingOpenRouter": false,
-          "retainsPrompts": false,
+          "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://relace.ai/legal/terms-of-use",
-          "privacyPolicyURL": "https://relace.ai/legal/privacy-policy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.000000888188",
-          "completion": "0.0000015082",
-          "input_cache_read": "0.0000002",
-          "discount": 0,
+          "prompt": "0.00000021801",
+          "completion": "0.00000043602",
+          "input_cache_read": "0.00000001806",
+          "discount": 0.871,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.000000888188",
+              "price": "0.00000021801",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000015082",
+              "price": "0.00000043602",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.0000002",
+              "price": "0.00000001806",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -158016,31 +157070,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.000000888188",
+            "price": "0.00000021801",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000015082",
+            "price": "0.00000043602",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.0000002",
+            "price": "0.00000001806",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.000000888188",
-          "openai:completion_tokens": "0.0000015082",
-          "openai:cached_prompt_tokens": "0.0000002"
+          "openai:prompt_tokens": "0.00000169",
+          "openai:completion_tokens": "0.00000338",
+          "openai:cached_prompt_tokens": "0.00000014"
         },
-        "pricing_version_id": "eb907536-99b3-432a-a90d-fd7c7972600a",
+        "pricing_version_id": "a60e16b6-e596-4a60-b617-255d342fd943",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -158058,7 +157112,7 @@
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
-            "literal_none": false,
+            "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
             "type_function": false
@@ -158071,10 +157125,10 @@
         "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0,
+        "discount_to_user": 0.871,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-09-28T09:10:57.629Z",
+        "created_at": "2026-04-29T11:41:27.715Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -158314,15 +157368,15 @@
           "privacyPolicyURL": "https://relace.ai/legal/privacy-policy"
         },
         "pricing": {
-          "prompt": "0.00000005",
+          "prompt": "0.0000000266",
           "completion": "0.00000045",
-          "input_cache_read": "0.00000005",
+          "input_cache_read": "0.0000000266",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.00000005",
+              "price": "0.0000000266",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
@@ -158336,7 +157390,7 @@
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000005",
+              "price": "0.0000000266",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -158347,7 +157401,7 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.00000005",
+            "price": "0.0000000266",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
@@ -158361,17 +157415,17 @@
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000005",
+            "price": "0.0000000266",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.00000005",
+          "openai:prompt_tokens": "0.0000000266",
           "openai:completion_tokens": "0.00000045",
-          "openai:cached_prompt_tokens": "0.00000005"
+          "openai:cached_prompt_tokens": "0.0000000266"
         },
-        "pricing_version_id": "1c7f7621-03f8-4270-84c4-14c982412d85",
+        "pricing_version_id": "d9b184da-4352-4144-b704-bd067a6bba3f",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -164375,8 +163429,8 @@
       "limit_rpm": null,
       "limit_rpd": null,
       "endpoint": {
-        "id": "38f2e994-462f-4d3c-8de9-9c4fe7984a5a",
-        "name": "Chutes | z-ai/glm-5.1-20260406",
+        "id": "44b42eb7-1926-4e06-99ce-29b6f710b86f",
+        "name": "Baidu | z-ai/glm-5.1-20260406",
         "context_length": 202752,
         "model": {
           "slug": "z-ai/glm-5.1",
@@ -164449,30 +163503,31 @@
         },
         "model_variant_slug": "z-ai/glm-5.1",
         "model_variant_permaslug": "z-ai/glm-5.1-20260406",
-        "adapter_name": "ChutesAdapter",
-        "provider_name": "Chutes",
+        "adapter_name": "BaiduAdapter",
+        "provider_name": "Baidu",
         "provider_info": {
-          "name": "Chutes",
-          "displayName": "Chutes",
-          "slug": "chutes",
-          "baseUrl": "https://llm.chutes.ai/v1",
+          "name": "Baidu",
+          "displayName": "Baidu Qianfan",
+          "slug": "baidu",
+          "baseUrl": "https://api.baiduqianfan.ai/v1",
           "dataPolicy": {
             "training": false,
             "trainingOpenRouter": false,
             "retainsPrompts": true,
             "canPublish": false,
             "safetyRetention": false,
-            "termsOfServiceURL": "https://chutes.ai/tos",
-            "privacyPolicyURL": "https://chutes.ai/privacy",
+            "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+            "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en",
             "requiresUserIDs": false
           },
-          "headquarters": "US",
+          "headquarters": "CN",
+          "datacenters": [],
           "hasChatCompletions": true,
-          "hasCompletions": true,
+          "hasCompletions": false,
           "isAbortable": true,
           "moderationRequired": false,
           "requiredAttestationTypes": [],
-          "adapterName": "ChutesAdapter",
+          "adapterName": "BaiduAdapter",
           "statusPageUrl": null,
           "byokEnabled": true,
           "isByokOnly": false,
@@ -164480,42 +163535,40 @@
           "isProvisional": false,
           "icon": {
             "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/chutes.svg?v=8ae35f8b",
-            "monoUrl": "/images/icons/brands/chutes.svg?v=8ae35f8b"
+            "treatment": "color",
+            "url": "/images/icons/brands/baidu.svg?v=1f5bda21",
+            "monoUrl": "/images/icons/brands/baidu-mono.svg?v=6394ce9d"
           },
           "sendClientIp": false,
           "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://llm.chutes.ai/v1"
+          "genericBaseUrl": "https://api.baiduqianfan.ai/v1"
         },
-        "provider_permaslug": "chutes",
-        "provider_display_name": "Chutes",
-        "provider_slug": "chutes/fp8",
+        "provider_permaslug": "baidu",
+        "provider_display_name": "Baidu Qianfan",
+        "provider_slug": "baidu/fp8",
         "derived_service_tier": null,
-        "provider_model_id": "zai-org/GLM-5.1-TEE",
+        "provider_model_id": "glm-5.1",
         "quantization": "fp8",
         "variant": "standard",
         "is_free": false,
         "can_abort": true,
         "max_prompt_tokens": null,
-        "max_completion_tokens": 65535,
+        "max_completion_tokens": 131072,
         "max_tokens_per_image": null,
         "supported_parameters": [
           "reasoning",
           "include_reasoning",
-          "max_tokens",
           "temperature",
           "top_p",
-          "stop",
+          "max_tokens",
           "frequency_penalty",
           "presence_penalty",
-          "seed",
-          "top_k",
           "repetition_penalty",
+          "stop",
+          "response_format",
           "structured_outputs",
           "tools",
-          "tool_choice",
-          "response_format"
+          "tool_choice"
         ],
         "excluded_parameters": [],
         "is_byok": false,
@@ -164526,33 +163579,33 @@
           "retainsPrompts": true,
           "canPublish": false,
           "safetyRetention": false,
-          "termsOfServiceURL": "https://chutes.ai/tos",
-          "privacyPolicyURL": "https://chutes.ai/privacy"
+          "termsOfServiceURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/bmesahnjh-intl-en",
+          "privacyPolicyURL": "https://intl.cloud.baidu.com/en/doc/Agreements/s/Plr0fi68q-intl-en"
         },
         "pricing": {
-          "prompt": "0.0000009",
-          "completion": "0.0000029",
-          "input_cache_read": "0.00000009",
-          "discount": 0,
+          "prompt": "0.0000008988",
+          "completion": "0.0000028248",
+          "input_cache_read": "0.00000016692",
+          "discount": 0.358,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000009",
+              "price": "0.0000008988",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000029",
+              "price": "0.0000028248",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000009",
+              "price": "0.00000016692",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -164563,31 +163616,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000009",
+            "price": "0.0000008988",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000029",
+            "price": "0.0000028248",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000009",
+            "price": "0.00000016692",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000009",
-          "openai:completion_tokens": "0.0000029",
-          "openai:cached_prompt_tokens": "0.00000009"
+          "openai:prompt_tokens": "0.0000014",
+          "openai:completion_tokens": "0.0000044",
+          "openai:cached_prompt_tokens": "0.00000026"
         },
-        "pricing_version_id": "95a3b7a0-f8b3-4b69-877b-39721a5da826",
+        "pricing_version_id": "d03336e2-a101-42c5-823e-f15e37b2d0d7",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -164601,14 +163654,14 @@
         "supports_multipart": true,
         "limit_rpm": null,
         "limit_rpd": null,
-        "has_completions": true,
+        "has_completions": false,
         "has_chat_completions": true,
         "features": {
           "supports_tool_choice": {
             "literal_none": true,
             "literal_auto": true,
             "literal_required": false,
-            "type_function": true
+            "type_function": false
           }
         },
         "supported_video_parameters": null,
@@ -164618,10 +163671,10 @@
         "provider_region": null,
         "declared_region": null,
         "deprecation_date": null,
-        "discount_to_user": 0,
+        "discount_to_user": 0.358,
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
-        "created_at": "2026-04-07T23:26:07.196Z",
+        "created_at": "2026-05-14T14:06:29.585Z",
         "status": 0
       },
       "display_required_attestation_types": [],
@@ -169897,7 +168950,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2026-06-26T18:31:35.285Z",
-        "status": 0
+        "status": -2
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -217172,29 +216225,29 @@
           "privacyPolicyURL": "https://www.darkbloom.dev/privacy.html"
         },
         "pricing": {
-          "prompt": "0.0000000153",
-          "completion": "0.0000000765",
-          "input_cache_read": "0.00000000765",
+          "prompt": "0.000000017",
+          "completion": "0.000000085",
+          "input_cache_read": "0.0000000085",
           "discount": 0,
           "display_pricing": [
             {
               "kind": "token",
               "sku_label": "Input Price",
-              "price": "0.0000000153",
+              "price": "0.000000017",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Output Price",
-              "price": "0.0000000765",
+              "price": "0.000000085",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             },
             {
               "kind": "token",
               "sku_label": "Cache Read",
-              "price": "0.00000000765",
+              "price": "0.0000000085",
               "displayMultiplier": 1000000,
               "unitLabel": "/M tokens"
             }
@@ -217205,31 +216258,31 @@
           {
             "kind": "token",
             "sku_label": "Input Price",
-            "price": "0.0000000153",
+            "price": "0.000000017",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Output Price",
-            "price": "0.0000000765",
+            "price": "0.000000085",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           },
           {
             "kind": "token",
             "sku_label": "Cache Read",
-            "price": "0.00000000765",
+            "price": "0.0000000085",
             "displayMultiplier": 1000000,
             "unitLabel": "/M tokens"
           }
         ],
         "pricing_json": {
-          "openai:prompt_tokens": "0.0000000153",
-          "openai:completion_tokens": "0.0000000765",
-          "openai:cached_prompt_tokens": "0.00000000765"
+          "openai:prompt_tokens": "0.000000017",
+          "openai:completion_tokens": "0.000000085",
+          "openai:cached_prompt_tokens": "0.0000000085"
         },
-        "pricing_version_id": "e68dd6ef-5258-44b8-a009-c43828530731",
+        "pricing_version_id": "47fa2a94-76ab-4c58-bd37-23cc6a91124a",
         "is_pricing_unresolved": false,
         "is_hidden": false,
         "is_private": false,
@@ -220160,310 +219213,6 @@
       "variant_deprecation_date": null
     },
     {
-      "slug": "qwen/qwen3-235b-a22b-thinking-2507",
-      "hf_slug": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-      "updated_at": "2026-03-24T19:43:16.801Z",
-      "created_at": "2025-07-25T13:19:17.179Z",
-      "hf_updated_at": null,
-      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
-      "short_name": "Qwen3 235B A22B Thinking 2507",
-      "author": "qwen",
-      "author_display_name": "Qwen",
-      "author_icon_uri": null,
-      "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144 tokens of context. This \"thinking-only\" variant enhances structured logical reasoning, mathematics, science, and long-form generation, showing strong benchmark performance across AIME, SuperGPQA, LiveCodeBench, and MMLU-Redux. It enforces a special reasoning mode (</think>) and is designed for high-token outputs (up to 81,920 tokens) in challenging domains.\n\nThe model is instruction-tuned and excels at step-by-step reasoning, tool use, agentic workflows, and multilingual tasks. This release represents the most capable open-source variant in the Qwen3-235B series, surpassing many closed models in structured reasoning use cases.",
-      "model_version_group_id": null,
-      "context_length": 128000,
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "has_text_output": true,
-      "group": "Qwen3",
-      "instruct_type": "qwen3",
-      "default_system": null,
-      "default_stops": [
-        "<|im_start|>",
-        "<|im_end|>"
-      ],
-      "hidden": false,
-      "router": null,
-      "warning_message": "",
-      "promotion_message": null,
-      "routing_error_message": null,
-      "required_attestation_types": [],
-      "is_private": false,
-      "permaslug": "qwen/qwen3-235b-a22b-thinking-2507",
-      "supports_reasoning": true,
-      "reasoning_config": {
-        "start_token": "<think>",
-        "end_token": "</think>",
-        "system_prompt": null,
-        "is_mandatory_reasoning": true
-      },
-      "features": {
-        "reasoning_config": {
-          "start_token": "<think>",
-          "end_token": "</think>",
-          "system_prompt": null,
-          "is_mandatory_reasoning": true
-        },
-        "chat_template_config": {}
-      },
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "default_order": [],
-      "quick_start_example_type": null,
-      "previews_by_modality": {},
-      "preview_thumbnail_url": null,
-      "preview_audio": null,
-      "author_flagship_modalities": [],
-      "is_trainable_text": true,
-      "is_trainable_image": null,
-      "knowledge_cutoff": "2025-06-30T23:59:59.000Z",
-      "limit_rpm": null,
-      "limit_rpd": null,
-      "endpoint": {
-        "id": "dcaa5e88-7e41-42c8-8d6d-e3b4a984f7b9",
-        "name": "Venice | qwen/qwen3-235b-a22b-thinking-2507",
-        "context_length": 128000,
-        "model": {
-          "slug": "qwen/qwen3-235b-a22b-thinking-2507",
-          "hf_slug": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-          "updated_at": "2026-03-24T19:43:16.801719+00:00",
-          "created_at": "2025-07-25T13:19:17.179049+00:00",
-          "hf_updated_at": null,
-          "name": "Qwen: Qwen3 235B A22B Thinking 2507",
-          "short_name": "Qwen3 235B A22B Thinking 2507",
-          "author": "qwen",
-          "author_display_name": "Qwen",
-          "author_icon_uri": null,
-          "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144 tokens of context. This \"thinking-only\" variant enhances structured logical reasoning, mathematics, science, and long-form generation, showing strong benchmark performance across AIME, SuperGPQA, LiveCodeBench, and MMLU-Redux. It enforces a special reasoning mode (</think>) and is designed for high-token outputs (up to 81,920 tokens) in challenging domains.\n\nThe model is instruction-tuned and excels at step-by-step reasoning, tool use, agentic workflows, and multilingual tasks. This release represents the most capable open-source variant in the Qwen3-235B series, surpassing many closed models in structured reasoning use cases.",
-          "model_version_group_id": null,
-          "context_length": 262144,
-          "input_modalities": [
-            "text"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "has_text_output": true,
-          "group": "Qwen3",
-          "instruct_type": "qwen3",
-          "default_system": null,
-          "default_stops": [
-            "<|im_start|>",
-            "<|im_end|>"
-          ],
-          "hidden": false,
-          "router": null,
-          "warning_message": "",
-          "promotion_message": null,
-          "routing_error_message": null,
-          "required_attestation_types": [],
-          "is_private": false,
-          "permaslug": "qwen/qwen3-235b-a22b-thinking-2507",
-          "supports_reasoning": true,
-          "reasoning_config": {
-            "start_token": "<think>",
-            "end_token": "</think>",
-            "system_prompt": null,
-            "is_mandatory_reasoning": true
-          },
-          "features": {
-            "reasoning_config": {
-              "start_token": "<think>",
-              "end_token": "</think>",
-              "system_prompt": null,
-              "is_mandatory_reasoning": true
-            },
-            "chat_template_config": {}
-          },
-          "default_parameters": {
-            "temperature": null,
-            "top_p": null,
-            "frequency_penalty": null
-          },
-          "default_order": [],
-          "quick_start_example_type": null,
-          "previews_by_modality": {},
-          "preview_thumbnail_url": null,
-          "preview_audio": null,
-          "author_flagship_modalities": [],
-          "is_trainable_text": true,
-          "is_trainable_image": null,
-          "knowledge_cutoff": "2025-06-30T23:59:59+00:00",
-          "limit_rpm": null,
-          "limit_rpd": null
-        },
-        "model_variant_slug": "qwen/qwen3-235b-a22b-thinking-2507",
-        "model_variant_permaslug": "qwen/qwen3-235b-a22b-thinking-2507",
-        "adapter_name": "VeniceAdapter",
-        "provider_name": "Venice",
-        "provider_info": {
-          "name": "Venice",
-          "displayName": "Venice",
-          "slug": "venice",
-          "baseUrl": "https://api.venice.ai/api/v1",
-          "dataPolicy": {
-            "training": false,
-            "trainingOpenRouter": false,
-            "retainsPrompts": false,
-            "canPublish": false,
-            "safetyRetention": false,
-            "termsOfServiceURL": "https://venice.ai/legal/tos",
-            "privacyPolicyURL": "https://venice.ai/legal/privacy-policy",
-            "requiresUserIDs": false
-          },
-          "headquarters": "US",
-          "datacenters": [
-            "US"
-          ],
-          "hasChatCompletions": true,
-          "hasCompletions": false,
-          "isAbortable": true,
-          "moderationRequired": false,
-          "requiredAttestationTypes": [],
-          "adapterName": "VeniceAdapter",
-          "statusPageUrl": null,
-          "byokEnabled": true,
-          "isByokOnly": false,
-          "isPrivate": false,
-          "isProvisional": false,
-          "icon": {
-            "kind": "registry",
-            "treatment": "mono",
-            "url": "/images/icons/brands/venice.svg?v=3c93a806",
-            "monoUrl": "/images/icons/brands/venice.svg?v=3c93a806"
-          },
-          "sendClientIp": false,
-          "pricingStrategy": "openai_chat_completions",
-          "genericBaseUrl": "https://api.venice.ai/api/v1"
-        },
-        "provider_permaslug": "venice",
-        "provider_display_name": "Venice",
-        "provider_slug": "venice/fp8",
-        "derived_service_tier": null,
-        "provider_model_id": "qwen3-235b-a22b-thinking-2507",
-        "quantization": "fp8",
-        "variant": "standard",
-        "is_free": false,
-        "can_abort": true,
-        "max_prompt_tokens": null,
-        "max_completion_tokens": 16384,
-        "max_tokens_per_image": null,
-        "supported_parameters": [
-          "reasoning",
-          "include_reasoning",
-          "max_tokens",
-          "temperature",
-          "top_p",
-          "stop",
-          "frequency_penalty",
-          "presence_penalty",
-          "top_k",
-          "tools",
-          "tool_choice"
-        ],
-        "excluded_parameters": [],
-        "is_byok": false,
-        "moderation_required": false,
-        "data_policy": {
-          "training": false,
-          "trainingOpenRouter": false,
-          "retainsPrompts": false,
-          "canPublish": false,
-          "safetyRetention": false,
-          "termsOfServiceURL": "https://venice.ai/legal/tos",
-          "privacyPolicyURL": "https://venice.ai/legal/privacy-policy"
-        },
-        "pricing": {
-          "prompt": "0.00000045",
-          "completion": "0.0000035",
-          "discount": 0,
-          "display_pricing": [
-            {
-              "kind": "token",
-              "sku_label": "Input Price",
-              "price": "0.00000045",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            },
-            {
-              "kind": "token",
-              "sku_label": "Output Price",
-              "price": "0.0000035",
-              "displayMultiplier": 1000000,
-              "unitLabel": "/M tokens"
-            }
-          ]
-        },
-        "server_tool_costs_discount_exempt": true,
-        "display_pricing": [
-          {
-            "kind": "token",
-            "sku_label": "Input Price",
-            "price": "0.00000045",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          },
-          {
-            "kind": "token",
-            "sku_label": "Output Price",
-            "price": "0.0000035",
-            "displayMultiplier": 1000000,
-            "unitLabel": "/M tokens"
-          }
-        ],
-        "pricing_json": {
-          "openai:prompt_tokens": "0.00000045",
-          "openai:completion_tokens": "0.0000035"
-        },
-        "pricing_version_id": "44b03166-59d6-4ce3-af17-7bd6db377770",
-        "is_pricing_unresolved": false,
-        "is_hidden": false,
-        "is_private": false,
-        "is_byok_only": false,
-        "is_provisional": false,
-        "is_deranked": false,
-        "is_disabled": false,
-        "is_hipaa_eligible": false,
-        "supports_tool_parameters": true,
-        "supports_reasoning": true,
-        "supports_multipart": true,
-        "limit_rpm": null,
-        "limit_rpd": null,
-        "has_completions": false,
-        "has_chat_completions": true,
-        "features": {
-          "supports_tool_choice": {
-            "literal_none": true,
-            "literal_auto": true,
-            "literal_required": false,
-            "type_function": false
-          }
-        },
-        "supported_video_parameters": null,
-        "supported_image_parameters": null,
-        "supported_stt_parameters": null,
-        "supported_tts_output_parameters": null,
-        "provider_region": null,
-        "declared_region": null,
-        "deprecation_date": null,
-        "discount_to_user": 0,
-        "allowed_passthrough_parameters": [],
-        "required_attestation_types": [],
-        "created_at": "2026-07-06T20:04:19.970Z",
-        "status": 0
-      },
-      "display_required_attestation_types": [],
-      "variant_deprecation_date": null
-    },
-    {
       "slug": "qwen/qwen3-coder",
       "hf_slug": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "updated_at": "2026-03-24T19:43:16.801Z",
@@ -221755,7 +220504,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2025-07-22T14:07:59.439Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -237073,7 +235822,7 @@
         "allowed_passthrough_parameters": [],
         "required_attestation_types": [],
         "created_at": "2024-12-06T20:17:34.263Z",
-        "status": -5
+        "status": 0
       },
       "display_required_attestation_types": [],
       "variant_deprecation_date": null
@@ -248437,6 +247186,64 @@
       "variant_deprecation_date": null
     },
     {
+      "slug": "microsoft/mai-image-2.5-pro",
+      "hf_slug": null,
+      "updated_at": "2026-11-24T14:51:02.805Z",
+      "created_at": "2026-07-23T17:28:21.536Z",
+      "hf_updated_at": null,
+      "name": "Microsoft AI: MAI-Image-2.5 Pro",
+      "short_name": "MAI-Image-2.5 Pro",
+      "author": "microsoft",
+      "author_display_name": "Microsoft",
+      "author_icon_uri": "/images/icons/brands/microsoft-mai.svg?v=fd783cc5",
+      "description": "Microsoft AI's MAI-Image-2.5 is a high-quality image generation model available via Azure AI Foundry. It produces photorealistic and artistic images from text prompts with support for various aspect ratios.",
+      "model_version_group_id": null,
+      "context_length": 4096,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "image"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": "microsoft/mai-image-2.5-pro was deprecated by Microsoft on Nov 27, 2026. Use model \"microsoft/mai-image-2.6\" (GA) or \"microsoft/mai-image-2.7\" (public preview) instead.",
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "microsoft/mai-image-2.5-pro-20260723",
+      "supports_reasoning": false,
+      "reasoning_config": null,
+      "features": {},
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "image_generation",
+      "previews_by_modality": {
+        "image": {
+          "url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5-pro-20260723/8d081ac7-ebbb-4ac0-9c63-9a981efe3255/original-0.png",
+          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5-pro-20260723/8d081ac7-ebbb-4ac0-9c63-9a981efe3255/thumb-0.webp"
+        }
+      },
+      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5-pro-20260723/8d081ac7-ebbb-4ac0-9c63-9a981efe3255/thumb-0.webp",
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
       "slug": "x-ai/grok-stt-1.0",
       "hf_slug": null,
       "updated_at": "2026-11-20T00:59:55.458Z",
@@ -249127,6 +247934,75 @@
       "preview_audio": null,
       "author_flagship_modalities": [],
       "is_trainable_text": null,
+      "is_trainable_image": null,
+      "knowledge_cutoff": null,
+      "limit_rpm": 0,
+      "limit_rpd": 0,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "microsoft/mai-image-2.5",
+      "hf_slug": null,
+      "updated_at": "2026-11-24T14:51:01.845Z",
+      "created_at": "2026-06-02T18:28:16.412Z",
+      "hf_updated_at": null,
+      "name": "Microsoft AI: MAI-Image-2.5",
+      "short_name": "MAI-Image-2.5",
+      "author": "microsoft",
+      "author_display_name": "Microsoft",
+      "author_icon_uri": "/images/icons/brands/microsoft-mai.svg?v=fd783cc5",
+      "description": "Microsoft AI's MAI-Image-2.5 is a high-quality image generation model available via Azure AI Foundry. It produces photorealistic and artistic images from text prompts with support for various aspect ratios.",
+      "model_version_group_id": null,
+      "context_length": 4096,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "image"
+      ],
+      "has_text_output": false,
+      "group": "Other",
+      "instruct_type": null,
+      "default_system": null,
+      "default_stops": [],
+      "hidden": false,
+      "router": null,
+      "warning_message": null,
+      "promotion_message": null,
+      "routing_error_message": "microsoft/mai-image-2.5 was deprecated by Microsoft on Nov 27, 2026. Use model \"microsoft/mai-image-2.6\" (GA) or \"microsoft/mai-image-2.7\" (public preview) instead.",
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "microsoft/mai-image-2.5",
+      "supports_reasoning": false,
+      "reasoning_config": {
+        "start_token": null,
+        "end_token": null
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": null,
+          "end_token": null
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {},
+      "default_order": [],
+      "quick_start_example_type": "image_generation",
+      "previews_by_modality": {
+        "image": {
+          "url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5/d74e1d36-4cfa-42cb-9381-abcad58703df/original-0.png",
+          "thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5/d74e1d36-4cfa-42cb-9381-abcad58703df/thumb-0.webp"
+        }
+      },
+      "preview_thumbnail_url": "https://model-assets.openrouter.ai/model-examples/microsoft/mai-image-2.5/d74e1d36-4cfa-42cb-9381-abcad58703df/thumb-0.webp",
+      "preview_audio": null,
+      "author_flagship_modalities": [
+        "image"
+      ],
+      "is_trainable_text": true,
       "is_trainable_image": null,
       "knowledge_cutoff": null,
       "limit_rpm": 0,
@@ -258292,6 +257168,78 @@
       "is_trainable_text": null,
       "is_trainable_image": null,
       "knowledge_cutoff": null,
+      "limit_rpm": null,
+      "limit_rpd": null,
+      "endpoint": null,
+      "display_required_attestation_types": [],
+      "variant_deprecation_date": null
+    },
+    {
+      "slug": "qwen/qwen3-235b-a22b-thinking-2507",
+      "hf_slug": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "updated_at": "2026-03-24T19:43:16.801Z",
+      "created_at": "2025-07-25T13:19:17.179Z",
+      "hf_updated_at": null,
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "short_name": "Qwen3 235B A22B Thinking 2507",
+      "author": "qwen",
+      "author_display_name": "Qwen",
+      "author_icon_uri": null,
+      "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144 tokens of context. This \"thinking-only\" variant enhances structured logical reasoning, mathematics, science, and long-form generation, showing strong benchmark performance across AIME, SuperGPQA, LiveCodeBench, and MMLU-Redux. It enforces a special reasoning mode (</think>) and is designed for high-token outputs (up to 81,920 tokens) in challenging domains.\n\nThe model is instruction-tuned and excels at step-by-step reasoning, tool use, agentic workflows, and multilingual tasks. This release represents the most capable open-source variant in the Qwen3-235B series, surpassing many closed models in structured reasoning use cases.",
+      "model_version_group_id": null,
+      "context_length": 262144,
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "has_text_output": true,
+      "group": "Qwen3",
+      "instruct_type": "qwen3",
+      "default_system": null,
+      "default_stops": [
+        "<|im_start|>",
+        "<|im_end|>"
+      ],
+      "hidden": false,
+      "router": null,
+      "warning_message": "",
+      "promotion_message": null,
+      "routing_error_message": null,
+      "required_attestation_types": [],
+      "is_private": false,
+      "permaslug": "qwen/qwen3-235b-a22b-thinking-2507",
+      "supports_reasoning": true,
+      "reasoning_config": {
+        "start_token": "<think>",
+        "end_token": "</think>",
+        "system_prompt": null,
+        "is_mandatory_reasoning": true
+      },
+      "features": {
+        "reasoning_config": {
+          "start_token": "<think>",
+          "end_token": "</think>",
+          "system_prompt": null,
+          "is_mandatory_reasoning": true
+        },
+        "chat_template_config": {}
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "default_order": [],
+      "quick_start_example_type": null,
+      "previews_by_modality": {},
+      "preview_thumbnail_url": null,
+      "preview_audio": null,
+      "author_flagship_modalities": [],
+      "is_trainable_text": true,
+      "is_trainable_image": null,
+      "knowledge_cutoff": "2025-06-30T23:59:59.000Z",
       "limit_rpm": null,
       "limit_rpd": null,
       "endpoint": null,
